@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Course Introduction &amp; Tools on GA Javascript</title>
+    <link>/00-course-intro-and-tools/</link>
+    <description>Recent content in Course Introduction &amp; Tools on GA Javascript</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 22 Jan 2017 18:04:24 -0500</lastBuildDate>
+    
+	<atom:link href="/00-course-intro-and-tools/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Objectives</title>
+      <link>/00-course-intro-and-tools/objectives/</link>
+      <pubDate>Sun, 22 Jan 2017 18:05:18 -0500</pubDate>
+      
+      <guid>/00-course-intro-and-tools/objectives/</guid>
+      <description> Understand what the term &amp;ldquo;front-end Development&amp;rdquo; means
+ Introduce tools you will be using throughout the class
+ Cover class logistics, structure &amp;amp; keys to success
+  </description>
+    </item>
+    
+    <item>
+      <title>What Is front-end Development?</title>
+      <link>/00-course-intro-and-tools/what-is-frontend-development/</link>
+      <pubDate>Sat, 16 Mar 2019 19:57:51 -0400</pubDate>
+      
+      <guid>/00-course-intro-and-tools/what-is-frontend-development/</guid>
+      <description>Overview  Front-end web development, also known as client-side development is the practice of producing HTML, CSS and JavaScript for a website or Web Application so that a user can see and interact with them directly.  What are the primary technologies associated with front-end development?  HTML
+ CSS
+ Javascript
+  How is front-end development differ from back-end development?  Backend development, is also known as server-side development and involves storing data on behalf of users or customers</description>
+    </item>
+    
+    <item>
+      <title>Class Logistics &amp; Materials</title>
+      <link>/00-course-intro-and-tools/class-logistics-materials/</link>
+      <pubDate>Sat, 16 Mar 2019 10:04:07 -0400</pubDate>
+      
+      <guid>/00-course-intro-and-tools/class-logistics-materials/</guid>
+      <description>Class Logistics  Class Schedule: Monday &amp;amp; Wednesdays, 6:30pm - 9:30pm, from Mar 18th through May 22nd
+ Break: 15 minute break during the middle of class from 7:45pm to 8:00pm (subject to change depending on flow of the class, but you&amp;rsquo;ll always get a 15 min break)
+ Class Materials: Most lessons will include a set of files that you&amp;rsquo;ll work with during that lesson, we&amp;rsquo;ll refer to these files as the &amp;ldquo;lesson files&amp;rdquo;</description>
+    </item>
+    
+    <item>
+      <title>Course Tools</title>
+      <link>/00-course-intro-and-tools/tools/</link>
+      <pubDate>Sat, 16 Mar 2019 10:03:50 -0400</pubDate>
+      
+      <guid>/00-course-intro-and-tools/tools/</guid>
+      <description>Text Editor:
+ Why?: Text editor is a program that developers use to create and edit a range of programming language files. We&amp;rsquo;ll be using Atom, because it&amp;rsquo;s open source (free) and really good.
+ Download Atom
+  Browser:
+ Why?: Google chrome is a robust browser with a variety of tools that are helpful to developers.
+ Install Google Chrome
+  Github:
+ Why?: Github (and Git) are tools/applications used to by developers to manage their code and work collaboratively with each other.</description>
+    </item>
+    
+    <item>
+      <title>Folder Organization</title>
+      <link>/00-course-intro-and-tools/folder-structure/</link>
+      <pubDate>Sat, 16 Mar 2019 10:03:59 -0400</pubDate>
+      
+      <guid>/00-course-intro-and-tools/folder-structure/</guid>
+      <description> Recommended Folder Organization  Create a folder in your Documents (My Documents on Windows) folder called FEWD
+ At beginning of every class, download and unzip (mac instructions | windows instructions) the &amp;ldquo;Lesson Files&amp;rdquo; for that lesson directly into your FEWD folder
+  While the lesson files will be hosted on Dropbox, you do not need to have a dropbox account to download the files.
+  As the course progresses you&amp;rsquo;ll have a neatly organized listing of all of your work that looks similar to this:  </description>
+    </item>
+    
+    <item>
+      <title>Keys to Success</title>
+      <link>/00-course-intro-and-tools/keys-to-success/</link>
+      <pubDate>Sat, 16 Mar 2019 17:11:17 -0400</pubDate>
+      
+      <guid>/00-course-intro-and-tools/keys-to-success/</guid>
+      <description>Do your homework: More you practice the concepts learned in class, the faster you&amp;rsquo;ll pick them up
+ Don&amp;rsquo;t try to memorize anything: You&amp;rsquo;ll memorize things naturally through the act of doing things over and over again. Besides, if you don&amp;rsquo;t remember something just look it up (i.e. google).
+ Work smarter not harder: In additional to looking things up, developers are really good at referencing past code that they&amp;rsquo;ve used in the past to solve problems they encounter in the present.</description>
+    </item>
+    
+  </channel>
+</rss>

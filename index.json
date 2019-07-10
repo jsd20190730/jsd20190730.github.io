@@ -1,0 +1,71 @@
+[
+{
+	"uri": "/00-course-intro-and-tools/",
+	"title": "Course Introduction &amp; Tools",
+	"tags": [],
+	"description": "",
+	"content": " Lesson 00 Class Introduction \u0026amp; Tools "
+},
+{
+	"uri": "/00-course-intro-and-tools/objectives/",
+	"title": "Objectives",
+	"tags": [],
+	"description": "",
+	"content": " Understand what the term \u0026ldquo;front-end Development\u0026rdquo; means\n Introduce tools you will be using throughout the class\n Cover class logistics, structure \u0026amp; keys to success\n  "
+},
+{
+	"uri": "/00-course-intro-and-tools/what-is-frontend-development/",
+	"title": "What Is front-end Development?",
+	"tags": [],
+	"description": "",
+	"content": " Overview  Front-end web development, also known as client-side development is the practice of producing HTML, CSS and JavaScript for a website or Web Application so that a user can see and interact with them directly.  What are the primary technologies associated with front-end development?  HTML\n CSS\n Javascript\n  How is front-end development differ from back-end development?  Backend development, is also known as server-side development and involves storing data on behalf of users or customers\n Example: Amazon, stores information about all it\u0026rsquo;s customers\u0026rsquo; order history in a database  Also where a company\u0026rsquo;s business logic lives\n Example: Amazon will only qualify non-prime customers for free shipping if they spend over $50  The programming languages used for back-end development includes (but is not limited to) Ruby, Python, Java, Go and Javascript (using a technology called NodeJS)\n  "
+},
+{
+	"uri": "/00-course-intro-and-tools/class-logistics-materials/",
+	"title": "Class Logistics &amp; Materials",
+	"tags": [],
+	"description": "",
+	"content": " Class Logistics  Class Schedule: Monday \u0026amp; Wednesdays, 6:30pm - 9:30pm, from Mar 18th through May 22nd\n Break: 15 minute break during the middle of class from 7:45pm to 8:00pm (subject to change depending on flow of the class, but you\u0026rsquo;ll always get a 15 min break)\n Class Materials: Most lessons will include a set of files that you\u0026rsquo;ll work with during that lesson, we\u0026rsquo;ll refer to these files as the \u0026ldquo;lesson files\u0026rdquo;\n Homework: Homework assignments will be assigned at the end of class on Wednesdays and assignments will be due the following Wednesday.\n Reading Assignment / Tutorials: Reading Assignments and Tutorials may be assigned after a class. They are usual short in nature and are meant to help increase your understanding of upcoming or past concepts. If assigned, you will be expected to complete them before the next class.\n Labs: Labs are in-class assignments completed at the end of class; they can be done completed individually or in groups.\n Code Alongs: Small projects or exercises that the instructor and the class complete together\n Exercises: Short in-class exercises that are completed either individually\n Final Project: Pick something your passionate about, only requirement will be the use of HTML, CSS and (some) Javascript\n  "
+},
+{
+	"uri": "/00-course-intro-and-tools/tools/",
+	"title": "Course Tools",
+	"tags": [],
+	"description": "",
+	"content": " Text Editor:\n Why?: Text editor is a program that developers use to create and edit a range of programming language files. We\u0026rsquo;ll be using Atom, because it\u0026rsquo;s open source (free) and really good.\n Download Atom\n  Browser:\n Why?: Google chrome is a robust browser with a variety of tools that are helpful to developers.\n Install Google Chrome\n  Github:\n Why?: Github (and Git) are tools/applications used to by developers to manage their code and work collaboratively with each other. You\u0026rsquo;ll be using Github/Git to submit our homework assignments. kj\n Create a Github Account\n Download the Github Desktop App\n  Slack:\n Why?: Is a popular chat application that we\u0026rsquo;ll be using as our primary method of communication both during and outside of class\n Join the GA NYC Part Time Students Slack Community slack channel\n You should have received an emailed invitation to join GA’s slack team\n Don’t see an invitation in your inbox? Check your spam folder - many of Slack’s invitation emails tend to end up there. Let me know if you weren’t sent an invite and we’ll get you sorted out.\n  Add yourself to the dedicated Slack Channel for our class named #fewd-3-18-19 (see instructions on how to join a Slack Channel here)\n  Wireframes:\n Why?: Wireframes are a planning tools that helps you visualize the layout and other aspects of your web projects before writing any code.\n Multiple options:\n Whimsical - free wireframing software\n Google Draw\n Pen \u0026amp; Paper\n  Example of a wireframe:\n   "
+},
+{
+	"uri": "/00-course-intro-and-tools/folder-structure/",
+	"title": "Folder Organization",
+	"tags": [],
+	"description": "",
+	"content": " Recommended Folder Organization  Create a folder in your Documents (My Documents on Windows) folder called FEWD\n At beginning of every class, download and unzip (mac instructions | windows instructions) the \u0026ldquo;Lesson Files\u0026rdquo; for that lesson directly into your FEWD folder\n  While the lesson files will be hosted on Dropbox, you do not need to have a dropbox account to download the files.\n  As the course progresses you\u0026rsquo;ll have a neatly organized listing of all of your work that looks similar to this:  "
+},
+{
+	"uri": "/00-course-intro-and-tools/keys-to-success/",
+	"title": "Keys to Success",
+	"tags": [],
+	"description": "",
+	"content": " Do your homework: More you practice the concepts learned in class, the faster you\u0026rsquo;ll pick them up\n Don\u0026rsquo;t try to memorize anything: You\u0026rsquo;ll memorize things naturally through the act of doing things over and over again. Besides, if you don\u0026rsquo;t remember something just look it up (i.e. google).\n Work smarter not harder: In additional to looking things up, developers are really good at referencing past code that they\u0026rsquo;ve used in the past to solve problems they encounter in the present. So keep your past code organized so you easily reference it later. You don\u0026rsquo;t get points for memorizing anything, but you do get points for being resourceful and using past work to help you move a litter faster today.\n Ask Questions: Don\u0026rsquo;t be afraid to ask questions, everyone learns differently, it\u0026rsquo;s the instructor\u0026rsquo;s responsibility to ensure you grasp the concepts. Your questions helps me (your instructor) understand what\u0026rsquo;s working and what\u0026rsquo;s not.\n Change your perspective of failure: Expects things to not work. That\u0026rsquo;s where the fun part and truly where the learning begins. It\u0026rsquo;s during the troubleshooting phase where\u0026rsquo;s you\u0026rsquo;ll gained a deep understanding of concepts taught in class. If everything worked the first time, you\u0026rsquo;d never learn anything :)\n Get comfortable with the fact that there are multiple ways to do things: If I gave a 10 experienced developers a coding homework assignment chances are that I will receive 10 different approaches and they\u0026rsquo;ll all be \u0026ldquo;correct\u0026rdquo; (meaning each approach will accomplish the stated goals of the assignment). There is no 1 right answers when it comes to coding. There are \u0026ldquo;best practices\u0026rdquo; some of which we will push in this course, others best practices will be learned through continued practice. Instead of focusing on what you think may be the \u0026ldquo;best\u0026rdquo; approach, just focus on ensuring that your program / assignments is the goals or requirements (\u0026ldquo;just get it things working first\u0026rdquo;).\n Perfection is the enemy of good enough: When you go through your homework assignments and labs your # 1 goal is to \u0026ldquo;just get things working\u0026rdquo; and not to make it perfect the first time. Get things working first (no matter how janky it may seem) and only after you\u0026rsquo;ve got it working should you go through the process developers call refactoring, optimizing the code without changing the behavior (i.e. making it look nice).\n Use names that make sense: As a developer you are going to be frequently tasked with naming things. Naming things is hard, but my advice is to be as explicit as possible. You should always write your code as if someone else is going to read it and you want them to be able to quickly understand what’s going on. One of the best ways to accomplish that is to use names that highly contextual. For example, if you have a variable that is supposed to represent a person’s first name, then be as explicit as possible:\n  // very bad - you don't get points for making names super short var n = \u0026quot;Kiara\u0026quot; // ok but not great var name = \u0026quot;Kiara\u0026quot; // best - explicit, there's no doubt what this variable should represent var firstName = \u0026quot;Kiara\u0026quot;  "
+},
+{
+	"uri": "/categories/",
+	"title": "Categories",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/",
+	"title": "JSD",
+	"tags": [],
+	"description": "",
+	"content": " JSD - JavaScript Development "
+},
+{
+	"uri": "/tags/",
+	"title": "Tags",
+	"tags": [],
+	"description": "",
+	"content": ""
+}]
