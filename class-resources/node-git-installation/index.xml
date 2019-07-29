@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Node &amp; Git Installation on GA Javascript</title>
+    <link>/class-resources/node-git-installation/</link>
+    <description>Recent content in Node &amp; Git Installation on GA Javascript</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/class-resources/node-git-installation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mac OS X Installation Instructions</title>
+      <link>/class-resources/node-git-installation/mac-os-x/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/class-resources/node-git-installation/mac-os-x/</guid>
+      <description>Mac OS X Installation Instructions 1) Install brew
+ Brew is a package manager that we use to install various command line applications to your computer.
+ Open your terminal (Applications &amp;gt; Utilities &amp;gt; Terminal), paste the following command, and hit enter:
+ruby -e &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&amp;quot;   2) Install Git
+Git is used to track the state of your code over time. GitHub has built its platform on Git technology.</description>
+    </item>
+    
+    <item>
+      <title>Windows Installation Instructions</title>
+      <link>/class-resources/node-git-installation/windows/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/class-resources/node-git-installation/windows/</guid>
+      <description>Windows Installation Instructions 1) Install Git
+ Git is used to track the state of your code over time. GitHub has built its platform on Git technology. We will be using both Git and GitHub in this class to distribute code, submit assignments, and offer feedback.
+ Git can be downloaded and installed from this URL.
+  2) Configure Git
+ In order to interact with Git, you&amp;rsquo;ll need to first open the Git Bash utility.</description>
+    </item>
+    
+    <item>
+      <title>Linux Installation Instructions</title>
+      <link>/class-resources/node-git-installation/linux/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/class-resources/node-git-installation/linux/</guid>
+      <description>Linux Installation Instructions 1) Install Git
+ Git is a tool used to track the state of your code over time. GitHub is a company that has made a business on top of the Git technology. We will be using both Git and GitHub in this class to distribute code, submit assignments and offer feedback.
+ Git can be installed by running the following command:
+sudo apt-get install build-essential git-core curl   2) Configure Git</description>
+    </item>
+    
+  </channel>
+</rss>

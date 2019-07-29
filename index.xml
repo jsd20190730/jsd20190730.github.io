@@ -38,10 +38,10 @@ jQuery jQuery Documentation</description>
     
     <item>
       <title>Mac OS X Installation Instructions</title>
-      <link>/00-course-intro-and-tools/node-git-installation/mac-os-x/</link>
+      <link>/class-resources/node-git-installation/mac-os-x/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/00-course-intro-and-tools/node-git-installation/mac-os-x/</guid>
+      <guid>/class-resources/node-git-installation/mac-os-x/</guid>
       <description>Mac OS X Installation Instructions 1) Install brew
  Brew is a package manager that we use to install various command line applications to your computer.
  Open your terminal (Applications &amp;gt; Utilities &amp;gt; Terminal), paste the following command, and hit enter:
@@ -75,10 +75,10 @@ Git is used to track the state of your code over time. GitHub has built its plat
     
     <item>
       <title>Windows Installation Instructions</title>
-      <link>/00-course-intro-and-tools/node-git-installation/windows/</link>
+      <link>/class-resources/node-git-installation/windows/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/00-course-intro-and-tools/node-git-installation/windows/</guid>
+      <guid>/class-resources/node-git-installation/windows/</guid>
       <description>Windows Installation Instructions 1) Install Git
  Git is used to track the state of your code over time. GitHub has built its platform on Git technology. We will be using both Git and GitHub in this class to distribute code, submit assignments, and offer feedback.
  Git can be downloaded and installed from this URL.
@@ -109,10 +109,10 @@ Git is used to track the state of your code over time. GitHub has built its plat
     
     <item>
       <title>Linux Installation Instructions</title>
-      <link>/00-course-intro-and-tools/node-git-installation/linux/</link>
+      <link>/class-resources/node-git-installation/linux/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/00-course-intro-and-tools/node-git-installation/linux/</guid>
+      <guid>/class-resources/node-git-installation/linux/</guid>
       <description>Linux Installation Instructions 1) Install Git
  Git is a tool used to track the state of your code over time. GitHub is a company that has made a business on top of the Git technology. We will be using both Git and GitHub in this class to distribute code, submit assignments and offer feedback.
  Git can be installed by running the following command:
@@ -158,6 +158,19 @@ sudo apt-get install build-essential git-core curl   2) Configure Git</descripti
       <description>Recommended Folder Organization  Create a folder in your Documents folder (My Documents on Windows) called jsd
  At beginning of every class, you&amp;rsquo;ll use git (this process will be explained in the next class) to download any starter files to your jsd folder are available for that day&amp;rsquo;s lesson
  As the course progresses you&amp;rsquo;ll have a neatly organized listing of all of your work that looks similar to this:</description>
+    </item>
+    
+    <item>
+      <title>Confirm Node &amp; Git Installation</title>
+      <link>/00-course-intro-and-tools/confirm-node-git-installation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/00-course-intro-and-tools/confirm-node-git-installation/</guid>
+      <description>Confirm Node &amp;amp; Git Installation 1) Ensure that you followed the installation instructions for your Operation System found here: Node and Git Installation
+2) Open up your console / terminal
+ For Mac OS X users:
+ Open the &amp;ldquo;Terminal&amp;rdquo; app (Applications &amp;gt; Utilities &amp;gt; Terminal)  For Windows:
+ Open the &amp;ldquo;Command Prompt&amp;rdquo; application.   3) In the terminal type the following command to confirm git was successfully installed:</description>
     </item>
     
     <item>

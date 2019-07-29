@@ -24,7 +24,7 @@
   </url>
   
   <url>
-    <loc>/00-course-intro-and-tools/node-git-installation/mac-os-x/</loc>
+    <loc>/class-resources/node-git-installation/mac-os-x/</loc>
   </url>
   
   <url>
@@ -44,7 +44,7 @@
   </url>
   
   <url>
-    <loc>/00-course-intro-and-tools/node-git-installation/windows/</loc>
+    <loc>/class-resources/node-git-installation/windows/</loc>
   </url>
   
   <url>
@@ -64,7 +64,7 @@
   </url>
   
   <url>
-    <loc>/00-course-intro-and-tools/node-git-installation/linux/</loc>
+    <loc>/class-resources/node-git-installation/linux/</loc>
   </url>
   
   <url>
@@ -92,7 +92,7 @@
   </url>
   
   <url>
-    <loc>/00-course-intro-and-tools/node-git-installation/</loc>
+    <loc>/class-resources/node-git-installation/</loc>
   </url>
   
   <url>
@@ -101,6 +101,10 @@
   
   <url>
     <loc>/11-advanced-apis/</loc>
+  </url>
+  
+  <url>
+    <loc>/00-course-intro-and-tools/confirm-node-git-installation/</loc>
   </url>
   
   <url>

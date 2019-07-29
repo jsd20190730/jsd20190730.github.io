@@ -35,7 +35,7 @@
 	"content": " Lesson 02 Data Types "
 },
 {
-	"uri": "/00-course-intro-and-tools/node-git-installation/mac-os-x/",
+	"uri": "/class-resources/node-git-installation/mac-os-x/",
 	"title": "Mac OS X Installation Instructions",
 	"tags": [],
 	"description": "",
@@ -70,7 +70,7 @@
 	"content": " Lesson 04 Functions and Scope "
 },
 {
-	"uri": "/00-course-intro-and-tools/node-git-installation/windows/",
+	"uri": "/class-resources/node-git-installation/windows/",
 	"title": "Windows Installation Instructions",
 	"tags": [],
 	"description": "",
@@ -105,7 +105,7 @@
 	"content": " Lesson 06 Intro to DOM \u0026amp; jQuery "
 },
 {
-	"uri": "/00-course-intro-and-tools/node-git-installation/linux/",
+	"uri": "/class-resources/node-git-installation/linux/",
 	"title": "Linux Installation Instructions",
 	"tags": [],
 	"description": "",
@@ -154,7 +154,7 @@
 	"content": " Recommended Folder Organization  Create a folder in your Documents folder (My Documents on Windows) called jsd\n At beginning of every class, you\u0026rsquo;ll use git (this process will be explained in the next class) to download any starter files to your jsd folder are available for that day\u0026rsquo;s lesson\n As the course progresses you\u0026rsquo;ll have a neatly organized listing of all of your work that looks similar to this:\n  "
 },
 {
-	"uri": "/00-course-intro-and-tools/node-git-installation/",
+	"uri": "/class-resources/node-git-installation/",
 	"title": "Node &amp; Git Installation",
 	"tags": [],
 	"description": "",
@@ -173,6 +173,13 @@
 	"tags": [],
 	"description": "",
 	"content": " Lesson 11 Advanced APIs "
+},
+{
+	"uri": "/00-course-intro-and-tools/confirm-node-git-installation/",
+	"title": "Confirm Node &amp; Git Installation",
+	"tags": [],
+	"description": "",
+	"content": " Confirm Node \u0026amp; Git Installation 1) Ensure that you followed the installation instructions for your Operation System found here: Node and Git Installation\n2) Open up your console / terminal\n For Mac OS X users:\n Open the \u0026ldquo;Terminal\u0026rdquo; app (Applications \u0026gt; Utilities \u0026gt; Terminal)  For Windows:\n Open the \u0026ldquo;Command Prompt\u0026rdquo; application.   3) In the terminal type the following command to confirm git was successfully installed:\n $ git  4) In the terminal type the following command to confirm node was successfully installed:\n $ node  Note: type control-c to exit out of node\n"
 },
 {
 	"uri": "/12-prototypal-inheritance/",

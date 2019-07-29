@@ -77,6 +77,19 @@
     </item>
     
     <item>
+      <title>Confirm Node &amp; Git Installation</title>
+      <link>/00-course-intro-and-tools/confirm-node-git-installation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/00-course-intro-and-tools/confirm-node-git-installation/</guid>
+      <description>Confirm Node &amp;amp; Git Installation 1) Ensure that you followed the installation instructions for your Operation System found here: Node and Git Installation
+2) Open up your console / terminal
+ For Mac OS X users:
+ Open the &amp;ldquo;Terminal&amp;rdquo; app (Applications &amp;gt; Utilities &amp;gt; Terminal)  For Windows:
+ Open the &amp;ldquo;Command Prompt&amp;rdquo; application.   3) In the terminal type the following command to confirm git was successfully installed:</description>
+    </item>
+    
+    <item>
       <title>What is Programming?</title>
       <link>/00-course-intro-and-tools/what-is-programming/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

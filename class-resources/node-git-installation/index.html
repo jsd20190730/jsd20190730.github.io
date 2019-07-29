@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Course Materials :: GA Javascript</title>
+    <title>Node &amp; Git Installation :: GA Javascript</title>
 
     
     <link href="/css/nucleus.css?1564424333" rel="stylesheet">
@@ -35,7 +35,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/course-materials/">
+  <body class="" data-url="/class-resources/node-git-installation/">
     <nav id="sidebar" class="">
 
 
@@ -664,8 +664,8 @@
   
     
     <li data-nav-id="/course-materials/" title="Course Materials" class="dd-item
-        parent
-        active
+        
+        
         
         ">
       <a href="/course-materials/">
@@ -730,7 +730,7 @@
   
     
     <li data-nav-id="/class-resources/" title="Class Resources" class="dd-item
-        
+        parent
         
         
         ">
@@ -833,8 +833,8 @@
   
     
     <li data-nav-id="/class-resources/node-git-installation/" title="Node &amp; Git Installation" class="dd-item
-        
-        
+        parent
+        active
         
         ">
       <a href="/class-resources/node-git-installation/">
@@ -973,6 +973,8 @@
                         </a>
                     </span>
                   
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
                   <span class="links">
                  
                  
@@ -983,7 +985,13 @@
             
           
           
-            <a href='/'>JSD</a> > Course Materials
+            
+            
+          
+          
+            <a href='/'>JSD</a> > <a href='/class-resources/'>Class Resources</a> > Node & Git Installation
+          
+         
           
          
           
@@ -992,6 +1000,24 @@
                   </span>
                 </div>
                 
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#node-git-installation">Node &amp; Git Installation</a></li>
+<li><a href="#helpful-debugging-tips">Helpful Debugging Tips</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
               </div>
             </div>
             
@@ -999,9 +1025,12 @@
         
         </div>
         
-          <div id="chapter">
-        
         <div id="body-inner">
+          
+            <h1>
+              
+              Node &amp; Git Installation
+            </h1>
           
 
         
@@ -1011,7 +1040,56 @@
 
 	
 
-<h1 id="course-materials">Course Materials</h1>
+<h3 id="node-git-installation">Node &amp; Git Installation</h3>
+
+<ul>
+<li><p>You will need to install certain tools that will be used throughout the course. The installation instructions vary depending on whether you have a Mac, Windows, or Linux machine.</p></li>
+
+<li><p>Choose the installation instructions specific to your OS below and follow the step-by-step instructions:</p>
+
+<ul>
+<li><p><a href="/class-resources/node-git-installation/mac-os-x/">Mac OS X</a></p></li>
+
+<li><p><a href="/class-resources/node-git-installation/windows/">Windows</a></p></li>
+
+<li><p><a href="/class-resources/node-git-installation/linux/">Linux</a></p></li>
+</ul></li>
+</ul>
+
+<p>You’re all set! Test it out with <code>atom</code> and ask a member of the instructional team to verify that the installation was successful.</p>
+
+<hr />
+
+<h3 id="helpful-debugging-tips">Helpful Debugging Tips</h3>
+
+<p><strong>Error installing due to permissions</strong></p>
+
+<p>Permissions issues are common when installing programs on the terminal. In order to install command line utilities, you need to be signed into a user account on your computer with administrator-level rights. If you have trouble with this, please ask a member of the instructional team for help.</p>
+
+<p><strong>Google is your friend</strong></p>
+
+<p>Even experienced programmers occasionally need to look up error messages on Google. If you experience an error, it’s likely that someone else has experienced the error, as well. To find the fix, copy and paste the error message into Google, but remove content specific to your computer to ensure the accuracy of your search. You will most likely find a reference to your specific error. StackOverflow is a trustworthy reference.</p>
+
+<blockquote>
+<p><strong>Common Issues and Fixes:</strong></p>
+
+<p>We recommend the following remedies to issues that commonly arise during the installation of command line utilities:</p>
+
+<ul>
+<li><p>Mac users may run into the problem of an outdated version of Git installed with Xcode being given precedence in the terminal. If you experience this issue, you’ll need to adjust your shell path by following the instructions under &ldquo;Trumping Xcode&rsquo;s Older Git&rdquo; <a href="http://coolestguidesontheplanet.com/install-update-latest-version-git-mac-osx-10-9-mavericks/">in this article</a>.</p></li>
+
+<li><p>Mac users running OS 10.11 or later may need to <a href="http://osxdaily.com/2015/10/05/disable-rootless-system-integrity-protection-mac-os-x/">disable the System Integrity Protection</a> on their machine before installing certain command line utilities.</p></li>
+
+<li><p>Students experiencing an EACCES error should change directory permissions to install Node and npm without the need to use sudo:
+<code>$ sudo chown -R $(whoami) /usr/local/lib/node_modules</code></p></li>
+
+<li><p>Students with Homebrew installed on their machines should run <code>brew update</code> in order to get the latest version of Homebrew.</p></li>
+
+<li><p>Students who need to update their installations of npm can run <code>npm install -g npm</code>.</p></li>
+
+<li><p>Students with an existing, outdated installation of Node can update their install by following the directions above (i.e., using the package installer).</p></li>
+</ul>
+</blockquote>
 
 
 
@@ -1021,8 +1099,6 @@
 	
 </footer>
 
-        
-            </div> 
         
         </div> 
         
@@ -1473,26 +1549,6 @@
             
                 
                     
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
                 
                 
 
@@ -1530,21 +1586,6 @@
 
                     
                     
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
                     
 
                     
@@ -1555,6 +1596,25 @@
             
             
                 
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
                     
                 
                 
@@ -1612,10 +1672,30 @@
                     
 
                     
+            
+        
+                    
                         
             
             
                 
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
                     
                 
                 
@@ -1691,10 +1771,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/15-deploying-your-app/" title="Deploying Your App"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/class-resources/atom-themes/" title="Working with Atom Themes"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/homework-assignments/" title="Homework Assignments" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/class-resources/node-git-installation/mac-os-x/" title="Mac OS X Installation Instructions" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
