@@ -4,37 +4,157 @@
   
   <url>
     <loc>/00-course-intro-and-tools/</loc>
-    <lastmod>2017-01-22T18:04:24-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/00-course-intro-and-tools/objectives/</loc>
+    <loc>/01-command-line-javascript/</loc>
+  </url>
+  
+  <url>
+    <loc>/class-resources/documentation/</loc>
+  </url>
+  
+  <url>
+    <loc>/class-resources/keyboard-shortcuts/</loc>
     <lastmod>2017-01-22T18:05:18-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/00-course-intro-and-tools/what-is-frontend-development/</loc>
-    <lastmod>2019-03-16T19:57:51-04:00</lastmod>
+    <loc>/02-data-types/</loc>
+  </url>
+  
+  <url>
+    <loc>/00-course-intro-and-tools/node-git-installation/mac-os-x/</loc>
+  </url>
+  
+  <url>
+    <loc>/00-course-intro-and-tools/objectives/</loc>
+  </url>
+  
+  <url>
+    <loc>/03-conditionals-and-loops/</loc>
+  </url>
+  
+  <url>
+    <loc>/class-resources/atom-editor-settings/</loc>
+  </url>
+  
+  <url>
+    <loc>/04-functions-and-scope/</loc>
+  </url>
+  
+  <url>
+    <loc>/00-course-intro-and-tools/node-git-installation/windows/</loc>
+  </url>
+  
+  <url>
+    <loc>/class-resources/atom-themes/</loc>
+  </url>
+  
+  <url>
+    <loc>/05-objects-and-json/</loc>
   </url>
   
   <url>
     <loc>/00-course-intro-and-tools/class-logistics-materials/</loc>
-    <lastmod>2019-03-16T10:04:07-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/06-dom-and-jquery/</loc>
+  </url>
+  
+  <url>
+    <loc>/00-course-intro-and-tools/node-git-installation/linux/</loc>
+  </url>
+  
+  <url>
+    <loc>/00-course-intro-and-tools/course-structure/</loc>
+  </url>
+  
+  <url>
+    <loc>/07-dom-and-jquery-continued/</loc>
   </url>
   
   <url>
     <loc>/00-course-intro-and-tools/tools/</loc>
-    <lastmod>2019-03-16T10:03:50-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/08-ajax-and-apis/</loc>
+  </url>
+  
+  <url>
+    <loc>/09-asynchronous-js-and-callbacks/</loc>
   </url>
   
   <url>
     <loc>/00-course-intro-and-tools/folder-structure/</loc>
-    <lastmod>2019-03-16T10:03:59-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/00-course-intro-and-tools/keys-to-success/</loc>
+    <loc>/00-course-intro-and-tools/node-git-installation/</loc>
+  </url>
+  
+  <url>
+    <loc>/10-project-build-a-slackbot/</loc>
+  </url>
+  
+  <url>
+    <loc>/11-advanced-apis/</loc>
+  </url>
+  
+  <url>
+    <loc>/12-prototypal-inheritance/</loc>
+  </url>
+  
+  <url>
+    <loc>/00-course-intro-and-tools/what-is-programming/</loc>
+  </url>
+  
+  <url>
+    <loc>/13-closures-and-this/</loc>
+  </url>
+  
+  <url>
+    <loc>/class-resources/keys-to-success/</loc>
     <lastmod>2019-03-16T17:11:17-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/14-intro-to-crud-and-firebase/</loc>
+  </url>
+  
+  <url>
+    <loc>/00-course-intro-and-tools/what-is-javascript/</loc>
+  </url>
+  
+  <url>
+    <loc>/15-deploying-your-app/</loc>
+  </url>
+  
+  <url>
+    <loc>/00-course-intro-and-tools/pseudocode/</loc>
+  </url>
+  
+  <url>
+    <loc>/00-course-intro-and-tools/class-exercise-smart-thermostat-pseudocode/</loc>
+  </url>
+  
+  <url>
+    <loc>/course-materials/</loc>
+  </url>
+  
+  <url>
+    <loc>/homework-assignments/</loc>
+  </url>
+  
+  <url>
+    <loc>/final-projects/</loc>
+  </url>
+  
+  <url>
+    <loc>/class-resources/</loc>
+    <lastmod>2017-01-22T18:05:18-05:00</lastmod>
   </url>
   
   <url>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Objects and JSON on GA Javascript</title>
+    <link>/05-objects-and-json/</link>
+    <description>Recent content in Objects and JSON on GA Javascript</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/05-objects-and-json/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>

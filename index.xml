@@ -12,44 +12,131 @@
     
     
     <item>
-      <title>Objectives</title>
-      <link>/00-course-intro-and-tools/objectives/</link>
+      <title>Documentation</title>
+      <link>/class-resources/documentation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/class-resources/documentation/</guid>
+      <description>Referencing documentation is a core task for developers.
+ Documentation communicates how something (in our case programming languages, software libraries) works.
+ Good documentation reduces implementation time and increases predictability of our software programs.
+  We will be referring to the following list of the documentation resources frequently throughout the course:
+HTML MDN&amp;rsquo;s HTML Reference
+CSS MDN&amp;rsquo;s CSS Reference
+Javascript MDN&amp;rsquo;s Javascript Reference
+jQuery jQuery Documentation</description>
+    </item>
+    
+    <item>
+      <title>Keyboard Shortcuts</title>
+      <link>/class-resources/keyboard-shortcuts/</link>
       <pubDate>Sun, 22 Jan 2017 18:05:18 -0500</pubDate>
       
+      <guid>/class-resources/keyboard-shortcuts/</guid>
+      <description>General Window Management &amp;amp; Browser Shortcuts    Action Mac Windows     Open Chrome Developer Tools cmd+option + i F2 or ctrl + shift + i   Refresh page cmd + R ctrl + R   Switch between applications cmd + tab alt + tab   Switch between windows in the same application cmd + ~     Atom Shortcuts Files, Windows, Tabs Management    Command macOS Windows Linux Description     Open Settings Menu cmd+, ctrl+, ctrl+, Opens the Atom&amp;rsquo;s settings menu   Open File (Fuzzy) cmd+p or cmd+t ctrl+p or ctrl+t ctrl+p or ctrl+t Opens the Fuzzy Finder   Browse Open Files cmd+b ctrl+b ctrl+b Browse tabs within the window   Previous Tab alt+cmd+left ctrl+pageup ctrl+pageup Cycles left through open tabs (in the active pane)   Next Tab alt+cmd+right ctrl+pagedown ctrl+pagedown Cycles right through open tabs (in the active page)   Toggle Tree View cmd+\ ctrl+\ ctrl+\ Toggles Atom&amp;rsquo;s file Tree View   Show Available Snippets alt+shift+s alt+shift+s alt+shift+s Shows the snippets available to Atom   Save cmd+s ctrl+s ctrl+s Saves the currently active file   Save As shift+cmd+s ctrl+shift+s ctrl+shift+s Saves the currently active file under a different name   Save All alt+cmd+s   Saves all changed files   Close Tab cmd+w ctrl+w ctrl+w Closes the currently active tab   Close Window shift+cmd+w ctrl+shift+w ctrl+shift+w Closes the currently active editor window   Split Window cmd+k up/down/left/right ctrl+k up/down/left/right ctrl+k up/down/left/right Split the currently active tab in one of the four directions   Focus Pane cmd+k cmd+up/down/left/right ctrl+k ctrl+up/down/left/right ctrl+k ctrl+up/down/left/right Move the focus to the pane in one of the four directions   Toggle full screen ctrl+cmd+f F11 F11 Toggle full screen window    Editing    Command macOS Windows Linux Description     Duplicate Lines shift+cmd+d ctrl+shift+d ctrl+shift+d Duplicates the line of the current cursor position and creates a new line under it with the same contents   Delete Line ctrl+shift+k ctrl+shift+k ctrl+shift+k Deletes the current line   Move Line Up ctrl+cmd+up ctrl+up ctrl+up Moves the contents of the current cursor position up one line.</description>
+    </item>
+    
+    <item>
+      <title>Mac OS X Installation Instructions</title>
+      <link>/00-course-intro-and-tools/node-git-installation/mac-os-x/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/00-course-intro-and-tools/node-git-installation/mac-os-x/</guid>
+      <description>Mac OS X Installation Instructions 1) Install brew
+ Brew is a package manager that we use to install various command line applications to your computer.
+ Open your terminal (Applications &amp;gt; Utilities &amp;gt; Terminal), paste the following command, and hit enter:
+ruby -e &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&amp;quot;   2) Install Git
+Git is used to track the state of your code over time. GitHub has built its platform on Git technology.</description>
+    </item>
+    
+    <item>
+      <title>Objectives</title>
+      <link>/00-course-intro-and-tools/objectives/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
       <guid>/00-course-intro-and-tools/objectives/</guid>
-      <description> Understand what the term &amp;ldquo;front-end Development&amp;rdquo; means
+      <description> Cover class logistics, structure &amp;amp; keys to success
  Introduce tools you will be using throughout the class
- Cover class logistics, structure &amp;amp; keys to success
+ Discuss the benchmarks for assessments in terms of class participation, homework, and unit projects
+ Confirm installation and configuration of Node, Git, and other command line tools
+ Practice programmatic thinking by writing pseudocode
   </description>
     </item>
     
     <item>
-      <title>What Is front-end Development?</title>
-      <link>/00-course-intro-and-tools/what-is-frontend-development/</link>
-      <pubDate>Sat, 16 Mar 2019 19:57:51 -0400</pubDate>
+      <title>Recommended Atom Editor Settings</title>
+      <link>/class-resources/atom-editor-settings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/00-course-intro-and-tools/what-is-frontend-development/</guid>
-      <description>Overview  Front-end web development, also known as client-side development is the practice of producing HTML, CSS and JavaScript for a website or Web Application so that a user can see and interact with them directly.  What are the primary technologies associated with front-end development?  HTML
- CSS
- Javascript
-  How is front-end development differ from back-end development?  Backend development, is also known as server-side development and involves storing data on behalf of users or customers</description>
+      <guid>/class-resources/atom-editor-settings/</guid>
+      <description>All of the settings below can be accessed using the following steps:
+ Mac: cmd + , -&amp;gt; Editor PC: ctrl + , -&amp;gt; Editor  Setting indentation levels / default tab-size During our course we will be using a set indentation level of 2 spaces (1 indentation level = 2 spaces). Atom makes it easy conform to this approach by setting our tab to a set level of indentation.</description>
+    </item>
+    
+    <item>
+      <title>Windows Installation Instructions</title>
+      <link>/00-course-intro-and-tools/node-git-installation/windows/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/00-course-intro-and-tools/node-git-installation/windows/</guid>
+      <description>Windows Installation Instructions 1) Install Git
+ Git is used to track the state of your code over time. GitHub has built its platform on Git technology. We will be using both Git and GitHub in this class to distribute code, submit assignments, and offer feedback.
+ Git can be downloaded and installed from this URL.
+  2) Configure Git
+ In order to interact with Git, you&amp;rsquo;ll need to first open the Git Bash utility.</description>
+    </item>
+    
+    <item>
+      <title>Working with Atom Themes</title>
+      <link>/class-resources/atom-themes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/class-resources/atom-themes/</guid>
+      <description>Changing Themes Atom allows you to easily switch between your installed themes by doing the following:
+ Opening Atom Settings (mac: cmd + , | pc: ctrl + ,) Select Themes in the left-hand menu Select the dropdown menu labeled Syntax Themes Choose one of the installed themes listed in the dropdown menu  Atom comes pre-installed with a set of themes. See that section below to add new themes to Atom</description>
     </item>
     
     <item>
       <title>Class Logistics &amp; Materials</title>
       <link>/00-course-intro-and-tools/class-logistics-materials/</link>
-      <pubDate>Sat, 16 Mar 2019 10:04:07 -0400</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/00-course-intro-and-tools/class-logistics-materials/</guid>
-      <description>Class Logistics  Class Schedule: Monday &amp;amp; Wednesdays, 6:30pm - 9:30pm, from Mar 18th through May 22nd
+      <description>Class Logistics  Class Schedule: Tuesdays &amp;amp; Thursdays, 6:30pm - 9:30pm, from Jul 30th through Oct 3rd
  Break: 15 minute break during the middle of class from 7:45pm to 8:00pm (subject to change depending on flow of the class, but you&amp;rsquo;ll always get a 15 min break)
  Class Materials: Most lessons will include a set of files that you&amp;rsquo;ll work with during that lesson, we&amp;rsquo;ll refer to these files as the &amp;ldquo;lesson files&amp;rdquo;</description>
     </item>
     
     <item>
+      <title>Linux Installation Instructions</title>
+      <link>/00-course-intro-and-tools/node-git-installation/linux/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/00-course-intro-and-tools/node-git-installation/linux/</guid>
+      <description>Linux Installation Instructions 1) Install Git
+ Git is a tool used to track the state of your code over time. GitHub is a company that has made a business on top of the Git technology. We will be using both Git and GitHub in this class to distribute code, submit assignments and offer feedback.
+ Git can be installed by running the following command:
+sudo apt-get install build-essential git-core curl   2) Configure Git</description>
+    </item>
+    
+    <item>
+      <title>Course Structure</title>
+      <link>/00-course-intro-and-tools/course-structure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/00-course-intro-and-tools/course-structure/</guid>
+      <description>Overview  The course has 20 classes
+ What you&amp;rsquo;ll learn:
+ Fundamentals of JavaScript: including programming concepts such as data types, variables, and loops—the core concepts of programming
+ Object Oriented JavaScript (OOP) and APIs: Learn how JavaScript can be used to exchange information and functionality within our programs
+ Practical applications of JavaScript: Learn how to JavaScript can be used to manipulate websites and applications
+  3 Projects</description>
+    </item>
+    
+    <item>
       <title>Course Tools</title>
       <link>/00-course-intro-and-tools/tools/</link>
-      <pubDate>Sat, 16 Mar 2019 10:03:50 -0400</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/00-course-intro-and-tools/tools/</guid>
       <description>Text Editor:
@@ -65,24 +152,76 @@
     <item>
       <title>Folder Organization</title>
       <link>/00-course-intro-and-tools/folder-structure/</link>
-      <pubDate>Sat, 16 Mar 2019 10:03:59 -0400</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/00-course-intro-and-tools/folder-structure/</guid>
-      <description> Recommended Folder Organization  Create a folder in your Documents (My Documents on Windows) folder called FEWD
- At beginning of every class, download and unzip (mac instructions | windows instructions) the &amp;ldquo;Lesson Files&amp;rdquo; for that lesson directly into your FEWD folder
-  While the lesson files will be hosted on Dropbox, you do not need to have a dropbox account to download the files.
-  As the course progresses you&amp;rsquo;ll have a neatly organized listing of all of your work that looks similar to this:  </description>
+      <description>Recommended Folder Organization  Create a folder in your Documents folder (My Documents on Windows) called jsd
+ At beginning of every class, you&amp;rsquo;ll use git (this process will be explained in the next class) to download any starter files to your jsd folder are available for that day&amp;rsquo;s lesson
+ As the course progresses you&amp;rsquo;ll have a neatly organized listing of all of your work that looks similar to this:</description>
+    </item>
+    
+    <item>
+      <title>What is Programming?</title>
+      <link>/00-course-intro-and-tools/what-is-programming/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/00-course-intro-and-tools/what-is-programming/</guid>
+      <description> What is Programming?  List of instructions that a computer needs in order to complete a task
+ Instructions are provided in a programming language that the computer understands
+ These set of instructions are commonly referred as source code or a program
+ There are many programming languages available, during this course we will be learning JavaScript
+  </description>
     </item>
     
     <item>
       <title>Keys to Success</title>
-      <link>/00-course-intro-and-tools/keys-to-success/</link>
+      <link>/class-resources/keys-to-success/</link>
       <pubDate>Sat, 16 Mar 2019 17:11:17 -0400</pubDate>
       
-      <guid>/00-course-intro-and-tools/keys-to-success/</guid>
+      <guid>/class-resources/keys-to-success/</guid>
       <description>Do your homework: More you practice the concepts learned in class, the faster you&amp;rsquo;ll pick them up
  Don&amp;rsquo;t try to memorize anything: You&amp;rsquo;ll memorize things naturally through the act of doing things over and over again. Besides, if you don&amp;rsquo;t remember something just look it up (i.e. google).
  Work smarter not harder: In additional to looking things up, developers are really good at referencing past code that they&amp;rsquo;ve used in the past to solve problems they encounter in the present.</description>
+    </item>
+    
+    <item>
+      <title>What is Javascript?</title>
+      <link>/00-course-intro-and-tools/what-is-javascript/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/00-course-intro-and-tools/what-is-javascript/</guid>
+      <description>What is JavaScript?  programming language created in 1995 by Netscape (now Mozilla)
+ It was created in 10 days
+ Not the same as Java
+  What does JavaScript do?  Adds interactivity to your websites
+ Makes web based software feel more like desktop software
+ Can be used to save data to a database or to create desktop applications
+ Improves overall user experience of web-based applications</description>
+    </item>
+    
+    <item>
+      <title>Pseudocode</title>
+      <link>/00-course-intro-and-tools/pseudocode/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/00-course-intro-and-tools/pseudocode/</guid>
+      <description> Pseudocode  Process of writing a program without using the syntax of a programming language
+ Mixture of natural language and high-level programming concepts
+ There is no standard way to write pseudocode, use langauge that can be understood by technical and non-technical people
+ Use pseudocode as an &amp;ldquo;outline&amp;rdquo; for your real code
+  </description>
+    </item>
+    
+    <item>
+      <title>Class Exercise - Smart Thermostat Pseudocode</title>
+      <link>/00-course-intro-and-tools/class-exercise-smart-thermostat-pseudocode/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/00-course-intro-and-tools/class-exercise-smart-thermostat-pseudocode/</guid>
+      <description> Class Exercise: Thermostat logic in pseudocode We&amp;rsquo;re going to use pseudocode to describe the basic functionality of a smart thermostat
+ As as class we are going to write some pseudocode for a program for a smart thermostat
+ We’ll focus on coming up with the logic that will help the thermostat know when to turn the heat on and off
+  </description>
     </item>
     
   </channel>

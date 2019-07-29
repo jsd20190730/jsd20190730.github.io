@@ -7,46 +7,263 @@
 	"content": " Lesson 00 Class Introduction \u0026amp; Tools "
 },
 {
+	"uri": "/01-command-line-javascript/",
+	"title": "Command Line JavaScript",
+	"tags": [],
+	"description": "",
+	"content": " Lesson 01 Command Line JavaScript "
+},
+{
+	"uri": "/class-resources/documentation/",
+	"title": "Documentation",
+	"tags": [],
+	"description": "",
+	"content": "  Referencing documentation is a core task for developers.\n Documentation communicates how something (in our case programming languages, software libraries) works.\n Good documentation reduces implementation time and increases predictability of our software programs.\n  We will be referring to the following list of the documentation resources frequently throughout the course:\nHTML MDN\u0026rsquo;s HTML Reference\nCSS MDN\u0026rsquo;s CSS Reference\nJavascript MDN\u0026rsquo;s Javascript Reference\njQuery jQuery Documentation\n"
+},
+{
+	"uri": "/class-resources/keyboard-shortcuts/",
+	"title": "Keyboard Shortcuts",
+	"tags": [],
+	"description": "",
+	"content": " General Window Management \u0026amp; Browser Shortcuts    Action Mac Windows     Open Chrome Developer Tools cmd+option + i F2 or ctrl + shift + i   Refresh page cmd + R ctrl + R   Switch between applications cmd + tab alt + tab   Switch between windows in the same application cmd + ~     Atom Shortcuts Files, Windows, Tabs Management    Command macOS Windows Linux Description     Open Settings Menu cmd+, ctrl+, ctrl+, Opens the Atom\u0026rsquo;s settings menu   Open File (Fuzzy) cmd+p or cmd+t ctrl+p or ctrl+t ctrl+p or ctrl+t Opens the Fuzzy Finder   Browse Open Files cmd+b ctrl+b ctrl+b Browse tabs within the window   Previous Tab alt+cmd+left ctrl+pageup ctrl+pageup Cycles left through open tabs (in the active pane)   Next Tab alt+cmd+right ctrl+pagedown ctrl+pagedown Cycles right through open tabs (in the active page)   Toggle Tree View cmd+\\ ctrl+\\ ctrl+\\ Toggles Atom\u0026rsquo;s file Tree View   Show Available Snippets alt+shift+s alt+shift+s alt+shift+s Shows the snippets available to Atom   Save cmd+s ctrl+s ctrl+s Saves the currently active file   Save As shift+cmd+s ctrl+shift+s ctrl+shift+s Saves the currently active file under a different name   Save All alt+cmd+s   Saves all changed files   Close Tab cmd+w ctrl+w ctrl+w Closes the currently active tab   Close Window shift+cmd+w ctrl+shift+w ctrl+shift+w Closes the currently active editor window   Split Window cmd+k up/down/left/right ctrl+k up/down/left/right ctrl+k up/down/left/right Split the currently active tab in one of the four directions   Focus Pane cmd+k cmd+up/down/left/right ctrl+k ctrl+up/down/left/right ctrl+k ctrl+up/down/left/right Move the focus to the pane in one of the four directions   Toggle full screen ctrl+cmd+f F11 F11 Toggle full screen window    Editing    Command macOS Windows Linux Description     Duplicate Lines shift+cmd+d ctrl+shift+d ctrl+shift+d Duplicates the line of the current cursor position and creates a new line under it with the same contents   Delete Line ctrl+shift+k ctrl+shift+k ctrl+shift+k Deletes the current line   Move Line Up ctrl+cmd+up ctrl+up ctrl+up Moves the contents of the current cursor position up one line. If there is a line above with content, the current lines content will swap with the one above it.   Move Line Down ctrl+cmd+down ctrl+down ctrl+down Moves the contents of the current cursor position down one line. If there is a line below with content, the line\u0026rsquo;s content will swap with the one below it.   Find/Replace cmd+f ctrl+f ctrl+f Opens up the Find/Replace panel   Find Next cmd+g F3 F3 Toggles forward through the results of the current buffer in the file while the Find/Replace panel is active   Find Previous shift+cmd+g shift+F3 shift+F3 Toggles backward through the results of the current buffer in the file while the Find/Replace panel is active   Find in Project shift+cmd+f ctrl+shift+f ctrl+shift+f Opens the Find in Project Panel   Go To Line ctrl+g ctrl+g ctrl+g Opens the Go To Line panel   Go To Matching Bracket ctrl+m ctrl+m ctrl+m The cursor goes to the matching top bracket that the cursor is ecapsulated in   Select Line cmd+l ctrl+l ctrl+l Selects the entire line the cursor\u0026rsquo;s current position is in   Toggle Comment cmd+/ ctrl+/ ctrl+/ Toggles the selected text into a comment of the current grammar   Column Selection ctrl+shift+up/down ctrl+alt+up/down shift+alt+up/down Allows to select multiple rows, where the same edit will be applied   Select Same Words cmd+d ctrl+d ctrl+d If you select a word, and then hit the key combo for this command, Atom will select the next same word for you. Then you can either type directly (which will replace the old words) or use left or right arrow to append things.   Undo Selection cmd+u ctrl+u ctrl+u This undoes the previous selection, like from Select Same Words.   Select All The Same Words At Once cmd+ctrl+g alt+f3 alt+f3 This shortcut is similar to cmd+d/ctrl+d but it selects all the matching words at once.    "
+},
+{
+	"uri": "/02-data-types/",
+	"title": "Data Types",
+	"tags": [],
+	"description": "",
+	"content": " Lesson 02 Data Types "
+},
+{
+	"uri": "/00-course-intro-and-tools/node-git-installation/mac-os-x/",
+	"title": "Mac OS X Installation Instructions",
+	"tags": [],
+	"description": "",
+	"content": " Mac OS X Installation Instructions 1) Install brew\n Brew is a package manager that we use to install various command line applications to your computer.\n Open your terminal (Applications \u0026gt; Utilities \u0026gt; Terminal), paste the following command, and hit enter:\nruby -e \u0026quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)\u0026quot;   2) Install Git\nGit is used to track the state of your code over time. GitHub has built its platform on Git technology. We will be using both Git and GitHub to distribute code, submit assignments, and offer feedback. Use the following command to install Git:\n```bash brew install git ```  3) Configure Git\n Copy and paste the following two commands (separately) into your terminal. Replace the name and email address values with your own.\ngit config --global user.name \u0026quot;Steve Jobs\u0026quot; git config --global user.email \u0026quot;steve@apple.com\u0026quot;   4) Install Node\n Refer to the package installer on Node’s website  5) Ensure NPM is updated\nNode has a handy package manager, which we will using frequently. It comes with Node, but NPM is updated more frequently; you will always need to have the most up-to-date version.\n```bash npm install npm -g ```  "
+},
+{
 	"uri": "/00-course-intro-and-tools/objectives/",
 	"title": "Objectives",
 	"tags": [],
 	"description": "",
-	"content": " Understand what the term \u0026ldquo;front-end Development\u0026rdquo; means\n Introduce tools you will be using throughout the class\n Cover class logistics, structure \u0026amp; keys to success\n  "
+	"content": " Cover class logistics, structure \u0026amp; keys to success\n Introduce tools you will be using throughout the class\n Discuss the benchmarks for assessments in terms of class participation, homework, and unit projects\n Confirm installation and configuration of Node, Git, and other command line tools\n Practice programmatic thinking by writing pseudocode\n  "
 },
 {
-	"uri": "/00-course-intro-and-tools/what-is-frontend-development/",
-	"title": "What Is front-end Development?",
+	"uri": "/03-conditionals-and-loops/",
+	"title": "Conditionals and Loops",
 	"tags": [],
 	"description": "",
-	"content": " Overview  Front-end web development, also known as client-side development is the practice of producing HTML, CSS and JavaScript for a website or Web Application so that a user can see and interact with them directly.  What are the primary technologies associated with front-end development?  HTML\n CSS\n Javascript\n  How is front-end development differ from back-end development?  Backend development, is also known as server-side development and involves storing data on behalf of users or customers\n Example: Amazon, stores information about all it\u0026rsquo;s customers\u0026rsquo; order history in a database  Also where a company\u0026rsquo;s business logic lives\n Example: Amazon will only qualify non-prime customers for free shipping if they spend over $50  The programming languages used for back-end development includes (but is not limited to) Ruby, Python, Java, Go and Javascript (using a technology called NodeJS)\n  "
+	"content": " Lesson 03 Conditionals and Loops "
+},
+{
+	"uri": "/class-resources/atom-editor-settings/",
+	"title": "Recommended Atom Editor Settings",
+	"tags": [],
+	"description": "",
+	"content": " All of the settings below can be accessed using the following steps:\n Mac: cmd + , -\u0026gt; Editor PC: ctrl + , -\u0026gt; Editor  Setting indentation levels / default tab-size During our course we will be using a set indentation level of 2 spaces (1 indentation level = 2 spaces). Atom makes it easy conform to this approach by setting our tab to a set level of indentation.\nAfter updating this setting, pressing the tab key will represent one level of indentation which will translate to 2 spaces.\nDisplaying indentation guides Displaying the indentation guide provides a visual way of helping you ensure your indentation levels are correct\nSetting wordwrap Wordwrap ensures that long lines in your code are automatically wrapped to the next line. This improves readability of your code.\n"
+},
+{
+	"uri": "/04-functions-and-scope/",
+	"title": "Functions and Scope",
+	"tags": [],
+	"description": "",
+	"content": " Lesson 04 Functions and Scope "
+},
+{
+	"uri": "/00-course-intro-and-tools/node-git-installation/windows/",
+	"title": "Windows Installation Instructions",
+	"tags": [],
+	"description": "",
+	"content": " Windows Installation Instructions 1) Install Git\n Git is used to track the state of your code over time. GitHub has built its platform on Git technology. We will be using both Git and GitHub in this class to distribute code, submit assignments, and offer feedback.\n Git can be downloaded and installed from this URL.\n  2) Configure Git\n In order to interact with Git, you\u0026rsquo;ll need to first open the Git Bash utility. A quick way to access this terminal is by right clicking your desktop and choosing \u0026ldquo;Git Bash\u0026rdquo;.\n Copy and paste the following two commands (separately) into your terminal. Replace the name and email address values with your own.\ngit config --global user.name \u0026quot;Steve Jobs\u0026quot; git config --global user.email \u0026quot;steve@apple.com\u0026quot;   3) Install Node\n Refer to the package installer on Node’s website  4) Ensure NPM is updated\nNode has a handy package manager, which we will using frequently. It comes with Node, but NPM is updated more frequently; you will always need to have the most up-to-date version.\n```bash npm install npm -g ```  "
+},
+{
+	"uri": "/class-resources/atom-themes/",
+	"title": "Working with Atom Themes",
+	"tags": [],
+	"description": "",
+	"content": " Changing Themes Atom allows you to easily switch between your installed themes by doing the following:\n Opening Atom Settings (mac: cmd + , | pc: ctrl + ,) Select Themes in the left-hand menu Select the dropdown menu labeled Syntax Themes Choose one of the installed themes listed in the dropdown menu  Atom comes pre-installed with a set of themes. See that section below to add new themes to Atom\n Installing New Themes Atom allows you to install themes created by developers who participate in Atom\u0026rsquo;s vibrant community. Atom has a dedication section on their official site for the discovery of these themes (Atom Themes)\nHere are steps involved in adding a new Atom theme:\n Visit https://atom.io/themes Find a theme that you\u0026rsquo;d like to install Press the install button on the theme\u0026rsquo;s page An alert will be displayed asking you if you would like to open Atom - select the option labeled Open Atom While in Atom Settings, press the button labeled Install to install the new theme Select Themes in the left-hand menu of Atom Settings Select the dropdown menu labeled Syntax Themes Select the newly installed theme from the dropdown menu to apply the new theme to Atom  Here\u0026rsquo;s an example of the installation of an Atom theme named Atom Material\n"
+},
+{
+	"uri": "/05-objects-and-json/",
+	"title": "Objects and JSON",
+	"tags": [],
+	"description": "",
+	"content": " Lesson 05 Objects and JSON "
 },
 {
 	"uri": "/00-course-intro-and-tools/class-logistics-materials/",
 	"title": "Class Logistics &amp; Materials",
 	"tags": [],
 	"description": "",
-	"content": " Class Logistics  Class Schedule: Monday \u0026amp; Wednesdays, 6:30pm - 9:30pm, from Mar 18th through May 22nd\n Break: 15 minute break during the middle of class from 7:45pm to 8:00pm (subject to change depending on flow of the class, but you\u0026rsquo;ll always get a 15 min break)\n Class Materials: Most lessons will include a set of files that you\u0026rsquo;ll work with during that lesson, we\u0026rsquo;ll refer to these files as the \u0026ldquo;lesson files\u0026rdquo;\n Homework: Homework assignments will be assigned at the end of class on Wednesdays and assignments will be due the following Wednesday.\n Reading Assignment / Tutorials: Reading Assignments and Tutorials may be assigned after a class. They are usual short in nature and are meant to help increase your understanding of upcoming or past concepts. If assigned, you will be expected to complete them before the next class.\n Labs: Labs are in-class assignments completed at the end of class; they can be done completed individually or in groups.\n Code Alongs: Small projects or exercises that the instructor and the class complete together\n Exercises: Short in-class exercises that are completed either individually\n Final Project: Pick something your passionate about, only requirement will be the use of HTML, CSS and (some) Javascript\n  "
+	"content": " Class Logistics  Class Schedule: Tuesdays \u0026amp; Thursdays, 6:30pm - 9:30pm, from Jul 30th through Oct 3rd\n Break: 15 minute break during the middle of class from 7:45pm to 8:00pm (subject to change depending on flow of the class, but you\u0026rsquo;ll always get a 15 min break)\n Class Materials: Most lessons will include a set of files that you\u0026rsquo;ll work with during that lesson, we\u0026rsquo;ll refer to these files as the \u0026ldquo;lesson files\u0026rdquo;\n Homework: Homework assignments will be assigned at the end of class on Thursdays and assignments will be due the following Thursdays\n Reading Assignment / Tutorials: Reading Assignments and Tutorials may be assigned after a class. They are usual short in nature and are meant to help increase your understanding of upcoming or past concepts. If assigned, you will be expected to complete them before the next class.\n Labs: Labs are in-class assignments completed at the end of class; they can be done completed individually or in groups.\n Code Alongs: Small projects or exercises that the instructor and the class complete together\n Exercises: Short in-class exercises that are completed by students (either individually or in teams)\n Office Hours: Weekly Office Hours - Schedule TBD\n Final Project: Pick something your passionate about; Single Page Application (SPA) that incorporates concepts covered throughout the class (more detail will be provided later in the course)\n  "
+},
+{
+	"uri": "/06-dom-and-jquery/",
+	"title": "DOM &amp; jQuery",
+	"tags": [],
+	"description": "",
+	"content": " Lesson 06 Intro to DOM \u0026amp; jQuery "
+},
+{
+	"uri": "/00-course-intro-and-tools/node-git-installation/linux/",
+	"title": "Linux Installation Instructions",
+	"tags": [],
+	"description": "",
+	"content": " Linux Installation Instructions 1) Install Git\n Git is a tool used to track the state of your code over time. GitHub is a company that has made a business on top of the Git technology. We will be using both Git and GitHub in this class to distribute code, submit assignments and offer feedback.\n Git can be installed by running the following command:\nsudo apt-get install build-essential git-core curl   2) Configure Git\nCopy and paste the following two commands (separately) into your terminal. Replace the name and email address values with your own.\n```bash git config --global user.name \u0026quot;Steve Jobs\u0026quot; git config --global user.email \u0026quot;steve@apple.com\u0026quot; ```  3) Install Node.js\n```bash curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash - sudo apt-get install -y nodejs apt-get install --yes build-essential ```  4) Ensure NPM is updated\nNode has a handy package manager, which we will using frequently. It comes with Node, but NPM is updated more frequently; you will always need to have the most up-to-date version.\n```bash npm install npm -g ```  "
+},
+{
+	"uri": "/00-course-intro-and-tools/course-structure/",
+	"title": "Course Structure",
+	"tags": [],
+	"description": "",
+	"content": " Overview  The course has 20 classes\n What you\u0026rsquo;ll learn:\n Fundamentals of JavaScript: including programming concepts such as data types, variables, and loops—the core concepts of programming\n Object Oriented JavaScript (OOP) and APIs: Learn how JavaScript can be used to exchange information and functionality within our programs\n Practical applications of JavaScript: Learn how to JavaScript can be used to manipulate websites and applications\n  3 Projects\n Slackbot\n Todo Application\n Final Project\n   "
+},
+{
+	"uri": "/07-dom-and-jquery-continued/",
+	"title": "DOM &amp; jQuery, Continued",
+	"tags": [],
+	"description": "",
+	"content": " Lesson 07 Intro to DOM \u0026amp; jQuery, Continued "
 },
 {
 	"uri": "/00-course-intro-and-tools/tools/",
 	"title": "Course Tools",
 	"tags": [],
 	"description": "",
-	"content": " Text Editor:\n Why?: Text editor is a program that developers use to create and edit a range of programming language files. We\u0026rsquo;ll be using Atom, because it\u0026rsquo;s open source (free) and really good.\n Download Atom\n  Browser:\n Why?: Google chrome is a robust browser with a variety of tools that are helpful to developers.\n Install Google Chrome\n  Github:\n Why?: Github (and Git) are tools/applications used to by developers to manage their code and work collaboratively with each other. You\u0026rsquo;ll be using Github/Git to submit our homework assignments. kj\n Create a Github Account\n Download the Github Desktop App\n  Slack:\n Why?: Is a popular chat application that we\u0026rsquo;ll be using as our primary method of communication both during and outside of class\n Join the GA NYC Part Time Students Slack Community slack channel\n You should have received an emailed invitation to join GA’s slack team\n Don’t see an invitation in your inbox? Check your spam folder - many of Slack’s invitation emails tend to end up there. Let me know if you weren’t sent an invite and we’ll get you sorted out.\n  Add yourself to the dedicated Slack Channel for our class named #fewd-3-18-19 (see instructions on how to join a Slack Channel here)\n  Wireframes:\n Why?: Wireframes are a planning tools that helps you visualize the layout and other aspects of your web projects before writing any code.\n Multiple options:\n Whimsical - free wireframing software\n Google Draw\n Pen \u0026amp; Paper\n  Example of a wireframe:\n   "
+	"content": " Text Editor:\n Why?: Text editor is a program that developers use to create and edit a range of programming language files. We\u0026rsquo;ll be using Atom, because it\u0026rsquo;s open source (free) and really good.\n Download Atom\n  Browser:\n Why?: Google chrome is a robust browser with a variety of tools that are helpful to developers.\n Install Google Chrome\n  Github:\n Why?: Github (and Git) are tools/applications used to by developers to manage their code and work collaboratively with each other. You\u0026rsquo;ll be using Github/Git to submit our homework assignments. kj\n Create a Github Account\n    Slack:\n Why?: Is a popular chat application that we\u0026rsquo;ll be using as our primary method of communication both during and outside of class\n Join the GA NYC Part Time Students Slack Community slack channel\n You should have received an emailed invitation to join GA’s slack team\n Don’t see an invitation in your inbox? Check your spam folder - many of Slack’s invitation emails tend to end up there. Let me know if you weren’t sent an invite and we’ll get you sorted out.\n  Add yourself to the dedicated Slack Channel for our class named #jsd-7-30-19 (see instructions on how to join a Slack Channel here)\n  Wireframes:\n Why?: Wireframes are a planning tools that helps you visualize the layout and other aspects of your web projects before writing any code.\n Multiple options:\n Whimsical - free wireframing software\n Google Draw\n Pen \u0026amp; Paper\n  Example of a wireframe:\n   "
+},
+{
+	"uri": "/08-ajax-and-apis/",
+	"title": "Ajax and APIs",
+	"tags": [],
+	"description": "",
+	"content": " Lesson 08 Ajax and APIs\u0026rdquo; "
+},
+{
+	"uri": "/09-asynchronous-js-and-callbacks/",
+	"title": "Asynchronous JS and Callbacks",
+	"tags": [],
+	"description": "",
+	"content": " Lesson 09 Asynchronous JS and Callbacks "
 },
 {
 	"uri": "/00-course-intro-and-tools/folder-structure/",
 	"title": "Folder Organization",
 	"tags": [],
 	"description": "",
-	"content": " Recommended Folder Organization  Create a folder in your Documents (My Documents on Windows) folder called FEWD\n At beginning of every class, download and unzip (mac instructions | windows instructions) the \u0026ldquo;Lesson Files\u0026rdquo; for that lesson directly into your FEWD folder\n  While the lesson files will be hosted on Dropbox, you do not need to have a dropbox account to download the files.\n  As the course progresses you\u0026rsquo;ll have a neatly organized listing of all of your work that looks similar to this:  "
+	"content": " Recommended Folder Organization  Create a folder in your Documents folder (My Documents on Windows) called jsd\n At beginning of every class, you\u0026rsquo;ll use git (this process will be explained in the next class) to download any starter files to your jsd folder are available for that day\u0026rsquo;s lesson\n As the course progresses you\u0026rsquo;ll have a neatly organized listing of all of your work that looks similar to this:\n  "
 },
 {
-	"uri": "/00-course-intro-and-tools/keys-to-success/",
+	"uri": "/00-course-intro-and-tools/node-git-installation/",
+	"title": "Node &amp; Git Installation",
+	"tags": [],
+	"description": "",
+	"content": " Node \u0026amp; Git Installation  You will need to install certain tools that will be used throughout the course. The installation instructions vary depending on whether you have a Mac, Windows, or Linux machine.\n Choose the installation instructions specific to your OS below and follow the step-by-step instructions:\n Mac OS X\n Windows\n Linux\n   You’re all set! Test it out with atom and ask a member of the instructional team to verify that the installation was successful.\nHelpful Debugging Tips Error installing due to permissions\nPermissions issues are common when installing programs on the terminal. In order to install command line utilities, you need to be signed into a user account on your computer with administrator-level rights. If you have trouble with this, please ask a member of the instructional team for help.\nGoogle is your friend\nEven experienced programmers occasionally need to look up error messages on Google. If you experience an error, it’s likely that someone else has experienced the error, as well. To find the fix, copy and paste the error message into Google, but remove content specific to your computer to ensure the accuracy of your search. You will most likely find a reference to your specific error. StackOverflow is a trustworthy reference.\n Common Issues and Fixes:\nWe recommend the following remedies to issues that commonly arise during the installation of command line utilities:\n Mac users may run into the problem of an outdated version of Git installed with Xcode being given precedence in the terminal. If you experience this issue, you’ll need to adjust your shell path by following the instructions under \u0026ldquo;Trumping Xcode\u0026rsquo;s Older Git\u0026rdquo; in this article.\n Mac users running OS 10.11 or later may need to disable the System Integrity Protection on their machine before installing certain command line utilities.\n Students experiencing an EACCES error should change directory permissions to install Node and npm without the need to use sudo: $ sudo chown -R $(whoami) /usr/local/lib/node_modules\n Students with Homebrew installed on their machines should run brew update in order to get the latest version of Homebrew.\n Students who need to update their installations of npm can run npm install -g npm.\n Students with an existing, outdated installation of Node can update their install by following the directions above (i.e., using the package installer).\n   "
+},
+{
+	"uri": "/10-project-build-a-slackbot/",
+	"title": "Project: Build a Slackbot",
+	"tags": [],
+	"description": "",
+	"content": " Lesson 10 Project: Build a Slackbot "
+},
+{
+	"uri": "/11-advanced-apis/",
+	"title": "Advanced APIs",
+	"tags": [],
+	"description": "",
+	"content": " Lesson 11 Advanced APIs "
+},
+{
+	"uri": "/12-prototypal-inheritance/",
+	"title": "Prototypal Inheritance",
+	"tags": [],
+	"description": "",
+	"content": " Lesson 12 Prototypal Inheritance "
+},
+{
+	"uri": "/00-course-intro-and-tools/what-is-programming/",
+	"title": "What is Programming?",
+	"tags": [],
+	"description": "",
+	"content": " What is Programming?  List of instructions that a computer needs in order to complete a task\n Instructions are provided in a programming language that the computer understands\n These set of instructions are commonly referred as source code or a program\n There are many programming languages available, during this course we will be learning JavaScript\n  "
+},
+{
+	"uri": "/13-closures-and-this/",
+	"title": "Closures &amp; this",
+	"tags": [],
+	"description": "",
+	"content": " Lesson 13 Closures \u0026amp; this "
+},
+{
+	"uri": "/class-resources/keys-to-success/",
 	"title": "Keys to Success",
 	"tags": [],
 	"description": "",
-	"content": " Do your homework: More you practice the concepts learned in class, the faster you\u0026rsquo;ll pick them up\n Don\u0026rsquo;t try to memorize anything: You\u0026rsquo;ll memorize things naturally through the act of doing things over and over again. Besides, if you don\u0026rsquo;t remember something just look it up (i.e. google).\n Work smarter not harder: In additional to looking things up, developers are really good at referencing past code that they\u0026rsquo;ve used in the past to solve problems they encounter in the present. So keep your past code organized so you easily reference it later. You don\u0026rsquo;t get points for memorizing anything, but you do get points for being resourceful and using past work to help you move a litter faster today.\n Ask Questions: Don\u0026rsquo;t be afraid to ask questions, everyone learns differently, it\u0026rsquo;s the instructor\u0026rsquo;s responsibility to ensure you grasp the concepts. Your questions helps me (your instructor) understand what\u0026rsquo;s working and what\u0026rsquo;s not.\n Change your perspective of failure: Expects things to not work. That\u0026rsquo;s where the fun part and truly where the learning begins. It\u0026rsquo;s during the troubleshooting phase where\u0026rsquo;s you\u0026rsquo;ll gained a deep understanding of concepts taught in class. If everything worked the first time, you\u0026rsquo;d never learn anything :)\n Get comfortable with the fact that there are multiple ways to do things: If I gave a 10 experienced developers a coding homework assignment chances are that I will receive 10 different approaches and they\u0026rsquo;ll all be \u0026ldquo;correct\u0026rdquo; (meaning each approach will accomplish the stated goals of the assignment). There is no 1 right answers when it comes to coding. There are \u0026ldquo;best practices\u0026rdquo; some of which we will push in this course, others best practices will be learned through continued practice. Instead of focusing on what you think may be the \u0026ldquo;best\u0026rdquo; approach, just focus on ensuring that your program / assignments is the goals or requirements (\u0026ldquo;just get it things working first\u0026rdquo;).\n Perfection is the enemy of good enough: When you go through your homework assignments and labs your # 1 goal is to \u0026ldquo;just get things working\u0026rdquo; and not to make it perfect the first time. Get things working first (no matter how janky it may seem) and only after you\u0026rsquo;ve got it working should you go through the process developers call refactoring, optimizing the code without changing the behavior (i.e. making it look nice).\n Use names that make sense: As a developer you are going to be frequently tasked with naming things. Naming things is hard, but my advice is to be as explicit as possible. You should always write your code as if someone else is going to read it and you want them to be able to quickly understand what’s going on. One of the best ways to accomplish that is to use names that highly contextual. For example, if you have a variable that is supposed to represent a person’s first name, then be as explicit as possible:\n  // very bad - you don't get points for making names super short var n = \u0026quot;Kiara\u0026quot; // ok but not great var name = \u0026quot;Kiara\u0026quot; // best - explicit, there's no doubt what this variable should represent var firstName = \u0026quot;Kiara\u0026quot;  "
+	"content": " Do your homework: More you practice the concepts learned in class, the faster you\u0026rsquo;ll pick them up\n Don\u0026rsquo;t try to memorize anything: You\u0026rsquo;ll memorize things naturally through the act of doing things over and over again. Besides, if you don\u0026rsquo;t remember something just look it up (i.e. google).\n Work smarter not harder: In additional to looking things up, developers are really good at referencing past code that they\u0026rsquo;ve used in the past to solve problems they encounter in the present. So keep your past code organized so you easily reference it later. You don\u0026rsquo;t get points for memorizing anything, but you do get points for being resourceful and using past work to help you move a litter faster today.\n Ask Questions: Don\u0026rsquo;t be afraid to ask questions, everyone learns differently, it\u0026rsquo;s the instructor\u0026rsquo;s responsibility to ensure you grasp the concepts. Your questions helps me (your instructor) understand what\u0026rsquo;s working and what\u0026rsquo;s not.\n Change your perspective of failure: Expects things to not work. That\u0026rsquo;s where the fun part and truly where the learning begins. It\u0026rsquo;s during the troubleshooting phase where\u0026rsquo;s you\u0026rsquo;ll gained a deep understanding of concepts taught in class. If everything worked the first time, you\u0026rsquo;d never learn anything :)\n Get comfortable with the fact that there are multiple ways to do things: If I gave a 10 experienced developers a coding homework assignment chances are that I will receive 10 different approaches and they\u0026rsquo;ll all be \u0026ldquo;correct\u0026rdquo; (meaning each approach will accomplish the stated goals of the assignment). There is no 1 right answers when it comes to coding. There are \u0026ldquo;best practices\u0026rdquo; some of which we will push in this course, others best practices will be learned through continued practice. Instead of focusing on what you think may be the \u0026ldquo;best\u0026rdquo; approach, just focus on ensuring that your program / assignments is the goals or requirements (\u0026ldquo;just get it things working first\u0026rdquo;).\n Perfection is the enemy of good enough: When you go through your homework assignments and labs your # 1 goal is to \u0026ldquo;just get things working\u0026rdquo; and not to make it perfect the first time. Get things working first (no matter how janky it may seem) and only after you\u0026rsquo;ve got it working should you go through the process developers call refactoring, optimizing the code without changing the behavior (i.e. making it look nice).\n Use names that make sense: As a developer you are going to be frequently tasked with naming things. Naming things is hard, but my advice is to be as explicit as possible. You should always write your code as if someone else is going to read it and you want them to be able to quickly understand what’s going on. One of the best ways to accomplish that is to use names that highly contextual. For example, if you have a variable that is supposed to represent a person’s first name, then be as explicit as possible:\n  // very bad - you don't get points for making names super short let n = \u0026quot;Kiara\u0026quot; // ok but not great let name = \u0026quot;Kiara\u0026quot; // best - explicit, there's no doubt what this variable should represent let firstName = \u0026quot;Kiara\u0026quot;  "
+},
+{
+	"uri": "/14-intro-to-crud-and-firebase/",
+	"title": "Intro to CRUD and Firebase",
+	"tags": [],
+	"description": "",
+	"content": " Lesson 14 Intro to CRUD and Firebase "
+},
+{
+	"uri": "/00-course-intro-and-tools/what-is-javascript/",
+	"title": "What is Javascript?",
+	"tags": [],
+	"description": "",
+	"content": " What is JavaScript?  programming language created in 1995 by Netscape (now Mozilla)\n It was created in 10 days\n Not the same as Java\n  What does JavaScript do?  Adds interactivity to your websites\n Makes web based software feel more like desktop software\n Can be used to save data to a database or to create desktop applications\n Improves overall user experience of web-based applications\n  Advantages of JavaScript  Javascript is the only programming language that all web browsers understand\n JavaScript is a programming language that is essential for web development\n JavaScript can be run in the browser (i.e. front-end) and on the server (i.e. backend through the use of Node.js)\n  This makes JavaScript the only programming language that is truly \u0026ldquo;full-stack\u0026rdquo; (i.e. supports both front-end and backend development)\n Documentation  Best resource of JavaScript documentation on the web can be found here: Mozilla Development Network - JavaScript Documentation  "
+},
+{
+	"uri": "/15-deploying-your-app/",
+	"title": "Deploying Your App",
+	"tags": [],
+	"description": "",
+	"content": " Lesson 15 Deploying Your App "
+},
+{
+	"uri": "/00-course-intro-and-tools/pseudocode/",
+	"title": "Pseudocode",
+	"tags": [],
+	"description": "",
+	"content": " Pseudocode  Process of writing a program without using the syntax of a programming language\n Mixture of natural language and high-level programming concepts\n There is no standard way to write pseudocode, use langauge that can be understood by technical and non-technical people\n Use pseudocode as an \u0026ldquo;outline\u0026rdquo; for your real code\n  "
+},
+{
+	"uri": "/00-course-intro-and-tools/class-exercise-smart-thermostat-pseudocode/",
+	"title": "Class Exercise - Smart Thermostat Pseudocode",
+	"tags": [],
+	"description": "",
+	"content": " Class Exercise: Thermostat logic in pseudocode We\u0026rsquo;re going to use pseudocode to describe the basic functionality of a smart thermostat\n As as class we are going to write some pseudocode for a program for a smart thermostat\n We’ll focus on coming up with the logic that will help the thermostat know when to turn the heat on and off\n  "
+},
+{
+	"uri": "/course-materials/",
+	"title": "Course Materials",
+	"tags": [],
+	"description": "",
+	"content": " Course Materials "
+},
+{
+	"uri": "/homework-assignments/",
+	"title": "Homework Assignments",
+	"tags": [],
+	"description": "",
+	"content": " Homework Assignments "
+},
+{
+	"uri": "/final-projects/",
+	"title": "Final Projects",
+	"tags": [],
+	"description": "",
+	"content": " Final Projects "
+},
+{
+	"uri": "/class-resources/",
+	"title": "Class Resources",
+	"tags": [],
+	"description": "",
+	"content": " Class Resources "
 },
 {
 	"uri": "/categories/",
