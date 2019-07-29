@@ -42,11 +42,10 @@ jQuery jQuery Documentation</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/class-resources/node-git-installation/mac-os-x/</guid>
-      <description>Mac OS X Installation Instructions 1) Install brew
- Brew is a package manager that we use to install various command line applications to your computer.
- Open your terminal (Applications &amp;gt; Utilities &amp;gt; Terminal), paste the following command, and hit enter:
-ruby -e &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&amp;quot;   2) Install Git
-Git is used to track the state of your code over time. GitHub has built its platform on Git technology.</description>
+      <description>Mac OS X Installation Instructions 1) Open your terminal application
+ Open your terminal (Applications &amp;gt; Utilities &amp;gt; Terminal)
+ All of the following commands that start with $ should be copy and pasted in your terminal (DO NOT include the &amp;lsquo;$&amp;rsquo; when copying and pasting the commands below; &amp;lsquo;$&amp;rsquo; is a universal symbol for the terminal / command line)
+ Press the enter / return key on your keyboard after pasting the command</description>
     </item>
     
     <item>
@@ -79,11 +78,10 @@ Git is used to track the state of your code over time. GitHub has built its plat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/class-resources/node-git-installation/windows/</guid>
-      <description>Windows Installation Instructions 1) Install Git
- Git is used to track the state of your code over time. GitHub has built its platform on Git technology. We will be using both Git and GitHub in this class to distribute code, submit assignments, and offer feedback.
- Git can be downloaded and installed from this URL.
-  2) Configure Git
- In order to interact with Git, you&amp;rsquo;ll need to first open the Git Bash utility.</description>
+      <description>Windows Installation Instructions 1) Open the Command Prompt application
+ All of the following commands that start with $ should be copy and pasted in your Terminal / Command Prompt (DO NOT include the &amp;lsquo;$&amp;rsquo; when copying and pasting the commands below; &amp;lsquo;$&amp;rsquo; is a universal symbol for the Terminal / Command Prompt)
+ Press the enter / return key on your keyboard after pasting the command
+  2) Install Git</description>
     </item>
     
     <item>
@@ -113,10 +111,9 @@ Git is used to track the state of your code over time. GitHub has built its plat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/class-resources/node-git-installation/linux/</guid>
-      <description>Linux Installation Instructions 1) Install Git
- Git is a tool used to track the state of your code over time. GitHub is a company that has made a business on top of the Git technology. We will be using both Git and GitHub in this class to distribute code, submit assignments and offer feedback.
- Git can be installed by running the following command:
-sudo apt-get install build-essential git-core curl   2) Configure Git</description>
+      <description>Linux Installation Instructions 1) Find and Open your Terminal / Command Prompt application
+ All of the following commands that start with $ should be copy and pasted in your terminal / command prompt (DO NOT include the &amp;lsquo;$&amp;rsquo; when copying and pasting the commands below; &amp;lsquo;$&amp;rsquo; is a universal symbol for the terminal / command line)
+ Press the enter / return key on your keyboard after pasting the command</description>
     </item>
     
     <item>

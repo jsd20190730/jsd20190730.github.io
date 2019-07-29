@@ -12,20 +12,20 @@
     <title>Linux Installation Instructions :: GA Javascript</title>
 
     
-    <link href="/css/nucleus.css?1564425653" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1564425653" rel="stylesheet">
-    <link href="/css/hybrid.css?1564425653" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1564425653" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1564425653" rel="stylesheet">
-    <link href="/css/auto-complete.css?1564425653" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1564425653" rel="stylesheet">
-    <link href="/css/theme.css?1564425653" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1564425653" rel="stylesheet">
+    <link href="/css/nucleus.css?1564426952" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1564426952" rel="stylesheet">
+    <link href="/css/hybrid.css?1564426952" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1564426952" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1564426952" rel="stylesheet">
+    <link href="/css/auto-complete.css?1564426952" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1564426952" rel="stylesheet">
+    <link href="/css/theme.css?1564426952" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1564426952" rel="stylesheet">
     
-      <link href="/css/theme-blue.css?1564425653" rel="stylesheet">
+      <link href="/css/theme-blue.css?1564426952" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1564425653"></script>
+    <script src="/js/jquery-3.3.1.min.js?1564426952"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -88,14 +88,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1564425653"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1564425653"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1564426952"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1564426952"></script>
 <script type="text/javascript">
     
         var baseurl = "\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1564425653"></script>
+<script type="text/javascript" src="/js/search.js?1564426952"></script>
 
     
   </div>
@@ -1046,43 +1046,40 @@
 
 <h3 id="linux-installation-instructions">Linux Installation Instructions</h3>
 
-<p>1) <strong>Install Git</strong></p>
+<p>1) Find and Open your Terminal / Command Prompt application</p>
+
+<ul>
+<li><p>All of the following commands that start with <code>$</code> should be copy and pasted in your terminal / command prompt (<strong>DO NOT include the &lsquo;$&rsquo; when copying and pasting the commands below; &lsquo;$&rsquo; is a universal symbol for the terminal / command line</strong>)</p></li>
+
+<li><p>Press the <strong>enter / return</strong> key on your keyboard after pasting the command</p></li>
+</ul>
+
+<p>2) <strong>Install Git</strong></p>
 
 <ul>
 <li><p>Git is a tool used to track the state of your code over time. <a href="https://github.com">GitHub</a> is a company that has made a business on top of the Git technology. We will be using both Git and GitHub in this class to distribute code, submit assignments and offer feedback.</p></li>
 
-<li><p>Git can be installed by running the following command:</p>
-
-<pre><code class="language-bash">sudo apt-get install build-essential git-core curl
-</code></pre></li>
+<li><p>Git can be installed by running the following command:</p></li>
 </ul>
 
-<p>2) <strong>Configure Git</strong></p>
-
-<p>Copy and paste the following two commands (separately) into your terminal. Replace the name and email address values with your own.</p>
-
-<pre><code>```bash
-git config --global user.name &quot;Steve Jobs&quot;
-git config --global user.email &quot;steve@apple.com&quot;
-```
+<pre><code>  $ sudo apt-get install build-essential git-core curl
 </code></pre>
 
-<p>3) <strong>Install Node.js</strong></p>
+<p>3) <strong>Configure Git</strong></p>
 
-<pre><code>```bash
-curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
-sudo apt-get install -y nodejs
-apt-get install --yes build-essential
-```
+<ul>
+<li>Copy and paste the following two commands (separately) into your Terminal. <strong>Replace the name and email address values with your own</strong></li>
+</ul>
+
+<pre><code>  $ git config --global user.name &quot;Steve Jobs&quot;
+  $ git config --global user.email &quot;steve@apple.com&quot;
 </code></pre>
 
-<p>4) <strong>Ensure NPM is updated</strong></p>
+<p>4) <strong>Install Node.js</strong></p>
 
-<p>Node has a handy package manager, which we will using frequently. It comes with Node, but NPM is updated more frequently; you will always need to have the most up-to-date version.</p>
-
-<pre><code>```bash
-npm install npm -g
-```
+<pre><code>  $ curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+  sudo apt-get install -y nodejs
+  $ apt-get install --yes build-essential
 </code></pre>
 
 
@@ -1780,20 +1777,20 @@ npm install npm -g
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1564425653"></script>
-    <script src="/js/perfect-scrollbar.min.js?1564425653"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1564425653"></script>
-    <script src="/js/jquery.sticky.js?1564425653"></script>
-    <script src="/js/featherlight.min.js?1564425653"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1564425653"></script>
-    <script src="/js/highlight.pack.js?1564425653"></script>
+    <script src="/js/clipboard.min.js?1564426952"></script>
+    <script src="/js/perfect-scrollbar.min.js?1564426952"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1564426952"></script>
+    <script src="/js/jquery.sticky.js?1564426952"></script>
+    <script src="/js/featherlight.min.js?1564426952"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1564426952"></script>
+    <script src="/js/highlight.pack.js?1564426952"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1564425653"></script>
-    <script src="/js/learn.js?1564425653"></script>
-    <script src="/js/hugo-learn.js?1564425653"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1564426952"></script>
+    <script src="/js/learn.js?1564426952"></script>
+    <script src="/js/hugo-learn.js?1564426952"></script>
 
-    <link href="/mermaid/mermaid.css?1564425653" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1564425653"></script>
+    <link href="/mermaid/mermaid.css?1564426952" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1564426952"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
