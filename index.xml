@@ -44,8 +44,8 @@ jQuery jQuery Documentation</description>
       <guid>/class-resources/node-git-installation/mac-os-x/</guid>
       <description>Mac OS X Installation Instructions 1) Open your terminal application
  Open your terminal (Applications &amp;gt; Utilities &amp;gt; Terminal)
- All of the following commands that start with $ should be copied and pasted in your terminal (DO NOT include the &amp;lsquo;$&amp;rsquo; when copying and pasting the commands below; &amp;lsquo;$&amp;rsquo; is a universal symbol for the terminal / command line)
- Press the enter / return key on your keyboard after pasting the command</description>
+ All of the following commands (below) that start with $ should be copied and pasted in your terminal / command prompt (also referred to as the &amp;ldquo;command line&amp;rdquo;)
+ DO NOT include the &amp;lsquo;$&amp;rsquo; when copying and pasting the commands below; &amp;lsquo;$&amp;rsquo; is a universal symbol for the terminal / command line</description>
     </item>
     
     <item>
@@ -79,9 +79,9 @@ jQuery jQuery Documentation</description>
       
       <guid>/class-resources/node-git-installation/windows/</guid>
       <description>Windows Installation Instructions 1) Open the Command Prompt application
- All of the following commands that start with $ should be copied and pasted in your terminal (DO NOT include the &amp;lsquo;$&amp;rsquo; when copying and pasting the commands below; &amp;lsquo;$&amp;rsquo; is a universal symbol for the terminal / command line)
- Press the enter / return key on your keyboard after pasting the command
-  2) Install Git</description>
+ All of the following commands (below) that start with $ should be copied and pasted in your terminal / command prompt (also referred to as the &amp;ldquo;command line&amp;rdquo;)
+ DO NOT include the &amp;lsquo;$&amp;rsquo; when copying and pasting the commands below; &amp;lsquo;$&amp;rsquo; is a universal symbol for the terminal / command line
+ Press the enter / return key on your keyboard after pasting the command</description>
     </item>
     
     <item>
@@ -112,9 +112,9 @@ jQuery jQuery Documentation</description>
       
       <guid>/class-resources/node-git-installation/linux/</guid>
       <description>Linux Installation Instructions 1) Find and Open your Terminal / Command Prompt application
- All of the following commands that start with $ should be copied and pasted in your terminal (DO NOT include the &amp;lsquo;$&amp;rsquo; when copying and pasting the commands below; &amp;lsquo;$&amp;rsquo; is a universal symbol for the terminal / command line)
- Press the enter / return key on your keyboard after pasting the command
-  2) Install Git</description>
+ All of the following commands (below) that start with $ should be copied and pasted in your terminal / command prompt (also referred to as the &amp;ldquo;command line&amp;rdquo;)
+ DO NOT include the &amp;lsquo;$&amp;rsquo; when copying and pasting the commands below; &amp;lsquo;$&amp;rsquo; is a universal symbol for the terminal / command line
+ Press the enter / return key on your keyboard after pasting the command</description>
     </item>
     
     <item>
