@@ -252,5 +252,14 @@ HTML &amp;amp; CSS  Codecademy - HTML &amp;amp; CSS course
   </description>
     </item>
     
+    <item>
+      <title>Group Exercise - Rock, Paper, Scissors</title>
+      <link>/00-course-intro-and-tools/group-exercise-rock-paper-scissors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/00-course-intro-and-tools/group-exercise-rock-paper-scissors/</guid>
+      <description>Group Exercise: Rock, Paper and Scissors Form groups (of 2 or 3) and write pseudocode describing a game of Rock, Paper, Scissors</description>
+    </item>
+    
   </channel>
 </rss>

@@ -252,6 +252,13 @@
 	"content": " Class Exercise: Thermostat logic in pseudocode We\u0026rsquo;re going to use pseudocode to describe the basic functionality of a smart thermostat\n As as class we are going to write some pseudocode for a program for a smart thermostat\n We’ll focus on coming up with the logic that will help the thermostat know when to turn the heat on and off\n  "
 },
 {
+	"uri": "/00-course-intro-and-tools/group-exercise-rock-paper-scissors/",
+	"title": "Group Exercise - Rock, Paper, Scissors",
+	"tags": [],
+	"description": "",
+	"content": " Group Exercise: Rock, Paper and Scissors Form groups (of 2 or 3) and write pseudocode describing a game of Rock, Paper, Scissors\n"
+},
+{
 	"uri": "/course-materials/",
 	"title": "Course Materials",
 	"tags": [],
