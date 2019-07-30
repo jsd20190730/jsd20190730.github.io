@@ -211,6 +211,23 @@ jQuery jQuery Documentation</description>
     </item>
     
     <item>
+      <title>Learning HTML &amp; CSS</title>
+      <link>/class-resources/learning-html-css/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/class-resources/learning-html-css/</guid>
+      <description>Here are some great (FREE) resources for learning HTML &amp;amp; CSS
+HTML &amp;amp; CSS  Codecademy - HTML &amp;amp; CSS course
+ Shay Howe - Learn to Code HTML &amp;amp; CSS
+ FreeCodeCamp Responsive Web Design Certification (300 hours)
+ Udacity - Intro to HTML and CSS
+ Khan Academy - Intro to HTML/CSS
+  Flexbox  MDN - Flexbox
+ Flexbox - Flexbox Froggy
+ Flexbox - Flexbox Zombies</description>
+    </item>
+    
+    <item>
       <title>Pseudocode</title>
       <link>/00-course-intro-and-tools/pseudocode/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

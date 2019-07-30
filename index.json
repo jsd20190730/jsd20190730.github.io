@@ -130,7 +130,7 @@
 	"title": "Course Tools",
 	"tags": [],
 	"description": "",
-	"content": " Text Editor:\n Why?: Text editor is a program that developers use to create and edit a range of programming language files. We\u0026rsquo;ll be using Atom, because it\u0026rsquo;s open source (free) and really good.\n Download Atom\n  Browser:\n Why?: Google chrome is a robust browser with a variety of tools that are helpful to developers.\n Install Google Chrome\n  Github:\n Why?: Github (and Git) are tools/applications used to by developers to manage their code and work collaboratively with each other. You\u0026rsquo;ll be using Github/Git to submit our homework assignments. kj\n Create a Github Account\n    Slack:\n Why?: Is a popular chat application that we\u0026rsquo;ll be using as our primary method of communication both during and outside of class\n Join the GA NYC Part Time Students Slack Community slack channel\n You should have received an emailed invitation to join GA’s slack team\n Don’t see an invitation in your inbox? Check your spam folder - many of Slack’s invitation emails tend to end up there. Let me know if you weren’t sent an invite and we’ll get you sorted out.\n  Add yourself to the dedicated Slack Channel for our class named #jsd-7-30-19 (see instructions on how to join a Slack Channel here)\n  Wireframes:\n Why?: Wireframes are a planning tools that helps you visualize the layout and other aspects of your web projects before writing any code.\n Multiple options:\n Whimsical - free wireframing software\n Google Draw\n Pen \u0026amp; Paper\n  Example of a wireframe:\n   "
+	"content": " Text Editor:\n Why?: Text editor is a program that developers use to create and edit a range of programming language files. We\u0026rsquo;ll be using Atom, because it\u0026rsquo;s open source (free) and really good.\n Download Atom\n  Browser:\n Why?: Google chrome is a robust browser with a variety of tools that are helpful to developers.\n Install Google Chrome\n  Github:\n Why?: Github (and Git) are tools/applications used to by developers to manage their code and work collaboratively with each other. You\u0026rsquo;ll be using Github/Git to submit our homework assignments. kj\n Create a Github Account\n    Slack:\n Why?: Is a popular chat application that we\u0026rsquo;ll be using as our primary method of communication both during and outside of class\n Join the GA NYC Part Time Students Slack Community slack channel\n You should have received an emailed invitation to join GA’s slack team\n Don’t see an invitation in your inbox? Check your spam folder - many of Slack’s invitation emails tend to end up there. Let me know if you weren’t sent an invite and we’ll get you sorted out.\n  Add yourself to the dedicated Slack Channel for our class named #jsd-7-30-19 (see instructions on how to join a Slack Channel here)\n  Wireframes:\n Why?: Wireframes are a planning tools that helps you visualize the layout and other aspects of your web projects before writing any code.\n Multiple options:\n Whimsical - free wireframing software\n Google Drawing\n Pen \u0026amp; Paper\n  Example of a wireframe:\n   "
 },
 {
 	"uri": "/08-ajax-and-apis/",
@@ -229,6 +229,13 @@
 	"tags": [],
 	"description": "",
 	"content": " Lesson 15 Deploying Your App "
+},
+{
+	"uri": "/class-resources/learning-html-css/",
+	"title": "Learning HTML &amp; CSS",
+	"tags": [],
+	"description": "",
+	"content": " Here are some great (FREE) resources for learning HTML \u0026amp; CSS\nHTML \u0026amp; CSS  Codecademy - HTML \u0026amp; CSS course\n Shay Howe - Learn to Code HTML \u0026amp; CSS\n FreeCodeCamp Responsive Web Design Certification (300 hours)\n Udacity - Intro to HTML and CSS\n Khan Academy - Intro to HTML/CSS\n  Flexbox  MDN - Flexbox\n Flexbox - Flexbox Froggy\n Flexbox - Flexbox Zombies\n  CSS Selectors  MDN - CSS Selectors\n CSS Diner\n  CSS Grid  MDN - CSS Grid\n CSS Grid Garden\n  "
 },
 {
 	"uri": "/00-course-intro-and-tools/pseudocode/",
