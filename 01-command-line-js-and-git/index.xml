@@ -99,7 +99,7 @@ When copying the following code snippets, DO NOT include the $ this is a univers
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/01-command-line-js-and-git/git-basics/</guid>
-      <description>Git Basics  Before we can understand how git saves files, we need to cover some concepts about how git works  Snapshots Three States of a Git file  Git has three main states that your files can reside in: committed, modified, and staged
+      <description>Git Basics  Before we can understand how git saves files, we need to cover some concepts about how git works  Three States of a Git file  Git has three main states that your files can reside in: committed, modified, and staged
  committed: files that have been saved / recorded to the repository&amp;rsquo;s history
  staged: files that have been modified
  modified: files that has been modified but have not yet been staged and committed to project&amp;rsquo;s history</description>
