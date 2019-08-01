@@ -28,6 +28,17 @@ jQuery jQuery Documentation</description>
     </item>
     
     <item>
+      <title>Git Commands</title>
+      <link>/class-resources/git-commands/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/class-resources/git-commands/</guid>
+      <description>The following is a summary of the most commonly used git commands
+Create Repositories Start a new repository or obtain one from an existing URL
+   Command Description     git init Creates a new local repository in the current directory   git init [project-name] Creates a new local repository with the specified name   git clone [url] Downloads a project and its entire version history    Making Changes    Command Description     git status Lists all new or modified files to be committed   git add [file] Snapshots the file in preparation for versioning   git commit -m &amp;quot;[descriptive message]&amp;quot; Records file snapshots permanently in version history   git diff Shows file differences not yet staged   git diff --staged Shows file differences between staging and the last file version   git reset [file] Unstages the file, but preserve its contents    Working with Branches    Command Description     git branch Lists all local branches in the current repository   git branch [branch-name] Creates a new branch   git checkout [branch-name] Switches to the specified branch and updates the working directory   git merge [branch] Combines the specified branch’s history into the current branch   git branch -d [branch-name] Deletes the specified branch    Review History    Command Description     git log Lists version history for the current branch   git log --follow [file] Lists version history for a file, including renames   git show [commit] Outputs metadata and content changes of the specified commit   git diff [first-branch].</description>
+    </item>
+    
+    <item>
       <title>Keyboard Shortcuts</title>
       <link>/class-resources/keyboard-shortcuts/</link>
       <pubDate>Sun, 22 Jan 2017 18:05:18 -0500</pubDate>

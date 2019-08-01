@@ -7,11 +7,23 @@
   </url>
   
   <url>
-    <loc>/01-command-line-javascript/</loc>
+    <loc>/01-command-line-js-and-git/</loc>
   </url>
   
   <url>
     <loc>/class-resources/documentation/</loc>
+  </url>
+  
+  <url>
+    <loc>/class-resources/git-commands/</loc>
+  </url>
+  
+  <url>
+    <loc>/01-command-line-js-and-git/intro-to-the-command-line/</loc>
+  </url>
+  
+  <url>
+    <loc>/01-command-line-js-and-git/code-along-command-line-intro/</loc>
   </url>
   
   <url>
@@ -32,6 +44,10 @@
   </url>
   
   <url>
+    <loc>/01-command-line-js-and-git/objectives/</loc>
+  </url>
+  
+  <url>
     <loc>/03-conditionals-and-loops/</loc>
   </url>
   
@@ -44,6 +60,10 @@
   </url>
   
   <url>
+    <loc>/01-command-line-js-and-git/git-overview/</loc>
+  </url>
+  
+  <url>
     <loc>/class-resources/node-git-installation/windows/</loc>
   </url>
   
@@ -52,11 +72,27 @@
   </url>
   
   <url>
+    <loc>/01-command-line-js-and-git/github/</loc>
+  </url>
+  
+  <url>
+    <loc>/01-command-line-js-and-git/git-vocabulary/</loc>
+  </url>
+  
+  <url>
     <loc>/05-objects-and-json/</loc>
   </url>
   
   <url>
+    <loc>/01-command-line-js-and-git/git-basics/</loc>
+  </url>
+  
+  <url>
     <loc>/00-course-intro-and-tools/class-logistics-materials/</loc>
+  </url>
+  
+  <url>
+    <loc>/01-command-line-js-and-git/code-along-basic-git-workflow/</loc>
   </url>
   
   <url>
