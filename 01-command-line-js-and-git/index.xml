@@ -11,6 +11,20 @@
     
     
     <item>
+      <title>Objectives</title>
+      <link>/01-command-line-js-and-git/objectives/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/01-command-line-js-and-git/objectives/</guid>
+      <description> Use the most common commands to navigate and modify files / directories via the command line
+ Learn the basics of working with a Git project
+ Gain familiarity with the most common git commands
+ Learn how GitHub is used for developer collaboration
+ Run basic JavaScript script on the command line using Node
+  </description>
+    </item>
+    
+    <item>
       <title>Intro the the Command Line</title>
       <link>/01-command-line-js-and-git/intro-to-the-command-line/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -32,20 +46,6 @@
 For Windows: * Open the &amp;ldquo;Command Prompt&amp;rdquo; application. * For a better experience, try Console.
 Get familiar with the basic commands on the terminal!
 When copying the following code snippets, DO NOT include the $ this is a universal symbol to indicate that the anything following the &amp;lsquo;$&amp;rsquo; should be entered into the command line</description>
-    </item>
-    
-    <item>
-      <title>Objectives</title>
-      <link>/01-command-line-js-and-git/objectives/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/01-command-line-js-and-git/objectives/</guid>
-      <description> Use the most common commands to navigate and modify files / directories via the command line
- Learn the basics of working with a Git project
- Gain familiarity with the most common git commands
- Learn how GitHub is used for developer collaboration
- Run basic JavaScript script on the command line using Node
-  </description>
     </item>
     
     <item>
