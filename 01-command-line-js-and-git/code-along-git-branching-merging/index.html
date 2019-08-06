@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Intro to CRUD and Firebase :: GA Javascript</title>
+    <title>Code Along: Git Branching &amp; Merging :: GA Javascript</title>
 
     
     <link href="/css/nucleus.css?1565100058" rel="stylesheet">
@@ -35,7 +35,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/14-intro-to-crud-and-firebase/">
+  <body class="" data-url="/01-command-line-js-and-git/code-along-git-branching-merging/">
     <nav id="sidebar" class="">
 
 
@@ -353,7 +353,7 @@
   
     
     <li data-nav-id="/01-command-line-js-and-git/" title="Command Line JS &amp; Git" class="dd-item
-        
+        parent
         
         
         ">
@@ -529,7 +529,7 @@
  
   
     
-      <li data-nav-id="/01-command-line-js-and-git/code-along-git-branching-merging/" title="Code Along: Git Branching &amp; Merging" class="dd-item ">
+      <li data-nav-id="/01-command-line-js-and-git/code-along-git-branching-merging/" title="Code Along: Git Branching &amp; Merging" class="dd-item active">
         <a href="/01-command-line-js-and-git/code-along-git-branching-merging/">
         Code Along: Git Branching &amp; Merging
         
@@ -820,8 +820,8 @@
   
     
     <li data-nav-id="/14-intro-to-crud-and-firebase/" title="Intro to CRUD and Firebase" class="dd-item
-        parent
-        active
+        
+        
         
         ">
       <a href="/14-intro-to-crud-and-firebase/">
@@ -1230,6 +1230,8 @@
                         </a>
                     </span>
                   
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
                   <span class="links">
                  
                  
@@ -1240,7 +1242,13 @@
             
           
           
-            <a href='/'>JSD</a> > Intro to CRUD and Firebase
+            
+            
+          
+          
+            <a href='/'>JSD</a> > <a href='/01-command-line-js-and-git/'>Command Line JS & Git</a> > Code Along: Git Branching & Merging
+          
+         
           
          
           
@@ -1249,6 +1257,41 @@
                   </span>
                 </div>
                 
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#code-along-git-branching-merging">Code Along: Git Branching &amp; Merging</a></li>
+<li><a href="#step-0-navigate-to-your-class-folder-on-your-command-line"><strong>Step 0</strong>: Navigate to your class folder on your command line</a></li>
+<li><a href="#step-1-set-up-your-project-directory"><strong>Step 1</strong>: Set up your project directory</a></li>
+<li><a href="#step-2-create-git-repository-for-our-project"><strong>Step 2</strong>: Create git repository for our project</a></li>
+<li><a href="#step-3-add-a-new-files-to-the-repository"><strong>Step 3</strong>: Add a new files to the repository</a></li>
+<li><a href="#step-4-stage-and-commit-your-recent-changes"><strong>Step 4</strong>: Stage and Commit your recent changes</a></li>
+<li><a href="#step-5-create-a-new-branch"><strong>Step 5</strong>: Create a new branch</a></li>
+<li><a href="#step-6-make-changes-on-the-feature-branch"><strong>Step 6</strong>: Make changes on the feature branch</a></li>
+<li><a href="#step-7-stage-and-commit-your-recent-changes"><strong>Step 7</strong>: Stage and Commit your recent changes</a></li>
+<li><a href="#step-8-merge-the-changes-into-the-master-branch"><strong>Step 8</strong>: Merge the changes into the master branch</a></li>
+<li><a href="#step-9-delete-the-feature-branch"><strong>Step 9</strong>: Delete the feature branch</a></li>
+<li><a href="#step-10-create-and-checkout-a-new-branch"><strong>Step 10</strong>: Create and checkout a new branch</a></li>
+<li><a href="#step-11-make-additional-changes"><strong>Step 11</strong>: Make additional changes</a></li>
+<li><a href="#step-12-stage-and-commit-your-recent-changes"><strong>Step 12</strong>: Stage and Commit your recent changes</a></li>
+<li><a href="#step-13-change-back-to-the-master-branch-and-make-a-conflicting-change"><strong>Step 13</strong>: Change back to the master branch and make a &lsquo;conflicting&rsquo; change</a></li>
+<li><a href="#step-14-stage-and-commit-your-recent-changes"><strong>Step 14</strong>: Stage and Commit your recent changes</a></li>
+<li><a href="#step-15-attempt-to-merge-update-jack-be-nimble-into-master"><strong>Step 15</strong>: Attempt to merge &ldquo;update_jack_be_nimble&rdquo; into &ldquo;master&rdquo;</a></li>
+<li><a href="#step-16-view-the-merge-conflict"><strong>Step 16</strong>: View the merge conflict</a></li>
+<li><a href="#step-16-resolve-the-merge-conflict"><strong>Step 16</strong>: Resolve the merge conflict</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
               </div>
             </div>
             
@@ -1256,9 +1299,12 @@
         
         </div>
         
-          <div id="chapter">
-        
         <div id="body-inner">
+          
+            <h1>
+              
+              Code Along: Git Branching &amp; Merging
+            </h1>
           
 
         
@@ -1266,22 +1312,471 @@
 
 
 
-	
 
-<h3 id="lesson-14">Lesson 14</h3>
+<h3 id="code-along-git-branching-merging">Code Along: Git Branching &amp; Merging</h3>
 
-<h1 id="intro-to-crud-and-firebase">Intro to CRUD and Firebase</h1>
+<h3 id="step-0-navigate-to-your-class-folder-on-your-command-line"><strong>Step 0</strong>: Navigate to your class folder on your command line</h3>
+
+<ul>
+<li>From your command line, navigate to your class folder (i.e. the folder named <strong>jsd</strong>)</li>
+</ul>
+
+<h3 id="step-1-set-up-your-project-directory"><strong>Step 1</strong>: Set up your project directory</h3>
+
+<ul>
+<li><p>Navigate into the <code>lesson_01_files</code> directory (this assumes you are currently in your <code>jsd</code> directory)</p>
+
+<pre><code class="language-bash">$ cd lesson_01_files
+</code></pre></li>
+
+<li><p>Create a new directory named <code>nursery_rhymes</code></p>
+
+<pre><code class="language-bash">$ mkdir nursery_rhymes
+</code></pre></li>
+
+<li><p>Navigate into the <code>nursery_rhymes</code> directory using the <code>cd</code> command</p>
+
+<pre><code class="language-bash">$ cd nursery_rhymes
+</code></pre></li>
+
+<li><p><code>nursery_rhymes</code> is where all the files for this project will reside</p></li>
+</ul>
+
+<h3 id="step-2-create-git-repository-for-our-project"><strong>Step 2</strong>: Create git repository for our project</h3>
+
+<ul>
+<li><p>Let&rsquo;s create a new git repository to track all the changes inside your <code>nursery_rhymes</code> project</p></li>
+
+<li><p>Initialize a new repository by running the following command:</p>
+
+<pre><code class="language-bash">  $  git init
+</code></pre></li>
+</ul>
+
+<h3 id="step-3-add-a-new-files-to-the-repository"><strong>Step 3</strong>: Add a new files to the repository</h3>
+
+<ul>
+<li><p>Create two new files using the <code>touch</code> command</p>
+
+<pre><code class="language-bash">  $ touch humpty_dumpty.txt jack_be_nimble.txt
+</code></pre></li>
+
+<li><p>Open up your text editor and add the following content to <code>humpty_dumpty.txt</code> and save the file</p>
+
+<pre><code class="language-text">  Humpty Dumpty sat on a wall,
+  Humpty Dumpty had a great fall.
+  All the king's horses and all the king's men
+  Couldn't put Humpty together again.
+</code></pre></li>
+
+<li><p>Next, add the following text to <code>jack_be_nimble.txt</code> and save the file</p>
+
+<pre><code class="language-text">  Jack be nimble,
+  Jack be quick,
+  Jack jump over
+  The candlestick.
+</code></pre></li>
+</ul>
+
+<h3 id="step-4-stage-and-commit-your-recent-changes"><strong>Step 4</strong>: Stage and Commit your recent changes</h3>
+
+<ul>
+<li><p>Let&rsquo;s stage the file so the changes can be moved from the &ldquo;working directory&rdquo; to the &ldquo;staging area&rdquo;</p>
+
+<pre><code class="language-bash">$ git add .
+</code></pre></li>
+</ul>
 
 
+<div class="notices tip" ><p><code>git add .</code> will add <strong>all</strong> files in the working directory to the staging area</p>
+</div>
 
+
+<ul>
+<li><p>Next, let&rsquo;s commit the changes</p>
+
+<pre><code class="language-bash">$ git commit -m &quot;add initial nursery rhymes&quot;
+</code></pre></li>
+</ul>
+
+<h3 id="step-5-create-a-new-branch"><strong>Step 5</strong>: Create a new branch</h3>
+
+<ul>
+<li><p>Branches allow developers work on a new feature without making any disruptive to changes to the main project (i.e. <strong>master branch</strong>) during the development of the feature</p></li>
+
+<li><p>Git branches are created using the <code>git branch {branch-name}</code> command</p></li>
+
+<li><p>Let&rsquo;s create a new branch that will allow us to experiment with &ldquo;remixes&rdquo; to the Humpty Dumpty nursery rhyme</p></li>
+
+<li><p>First let&rsquo;s create a new branch named &ldquo;humpty_dumpty_remix&rdquo;</p>
+
+<pre><code class="language-bash">$ git branch humpty_dumpty_remix
+</code></pre></li>
+
+<li><p>Confirm that the new branch was successfully created by running <code>git branch</code> (without the &ldquo;name&rdquo; option)</p>
+
+<pre><code class="language-bash">$ git branch
+</code></pre></li>
+
+<li><p>You should receive the following output:</p>
+
+<pre><code>humpty_dumpty_remix
+`* master
+</code></pre></li>
+
+<li><p>Note that you should have two (2) branches listed: <strong>master</strong> and <strong>humpty_dumpty_remix</strong></p></li>
+
+<li><p>Also note that the asterisk (*) denotes which is currently active; we are currently &ldquo;on the master branch&rdquo;</p></li>
+</ul>
+
+
+<div class="notices tip" ><p>Press the <code>q</code> key to escape from the <code>git branch</code> output in your terminal</p>
+</div>
+
+
+<ul>
+<li><p>In order to actually make changes on your new branch, we need to <strong>check it out</strong> so that it will be our &ldquo;active branch&rdquo;; otherwise, any changes we make now will be associated with our <strong>master</strong> branch</p></li>
+
+<li><p>Run the following command to <strong>check out</strong> our <strong>humpty_dumpty_remix</strong> branch</p>
+
+<pre><code class="language-bash">$ git checkout humpty_dumpty_remix
+</code></pre></li>
+</ul>
+
+
+<div class="notices tip" ><p><code>git checkout {branch_name}</code> allows developers to switch between branches in their local repository</p>
+</div>
+
+
+<ul>
+<li><p>Output should look similar to the following:</p>
+
+<pre><code>Switched to branch 'humpty_dumpty_remix'
+</code></pre></li>
+
+<li><p>You are now &ldquo;on the humpty_dumpty_remix branch&rdquo;</p></li>
+</ul>
+
+<h3 id="step-6-make-changes-on-the-feature-branch"><strong>Step 6</strong>: Make changes on the feature branch</h3>
+
+<ul>
+<li><p>Open <strong>humpty_dumpty.txt</strong> in your text editor and change replace the last two lines of the nursery rhyme with the following lines; save the file:</p>
+
+<pre><code>He didn't get bruised he didn't get bumped
+Humpty Dumpty bungee jumped!
+</code></pre></li>
+
+<li><p>Run <code>git diff</code> to observe the line-by-line differences; your output should look like the following:</p>
+
+<pre><code>diff --git a/humpty_dumpty.txt b/humpty_dumpty.txt
+index 9516671..b5eeca0 100644
+--- a/humpty_dumpty.txt
++++ b/humpty_dumpty.txt
+@@ -1,4 +1,4 @@
+ Humpty Dumpty sat on a wall,
+ Humpty Dumpty had a great fall.
+-All the king's horses and all the king's men
+-Couldn't put Humpty together again.
++He didn't get bruised he didn't get bumped
++Humpty Dumpty bungee jumped!
+</code></pre></li>
+</ul>
+
+<h3 id="step-7-stage-and-commit-your-recent-changes"><strong>Step 7</strong>: Stage and Commit your recent changes</h3>
+
+<ul>
+<li><p>Let&rsquo;s stage the file so the changes can be moved from the &ldquo;working directory&rdquo; to the &ldquo;staging area&rdquo;</p>
+
+<pre><code class="language-bash">$ git add humpty_dumpty.txt
+</code></pre></li>
+
+<li><p>Next, let&rsquo;s commit the changes</p>
+
+<pre><code class="language-bash">$ git commit -m &quot;remix humpty dumpty nursery rhyme&quot;
+</code></pre></li>
+
+<li><p>Run <code>git log</code> to review the latest commit history</p>
+
+<pre><code>commit c6e54274bb0d6984e21622cb58274f48a80dc7d9 (HEAD -&gt; humpty_dumpty_remix)
+Author: Kareem Grant &lt;kareem@getuserwise.com&gt;
+Date:   Mon Aug 5 18:58:02 2019 -0400
+
+    remix humpty dumpty nursery rhyme
+
+commit 7edef5f21ddf4b42afb72c079cd03f3e2267e32c (origin/master, master)
+Author: Kareem Grant &lt;kareem@getuserwise.com&gt;
+Date:   Mon Aug 5 16:36:50 2019 -0400
+
+    Add initial nursery rhymes
+</code></pre></li>
+
+<li><p>Note that our recent commit lives on the <strong>humpty_dumpty_remix</strong> branch</p></li>
+</ul>
+
+<h3 id="step-8-merge-the-changes-into-the-master-branch"><strong>Step 8</strong>: Merge the changes into the master branch</h3>
+
+<ul>
+<li><p>We&rsquo;re happy with our changes and now we&rsquo;re ready to <strong>merge</strong> the changes into the <strong>master</strong> branch</p></li>
+
+<li><p>First, we need to move back to the <strong>master</strong> branch (we are currently on the <strong>humpty_dumpty_remix</strong> branch)</p></li>
+
+<li><p>We accomplish this by using the <code>git checkout {branch_name}</code> command</p>
+
+<pre><code class="language-bash">$ git checkout master
+</code></pre></li>
+
+<li><p>The output should confirm that you successfully switched back to the <strong>master</strong> branch</p>
+
+<pre><code>Switched to branch 'master'
+</code></pre></li>
+
+<li><p>Now let&rsquo;s merge the recent changes from our <strong>humpty_dumpty_remix</strong> branch into the <strong>master</strong> branch</p></li>
+
+<li><p>Merges in git are accomplished using the <code>git merge</code> command</p>
+
+<pre><code class="language-bash">$ git merge humpty_dumpty_remix
+</code></pre></li>
+
+<li><p>The output should be similar to the following:</p>
+
+<pre><code>Updating 7edef5f..c6e5427
+Fast-forward
+ humpty_dumpty.txt | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+</code></pre></li>
+
+<li><p>The &ldquo;fast-forward&rdquo; reference means that Git was able to do an expedited merge because no conflicts were found (<a href="https://sandofsky.com/images/fast_forward.pdf">reference</a>)</p></li>
+
+<li><p>Run <code>git log</code> to review the latest commit history</p>
+
+<pre><code>commit c6e54274bb0d6984e21622cb58274f48a80dc7d9 (HEAD -&gt; master, humpty_dumpty_remix)
+Author: Kareem Grant &lt;kareem@getuserwise.com&gt;
+Date:   Mon Aug 5 18:58:02 2019 -0400
+
+    remix humpty dumpty nursery rhyme
+
+commit 7edef5f21ddf4b42afb72c079cd03f3e2267e32c (origin/master)
+Author: Kareem Grant &lt;kareem@getuserwise.com&gt;
+Date:   Mon Aug 5 16:36:50 2019 -0400
+
+    Add initial nursery rhymes
+</code></pre></li>
+
+<li><p>Notice that the <strong>HEAD</strong> (pointer which usually points to the most recent commit) is now on the <strong>master</strong> &amp; the <strong>humpty_dumpty_remix</strong> branch; this means that our latest commit are up-to-date on both branches</p></li>
+</ul>
+
+<h3 id="step-9-delete-the-feature-branch"><strong>Step 9</strong>: Delete the feature branch</h3>
+
+<ul>
+<li><p>Next, we&rsquo;ll delete the feature branch because it&rsquo;s no longer needed (the feature has been merged to <strong>master</strong>)</p></li>
+
+<li><p>To delete a branch we&rsquo;ll use the <code>git branch -d {name_of_branch}</code></p>
+
+<pre><code class="language-bash">$ git branch -d humpty_dumpty_remix
+</code></pre></li>
+
+<li><p>The expected output should look similar to the following:</p>
+
+<pre><code>Deleted branch humpty_dumpty_remix (was c6e5427).
+</code></pre></li>
+</ul>
+
+<h3 id="step-10-create-and-checkout-a-new-branch"><strong>Step 10</strong>: Create and checkout a new branch</h3>
+
+<ul>
+<li><p>Let&rsquo;s create and check out a new branch that we&rsquo;ll use to experiment with additional changes to jack_be_nimble.txt`</p></li>
+
+<li><p>Enter the following command to create a new branch and check it out at the same time</p>
+
+<pre><code class="language-bash">$ git checkout -b update_jack_be_nimble
+</code></pre></li>
+
+<li><p>Here&rsquo;s what the output should look like</p>
+
+<pre><code>Switched to a new branch 'update_jack_be_nimble'
+</code></pre></li>
+</ul>
+
+
+<div class="notices tip" ><p><code>git checkout -b {new_branch_name}</code> uses the <strong>-b</strong> flag to checkout the newly created branch immediately after creating the branch</p>
+</div>
+
+
+<h3 id="step-11-make-additional-changes"><strong>Step 11</strong>: Make additional changes</h3>
+
+<ul>
+<li><p>Let&rsquo;s makes some updates to our other nursery rhyme</p></li>
+
+<li><p>Run <code>git branch</code> to confirm that you are currently on the <strong>update_jack_be_nimble</strong> branch</p></li>
+
+<li><p>Open <code>jack_be_nimble.txt</code> in your text editor and replace all references to &ldquo;Jack&rdquo; with &ldquo;Jill&rdquo;; save the file</p></li>
+</ul>
+
+<h3 id="step-12-stage-and-commit-your-recent-changes"><strong>Step 12</strong>: Stage and Commit your recent changes</h3>
+
+<ul>
+<li><p>Stage the file so the changes can be moved from the &ldquo;working directory&rdquo; to the &ldquo;staging area&rdquo;</p>
+
+<pre><code class="language-bash">$ git add jack_be_nimble.txt
+</code></pre></li>
+
+<li><p>Next, let&rsquo;s commit the changes</p>
+
+<pre><code class="language-bash">$ git commit -m &quot;change references from jack to jill in 'jack be nimble'&quot;
+</code></pre></li>
+</ul>
+
+<h3 id="step-13-change-back-to-the-master-branch-and-make-a-conflicting-change"><strong>Step 13</strong>: Change back to the master branch and make a &lsquo;conflicting&rsquo; change</h3>
+
+<ul>
+<li><p>Next, we&rsquo;re going to create a merge conflict on purpose and learn how to properly handle those conflicts</p></li>
+
+<li><p>Run <code>git branch</code> to confirm that you are currently on the <strong>master</strong> branch</p></li>
+
+<li><p>Open <code>jack_be_nimble.txt</code> in your text editor and change all references to &ldquo;Jack&rdquo; to &ldquo;Jennifer&rdquo;; save the file</p></li>
+</ul>
+
+<h3 id="step-14-stage-and-commit-your-recent-changes"><strong>Step 14</strong>: Stage and Commit your recent changes</h3>
+
+<ul>
+<li><p>Stage the file so the changes can be moved from the &ldquo;working directory&rdquo; to the &ldquo;staging area&rdquo;</p>
+
+<pre><code class="language-bash">$ git add jack_be_nimble.txt
+</code></pre></li>
+
+<li><p>Next, let&rsquo;s commit the changes</p>
+
+<pre><code class="language-bash">$ git commit -m &quot;change references from jack to jennifer in 'jack be nimble'&quot;
+</code></pre></li>
+</ul>
+
+<h3 id="step-15-attempt-to-merge-update-jack-be-nimble-into-master"><strong>Step 15</strong>: Attempt to merge &ldquo;update_jack_be_nimble&rdquo; into &ldquo;master&rdquo;</h3>
+
+<ul>
+<li><p>Let&rsquo;s see what happens when we attempt to merge the <strong>update_jack_be_nimble</strong> branch into the <strong>master</strong> branch</p></li>
+
+<li><p>Ensure you are currently on the <strong>master</strong> branch and run the following command:</p>
+
+<pre><code class="language-bash">$ git merge update_jack_be_nimble
+</code></pre></li>
+
+<li><p>You should receive output that resembles the following:</p>
+
+<pre><code>Auto-merging jack_be_nimble.txt
+CONFLICT (content): Merge conflict in jack_be_nimble.txt
+Automatic merge failed; fix conflicts and then commit the result.
+</code></pre></li>
+
+<li><p>Git is informing us that it was not able to automatically merge the two branches due to a <strong>merge conflict</strong></p></li>
+</ul>
+
+<h3 id="step-16-view-the-merge-conflict"><strong>Step 16</strong>: View the merge conflict</h3>
+
+<ul>
+<li><p>Open <strong>jack_be_nimble.txt</strong> in your text editor; you should see the following:</p>
+
+<pre><code>    &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+Jennifer be nimble,
+Jennifer be quick,
+Jennifer jump over
+=======
+Jill be nimble,
+Jill be quick,
+Jill jump over
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; update_jack_be_nimble
+The candlestick.
+</code></pre></li>
+
+<li><p>Note that some additional text has been added to our file:</p>
+
+<ul>
+<li><p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</p></li>
+
+<li><p>=======</p></li>
+
+<li><p>`&gt;&gt;&gt;&gt;&gt;&gt;&gt; update_jack_be_nimble</p></li>
+</ul></li>
+
+<li><p>Think of these new lines as &ldquo;conflict dividers&rdquo;</p>
+
+<ul>
+<li><p>The <code>=======</code> line is the &ldquo;center&rdquo; of the conflict.</p></li>
+
+<li><p>All the content between the center and the <code>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</code> line is content that exists in the current branch master which the HEAD ref is pointing to</p></li>
+
+<li><p>Alternatively all content between the center and <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt; update_jack_be_nimble</code> is content that is present in our merging branch</p></li>
+</ul></li>
+</ul>
+
+<h3 id="step-16-resolve-the-merge-conflict"><strong>Step 16</strong>: Resolve the merge conflict</h3>
+
+<ul>
+<li><p>We&rsquo;re going to fix the merge conflict by directly editing the file and removing the conflict dividers and any changes that we&rsquo;ve determined (after discussing with our team) should be updated and/or deleted</p></li>
+
+<li><p>It&rsquo;s been determined that the new name of our nursery rhyme subject should be &ldquo;Jill&rdquo;</p></li>
+
+<li><p>Remove all the conflict lines and the lines that start with &ldquo;Jennifer&rdquo;; save the file</p></li>
+
+<li><p><strong>jack_be_nimble.txt</strong> should look like the following after the changes:</p>
+
+<pre><code>Jill be nimble,
+Jill be quick,
+Jill jump over
+The candlestick.
+</code></pre></li>
+
+<li><p>Next, run <code>git add jack_be_nimble.txt</code> to stage our changes</p></li>
+
+<li><p>Then commit the changes using <code>git commit</code></p>
+
+<pre><code class="language-bash">$ git commit -m &quot;merged and resolved conflict in jack_be_nimble.txt&quot;
+</code></pre></li>
+
+<li><p>Run a <code>git log</code> to view the updated commit history; the output should look similar to the following:</p>
+
+<pre><code>On branch master
+commit fd13059a4f83b0746ab95bb9aaf34c74ce8f74f6 (HEAD -&gt; master)
+Merge: e82c6db 8fddf9d
+Author: Kareem Grant &lt;kareem@getuserwise.com&gt;
+Date:   Tue Aug 6 09:57:34 2019 -0400
+
+    merged and resolved conflict in jack_be_nimble.txt
+
+commit e82c6db31408abfbe34a9917c75fa3e7be4e6053
+Author: Kareem Grant &lt;kareem@getuserwise.com&gt;
+Date:   Tue Aug 6 09:35:06 2019 -0400
+
+    change references from jack to jennifer in 'jack be nimble'
+
+commit 8fddf9dd40a77f94b10cab353f56e1fabddeeefb (update_jack_be_nimble)
+Author: Kareem Grant &lt;kareem@getuserwise.com&gt;
+Date:   Tue Aug 6 09:32:59 2019 -0400
+
+    change references from jack to jill in 'jack be nimble'
+
+commit 7f102fe037156f74aa891e05c7779edddcb27531
+Author: Kareem Grant &lt;kareem@getuserwise.com&gt;
+Date:   Tue Aug 6 09:27:56 2019 -0400
+
+    remix humpty dumpty nursery rhyme
+
+commit 8409ae16180d09e67187330718c86310600bbb70
+Author: Kareem Grant &lt;kareem@getuserwise.com&gt;
+Date:   Tue Aug 6 09:26:30 2019 -0400
+
+    add initial nursery rhymes
+
+</code></pre></li>
+
+<li><p>Congrats! You&rsquo;ve successfully resolved our merge conflict</p></li>
+</ul>
 
 
 <footer class=" footline" >
 	
 </footer>
 
-        
-            </div> 
+
         
         </div> 
         
@@ -1508,6 +2003,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -1521,216 +2017,8 @@
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
                         
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
                         
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
                     
                 
                 
@@ -1872,6 +2160,9 @@
             
         
                     
+            
+        
+                    
                         
             
             
@@ -1879,6 +2170,214 @@
                     
                         
                         
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
                     
                 
                 
@@ -2158,10 +2657,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/13-closures-and-this/" title="Closures &amp; this"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/01-command-line-js-and-git/code-along-basic-git-workflow/" title="Code Along: Basic Git Workflow"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/15-deploying-your-app/" title="Deploying Your App" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/02-data-types/" title="Data Types" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -2192,3 +2691,4 @@
 
   </body>
 </html>
+

@@ -137,6 +137,19 @@ When copying the following code snippets, DO NOT include the $ this is a univers
     </item>
     
     <item>
+      <title>Opening Atom from Command Line</title>
+      <link>/class-resources/opening-atom-from-command-line/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/class-resources/opening-atom-from-command-line/</guid>
+      <description>Atom allows you to open files from the command line
+If you have Atom installed you can run the atom command with one or more file paths to open up those files in Atom.
+Check if Atom is already configured to run on your computer&amp;rsquo;s Command Line Open up your terminal and run the following command
+$ atom --help  You should receive output similar to the following
+Atom Editor v1.</description>
+    </item>
+    
+    <item>
       <title>Windows Installation Instructions</title>
       <link>/class-resources/node-git-installation/windows/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -235,6 +248,17 @@ When copying the following code snippets, DO NOT include the $ this is a univers
  All of the following commands (below) that start with $ should be copied and pasted in your terminal / command prompt (also referred to as the &amp;ldquo;command line&amp;rdquo;)
  DO NOT include the &amp;lsquo;$&amp;rsquo; when copying and pasting the commands below; &amp;lsquo;$&amp;rsquo; is a universal symbol for the terminal / command line
  Press the enter / return key on your keyboard after pasting the command</description>
+    </item>
+    
+    <item>
+      <title>Code Along: Git Branching &amp; Merging</title>
+      <link>/01-command-line-js-and-git/code-along-git-branching-merging/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/01-command-line-js-and-git/code-along-git-branching-merging/</guid>
+      <description>Code Along: Git Branching &amp;amp; Merging Step 0: Navigate to your class folder on your command line  From your command line, navigate to your class folder (i.e. the folder named jsd)  Step 1: Set up your project directory  Navigate into the lesson_01_files directory (this assumes you are currently in your jsd directory)
+$ cd lesson_01_files  Create a new directory named nursery_rhymes
+$ mkdir nursery_rhymes  Navigate into the nursery_rhymes directory using the cd command</description>
     </item>
     
     <item>

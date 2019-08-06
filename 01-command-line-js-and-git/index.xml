@@ -119,5 +119,16 @@ When copying the following code snippets, DO NOT include the $ this is a univers
   Step 0: Navigate to your class folder on your command line  From your command line, navigate to your class folder (i.</description>
     </item>
     
+    <item>
+      <title>Code Along: Git Branching &amp; Merging</title>
+      <link>/01-command-line-js-and-git/code-along-git-branching-merging/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/01-command-line-js-and-git/code-along-git-branching-merging/</guid>
+      <description>Code Along: Git Branching &amp;amp; Merging Step 0: Navigate to your class folder on your command line  From your command line, navigate to your class folder (i.e. the folder named jsd)  Step 1: Set up your project directory  Navigate into the lesson_01_files directory (this assumes you are currently in your jsd directory)
+$ cd lesson_01_files  Create a new directory named nursery_rhymes
+$ mkdir nursery_rhymes  Navigate into the nursery_rhymes directory using the cd command</description>
+    </item>
+    
   </channel>
 </rss>

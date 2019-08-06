@@ -64,6 +64,10 @@
   </url>
   
   <url>
+    <loc>/class-resources/opening-atom-from-command-line/</loc>
+  </url>
+  
+  <url>
     <loc>/class-resources/node-git-installation/windows/</loc>
   </url>
   
@@ -101,6 +105,10 @@
   
   <url>
     <loc>/class-resources/node-git-installation/linux/</loc>
+  </url>
+  
+  <url>
+    <loc>/01-command-line-js-and-git/code-along-git-branching-merging/</loc>
   </url>
   
   <url>
