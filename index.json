@@ -217,6 +217,13 @@
 	"content": " What is Github?  Web-based Git repository hosting service\n Built on top of git\n Serves as the remote repository for a developer\u0026rsquo;s git projects\n Home to +90% of all open source projects\n Has become a \u0026ldquo;social network\u0026rdquo; for developers share, discuss and collaborate on software projects\n Many companies also use GitHub internally to privately collaborate on software projects with the other software engineers within their organization\n  "
 },
 {
+	"uri": "/02-javascript-basics/variables-lab/",
+	"title": "Variables Lab",
+	"tags": [],
+	"description": "",
+	"content": " Variables Lab  We are going to use our \u0026ldquo;homework submission git workflow\u0026rdquo; to access the lab files\n The repo for the lab can be found here\n  "
+},
+{
 	"uri": "/02-javascript-basics/arithmetic-operators/",
 	"title": "Arithmetic Operators",
 	"tags": [],
@@ -348,6 +355,13 @@
 	"tags": [],
 	"description": "",
 	"content": " What are Conditionals?  Conditionals tests whether an “expression” evaluates to true or false and then makes a decision based on the results of that test\n if statements are the most common form of conditionals\n There are two types of if statements\n (if..else) statements\n (if..else if) statements\n   (if\u0026hellip;else) statements  when evaluating between just two choices, use if/else\n These are great for “either or” situations\n You do not specify a condition for the “else” clause\n  // if..else statement  if (condition) { code to run if condition is true } else { code to run if the above condition is NOT true } // run some other code   Sometimes you\u0026rsquo;ll find that you don\u0026rsquo;t need an else clause. These are scenarios where you  let yearOfBirth = 2001 if (yearOfBirth \u0026lt;= 2002) { alert(\u0026#39;you will be old enough to vote in 2020\u0026#39;) } else { alert(\u0026#39;Sorry, you will not be old enough to vote next year\u0026#39;) }  JS Bin on jsbin.com\n(if\u0026hellip;else if) statements  when evaluation among more than two choices, use if/else if\n You must specify a condition on the “else if” clause\n You can use as many else if clauses as you need\n  // if..else if statement  if (condition) { code to run if this condition is true } else if (another condition) { code to run if this condition is true } else { code to run if NONE of the above conditions are true } // run some other code   Here\u0026rsquo;s an example of a conditional that uses else if  let yourGrade = 84 if (yourGrade \u0026gt;= 90) { alert(\u0026#34;Congrats your score is 90 or above, that\u0026#39;s an A!\u0026#34;) } else if (yourGrade \u0026gt;= 80) { alert(\u0026#34;Congrats your score is 80 or above, you earned a B\u0026#34;) } else { alert(\u0026#34;Your score is less than 80, no bueno\u0026#34;) }  JS Bin on jsbin.com\n"
+},
+{
+	"uri": "/02-javascript-basics/data-types-lab/",
+	"title": "Data Types Lab",
+	"tags": [],
+	"description": "",
+	"content": " Data Types Lab  We are going to use our \u0026ldquo;homework submission git workflow\u0026rdquo; to access the lab files\n The repo for the lab can be found here\n  "
 },
 {
 	"uri": "/00-course-intro-and-tools/folder-structure/",

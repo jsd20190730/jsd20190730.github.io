@@ -310,6 +310,17 @@ Atom Editor v1.</description>
     </item>
     
     <item>
+      <title>Variables Lab</title>
+      <link>/02-javascript-basics/variables-lab/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/02-javascript-basics/variables-lab/</guid>
+      <description> Variables Lab  We are going to use our &amp;ldquo;homework submission git workflow&amp;rdquo; to access the lab files
+ The repo for the lab can be found here
+  </description>
+    </item>
+    
+    <item>
       <title>Arithmetic Operators</title>
       <link>/02-javascript-basics/arithmetic-operators/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -481,6 +492,17 @@ $ mkdir nursery_rhymes  Navigate into the nursery_rhymes directory using the cd 
  (if..else if) statements
    (if&amp;hellip;else) statements  when evaluating between just two choices, use if/else
  These are great for “either or” situations</description>
+    </item>
+    
+    <item>
+      <title>Data Types Lab</title>
+      <link>/02-javascript-basics/data-types-lab/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/02-javascript-basics/data-types-lab/</guid>
+      <description> Data Types Lab  We are going to use our &amp;ldquo;homework submission git workflow&amp;rdquo; to access the lab files
+ The repo for the lab can be found here
+  </description>
     </item>
     
     <item>
