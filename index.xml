@@ -26,6 +26,21 @@
     </item>
     
     <item>
+      <title>Objectives</title>
+      <link>/02-javascript-basics/objectives/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/02-javascript-basics/objectives/</guid>
+      <description>After this lesson, students will be able to:
+ Run simple JavaScript programs from the command line using Node
+ Describe the concept of a &amp;ldquo;data type&amp;rdquo; and how it relates to variables
+ Declare, assign to, and manipulate data stored in a variable
+ Create arrays and access values in them
+ Understand how if/else statements can be used to control program flow
+ Understand the difference between comparison operators</description>
+    </item>
+    
+    <item>
       <title>Documentation</title>
       <link>/class-resources/documentation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -39,6 +54,32 @@ HTML MDN&amp;rsquo;s HTML Reference
 CSS MDN&amp;rsquo;s CSS Reference
 Javascript MDN&amp;rsquo;s Javascript Reference
 jQuery jQuery Documentation</description>
+    </item>
+    
+    <item>
+      <title>Strings</title>
+      <link>/02-javascript-basics/data-types/strings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/02-javascript-basics/data-types/strings/</guid>
+      <description>Strings  Strings can consist of letters and other characters
+ They are surrounded by either double quotes or single quotes (this is how you recognize you are working with a string)
+ Concatenation allows you to combine strings
+  // declare a variable called color and store a string  let color = &amp;#34;green&amp;#34;  Single or double quotes can be used for strings, but the opening quote must match the closing quote</description>
+    </item>
+    
+    <item>
+      <title>What are Variables?</title>
+      <link>/02-javascript-basics/variables/what-are-variables/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/02-javascript-basics/variables/what-are-variables/</guid>
+      <description>What are variables?  Allows us to store values and so our programs can keep track of Data
+ Similar to algebra
+ Helps you represent data or values
+ Used to help your program “remember” values
+ Can be thought of as a “box” that we put values in
+ In programming, you store values in variables if you plan on referencing that value at a later time</description>
     </item>
     
     <item>
@@ -86,6 +127,19 @@ When copying the following code snippets, DO NOT include the $ this is a univers
     </item>
     
     <item>
+      <title>Declaring Variables</title>
+      <link>/02-javascript-basics/variables/declaring-variables/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/02-javascript-basics/variables/declaring-variables/</guid>
+      <description> Declaring Variables  Variables are created by declaring them
+ Use the let keyword to declare a variable
+ If you declare a variable without assigning it an initial value, the value of that variable will be undefined
+  // declaring a variable  let firstName  Variables only need to be declared once
+ </description>
+    </item>
+    
+    <item>
       <title>Mac OS X Installation Instructions</title>
       <link>/class-resources/node-git-installation/mac-os-x/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -94,6 +148,21 @@ When copying the following code snippets, DO NOT include the $ this is a univers
       <description>Mac OS X Installation Instructions 1) Open your terminal application  Open your terminal (Applications &amp;gt; Utilities &amp;gt; Terminal)
  All of the following commands (below) that start with $ should be copied and pasted in your terminal / command prompt (also referred to as the &amp;ldquo;command line&amp;rdquo;)
  DO NOT include the &amp;lsquo;$&amp;rsquo; when copying and pasting the commands below; &amp;lsquo;$&amp;rsquo; is a universal symbol for the terminal / command line</description>
+    </item>
+    
+    <item>
+      <title>Numbers</title>
+      <link>/02-javascript-basics/data-types/numbers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/02-javascript-basics/data-types/numbers/</guid>
+      <description>Numbers  Used for tasks involving counting or calculating sums
+ Whole numbers (integers) or decimals (floats)
+ Numbers can be negative or positive
+ Numbers do not have quotes around them
+  There are no commas used when expressing numbers, for example the number 1,750 is expressed as 1750 in Javascript
+ JS Bin on jsbin.com
+Converting Strings to Numbers  Sometimes you will find yourself in a position where you need to convert a string to a number</description>
     </item>
     
     <item>
@@ -111,6 +180,17 @@ When copying the following code snippets, DO NOT include the $ this is a univers
     </item>
     
     <item>
+      <title>Booleans</title>
+      <link>/02-javascript-basics/data-types/booleans/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/02-javascript-basics/data-types/booleans/</guid>
+      <description>Booleans  Can only have a value of true or false
+ true/false are special keywords in JavaScript and do not have quotes around them
+  // declare a variable called isOn and assign a value of true let isOn = true // declare a variable called isWarm let isWarm // assign a value of false to isWarm isWarm = false   Booleans are useful for helping our programs make decisions (when used with conditionals, comparison &amp;amp; logical operators)</description>
+    </item>
+    
+    <item>
       <title>Recommended Atom Editor Settings</title>
       <link>/class-resources/atom-editor-settings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -118,6 +198,31 @@ When copying the following code snippets, DO NOT include the $ this is a univers
       <guid>/class-resources/atom-editor-settings/</guid>
       <description>All of the settings below can be accessed using the following steps:
  Mac: cmd + , -&amp;gt; Editor PC: ctrl + , -&amp;gt; Editor  Setting indentation levels / default tab-size During our course we will be using a set indentation level of 2 spaces (1 indentation level = 2 spaces). Atom makes it easy conform to this approach by setting our tab to a set level of indentation.</description>
+    </item>
+    
+    <item>
+      <title>Updating Variables</title>
+      <link>/02-javascript-basics/variables/updating-variables/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/02-javascript-basics/variables/updating-variables/</guid>
+      <description>Updating Variables  We can provide variables with a value by updating a value to the variable
+ An = (equal sign) is used to assign a value to variable
+ This process of updating/changing variable&amp;rsquo;s value is also referred to as assigning a value to a variable
+  let firstName // assigning a value to the variable firstName = &amp;#34;Cletus&amp;#34;  Declaring &amp;amp; Assigning Variables in one step  We can both declare and assign variables in one step</description>
+    </item>
+    
+    <item>
+      <title>Arrays</title>
+      <link>/02-javascript-basics/data-types/arrays/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/02-javascript-basics/data-types/arrays/</guid>
+      <description>Arrays  Used to when you are working with a list of values that are related to each other
+ Use square brackets to create an array (this is also how you quickly recognize arrays)
+ Values in an array are separated by commas
+  Creating an Array  We can store variables just like any other data type
+ You can create that doesn&amp;rsquo;t initially contain any values, this is called an empty array</description>
     </item>
     
     <item>
@@ -133,6 +238,27 @@ When copying the following code snippets, DO NOT include the $ this is a univers
  When were the changes made?
  Why were changes needed?
    What is Git?  Git is VCS that is distributed - meaning developers don&amp;rsquo;t need a constant connection to be able to collaborate with other developers (unlike other VCSs)</description>
+    </item>
+    
+    <item>
+      <title>Naming Rules for Variables</title>
+      <link>/02-javascript-basics/variables/naming-rules/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/02-javascript-basics/variables/naming-rules/</guid>
+      <description>Naming Rules for Variables    Do Don&amp;rsquo;t     Use variable names that start with a letter, $, or _ Use variable names that start with a number   Use variable names that include letters, numbers, $ or _ Create variable names that include a &amp;ldquo;-&amp;rdquo;, &amp;ldquo;.&amp;rdquo; or space   Use &amp;ldquo;lower camel case&amp;rdquo; when creating variable names made up of more than one word, for example: firstName Create variable names that use reserved Javascript keywords such as let, var, function or switch    Variables names should describe the kind of information the variable stores</description>
+    </item>
+    
+    <item>
+      <title>Objects</title>
+      <link>/02-javascript-basics/data-types/objects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/02-javascript-basics/data-types/objects/</guid>
+      <description>Objects  Objects are used to represent real world objects in programming
+ Within an object, variables are known as properties and functions are known as methods
+ Curly braces are a means of identifying if a variable is an object
+  // create an object that represents a dog  let myDog = { name: &amp;#34;Fido&amp;#34;, age: 4, speak: function() { console.log(&amp;#39;Woof woof&amp;#39;) } }   In the example above, we created an object and stored it in a variable called myDog</description>
     </item>
     
     <item>
@@ -184,6 +310,15 @@ Atom Editor v1.</description>
     </item>
     
     <item>
+      <title>Arithmetic Operators</title>
+      <link>/02-javascript-basics/arithmetic-operators/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/02-javascript-basics/arithmetic-operators/</guid>
+      <description>Arithmetic Operators  Mathematical symbol that can act on two values (or variables) and produce a result     Description Operator Example     Addition + 7 + 8   Subtraction - 34 - 12   Multiplication * 3 * 5   Division / 42 / 6   Modulus (Remainder) % 13 % 6 (returns 1, as 6 goes into 13 twice, leaving 1 as the remainder )   Exponential ** 4 ** 2 (returns 16 or 4 * 4)   Increment ++ 9++ (returns 10)   Decrement -- 37-- (returns 36)    Examples</description>
+    </item>
+    
+    <item>
       <title>Git Vocabulary</title>
       <link>/01-command-line-js-and-git/git-vocabulary/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -197,6 +332,18 @@ Atom Editor v1.</description>
   Commit  A &amp;ldquo;revision&amp;rdquo;, is an individual change to a file (or set of files)
  Git&amp;rsquo;s version of saving
  Commits save a &amp;ldquo;snapshot&amp;rdquo; of all of the project&amp;rsquo;s files at that point in time</description>
+    </item>
+    
+    <item>
+      <title>let vs var</title>
+      <link>/02-javascript-basics/variables/let-vs-var/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/02-javascript-basics/variables/let-vs-var/</guid>
+      <description>let vs var  In recent past var was the only way to declare variables
+ While var worked it a lot of confusing issues that came along with it
+ let was introduced in the latest release of Javascript, ES6 to address these issues
+ While var is still in use for legacy codebases, it is a recommended best practice to use let instead of var going forward</description>
     </item>
     
     <item>
@@ -248,6 +395,18 @@ Atom Editor v1.</description>
     </item>
     
     <item>
+      <title>const</title>
+      <link>/02-javascript-basics/variables/const/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/02-javascript-basics/variables/const/</guid>
+      <description>const  Stands for constant
+ These are variables for which its value does not change after it has been assigned an initial value
+ This help make your code easier to debug and protects certain values from accidentally being overridden in your codebase
+  Declaring a constant const are the same as let but with one key difference, values can only be assigned once to a const variable</description>
+    </item>
+    
+    <item>
       <title>Code Along: Git Branching &amp; Merging</title>
       <link>/01-command-line-js-and-git/code-along-git-branching-merging/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -256,6 +415,15 @@ Atom Editor v1.</description>
       <description>Code Along: Git Branching &amp;amp; Merging Step 0: Navigate to your class folder on your command line  From your command line, navigate to your class folder (i.e. the folder named jsd)  Step 1: Set up your project directory  Navigate into the lesson_01_files directory (this assumes you are currently in your jsd directory)
 $ cd lesson_01_files  Create a new directory named nursery_rhymes
 $ mkdir nursery_rhymes  Navigate into the nursery_rhymes directory using the cd command</description>
+    </item>
+    
+    <item>
+      <title>Comparison Operators</title>
+      <link>/02-javascript-basics/comparison-operators/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/02-javascript-basics/comparison-operators/</guid>
+      <description>Comparison Operators  Compares operands (the things on either side of the operator) and returns true or false (boolean) based one the comparison     Operator Description Example (all return true)     Equal (==) Returns true if the operands are equal 3 == &amp;ldquo;3&amp;rdquo; (uhmm yes this is actually true)   Not equal (!=) Returns true if the operands are not equal. (4 + 1) !</description>
     </item>
     
     <item>
@@ -286,6 +454,33 @@ $ mkdir nursery_rhymes  Navigate into the nursery_rhymes directory using the cd 
  Install Google Chrome
   Github:
  Why?: Github (and Git) are tools/applications used to by developers to manage their code and work collaboratively with each other.</description>
+    </item>
+    
+    <item>
+      <title>Logical Operators</title>
+      <link>/02-javascript-basics/logical-operators/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/02-javascript-basics/logical-operators/</guid>
+      <description>Logical Operators  Evaluates between two conditions/expressions and returns true or false
+ with &amp;amp;&amp;amp; (Logical And) operators, both conditions have to be true in order for the whole expression to be true
+ with || (Logical Or) operators, any of the condition must be true for entire expression to be true; but if all conditions are false then the entire expression is false
+     Operator Description Example (all return true)     Logical AND (&amp;amp;&amp;amp;) expr1 &amp;amp;&amp;amp; expr2 (3 &amp;gt; 1) &amp;amp;&amp;amp; &amp;ldquo;cat&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Conditionals</title>
+      <link>/02-javascript-basics/conditionals/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/02-javascript-basics/conditionals/</guid>
+      <description>What are Conditionals?  Conditionals tests whether an “expression” evaluates to true or false and then makes a decision based on the results of that test
+ if statements are the most common form of conditionals
+ There are two types of if statements
+ (if..else) statements
+ (if..else if) statements
+   (if&amp;hellip;else) statements  when evaluating between just two choices, use if/else
+ These are great for “either or” situations</description>
     </item>
     
     <item>

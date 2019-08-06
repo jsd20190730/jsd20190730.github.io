@@ -14,6 +14,13 @@
 	"content": " Use the most common commands to navigate and modify files / directories via the command line\n Learn the basics of working with a Git project\n Gain familiarity with the most common git commands\n Learn how GitHub is used for developer collaboration\n Run basic JavaScript script on the command line using Node\n  "
 },
 {
+	"uri": "/02-javascript-basics/objectives/",
+	"title": "Objectives",
+	"tags": [],
+	"description": "",
+	"content": "After this lesson, students will be able to:\n Run simple JavaScript programs from the command line using Node\n Describe the concept of a \u0026ldquo;data type\u0026rdquo; and how it relates to variables\n Declare, assign to, and manipulate data stored in a variable\n Create arrays and access values in them\n Understand how if/else statements can be used to control program flow\n Understand the difference between comparison operators\n Distinguish between the different types of logical operators\n  "
+},
+{
 	"uri": "/01-command-line-js-and-git/",
 	"title": "Command Line JS &amp; Git",
 	"tags": [],
@@ -26,6 +33,20 @@
 	"tags": [],
 	"description": "",
 	"content": "  Referencing documentation is a core task for developers.\n Documentation communicates how something (in our case programming languages, software libraries) works.\n Good documentation reduces implementation time and increases predictability of our software programs.\n  We will be referring to the following list of the documentation resources frequently throughout the course:\nHTML MDN\u0026rsquo;s HTML Reference\nCSS MDN\u0026rsquo;s CSS Reference\nJavascript MDN\u0026rsquo;s Javascript Reference\njQuery jQuery Documentation\n"
+},
+{
+	"uri": "/02-javascript-basics/data-types/strings/",
+	"title": "Strings",
+	"tags": [],
+	"description": "",
+	"content": " Strings  Strings can consist of letters and other characters\n They are surrounded by either double quotes or single quotes (this is how you recognize you are working with a string)\n Concatenation allows you to combine strings\n  // declare a variable called color and store a string  let color = \u0026#34;green\u0026#34;  Single or double quotes can be used for strings, but the opening quote must match the closing quote\n String Methods  Javascript has some built-in methods that allow developers to work with strings\n For example: if you wanted to know how many characters were in a string, you would use the .length method\n Here are some example of other methods you can use on strings\n  JS Bin on jsbin.com\nClick here for complete list of all the String methods\n "
+},
+{
+	"uri": "/02-javascript-basics/variables/what-are-variables/",
+	"title": "What are Variables?",
+	"tags": [],
+	"description": "",
+	"content": " What are variables?  Allows us to store values and so our programs can keep track of Data\n Similar to algebra\n Helps you represent data or values\n Used to help your program “remember” values\n Can be thought of as a “box” that we put values in\n In programming, you store values in variables if you plan on referencing that value at a later time\n  "
 },
 {
 	"uri": "/class-resources/git-commands/",
@@ -56,11 +77,18 @@
 	"content": " General Window Management \u0026amp; Browser Shortcuts    Action Mac Windows     Open Chrome Developer Tools cmd+option + i F2 or ctrl + shift + i   Refresh page cmd + R ctrl + R   Switch between applications cmd + tab alt + tab   Switch between windows in the same application cmd + ~     Atom Shortcuts Files, Windows, Tabs Management    Command macOS Windows Linux Description     Open Settings Menu cmd+, ctrl+, ctrl+, Opens the Atom\u0026rsquo;s settings menu   Open File (Fuzzy) cmd+p or cmd+t ctrl+p or ctrl+t ctrl+p or ctrl+t Opens the Fuzzy Finder   Browse Open Files cmd+b ctrl+b ctrl+b Browse tabs within the window   Previous Tab alt+cmd+left ctrl+pageup ctrl+pageup Cycles left through open tabs (in the active pane)   Next Tab alt+cmd+right ctrl+pagedown ctrl+pagedown Cycles right through open tabs (in the active page)   Toggle Tree View cmd+\\ ctrl+\\ ctrl+\\ Toggles Atom\u0026rsquo;s file Tree View   Show Available Snippets alt+shift+s alt+shift+s alt+shift+s Shows the snippets available to Atom   Save cmd+s ctrl+s ctrl+s Saves the currently active file   Save As shift+cmd+s ctrl+shift+s ctrl+shift+s Saves the currently active file under a different name   Save All alt+cmd+s   Saves all changed files   Close Tab cmd+w ctrl+w ctrl+w Closes the currently active tab   Close Window shift+cmd+w ctrl+shift+w ctrl+shift+w Closes the currently active editor window   Split Window cmd+k up/down/left/right ctrl+k up/down/left/right ctrl+k up/down/left/right Split the currently active tab in one of the four directions   Focus Pane cmd+k cmd+up/down/left/right ctrl+k ctrl+up/down/left/right ctrl+k ctrl+up/down/left/right Move the focus to the pane in one of the four directions   Toggle full screen ctrl+cmd+f F11 F11 Toggle full screen window    Editing    Command macOS Windows Linux Description     Duplicate Lines shift+cmd+d ctrl+shift+d ctrl+shift+d Duplicates the line of the current cursor position and creates a new line under it with the same contents   Delete Line ctrl+shift+k ctrl+shift+k ctrl+shift+k Deletes the current line   Move Line Up ctrl+cmd+up ctrl+up ctrl+up Moves the contents of the current cursor position up one line. If there is a line above with content, the current lines content will swap with the one above it.   Move Line Down ctrl+cmd+down ctrl+down ctrl+down Moves the contents of the current cursor position down one line. If there is a line below with content, the line\u0026rsquo;s content will swap with the one below it.   Find/Replace cmd+f ctrl+f ctrl+f Opens up the Find/Replace panel   Find Next cmd+g F3 F3 Toggles forward through the results of the current buffer in the file while the Find/Replace panel is active   Find Previous shift+cmd+g shift+F3 shift+F3 Toggles backward through the results of the current buffer in the file while the Find/Replace panel is active   Find in Project shift+cmd+f ctrl+shift+f ctrl+shift+f Opens the Find in Project Panel   Go To Line ctrl+g ctrl+g ctrl+g Opens the Go To Line panel   Go To Matching Bracket ctrl+m ctrl+m ctrl+m The cursor goes to the matching top bracket that the cursor is ecapsulated in   Select Line cmd+l ctrl+l ctrl+l Selects the entire line the cursor\u0026rsquo;s current position is in   Toggle Comment cmd+/ ctrl+/ ctrl+/ Toggles the selected text into a comment of the current grammar   Column Selection ctrl+shift+up/down ctrl+alt+up/down shift+alt+up/down Allows to select multiple rows, where the same edit will be applied   Select Same Words cmd+d ctrl+d ctrl+d If you select a word, and then hit the key combo for this command, Atom will select the next same word for you. Then you can either type directly (which will replace the old words) or use left or right arrow to append things.   Undo Selection cmd+u ctrl+u ctrl+u This undoes the previous selection, like from Select Same Words.   Select All The Same Words At Once cmd+ctrl+g alt+f3 alt+f3 This shortcut is similar to cmd+d/ctrl+d but it selects all the matching words at once.    "
 },
 {
-	"uri": "/02-data-types/",
-	"title": "Data Types",
+	"uri": "/02-javascript-basics/variables/declaring-variables/",
+	"title": "Declaring Variables",
 	"tags": [],
 	"description": "",
-	"content": " Lesson 02 Data Types "
+	"content": " Declaring Variables  Variables are created by declaring them\n Use the let keyword to declare a variable\n If you declare a variable without assigning it an initial value, the value of that variable will be undefined\n  // declaring a variable  let firstName  Variables only need to be declared once\n "
+},
+{
+	"uri": "/02-javascript-basics/",
+	"title": "JavaScript Basics",
+	"tags": [],
+	"description": "",
+	"content": " Lesson 02 JavaScript Basics "
 },
 {
 	"uri": "/class-resources/node-git-installation/mac-os-x/",
@@ -70,11 +98,25 @@
 	"content": " Mac OS X Installation Instructions 1) Open your terminal application  Open your terminal (Applications \u0026gt; Utilities \u0026gt; Terminal)\n All of the following commands (below) that start with $ should be copied and pasted in your terminal / command prompt (also referred to as the \u0026ldquo;command line\u0026rdquo;)\n DO NOT include the \u0026lsquo;$\u0026rsquo; when copying and pasting the commands below; \u0026lsquo;$\u0026rsquo; is a universal symbol for the terminal / command line\n Press the enter / return key on your keyboard after pasting the command\n  2) Install brew  Brew is a package manager that we use to install various command line applications to your computer.\n Paste the following command in your Terminal, and hit enter:\n  $ ruby -e \u0026quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)\u0026quot;  3) Install Git Git is used to track the state of your code over time. GitHub has built its platform on Git technology. We will be using both Git and GitHub to distribute code, submit assignments, and offer feedback.\nPaste the following command in your Terminal, and hit enter to install Git:\n $ brew install git  4) Configure Git  Copy and paste the following two commands (separately) into your Terminal. Replace the name and email address values with your own   $ git config --global user.name \u0026quot;Steve Jobs\u0026quot; $ git config --global user.email \u0026quot;steve@apple.com\u0026quot;   Follow these instructions to create a new SSH Key (a special, very secure, key which allows your laptop access to your github account without having to remember your github password)\n Add your new SSH Key to GitHub following these instructions\n Verify your key works by running the following:\n  $ ssh git@github.com   You should see output similar to:   Hi \u0026lt;you\u0026gt;! You've successfully authenticated, but GitHub does not provide shell access. Connection to github.com closed.  5) Install Node  Refer to the package installer on Node’s website  "
 },
 {
+	"uri": "/02-javascript-basics/data-types/numbers/",
+	"title": "Numbers",
+	"tags": [],
+	"description": "",
+	"content": " Numbers  Used for tasks involving counting or calculating sums\n Whole numbers (integers) or decimals (floats)\n Numbers can be negative or positive\n Numbers do not have quotes around them\n  There are no commas used when expressing numbers, for example the number 1,750 is expressed as 1750 in Javascript\n JS Bin on jsbin.com\nConverting Strings to Numbers  Sometimes you will find yourself in a position where you need to convert a string to a number\n This happens when you attempt to read numeric values from html (html displays everything as a string)\n Use the parseInt() or parseFloat() methods to accomplish this\n  JS Bin on jsbin.com\n"
+},
+{
 	"uri": "/00-course-intro-and-tools/objectives/",
 	"title": "Objectives",
 	"tags": [],
 	"description": "",
 	"content": " Cover class logistics, structure \u0026amp; keys to success\n Introduce tools you will be using throughout the class\n Discuss the benchmarks for assessments in terms of class participation, homework, and unit projects\n Confirm installation and configuration of Node, Git, and other command line tools\n Practice programmatic thinking by writing pseudocode\n  "
+},
+{
+	"uri": "/02-javascript-basics/data-types/booleans/",
+	"title": "Booleans",
+	"tags": [],
+	"description": "",
+	"content": " Booleans  Can only have a value of true or false\n true/false are special keywords in JavaScript and do not have quotes around them\n  // declare a variable called isOn and assign a value of true let isOn = true // declare a variable called isWarm let isWarm // assign a value of false to isWarm isWarm = false   Booleans are useful for helping our programs make decisions (when used with conditionals, comparison \u0026amp; logical operators)\n Booleans also helps a program known when it should stop/start looping\n  "
 },
 {
 	"uri": "/03-conditionals-and-loops/",
@@ -91,6 +133,34 @@
 	"content": " All of the settings below can be accessed using the following steps:\n Mac: cmd + , -\u0026gt; Editor PC: ctrl + , -\u0026gt; Editor  Setting indentation levels / default tab-size During our course we will be using a set indentation level of 2 spaces (1 indentation level = 2 spaces). Atom makes it easy conform to this approach by setting our tab to a set level of indentation.\nAfter updating this setting, pressing the tab key will represent one level of indentation which will translate to 2 spaces.\nDisplaying indentation guides Displaying the indentation guide provides a visual way of helping you ensure your indentation levels are correct\nSetting wordwrap Wordwrap ensures that long lines in your code are automatically wrapped to the next line. This improves readability of your code.\n"
 },
 {
+	"uri": "/02-javascript-basics/variables/updating-variables/",
+	"title": "Updating Variables",
+	"tags": [],
+	"description": "",
+	"content": " Updating Variables  We can provide variables with a value by updating a value to the variable\n An = (equal sign) is used to assign a value to variable\n This process of updating/changing variable\u0026rsquo;s value is also referred to as assigning a value to a variable\n  let firstName // assigning a value to the variable firstName = \u0026#34;Cletus\u0026#34;  Declaring \u0026amp; Assigning Variables in one step  We can both declare and assign variables in one step\n This would be done if the developer wanted to set the initial value of the variable\n  // declare and assign an intial value to a variable let score = 0  Changing the value of a Variable after an initial value has already been assigned  In this case we will still use a single = (equal sign) to change or reassign a value of a variable  // declare and assign a value of 0 to the score variable let score = 0 // changing the value of the score variable from 0 to 3 score = 3  "
+},
+{
+	"uri": "/02-javascript-basics/variables/",
+	"title": "Variables",
+	"tags": [],
+	"description": "",
+	"content": " What are Variables?\n Declaring Variables\n Updating Variables\n Naming Rules for Variables\n let vs var\n const\n  "
+},
+{
+	"uri": "/02-javascript-basics/data-types/arrays/",
+	"title": "Arrays",
+	"tags": [],
+	"description": "",
+	"content": " Arrays  Used to when you are working with a list of values that are related to each other\n Use square brackets to create an array (this is also how you quickly recognize arrays)\n Values in an array are separated by commas\n  Creating an Array  We can store variables just like any other data type\n You can create that doesn\u0026rsquo;t initially contain any values, this is called an empty array\n An array can also be created with initial values\n Square brackets are a means of identifying if a variable is an array\n  // declare a variable as an empty array let numbers = [] // or you can declare an array with initial values let streets = [\u0026#39;Broadway\u0026#39;, \u0026#39;Houston\u0026#39;, \u0026#39;Grand\u0026#39;]  Values in an Array  Values in an array are accessed as if they are in a numbered list\n Arrays are zero based meaning the 1st “value” in an array is at position (index) 0, the 2nd element is at position 1, and so on\n You access the value of an element in the array by passing the index of the item in square brackets\n  let streets = [\u0026#39;Broadway\u0026#39;, \u0026#39;Houston\u0026#39;, \u0026#39;Grand\u0026#39;] // access the 2nd street listed in the array which is at index 1 let streetTwo = streets[1]  Accessing in an Array  You can access a value of an array by referencing its index (i.e. its order within the array)  // declare a variable called chipmunks and use it to store // an array of names let chipmunks = [\u0026#34;Alvin\u0026#34;, \u0026#34;Simon\u0026#34;, \u0026#34;Theodore\u0026#34;]; // reference the first value in the array // here we pass in a zero, since that represents the first // element (value) in an array  let bandMember = chipmunks[0] //\u0026gt; the value stored in bandMember is \u0026#34;Alvin\u0026#34;  Changing Values in an Array  You can change a value in an array by referencing the value and then changing the value using an = (equal sign)  // declare a variable called newEditionMembers and use it to store // an array of names  let newEditionMembers = [\u0026#34;Ricky Bell\u0026#34;, \u0026#34;Michael Bivins\u0026#34;, \u0026#34;Bobby Brown\u0026#34;, \u0026#34;Ronnie DeVoe\u0026#34;, \u0026#34;Ralph Tresvant\u0026#34;] // We are going replace Bobby Brown with Johnny Gill // by referencing the 3rd element of the array by using index 2 // and then use assignment (just an equal sign) to change // the value to Johnny Gill  newEditionMembers[2] = \u0026#34;Johnny Gill\u0026#34;;  Array Examples JS Bin on jsbin.com\nArrays are a flexible and powerful feature of Javascript (and other programming languages as well). Click here for more information about Arrays\n "
+},
+{
+	"uri": "/02-javascript-basics/data-types/",
+	"title": "Data Types",
+	"tags": [],
+	"description": "",
+	"content": " Strings\n Numbers\n Booleans\n Arrays\n Objects\n  "
+},
+{
 	"uri": "/04-functions-and-scope/",
 	"title": "Functions and Scope",
 	"tags": [],
@@ -103,6 +173,20 @@
 	"tags": [],
 	"description": "",
 	"content": " Version Control System (VCS)  Tracks the history of changes as people and teams collaborate on projects together (think \u0026ldquo;track changes feature available for MS Word or Google Docs\u0026rdquo;)\n Developers can review project history to find out:\n Which changes were made?\n Who made the changes?\n When were the changes made?\n Why were changes needed?\n   What is Git?  Git is VCS that is distributed - meaning developers don\u0026rsquo;t need a constant connection to be able to collaborate with other developers (unlike other VCSs)\n Allows developers to work anywhere and collaborate asynchronously from any time zone\n Git is the most popular VCS, used by over 70% of developers across the world\n Git operates a robust filesystem that keeps track every change to every file in your project by taking snapshots of a projects files every time changes are committed\n Git and GitHub are not the same\n  "
+},
+{
+	"uri": "/02-javascript-basics/variables/naming-rules/",
+	"title": "Naming Rules for Variables",
+	"tags": [],
+	"description": "",
+	"content": " Naming Rules for Variables    Do Don\u0026rsquo;t     Use variable names that start with a letter, $, or _ Use variable names that start with a number   Use variable names that include letters, numbers, $ or _ Create variable names that include a \u0026ldquo;-\u0026rdquo;, \u0026ldquo;.\u0026rdquo; or space   Use \u0026ldquo;lower camel case\u0026rdquo; when creating variable names made up of more than one word, for example: firstName Create variable names that use reserved Javascript keywords such as let, var, function or switch    Variables names should describe the kind of information the variable stores\n Here\u0026rsquo;s a list of Javascript\u0026rsquo;s reserved keywords\n "
+},
+{
+	"uri": "/02-javascript-basics/data-types/objects/",
+	"title": "Objects",
+	"tags": [],
+	"description": "",
+	"content": " Objects  Objects are used to represent real world objects in programming\n Within an object, variables are known as properties and functions are known as methods\n Curly braces are a means of identifying if a variable is an object\n  // create an object that represents a dog  let myDog = { name: \u0026#34;Fido\u0026#34;, age: 4, speak: function() { console.log(\u0026#39;Woof woof\u0026#39;) } }   In the example above, we created an object and stored it in a variable called myDog\n This object has two (2) properties (name and age) and 1 method (speak)\n  Accessing Properties and Methods of Objects  Properties and values can be assigned and read using Dot notation  let myDog = { name: \u0026#34;Fido\u0026#34;, age: 4, speak: function() { console.log(\u0026#39;Woof woof\u0026#39;) } } // store myDog\u0026#39;s name in a variable called dogName let dogName = myDog.name // call the speak method of myDog myDog.speak()  JS Bin on jsbin.com Updating Object properties using dot notation  Object properties can be updated, added or deleted  JS Bin on jsbin.com\nThink of methods as actions that our objects can take. Objects are another flexible and powerful feature of Javascript. Click here for more information about Objects\n "
 },
 {
 	"uri": "/class-resources/opening-atom-from-command-line/",
@@ -133,6 +217,13 @@
 	"content": " What is Github?  Web-based Git repository hosting service\n Built on top of git\n Serves as the remote repository for a developer\u0026rsquo;s git projects\n Home to +90% of all open source projects\n Has become a \u0026ldquo;social network\u0026rdquo; for developers share, discuss and collaborate on software projects\n Many companies also use GitHub internally to privately collaborate on software projects with the other software engineers within their organization\n  "
 },
 {
+	"uri": "/02-javascript-basics/arithmetic-operators/",
+	"title": "Arithmetic Operators",
+	"tags": [],
+	"description": "",
+	"content": " Arithmetic Operators  Mathematical symbol that can act on two values (or variables) and produce a result     Description Operator Example     Addition + 7 + 8   Subtraction - 34 - 12   Multiplication * 3 * 5   Division / 42 / 6   Modulus (Remainder) % 13 % 6 (returns 1, as 6 goes into 13 twice, leaving 1 as the remainder )   Exponential ** 4 ** 2 (returns 16 or 4 * 4)   Increment ++ 9++ (returns 10)   Decrement -- 37-- (returns 36)    Examples\nJS Bin on jsbin.com\n"
+},
+{
 	"uri": "/01-command-line-js-and-git/git-vocabulary/",
 	"title": "Git Vocabulary",
 	"tags": [],
@@ -145,6 +236,13 @@
 	"tags": [],
 	"description": "",
 	"content": " Lesson 05 Objects and JSON "
+},
+{
+	"uri": "/02-javascript-basics/variables/let-vs-var/",
+	"title": "let vs var",
+	"tags": [],
+	"description": "",
+	"content": " let vs var  In recent past var was the only way to declare variables\n While var worked it a lot of confusing issues that came along with it\n let was introduced in the latest release of Javascript, ES6 to address these issues\n While var is still in use for legacy codebases, it is a recommended best practice to use let instead of var going forward\n  // declaring a variable using var var name = \u0026#34;Jen\u0026#34; // declaring a variable using let (best practice) let name = \u0026#34;Jen\u0026#34;  Click here for more information on the differences between let and var\n "
 },
 {
 	"uri": "/01-command-line-js-and-git/git-basics/",
@@ -182,11 +280,25 @@
 	"content": " Linux Installation Instructions 1) Find and Open your Terminal / Command Prompt application  All of the following commands (below) that start with $ should be copied and pasted in your terminal / command prompt (also referred to as the \u0026ldquo;command line\u0026rdquo;)\n DO NOT include the \u0026lsquo;$\u0026rsquo; when copying and pasting the commands below; \u0026lsquo;$\u0026rsquo; is a universal symbol for the terminal / command line\n Press the enter / return key on your keyboard after pasting the command\n  2) Install Git  Git is a tool used to track the state of your code over time. GitHub is a company that has made a business on top of the Git technology. We will be using both Git and GitHub in this class to distribute code, submit assignments and offer feedback.\n Git can be installed by running the following command:\n   $ sudo apt-get install build-essential git-core curl  3) Configure Git  Copy and paste the following two commands (separately) into your Terminal. Replace the name and email address values with your own   $ git config --global user.name \u0026quot;Steve Jobs\u0026quot; $ git config --global user.email \u0026quot;steve@apple.com\u0026quot;   Follow these instructions to create a new SSH Key (a special, very secure, key which allows your laptop access to your github account without having to remember your github password)\n Add your new SSH Key to GitHub following these instructions\n Verify your key works by running the following:\n  $ ssh git@github.com   You should see output similar to:   Hi \u0026lt;you\u0026gt;! You've successfully authenticated, but GitHub does not provide shell access. Connection to github.com closed.  4) Install Node.js  $ curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash - sudo apt-get install -y nodejs $ apt-get install --yes build-essential  "
 },
 {
+	"uri": "/02-javascript-basics/variables/const/",
+	"title": "const",
+	"tags": [],
+	"description": "",
+	"content": " const  Stands for constant\n These are variables for which its value does not change after it has been assigned an initial value\n This help make your code easier to debug and protects certain values from accidentally being overridden in your codebase\n  Declaring a constant const are the same as let but with one key difference, values can only be assigned once to a const variable\n// declare a constant named \u0026#39;school\u0026#39;  const school = \u0026#34;General Assembly\u0026#34;  An error will occur if you try to update the value of a const\n// correctly declare a constant using \u0026#34;const\u0026#34; keyword const greeting = \u0026#34;Hello\u0026#34; // const values cannot be updated, if you attempt to do so // an error will occur  greeting = \u0026#34;Good Morning\u0026#34; // this will throw an error  "
+},
+{
 	"uri": "/01-command-line-js-and-git/code-along-git-branching-merging/",
 	"title": "Code Along: Git Branching &amp; Merging",
 	"tags": [],
 	"description": "",
 	"content": " Code Along: Git Branching \u0026amp; Merging Step 0: Navigate to your class folder on your command line  From your command line, navigate to your class folder (i.e. the folder named jsd)  Step 1: Set up your project directory  Navigate into the lesson_01_files directory (this assumes you are currently in your jsd directory)\n$ cd lesson_01_files  Create a new directory named nursery_rhymes\n$ mkdir nursery_rhymes  Navigate into the nursery_rhymes directory using the cd command\n$ cd nursery_rhymes  nursery_rhymes is where all the files for this project will reside\n  Step 2: Create git repository for our project  Let\u0026rsquo;s create a new git repository to track all the changes inside your nursery_rhymes project\n Initialize a new repository by running the following command:\n$ git init   Step 3: Add a new files to the repository  Create two new files using the touch command\n$ touch humpty_dumpty.txt jack_be_nimble.txt  Open up your text editor and add the following content to humpty_dumpty.txt and save the file\nHumpty Dumpty sat on a wall, Humpty Dumpty had a great fall. All the king's horses and all the king's men Couldn't put Humpty together again.  Next, add the following text to jack_be_nimble.txt and save the file\nJack be nimble, Jack be quick, Jack jump over The candlestick.   Step 4: Stage and Commit your recent changes  Let\u0026rsquo;s stage the file so the changes can be moved from the \u0026ldquo;working directory\u0026rdquo; to the \u0026ldquo;staging area\u0026rdquo;\n$ git add .   git add . will add all files in the working directory to the staging area\n  Next, let\u0026rsquo;s commit the changes\n$ git commit -m \u0026quot;add initial nursery rhymes\u0026quot;   Step 5: Create a new branch  Branches allow developers work on a new feature without making any disruptive to changes to the main project (i.e. master branch) during the development of the feature\n Git branches are created using the git branch {branch-name} command\n Let\u0026rsquo;s create a new branch that will allow us to experiment with \u0026ldquo;remixes\u0026rdquo; to the Humpty Dumpty nursery rhyme\n First let\u0026rsquo;s create a new branch named \u0026ldquo;humpty_dumpty_remix\u0026rdquo;\n$ git branch humpty_dumpty_remix  Confirm that the new branch was successfully created by running git branch (without the \u0026ldquo;name\u0026rdquo; option)\n$ git branch  You should receive the following output:\nhumpty_dumpty_remix `* master  Note that you should have two (2) branches listed: master and humpty_dumpty_remix\n Also note that the asterisk (*) denotes which is currently active; we are currently \u0026ldquo;on the master branch\u0026rdquo;\n  Press the q key to escape from the git branch output in your terminal\n  In order to actually make changes on your new branch, we need to check it out so that it will be our \u0026ldquo;active branch\u0026rdquo;; otherwise, any changes we make now will be associated with our master branch\n Run the following command to check out our humpty_dumpty_remix branch\n$ git checkout humpty_dumpty_remix   git checkout {branch_name} allows developers to switch between branches in their local repository\n  Output should look similar to the following:\nSwitched to branch 'humpty_dumpty_remix'  You are now \u0026ldquo;on the humpty_dumpty_remix branch\u0026rdquo;\n  Step 6: Make changes on the feature branch  Open humpty_dumpty.txt in your text editor and change replace the last two lines of the nursery rhyme with the following lines; save the file:\nHe didn't get bruised he didn't get bumped Humpty Dumpty bungee jumped!  Run git diff to observe the line-by-line differences; your output should look like the following:\ndiff --git a/humpty_dumpty.txt b/humpty_dumpty.txt index 9516671..b5eeca0 100644 --- a/humpty_dumpty.txt +++ b/humpty_dumpty.txt @@ -1,4 +1,4 @@ Humpty Dumpty sat on a wall, Humpty Dumpty had a great fall. -All the king's horses and all the king's men -Couldn't put Humpty together again. +He didn't get bruised he didn't get bumped +Humpty Dumpty bungee jumped!   Step 7: Stage and Commit your recent changes  Let\u0026rsquo;s stage the file so the changes can be moved from the \u0026ldquo;working directory\u0026rdquo; to the \u0026ldquo;staging area\u0026rdquo;\n$ git add humpty_dumpty.txt  Next, let\u0026rsquo;s commit the changes\n$ git commit -m \u0026quot;remix humpty dumpty nursery rhyme\u0026quot;  Run git log to review the latest commit history\ncommit c6e54274bb0d6984e21622cb58274f48a80dc7d9 (HEAD -\u0026gt; humpty_dumpty_remix) Author: Kareem Grant \u0026lt;kareem@getuserwise.com\u0026gt; Date: Mon Aug 5 18:58:02 2019 -0400 remix humpty dumpty nursery rhyme commit 7edef5f21ddf4b42afb72c079cd03f3e2267e32c (origin/master, master) Author: Kareem Grant \u0026lt;kareem@getuserwise.com\u0026gt; Date: Mon Aug 5 16:36:50 2019 -0400 Add initial nursery rhymes  Note that our recent commit lives on the humpty_dumpty_remix branch\n  Step 8: Merge the changes into the master branch  We\u0026rsquo;re happy with our changes and now we\u0026rsquo;re ready to merge the changes into the master branch\n First, we need to move back to the master branch (we are currently on the humpty_dumpty_remix branch)\n We accomplish this by using the git checkout {branch_name} command\n$ git checkout master  The output should confirm that you successfully switched back to the master branch\nSwitched to branch 'master'  Now let\u0026rsquo;s merge the recent changes from our humpty_dumpty_remix branch into the master branch\n Merges in git are accomplished using the git merge command\n$ git merge humpty_dumpty_remix  The output should be similar to the following:\nUpdating 7edef5f..c6e5427 Fast-forward humpty_dumpty.txt | 4 ++-- 1 file changed, 2 insertions(+), 2 deletions(-)  The \u0026ldquo;fast-forward\u0026rdquo; reference means that Git was able to do an expedited merge because no conflicts were found (reference)\n Run git log to review the latest commit history\ncommit c6e54274bb0d6984e21622cb58274f48a80dc7d9 (HEAD -\u0026gt; master, humpty_dumpty_remix) Author: Kareem Grant \u0026lt;kareem@getuserwise.com\u0026gt; Date: Mon Aug 5 18:58:02 2019 -0400 remix humpty dumpty nursery rhyme commit 7edef5f21ddf4b42afb72c079cd03f3e2267e32c (origin/master) Author: Kareem Grant \u0026lt;kareem@getuserwise.com\u0026gt; Date: Mon Aug 5 16:36:50 2019 -0400 Add initial nursery rhymes  Notice that the HEAD (pointer which usually points to the most recent commit) is now on the master \u0026amp; the humpty_dumpty_remix branch; this means that our latest commit are up-to-date on both branches\n  Step 9: Delete the feature branch  Next, we\u0026rsquo;ll delete the feature branch because it\u0026rsquo;s no longer needed (the feature has been merged to master)\n To delete a branch we\u0026rsquo;ll use the git branch -d {name_of_branch}\n$ git branch -d humpty_dumpty_remix  The expected output should look similar to the following:\nDeleted branch humpty_dumpty_remix (was c6e5427).   Step 10: Create and checkout a new branch  Let\u0026rsquo;s create and check out a new branch that we\u0026rsquo;ll use to experiment with additional changes to jack_be_nimble.txt`\n Enter the following command to create a new branch and check it out at the same time\n$ git checkout -b update_jack_be_nimble  Here\u0026rsquo;s what the output should look like\nSwitched to a new branch 'update_jack_be_nimble'   git checkout -b {new_branch_name} uses the -b flag to checkout the newly created branch immediately after creating the branch\n Step 11: Make additional changes  Let\u0026rsquo;s makes some updates to our other nursery rhyme\n Run git branch to confirm that you are currently on the update_jack_be_nimble branch\n Open jack_be_nimble.txt in your text editor and replace all references to \u0026ldquo;Jack\u0026rdquo; with \u0026ldquo;Jill\u0026rdquo;; save the file\n  Step 12: Stage and Commit your recent changes  Stage the file so the changes can be moved from the \u0026ldquo;working directory\u0026rdquo; to the \u0026ldquo;staging area\u0026rdquo;\n$ git add jack_be_nimble.txt  Next, let\u0026rsquo;s commit the changes\n$ git commit -m \u0026quot;change references from jack to jill in 'jack be nimble'\u0026quot;   Step 13: Change back to the master branch and make a \u0026lsquo;conflicting\u0026rsquo; change  Next, we\u0026rsquo;re going to create a merge conflict on purpose and learn how to properly handle those conflicts\n Run git branch to confirm that you are currently on the master branch\n Open jack_be_nimble.txt in your text editor and change all references to \u0026ldquo;Jack\u0026rdquo; to \u0026ldquo;Jennifer\u0026rdquo;; save the file\n  Step 14: Stage and Commit your recent changes  Stage the file so the changes can be moved from the \u0026ldquo;working directory\u0026rdquo; to the \u0026ldquo;staging area\u0026rdquo;\n$ git add jack_be_nimble.txt  Next, let\u0026rsquo;s commit the changes\n$ git commit -m \u0026quot;change references from jack to jennifer in 'jack be nimble'\u0026quot;   Step 15: Attempt to merge \u0026ldquo;update_jack_be_nimble\u0026rdquo; into \u0026ldquo;master\u0026rdquo;  Let\u0026rsquo;s see what happens when we attempt to merge the update_jack_be_nimble branch into the master branch\n Ensure you are currently on the master branch and run the following command:\n$ git merge update_jack_be_nimble  You should receive output that resembles the following:\nAuto-merging jack_be_nimble.txt CONFLICT (content): Merge conflict in jack_be_nimble.txt Automatic merge failed; fix conflicts and then commit the result.  Git is informing us that it was not able to automatically merge the two branches due to a merge conflict\n  Step 16: View the merge conflict  Open jack_be_nimble.txt in your text editor; you should see the following:\n \u0026lt;\u0026lt;\u0026lt;\u0026lt;\u0026lt;\u0026lt;\u0026lt; HEAD Jennifer be nimble, Jennifer be quick, Jennifer jump over ======= Jill be nimble, Jill be quick, Jill jump over \u0026gt;\u0026gt;\u0026gt;\u0026gt;\u0026gt;\u0026gt;\u0026gt; update_jack_be_nimble The candlestick.  Note that some additional text has been added to our file:\n \u0026lt;\u0026lt;\u0026lt;\u0026lt;\u0026lt;\u0026lt;\u0026lt; HEAD\n =======\n `\u0026gt;\u0026gt;\u0026gt;\u0026gt;\u0026gt;\u0026gt;\u0026gt; update_jack_be_nimble\n  Think of these new lines as \u0026ldquo;conflict dividers\u0026rdquo;\n The ======= line is the \u0026ldquo;center\u0026rdquo; of the conflict.\n All the content between the center and the \u0026lt;\u0026lt;\u0026lt;\u0026lt;\u0026lt;\u0026lt;\u0026lt; HEAD line is content that exists in the current branch master which the HEAD ref is pointing to\n Alternatively all content between the center and \u0026gt;\u0026gt;\u0026gt;\u0026gt;\u0026gt;\u0026gt;\u0026gt; update_jack_be_nimble is content that is present in our merging branch\n   Step 16: Resolve the merge conflict  We\u0026rsquo;re going to fix the merge conflict by directly editing the file and removing the conflict dividers and any changes that we\u0026rsquo;ve determined (after discussing with our team) should be updated and/or deleted\n It\u0026rsquo;s been determined that the new name of our nursery rhyme subject should be \u0026ldquo;Jill\u0026rdquo;\n Remove all the conflict lines and the lines that start with \u0026ldquo;Jennifer\u0026rdquo;; save the file\n jack_be_nimble.txt should look like the following after the changes:\nJill be nimble, Jill be quick, Jill jump over The candlestick.  Next, run git add jack_be_nimble.txt to stage our changes\n Then commit the changes using git commit\n$ git commit -m \u0026quot;merged and resolved conflict in jack_be_nimble.txt\u0026quot;  Run a git log to view the updated commit history; the output should look similar to the following:\nOn branch master commit fd13059a4f83b0746ab95bb9aaf34c74ce8f74f6 (HEAD -\u0026gt; master) Merge: e82c6db 8fddf9d Author: Kareem Grant \u0026lt;kareem@getuserwise.com\u0026gt; Date: Tue Aug 6 09:57:34 2019 -0400 merged and resolved conflict in jack_be_nimble.txt commit e82c6db31408abfbe34a9917c75fa3e7be4e6053 Author: Kareem Grant \u0026lt;kareem@getuserwise.com\u0026gt; Date: Tue Aug 6 09:35:06 2019 -0400 change references from jack to jennifer in 'jack be nimble' commit 8fddf9dd40a77f94b10cab353f56e1fabddeeefb (update_jack_be_nimble) Author: Kareem Grant \u0026lt;kareem@getuserwise.com\u0026gt; Date: Tue Aug 6 09:32:59 2019 -0400 change references from jack to jill in 'jack be nimble' commit 7f102fe037156f74aa891e05c7779edddcb27531 Author: Kareem Grant \u0026lt;kareem@getuserwise.com\u0026gt; Date: Tue Aug 6 09:27:56 2019 -0400 remix humpty dumpty nursery rhyme commit 8409ae16180d09e67187330718c86310600bbb70 Author: Kareem Grant \u0026lt;kareem@getuserwise.com\u0026gt; Date: Tue Aug 6 09:26:30 2019 -0400 add initial nursery rhymes  Congrats! You\u0026rsquo;ve successfully resolved our merge conflict\n  "
+},
+{
+	"uri": "/02-javascript-basics/comparison-operators/",
+	"title": "Comparison Operators",
+	"tags": [],
+	"description": "",
+	"content": " Comparison Operators  Compares operands (the things on either side of the operator) and returns true or false (boolean) based one the comparison     Operator Description Example (all return true)     Equal (==) Returns true if the operands are equal 3 == \u0026ldquo;3\u0026rdquo; (uhmm yes this is actually true)   Not equal (!=) Returns true if the operands are not equal. (4 + 1) != 10   Strict equal (===) Returns true if the operands are equal and of the same type (8 * 1) === 8   Strict not equal (!==) Returns true if the operands are of the same type but not equal, or are of different type 3 !== \u0026ldquo;3\u0026rdquo;   Greater than (\u0026gt;) Returns true if the left operand is greater than the right operand 10 \u0026gt; (3 * 3)   Greater than or equal (\u0026gt;=) Returns true if the left operand is greater than or equal to the right operand 10 \u0026gt;= (3 * 3) + 1   Less than (\u0026lt;) Returns true if the left operand is less than the right operand 7 \u0026lt; (3 * 3)   Less than or equal (\u0026lt;=) Returns true if the left operand is less than or equal to the right operand 18 \u0026lt;= 6 * 3    Examples\nJS Bin on jsbin.com\n"
 },
 {
 	"uri": "/00-course-intro-and-tools/course-structure/",
@@ -217,11 +329,25 @@
 	"content": " Lesson 08 Ajax and APIs\u0026rdquo; "
 },
 {
+	"uri": "/02-javascript-basics/logical-operators/",
+	"title": "Logical Operators",
+	"tags": [],
+	"description": "",
+	"content": " Logical Operators  Evaluates between two conditions/expressions and returns true or false\n with \u0026amp;\u0026amp; (Logical And) operators, both conditions have to be true in order for the whole expression to be true\n with || (Logical Or) operators, any of the condition must be true for entire expression to be true; but if all conditions are false then the entire expression is false\n     Operator Description Example (all return true)     Logical AND (\u0026amp;\u0026amp;) expr1 \u0026amp;\u0026amp; expr2 (3 \u0026gt; 1) \u0026amp;\u0026amp; \u0026ldquo;cat\u0026rdquo;.length === 3   Logical OR (||) expr1 || expr2 (4 + 1) \u0026lt; 8 || 53 \u0026gt; (9 * 6)    Examples\nJS Bin on jsbin.com\n"
+},
+{
 	"uri": "/09-asynchronous-js-and-callbacks/",
 	"title": "Asynchronous JS and Callbacks",
 	"tags": [],
 	"description": "",
 	"content": " Lesson 09 Asynchronous JS and Callbacks "
+},
+{
+	"uri": "/02-javascript-basics/conditionals/",
+	"title": "Conditionals",
+	"tags": [],
+	"description": "",
+	"content": " What are Conditionals?  Conditionals tests whether an “expression” evaluates to true or false and then makes a decision based on the results of that test\n if statements are the most common form of conditionals\n There are two types of if statements\n (if..else) statements\n (if..else if) statements\n   (if\u0026hellip;else) statements  when evaluating between just two choices, use if/else\n These are great for “either or” situations\n You do not specify a condition for the “else” clause\n  // if..else statement  if (condition) { code to run if condition is true } else { code to run if the above condition is NOT true } // run some other code   Sometimes you\u0026rsquo;ll find that you don\u0026rsquo;t need an else clause. These are scenarios where you  let yearOfBirth = 2001 if (yearOfBirth \u0026lt;= 2002) { alert(\u0026#39;you will be old enough to vote in 2020\u0026#39;) } else { alert(\u0026#39;Sorry, you will not be old enough to vote next year\u0026#39;) }  JS Bin on jsbin.com\n(if\u0026hellip;else if) statements  when evaluation among more than two choices, use if/else if\n You must specify a condition on the “else if” clause\n You can use as many else if clauses as you need\n  // if..else if statement  if (condition) { code to run if this condition is true } else if (another condition) { code to run if this condition is true } else { code to run if NONE of the above conditions are true } // run some other code   Here\u0026rsquo;s an example of a conditional that uses else if  let yourGrade = 84 if (yourGrade \u0026gt;= 90) { alert(\u0026#34;Congrats your score is 90 or above, that\u0026#39;s an A!\u0026#34;) } else if (yourGrade \u0026gt;= 80) { alert(\u0026#34;Congrats your score is 80 or above, you earned a B\u0026#34;) } else { alert(\u0026#34;Your score is less than 80, no bueno\u0026#34;) }  JS Bin on jsbin.com\n"
 },
 {
 	"uri": "/00-course-intro-and-tools/folder-structure/",

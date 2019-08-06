@@ -11,11 +11,23 @@
   </url>
   
   <url>
+    <loc>/02-javascript-basics/objectives/</loc>
+  </url>
+  
+  <url>
     <loc>/01-command-line-js-and-git/</loc>
   </url>
   
   <url>
     <loc>/class-resources/documentation/</loc>
+  </url>
+  
+  <url>
+    <loc>/02-javascript-basics/data-types/strings/</loc>
+  </url>
+  
+  <url>
+    <loc>/02-javascript-basics/variables/what-are-variables/</loc>
   </url>
   
   <url>
@@ -36,7 +48,11 @@
   </url>
   
   <url>
-    <loc>/02-data-types/</loc>
+    <loc>/02-javascript-basics/variables/declaring-variables/</loc>
+  </url>
+  
+  <url>
+    <loc>/02-javascript-basics/</loc>
   </url>
   
   <url>
@@ -44,7 +60,15 @@
   </url>
   
   <url>
+    <loc>/02-javascript-basics/data-types/numbers/</loc>
+  </url>
+  
+  <url>
     <loc>/00-course-intro-and-tools/objectives/</loc>
+  </url>
+  
+  <url>
+    <loc>/02-javascript-basics/data-types/booleans/</loc>
   </url>
   
   <url>
@@ -56,11 +80,35 @@
   </url>
   
   <url>
+    <loc>/02-javascript-basics/variables/updating-variables/</loc>
+  </url>
+  
+  <url>
+    <loc>/02-javascript-basics/variables/</loc>
+  </url>
+  
+  <url>
+    <loc>/02-javascript-basics/data-types/arrays/</loc>
+  </url>
+  
+  <url>
+    <loc>/02-javascript-basics/data-types/</loc>
+  </url>
+  
+  <url>
     <loc>/04-functions-and-scope/</loc>
   </url>
   
   <url>
     <loc>/01-command-line-js-and-git/git-overview/</loc>
+  </url>
+  
+  <url>
+    <loc>/02-javascript-basics/variables/naming-rules/</loc>
+  </url>
+  
+  <url>
+    <loc>/02-javascript-basics/data-types/objects/</loc>
   </url>
   
   <url>
@@ -80,11 +128,19 @@
   </url>
   
   <url>
+    <loc>/02-javascript-basics/arithmetic-operators/</loc>
+  </url>
+  
+  <url>
     <loc>/01-command-line-js-and-git/git-vocabulary/</loc>
   </url>
   
   <url>
     <loc>/05-objects-and-json/</loc>
+  </url>
+  
+  <url>
+    <loc>/02-javascript-basics/variables/let-vs-var/</loc>
   </url>
   
   <url>
@@ -108,7 +164,15 @@
   </url>
   
   <url>
+    <loc>/02-javascript-basics/variables/const/</loc>
+  </url>
+  
+  <url>
     <loc>/01-command-line-js-and-git/code-along-git-branching-merging/</loc>
+  </url>
+  
+  <url>
+    <loc>/02-javascript-basics/comparison-operators/</loc>
   </url>
   
   <url>
@@ -128,7 +192,15 @@
   </url>
   
   <url>
+    <loc>/02-javascript-basics/logical-operators/</loc>
+  </url>
+  
+  <url>
     <loc>/09-asynchronous-js-and-callbacks/</loc>
+  </url>
+  
+  <url>
+    <loc>/02-javascript-basics/conditionals/</loc>
   </url>
   
   <url>
