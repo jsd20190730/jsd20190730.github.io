@@ -468,6 +468,17 @@ Atom Editor v1.</description>
     </item>
     
     <item>
+      <title>Lab: JS Basics, Control Flow &amp; Loops</title>
+      <link>/03-control-flow-and-loops/lab-js-basics-control-flow-loops/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/03-control-flow-and-loops/lab-js-basics-control-flow-loops/</guid>
+      <description>Lab: JavaScript Basics, Control Flow &amp;amp; Loops  You are tasked with completing the problem set which is hosted on Github, see the url below:
+ Github Repo for JS Basics, Control Flow &amp;amp; Loops Lab  Use the &amp;ldquo;Assignment Submission Git Workflow&amp;rdquo; (instructions) to access the lab files and submit your completed assignment
+  Tips  Be resourceful, leverage the class notes, google, MDN or any other means at your disposal to solve these problems (a core developer skill is being able to look things up and find the answers)</description>
+    </item>
+    
+    <item>
       <title>Linux Installation Instructions</title>
       <link>/class-resources/node-git-installation/linux/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
