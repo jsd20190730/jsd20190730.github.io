@@ -15,6 +15,10 @@
   </url>
   
   <url>
+    <loc>/03-control-flow-and-loops/objectives/</loc>
+  </url>
+  
+  <url>
     <loc>/01-command-line-js-and-git/</loc>
   </url>
   
@@ -43,8 +47,16 @@
   </url>
   
   <url>
+    <loc>/class-resources/git-workflow-submitting-assignments/</loc>
+  </url>
+  
+  <url>
     <loc>/class-resources/keyboard-shortcuts/</loc>
     <lastmod>2017-01-22T18:05:18-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/03-control-flow-and-loops/conditionals/</loc>
   </url>
   
   <url>
@@ -68,15 +80,27 @@
   </url>
   
   <url>
+    <loc>/03-control-flow-and-loops/conditionals/if-statement/</loc>
+  </url>
+  
+  <url>
+    <loc>/03-control-flow-and-loops/loops-and-iteration/while-loops/</loc>
+  </url>
+  
+  <url>
     <loc>/02-javascript-basics/data-types/booleans/</loc>
   </url>
   
   <url>
-    <loc>/03-conditionals-and-loops/</loc>
+    <loc>/03-control-flow-and-loops/</loc>
   </url>
   
   <url>
     <loc>/class-resources/atom-editor-settings/</loc>
+  </url>
+  
+  <url>
+    <loc>/03-control-flow-and-loops/switch-statement/</loc>
   </url>
   
   <url>
@@ -104,6 +128,10 @@
   </url>
   
   <url>
+    <loc>/03-control-flow-and-loops/loops-and-iteration/</loc>
+  </url>
+  
+  <url>
     <loc>/02-javascript-basics/variables/naming-rules/</loc>
   </url>
   
@@ -124,11 +152,15 @@
   </url>
   
   <url>
-    <loc>/01-command-line-js-and-git/github/</loc>
+    <loc>/03-control-flow-and-loops/loops-and-iteration/do-while-loops/</loc>
   </url>
   
   <url>
-    <loc>/02-javascript-basics/variables-lab/</loc>
+    <loc>/03-control-flow-and-loops/conditionals/if-else/</loc>
+  </url>
+  
+  <url>
+    <loc>/01-command-line-js-and-git/github/</loc>
   </url>
   
   <url>
@@ -172,6 +204,14 @@
   </url>
   
   <url>
+    <loc>/03-control-flow-and-loops/loops-and-iteration/for-loop/</loc>
+  </url>
+  
+  <url>
+    <loc>/03-control-flow-and-loops/conditionals/if-else-if/</loc>
+  </url>
+  
+  <url>
     <loc>/01-command-line-js-and-git/code-along-git-branching-merging/</loc>
   </url>
   
@@ -200,15 +240,15 @@
   </url>
   
   <url>
+    <loc>/03-control-flow-and-loops/loops-and-iteration/for-each/</loc>
+  </url>
+  
+  <url>
+    <loc>/03-control-flow-and-loops/conditionals/ternary-operator/</loc>
+  </url>
+  
+  <url>
     <loc>/09-asynchronous-js-and-callbacks/</loc>
-  </url>
-  
-  <url>
-    <loc>/02-javascript-basics/conditionals/</loc>
-  </url>
-  
-  <url>
-    <loc>/02-javascript-basics/data-types-lab/</loc>
   </url>
   
   <url>
@@ -291,6 +331,10 @@
   <url>
     <loc>/class-resources/</loc>
     <lastmod>2017-01-22T18:05:18-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/02-javascript-basics/truthy-falsey/</loc>
   </url>
   
   <url>

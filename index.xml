@@ -32,12 +32,27 @@
       
       <guid>/02-javascript-basics/objectives/</guid>
       <description>After this lesson, students will be able to:
- Run simple JavaScript programs from the command line using Node
  Describe the concept of a &amp;ldquo;data type&amp;rdquo; and how it relates to variables
  Declare, assign to, and manipulate data stored in a variable
  Create arrays and access values in them
- Understand how if/else statements can be used to control program flow
- Understand the difference between comparison operators</description>
+ Understand the difference between comparison operators
+ Distinguish between the different types of logical operators
+ Run simple JavaScript programs from the command line using Node
+  </description>
+    </item>
+    
+    <item>
+      <title>Objectives</title>
+      <link>/03-control-flow-and-loops/objectives/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/03-control-flow-and-loops/objectives/</guid>
+      <description>After this lesson, students will be able to:
+ Use if/else conditionals to control program flow based on Boolean (true or false) tests
+ Use switch/case conditionals to control program flow based on matching explicit values
+ Use while and do/while loops
+ Understand how loop iteration using for and forEach works
+  </description>
     </item>
     
     <item>
@@ -118,6 +133,19 @@ When copying the following code snippets, DO NOT include the $ this is a univers
     </item>
     
     <item>
+      <title>Git Workflow for Submitting Assignments</title>
+      <link>/class-resources/git-workflow-submitting-assignments/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/class-resources/git-workflow-submitting-assignments/</guid>
+      <description>Step 0: Fork the Assignment Repository  This step is only done once per project
+ Every assignment will be accompanied by repository url on GitHub
+ Click on the provided url and then fork the repository
+   Step 1: Clone the project down to your computer  This step is only done once per project
+ While on the repository page of the forked repository, click on the &amp;ldquo;Clone or Download&amp;rdquo; button</description>
+    </item>
+    
+    <item>
       <title>Keyboard Shortcuts</title>
       <link>/class-resources/keyboard-shortcuts/</link>
       <pubDate>Sun, 22 Jan 2017 18:05:18 -0500</pubDate>
@@ -180,6 +208,24 @@ Converting Strings to Numbers  Sometimes you will find yourself in a position wh
     </item>
     
     <item>
+      <title>if Statement</title>
+      <link>/03-control-flow-and-loops/conditionals/if-statement/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/03-control-flow-and-loops/conditionals/if-statement/</guid>
+      <description>if Statement  Used when you want to have some sort of single branching logic  if (condition) { code to run if condition is true } // run some other code  Example let isRewardsMember = true let totalPrice = 100 if (isRewardsMember) { totalPrice = totalPrice * 0.80 } console.log(totalPrice)  JS Bin on jsbin.com</description>
+    </item>
+    
+    <item>
+      <title>while Loop</title>
+      <link>/03-control-flow-and-loops/loops-and-iteration/while-loops/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/03-control-flow-and-loops/loops-and-iteration/while-loops/</guid>
+      <description>while Loop  While loops run its statements as long as a specified condition evaluates to true  while (condition) { statement } // run some other code   If the condition becomes false, statement within the loop stops executing and control passes to the statement following the loop  Example let n = 0 while (n &amp;lt; 5) { console.log(n) n++ }  JS Bin on jsbin.com</description>
+    </item>
+    
+    <item>
       <title>Booleans</title>
       <link>/02-javascript-basics/data-types/booleans/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -198,6 +244,19 @@ Converting Strings to Numbers  Sometimes you will find yourself in a position wh
       <guid>/class-resources/atom-editor-settings/</guid>
       <description>All of the settings below can be accessed using the following steps:
  Mac: cmd + , -&amp;gt; Editor PC: ctrl + , -&amp;gt; Editor  Setting indentation levels / default tab-size During our course we will be using a set indentation level of 2 spaces (1 indentation level = 2 spaces). Atom makes it easy conform to this approach by setting our tab to a set level of indentation.</description>
+    </item>
+    
+    <item>
+      <title>Switch Statement</title>
+      <link>/03-control-flow-and-loops/switch-statement/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/03-control-flow-and-loops/switch-statement/</guid>
+      <description>Switch Statement  Used an alternative to if..else if statements
+ Evaluates an expression, and matches that expression against each of the case clauses
+ if there&amp;rsquo;s a match, the statements associated with that case clause will be executed
+ The break keyword must be used to exit the Switch statement after a match is found
+  switch(expression) { case x: // execute code block when expression === x  break // &amp;lt;- break must be called to exit the switch statement after the match  case y: // execute code block when expression === y  break // &amp;lt;- break must be called to exit the switch statement after the match  default: // execute code block when expression === when none of the above cases match }  Example let food = &amp;#34;apple&amp;#34; switch(food) { case &amp;#39;pear&amp;#39;: console.</description>
     </item>
     
     <item>
@@ -296,6 +355,29 @@ Atom Editor v1.</description>
     </item>
     
     <item>
+      <title>do..while Loop</title>
+      <link>/03-control-flow-and-loops/loops-and-iteration/do-while-loops/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/03-control-flow-and-loops/loops-and-iteration/do-while-loops/</guid>
+      <description>do..while Loop  A do&amp;hellip;while loop repeats until a specified condition evaluates to false  do { statement } while (condition)   statement is always executed once before the condition is checked (and then again until the while condition returns false)
+ With do&amp;hellip;while loops, everything in-between the curly braces (i.e. statement(s)) will run at least once
+  Example let n = 0 do { console.log(n) n++ } while (n &amp;lt; 0)   the loop will run at least once and then terminate because 0 is NOT &amp;lt; 0  JS Bin on jsbin.</description>
+    </item>
+    
+    <item>
+      <title>if..else Statement</title>
+      <link>/03-control-flow-and-loops/conditionals/if-else/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/03-control-flow-and-loops/conditionals/if-else/</guid>
+      <description>if..else Statement  Used when evaluating between just two choices
+ These are great for “either or” situations
+ You do not specify a condition for the “else” clause
+  // if..else statement  if (condition) { code to run if condition is true } else { code to run if the above condition is NOT true } // run some other code  Example let yearOfBirth = 2001 if (yearOfBirth &amp;lt;= 2002) { console.</description>
+    </item>
+    
+    <item>
       <title>Github</title>
       <link>/01-command-line-js-and-git/github/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -310,23 +392,14 @@ Atom Editor v1.</description>
     </item>
     
     <item>
-      <title>Variables Lab</title>
-      <link>/02-javascript-basics/variables-lab/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/02-javascript-basics/variables-lab/</guid>
-      <description> Variables Lab  We are going to use our &amp;ldquo;homework submission git workflow&amp;rdquo; to access the lab files
- The repo for the lab can be found here
-  </description>
-    </item>
-    
-    <item>
       <title>Arithmetic Operators</title>
       <link>/02-javascript-basics/arithmetic-operators/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/02-javascript-basics/arithmetic-operators/</guid>
-      <description>Arithmetic Operators  Mathematical symbol that can act on two values (or variables) and produce a result     Description Operator Example     Addition + 7 + 8   Subtraction - 34 - 12   Multiplication * 3 * 5   Division / 42 / 6   Modulus (Remainder) % 13 % 6 (returns 1, as 6 goes into 13 twice, leaving 1 as the remainder )   Exponential ** 4 ** 2 (returns 16 or 4 * 4)   Increment ++ 9++ (returns 10)   Decrement -- 37-- (returns 36)    Examples</description>
+      <description>Arithmetic Operators  Mathematical symbol that can act on two values (or variables) and produce a result
+ JavaScript adheres to the PEDMAS approach when determining the order of operations
+     Description Operator Example     Addition + 7 + 8   Subtraction - 34 - 12   Multiplication * 3 * 5   Division / 42 / 6   Modulus (Remainder) % 13 % 6 (returns 1, as 6 goes into 13 twice, leaving 1 as the remainder )   Exponential ** 4 ** 2 (returns 16 or 4 * 4)   Increment ++ 9++ (returns 10)   Decrement -- 37-- (returns 36)    Examples JS Bin on jsbin.</description>
     </item>
     
     <item>
@@ -418,6 +491,30 @@ Atom Editor v1.</description>
     </item>
     
     <item>
+      <title>for Loop</title>
+      <link>/03-control-flow-and-loops/loops-and-iteration/for-loop/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/03-control-flow-and-loops/loops-and-iteration/for-loop/</guid>
+      <description>for Loop  The for loop consists of three optional expressions, enclosed in parentheses and separated by semicolons, followed by a statement (usually a block statement) to be executed in the loop.
+ The three expression help determine how many times the loop will iterate before it terminates
+ The statements involve an iterator variable (usually depicted as an &amp;ldquo;i&amp;rdquo;)
+  for (statement 1; statement 2; statement 3) { // code block to be executed }   statement 1 is executed (one time) before the execution of the code block</description>
+    </item>
+    
+    <item>
+      <title>if..else if Statement</title>
+      <link>/03-control-flow-and-loops/conditionals/if-else-if/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/03-control-flow-and-loops/conditionals/if-else-if/</guid>
+      <description>if..else if Statement  Used when evaluation among more than two choices, use if/else if
+ You must specify a condition for every else if clause
+ You can use as many else if clauses as is needed
+  // if..else if statement  if (condition) { code to run if this condition is true } else if (another condition) { code to run if this condition is true } else { code to run if NONE of the above conditions are true } // run some other code  Example let yourGrade = 84 if (yourGrade &amp;gt;= 90) { console.</description>
+    </item>
+    
+    <item>
       <title>Code Along: Git Branching &amp; Merging</title>
       <link>/01-command-line-js-and-git/code-along-git-branching-merging/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -480,29 +577,27 @@ $ mkdir nursery_rhymes  Navigate into the nursery_rhymes directory using the cd 
     </item>
     
     <item>
-      <title>Conditionals</title>
-      <link>/02-javascript-basics/conditionals/</link>
+      <title>forEach Loop</title>
+      <link>/03-control-flow-and-loops/loops-and-iteration/for-each/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/02-javascript-basics/conditionals/</guid>
-      <description>What are Conditionals?  Conditionals tests whether an “expression” evaluates to true or false and then makes a decision based on the results of that test
- if statements are the most common form of conditionals
- There are two types of if statements
- (if..else) statements
- (if..else if) statements
-   (if&amp;hellip;else) statements  when evaluating between just two choices, use if/else
- These are great for “either or” situations</description>
+      <guid>/03-control-flow-and-loops/loops-and-iteration/for-each/</guid>
+      <description>forEach Loop  forEach() is an Array method executes a provided function once for each item (or element) in the array
+ The function used in forEach is called a callback function because it is &amp;ldquo;called&amp;rdquo; as a result of some event
+ The callback function for forEach provides the following:
+ element - this current element from the array that is being evaluated
+ index - this represents the current element&amp;rsquo;s index (or position in the array)</description>
     </item>
     
     <item>
-      <title>Data Types Lab</title>
-      <link>/02-javascript-basics/data-types-lab/</link>
+      <title>ternary Operator</title>
+      <link>/03-control-flow-and-loops/conditionals/ternary-operator/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/02-javascript-basics/data-types-lab/</guid>
-      <description> Data Types Lab  We are going to use our &amp;ldquo;homework submission git workflow&amp;rdquo; to access the lab files
- The repo for the lab can be found here
-  </description>
+      <guid>/03-control-flow-and-loops/conditionals/ternary-operator/</guid>
+      <description>ternary Operator  Used as a shortcut for the if statement  condition ? expression that is run if condition is true : expression that is run if condition is false  Example let isLactoseIntolerant = true let milkType = isLactoseIntolerant ? &amp;#34;almond&amp;#34; : &amp;#34;dairy&amp;#34; console.log(milkType)  JS Bin on jsbin.com
+Exercise Rewrite the following if..else statement using a ternary operator:
+let yearOfBirth = 2001 if (yearOfBirth &amp;lt;= 2002) { console.</description>
     </item>
     
     <item>
@@ -617,6 +712,15 @@ HTML &amp;amp; CSS  Codecademy - HTML &amp;amp; CSS course
       
       <guid>/00-course-intro-and-tools/group-exercise-rock-paper-scissors/</guid>
       <description>Group Exercise: Rock, Paper and Scissors Form groups (of 2 or 3) and write pseudocode describing a game of Rock, Paper, Scissors</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/02-javascript-basics/truthy-falsey/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/02-javascript-basics/truthy-falsey/</guid>
+      <description></description>
     </item>
     
   </channel>

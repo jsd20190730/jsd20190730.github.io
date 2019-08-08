@@ -39,6 +39,19 @@ Create Repositories Start a new repository or obtain one from an existing URL
     </item>
     
     <item>
+      <title>Git Workflow for Submitting Assignments</title>
+      <link>/class-resources/git-workflow-submitting-assignments/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/class-resources/git-workflow-submitting-assignments/</guid>
+      <description>Step 0: Fork the Assignment Repository  This step is only done once per project
+ Every assignment will be accompanied by repository url on GitHub
+ Click on the provided url and then fork the repository
+   Step 1: Clone the project down to your computer  This step is only done once per project
+ While on the repository page of the forked repository, click on the &amp;ldquo;Clone or Download&amp;rdquo; button</description>
+    </item>
+    
+    <item>
       <title>Keyboard Shortcuts</title>
       <link>/class-resources/keyboard-shortcuts/</link>
       <pubDate>Sun, 22 Jan 2017 18:05:18 -0500</pubDate>

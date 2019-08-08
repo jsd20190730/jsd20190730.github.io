@@ -17,22 +17,12 @@
       
       <guid>/02-javascript-basics/objectives/</guid>
       <description>After this lesson, students will be able to:
- Run simple JavaScript programs from the command line using Node
  Describe the concept of a &amp;ldquo;data type&amp;rdquo; and how it relates to variables
  Declare, assign to, and manipulate data stored in a variable
  Create arrays and access values in them
- Understand how if/else statements can be used to control program flow
- Understand the difference between comparison operators</description>
-    </item>
-    
-    <item>
-      <title>Variables Lab</title>
-      <link>/02-javascript-basics/variables-lab/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/02-javascript-basics/variables-lab/</guid>
-      <description> Variables Lab  We are going to use our &amp;ldquo;homework submission git workflow&amp;rdquo; to access the lab files
- The repo for the lab can be found here
+ Understand the difference between comparison operators
+ Distinguish between the different types of logical operators
+ Run simple JavaScript programs from the command line using Node
   </description>
     </item>
     
@@ -42,7 +32,9 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/02-javascript-basics/arithmetic-operators/</guid>
-      <description>Arithmetic Operators  Mathematical symbol that can act on two values (or variables) and produce a result     Description Operator Example     Addition + 7 + 8   Subtraction - 34 - 12   Multiplication * 3 * 5   Division / 42 / 6   Modulus (Remainder) % 13 % 6 (returns 1, as 6 goes into 13 twice, leaving 1 as the remainder )   Exponential ** 4 ** 2 (returns 16 or 4 * 4)   Increment ++ 9++ (returns 10)   Decrement -- 37-- (returns 36)    Examples</description>
+      <description>Arithmetic Operators  Mathematical symbol that can act on two values (or variables) and produce a result
+ JavaScript adheres to the PEDMAS approach when determining the order of operations
+     Description Operator Example     Addition + 7 + 8   Subtraction - 34 - 12   Multiplication * 3 * 5   Division / 42 / 6   Modulus (Remainder) % 13 % 6 (returns 1, as 6 goes into 13 twice, leaving 1 as the remainder )   Exponential ** 4 ** 2 (returns 16 or 4 * 4)   Increment ++ 9++ (returns 10)   Decrement -- 37-- (returns 36)    Examples JS Bin on jsbin.</description>
     </item>
     
     <item>
@@ -67,29 +59,12 @@
     </item>
     
     <item>
-      <title>Conditionals</title>
-      <link>/02-javascript-basics/conditionals/</link>
+      <title></title>
+      <link>/02-javascript-basics/truthy-falsey/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/02-javascript-basics/conditionals/</guid>
-      <description>What are Conditionals?  Conditionals tests whether an “expression” evaluates to true or false and then makes a decision based on the results of that test
- if statements are the most common form of conditionals
- There are two types of if statements
- (if..else) statements
- (if..else if) statements
-   (if&amp;hellip;else) statements  when evaluating between just two choices, use if/else
- These are great for “either or” situations</description>
-    </item>
-    
-    <item>
-      <title>Data Types Lab</title>
-      <link>/02-javascript-basics/data-types-lab/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/02-javascript-basics/data-types-lab/</guid>
-      <description> Data Types Lab  We are going to use our &amp;ldquo;homework submission git workflow&amp;rdquo; to access the lab files
- The repo for the lab can be found here
-  </description>
+      <guid>/02-javascript-basics/truthy-falsey/</guid>
+      <description></description>
     </item>
     
   </channel>

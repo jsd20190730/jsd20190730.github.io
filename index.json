@@ -18,7 +18,14 @@
 	"title": "Objectives",
 	"tags": [],
 	"description": "",
-	"content": "After this lesson, students will be able to:\n Run simple JavaScript programs from the command line using Node\n Describe the concept of a \u0026ldquo;data type\u0026rdquo; and how it relates to variables\n Declare, assign to, and manipulate data stored in a variable\n Create arrays and access values in them\n Understand how if/else statements can be used to control program flow\n Understand the difference between comparison operators\n Distinguish between the different types of logical operators\n  "
+	"content": "After this lesson, students will be able to:\n Describe the concept of a \u0026ldquo;data type\u0026rdquo; and how it relates to variables\n Declare, assign to, and manipulate data stored in a variable\n Create arrays and access values in them\n Understand the difference between comparison operators\n Distinguish between the different types of logical operators\n Run simple JavaScript programs from the command line using Node\n  "
+},
+{
+	"uri": "/03-control-flow-and-loops/objectives/",
+	"title": "Objectives",
+	"tags": [],
+	"description": "",
+	"content": "After this lesson, students will be able to:\n Use if/else conditionals to control program flow based on Boolean (true or false) tests\n Use switch/case conditionals to control program flow based on matching explicit values\n Use while and do/while loops\n Understand how loop iteration using for and forEach works\n  "
 },
 {
 	"uri": "/01-command-line-js-and-git/",
@@ -70,11 +77,25 @@
 	"content": " Code Along: Command Line Intro For Macs: * Open the \u0026ldquo;Terminal\u0026rdquo; app (Applications \u0026gt; Utilities \u0026gt; Terminal) * Optionally, download and install iTerm 2, which is a replacement for the terminal app that is more configurable.\nFor Windows: * Open the \u0026ldquo;Command Prompt\u0026rdquo; application. * For a better experience, try Console.\nGet familiar with the basic commands on the terminal!\nWhen copying the following code snippets, DO NOT include the $ this is a universal symbol to indicate that the anything following the \u0026lsquo;$\u0026rsquo; should be entered into the command line\n Step 0: Navigate to your class folder on your command line  From your command line, navigate to your class folder (i.e. the folder named jsd)\n Navigate to your jsd from your Root Directory. cd ~ and then cd Documents/jsd (assuming your class folder is named \u0026lsquo;jsd\u0026rsquo; and located in your Documents folder)\n  Step 1: Make a new directory and \u0026ldquo;change\u0026rdquo; into it  Create a directory named command_line_tutorial\n$ mkdir command_line_tutorial  Change into this directory\n$ cd command_line_tutorial   Step 2: Create some files from the command line  Create a file named \u0026ldquo;index.html\u0026rdquo; using the touch command.\n$ touch index.html   Step 3: Open your your text editor from the command line $ atom .   Use subl if you are using sublime  Step 4: Create an empty folder and remove it  Create a folder named test_folder\n$ mkdir test_folder  Now remove it\n$ rmdir test_folder   Student Exercise - Part I : More Independent Practice Complete the following instructions below in the Terminal application.\n Create a folder in your jsd/lesson_01_files directory named my_site\n Once inside that folder, create three empty files:\n goals.html\n worries.html\n index.html\n  Open the my_site folder with in your text editor\n  In the respective files (goals.html and worries.html), write your top three goals and top three worries for this course.\n Paste the following contents into index.html:  \u0026lt;html\u0026gt; \u0026lt;head\u0026gt; \u0026lt;title\u0026gt;My Site \u0026lt;/title\u0026gt; \u0026lt;/head\u0026gt; \u0026lt;body\u0026gt; \u0026lt;a href=\u0026quot;goals.html\u0026quot;\u0026gt;\u0026lt;img src=\u0026quot;http://i.imgur.com/dosK05U.gif\u0026quot; /\u0026gt;\u0026lt;/a\u0026gt; \u0026lt;br\u0026gt; \u0026lt;a href=\u0026quot;worries.html\u0026quot;\u0026gt;\u0026lt;img src=\u0026quot;http://i.imgur.com/2s0HwpM.gif\u0026quot; /\u0026gt;\u0026lt;/a\u0026gt; \u0026lt;/body\u0026gt; \u0026lt;/html\u0026gt;   Open index.html with your browser and make sure you see your goals and worries.  Student Exercise - Part II: More Independent Practice  Use your new knowledge of the command line to create a lesson folder for each of the remaining lessons in the course inside your jsd folder\n There are 20 lessons in the course and the lesson names should use the following format: lesson_02_files, lesson_03_files, etc\n The last class should be named lesson_19_files (we started counting at 00)\n  "
 },
 {
+	"uri": "/class-resources/git-workflow-submitting-assignments/",
+	"title": "Git Workflow for Submitting Assignments",
+	"tags": [],
+	"description": "",
+	"content": " Step 0: Fork the Assignment Repository  This step is only done once per project\n Every assignment will be accompanied by repository url on GitHub\n Click on the provided url and then fork the repository\n   Step 1: Clone the project down to your computer  This step is only done once per project\n While on the repository page of the forked repository, click on the \u0026ldquo;Clone or Download\u0026rdquo; button\n Copy the provided url (you may need to click on \u0026ldquo;Use HTTPS\u0026rdquo; if you don\u0026rsquo;t have SSH configured (ssh instructions)\n Use your command line to navigate to the desired directory / folder\n Then type the following command:\n$ git clone paste-url-to-remote-repository-on-github-here    Step 2: Work on Assignment in text editor, Commit and Push  This step is done as many times as needed\n Next step is to use your text editor to work on the assignment\n You should be using the best practice of committing as often as needed (this is especially important when working on larger assignments and projects)\n You should also periodically push your code to GitHub using git push so your local and remote repositories stay in sync\n Once you\u0026rsquo;ve completed the assignment the next step is to submit a Pull Request\n  Step 3: Submit your completed assignment using a Pull Request  This step is only done once per project\n Before proceeding, please ensure that your latest changes have pushed to GitHub\n Next submit a Pull Request by following the instructions in the video below:\n   "
+},
+{
 	"uri": "/class-resources/keyboard-shortcuts/",
 	"title": "Keyboard Shortcuts",
 	"tags": [],
 	"description": "",
 	"content": " General Window Management \u0026amp; Browser Shortcuts    Action Mac Windows     Open Chrome Developer Tools cmd+option + i F2 or ctrl + shift + i   Refresh page cmd + R ctrl + R   Switch between applications cmd + tab alt + tab   Switch between windows in the same application cmd + ~     Atom Shortcuts Files, Windows, Tabs Management    Command macOS Windows Linux Description     Open Settings Menu cmd+, ctrl+, ctrl+, Opens the Atom\u0026rsquo;s settings menu   Open File (Fuzzy) cmd+p or cmd+t ctrl+p or ctrl+t ctrl+p or ctrl+t Opens the Fuzzy Finder   Browse Open Files cmd+b ctrl+b ctrl+b Browse tabs within the window   Previous Tab alt+cmd+left ctrl+pageup ctrl+pageup Cycles left through open tabs (in the active pane)   Next Tab alt+cmd+right ctrl+pagedown ctrl+pagedown Cycles right through open tabs (in the active page)   Toggle Tree View cmd+\\ ctrl+\\ ctrl+\\ Toggles Atom\u0026rsquo;s file Tree View   Show Available Snippets alt+shift+s alt+shift+s alt+shift+s Shows the snippets available to Atom   Save cmd+s ctrl+s ctrl+s Saves the currently active file   Save As shift+cmd+s ctrl+shift+s ctrl+shift+s Saves the currently active file under a different name   Save All alt+cmd+s   Saves all changed files   Close Tab cmd+w ctrl+w ctrl+w Closes the currently active tab   Close Window shift+cmd+w ctrl+shift+w ctrl+shift+w Closes the currently active editor window   Split Window cmd+k up/down/left/right ctrl+k up/down/left/right ctrl+k up/down/left/right Split the currently active tab in one of the four directions   Focus Pane cmd+k cmd+up/down/left/right ctrl+k ctrl+up/down/left/right ctrl+k ctrl+up/down/left/right Move the focus to the pane in one of the four directions   Toggle full screen ctrl+cmd+f F11 F11 Toggle full screen window    Editing    Command macOS Windows Linux Description     Duplicate Lines shift+cmd+d ctrl+shift+d ctrl+shift+d Duplicates the line of the current cursor position and creates a new line under it with the same contents   Delete Line ctrl+shift+k ctrl+shift+k ctrl+shift+k Deletes the current line   Move Line Up ctrl+cmd+up ctrl+up ctrl+up Moves the contents of the current cursor position up one line. If there is a line above with content, the current lines content will swap with the one above it.   Move Line Down ctrl+cmd+down ctrl+down ctrl+down Moves the contents of the current cursor position down one line. If there is a line below with content, the line\u0026rsquo;s content will swap with the one below it.   Find/Replace cmd+f ctrl+f ctrl+f Opens up the Find/Replace panel   Find Next cmd+g F3 F3 Toggles forward through the results of the current buffer in the file while the Find/Replace panel is active   Find Previous shift+cmd+g shift+F3 shift+F3 Toggles backward through the results of the current buffer in the file while the Find/Replace panel is active   Find in Project shift+cmd+f ctrl+shift+f ctrl+shift+f Opens the Find in Project Panel   Go To Line ctrl+g ctrl+g ctrl+g Opens the Go To Line panel   Go To Matching Bracket ctrl+m ctrl+m ctrl+m The cursor goes to the matching top bracket that the cursor is ecapsulated in   Select Line cmd+l ctrl+l ctrl+l Selects the entire line the cursor\u0026rsquo;s current position is in   Toggle Comment cmd+/ ctrl+/ ctrl+/ Toggles the selected text into a comment of the current grammar   Column Selection ctrl+shift+up/down ctrl+alt+up/down shift+alt+up/down Allows to select multiple rows, where the same edit will be applied   Select Same Words cmd+d ctrl+d ctrl+d If you select a word, and then hit the key combo for this command, Atom will select the next same word for you. Then you can either type directly (which will replace the old words) or use left or right arrow to append things.   Undo Selection cmd+u ctrl+u ctrl+u This undoes the previous selection, like from Select Same Words.   Select All The Same Words At Once cmd+ctrl+g alt+f3 alt+f3 This shortcut is similar to cmd+d/ctrl+d but it selects all the matching words at once.    "
+},
+{
+	"uri": "/03-control-flow-and-loops/conditionals/",
+	"title": "Conditionals",
+	"tags": [],
+	"description": "",
+	"content": " What are Conditionals?  Conditional statements enable our programs to decide which blocks of code to execute and which to skip, based on whether an \u0026ldquo;expression\u0026rdquo; evaluates to true or false\n if statements are the most common form of conditionals\n There are a few types of if statements\n if statement\n if..else statement\n if..else if statement\n ternary operator\n   "
 },
 {
 	"uri": "/02-javascript-basics/variables/declaring-variables/",
@@ -112,6 +133,20 @@
 	"content": " Cover class logistics, structure \u0026amp; keys to success\n Introduce tools you will be using throughout the class\n Discuss the benchmarks for assessments in terms of class participation, homework, and unit projects\n Confirm installation and configuration of Node, Git, and other command line tools\n Practice programmatic thinking by writing pseudocode\n  "
 },
 {
+	"uri": "/03-control-flow-and-loops/conditionals/if-statement/",
+	"title": "if Statement",
+	"tags": [],
+	"description": "",
+	"content": " if Statement  Used when you want to have some sort of single branching logic  if (condition) { code to run if condition is true } // run some other code  Example let isRewardsMember = true let totalPrice = 100 if (isRewardsMember) { totalPrice = totalPrice * 0.80 } console.log(totalPrice)  JS Bin on jsbin.com\n"
+},
+{
+	"uri": "/03-control-flow-and-loops/loops-and-iteration/while-loops/",
+	"title": "while Loop",
+	"tags": [],
+	"description": "",
+	"content": " while Loop  While loops run its statements as long as a specified condition evaluates to true  while (condition) { statement } // run some other code   If the condition becomes false, statement within the loop stops executing and control passes to the statement following the loop  Example let n = 0 while (n \u0026lt; 5) { console.log(n) n++ }  JS Bin on jsbin.com\nExercise Write a program that uses a while loop to print (using console.log()) a countdown from 10 to 1\nJS Bin on jsbin.com\n"
+},
+{
 	"uri": "/02-javascript-basics/data-types/booleans/",
 	"title": "Booleans",
 	"tags": [],
@@ -119,11 +154,11 @@
 	"content": " Booleans  Can only have a value of true or false\n true/false are special keywords in JavaScript and do not have quotes around them\n  // declare a variable called isOn and assign a value of true let isOn = true // declare a variable called isWarm let isWarm // assign a value of false to isWarm isWarm = false   Booleans are useful for helping our programs make decisions (when used with conditionals, comparison \u0026amp; logical operators)\n Booleans also helps a program known when it should stop/start looping\n  "
 },
 {
-	"uri": "/03-conditionals-and-loops/",
-	"title": "Conditionals and Loops",
+	"uri": "/03-control-flow-and-loops/",
+	"title": "Control Flow and Loops",
 	"tags": [],
 	"description": "",
-	"content": " Lesson 03 Conditionals and Loops "
+	"content": " Lesson 03 Control Flow and Loops "
 },
 {
 	"uri": "/class-resources/atom-editor-settings/",
@@ -131,6 +166,13 @@
 	"tags": [],
 	"description": "",
 	"content": " All of the settings below can be accessed using the following steps:\n Mac: cmd + , -\u0026gt; Editor PC: ctrl + , -\u0026gt; Editor  Setting indentation levels / default tab-size During our course we will be using a set indentation level of 2 spaces (1 indentation level = 2 spaces). Atom makes it easy conform to this approach by setting our tab to a set level of indentation.\nAfter updating this setting, pressing the tab key will represent one level of indentation which will translate to 2 spaces.\nDisplaying indentation guides Displaying the indentation guide provides a visual way of helping you ensure your indentation levels are correct\nSetting wordwrap Wordwrap ensures that long lines in your code are automatically wrapped to the next line. This improves readability of your code.\n"
+},
+{
+	"uri": "/03-control-flow-and-loops/switch-statement/",
+	"title": "Switch Statement",
+	"tags": [],
+	"description": "",
+	"content": " Switch Statement  Used an alternative to if..else if statements\n Evaluates an expression, and matches that expression against each of the case clauses\n if there\u0026rsquo;s a match, the statements associated with that case clause will be executed\n The break keyword must be used to exit the Switch statement after a match is found\n  switch(expression) { case x: // execute code block when expression === x  break // \u0026lt;- break must be called to exit the switch statement after the match  case y: // execute code block when expression === y  break // \u0026lt;- break must be called to exit the switch statement after the match  default: // execute code block when expression === when none of the above cases match }  Example let food = \u0026#34;apple\u0026#34; switch(food) { case \u0026#39;pear\u0026#39;: console.log(\u0026#34;I like pears\u0026#34;) break case \u0026#39;apple\u0026#39;: case \u0026#39;oranges\u0026#39;: console.log(\u0026#34;I like apples \u0026amp; oranges\u0026#34;) break case \u0026#39;grapes\u0026#39;: console.log(\u0026#34;I like grapes\u0026#34;) break default: console.log(\u0026#34;Your fruit selection is weak :(\u0026#34;) }  JS Bin on jsbin.com\nExercise Rewrite the following if..else if statement using a switch statement:\nlet yourGrade = 84 if (yourGrade \u0026gt;= 90) { console.log(\u0026#34;Congrats your score is 90 or above, that\u0026#39;s an A!\u0026#34;) } else if (yourGrade \u0026gt;= 80) { console.log(\u0026#34;Congrats your score is 80 or above, you earned a B\u0026#34;) } else { console.log(\u0026#34;Your score is less than 80, no bueno\u0026#34;) }  JS Bin on jsbin.com\n"
 },
 {
 	"uri": "/02-javascript-basics/variables/updating-variables/",
@@ -175,6 +217,13 @@
 	"content": " Version Control System (VCS)  Tracks the history of changes as people and teams collaborate on projects together (think \u0026ldquo;track changes feature available for MS Word or Google Docs\u0026rdquo;)\n Developers can review project history to find out:\n Which changes were made?\n Who made the changes?\n When were the changes made?\n Why were changes needed?\n   What is Git?  Git is VCS that is distributed - meaning developers don\u0026rsquo;t need a constant connection to be able to collaborate with other developers (unlike other VCSs)\n Allows developers to work anywhere and collaborate asynchronously from any time zone\n Git is the most popular VCS, used by over 70% of developers across the world\n Git operates a robust filesystem that keeps track every change to every file in your project by taking snapshots of a projects files every time changes are committed\n Git and GitHub are not the same\n  "
 },
 {
+	"uri": "/03-control-flow-and-loops/loops-and-iteration/",
+	"title": "Loops &amp; Iteration",
+	"tags": [],
+	"description": "",
+	"content": " Loops \u0026amp; Iteration  Loops offer a quick and easy way to do something repeatedly\n Loops must terminate or they will run forever; these are referred to as \u0026ldquo;infinite loops\u0026rdquo;\n Some loops use conditions to determine when it should start and stop\n There are many different kinds of loops, but they all essentially do the same thing: they repeat an action some number of times (and it\u0026rsquo;s actually possible that number could be zero)\n [while loops]()\n [do..while loops]()\n [for loops]()\n [forEach loops]()\n   "
+},
+{
 	"uri": "/02-javascript-basics/variables/naming-rules/",
 	"title": "Naming Rules for Variables",
 	"tags": [],
@@ -210,6 +259,20 @@
 	"content": " Changing Themes Atom allows you to easily switch between your installed themes by doing the following:\n Opening Atom Settings (mac: cmd + , | pc: ctrl + ,) Select Themes in the left-hand menu Select the dropdown menu labeled Syntax Themes Choose one of the installed themes listed in the dropdown menu  Atom comes pre-installed with a set of themes. See that section below to add new themes to Atom\n Installing New Themes Atom allows you to install themes created by developers who participate in Atom\u0026rsquo;s vibrant community. Atom has a dedication section on their official site for the discovery of these themes (Atom Themes)\nHere are steps involved in adding a new Atom theme:\n Visit https://atom.io/themes Find a theme that you\u0026rsquo;d like to install Press the install button on the theme\u0026rsquo;s page An alert will be displayed asking you if you would like to open Atom - select the option labeled Open Atom While in Atom Settings, press the button labeled Install to install the new theme Select Themes in the left-hand menu of Atom Settings Select the dropdown menu labeled Syntax Themes Select the newly installed theme from the dropdown menu to apply the new theme to Atom  Here\u0026rsquo;s an example of the installation of an Atom theme named Atom Material\n"
 },
 {
+	"uri": "/03-control-flow-and-loops/loops-and-iteration/do-while-loops/",
+	"title": "do..while Loop",
+	"tags": [],
+	"description": "",
+	"content": " do..while Loop  A do\u0026hellip;while loop repeats until a specified condition evaluates to false  do { statement } while (condition)   statement is always executed once before the condition is checked (and then again until the while condition returns false)\n With do\u0026hellip;while loops, everything in-between the curly braces (i.e. statement(s)) will run at least once\n  Example let n = 0 do { console.log(n) n++ } while (n \u0026lt; 0)   the loop will run at least once and then terminate because 0 is NOT \u0026lt; 0  JS Bin on jsbin.com\n"
+},
+{
+	"uri": "/03-control-flow-and-loops/conditionals/if-else/",
+	"title": "if..else Statement",
+	"tags": [],
+	"description": "",
+	"content": " if..else Statement  Used when evaluating between just two choices\n These are great for “either or” situations\n You do not specify a condition for the “else” clause\n  // if..else statement  if (condition) { code to run if condition is true } else { code to run if the above condition is NOT true } // run some other code  Example let yearOfBirth = 2001 if (yearOfBirth \u0026lt;= 2002) { console.log(\u0026#39;you will be old enough to vote in 2020\u0026#39;) } else { console.log(\u0026#39;Sorry, you will not be old enough to vote next year\u0026#39;) }  JS Bin on jsbin.com\n"
+},
+{
 	"uri": "/01-command-line-js-and-git/github/",
 	"title": "Github",
 	"tags": [],
@@ -217,18 +280,11 @@
 	"content": " What is Github?  Web-based Git repository hosting service\n Built on top of git\n Serves as the remote repository for a developer\u0026rsquo;s git projects\n Home to +90% of all open source projects\n Has become a \u0026ldquo;social network\u0026rdquo; for developers share, discuss and collaborate on software projects\n Many companies also use GitHub internally to privately collaborate on software projects with the other software engineers within their organization\n  "
 },
 {
-	"uri": "/02-javascript-basics/variables-lab/",
-	"title": "Variables Lab",
-	"tags": [],
-	"description": "",
-	"content": " Variables Lab  We are going to use our \u0026ldquo;homework submission git workflow\u0026rdquo; to access the lab files\n The repo for the lab can be found here\n  "
-},
-{
 	"uri": "/02-javascript-basics/arithmetic-operators/",
 	"title": "Arithmetic Operators",
 	"tags": [],
 	"description": "",
-	"content": " Arithmetic Operators  Mathematical symbol that can act on two values (or variables) and produce a result     Description Operator Example     Addition + 7 + 8   Subtraction - 34 - 12   Multiplication * 3 * 5   Division / 42 / 6   Modulus (Remainder) % 13 % 6 (returns 1, as 6 goes into 13 twice, leaving 1 as the remainder )   Exponential ** 4 ** 2 (returns 16 or 4 * 4)   Increment ++ 9++ (returns 10)   Decrement -- 37-- (returns 36)    Examples\nJS Bin on jsbin.com\n"
+	"content": " Arithmetic Operators  Mathematical symbol that can act on two values (or variables) and produce a result\n JavaScript adheres to the PEDMAS approach when determining the order of operations\n     Description Operator Example     Addition + 7 + 8   Subtraction - 34 - 12   Multiplication * 3 * 5   Division / 42 / 6   Modulus (Remainder) % 13 % 6 (returns 1, as 6 goes into 13 twice, leaving 1 as the remainder )   Exponential ** 4 ** 2 (returns 16 or 4 * 4)   Increment ++ 9++ (returns 10)   Decrement -- 37-- (returns 36)    Examples JS Bin on jsbin.com\nExercise Add the following expressions in the jsbin below and evaluate the result; use console.log() to print the result. Don\u0026rsquo;t forget to press \u0026ldquo;run\u0026rdquo; after adding your code.\n 45 % 3\n 8 / 2 * (2 * 2)\n 8**3\n  JS Bin on jsbin.com\n"
 },
 {
 	"uri": "/01-command-line-js-and-git/git-vocabulary/",
@@ -294,6 +350,20 @@
 	"content": " const  Stands for constant\n These are variables for which its value does not change after it has been assigned an initial value\n This help make your code easier to debug and protects certain values from accidentally being overridden in your codebase\n  Declaring a constant const are the same as let but with one key difference, values can only be assigned once to a const variable\n// declare a constant named \u0026#39;school\u0026#39;  const school = \u0026#34;General Assembly\u0026#34;  An error will occur if you try to update the value of a const\n// correctly declare a constant using \u0026#34;const\u0026#34; keyword const greeting = \u0026#34;Hello\u0026#34; // const values cannot be updated, if you attempt to do so // an error will occur  greeting = \u0026#34;Good Morning\u0026#34; // this will throw an error  "
 },
 {
+	"uri": "/03-control-flow-and-loops/loops-and-iteration/for-loop/",
+	"title": "for Loop",
+	"tags": [],
+	"description": "",
+	"content": " for Loop  The for loop consists of three optional expressions, enclosed in parentheses and separated by semicolons, followed by a statement (usually a block statement) to be executed in the loop.\n The three expression help determine how many times the loop will iterate before it terminates\n The statements involve an iterator variable (usually depicted as an \u0026ldquo;i\u0026rdquo;)\n  for (statement 1; statement 2; statement 3) { // code block to be executed }   statement 1 is executed (one time) before the execution of the code block\n statement 2 defines the condition for executing the code block\n statement 3 is executed (every time) after the code block has been executed\n  Example for (let i = 0; i \u0026lt; 5; i++) { console.log(`${i}fish`) }  JS Bin on jsbin.com\nExercise Write a program that uses a for loop to print (using console.log()) a countdown from 10 to 1\nJS Bin on jsbin.com\n"
+},
+{
+	"uri": "/03-control-flow-and-loops/conditionals/if-else-if/",
+	"title": "if..else if Statement",
+	"tags": [],
+	"description": "",
+	"content": " if..else if Statement  Used when evaluation among more than two choices, use if/else if\n You must specify a condition for every else if clause\n You can use as many else if clauses as is needed\n  // if..else if statement  if (condition) { code to run if this condition is true } else if (another condition) { code to run if this condition is true } else { code to run if NONE of the above conditions are true } // run some other code  Example let yourGrade = 84 if (yourGrade \u0026gt;= 90) { console.log(\u0026#34;Congrats your score is 90 or above, that\u0026#39;s an A!\u0026#34;) } else if (yourGrade \u0026gt;= 80) { console.log(\u0026#34;Congrats your score is 80 or above, you earned a B\u0026#34;) } else { console.log(\u0026#34;Your score is less than 80, no bueno\u0026#34;) }  JS Bin on jsbin.com\nExercise  Update the program below to test for these additional conditions:\n If student has scored greater than or equal to 70, then print \u0026ldquo;You earned a C\u0026rdquo;\n If student has scored greater than or equal to 60, then print \u0026ldquo;You earned a D, do better next time\u0026rdquo;\n If the student scored below 60, then print \u0026ldquo;Unfortunately, you have failed that course will need to retake it next semester\u0026rdquo;\n   JS Bin on jsbin.com\n"
+},
+{
 	"uri": "/01-command-line-js-and-git/code-along-git-branching-merging/",
 	"title": "Code Along: Git Branching &amp; Merging",
 	"tags": [],
@@ -305,7 +375,7 @@
 	"title": "Comparison Operators",
 	"tags": [],
 	"description": "",
-	"content": " Comparison Operators  Compares operands (the things on either side of the operator) and returns true or false (boolean) based one the comparison     Operator Description Example (all return true)     Equal (==) Returns true if the operands are equal 3 == \u0026ldquo;3\u0026rdquo; (uhmm yes this is actually true)   Not equal (!=) Returns true if the operands are not equal. (4 + 1) != 10   Strict equal (===) Returns true if the operands are equal and of the same type (8 * 1) === 8   Strict not equal (!==) Returns true if the operands are of the same type but not equal, or are of different type 3 !== \u0026ldquo;3\u0026rdquo;   Greater than (\u0026gt;) Returns true if the left operand is greater than the right operand 10 \u0026gt; (3 * 3)   Greater than or equal (\u0026gt;=) Returns true if the left operand is greater than or equal to the right operand 10 \u0026gt;= (3 * 3) + 1   Less than (\u0026lt;) Returns true if the left operand is less than the right operand 7 \u0026lt; (3 * 3)   Less than or equal (\u0026lt;=) Returns true if the left operand is less than or equal to the right operand 18 \u0026lt;= 6 * 3    Examples\nJS Bin on jsbin.com\n"
+	"content": " Comparison Operators  Compares operands (the things on either side of the operator) and returns true or false (boolean) based one the comparison     Operator Description Example (all return true)     Equal (==) Returns true if the operands are equal 3 == \u0026ldquo;3\u0026rdquo; (uhmm yes this is actually true)   Not equal (!=) Returns true if the operands are not equal. (4 + 1) != 10   Strict equal (===) Returns true if the operands are equal and of the same type (8 * 1) === 8   Strict not equal (!==) Returns true if the operands are of the same type but not equal, or are of different type 3 !== \u0026ldquo;3\u0026rdquo;   Greater than (\u0026gt;) Returns true if the left operand is greater than the right operand 10 \u0026gt; (3 * 3)   Greater than or equal (\u0026gt;=) Returns true if the left operand is greater than or equal to the right operand 10 \u0026gt;= (3 * 3) + 1   Less than (\u0026lt;) Returns true if the left operand is less than the right operand 7 \u0026lt; (3 * 3)   Less than or equal (\u0026lt;=) Returns true if the left operand is less than or equal to the right operand 18 \u0026lt;= 6 * 3    Examples JS Bin on jsbin.com\nExercise Add the following expressions in the jsbin below and evaluate the result; use console.log() to print the result. Don\u0026rsquo;t forget to press \u0026ldquo;run\u0026rdquo; after adding your code.\n \u0026quot;JavaScript\u0026quot; === \u0026quot;Java\u0026quot;\n \u0026quot;17\u0026quot; == parseInt(\u0026quot;17\u0026quot;)\n 10 \u0026gt;= (3 * 3) + 1\n  JS Bin on jsbin.com\n"
 },
 {
 	"uri": "/00-course-intro-and-tools/course-structure/",
@@ -340,7 +410,21 @@
 	"title": "Logical Operators",
 	"tags": [],
 	"description": "",
-	"content": " Logical Operators  Evaluates between two conditions/expressions and returns true or false\n with \u0026amp;\u0026amp; (Logical And) operators, both conditions have to be true in order for the whole expression to be true\n with || (Logical Or) operators, any of the condition must be true for entire expression to be true; but if all conditions are false then the entire expression is false\n     Operator Description Example (all return true)     Logical AND (\u0026amp;\u0026amp;) expr1 \u0026amp;\u0026amp; expr2 (3 \u0026gt; 1) \u0026amp;\u0026amp; \u0026ldquo;cat\u0026rdquo;.length === 3   Logical OR (||) expr1 || expr2 (4 + 1) \u0026lt; 8 || 53 \u0026gt; (9 * 6)    Examples\nJS Bin on jsbin.com\n"
+	"content": " Logical Operators  Evaluates between two conditions/expressions and returns true or false\n with \u0026amp;\u0026amp; (Logical And) operators, both conditions have to be true in order for the whole expression to be true\n with || (Logical Or) operators, any of the condition must be true for entire expression to be true; but if all conditions are false then the entire expression is false\n     Operator Description Example (all return true)     Logical AND (\u0026amp;\u0026amp;) expr1 \u0026amp;\u0026amp; expr2 (3 \u0026gt; 1) \u0026amp;\u0026amp; \u0026ldquo;cat\u0026rdquo;.length === 3   Logical OR (||) expr1 || expr2 (4 + 1) \u0026lt; 8 || 53 \u0026gt; (9 * 6)    Examples JS Bin on jsbin.com\nExercise Add the following expressions in the jsbin below and evaluate the result; use console.log() to print the result. Don\u0026rsquo;t forget to press \u0026ldquo;run\u0026rdquo; after adding your code.\n true \u0026amp;\u0026amp; false\n true \u0026amp;\u0026amp; 8 \u0026gt; (3 * 3) \u0026amp;\u0026amp; \u0026quot;hello\u0026quot;\n true \u0026amp;\u0026amp; (9 / 3 \u0026gt; 5) || \u0026quot;Yolo!\u0026quot;\n false || \u0026quot;Apple\u0026quot; === \u0026quot;apple\u0026quot; || parseInt(\u0026quot;12\u0026quot;) === 12\n  JS Bin on jsbin.com\n"
+},
+{
+	"uri": "/03-control-flow-and-loops/loops-and-iteration/for-each/",
+	"title": "forEach Loop",
+	"tags": [],
+	"description": "",
+	"content": " forEach Loop  forEach() is an Array method executes a provided function once for each item (or element) in the array\n The function used in forEach is called a callback function because it is \u0026ldquo;called\u0026rdquo; as a result of some event\n The callback function for forEach provides the following:\n element - this current element from the array that is being evaluated\n index - this represents the current element\u0026rsquo;s index (or position in the array)\n   callbacks are used extensively in JavaScript; we will discuss them more in detail when we do a deeper dive into functions later in the course\n someArray.forEach(function(element, index) { // code block to be executed for each element in the array })  Example let chipmunks = [\u0026#34;alvin\u0026#34;, \u0026#34;simon\u0026#34;, \u0026#34;theodore\u0026#34;] chipmunks.forEach(function(element, index) { console.log(`${element}is at index ${index}`) })  JS Bin on jsbin.com\nExercise Write a program that uses a forEach loop to print each of the fruit names (found in the provided fruits array) in all caps\nJS Bin on jsbin.com\n"
+},
+{
+	"uri": "/03-control-flow-and-loops/conditionals/ternary-operator/",
+	"title": "ternary Operator",
+	"tags": [],
+	"description": "",
+	"content": " ternary Operator  Used as a shortcut for the if statement  condition ? expression that is run if condition is true : expression that is run if condition is false  Example let isLactoseIntolerant = true let milkType = isLactoseIntolerant ? \u0026#34;almond\u0026#34; : \u0026#34;dairy\u0026#34; console.log(milkType)  JS Bin on jsbin.com\nExercise Rewrite the following if..else statement using a ternary operator:\nlet yearOfBirth = 2001 if (yearOfBirth \u0026lt;= 2002) { console.log(\u0026#39;you will be old enough to vote in 2020\u0026#39;) } else { console.log(\u0026#39;Sorry, you will not be old enough to vote next year\u0026#39;) }  JS Bin on jsbin.com\n"
 },
 {
 	"uri": "/09-asynchronous-js-and-callbacks/",
@@ -348,20 +432,6 @@
 	"tags": [],
 	"description": "",
 	"content": " Lesson 09 Asynchronous JS and Callbacks "
-},
-{
-	"uri": "/02-javascript-basics/conditionals/",
-	"title": "Conditionals",
-	"tags": [],
-	"description": "",
-	"content": " What are Conditionals?  Conditionals tests whether an “expression” evaluates to true or false and then makes a decision based on the results of that test\n if statements are the most common form of conditionals\n There are two types of if statements\n (if..else) statements\n (if..else if) statements\n   (if\u0026hellip;else) statements  when evaluating between just two choices, use if/else\n These are great for “either or” situations\n You do not specify a condition for the “else” clause\n  // if..else statement  if (condition) { code to run if condition is true } else { code to run if the above condition is NOT true } // run some other code   Sometimes you\u0026rsquo;ll find that you don\u0026rsquo;t need an else clause. These are scenarios where you  let yearOfBirth = 2001 if (yearOfBirth \u0026lt;= 2002) { alert(\u0026#39;you will be old enough to vote in 2020\u0026#39;) } else { alert(\u0026#39;Sorry, you will not be old enough to vote next year\u0026#39;) }  JS Bin on jsbin.com\n(if\u0026hellip;else if) statements  when evaluation among more than two choices, use if/else if\n You must specify a condition on the “else if” clause\n You can use as many else if clauses as you need\n  // if..else if statement  if (condition) { code to run if this condition is true } else if (another condition) { code to run if this condition is true } else { code to run if NONE of the above conditions are true } // run some other code   Here\u0026rsquo;s an example of a conditional that uses else if  let yourGrade = 84 if (yourGrade \u0026gt;= 90) { alert(\u0026#34;Congrats your score is 90 or above, that\u0026#39;s an A!\u0026#34;) } else if (yourGrade \u0026gt;= 80) { alert(\u0026#34;Congrats your score is 80 or above, you earned a B\u0026#34;) } else { alert(\u0026#34;Your score is less than 80, no bueno\u0026#34;) }  JS Bin on jsbin.com\n"
-},
-{
-	"uri": "/02-javascript-basics/data-types-lab/",
-	"title": "Data Types Lab",
-	"tags": [],
-	"description": "",
-	"content": " Data Types Lab  We are going to use our \u0026ldquo;homework submission git workflow\u0026rdquo; to access the lab files\n The repo for the lab can be found here\n  "
 },
 {
 	"uri": "/00-course-intro-and-tools/folder-structure/",
@@ -502,6 +572,13 @@
 	"tags": [],
 	"description": "",
 	"content": " Class Resources "
+},
+{
+	"uri": "/02-javascript-basics/truthy-falsey/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": ""
 },
 {
 	"uri": "/categories/",
