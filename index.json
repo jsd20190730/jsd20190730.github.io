@@ -105,7 +105,7 @@
 	"content": " Declaring Variables  Variables are created by declaring them\n Use the let keyword to declare a variable\n If you declare a variable without assigning it an initial value, the value of that variable will be undefined\n  // declaring a variable  let firstName  Variables only need to be declared once\n "
 },
 {
-	"uri": "/homework-assignments/hw-assigment-01/",
+	"uri": "/homework-assignments/hw-assignment-01/",
 	"title": "HW Assignment #1",
 	"tags": [],
 	"description": "",
