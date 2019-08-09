@@ -105,6 +105,13 @@
 	"content": " Declaring Variables  Variables are created by declaring them\n Use the let keyword to declare a variable\n If you declare a variable without assigning it an initial value, the value of that variable will be undefined\n  // declaring a variable  let firstName  Variables only need to be declared once\n "
 },
 {
+	"uri": "/homework-assignments/hw-assigment-01/",
+	"title": "HW Assignment #1",
+	"tags": [],
+	"description": "",
+	"content": " Summary of this week\u0026rsquo;s homework assignment: Due Date: Thursday, August 15th\n1. Complete Homework #1 - JS Basics, Control Flow \u0026amp; Loops  You are tasked with completing the problem set which is hosted on Github, see the url below:\n Github Repo for Homework #1 - JS Basics, Control Flow \u0026amp; Loops  Use the Assignment Submission Git Workflow (detailed here) to access and submit the assignment\n  2. Finish the JS Basics, Control Flow \u0026amp; Loops Lab  Finish the Lab: JS Basics, Control Flow \u0026amp; Loops we started at the end of Lesson 03\n Use the Assignment Submission Git Workflow (detailed here) to access and submit the assignment\n  "
+},
+{
 	"uri": "/02-javascript-basics/",
 	"title": "JavaScript Basics",
 	"tags": [],
@@ -221,7 +228,7 @@
 	"title": "Loops &amp; Iteration",
 	"tags": [],
 	"description": "",
-	"content": " Loops \u0026amp; Iteration  Loops offer a quick and easy way to do something repeatedly\n Loops must terminate or they will run forever; these are referred to as \u0026ldquo;infinite loops\u0026rdquo;\n Some loops use conditions to determine when it should start and stop\n There are many different kinds of loops, but they all essentially do the same thing: they repeat an action some number of times (and it\u0026rsquo;s actually possible that number could be zero)\n [while loops]()\n [do..while loops]()\n [for loops]()\n [forEach loops]()\n   "
+	"content": " Loops \u0026amp; Iteration  Loops offer a quick and easy way to do something repeatedly\n Loops must terminate or they will run forever; these are referred to as \u0026ldquo;infinite loops\u0026rdquo;\n Some loops use conditions to determine when it should start and stop\n There are many different kinds of loops, but they all essentially do the same thing: they repeat an action some number of times (and it\u0026rsquo;s actually possible that number could be zero)\n while loops\n do..while loops\n for loops\n forEach loops\n   "
 },
 {
 	"uri": "/02-javascript-basics/variables/naming-rules/",
