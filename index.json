@@ -42,6 +42,20 @@
 	"content": "  Referencing documentation is a core task for developers.\n Documentation communicates how something (in our case programming languages, software libraries) works.\n Good documentation reduces implementation time and increases predictability of our software programs.\n  We will be referring to the following list of the documentation resources frequently throughout the course:\nHTML MDN\u0026rsquo;s HTML Reference\nCSS MDN\u0026rsquo;s CSS Reference\nJavascript MDN\u0026rsquo;s Javascript Reference\njQuery jQuery Documentation\n"
 },
 {
+	"uri": "/04-functions-and-scope/function-overview/",
+	"title": "Function Overview",
+	"tags": [],
+	"description": "",
+	"content": " What are Functions?  Functions are the main “building blocks” of the program; they allow the code to be called many times without repetition\n One of the main advantages of functions is code reuse\n You can control when functions are executed, for example - you can write functions that only get executed (or called) when a user clicks a specific button\n  // a simple function that greets you with a \u0026#39;Good Morning\u0026#39; alert  // 1) Declare a function named greeting  function greeting(){ console(\u0026#39;Good Morning\u0026#39;) } // 2) Call (or run) the function  greeting()  "
+},
+{
+	"uri": "/04-functions-and-scope/scope/global-scope/",
+	"title": "Global Scope",
+	"tags": [],
+	"description": "",
+	"content": " Global Scope  Variables defined outside of a function are in in the Global Scope  Example // Global function because it was declared outside of a function let name = \u0026#39;Simone Biles\u0026#39; console.log(name) function bestGymnastEver() { // \u0026#39;name\u0026#39; variable is accessible here and everywhere else because it is global  console.log(name) } logName() // logs \u0026#39;Simone Biles\u0026#39;  JS Bin on jsbin.com\n"
+},
+{
 	"uri": "/02-javascript-basics/data-types/strings/",
 	"title": "Strings",
 	"tags": [],
@@ -98,6 +112,13 @@
 	"content": " What are Conditionals?  Conditional statements enable our programs to decide which blocks of code to execute and which to skip, based on whether an \u0026ldquo;expression\u0026rdquo; evaluates to true or false\n if statements are the most common form of conditionals\n There are a few types of if statements\n if statement\n if..else statement\n if..else if statement\n ternary operator\n   "
 },
 {
+	"uri": "/04-functions-and-scope/declaring-functions/",
+	"title": "Declaring Functions",
+	"tags": [],
+	"description": "",
+	"content": " Declaring a Function  A function declaration is code that stipulates what the function can do\n Use the function keyword to define a function\n Functions can be given a name\n The name must be followed by parentheses\n The opening and closing curly braces indicate a “code block”\n The statements for your function goes within the code block\n Also referred to as \u0026ldquo;defining a function\u0026rdquo;\n  Simply declaring the function will not run this code, this function must be called in order for the code inside the function to be run\n Example // declare a function named sayGoodMorning() function sayGoodMorning() { console.log(\u0026#34;Good Morning\u0026#34;) }  JS Bin on jsbin.com\nExercise  Declare a function named bark that prints (via console.log()) 'Woof, Woof'  JS Bin on jsbin.com\n"
+},
+{
 	"uri": "/02-javascript-basics/variables/declaring-variables/",
 	"title": "Declaring Variables",
 	"tags": [],
@@ -117,6 +138,13 @@
 	"tags": [],
 	"description": "",
 	"content": " Lesson 02 JavaScript Basics "
+},
+{
+	"uri": "/04-functions-and-scope/scope/local-scope/",
+	"title": "Local Scope",
+	"tags": [],
+	"description": "",
+	"content": " Local Scope  Variables defined inside a function are in the local scope\n A variable with local scope cannot be referenced outside of that function\n Functions create their own private scope that prevents code from outside directly accessing it\u0026rsquo;s variables\n  Example function showInspirationalMessage() { // \u0026#34;message\u0026#34; variable is declared **inside** a function which means it is LOCAL to this function  let message = \u0026#34;Don\u0026#39;t give up, you can do it!!\u0026#34; console.log(message) } // prints message variable showInspirationalMessage() /* Now let\u0026#39;s attempt to directly access the message variable and log it out to the console */ console.log(message) // \u0026lt;-- Error! The variable is local to the function can cannot be \u0026#34;directly\u0026#34; accessed outside of the function  JS Bin on jsbin.com\n As you can see in this example any variables declared / defined inside of the showInspirationalMessage() function are only accessible inside showInspirationalMessage; this prevents any other code from outside of the function from directly accessing it\u0026rsquo;s variables  Local Scope with Parameters  Function parameters are local to the function and cannot be accessed outside of the function  Example function squareMe(number) { // The \u0026#34;number\u0026#34; parameter is variable that is LOCAL to the squareMe function  return number**2 } let result = squareMe(7) console.log(result) /* Now let\u0026#39;s attempt to directly access the `number` parameter */ console.log(number) // \u0026lt;-- Error! The variable is local to the function can cannot be \u0026#34;directly\u0026#34; accessed outside of the function  JS Bin on jsbin.com\nVariables with the same name in different scopes ARE NOT THE SAME  Multiple variables with the same name but different scopes each will be treated as if they are distinct variables with each variable containing their own separate values  Example // declare a variable named \u0026#39;actor\u0026#39; in the Global Scope let actor = \u0026#34;Daniel Craig\u0026#34; function bestBondActor() { // declare a variable named \u0026#39;actor\u0026#39; within a function (Local Scope)  let actor = \u0026#34;Sean Connery\u0026#34; return actor } let result = bestBondActor() console.log(result) // \u0026lt;-- prints Sean Connery  /* Now let\u0026#39;s print out the `actor` variable */ console.log(actor) // \u0026lt;-- prints Daniel Craig  JS Bin on jsbin.com\n"
 },
 {
 	"uri": "/class-resources/node-git-installation/mac-os-x/",
@@ -140,6 +168,13 @@
 	"content": " Cover class logistics, structure \u0026amp; keys to success\n Introduce tools you will be using throughout the class\n Discuss the benchmarks for assessments in terms of class participation, homework, and unit projects\n Confirm installation and configuration of Node, Git, and other command line tools\n Practice programmatic thinking by writing pseudocode\n  "
 },
 {
+	"uri": "/04-functions-and-scope/scope/block-statements/",
+	"title": "Scope in Block Statements",
+	"tags": [],
+	"description": "",
+	"content": " Scope in Block Statements  Block statements like if and switch conditions or for and while loops, unlike functions, will create a new scope if you use let or const but NOT when you use var  Example  Declaring a variable within a Block statement using let creates local scope  if (true) { // this \u0026#39;if\u0026#39; conditional block creates a new scope because we use \u0026#39;let\u0026#39;  let name = \u0026#39;Prince\u0026#39; // name is local to the if block  console.log(name) // logs \u0026#39;Prince\u0026#39; } console.log(\u0026#39;----\u0026#39;) console.log(name) // \u0026lt;--- error because the \u0026#39;name\u0026#39; variable can only be accessed from within the block (due to the use of \u0026#39;let\u0026#39;)  JS Bin on jsbin.com\n Declaring a variable within a Block statement using var DOES NOT create local scope  if (true) { var name = \u0026#39;Prince\u0026#39; // declare a variable using \u0026#39;var`  console.log(name) // logs \u0026#39;Prince\u0026#39; } console.log(\u0026#39;----\u0026#39;) console.log(name) // \u0026lt;--- logs \u0026#39;Prince\u0026#39; because the \u0026#39;name\u0026#39; variable is in the global scope due to the use of `var`  JS Bin on jsbin.com\n"
+},
+{
 	"uri": "/03-control-flow-and-loops/conditionals/if-statement/",
 	"title": "if Statement",
 	"tags": [],
@@ -159,6 +194,13 @@
 	"tags": [],
 	"description": "",
 	"content": " Booleans  Can only have a value of true or false\n true/false are special keywords in JavaScript and do not have quotes around them\n  // declare a variable called isOn and assign a value of true let isOn = true // declare a variable called isWarm let isWarm // assign a value of false to isWarm isWarm = false   Booleans are useful for helping our programs make decisions (when used with conditionals, comparison \u0026amp; logical operators)\n Booleans also helps a program known when it should stop/start looping\n  "
+},
+{
+	"uri": "/04-functions-and-scope/calling-functions/",
+	"title": "Calling Functions",
+	"tags": [],
+	"description": "",
+	"content": " Calling a Function  Calling a function means you are using the function (as opposed to defining a function which only tells us what the function can do)\n To call a function you simply write function name followed by parentheses (don’t forget the parentheses!)\n Now you can call this function as many times as you want\n  /** define / declare a function named shout() by itself this doesn\u0026#39;t do anything, we must \u0026#34;Call\u0026#34; it in order to use it **/ function shout() { console(\u0026#34;HELLO!\u0026#34;) } /** Calling the function named shout we call a function by writing the name of the function followed by parentheses **/ shout()  JS Bin on jsbin.com\nExercise:  Create a function named yolo that logs 'yolo'. Next, use your knowledge of calling functions to ensure that 'yolo' is printed 3 times in the console  JS Bin on jsbin.com\n"
 },
 {
 	"uri": "/03-control-flow-and-loops/",
@@ -222,6 +264,13 @@
 	"tags": [],
 	"description": "",
 	"content": " Version Control System (VCS)  Tracks the history of changes as people and teams collaborate on projects together (think \u0026ldquo;track changes feature available for MS Word or Google Docs\u0026rdquo;)\n Developers can review project history to find out:\n Which changes were made?\n Who made the changes?\n When were the changes made?\n Why were changes needed?\n   What is Git?  Git is VCS that is distributed - meaning developers don\u0026rsquo;t need a constant connection to be able to collaborate with other developers (unlike other VCSs)\n Allows developers to work anywhere and collaborate asynchronously from any time zone\n Git is the most popular VCS, used by over 70% of developers across the world\n Git operates a robust filesystem that keeps track every change to every file in your project by taking snapshots of a projects files every time changes are committed\n Git and GitHub are not the same\n  "
+},
+{
+	"uri": "/04-functions-and-scope/hoisting/",
+	"title": "Hoisting",
+	"tags": [],
+	"description": "",
+	"content": " Hoisting  Hoisting is a feature in JavaScript which allows access to function declarations before they’re defined\n This means that we can place a function call before our function declaration and everything will still work as expected\n  Example // Calling greetWorld() BEFORE it\u0026#39;s function declararion greetWorld() // declaration of greetWorld() function greetWorld() { console.log(\u0026#39;Hello, World!\u0026#39;) }  JS Bin on jsbin.com\n Notice how hoisting allowed greetWorld() to be called before the greetWorld() function was defined\n This is not considered a best practice, but you should be aware that the feature exists\n  "
 },
 {
 	"uri": "/03-control-flow-and-loops/loops-and-iteration/",
@@ -308,6 +357,13 @@
 	"content": " Lesson 05 Objects and JSON "
 },
 {
+	"uri": "/04-functions-and-scope/returning-values-from-functions/",
+	"title": "Returning Values from Functions",
+	"tags": [],
+	"description": "",
+	"content": "  Many times you will write a function and expect a value to be returned - this is called a return value\n To have your function return a value you must use the return keyword in the last line of the body of your function\n We use the return keyword when we want our function to \u0026ldquo;give us back\u0026rdquo; a value\n You can store the returned value in a variable and use it later in your program\n  Example // declare a function called bark // that *returns* a string respreseting \u0026#39;woof woof\u0026#39; function bark() { return \u0026#39;woof woof!\u0026#39; } // call the bark function and store result in a variable let sound = bark() // print out result to the console console.log(`a dog makes the following sound ${sound}`)  JS Bin on jsbin.com\n If you don\u0026rsquo;t use the return keyword, then no value will be returned  // declare a function called meow // that generates a string representing \u0026#39;meow\u0026#39; but // does not use the return keyword  function meow() { \u0026#39;meow\u0026#39; } // call the meow function and store result in a variable let sound = meow() // print out result to the console console.log(`a cat makes the following sound ${sound}`)  JS Bin on jsbin.com\nExercise  Create a function called sayMoo that returns the string mooooooo!. Next, call the function and store the result into a variable named cowSound  JS Bin on jsbin.com\n"
+},
+{
 	"uri": "/02-javascript-basics/variables/let-vs-var/",
 	"title": "let vs var",
 	"tags": [],
@@ -355,6 +411,13 @@
 	"tags": [],
 	"description": "",
 	"content": " Linux Installation Instructions 1) Find and Open your Terminal / Command Prompt application  All of the following commands (below) that start with $ should be copied and pasted in your terminal / command prompt (also referred to as the \u0026ldquo;command line\u0026rdquo;)\n DO NOT include the \u0026lsquo;$\u0026rsquo; when copying and pasting the commands below; \u0026lsquo;$\u0026rsquo; is a universal symbol for the terminal / command line\n Press the enter / return key on your keyboard after pasting the command\n  2) Install Git  Git is a tool used to track the state of your code over time. GitHub is a company that has made a business on top of the Git technology. We will be using both Git and GitHub in this class to distribute code, submit assignments and offer feedback.\n Git can be installed by running the following command:\n   $ sudo apt-get install build-essential git-core curl  3) Configure Git  Copy and paste the following two commands (separately) into your Terminal. Replace the name and email address values with your own   $ git config --global user.name \u0026quot;Steve Jobs\u0026quot; $ git config --global user.email \u0026quot;steve@apple.com\u0026quot;   Follow these instructions to create a new SSH Key (a special, very secure, key which allows your laptop access to your github account without having to remember your github password)\n Add your new SSH Key to GitHub following these instructions\n Verify your key works by running the following:\n  $ ssh git@github.com   You should see output similar to:   Hi \u0026lt;you\u0026gt;! You've successfully authenticated, but GitHub does not provide shell access. Connection to github.com closed.  4) Install Node.js  $ curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash - sudo apt-get install -y nodejs $ apt-get install --yes build-essential  "
+},
+{
+	"uri": "/04-functions-and-scope/working-with-parameters/",
+	"title": "Working with Parameters",
+	"tags": [],
+	"description": "",
+	"content": " Declaring Functions that need information  Some functions need additional information in order to perform a specific task\n This additional information is referred to as “parameters”\n To provide parameters to a function, you specify them inside the parentheses after the parameter name\n The parameters are used like variables within the function body\n We use the return keyword when we want our function to \u0026ldquo;give us back\u0026rdquo; a value\n In the case of the example we want the function to return the result of the multiplying the width times the height   Example // define a function called getArea() // that accepts two parameters width \u0026amp; height // we MUST use the return keyword if we // want the function to give us back a value  function getArea(width, height) { return width * height } // Calling the getArea() function with values getArea(7, 5) // returns 35  // Calling the getArea() function again but this time with variables let doorWidth = 2 let doorHeight = 8 getArea(doorWidth, doorHeight) // returns 16  JS Bin on jsbin.com\nExercise  Create a function calculateAge that accepts yearOfBirth (number) as a parameter and returns the current age of the associated with the provided yearOfBirth  JS Bin on jsbin.com\n"
 },
 {
 	"uri": "/02-javascript-basics/variables/const/",
@@ -406,6 +469,13 @@
 	"content": " Lesson 07 Intro to DOM \u0026amp; jQuery, Continued "
 },
 {
+	"uri": "/04-functions-and-scope/functions-calling-other-functions/",
+	"title": "Functions Calling Other Functions",
+	"tags": [],
+	"description": "",
+	"content": " Functions can call other functions  Function reusability is key results in cleaner code\n Reusing functions leverages key programming principle - Don\u0026rsquo;t Repeat Yourself (DRY)\n  Example  In the example of below, the surfaceAreaOfCube function calls another function (areaOfSquare) instead of duplicating work that was already done  // Function that calculates area of a square  function areaOfSquare(side){ return side * side }; areaOfSquare(3) // returns 9  // This is a function that calculates the // surface area of a cube that *reuses* the areaOfSquare function  function surfaceAreaOfCube(side){ return 6 * areaOfSquare(side) }; surfaceAreaOfCube(7) // returns 42  JS Bin on jsbin.com\nExercise  Create a function named surfaceAreaOfSphere that calculates the surface area of the Sphere using the following formula: 4 * PI * r**2; the function MUST reuse the provided areaOfCircle function  JS Bin on jsbin.com\n"
+},
+{
 	"uri": "/00-course-intro-and-tools/tools/",
 	"title": "Course Tools",
 	"tags": [],
@@ -427,6 +497,13 @@
 	"content": " Logical Operators  Evaluates between two conditions/expressions and returns true or false\n with \u0026amp;\u0026amp; (Logical And) operators, both conditions have to be true in order for the whole expression to be true\n with || (Logical Or) operators, any of the condition must be true for entire expression to be true; but if all conditions are false then the entire expression is false\n     Operator Description Example (all return true)     Logical AND (\u0026amp;\u0026amp;) expr1 \u0026amp;\u0026amp; expr2 (3 \u0026gt; 1) \u0026amp;\u0026amp; \u0026ldquo;cat\u0026rdquo;.length === 3   Logical OR (||) expr1 || expr2 (4 + 1) \u0026lt; 8 || 53 \u0026gt; (9 * 6)    Examples JS Bin on jsbin.com\nExercise Add the following expressions in the jsbin below and evaluate the result; use console.log() to print the result. Don\u0026rsquo;t forget to press \u0026ldquo;run\u0026rdquo; after adding your code.\n true \u0026amp;\u0026amp; false\n true \u0026amp;\u0026amp; 8 \u0026gt; (3 * 3) \u0026amp;\u0026amp; \u0026quot;hello\u0026quot;\n true \u0026amp;\u0026amp; (9 / 3 \u0026gt; 5) || \u0026quot;Yolo!\u0026quot;\n false || \u0026quot;Apple\u0026quot; === \u0026quot;apple\u0026quot; || parseInt(\u0026quot;12\u0026quot;) === 12\n  JS Bin on jsbin.com\n"
 },
 {
+	"uri": "/04-functions-and-scope/scope/",
+	"title": "Scope",
+	"tags": [],
+	"description": "",
+	"content": " Scope Overview  Scope is the set of variables you have access to\n As we learned in the beginning of this class, JavaScript reads from top to bottom\n Sometimes, however, we declare variables inside functions (just like arguments), which aren\u0026rsquo;t accessible in other parts of our code; this is the concept of scope.\n  Types of Scope  A variables scope is determined primarily based on where is was declared\n Variables declared inside a function are in local scope\n Variables defined outside of a function are in the global scope\n Each function when invoked creates a new scope\n  "
+},
+{
 	"uri": "/03-control-flow-and-loops/loops-and-iteration/for-each/",
 	"title": "forEach Loop",
 	"tags": [],
@@ -446,6 +523,13 @@
 	"tags": [],
 	"description": "",
 	"content": " Lesson 09 Asynchronous JS and Callbacks "
+},
+{
+	"uri": "/04-functions-and-scope/single-responsibility-principle/",
+	"title": "Single Responsibility Principle",
+	"tags": [],
+	"description": "",
+	"content": " Single Responsibility Principle (SRP)  SRP is a programming best practice that advocates modular code\n Put another way, your programs should be broken up in such a way where each part is responsible for only one \u0026ldquo;thing\u0026rdquo; or domain\n SRP is often applied to functions\n  Applying SRP to Functions  This concepts calls for your functions to only be \u0026ldquo;responsible\u0026rdquo; for one thing\n Often you\u0026rsquo;ll find that the logic in your functions are doing too much (for example: making calculations AND displaying the result to the screen)\n In these cases you should break out those multiple responsibilities into multiple functions\n This is what we did in the Geometry Calculator code along\n  "
 },
 {
 	"uri": "/00-course-intro-and-tools/folder-structure/",
@@ -481,6 +565,13 @@
 	"tags": [],
 	"description": "",
 	"content": " Confirm Node \u0026amp; Git Installation 1) Ensure that you followed the installation instructions for your Operation System found here: Node and Git Installation\n2) Open up your console / terminal\n For Mac OS X users:\n Open the \u0026ldquo;Terminal\u0026rdquo; app (Applications \u0026gt; Utilities \u0026gt; Terminal)  For Windows:\n Open the \u0026ldquo;Command Prompt\u0026rdquo; application.   3) In the terminal type the following command to confirm git was successfully installed:\n $ git  4) In the terminal type the following command to confirm node was successfully installed:\n $ node  Note: type control-c to exit out of node\n"
+},
+{
+	"uri": "/04-functions-and-scope/code-along-rolling-dice/",
+	"title": "Code Along: Rolling Dice",
+	"tags": [],
+	"description": "",
+	"content": " Code Along: Rolling Dice  We\u0026rsquo;ll walk through the process using functions to create a program that simulates rolling dice\n The starter code for this code along is hosted on Github, see the url below:\n Code Along: Rolling Dice  Use the Assignment Submission Git Workflow (detailed here) to access and submit the assignment\n  "
 },
 {
 	"uri": "/12-prototypal-inheritance/",

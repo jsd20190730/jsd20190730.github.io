@@ -27,6 +27,14 @@
   </url>
   
   <url>
+    <loc>/04-functions-and-scope/function-overview/</loc>
+  </url>
+  
+  <url>
+    <loc>/04-functions-and-scope/scope/global-scope/</loc>
+  </url>
+  
+  <url>
     <loc>/02-javascript-basics/data-types/strings/</loc>
   </url>
   
@@ -60,6 +68,10 @@
   </url>
   
   <url>
+    <loc>/04-functions-and-scope/declaring-functions/</loc>
+  </url>
+  
+  <url>
     <loc>/02-javascript-basics/variables/declaring-variables/</loc>
   </url>
   
@@ -69,6 +81,10 @@
   
   <url>
     <loc>/02-javascript-basics/</loc>
+  </url>
+  
+  <url>
+    <loc>/04-functions-and-scope/scope/local-scope/</loc>
   </url>
   
   <url>
@@ -84,6 +100,10 @@
   </url>
   
   <url>
+    <loc>/04-functions-and-scope/scope/block-statements/</loc>
+  </url>
+  
+  <url>
     <loc>/03-control-flow-and-loops/conditionals/if-statement/</loc>
   </url>
   
@@ -93,6 +113,10 @@
   
   <url>
     <loc>/02-javascript-basics/data-types/booleans/</loc>
+  </url>
+  
+  <url>
+    <loc>/04-functions-and-scope/calling-functions/</loc>
   </url>
   
   <url>
@@ -129,6 +153,10 @@
   
   <url>
     <loc>/01-command-line-js-and-git/git-overview/</loc>
+  </url>
+  
+  <url>
+    <loc>/04-functions-and-scope/hoisting/</loc>
   </url>
   
   <url>
@@ -180,6 +208,10 @@
   </url>
   
   <url>
+    <loc>/04-functions-and-scope/returning-values-from-functions/</loc>
+  </url>
+  
+  <url>
     <loc>/02-javascript-basics/variables/let-vs-var/</loc>
   </url>
   
@@ -205,6 +237,10 @@
   
   <url>
     <loc>/class-resources/node-git-installation/linux/</loc>
+  </url>
+  
+  <url>
+    <loc>/04-functions-and-scope/working-with-parameters/</loc>
   </url>
   
   <url>
@@ -236,6 +272,10 @@
   </url>
   
   <url>
+    <loc>/04-functions-and-scope/functions-calling-other-functions/</loc>
+  </url>
+  
+  <url>
     <loc>/00-course-intro-and-tools/tools/</loc>
   </url>
   
@@ -248,6 +288,10 @@
   </url>
   
   <url>
+    <loc>/04-functions-and-scope/scope/</loc>
+  </url>
+  
+  <url>
     <loc>/03-control-flow-and-loops/loops-and-iteration/for-each/</loc>
   </url>
   
@@ -257,6 +301,10 @@
   
   <url>
     <loc>/09-asynchronous-js-and-callbacks/</loc>
+  </url>
+  
+  <url>
+    <loc>/04-functions-and-scope/single-responsibility-principle/</loc>
   </url>
   
   <url>
@@ -277,6 +325,10 @@
   
   <url>
     <loc>/00-course-intro-and-tools/confirm-node-git-installation/</loc>
+  </url>
+  
+  <url>
+    <loc>/04-functions-and-scope/code-along-rolling-dice/</loc>
   </url>
   
   <url>

@@ -72,6 +72,27 @@ jQuery jQuery Documentation</description>
     </item>
     
     <item>
+      <title>Function Overview</title>
+      <link>/04-functions-and-scope/function-overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/04-functions-and-scope/function-overview/</guid>
+      <description> What are Functions?  Functions are the main “building blocks” of the program; they allow the code to be called many times without repetition
+ One of the main advantages of functions is code reuse
+ You can control when functions are executed, for example - you can write functions that only get executed (or called) when a user clicks a specific button
+  // a simple function that greets you with a &amp;#39;Good Morning&amp;#39; alert  // 1) Declare a function named greeting  function greeting(){ console(&amp;#39;Good Morning&amp;#39;) } // 2) Call (or run) the function  greeting()  </description>
+    </item>
+    
+    <item>
+      <title>Global Scope</title>
+      <link>/04-functions-and-scope/scope/global-scope/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/04-functions-and-scope/scope/global-scope/</guid>
+      <description>Global Scope  Variables defined outside of a function are in in the Global Scope  Example // Global function because it was declared outside of a function let name = &amp;#39;Simone Biles&amp;#39; console.log(name) function bestGymnastEver() { // &amp;#39;name&amp;#39; variable is accessible here and everywhere else because it is global  console.log(name) } logName() // logs &amp;#39;Simone Biles&amp;#39;  JS Bin on jsbin.com</description>
+    </item>
+    
+    <item>
       <title>Strings</title>
       <link>/02-javascript-basics/data-types/strings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -155,6 +176,21 @@ When copying the following code snippets, DO NOT include the $ this is a univers
     </item>
     
     <item>
+      <title>Declaring Functions</title>
+      <link>/04-functions-and-scope/declaring-functions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/04-functions-and-scope/declaring-functions/</guid>
+      <description>Declaring a Function  A function declaration is code that stipulates what the function can do
+ Use the function keyword to define a function
+ Functions can be given a name
+ The name must be followed by parentheses
+ The opening and closing curly braces indicate a “code block”
+ The statements for your function goes within the code block
+ Also referred to as &amp;ldquo;defining a function&amp;rdquo;</description>
+    </item>
+    
+    <item>
       <title>Declaring Variables</title>
       <link>/02-javascript-basics/variables/declaring-variables/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -177,6 +213,18 @@ When copying the following code snippets, DO NOT include the $ this is a univers
 1. Complete Homework #1 - JS Basics, Control Flow &amp;amp; Loops  You are tasked with completing the problem set which is hosted on Github, see the url below:
  Github Repo for Homework #1 - JS Basics, Control Flow &amp;amp; Loops  Use the Assignment Submission Git Workflow (detailed here) to access and submit the assignment
   2.</description>
+    </item>
+    
+    <item>
+      <title>Local Scope</title>
+      <link>/04-functions-and-scope/scope/local-scope/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/04-functions-and-scope/scope/local-scope/</guid>
+      <description>Local Scope  Variables defined inside a function are in the local scope
+ A variable with local scope cannot be referenced outside of that function
+ Functions create their own private scope that prevents code from outside directly accessing it&amp;rsquo;s variables
+  Example function showInspirationalMessage() { // &amp;#34;message&amp;#34; variable is declared **inside** a function which means it is LOCAL to this function  let message = &amp;#34;Don&amp;#39;t give up, you can do it!</description>
     </item>
     
     <item>
@@ -220,6 +268,15 @@ Converting Strings to Numbers  Sometimes you will find yourself in a position wh
     </item>
     
     <item>
+      <title>Scope in Block Statements</title>
+      <link>/04-functions-and-scope/scope/block-statements/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/04-functions-and-scope/scope/block-statements/</guid>
+      <description>Scope in Block Statements  Block statements like if and switch conditions or for and while loops, unlike functions, will create a new scope if you use let or const but NOT when you use var  Example  Declaring a variable within a Block statement using let creates local scope  if (true) { // this &amp;#39;if&amp;#39; conditional block creates a new scope because we use &amp;#39;let&amp;#39;  let name = &amp;#39;Prince&amp;#39; // name is local to the if block  console.</description>
+    </item>
+    
+    <item>
       <title>if Statement</title>
       <link>/03-control-flow-and-loops/conditionals/if-statement/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -246,6 +303,18 @@ Converting Strings to Numbers  Sometimes you will find yourself in a position wh
       <description>Booleans  Can only have a value of true or false
  true/false are special keywords in JavaScript and do not have quotes around them
   // declare a variable called isOn and assign a value of true let isOn = true // declare a variable called isWarm let isWarm // assign a value of false to isWarm isWarm = false   Booleans are useful for helping our programs make decisions (when used with conditionals, comparison &amp;amp; logical operators)</description>
+    </item>
+    
+    <item>
+      <title>Calling Functions</title>
+      <link>/04-functions-and-scope/calling-functions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/04-functions-and-scope/calling-functions/</guid>
+      <description>Calling a Function  Calling a function means you are using the function (as opposed to defining a function which only tells us what the function can do)
+ To call a function you simply write function name followed by parentheses (don’t forget the parentheses!)
+ Now you can call this function as many times as you want
+  /** define / declare a function named shout() by itself this doesn&amp;#39;t do anything, we must &amp;#34;Call&amp;#34; it in order to use it **/ function shout() { console(&amp;#34;HELLO!</description>
     </item>
     
     <item>
@@ -309,6 +378,18 @@ Converting Strings to Numbers  Sometimes you will find yourself in a position wh
  When were the changes made?
  Why were changes needed?
    What is Git?  Git is VCS that is distributed - meaning developers don&amp;rsquo;t need a constant connection to be able to collaborate with other developers (unlike other VCSs)</description>
+    </item>
+    
+    <item>
+      <title>Hoisting</title>
+      <link>/04-functions-and-scope/hoisting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/04-functions-and-scope/hoisting/</guid>
+      <description>Hoisting  Hoisting is a feature in JavaScript which allows access to function declarations before they’re defined
+ This means that we can place a function call before our function declaration and everything will still work as expected
+  Example // Calling greetWorld() BEFORE it&amp;#39;s function declararion greetWorld() // declaration of greetWorld() function greetWorld() { console.log(&amp;#39;Hello, World!&amp;#39;) }  JS Bin on jsbin.com
+ Notice how hoisting allowed greetWorld() to be called before the greetWorld() function was defined</description>
     </item>
     
     <item>
@@ -431,6 +512,18 @@ Atom Editor v1.</description>
     </item>
     
     <item>
+      <title>Returning Values from Functions</title>
+      <link>/04-functions-and-scope/returning-values-from-functions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/04-functions-and-scope/returning-values-from-functions/</guid>
+      <description>Many times you will write a function and expect a value to be returned - this is called a return value
+ To have your function return a value you must use the return keyword in the last line of the body of your function
+ We use the return keyword when we want our function to &amp;ldquo;give us back&amp;rdquo; a value
+ You can store the returned value in a variable and use it later in your program</description>
+    </item>
+    
+    <item>
       <title>let vs var</title>
       <link>/02-javascript-basics/variables/let-vs-var/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -499,6 +592,19 @@ Atom Editor v1.</description>
       <description>Linux Installation Instructions 1) Find and Open your Terminal / Command Prompt application  All of the following commands (below) that start with $ should be copied and pasted in your terminal / command prompt (also referred to as the &amp;ldquo;command line&amp;rdquo;)
  DO NOT include the &amp;lsquo;$&amp;rsquo; when copying and pasting the commands below; &amp;lsquo;$&amp;rsquo; is a universal symbol for the terminal / command line
  Press the enter / return key on your keyboard after pasting the command</description>
+    </item>
+    
+    <item>
+      <title>Working with Parameters</title>
+      <link>/04-functions-and-scope/working-with-parameters/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/04-functions-and-scope/working-with-parameters/</guid>
+      <description>Declaring Functions that need information  Some functions need additional information in order to perform a specific task
+ This additional information is referred to as “parameters”
+ To provide parameters to a function, you specify them inside the parentheses after the parameter name
+ The parameters are used like variables within the function body
+ We use the return keyword when we want our function to &amp;ldquo;give us back&amp;rdquo; a value</description>
     </item>
     
     <item>
@@ -572,6 +678,17 @@ $ mkdir nursery_rhymes  Navigate into the nursery_rhymes directory using the cd 
     </item>
     
     <item>
+      <title>Functions Calling Other Functions</title>
+      <link>/04-functions-and-scope/functions-calling-other-functions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/04-functions-and-scope/functions-calling-other-functions/</guid>
+      <description>Functions can call other functions  Function reusability is key results in cleaner code
+ Reusing functions leverages key programming principle - Don&amp;rsquo;t Repeat Yourself (DRY)
+  Example  In the example of below, the surfaceAreaOfCube function calls another function (areaOfSquare) instead of duplicating work that was already done  // Function that calculates area of a square  function areaOfSquare(side){ return side * side }; areaOfSquare(3) // returns 9  // This is a function that calculates the // surface area of a cube that *reuses* the areaOfSquare function  function surfaceAreaOfCube(side){ return 6 * areaOfSquare(side) }; surfaceAreaOfCube(7) // returns 42  JS Bin on jsbin.</description>
+    </item>
+    
+    <item>
       <title>Course Tools</title>
       <link>/00-course-intro-and-tools/tools/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -624,6 +741,19 @@ let yearOfBirth = 2001 if (yearOfBirth &amp;lt;= 2002) { console.</description>
     </item>
     
     <item>
+      <title>Single Responsibility Principle</title>
+      <link>/04-functions-and-scope/single-responsibility-principle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/04-functions-and-scope/single-responsibility-principle/</guid>
+      <description>Single Responsibility Principle (SRP)  SRP is a programming best practice that advocates modular code
+ Put another way, your programs should be broken up in such a way where each part is responsible for only one &amp;ldquo;thing&amp;rdquo; or domain
+ SRP is often applied to functions
+  Applying SRP to Functions  This concepts calls for your functions to only be &amp;ldquo;responsible&amp;rdquo; for one thing
+ Often you&amp;rsquo;ll find that the logic in your functions are doing too much (for example: making calculations AND displaying the result to the screen)</description>
+    </item>
+    
+    <item>
       <title>Folder Organization</title>
       <link>/00-course-intro-and-tools/folder-structure/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -645,6 +775,18 @@ let yearOfBirth = 2001 if (yearOfBirth &amp;lt;= 2002) { console.</description>
  For Mac OS X users:
  Open the &amp;ldquo;Terminal&amp;rdquo; app (Applications &amp;gt; Utilities &amp;gt; Terminal)  For Windows:
  Open the &amp;ldquo;Command Prompt&amp;rdquo; application.   3) In the terminal type the following command to confirm git was successfully installed:</description>
+    </item>
+    
+    <item>
+      <title>Code Along: Rolling Dice</title>
+      <link>/04-functions-and-scope/code-along-rolling-dice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/04-functions-and-scope/code-along-rolling-dice/</guid>
+      <description> Code Along: Rolling Dice  We&amp;rsquo;ll walk through the process using functions to create a program that simulates rolling dice
+ The starter code for this code along is hosted on Github, see the url below:
+ Code Along: Rolling Dice  Use the Assignment Submission Git Workflow (detailed here) to access and submit the assignment
+  </description>
     </item>
     
     <item>
