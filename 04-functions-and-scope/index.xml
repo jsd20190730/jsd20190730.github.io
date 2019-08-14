@@ -46,7 +46,7 @@
       <description>Calling a Function  Calling a function means you are using the function (as opposed to defining a function which only tells us what the function can do)
  To call a function you simply write function name followed by parentheses (don’t forget the parentheses!)
  Now you can call this function as many times as you want
-  /** define / declare a function named shout() by itself this doesn&amp;#39;t do anything, we must &amp;#34;Call&amp;#34; it in order to use it **/ function shout() { console(&amp;#34;HELLO!</description>
+  /** define / declare a function named shout() by itself this doesn&amp;#39;t do anything, we must &amp;#34;Call&amp;#34; it in order to use it **/ function shout() { console.</description>
     </item>
     
     <item>
@@ -94,7 +94,7 @@
       <guid>/04-functions-and-scope/functions-calling-other-functions/</guid>
       <description>Functions can call other functions  Function reusability is key results in cleaner code
  Reusing functions leverages key programming principle - Don&amp;rsquo;t Repeat Yourself (DRY)
-  Example  In the example of below, the surfaceAreaOfCube function calls another function (areaOfSquare) instead of duplicating work that was already done  // Function that calculates area of a square  function areaOfSquare(side){ return side * side }; areaOfSquare(3) // returns 9  // This is a function that calculates the // surface area of a cube that *reuses* the areaOfSquare function  function surfaceAreaOfCube(side){ return 6 * areaOfSquare(side) }; surfaceAreaOfCube(7) // returns 42  JS Bin on jsbin.</description>
+  Example  In the example of below, the surfaceAreaOfCube function calls another function (areaOfSquare) instead of duplicating work that was already done  // Function that calculates area of a square  function areaOfSquare(side){ return side * side } areaOfSquare(3) // returns 9  // This is a function that calculates the // surface area of a cube that *reuses* the areaOfSquare function  function surfaceAreaOfCube(side){ return 6 * areaOfSquare(side) } surfaceAreaOfCube(7) // returns 294  JS Bin on jsbin.</description>
     </item>
     
     <item>
