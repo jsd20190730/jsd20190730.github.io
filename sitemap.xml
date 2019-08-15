@@ -23,6 +23,10 @@
   </url>
   
   <url>
+    <loc>/05-arrays-objects-and-json/objects/creating-objects/</loc>
+  </url>
+  
+  <url>
     <loc>/class-resources/documentation/</loc>
   </url>
   
@@ -64,7 +68,27 @@
   </url>
   
   <url>
+    <loc>/05-arrays-objects-and-json/array-iterators/for-each/</loc>
+  </url>
+  
+  <url>
+    <loc>/05-arrays-objects-and-json/array-review/adding-removing-items/push/</loc>
+  </url>
+  
+  <url>
+    <loc>/05-arrays-objects-and-json/objects/accessing-properties/</loc>
+  </url>
+  
+  <url>
+    <loc>/05-arrays-objects-and-json/array-review/</loc>
+  </url>
+  
+  <url>
     <loc>/03-control-flow-and-loops/conditionals/</loc>
+  </url>
+  
+  <url>
+    <loc>/05-arrays-objects-and-json/array-review/creating-arrays/</loc>
   </url>
   
   <url>
@@ -73,6 +97,10 @@
   
   <url>
     <loc>/02-javascript-basics/variables/declaring-variables/</loc>
+  </url>
+  
+  <url>
+    <loc>/05-arrays-objects-and-json/objects/accessing-properties/dot-notation/</loc>
   </url>
   
   <url>
@@ -140,7 +168,31 @@
   </url>
   
   <url>
+    <loc>/05-arrays-objects-and-json/array-iterators/map/</loc>
+  </url>
+  
+  <url>
+    <loc>/05-arrays-objects-and-json/array-review/adding-removing-items/pop/</loc>
+  </url>
+  
+  <url>
+    <loc>/05-arrays-objects-and-json/array-review/accessing-array-values/</loc>
+  </url>
+  
+  <url>
+    <loc>/05-arrays-objects-and-json/array-iterators/</loc>
+  </url>
+  
+  <url>
     <loc>/02-javascript-basics/data-types/arrays/</loc>
+  </url>
+  
+  <url>
+    <loc>/05-arrays-objects-and-json/objects/assigning-properties/</loc>
+  </url>
+  
+  <url>
+    <loc>/05-arrays-objects-and-json/objects/accessing-properties/bracket-notation/</loc>
   </url>
   
   <url>
@@ -200,11 +252,11 @@
   </url>
   
   <url>
-    <loc>/01-command-line-js-and-git/git-vocabulary/</loc>
+    <loc>/05-arrays-objects-and-json/</loc>
   </url>
   
   <url>
-    <loc>/05-objects-and-json/</loc>
+    <loc>/01-command-line-js-and-git/git-vocabulary/</loc>
   </url>
   
   <url>
@@ -217,6 +269,14 @@
   
   <url>
     <loc>/01-command-line-js-and-git/git-basics/</loc>
+  </url>
+  
+  <url>
+    <loc>/05-arrays-objects-and-json/array-iterators/find/</loc>
+  </url>
+  
+  <url>
+    <loc>/05-arrays-objects-and-json/array-review/adding-removing-items/shift/</loc>
   </url>
   
   <url>
@@ -240,6 +300,18 @@
   </url>
   
   <url>
+    <loc>/05-arrays-objects-and-json/objects/methods/</loc>
+  </url>
+  
+  <url>
+    <loc>/05-arrays-objects-and-json/objects/</loc>
+  </url>
+  
+  <url>
+    <loc>/05-arrays-objects-and-json/array-review/updating-array-values/</loc>
+  </url>
+  
+  <url>
     <loc>/04-functions-and-scope/working-with-parameters/</loc>
   </url>
   
@@ -257,6 +329,10 @@
   
   <url>
     <loc>/01-command-line-js-and-git/code-along-git-branching-merging/</loc>
+  </url>
+  
+  <url>
+    <loc>/05-arrays-objects-and-json/array-review/adding-removing-items/unshift/</loc>
   </url>
   
   <url>
@@ -280,11 +356,31 @@
   </url>
   
   <url>
+    <loc>/05-arrays-objects-and-json/array-iterators/filter/</loc>
+  </url>
+  
+  <url>
+    <loc>/05-arrays-objects-and-json/array-review/adding-removing-items/slice/</loc>
+  </url>
+  
+  <url>
+    <loc>/05-arrays-objects-and-json/array-review/adding-removing-items/</loc>
+  </url>
+  
+  <url>
     <loc>/08-ajax-and-apis/</loc>
   </url>
   
   <url>
+    <loc>/05-arrays-objects-and-json/json/</loc>
+  </url>
+  
+  <url>
     <loc>/02-javascript-basics/logical-operators/</loc>
+  </url>
+  
+  <url>
+    <loc>/05-arrays-objects-and-json/objects/nested-objects/</loc>
   </url>
   
   <url>
@@ -293,6 +389,10 @@
   
   <url>
     <loc>/03-control-flow-and-loops/loops-and-iteration/for-each/</loc>
+  </url>
+  
+  <url>
+    <loc>/05-arrays-objects-and-json/array-review/length-property/</loc>
   </url>
   
   <url>
@@ -349,6 +449,10 @@
   </url>
   
   <url>
+    <loc>/05-arrays-objects-and-json/array-iterators/reduce/</loc>
+  </url>
+  
+  <url>
     <loc>/14-intro-to-crud-and-firebase/</loc>
   </url>
   
@@ -362,6 +466,10 @@
   
   <url>
     <loc>/class-resources/learning-html-css/</loc>
+  </url>
+  
+  <url>
+    <loc>/05-arrays-objects-and-json/array-iterators/other-iterators/</loc>
   </url>
   
   <url>
