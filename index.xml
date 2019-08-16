@@ -861,6 +861,18 @@ $ mkdir nursery_rhymes  Navigate into the nursery_rhymes directory using the cd 
     </item>
     
     <item>
+      <title>Function Expressions &amp; Anonymous Functions</title>
+      <link>/04-functions-and-scope/function-expressions-anonymous-functions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/04-functions-and-scope/function-expressions-anonymous-functions/</guid>
+      <description>Function Expressions &amp;amp; Anonymous Functions  Another way to define a function is to use a function expression
+ To define a function inside an expression, we can use the function keyword with the function name omitted
+ function with no name is called anonymous functions
+  Example let getArea = function(width, height) { return width * height } // Calling the getArea() function with values getArea(7, 5) // returns 35  JS Bin on jsbin.</description>
+    </item>
+    
+    <item>
       <title>Course Tools</title>
       <link>/00-course-intro-and-tools/tools/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -874,6 +886,17 @@ $ mkdir nursery_rhymes  Navigate into the nursery_rhymes directory using the cd 
  Install Google Chrome
   Github:
  Why?: Github (and Git) are tools/applications used to by developers to manage their code and work collaboratively with each other.</description>
+    </item>
+    
+    <item>
+      <title>Arrow Functions</title>
+      <link>/04-functions-and-scope/arrow-functions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/04-functions-and-scope/arrow-functions/</guid>
+      <description>Arrow Functions  ES6 introduced/arrow function syntax/, a shorter way to write functions by using the special &amp;ldquo;fat arrow&amp;rdquo; (=&amp;gt;)
+ Instead, you first include the parameters inside the () and then add an arrow =&amp;gt; that points to the function body surrounded in { } like this:
+const getArea = (width, height) =&amp;gt; { let area = width * height return area }   Parameter syntax rules for Arrow functions  Functions that take only a single parameter do not need that parameter to be enclosed in parentheses.</description>
     </item>
     
     <item>
@@ -899,15 +922,6 @@ $ mkdir nursery_rhymes  Navigate into the nursery_rhymes directory using the cd 
       <description>.slice()  Returns a shallow copy of a portion of an array into a new array object selected from begin to end (end not included) where begin and end represent the index of items in that array
  This is method is NOT a mutating method because the original array is not modified
   Example let fruits = [&amp;#34;Peach&amp;#34;, &amp;#34;Mango&amp;#34;, &amp;#34;Apple&amp;#34;, &amp;#34;Orange&amp;#34;, &amp;#34;Grapes&amp;#34;, &amp;#34;Strawberries&amp;#34;] let myFavoriteFruits = fruits.slice(1, 4) console.</description>
-    </item>
-    
-    <item>
-      <title>JSON</title>
-      <link>/05-arrays-objects-and-json/json/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/05-arrays-objects-and-json/json/</guid>
-      <description> JSON </description>
     </item>
     
     <item>

@@ -352,7 +352,15 @@
   </url>
   
   <url>
+    <loc>/04-functions-and-scope/function-expressions-anonymous-functions/</loc>
+  </url>
+  
+  <url>
     <loc>/00-course-intro-and-tools/tools/</loc>
+  </url>
+  
+  <url>
+    <loc>/04-functions-and-scope/arrow-functions/</loc>
   </url>
   
   <url>
@@ -369,10 +377,6 @@
   
   <url>
     <loc>/08-ajax-and-apis/</loc>
-  </url>
-  
-  <url>
-    <loc>/05-arrays-objects-and-json/json/</loc>
   </url>
   
   <url>

@@ -9,24 +9,24 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Dot Notation :: GA Javascript</title>
+    <title>Arrow Functions :: GA Javascript</title>
 
     
-    <link href="/css/nucleus.css?1565914280" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1565914280" rel="stylesheet">
-    <link href="/css/hybrid.css?1565914280" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1565914280" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1565914280" rel="stylesheet">
-    <link href="/css/auto-complete.css?1565914280" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1565914280" rel="stylesheet">
-    <link href="/css/theme.css?1565914280" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1565914280" rel="stylesheet">
-    <link href="/css/syntax.css?1565914280" rel="stylesheet">
+    <link href="/css/nucleus.css?1565914281" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1565914281" rel="stylesheet">
+    <link href="/css/hybrid.css?1565914281" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1565914281" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1565914281" rel="stylesheet">
+    <link href="/css/auto-complete.css?1565914281" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1565914281" rel="stylesheet">
+    <link href="/css/theme.css?1565914281" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1565914281" rel="stylesheet">
+    <link href="/css/syntax.css?1565914281" rel="stylesheet">
     
-      <link href="/css/theme-blue.css?1565914280" rel="stylesheet">
+      <link href="/css/theme-blue.css?1565914281" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1565914280"></script>
+    <script src="/js/jquery-3.3.1.min.js?1565914281"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -36,7 +36,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/05-arrays-objects-and-json/objects/accessing-properties/dot-notation/">
+  <body class="" data-url="/04-functions-and-scope/arrow-functions/">
     <nav id="sidebar" class="">
 
 
@@ -89,14 +89,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1565914280"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1565914280"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1565914281"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1565914281"></script>
 <script type="text/javascript">
     
         var baseurl = "\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1565914280"></script>
+<script type="text/javascript" src="/js/search.js?1565914281"></script>
 
     
   </div>
@@ -1274,7 +1274,7 @@
   
     
     <li data-nav-id="/04-functions-and-scope/" title="Functions and Scope" class="dd-item
-        
+        parent
         
         
         ">
@@ -1452,7 +1452,7 @@
  
   
     
-      <li data-nav-id="/04-functions-and-scope/arrow-functions/" title="Arrow Functions" class="dd-item ">
+      <li data-nav-id="/04-functions-and-scope/arrow-functions/" title="Arrow Functions" class="dd-item active">
         <a href="/04-functions-and-scope/arrow-functions/">
         Arrow Functions
         
@@ -1608,7 +1608,7 @@
   
     
     <li data-nav-id="/05-arrays-objects-and-json/" title="Arrays, Objects and JSON" class="dd-item
-        parent
+        
         
         
         ">
@@ -2024,7 +2024,7 @@
   
     
     <li data-nav-id="/05-arrays-objects-and-json/objects/" title="Objects" class="dd-item
-        parent
+        
         
         
         ">
@@ -2070,7 +2070,7 @@
   
     
     <li data-nav-id="/05-arrays-objects-and-json/objects/accessing-properties/" title="Accessing Properties" class="dd-item
-        parent
+        
         
         
         ">
@@ -2094,7 +2094,7 @@
  
   
     
-      <li data-nav-id="/05-arrays-objects-and-json/objects/accessing-properties/dot-notation/" title="Dot Notation" class="dd-item active">
+      <li data-nav-id="/05-arrays-objects-and-json/objects/accessing-properties/dot-notation/" title="Dot Notation" class="dd-item ">
         <a href="/05-arrays-objects-and-json/objects/accessing-properties/dot-notation/">
         Dot Notation
         
@@ -2865,19 +2865,7 @@
             
           
           
-            
-            
-          
-          
-            
-            
-          
-          
-            <a href='/'>JSD</a> > <a href='/05-arrays-objects-and-json/'>Arrays, Objects and JSON</a> > <a href='/05-arrays-objects-and-json/objects/'>Objects</a> > <a href='/05-arrays-objects-and-json/objects/accessing-properties/'>Accessing Properties</a> > Dot Notation
-          
-        
-          
-        
+            <a href='/'>JSD</a> > <a href='/04-functions-and-scope/'>Functions and Scope</a> > Arrow Functions
           
         
           
@@ -2896,8 +2884,9 @@
 <ul>
 <li>
 <ul>
-<li><a href="#dot-notation">Dot Notation</a></li>
-<li><a href="#example">Example</a></li>
+<li><a href="#arrow-functions">Arrow Functions</a></li>
+<li><a href="#parameter-syntax-rules-for-arrow-functions">Parameter syntax rules for Arrow functions</a></li>
+<li><a href="#function-body-syntax-rules-for-arrow-functions">Function body syntax rules for Arrow functions</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -2917,7 +2906,7 @@
           
             <h1>
               
-              Dot Notation
+              Arrow Functions
             </h1>
           
 
@@ -2926,26 +2915,84 @@
 
 
 
-<h3 id="dot-notation">Dot Notation</h3>
+<h3 id="arrow-functions">Arrow Functions</h3>
 
 <ul>
-<li>Dot notation allows us to access properties with a <code>.</code></li>
+<li><p>ES6 introduced/arrow function syntax/, a shorter way to write functions by using the special &ldquo;fat arrow&rdquo; (<code>=&gt;</code>)</p></li>
+
+<li><p>Instead, you first include the parameters inside the <code>()</code> and then add an arrow <code>=&gt;</code> that points to the function body surrounded in <code>{ }</code> like this:</p>
+
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js">    <span class="k">const</span> <span class="nx">getArea</span> <span class="o">=</span> <span class="p">(</span><span class="nx">width</span><span class="p">,</span> <span class="nx">height</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+      <span class="kd">let</span> <span class="nx">area</span> <span class="o">=</span> <span class="nx">width</span> <span class="o">*</span> <span class="nx">height</span>
+      <span class="k">return</span> <span class="nx">area</span>
+    <span class="p">}</span>
+
+    
+</code></pre></div></li>
 </ul>
 
-<h3 id="example">Example</h3>
+<h3 id="parameter-syntax-rules-for-arrow-functions">Parameter syntax rules for Arrow functions</h3>
 
-<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js">  <span class="kd">let</span> <span class="nx">superHero</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s1">&#39;secret identity&#39;</span><span class="o">:</span> <span class="s1">&#39;Peter Parker&#39;</span><span class="p">,</span>
-    <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;Spiderman&#39;</span><span class="p">,</span>
-    <span class="nx">powers</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;super strength&#39;</span><span class="p">,</span> <span class="s1">&#39;hyper awareness&#39;</span><span class="p">,</span> <span class="s1">&#39;agility&#39;</span><span class="p">,</span> <span class="s1">&#39;genius intellect&#39;</span><span class="p">],</span>
-    <span class="nx">age</span><span class="o">:</span> <span class="mi">17</span>
-  <span class="p">}</span>
+<ul>
+<li><p>Functions that take only a single parameter do not need that parameter to be enclosed in parentheses.</p></li>
 
-  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">superHero</span><span class="p">.</span><span class="nx">name</span><span class="p">)</span>
-  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">superHero</span><span class="p">.</span><span class="nx">powers</span><span class="p">)</span>
+<li><p>However, if a function takes zero or multiple parameters, parentheses are required</p>
+
+<ul>
+<li>Zero parameters</li>
+</ul>
+
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js">    <span class="k">const</span> <span class="nx">functionName</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{}</span>
+    
 </code></pre></div>
 
-<p><a class="jsbin-embed" href="https://jsbin.com/luwemam/embed?js,console">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?4.1.7"></script></p>
+<ul>
+<li>One parameter</li>
+</ul>
+
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js">    <span class="k">const</span> <span class="nx">functionName</span> <span class="o">=</span> <span class="nx">param</span> <span class="p">=&gt;</span> <span class="p">{}</span>
+    
+</code></pre></div>
+
+<ul>
+<li>Two parameters</li>
+</ul>
+
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js">    <span class="k">const</span> <span class="nx">functionName</span> <span class="o">=</span> <span class="p">(</span><span class="nx">paramOne</span><span class="p">,</span> <span class="nx">paramTwo</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{}</span>
+    
+</code></pre></div></li>
+</ul>
+
+<h3 id="function-body-syntax-rules-for-arrow-functions">Function body syntax rules for Arrow functions</h3>
+
+<ul>
+<li><p>A function body composed of a single-line block <strong>does not need curly braces</strong> or a <strong>return</strong> keyword</p></li>
+
+<li><p>Without the curly braces, whatever that line evaluates will be <strong>automatically returned</strong></p></li>
+
+<li><p>This is referred to as <strong>implicit return</strong></p></li>
+
+<li><p>Examples</p>
+
+<ul>
+<li>Single line block</li>
+</ul>
+
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js">      <span class="k">const</span> <span class="nx">functionName</span> <span class="o">=</span> <span class="nx">number</span> <span class="p">=&gt;</span> <span class="nx">number</span> <span class="o">+</span> <span class="nx">number</span>
+    
+</code></pre></div>
+
+<ul>
+<li>Multi-line block</li>
+</ul>
+
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js">      <span class="k">const</span> <span class="nx">functionName</span> <span class="o">=</span> <span class="nx">number</span> <span class="p">=&gt;</span> <span class="p">{</span>
+      	<span class="k">const</span> <span class="nx">sum</span> <span class="o">=</span> <span class="nx">number</span> <span class="o">+</span> <span class="nx">number</span>
+      	<span class="k">return</span> <span class="nx">sum</span>
+      <span class="p">}</span>
+    
+</code></pre></div></li>
+</ul>
 
 
 <footer class=" footline" >
@@ -3871,6 +3918,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -3880,6 +3928,25 @@
                     
                     
 
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
                         
             
@@ -3998,21 +4065,6 @@
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
                     
                 
                 
@@ -4030,6 +4082,9 @@
             
                 
                     
+                        
+                        
+                    
                 
                 
 
@@ -4050,41 +4105,6 @@
                     
                     
 
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
                     
             
         
@@ -4129,6 +4149,40 @@
             
                 
                     
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
                     
                 
                 
@@ -4144,9 +4198,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -4438,7 +4489,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -4453,9 +4503,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -4473,7 +4520,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -4486,7 +4532,6 @@
             
             
                 
-                    
                     
                 
                 
@@ -4503,9 +4548,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -5034,10 +5076,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/05-arrays-objects-and-json/objects/accessing-properties/" title="Accessing Properties"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/04-functions-and-scope/function-expressions-anonymous-functions/" title="Function Expressions &amp; Anonymous Functions"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/05-arrays-objects-and-json/objects/accessing-properties/bracket-notation/" title="Bracket Notation" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/04-functions-and-scope/scope/" title="Scope" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -5047,20 +5089,20 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1565914280"></script>
-    <script src="/js/perfect-scrollbar.min.js?1565914280"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1565914280"></script>
-    <script src="/js/jquery.sticky.js?1565914280"></script>
-    <script src="/js/featherlight.min.js?1565914280"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1565914280"></script>
-    <script src="/js/highlight.pack.js?1565914280"></script>
+    <script src="/js/clipboard.min.js?1565914281"></script>
+    <script src="/js/perfect-scrollbar.min.js?1565914281"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1565914281"></script>
+    <script src="/js/jquery.sticky.js?1565914281"></script>
+    <script src="/js/featherlight.min.js?1565914281"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1565914281"></script>
+    <script src="/js/highlight.pack.js?1565914281"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1565914280"></script>
-    <script src="/js/learn.js?1565914280"></script>
-    <script src="/js/hugo-learn.js?1565914280"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1565914281"></script>
+    <script src="/js/learn.js?1565914281"></script>
+    <script src="/js/hugo-learn.js?1565914281"></script>
 
-    <link href="/mermaid/mermaid.css?1565914280" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1565914280"></script>
+    <link href="/mermaid/mermaid.css?1565914281" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1565914281"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

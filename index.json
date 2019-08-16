@@ -609,11 +609,25 @@
 	"content": " Functions can call other functions  Function reusability is key results in cleaner code\n Reusing functions leverages key programming principle - Don\u0026rsquo;t Repeat Yourself (DRY)\n  Example  In the example of below, the surfaceAreaOfCube function calls another function (areaOfSquare) instead of duplicating work that was already done  // Function that calculates area of a square  function areaOfSquare(side){ return side * side } areaOfSquare(3) // returns 9  // This is a function that calculates the // surface area of a cube that *reuses* the areaOfSquare function  function surfaceAreaOfCube(side){ return 6 * areaOfSquare(side) } surfaceAreaOfCube(7) // returns 294  JS Bin on jsbin.com\nExercise  Create a function named surfaceAreaOfSphere that calculates the surface area of the Sphere using the following formula: 4 * PI * r**2; the function MUST reuse the provided areaOfCircle function  JS Bin on jsbin.com\n"
 },
 {
+	"uri": "/04-functions-and-scope/function-expressions-anonymous-functions/",
+	"title": "Function Expressions &amp; Anonymous Functions",
+	"tags": [],
+	"description": "",
+	"content": " Function Expressions \u0026amp; Anonymous Functions  Another way to define a function is to use a function expression\n To define a function inside an expression, we can use the function keyword with the function name omitted\n function with no name is called anonymous functions\n  Example let getArea = function(width, height) { return width * height } // Calling the getArea() function with values getArea(7, 5) // returns 35  JS Bin on jsbin.com\n"
+},
+{
 	"uri": "/00-course-intro-and-tools/tools/",
 	"title": "Course Tools",
 	"tags": [],
 	"description": "",
 	"content": " Text Editor:\n Why?: Text editor is a program that developers use to create and edit a range of programming language files. We\u0026rsquo;ll be using Atom, because it\u0026rsquo;s open source (free) and really good.\n Download Atom\n  Browser:\n Why?: Google chrome is a robust browser with a variety of tools that are helpful to developers.\n Install Google Chrome\n  Github:\n Why?: Github (and Git) are tools/applications used to by developers to manage their code and work collaboratively with each other. You\u0026rsquo;ll be using Github/Git to submit our homework assignments. kj\n Create a Github Account\n    Slack:\n Why?: Is a popular chat application that we\u0026rsquo;ll be using as our primary method of communication both during and outside of class\n Join the GA NYC Part Time Students Slack Community slack channel\n You should have received an emailed invitation to join GA’s slack team\n Don’t see an invitation in your inbox? Check your spam folder - many of Slack’s invitation emails tend to end up there. Let me know if you weren’t sent an invite and we’ll get you sorted out.\n  Add yourself to the dedicated Slack Channel for our class named #jsd-7-30-19 (see instructions on how to join a Slack Channel here)\n  Wireframes:\n Why?: Wireframes are a planning tools that helps you visualize the layout and other aspects of your web projects before writing any code.\n Multiple options:\n Whimsical - free wireframing software\n Google Drawing\n Pen \u0026amp; Paper\n  Example of a wireframe:\n   "
+},
+{
+	"uri": "/04-functions-and-scope/arrow-functions/",
+	"title": "Arrow Functions",
+	"tags": [],
+	"description": "",
+	"content": " Arrow Functions  ES6 introduced/arrow function syntax/, a shorter way to write functions by using the special \u0026ldquo;fat arrow\u0026rdquo; (=\u0026gt;)\n Instead, you first include the parameters inside the () and then add an arrow =\u0026gt; that points to the function body surrounded in { } like this:\nconst getArea = (width, height) =\u0026gt; { let area = width * height return area }   Parameter syntax rules for Arrow functions  Functions that take only a single parameter do not need that parameter to be enclosed in parentheses.\n However, if a function takes zero or multiple parameters, parentheses are required\n Zero parameters  const functionName = () =\u0026gt; {}   One parameter  const functionName = param =\u0026gt; {}   Two parameters  const functionName = (paramOne, paramTwo) =\u0026gt; {}   Function body syntax rules for Arrow functions  A function body composed of a single-line block does not need curly braces or a return keyword\n Without the curly braces, whatever that line evaluates will be automatically returned\n This is referred to as implicit return\n Examples\n Single line block  const functionName = number =\u0026gt; number + number   Multi-line block  const functionName = number =\u0026gt; { const sum = number + number return sum }   "
 },
 {
 	"uri": "/05-arrays-objects-and-json/array-iterators/filter/",
@@ -642,13 +656,6 @@
 	"tags": [],
 	"description": "",
 	"content": " Lesson 08 Ajax and APIs\u0026rdquo; "
-},
-{
-	"uri": "/05-arrays-objects-and-json/json/",
-	"title": "JSON",
-	"tags": [],
-	"description": "",
-	"content": " JSON "
 },
 {
 	"uri": "/02-javascript-basics/logical-operators/",
