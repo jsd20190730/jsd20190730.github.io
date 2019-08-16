@@ -23,7 +23,7 @@
   </url>
   
   <url>
-    <loc>/05-arrays-objects-and-json/objects/creating-objects/</loc>
+    <loc>/05-arrays-objects/objects/creating-objects/</loc>
   </url>
   
   <url>
@@ -68,19 +68,19 @@
   </url>
   
   <url>
-    <loc>/05-arrays-objects-and-json/array-iterators/for-each/</loc>
+    <loc>/05-arrays-objects/array-iterators/for-each/</loc>
   </url>
   
   <url>
-    <loc>/05-arrays-objects-and-json/array-review/adding-removing-items/push/</loc>
+    <loc>/05-arrays-objects/array-review/adding-removing-items/push/</loc>
   </url>
   
   <url>
-    <loc>/05-arrays-objects-and-json/objects/accessing-properties/</loc>
+    <loc>/05-arrays-objects/objects/accessing-properties/</loc>
   </url>
   
   <url>
-    <loc>/05-arrays-objects-and-json/array-review/</loc>
+    <loc>/05-arrays-objects/array-review/</loc>
   </url>
   
   <url>
@@ -88,7 +88,7 @@
   </url>
   
   <url>
-    <loc>/05-arrays-objects-and-json/array-review/creating-arrays/</loc>
+    <loc>/05-arrays-objects/array-review/creating-arrays/</loc>
   </url>
   
   <url>
@@ -100,11 +100,15 @@
   </url>
   
   <url>
-    <loc>/05-arrays-objects-and-json/objects/accessing-properties/dot-notation/</loc>
+    <loc>/05-arrays-objects/objects/accessing-properties/dot-notation/</loc>
   </url>
   
   <url>
     <loc>/homework-assignments/hw-assignment-01/</loc>
+  </url>
+  
+  <url>
+    <loc>/homework-assignments/hw-assignment-02/</loc>
   </url>
   
   <url>
@@ -168,19 +172,19 @@
   </url>
   
   <url>
-    <loc>/05-arrays-objects-and-json/array-iterators/map/</loc>
+    <loc>/05-arrays-objects/array-iterators/map/</loc>
   </url>
   
   <url>
-    <loc>/05-arrays-objects-and-json/array-review/adding-removing-items/pop/</loc>
+    <loc>/05-arrays-objects/array-review/adding-removing-items/pop/</loc>
   </url>
   
   <url>
-    <loc>/05-arrays-objects-and-json/array-review/accessing-array-values/</loc>
+    <loc>/05-arrays-objects/array-review/accessing-array-values/</loc>
   </url>
   
   <url>
-    <loc>/05-arrays-objects-and-json/array-iterators/</loc>
+    <loc>/05-arrays-objects/array-iterators/</loc>
   </url>
   
   <url>
@@ -188,11 +192,11 @@
   </url>
   
   <url>
-    <loc>/05-arrays-objects-and-json/objects/assigning-properties/</loc>
+    <loc>/05-arrays-objects/objects/assigning-properties/</loc>
   </url>
   
   <url>
-    <loc>/05-arrays-objects-and-json/objects/accessing-properties/bracket-notation/</loc>
+    <loc>/05-arrays-objects/objects/accessing-properties/bracket-notation/</loc>
   </url>
   
   <url>
@@ -252,7 +256,7 @@
   </url>
   
   <url>
-    <loc>/05-arrays-objects-and-json/</loc>
+    <loc>/05-arrays-objects/</loc>
   </url>
   
   <url>
@@ -272,11 +276,11 @@
   </url>
   
   <url>
-    <loc>/05-arrays-objects-and-json/array-iterators/find/</loc>
+    <loc>/05-arrays-objects/array-iterators/find/</loc>
   </url>
   
   <url>
-    <loc>/05-arrays-objects-and-json/array-review/adding-removing-items/shift/</loc>
+    <loc>/05-arrays-objects/array-review/adding-removing-items/shift/</loc>
   </url>
   
   <url>
@@ -300,15 +304,15 @@
   </url>
   
   <url>
-    <loc>/05-arrays-objects-and-json/objects/methods/</loc>
+    <loc>/05-arrays-objects/objects/methods/</loc>
   </url>
   
   <url>
-    <loc>/05-arrays-objects-and-json/objects/</loc>
+    <loc>/05-arrays-objects/objects/</loc>
   </url>
   
   <url>
-    <loc>/05-arrays-objects-and-json/array-review/updating-array-values/</loc>
+    <loc>/05-arrays-objects/array-review/updating-array-values/</loc>
   </url>
   
   <url>
@@ -332,7 +336,7 @@
   </url>
   
   <url>
-    <loc>/05-arrays-objects-and-json/array-review/adding-removing-items/unshift/</loc>
+    <loc>/05-arrays-objects/array-review/adding-removing-items/unshift/</loc>
   </url>
   
   <url>
@@ -364,15 +368,15 @@
   </url>
   
   <url>
-    <loc>/05-arrays-objects-and-json/array-iterators/filter/</loc>
+    <loc>/05-arrays-objects/array-iterators/filter/</loc>
   </url>
   
   <url>
-    <loc>/05-arrays-objects-and-json/array-review/adding-removing-items/slice/</loc>
+    <loc>/05-arrays-objects/array-review/adding-removing-items/slice/</loc>
   </url>
   
   <url>
-    <loc>/05-arrays-objects-and-json/array-review/adding-removing-items/</loc>
+    <loc>/05-arrays-objects/array-review/adding-removing-items/</loc>
   </url>
   
   <url>
@@ -384,7 +388,7 @@
   </url>
   
   <url>
-    <loc>/05-arrays-objects-and-json/objects/nested-objects/</loc>
+    <loc>/05-arrays-objects/objects/nested-objects/</loc>
   </url>
   
   <url>
@@ -396,7 +400,7 @@
   </url>
   
   <url>
-    <loc>/05-arrays-objects-and-json/array-review/length-property/</loc>
+    <loc>/05-arrays-objects/array-review/length-property/</loc>
   </url>
   
   <url>
@@ -453,7 +457,7 @@
   </url>
   
   <url>
-    <loc>/05-arrays-objects-and-json/array-iterators/reduce/</loc>
+    <loc>/05-arrays-objects/array-iterators/reduce/</loc>
   </url>
   
   <url>
@@ -473,7 +477,7 @@
   </url>
   
   <url>
-    <loc>/05-arrays-objects-and-json/array-iterators/other-iterators/</loc>
+    <loc>/05-arrays-objects/array-iterators/other-iterators/</loc>
   </url>
   
   <url>

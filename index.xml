@@ -57,10 +57,10 @@
     
     <item>
       <title>Creating Objects</title>
-      <link>/05-arrays-objects-and-json/objects/creating-objects/</link>
+      <link>/05-arrays-objects/objects/creating-objects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/05-arrays-objects-and-json/objects/creating-objects/</guid>
+      <guid>/05-arrays-objects/objects/creating-objects/</guid>
       <description>Creating Objects  Data in an object is organized into key-value pairs
  A key is like a variable name that points to a location in memory that holds a value
  keys are strings, but when we have a key that does not have any special characters in it, JavaScript allows us to omit the quotation marks:
@@ -189,10 +189,10 @@ When copying the following code snippets, DO NOT include the $ this is a univers
     
     <item>
       <title>.forEach()</title>
-      <link>/05-arrays-objects-and-json/array-iterators/for-each/</link>
+      <link>/05-arrays-objects/array-iterators/for-each/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/05-arrays-objects-and-json/array-iterators/for-each/</guid>
+      <guid>/05-arrays-objects/array-iterators/for-each/</guid>
       <description>.forEach()  Method allows us to run a callback function for every element of the array
  The callback function for forEach provides the following:
  element - this current element from the array that is being evaluated
@@ -202,19 +202,19 @@ When copying the following code snippets, DO NOT include the $ this is a univers
     
     <item>
       <title>.push()</title>
-      <link>/05-arrays-objects-and-json/array-review/adding-removing-items/push/</link>
+      <link>/05-arrays-objects/array-review/adding-removing-items/push/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/05-arrays-objects-and-json/array-review/adding-removing-items/push/</guid>
+      <guid>/05-arrays-objects/array-review/adding-removing-items/push/</guid>
       <description>.push()  Appends the element to the end of the array  Example let fruits = [&amp;#34;Apple&amp;#34;, &amp;#34;Orange&amp;#34;] fruits.push(&amp;#34;Pear&amp;#34;) console.log( fruits ) // Apple, Orange, Pear   Note that our fruits array has been changed by push(); this means that the push() method is a mutating method  JS Bin on jsbin.com</description>
     </item>
     
     <item>
       <title>Creating Arrays</title>
-      <link>/05-arrays-objects-and-json/array-review/creating-arrays/</link>
+      <link>/05-arrays-objects/array-review/creating-arrays/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/05-arrays-objects-and-json/array-review/creating-arrays/</guid>
+      <guid>/05-arrays-objects/array-review/creating-arrays/</guid>
       <description>Creating Arrays  You can create that doesn&amp;rsquo;t initially contain any values, this is called an empty array
  An array can also be created with initial values
  Square brackets are a means of identifying if a variable is an array
@@ -251,10 +251,10 @@ When copying the following code snippets, DO NOT include the $ this is a univers
     
     <item>
       <title>Dot Notation</title>
-      <link>/05-arrays-objects-and-json/objects/accessing-properties/dot-notation/</link>
+      <link>/05-arrays-objects/objects/accessing-properties/dot-notation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/05-arrays-objects-and-json/objects/accessing-properties/dot-notation/</guid>
+      <guid>/05-arrays-objects/objects/accessing-properties/dot-notation/</guid>
       <description>Dot Notation  Dot notation allows us to access properties with a .  Example let superHero = { &amp;#39;secret identity&amp;#39;: &amp;#39;Peter Parker&amp;#39;, name: &amp;#39;Spiderman&amp;#39;, powers: [&amp;#39;super strength&amp;#39;, &amp;#39;hyper awareness&amp;#39;, &amp;#39;agility&amp;#39;, &amp;#39;genius intellect&amp;#39;], age: 17 } console.log(superHero.name) console.log(superHero.powers)  JS Bin on jsbin.com</description>
     </item>
     
@@ -268,6 +268,18 @@ When copying the following code snippets, DO NOT include the $ this is a univers
 1. Complete Homework #1 - JS Basics, Control Flow &amp;amp; Loops  You are tasked with completing the problem set which is hosted on Github, see the url below:
  Github Repo for Homework #1 - JS Basics, Control Flow &amp;amp; Loops  Use the Assignment Submission Git Workflow (detailed here) to access and submit the assignment
   2.</description>
+    </item>
+    
+    <item>
+      <title>HW Assignment #2</title>
+      <link>/homework-assignments/hw-assignment-02/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/homework-assignments/hw-assignment-02/</guid>
+      <description> Summary of this week&amp;rsquo;s homework assignment: Due Date: Thursday, August 22nd
+Complete Homework #2 - Functions and Iterators  You are tasked with completing the problem set which is hosted on Github, see the url below:
+ Github Repo for Homework #2 - Functions &amp;amp; Iterators  Use the Assignment Submission Git Workflow (detailed here) to access and submit the assignment
+  </description>
     </item>
     
     <item>
@@ -409,10 +421,10 @@ Converting Strings to Numbers  Sometimes you will find yourself in a position wh
     
     <item>
       <title>.map()</title>
-      <link>/05-arrays-objects-and-json/array-iterators/map/</link>
+      <link>/05-arrays-objects/array-iterators/map/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/05-arrays-objects-and-json/array-iterators/map/</guid>
+      <guid>/05-arrays-objects/array-iterators/map/</guid>
       <description>.map()  Calls a function for each element of the array and returns a new array of results
  .map() is one of the most useful and used iterator methods
  .map() is does NOT mutate the original array
@@ -423,10 +435,10 @@ Converting Strings to Numbers  Sometimes you will find yourself in a position wh
     
     <item>
       <title>.pop()</title>
-      <link>/05-arrays-objects-and-json/array-review/adding-removing-items/pop/</link>
+      <link>/05-arrays-objects/array-review/adding-removing-items/pop/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/05-arrays-objects-and-json/array-review/adding-removing-items/pop/</guid>
+      <guid>/05-arrays-objects/array-review/adding-removing-items/pop/</guid>
       <description>.pop()  Extracts the last element of the array and returns it
  Like pop(), push() is also a mutating method because it changes the value of the original array
   Example let fruits = [&amp;#34;Apple&amp;#34;, &amp;#34;Orange&amp;#34;, &amp;#34;Grapes&amp;#34;] fruits.pop() console.log(fruits) // Apple, Orange  JS Bin on jsbin.com</description>
@@ -434,10 +446,10 @@ Converting Strings to Numbers  Sometimes you will find yourself in a position wh
     
     <item>
       <title>Accessing Array Values</title>
-      <link>/05-arrays-objects-and-json/array-review/accessing-array-values/</link>
+      <link>/05-arrays-objects/array-review/accessing-array-values/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/05-arrays-objects-and-json/array-review/accessing-array-values/</guid>
+      <guid>/05-arrays-objects/array-review/accessing-array-values/</guid>
       <description>Accessing Arrays Values  Values in an array are accessed as if they are in a numbered list
  Arrays are zero based meaning the 1st “value” in an array is at position (index) 0, the 2nd element is at position 1, and so on
  You access the value of an element in the array by passing the index of the item in square brackets
@@ -459,19 +471,19 @@ Converting Strings to Numbers  Sometimes you will find yourself in a position wh
     
     <item>
       <title>Assigning Properties</title>
-      <link>/05-arrays-objects-and-json/objects/assigning-properties/</link>
+      <link>/05-arrays-objects/objects/assigning-properties/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/05-arrays-objects-and-json/objects/assigning-properties/</guid>
+      <guid>/05-arrays-objects/objects/assigning-properties/</guid>
       <description>Assigning Properties  We can use either dot notation, or bracket notation and the assignment operator, = to add new key-value pairs to an object or change an existing property  Example let superHero = { &amp;#39;secret identity&amp;#39;: &amp;#39;Peter Parker&amp;#39;, name: &amp;#39;Spiderman&amp;#39;, powers: [&amp;#39;super strength&amp;#39;, &amp;#39;hyper awareness&amp;#39;, &amp;#39;agility&amp;#39;, &amp;#39;genius intellect&amp;#39;], age: 17 } // update existing properties  superHero.powers.push(&amp;#39;endurance&amp;#39;) superHero.age = 18 // add a new property  superHero.homeCity = &amp;#39;New York City&amp;#39; console.</description>
     </item>
     
     <item>
       <title>Bracket Notation</title>
-      <link>/05-arrays-objects-and-json/objects/accessing-properties/bracket-notation/</link>
+      <link>/05-arrays-objects/objects/accessing-properties/bracket-notation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/05-arrays-objects-and-json/objects/accessing-properties/bracket-notation/</guid>
+      <guid>/05-arrays-objects/objects/accessing-properties/bracket-notation/</guid>
       <description>Bracket Notation  Bracket notation is another way to to access a key’s value is by using bracket notation, [ ]
  To use bracket notation to access an object’s property, we pass in the property name (key) as a string
 superHero[&#39;secret identity&#39;]`
@@ -664,10 +676,10 @@ Atom Editor v1.</description>
     
     <item>
       <title>.find()</title>
-      <link>/05-arrays-objects-and-json/array-iterators/find/</link>
+      <link>/05-arrays-objects/array-iterators/find/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/05-arrays-objects-and-json/array-iterators/find/</guid>
+      <guid>/05-arrays-objects/array-iterators/find/</guid>
       <description>.find()  Returns the value of the first element in the array that satisfies the provided testing function
  undefined is returned if no element satisfies testing function
  The callback function for .find() accepts the following parameters:
@@ -678,10 +690,10 @@ Atom Editor v1.</description>
     
     <item>
       <title>.shift()</title>
-      <link>/05-arrays-objects-and-json/array-review/adding-removing-items/shift/</link>
+      <link>/05-arrays-objects/array-review/adding-removing-items/shift/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/05-arrays-objects-and-json/array-review/adding-removing-items/shift/</guid>
+      <guid>/05-arrays-objects/array-review/adding-removing-items/shift/</guid>
       <description>.shift()  Removes the first element from an array and returns that removed element
  This method is a mutating method because it changes the original array
   Example let fruits = [&amp;#34;Apple&amp;#34;, &amp;#34;Orange&amp;#34;, &amp;#34;Grapes&amp;#34;] fruits.shift() console.log(fruits) // Orange, Grapes  JS Bin on jsbin.com</description>
@@ -736,10 +748,10 @@ Atom Editor v1.</description>
     
     <item>
       <title>Methods</title>
-      <link>/05-arrays-objects-and-json/objects/methods/</link>
+      <link>/05-arrays-objects/objects/methods/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/05-arrays-objects-and-json/objects/methods/</guid>
+      <guid>/05-arrays-objects/objects/methods/</guid>
       <description>Object Methods  Methods are functions of an object
  Methods specify the actions of an object (i.e. what the action can do)
  Methods are called in the same way we call all other functions
@@ -748,10 +760,10 @@ Atom Editor v1.</description>
     
     <item>
       <title>Updating Array Values</title>
-      <link>/05-arrays-objects-and-json/array-review/updating-array-values/</link>
+      <link>/05-arrays-objects/array-review/updating-array-values/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/05-arrays-objects-and-json/array-review/updating-array-values/</guid>
+      <guid>/05-arrays-objects/array-review/updating-array-values/</guid>
       <description>Updating Arrays Values  You can change a value in an array by referencing the value and then changing the value using an = (equal sign)  Example // declare a variable called newEditionMembers and use it to store // an array of names  let newEditionMembers = [&amp;#34;Ricky Bell&amp;#34;, &amp;#34;Michael Bivins&amp;#34;, &amp;#34;Bobby Brown&amp;#34;, &amp;#34;Ronnie DeVoe&amp;#34;, &amp;#34;Ralph Tresvant&amp;#34;] // We are going replace Bobby Brown with Johnny Gill // by referencing the 3rd element of the array by using index 2 // and then use assignment (just an equal sign) to change // the value to Johnny Gill  newEditionMembers[2] = &amp;#34;Johnny Gill&amp;#34;;  JS Bin on jsbin.</description>
     </item>
     
@@ -817,10 +829,10 @@ $ mkdir nursery_rhymes  Navigate into the nursery_rhymes directory using the cd 
     
     <item>
       <title>.unshift()</title>
-      <link>/05-arrays-objects-and-json/array-review/adding-removing-items/unshift/</link>
+      <link>/05-arrays-objects/array-review/adding-removing-items/unshift/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/05-arrays-objects-and-json/array-review/adding-removing-items/unshift/</guid>
+      <guid>/05-arrays-objects/array-review/adding-removing-items/unshift/</guid>
       <description>.unshift()  Adds one or more elements to the beginning of an array and returns the new length of the array
  This method is a mutating method because it changes the original array
   Example let fruits = [&amp;#34;Apple&amp;#34;, &amp;#34;Orange&amp;#34;, &amp;#34;Grapes&amp;#34;] fruits.unshift(&amp;#34;Peach&amp;#34;, &amp;#34;Mango&amp;#34;) console.log(fruits) // Peach, Mango, Apple, Orange, Grapes  JS Bin on jsbin.com</description>
@@ -901,10 +913,10 @@ const getArea = (width, height) =&amp;gt; { let area = width * height return are
     
     <item>
       <title>.filter()</title>
-      <link>/05-arrays-objects-and-json/array-iterators/filter/</link>
+      <link>/05-arrays-objects/array-iterators/filter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/05-arrays-objects-and-json/array-iterators/filter/</guid>
+      <guid>/05-arrays-objects/array-iterators/filter/</guid>
       <description>.filter()  Returns the value of the first element in the array that satisfies the provided testing function
  undefined is returned if no element satisfies testing function
  The callback function for .find() accepts the following parameters:
@@ -915,10 +927,10 @@ const getArea = (width, height) =&amp;gt; { let area = width * height return are
     
     <item>
       <title>.slice()</title>
-      <link>/05-arrays-objects-and-json/array-review/adding-removing-items/slice/</link>
+      <link>/05-arrays-objects/array-review/adding-removing-items/slice/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/05-arrays-objects-and-json/array-review/adding-removing-items/slice/</guid>
+      <guid>/05-arrays-objects/array-review/adding-removing-items/slice/</guid>
       <description>.slice()  Returns a shallow copy of a portion of an array into a new array object selected from begin to end (end not included) where begin and end represent the index of items in that array
  This is method is NOT a mutating method because the original array is not modified
   Example let fruits = [&amp;#34;Peach&amp;#34;, &amp;#34;Mango&amp;#34;, &amp;#34;Apple&amp;#34;, &amp;#34;Orange&amp;#34;, &amp;#34;Grapes&amp;#34;, &amp;#34;Strawberries&amp;#34;] let myFavoriteFruits = fruits.slice(1, 4) console.</description>
@@ -938,10 +950,10 @@ const getArea = (width, height) =&amp;gt; { let area = width * height return are
     
     <item>
       <title>Nested Objects</title>
-      <link>/05-arrays-objects-and-json/objects/nested-objects/</link>
+      <link>/05-arrays-objects/objects/nested-objects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/05-arrays-objects-and-json/objects/nested-objects/</guid>
+      <guid>/05-arrays-objects/objects/nested-objects/</guid>
       <description>Nested Methods  In non-trivial applications, data is often nested
  JavaScript allows use to traverse an nested object using either dot notation or bracket notation
   Example let avengers = { headquarters: &amp;#34;Stark Tower&amp;#34;, members: [ { name: &amp;#39;Black Widow&amp;#39;, &amp;#39;secret identity&amp;#39;: &amp;#39;Natasha Romanov&amp;#39;, powers: [&amp;#34;elite martial artist&amp;#34;, &amp;#34;genius intellect&amp;#34;, &amp;#34;strategy&amp;#34;, &amp;#34;leadership&amp;#34;] }, { name: &amp;#39;Captain America&amp;#39;, &amp;#39;secret identity&amp;#39;: &amp;#39;Steve Rogers&amp;#39;, powers: [&amp;#34;super strength&amp;#34;, &amp;#34;leadership&amp;#34;] } ] } // access the first member of the Avengers  console.</description>
@@ -961,10 +973,10 @@ const getArea = (width, height) =&amp;gt; { let area = width * height return are
     
     <item>
       <title>length() Property</title>
-      <link>/05-arrays-objects-and-json/array-review/length-property/</link>
+      <link>/05-arrays-objects/array-review/length-property/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/05-arrays-objects-and-json/array-review/length-property/</guid>
+      <guid>/05-arrays-objects/array-review/length-property/</guid>
       <description>length() property  Property of an Array that returns the number of elements in that array  Example let fruits = [&amp;#34;Peach&amp;#34;, &amp;#34;Mango&amp;#34;, &amp;#34;Apple&amp;#34;, &amp;#34;Orange&amp;#34;, &amp;#34;Grapes&amp;#34;, &amp;#34;Strawberries&amp;#34;, &amp;#34;Plum&amp;#34;] let numberOfFruits = fruits.length console.log(numberOfFruits) // 7  JS Bin on jsbin.com</description>
     </item>
     
@@ -1054,10 +1066,10 @@ let yearOfBirth = 2001 if (yearOfBirth &amp;lt;= 2002) { console.</description>
     
     <item>
       <title>.reduce()</title>
-      <link>/05-arrays-objects-and-json/array-iterators/reduce/</link>
+      <link>/05-arrays-objects/array-iterators/reduce/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/05-arrays-objects-and-json/array-iterators/reduce/</guid>
+      <guid>/05-arrays-objects/array-iterators/reduce/</guid>
       <description>.reduce()  .reduce() is used calculate a single value based on the array
  A reducer function (that you provide) is called on each element of the array and results in a single output value
  Often used to perform a calculation that accepts all the elements of an array (usually numbers) as inputs
@@ -1098,10 +1110,10 @@ HTML &amp;amp; CSS  Codecademy - HTML &amp;amp; CSS course
     
     <item>
       <title>Other Iterators</title>
-      <link>/05-arrays-objects-and-json/array-iterators/other-iterators/</link>
+      <link>/05-arrays-objects/array-iterators/other-iterators/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/05-arrays-objects-and-json/array-iterators/other-iterators/</guid>
+      <guid>/05-arrays-objects/array-iterators/other-iterators/</guid>
       <description>Other Iterators  There are many other built-in iterator methods, a complete list can be found on MDN’s Array iteration methods list
  As developer, you will be working with arrays of data on a constant basis; which means you&amp;rsquo;ll be visiting the documentation often to look up array methods you may not have used before
  Let&amp;rsquo;s get some practice &amp;ldquo;looking things up&amp;rdquo;
