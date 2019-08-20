@@ -28,6 +28,20 @@
 	"content": "After this lesson, students will be able to:\n Use if/else conditionals to control program flow based on Boolean (true or false) tests\n Use switch/case conditionals to control program flow based on matching explicit values\n Use while and do/while loops\n Understand how loop iteration using for and forEach works\n  "
 },
 {
+	"uri": "/06-dom-and-jquery/jquery-overview/what-is-jquery/",
+	"title": "What is jQuery?",
+	"tags": [],
+	"description": "",
+	"content": " What is jQuery?  A JavaScript library that makes it easy to dynamically update your pages (i.e. perform DOM manipulation)\n Offers a simple way to achieve a variety of common JavaScript tasks\n Consistent across all browsers\n Does not do anything native / vanilla JavaScript cannot do, just does it with a more intuitive syntax\n  It\u0026rsquo;s important to note that jQuery is NOT another programming language it is a library or tool built on top of JavaScript\n "
+},
+{
+	"uri": "/06-dom-and-jquery/jquery-overview/add-jquery/via-download/",
+	"title": "Add jQuery via Download",
+	"tags": [],
+	"description": "",
+	"content": " Add jQuery via Download This approach assumes you downloaded the jQuery file and stored it on your js folder\n\u0026lt;html\u0026gt; \u0026lt;head\u0026gt; \u0026lt;title\u0026gt;Add jQuery by downloading jQuery file(s)\u0026lt;/title\u0026gt; \u0026lt;/head\u0026gt; \u0026lt;body\u0026gt; \u0026lt;script src=\u0026quot;js/jquery-3.4.1.js\u0026quot;\u0026gt;\u0026lt;/script\u0026gt; \u0026lt;script src=\u0026quot;js/app.js\u0026quot;\u0026gt;\u0026lt;/script\u0026gt; \u0026lt;/body\u0026gt; \u0026lt;/html\u0026gt;  "
+},
+{
 	"uri": "/01-command-line-js-and-git/",
 	"title": "Command Line JS &amp; Git",
 	"tags": [],
@@ -42,11 +56,25 @@
 	"content": " Creating Objects  Data in an object is organized into key-value pairs\n A key is like a variable name that points to a location in memory that holds a value\n keys are strings, but when we have a key that does not have any special characters in it, JavaScript allows us to omit the quotation marks:\nlet superHero = { \u0026#39;secret identity\u0026#39;: \u0026#39;Peter Parker\u0026#39;, name: \u0026#39;Spiderman\u0026#39;, powers: [\u0026#39;super strength\u0026#39;, \u0026#39;hyper awareness\u0026#39;, \u0026#39;agility\u0026#39;, \u0026#39;genius intellect\u0026#39;], age: 17 }  values can be of any data type\n  "
 },
 {
+	"uri": "/06-dom-and-jquery/dom-intro/",
+	"title": "Document Object Model",
+	"tags": [],
+	"description": "",
+	"content": " Document Object Model (DOM)  Browsers view our webpages as documents\n Programming interface for HTML documents\n The DOM allows us to use a programming language (JavaScript) to make dynamic changes to our web pages  Using JavaScript to dynamically change our web pages is also referred to as manipulating the DOM\n  Example: Visual representation of the DOM\nIn the image above, we have a html document on the left and a visual representation of this page\u0026rsquo;s DOM on the right\nClick here for a good overview of the DOM\n "
+},
+{
 	"uri": "/class-resources/documentation/",
 	"title": "Documentation",
 	"tags": [],
 	"description": "",
-	"content": "  Referencing documentation is a core task for developers.\n Documentation communicates how something (in our case programming languages, software libraries) works.\n Good documentation reduces implementation time and increases predictability of our software programs.\n  We will be referring to the following list of the documentation resources frequently throughout the course:\nHTML MDN\u0026rsquo;s HTML Reference\nCSS MDN\u0026rsquo;s CSS Reference\nJavascript MDN\u0026rsquo;s Javascript Reference\njQuery jQuery Documentation\n"
+	"content": "  Referencing documentation is a core task for developers.\n Documentation communicates how something (in our case programming languages, software libraries) works.\n Good documentation reduces implementation time and increases predictability of our software programs.\n  We will be referring to the following list of the documentation resources frequently throughout the course:\nHTML MDN\u0026rsquo;s HTML Reference\nCSS MDN\u0026rsquo;s CSS Reference\nJavaScript MDN\u0026rsquo;s JavaScript Reference\njQuery jQuery Documentation\n"
+},
+{
+	"uri": "/06-dom-and-jquery/jquery-events/event-handlers/",
+	"title": "Events Handlers",
+	"tags": [],
+	"description": "",
+	"content": " Event Handlers  Event handlers are blocks of code (usually a user-defined JavaScript function) that will be run when an event fires\n There are two parts to an event handler: an event listener and a callback function.\n An event listener is a method that listens for a specified event to occur, like a click event\n A callback function is a function that executes when something triggers the event listener\n  Both the event listener and callback function make up an event handler\n  Example $(() =\u0026gt; { $(\u0026#39;button\u0026#39;).click(() =\u0026gt; { $(\u0026#39;.box\u0026#39;).hide() }) })  JS Bin on jsbin.com\n Here\u0026rsquo;s a summary of what is happening in the code above:\n $('.box') selects all HTML elements with a class of .box\n The .click() method is the event listener; it checks if the user has clicked an .box HTML element\n The second argument to .on() is a callback function; when a \u0026lsquo;click\u0026rsquo; occurs on an .box element, this function executes\n   "
 },
 {
 	"uri": "/04-functions-and-scope/function-overview/",
@@ -67,7 +95,7 @@
 	"title": "Strings",
 	"tags": [],
 	"description": "",
-	"content": " Strings  Strings can consist of letters and other characters\n They are surrounded by either double quotes or single quotes (this is how you recognize you are working with a string)\n Concatenation allows you to combine strings\n  // declare a variable called color and store a string  let color = \u0026#34;green\u0026#34;  Single or double quotes can be used for strings, but the opening quote must match the closing quote\n String Methods  Javascript has some built-in methods that allow developers to work with strings\n For example: if you wanted to know how many characters were in a string, you would use the .length method\n Here are some example of other methods you can use on strings\n  JS Bin on jsbin.com\nString Template Literals  Template literals were introduced with ES6 (the newest version of JavaScript)\n Template literals provides are much cleaner syntax for mixing variables with strings\n Template literals are enclosed by the back-tick (` `) character instead of double or single quotes\n Template literals can contain placeholders. These are indicated by the dollar sign and curly braces (${expression})\n  let name = \u0026#34;Tristan\u0026#34; console.log(`Hello ${name}`)  JS Bin on jsbin.com\nClick here for complete list of all the String methods\n "
+	"content": " Strings  Strings can consist of letters and other characters\n They are surrounded by either double quotes or single quotes (this is how you recognize you are working with a string)\n Concatenation allows you to combine strings\n  // declare a variable called color and store a string  let color = \u0026#34;green\u0026#34;  Single or double quotes can be used for strings, but the opening quote must match the closing quote\n String Methods  JavaScript has some built-in methods that allow developers to work with strings\n For example: if you wanted to know how many characters were in a string, you would use the .length method\n Here are some example of other methods you can use on strings\n  JS Bin on jsbin.com\nString Template Literals  Template literals were introduced with ES6 (the newest version of JavaScript)\n Template literals provides are much cleaner syntax for mixing variables with strings\n Template literals are enclosed by the back-tick (` `) character instead of double or single quotes\n Template literals can contain placeholders. These are indicated by the dollar sign and curly braces (${expression})\n  let name = \u0026#34;Tristan\u0026#34; console.log(`Hello ${name}`)  JS Bin on jsbin.com\nClick here for complete list of all the String methods\n "
 },
 {
 	"uri": "/02-javascript-basics/variables/what-are-variables/",
@@ -112,6 +140,34 @@
 	"content": " General Window Management \u0026amp; Browser Shortcuts    Action Mac Windows     Open Chrome Developer Tools cmd+option + i F2 or ctrl + shift + i   Refresh page cmd + R ctrl + R   Switch between applications cmd + tab alt + tab   Switch between windows in the same application cmd + ~     Atom Shortcuts Files, Windows, Tabs Management    Command macOS Windows Linux Description     Open Settings Menu cmd+, ctrl+, ctrl+, Opens the Atom\u0026rsquo;s settings menu   Open File (Fuzzy) cmd+p or cmd+t ctrl+p or ctrl+t ctrl+p or ctrl+t Opens the Fuzzy Finder   Browse Open Files cmd+b ctrl+b ctrl+b Browse tabs within the window   Previous Tab alt+cmd+left ctrl+pageup ctrl+pageup Cycles left through open tabs (in the active pane)   Next Tab alt+cmd+right ctrl+pagedown ctrl+pagedown Cycles right through open tabs (in the active page)   Toggle Tree View cmd+\\ ctrl+\\ ctrl+\\ Toggles Atom\u0026rsquo;s file Tree View   Show Available Snippets alt+shift+s alt+shift+s alt+shift+s Shows the snippets available to Atom   Save cmd+s ctrl+s ctrl+s Saves the currently active file   Save As shift+cmd+s ctrl+shift+s ctrl+shift+s Saves the currently active file under a different name   Save All alt+cmd+s   Saves all changed files   Close Tab cmd+w ctrl+w ctrl+w Closes the currently active tab   Close Window shift+cmd+w ctrl+shift+w ctrl+shift+w Closes the currently active editor window   Split Window cmd+k up/down/left/right ctrl+k up/down/left/right ctrl+k up/down/left/right Split the currently active tab in one of the four directions   Focus Pane cmd+k cmd+up/down/left/right ctrl+k ctrl+up/down/left/right ctrl+k ctrl+up/down/left/right Move the focus to the pane in one of the four directions   Toggle full screen ctrl+cmd+f F11 F11 Toggle full screen window    Editing    Command macOS Windows Linux Description     Duplicate Lines shift+cmd+d ctrl+shift+d ctrl+shift+d Duplicates the line of the current cursor position and creates a new line under it with the same contents   Delete Line ctrl+shift+k ctrl+shift+k ctrl+shift+k Deletes the current line   Move Line Up ctrl+cmd+up ctrl+up ctrl+up Moves the contents of the current cursor position up one line. If there is a line above with content, the current lines content will swap with the one above it.   Move Line Down ctrl+cmd+down ctrl+down ctrl+down Moves the contents of the current cursor position down one line. If there is a line below with content, the line\u0026rsquo;s content will swap with the one below it.   Find/Replace cmd+f ctrl+f ctrl+f Opens up the Find/Replace panel   Find Next cmd+g F3 F3 Toggles forward through the results of the current buffer in the file while the Find/Replace panel is active   Find Previous shift+cmd+g shift+F3 shift+F3 Toggles backward through the results of the current buffer in the file while the Find/Replace panel is active   Find in Project shift+cmd+f ctrl+shift+f ctrl+shift+f Opens the Find in Project Panel   Go To Line ctrl+g ctrl+g ctrl+g Opens the Go To Line panel   Go To Matching Bracket ctrl+m ctrl+m ctrl+m The cursor goes to the matching top bracket that the cursor is ecapsulated in   Select Line cmd+l ctrl+l ctrl+l Selects the entire line the cursor\u0026rsquo;s current position is in   Toggle Comment cmd+/ ctrl+/ ctrl+/ Toggles the selected text into a comment of the current grammar   Column Selection ctrl+shift+up/down ctrl+alt+up/down shift+alt+up/down Allows to select multiple rows, where the same edit will be applied   Select Same Words cmd+d ctrl+d ctrl+d If you select a word, and then hit the key combo for this command, Atom will select the next same word for you. Then you can either type directly (which will replace the old words) or use left or right arrow to append things.   Undo Selection cmd+u ctrl+u ctrl+u This undoes the previous selection, like from Select Same Words.   Select All The Same Words At Once cmd+ctrl+g alt+f3 alt+f3 This shortcut is similar to cmd+d/ctrl+d but it selects all the matching words at once.    "
 },
 {
+	"uri": "/06-dom-and-jquery/jquery-manipulation/inserting-removing-content/append/",
+	"title": ".append()",
+	"tags": [],
+	"description": "",
+	"content": " .append() Method  Method used to insert content to the end of selected elements (as the last child)  Example $(() =\u0026gt; { $(\u0026#39;#appendParagraph\u0026#39;).click(() =\u0026gt; { // append a new paragraph to list of paragraphs  const newParagraph = \u0026#34;\u0026lt;p class=\u0026#39;four\u0026#39;\u0026gt;Four\u0026lt;/p\u0026gt;\u0026#34; $(\u0026#39;.numbers\u0026#39;).append(newParagraph) }) })  JS Bin on jsbin.com\n"
+},
+{
+	"uri": "/06-dom-and-jquery/jquery-events/form-events/change/",
+	"title": ".change() Event",
+	"tags": [],
+	"description": "",
+	"content": " .change() Event  Attaches an event handler function to the \u0026lt;input\u0026gt;, \u0026lt;textarea\u0026gt; and \u0026lt;select\u0026gt; elements that is executed when its value changes  Example  The following example will display an alert message when you select any option in dropdown select box  $(\u0026#39;select\u0026#39;).change((event) =\u0026gt; { const selectedOption = $(event.currentTarget).find(\u0026#39;:selected\u0026#39;).val() alert(`You have selected ${selectedOption}`) })  JS Bin on jsbin.com\nWe\u0026rsquo;ll discuss currentTarget and the .find() method later in the course\n "
+},
+{
+	"uri": "/06-dom-and-jquery/jquery-events/mouse-events/click/",
+	"title": ".click() Event",
+	"tags": [],
+	"description": "",
+	"content": " .click() Event  Attaches an event handler function to an element that is triggered when users click on the element with their mouse  Example $(() =\u0026gt; { // listen for .click() on #toggleBtn  $(\u0026#39;#toggleBtn\u0026#39;).click(() =\u0026gt; { $(\u0026#39;.box\u0026#39;).slideToggle() }) })  JS Bin on jsbin.com\n"
+},
+{
+	"uri": "/06-dom-and-jquery/jquery-manipulation/css-style-manipulation/css/",
+	"title": ".css()",
+	"tags": [],
+	"description": "",
+	"content": " .css() Method  Method that provides a quick way to apply the styles directly to the HTML elements (i.e. inline styles) that haven\u0026rsquo;t been or can\u0026rsquo;t easily be defined in a stylesheet  Example of Getting (Reading) a css property from an element  To Get (Read) css properties of an element use css(cssPropertyName) with nothing inside the parentheses  $(() =\u0026gt; { $(\u0026#34;#readBorderProperties\u0026#34;).click(() =\u0026gt; { // read \u0026#34;border\u0026#34; css properties of box  const borderProperties = $(\u0026#34;.box\u0026#34;).css(\u0026#34;border\u0026#34;) alert(borderProperties) }) })  JS Bin on jsbin.com\nExample of Setting (writing) css properties on an element  To Set (Write) text of an element use css({cssPropertyName: , cssPropertyValue }) with an object representing the new css properties inside the parentheses  $(() =\u0026gt; { $(\u0026#34;#setCssProperties\u0026#34;).click(() =\u0026gt; { // set new css properties on box  $(\u0026#34;.box\u0026#34;).css({ backgroundColor: \u0026#34;green\u0026#34;, border: \u0026#34;3px dashed black\u0026#34;, width: \u0026#34;200px\u0026#34; }) }) })  JS Bin on jsbin.com\n"
+},
+{
 	"uri": "/05-arrays-objects/array-iterators/for-each/",
 	"title": ".forEach()",
 	"tags": [],
@@ -126,6 +182,13 @@
 	"content": " .push()  Appends the element to the end of the array  Example let fruits = [\u0026#34;Apple\u0026#34;, \u0026#34;Orange\u0026#34;] fruits.push(\u0026#34;Pear\u0026#34;) console.log( fruits ) // Apple, Orange, Pear   Note that our fruits array has been changed by push(); this means that the push() method is a mutating method  JS Bin on jsbin.com\n"
 },
 {
+	"uri": "/06-dom-and-jquery/jquery-manipulation/getting-setting-content/text/",
+	"title": ".text()",
+	"tags": [],
+	"description": "",
+	"content": " .text() Method  Method is either used to get (read) the combined text contents of the selected elements, including their descendants, or set (write) the text contents of the selected elements  Example of Getting (Reading) text  To Get (Read) text of an element use text() with nothing inside the parentheses  $(() =\u0026gt; { $(\u0026#39;#readAll\u0026#39;).click(() =\u0026gt; { // read text from all p elements  const allParagraphs = $(\u0026#34;p\u0026#34;).text() alert(`text from all paragraphs: ${allParagraphs}`) }) $(\u0026#39;#readFirst\u0026#39;).click(() =\u0026gt; { // read text from only the 1st p element  const firstParagraph = $(\u0026#34;p:first\u0026#34;).text() alert(`text from the 1st paragraphs: ${firstParagraph}`) }) })  JS Bin on jsbin.com\nExample of Setting (writing) text  To Set (Write) text of an element use text(newText) with the new text inside the parentheses  $(\u0026#39;#convertAllWords\u0026#39;).click(() =\u0026gt; { // set text for all p elements to spanish translation  $(\u0026#34;.one\u0026#34;).text(\u0026#34;uno\u0026#34;) $(\u0026#34;.two\u0026#34;).text(\u0026#34;dos\u0026#34;) $(\u0026#34;.three\u0026#34;).text(\u0026#34;tres\u0026#34;) })  JS Bin on jsbin.com\n"
+},
+{
 	"uri": "/05-arrays-objects/objects/accessing-properties/",
 	"title": "Accessing Properties",
 	"tags": [],
@@ -133,11 +196,25 @@
 	"content": " Accessing Properties  There are two ways we can access an object’s property:\n Dot Notation   Bracket Notation     "
 },
 {
+	"uri": "/06-dom-and-jquery/jquery-overview/add-jquery/via-cdn/",
+	"title": "Add jQuery via CDN",
+	"tags": [],
+	"description": "",
+	"content": " Add jQuery via CDN  This approach references the jQuery file that lives on a CDN (another server)\n The example below utilizes a jQuery-specific CDN found here\n The integrity and crossorigin properties in the example ensure the file is delivered without any third-party manipulation   \u0026lt;html\u0026gt; \u0026lt;head\u0026gt; \u0026lt;title\u0026gt;Add jQuery using a CDN\u0026lt;/title\u0026gt; \u0026lt;/head\u0026gt; \u0026lt;body\u0026gt; \u0026lt;script src=\u0026quot;https://code.jquery.com/jquery-3.4.1.min.js\u0026quot; integrity=\u0026quot;sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=\u0026quot; crossorigin=\u0026quot;anonymous\u0026quot;\u0026gt; \u0026lt;/script\u0026gt; \u0026lt;script src=\u0026quot;js/app.js\u0026quot;\u0026gt;\u0026lt;/script\u0026gt; \u0026lt;/body\u0026gt; \u0026lt;/html\u0026gt;   Using a CDN like jQuery or Google also helps with loading time, and potential caching benefits.  What is a CDN?  A CDN is a collection of servers that can deliver content\n A content delivery network (CDN) places files in different locations so that the person using your webpage can receive the nearest copy of it faster\n Prevents your users\u0026rsquo; browsers from downloading commonly used libraries(like jQuery) every time they visit your site\n Use of CDNs increases page speed for highly trafficked sites\n Click here for a nice overview of CDNs\n  "
+},
+{
 	"uri": "/05-arrays-objects/array-review/",
 	"title": "Array Review",
 	"tags": [],
 	"description": "",
 	"content": " Array Review  Creating Arrays   Accessing Array Values   Updating Array Values   Adding \u0026amp; Removing Items   length() Property   "
+},
+{
+	"uri": "/06-dom-and-jquery/jquery-overview/benefits-of-jquery/",
+	"title": "Benefits of jQuery",
+	"tags": [],
+	"description": "",
+	"content": " Benefits of jQuery?  Uses CSS selectors to help us grab or select elements programmatically (i.e. in our code)\n Accomplishes more with less code vs using native JavaScript\n  CSS selectors means less code Here\u0026rsquo;s how we would programmatically select an element with an id of \u0026ldquo;flavors\u0026rdquo; using native JavaScript\n// selecting an element using native JavaScript document.getElementById(\u0026#39;flavors\u0026#39;).onClick = doSomething()  Here\u0026rsquo;s how we would programmatically select an element with an id of \u0026ldquo;flavors\u0026rdquo; using jQuery\n// using jQuery (same as above but with much more intuitive syntax) $(\u0026#39;#flavors\u0026#39;).click(doSomething)  In this code snippet above you can see jQuery allows us to use CSS selectors to programmatically select elements on our page\nThe ability to use CSS selectors to programmatically select elements is the main reason jQuery is so popular today\n Another Example Here\u0026rsquo;s another example of how jQuery results in much more clear and readable DOM manipulation logic\nIn this code snippet, we are using native JavaScript to programmatically select the \u0026lt;body\u0026gt; element and then change the background color to white\n// selecting an element using native JavaScript  document.getElementsByTagName(\u0026#39;body\u0026#39;)[0].style.backgroundColor = \u0026#39;white\u0026#39;  Compare the snippet above with the following snippet that accomplishes the same result using jQuery\n// using jQuery (same as above but with much more intuitive syntax)  $(\u0026#39;body\u0026#39;).css(\u0026#39;backgroundColor\u0026#39;, \u0026#39;white\u0026#39;)  Note: best practice is to use camel case when referencing css properties that have multiple words i.e. \u0026lsquo;backgroundColor\u0026rsquo; instead of \u0026lsquo;background-color\u0026rsquo;\n "
 },
 {
 	"uri": "/03-control-flow-and-loops/conditionals/",
@@ -168,11 +245,25 @@
 	"content": " Declaring Variables  Variables are created by declaring them\n Use the let keyword to declare a variable\n If you declare a variable without assigning it an initial value, the value of that variable will be undefined\n  // declaring a variable  let firstName  Variables only need to be declared once\n "
 },
 {
+	"uri": "/06-dom-and-jquery/jquery-overview/document-ready/",
+	"title": "Document Ready Function",
+	"tags": [],
+	"description": "",
+	"content": " Document Ready Function  jQuery (and native JavaScript) must wait for a page to be loaded before it can try to dynamically update a page (i.e. Manipulate the page\u0026rsquo;s DOM)  We can also avoid this issue by adding the \u0026lt;script\u0026gt; tag (the tag we used to link our .js files to our .html files) at the bottom of your html pages right before the closing \u0026lt;\\body\u0026gt; tag\n  jQuery provides a \u0026ldquo;document ready\u0026rdquo; function that will run once the DOM is fully loaded (i.e the page elements have been fully rendered)\n There are two ways to express the \u0026ldquo;document ready\u0026rdquo; function for jQuery\n  Option #1: Long form syntax // using jQuery (same as above but with much more intuitive syntax)  $(document).ready(function(){ // place your code here  // jQuery code must be placed inside of a document ready block })  Option #2: Short form alternative syntax // using jQuery (same as above but with much more intuitive syntax)  $(function(){ // this is the same as the $(document).ready(function(){}) function  // just much less code  // place your code here })  Option #2a: Short form alternative syntax with ES6  Even less typing :)  // using jQuery (same as above but with much more intuitive syntax)  $(() =\u0026gt; { // this is the same as the $(document).ready(function(){}) function  // just much less code  // place your code here })  There are no advantages to choosing one syntax over the other. However, option #2 \u0026amp; #2a is less typing :)\n "
+},
+{
 	"uri": "/05-arrays-objects/objects/accessing-properties/dot-notation/",
 	"title": "Dot Notation",
 	"tags": [],
 	"description": "",
 	"content": " Dot Notation  Dot notation allows us to access properties with a .  Example let superHero = { \u0026#39;secret identity\u0026#39;: \u0026#39;Peter Parker\u0026#39;, name: \u0026#39;Spiderman\u0026#39;, powers: [\u0026#39;super strength\u0026#39;, \u0026#39;hyper awareness\u0026#39;, \u0026#39;agility\u0026#39;, \u0026#39;genius intellect\u0026#39;], age: 17 } console.log(superHero.name) console.log(superHero.powers)  JS Bin on jsbin.com\n"
+},
+{
+	"uri": "/06-dom-and-jquery/jquery-manipulation/getting-setting-content/",
+	"title": "Getting &amp; Setting Content",
+	"tags": [],
+	"description": "",
+	"content": " Getting \u0026amp; Setting Content  .text()   .html()   .val()   .attr()   "
 },
 {
 	"uri": "/homework-assignments/hw-assignment-01/",
@@ -203,11 +294,18 @@
 	"content": " Mac OS X Installation Instructions 1) Open your terminal application  Open your terminal (Applications \u0026gt; Utilities \u0026gt; Terminal)\n All of the following commands (below) that start with $ should be copied and pasted in your terminal / command prompt (also referred to as the \u0026ldquo;command line\u0026rdquo;)\n DO NOT include the \u0026lsquo;$\u0026rsquo; when copying and pasting the commands below; \u0026lsquo;$\u0026rsquo; is a universal symbol for the terminal / command line\n Press the enter / return key on your keyboard after pasting the command\n  2) Install brew  Brew is a package manager that we use to install various command line applications to your computer.\n Paste the following command in your Terminal, and hit enter:\n  $ ruby -e \u0026quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)\u0026quot;  3) Install Git Git is used to track the state of your code over time. GitHub has built its platform on Git technology. We will be using both Git and GitHub to distribute code, submit assignments, and offer feedback.\nPaste the following command in your Terminal, and hit enter to install Git:\n $ brew install git  4) Configure Git  Copy and paste the following two commands (separately) into your Terminal. Replace the name and email address values with your own   $ git config --global user.name \u0026quot;Steve Jobs\u0026quot; $ git config --global user.email \u0026quot;steve@apple.com\u0026quot;   Follow these instructions to create a new SSH Key (a special, very secure, key which allows your laptop access to your github account without having to remember your github password)\n Add your new SSH Key to GitHub following these instructions\n Verify your key works by running the following:\n  $ ssh git@github.com   You should see output similar to:   Hi \u0026lt;you\u0026gt;! You've successfully authenticated, but GitHub does not provide shell access. Connection to github.com closed.  5) Install Node  Refer to the package installer on Node’s website  "
 },
 {
+	"uri": "/06-dom-and-jquery/jquery-events/mouse-events/",
+	"title": "Mouse Events",
+	"tags": [],
+	"description": "",
+	"content": " Mouse Events  Mouse events are fired when users click some element, move the mouse pointer etc\n Here\u0026rsquo;re some commonly used jQuery methods to handle the mouse events:\n .click() Event   .hover() Event     "
+},
+{
 	"uri": "/02-javascript-basics/data-types/numbers/",
 	"title": "Numbers",
 	"tags": [],
 	"description": "",
-	"content": " Numbers  Used for tasks involving counting or calculating sums\n Whole numbers (integers) or decimals (floats)\n Numbers can be negative or positive\n Numbers do not have quotes around them\n  There are no commas used when expressing numbers, for example the number 1,750 is expressed as 1750 in Javascript\n JS Bin on jsbin.com\nConverting Strings to Numbers  Sometimes you will find yourself in a position where you need to convert a string to a number\n This happens when you attempt to read numeric values from html (html displays everything as a string)\n Use the parseInt() or parseFloat() methods to accomplish this\n  JS Bin on jsbin.com\n"
+	"content": " Numbers  Used for tasks involving counting or calculating sums\n Whole numbers (integers) or decimals (floats)\n Numbers can be negative or positive\n Numbers do not have quotes around them\n  There are no commas used when expressing numbers, for example the number 1,750 is expressed as 1750 in JavaScript\n JS Bin on jsbin.com\nConverting Strings to Numbers  Sometimes you will find yourself in a position where you need to convert a string to a number\n This happens when you attempt to read numeric values from html (html displays everything as a string)\n Use the parseInt() or parseFloat() methods to accomplish this\n  JS Bin on jsbin.com\n"
 },
 {
 	"uri": "/00-course-intro-and-tools/objectives/",
@@ -231,11 +329,25 @@
 	"content": " if Statement  Used when you want to have some sort of single branching logic  if (condition) { code to run if condition is true } // run some other code  Example let isRewardsMember = true let totalPrice = 100 if (isRewardsMember) { totalPrice = totalPrice * 0.80 } console.log(totalPrice)  JS Bin on jsbin.com\n"
 },
 {
+	"uri": "/06-dom-and-jquery/jquery-overview/",
+	"title": "jQuery Overview",
+	"tags": [],
+	"description": "",
+	"content": " jQuery Overview During this section we\u0026rsquo;ll cover:\n What is jQuery?   Benefits of jQuery   Document Ready Function   Adding jQuery to your Projects   jQuery Syntax   jQuery Selectors   jQuery Objects   "
+},
+{
 	"uri": "/03-control-flow-and-loops/loops-and-iteration/while-loops/",
 	"title": "while Loop",
 	"tags": [],
 	"description": "",
 	"content": " while Loop  While loops run its statements as long as a specified condition evaluates to true  while (condition) { statement } // run some other code   If the condition becomes false, statement within the loop stops executing and control passes to the statement following the loop  Example let n = 0 while (n \u0026lt; 5) { console.log(n) n++ }  JS Bin on jsbin.com\nExercise Write a program that uses a while loop to print (using console.log()) a countdown from 10 to 1\nJS Bin on jsbin.com\n"
+},
+{
+	"uri": "/06-dom-and-jquery/jquery-overview/add-jquery/",
+	"title": "Adding jQuery to your Projects",
+	"tags": [],
+	"description": "",
+	"content": " There are two ways to add jQuery to your projects  Download the jQuery library file and store it within your project\n Use a CDN (content delivery network) and reference the jQuery library file remotely\n   Add jQuery via Download   Add jQuery via CDN   "
 },
 {
 	"uri": "/02-javascript-basics/data-types/booleans/",
@@ -287,6 +399,20 @@
 	"content": " What are Variables?\n Declaring Variables\n Updating Variables\n Naming Rules for Variables\n let vs var\n const\n  "
 },
 {
+	"uri": "/06-dom-and-jquery/jquery-manipulation/css-style-manipulation/add-class/",
+	"title": ".addClass()",
+	"tags": [],
+	"description": "",
+	"content": " .addClass() Method  Method adds one or more classes to the selected elements  Example $(() =\u0026gt; { $(\u0026#34;#addBorderClass\u0026#34;).click(() =\u0026gt; { // add .strongBorder to box  $(\u0026#34;.box\u0026#34;).addClass(\u0026#34;strongBorder\u0026#34;) }) })  JS Bin on jsbin.com\n"
+},
+{
+	"uri": "/06-dom-and-jquery/jquery-manipulation/getting-setting-content/html/",
+	"title": ".html()",
+	"tags": [],
+	"description": "",
+	"content": " .html() Method  Method is used to get or set the HTML contents of the elements  Example of Getting (Reading) Html  To Get (Read) text of an element use html() with nothing inside the parentheses\n When using html() to get html contents, the html contents of the only the first matched element will be returned; see the docs for more info\n  $(() =\u0026gt; { $(\u0026#39;#readHtmlOfParagraph\u0026#39;).click(() =\u0026gt; { // get html of the first matched p element  const htmlOfParagraph = $(\u0026#34;p\u0026#34;).html() alert(htmlOfParagraph) }) $(\u0026#39;#readHtmlOfContainer\u0026#39;).click(() =\u0026gt; { // get html of container  const htmlOfContainer = $(\u0026#34;.container\u0026#34;).html() alert(htmlOfContainer) }) })  JS Bin on jsbin.com\nExample of Setting (writing) Html  To Set (Write) text of an element use html(newHtml) with the new Html inside the parentheses  $(() =\u0026gt; { $(\u0026#39;#addNewNumber\u0026#39;).click(() =\u0026gt; { // create a new html element  const htmlOfNewNumber = $(\u0026#34;\u0026lt;p class=\u0026#39;four\u0026#39;\u0026gt; \u0026lt;span\u0026gt;Four\u0026lt;/span\u0026gt;\u0026lt;/p\u0026gt;\u0026#34;) // add new html element to .numbers div  $(\u0026#39;.numbers\u0026#39;).html(htmlOfNewNumber) }) })  JS Bin on jsbin.com\n Notice how the previous paragraphs (\u0026lt;p\u0026gt;one\u0026lt;/p\u0026gt;, \u0026lt;p\u0026gt;two\u0026lt;/p\u0026gt; and \u0026lt;p\u0026gt;three\u0026lt;/p\u0026gt;) were replaced with \u0026lt;p\u0026gt;four\u0026lt;/p\u0026gt;, using html(newHtml) will replace the children of the targeted element (in our case the targeted element was .container)\n Later in this lesson, we\u0026rsquo;ll see how we can add a new element to a list without replacing the exiting elements\n  "
+},
+{
 	"uri": "/05-arrays-objects/array-iterators/map/",
 	"title": ".map()",
 	"tags": [],
@@ -299,6 +425,20 @@
 	"tags": [],
 	"description": "",
 	"content": " .pop()  Extracts the last element of the array and returns it\n Like pop(), push() is also a mutating method because it changes the value of the original array\n  Example let fruits = [\u0026#34;Apple\u0026#34;, \u0026#34;Orange\u0026#34;, \u0026#34;Grapes\u0026#34;] fruits.pop() console.log(fruits) // Apple, Orange  JS Bin on jsbin.com\n"
+},
+{
+	"uri": "/06-dom-and-jquery/jquery-manipulation/inserting-removing-content/prepend/",
+	"title": ".prepend()",
+	"tags": [],
+	"description": "",
+	"content": " .prepend() Method  Method used to insert content to the beginning of the selected elements (as the first child)  Example $(() =\u0026gt; { $(\u0026#39;#prependParagraph\u0026#39;).click(() =\u0026gt; { // prepend a new paragraph to list of paragraphs  const newParagraph = \u0026#34;\u0026lt;p class=\u0026#39;one\u0026#39;\u0026gt;One\u0026lt;/p\u0026gt;\u0026#34; $(\u0026#39;.numbers\u0026#39;).prepend(newParagraph) }) })  JS Bin on jsbin.com\n"
+},
+{
+	"uri": "/06-dom-and-jquery/jquery-events/form-events/submit/",
+	"title": ".submit() Event",
+	"tags": [],
+	"description": "",
+	"content": " .submit() Event  Attaches an event handler function to \u0026lt;form\u0026gt; elements that is executed when the user is attempts to submit a form  Example $(() =\u0026gt; { // listen for a .submit() event on this form  $(\u0026#39;form\u0026#39;).submit((event) =\u0026gt; { // prevent default behavior of forms  event.preventDefault() // read data from text field  const name = $(\u0026#39;input\u0026#39;).val() if (name === \u0026#39;\u0026#39;) { alert(\u0026#39;Please enter a name\u0026#39;) } else { alert(`Hello ${name}!`) } }) })  JS Bin on jsbin.com\n"
 },
 {
 	"uri": "/05-arrays-objects/array-review/accessing-array-values/",
@@ -319,7 +459,7 @@
 	"title": "Arrays",
 	"tags": [],
 	"description": "",
-	"content": " Arrays  Used to when you are working with a list of values that are related to each other\n Use square brackets to create an array (this is also how you quickly recognize arrays)\n Values in an array are separated by commas\n  Creating an Array  We can store variables just like any other data type\n You can create that doesn\u0026rsquo;t initially contain any values, this is called an empty array\n An array can also be created with initial values\n Square brackets are a means of identifying if a variable is an array\n  // declare a variable as an empty array let numbers = [] // or you can declare an array with initial values let streets = [\u0026#39;Broadway\u0026#39;, \u0026#39;Houston\u0026#39;, \u0026#39;Grand\u0026#39;]  Values in an Array  Values in an array are accessed as if they are in a numbered list\n Arrays are zero based meaning the 1st “value” in an array is at position (index) 0, the 2nd element is at position 1, and so on\n You access the value of an element in the array by passing the index of the item in square brackets\n  let streets = [\u0026#39;Broadway\u0026#39;, \u0026#39;Houston\u0026#39;, \u0026#39;Grand\u0026#39;] // access the 2nd street listed in the array which is at index 1 let streetTwo = streets[1]  Accessing Values in an Array  You can access a value of an array by referencing its index (i.e. its order within the array)  // declare a variable called chipmunks and use it to store // an array of names let chipmunks = [\u0026#34;Alvin\u0026#34;, \u0026#34;Simon\u0026#34;, \u0026#34;Theodore\u0026#34;]; // reference the first value in the array // here we pass in a zero, since that represents the first // element (value) in an array  let bandMember = chipmunks[0] //\u0026gt; the value stored in bandMember is \u0026#34;Alvin\u0026#34;  Changing Values in an Array  You can change a value in an array by referencing the value and then changing the value using an = (equal sign)  // declare a variable called newEditionMembers and use it to store // an array of names  let newEditionMembers = [\u0026#34;Ricky Bell\u0026#34;, \u0026#34;Michael Bivins\u0026#34;, \u0026#34;Bobby Brown\u0026#34;, \u0026#34;Ronnie DeVoe\u0026#34;, \u0026#34;Ralph Tresvant\u0026#34;] // We are going replace Bobby Brown with Johnny Gill // by referencing the 3rd element of the array by using index 2 // and then use assignment (just an equal sign) to change // the value to Johnny Gill  newEditionMembers[2] = \u0026#34;Johnny Gill\u0026#34;;  Array Examples JS Bin on jsbin.com\nArrays are a flexible and powerful feature of Javascript (and other programming languages as well). Click here for more information about Arrays\n "
+	"content": " Arrays  Used to when you are working with a list of values that are related to each other\n Use square brackets to create an array (this is also how you quickly recognize arrays)\n Values in an array are separated by commas\n  Creating an Array  We can store variables just like any other data type\n You can create that doesn\u0026rsquo;t initially contain any values, this is called an empty array\n An array can also be created with initial values\n Square brackets are a means of identifying if a variable is an array\n  // declare a variable as an empty array let numbers = [] // or you can declare an array with initial values let streets = [\u0026#39;Broadway\u0026#39;, \u0026#39;Houston\u0026#39;, \u0026#39;Grand\u0026#39;]  Values in an Array  Values in an array are accessed as if they are in a numbered list\n Arrays are zero based meaning the 1st “value” in an array is at position (index) 0, the 2nd element is at position 1, and so on\n You access the value of an element in the array by passing the index of the item in square brackets\n  let streets = [\u0026#39;Broadway\u0026#39;, \u0026#39;Houston\u0026#39;, \u0026#39;Grand\u0026#39;] // access the 2nd street listed in the array which is at index 1 let streetTwo = streets[1]  Accessing Values in an Array  You can access a value of an array by referencing its index (i.e. its order within the array)  // declare a variable called chipmunks and use it to store // an array of names let chipmunks = [\u0026#34;Alvin\u0026#34;, \u0026#34;Simon\u0026#34;, \u0026#34;Theodore\u0026#34;]; // reference the first value in the array // here we pass in a zero, since that represents the first // element (value) in an array  let bandMember = chipmunks[0] //\u0026gt; the value stored in bandMember is \u0026#34;Alvin\u0026#34;  Changing Values in an Array  You can change a value in an array by referencing the value and then changing the value using an = (equal sign)  // declare a variable called newEditionMembers and use it to store // an array of names  let newEditionMembers = [\u0026#34;Ricky Bell\u0026#34;, \u0026#34;Michael Bivins\u0026#34;, \u0026#34;Bobby Brown\u0026#34;, \u0026#34;Ronnie DeVoe\u0026#34;, \u0026#34;Ralph Tresvant\u0026#34;] // We are going replace Bobby Brown with Johnny Gill // by referencing the 3rd element of the array by using index 2 // and then use assignment (just an equal sign) to change // the value to Johnny Gill  newEditionMembers[2] = \u0026#34;Johnny Gill\u0026#34;;  Array Examples JS Bin on jsbin.com\nArrays are a flexible and powerful feature of JavaScript (and other programming languages as well). Click here for more information about Arrays\n "
 },
 {
 	"uri": "/05-arrays-objects/objects/assigning-properties/",
@@ -341,6 +481,13 @@
 	"tags": [],
 	"description": "",
 	"content": " Strings\n Numbers\n Booleans\n Arrays\n Objects\n  "
+},
+{
+	"uri": "/06-dom-and-jquery/jquery-events/form-events/",
+	"title": "Form Events",
+	"tags": [],
+	"description": "",
+	"content": " Form Events  Form events are fired when a form control receive or loses focus or when the user modify a form control value such as by typing text in a text input, select any option in a select box etc\n Here\u0026rsquo;re some commonly used jQuery methods to handle the form events:\n .change() Event   .submit() Event     "
 },
 {
 	"uri": "/04-functions-and-scope/",
@@ -371,6 +518,13 @@
 	"content": " Hoisting  Hoisting is a feature in JavaScript which allows access to function declarations before they’re defined\n This means that we can place a function call before our function declaration and everything will still work as expected\n  Example // Calling greetWorld() BEFORE it\u0026#39;s function declararion greetWorld() // declaration of greetWorld() function greetWorld() { console.log(\u0026#39;Hello, World!\u0026#39;) }  JS Bin on jsbin.com\n Notice how hoisting allowed greetWorld() to be called before the greetWorld() function was defined\n This is not considered a best practice, but you should be aware that the feature exists\n  "
 },
 {
+	"uri": "/06-dom-and-jquery/jquery-manipulation/inserting-removing-content/",
+	"title": "Inserting &amp; Removing Content",
+	"tags": [],
+	"description": "",
+	"content": " Inserting \u0026amp; Removing Content  .append()   .prepend()   .before()   .after()   "
+},
+{
 	"uri": "/03-control-flow-and-loops/loops-and-iteration/",
 	"title": "Loops &amp; Iteration",
 	"tags": [],
@@ -382,14 +536,14 @@
 	"title": "Naming Rules for Variables",
 	"tags": [],
 	"description": "",
-	"content": " Naming Rules for Variables    Do Don\u0026rsquo;t     Use variable names that start with a letter, $, or _ Use variable names that start with a number   Use variable names that include letters, numbers, $ or _ Create variable names that include a \u0026ldquo;-\u0026rdquo;, \u0026ldquo;.\u0026rdquo; or space   Use \u0026ldquo;lower camel case\u0026rdquo; when creating variable names made up of more than one word, for example: firstName Create variable names that use reserved Javascript keywords such as let, var, function or switch    Variables names should describe the kind of information the variable stores\n Here\u0026rsquo;s a list of Javascript\u0026rsquo;s reserved keywords\n "
+	"content": " Naming Rules for Variables    Do Don\u0026rsquo;t     Use variable names that start with a letter, $, or _ Use variable names that start with a number   Use variable names that include letters, numbers, $ or _ Create variable names that include a \u0026ldquo;-\u0026rdquo;, \u0026ldquo;.\u0026rdquo; or space   Use \u0026ldquo;lower camel case\u0026rdquo; when creating variable names made up of more than one word, for example: firstName Create variable names that use reserved JavaScript keywords such as let, var, function or switch    Variables names should describe the kind of information the variable stores\n Here\u0026rsquo;s a list of JavaScript\u0026rsquo;s reserved keywords\n "
 },
 {
 	"uri": "/02-javascript-basics/data-types/objects/",
 	"title": "Objects",
 	"tags": [],
 	"description": "",
-	"content": " Objects  Objects are used to represent real world objects in programming\n Within an object, variables are known as properties and functions are known as methods\n Curly braces are a means of identifying if a variable is an object\n  // create an object that represents a dog  let myDog = { name: \u0026#34;Fido\u0026#34;, age: 4, speak: function() { console.log(\u0026#39;Woof woof\u0026#39;) } }   In the example above, we created an object and stored it in a variable called myDog\n This object has two (2) properties (name and age) and 1 method (speak)\n  Accessing Properties and Methods of Objects  Properties and values can be assigned and read using Dot notation  let myDog = { name: \u0026#34;Fido\u0026#34;, age: 4, speak: function() { console.log(\u0026#39;Woof woof\u0026#39;) } } // store myDog\u0026#39;s name in a variable called dogName let dogName = myDog.name // call the speak method of myDog myDog.speak()  JS Bin on jsbin.com Updating Object properties using dot notation  Object properties can be updated, added or deleted  JS Bin on jsbin.com\nThink of methods as actions that our objects can take. Objects are another flexible and powerful feature of Javascript. Click here for more information about Objects\n "
+	"content": " Objects  Objects are used to represent real world objects in programming\n Within an object, variables are known as properties and functions are known as methods\n Curly braces are a means of identifying if a variable is an object\n  // create an object that represents a dog  let myDog = { name: \u0026#34;Fido\u0026#34;, age: 4, speak: function() { console.log(\u0026#39;Woof woof\u0026#39;) } }   In the example above, we created an object and stored it in a variable called myDog\n This object has two (2) properties (name and age) and 1 method (speak)\n  Accessing Properties and Methods of Objects  Properties and values can be assigned and read using Dot notation  let myDog = { name: \u0026#34;Fido\u0026#34;, age: 4, speak: function() { console.log(\u0026#39;Woof woof\u0026#39;) } } // store myDog\u0026#39;s name in a variable called dogName let dogName = myDog.name // call the speak method of myDog myDog.speak()  JS Bin on jsbin.com Updating Object properties using dot notation  Object properties can be updated, added or deleted  JS Bin on jsbin.com\nThink of methods as actions that our objects can take. Objects are another flexible and powerful feature of JavaScript. Click here for more information about Objects\n "
 },
 {
 	"uri": "/class-resources/opening-atom-from-command-line/",
@@ -427,6 +581,13 @@
 	"content": " if..else Statement  Used when evaluating between just two choices\n These are great for “either or” situations\n You do not specify a condition for the “else” clause\n  // if..else statement  if (condition) { code to run if condition is true } else { code to run if the above condition is NOT true } // run some other code  Example let yearOfBirth = 2001 if (yearOfBirth \u0026lt;= 2002) { console.log(\u0026#39;you will be old enough to vote in 2020\u0026#39;) } else { console.log(\u0026#39;Sorry, you will not be old enough to vote next year\u0026#39;) }  JS Bin on jsbin.com\n"
 },
 {
+	"uri": "/06-dom-and-jquery/jquery-overview/jquery-syntax/",
+	"title": "jQuery Syntax",
+	"tags": [],
+	"description": "",
+	"content": " $() function  jQuery uses a built-in function called jQuery() to allow developers to programmatically select elements on a html page\n $() is shorthand for jQuery()\n This shorthand syntax is used almost exclusively (because results in less typing) and that is what we will be using throughout the course   // programmatically \u0026#34;select\u0026#34; all p tags on the page using jQuery() syntax  jQuery(\u0026#39;p\u0026#39;)  is the same as:\n// programmatically \u0026#34;select\u0026#34; all p tags on the page using the $() shorthand syntax; most widely used approach  $(\u0026#39;p\u0026#39;)  Example\nWe will be using the shorthand syntax throughout this course:\n// Use jQuery to \u0026#34;select\u0026#34; an element with an id of main and listen for a click event  $(\u0026#34;#main\u0026#34;).click(doSomething)  "
+},
+{
 	"uri": "/01-command-line-js-and-git/github/",
 	"title": "Github",
 	"tags": [],
@@ -462,11 +623,18 @@
 	"content": "  Many times you will write a function and expect a value to be returned - this is called a return value\n To have your function return a value you must use the return keyword in the last line of the body of your function\n We use the return keyword when we want our function to \u0026ldquo;give us back\u0026rdquo; a value\n You can store the returned value in a variable and use it later in your program\n  Example // declare a function called bark // that *returns* a string respreseting \u0026#39;woof woof\u0026#39; function bark() { return \u0026#39;woof woof!\u0026#39; } // call the bark function and store result in a variable let sound = bark() // print out result to the console console.log(`a dog makes the following sound ${sound}`)  JS Bin on jsbin.com\n If you don\u0026rsquo;t use the return keyword, then no value will be returned  // declare a function called meow // that generates a string representing \u0026#39;meow\u0026#39; but // does not use the return keyword  function meow() { \u0026#39;meow\u0026#39; } // call the meow function and store result in a variable let sound = meow() // print out result to the console console.log(`a cat makes the following sound ${sound}`)  JS Bin on jsbin.com\nExercise  Create a function called sayMoo that returns the string mooooooo!. Next, call the function and store the result into a variable named cowSound  JS Bin on jsbin.com\n"
 },
 {
+	"uri": "/06-dom-and-jquery/jquery-overview/jquery-selectors/",
+	"title": "jQuery Selectors",
+	"tags": [],
+	"description": "",
+	"content": " Selecting Elements  A most common usage pattern for jQuery is to:\n Programmatically select (or grab) an element, then\n Add an event listener to it or manipulate (change) it in some way\n  jQuery allows us to use css selectors to select elements:\n   // We can use css selectors to programmatically select elements $('p') // Type (Tag) selector $('.feature') // Class selector $('#checkout') // ID selector $('li strong') // Descendant selector $('em, i') // Multiple selector $('a[target=\u0026quot;_blank\u0026quot;]') // Attribute selector $('p:nth-child(2)') // Pseudo-class selector   ID, Class, Type and Descendant selectors are the selectors we\u0026rsquo;ll be using the most during this course  A complete list of CSS Selectors can be found here\n  Dynamically changing your page using JavaScript is commonly referred to as manipulating the DOM  Example #1\nJS Bin on jsbin.com\nIn the example above jQuery is used to listen for a .click() event on the #button element and then execute the callback function when that element is clicked\nInside the callback function, $(\u0026quot;p\u0026quot;) selects the p element and uses the .toggleClass() method to dynamically toggle the class of .red-background\nExample #2\nJS Bin on jsbin.com\nIn the example above jQuery is used to listen for a .click() event on the #mark-complete element and then call the callback function when the element is clicked\nInside the callback function, $(\u0026quot;p.last-of-type\u0026quot;) selects the last p element and uses the .addClass() method to dynamically add a class to the element\n"
+},
+{
 	"uri": "/02-javascript-basics/variables/let-vs-var/",
 	"title": "let vs var",
 	"tags": [],
 	"description": "",
-	"content": " let vs var  In recent past var was the only way to declare variables\n While var worked it a lot of confusing issues that came along with it\n let was introduced in the latest release of Javascript, ES6 to address these issues\n While var is still in use for legacy codebases, it is a recommended best practice to use let instead of var going forward\n  // declaring a variable using var var name = \u0026#34;Jen\u0026#34; // declaring a variable using let (best practice) let name = \u0026#34;Jen\u0026#34;  Click here for more information on the differences between let and var\n "
+	"content": " let vs var  In recent past var was the only way to declare variables\n While var worked it a lot of confusing issues that came along with it\n let was introduced in the latest release of JavaScript, ES6 to address these issues\n While var is still in use for legacy codebases, it is a recommended best practice to use let instead of var going forward\n  // declaring a variable using var var name = \u0026#34;Jen\u0026#34; // declaring a variable using let (best practice) let name = \u0026#34;Jen\u0026#34;  Click here for more information on the differences between let and var\n "
 },
 {
 	"uri": "/01-command-line-js-and-git/git-basics/",
@@ -476,6 +644,20 @@
 	"content": " Git Basics  Before we can understand how git saves files, we need to cover some concepts about how git works  Three States of a Git file  Git has three main states that your files can reside in: committed, modified, and staged\n committed: files that have been saved / recorded to the repository\u0026rsquo;s history\n staged: files that have been modified\n modified: files that has been modified but have not yet been staged and committed to project\u0026rsquo;s history\n   Git Projects have three main sections  Git projects are broken up into three main sections:   Working Directory - where all the recent “unstaged” changes (since your last commit) reside\n modified files reside in the Working Directory  Staging Area where all your staged changes live ; stores information about what will go into your next commit (i.e. changes to be committed)\n staged files reside in the staging area  Git directory (repository) where all the changes throughout history of a git project are permanently stored; changes are recorded to the Git directory through the use of commits\n committed files reside in the git directory / repository   Typical Git Workflow  The basic Git workflow goes something like this:\n You modify files in your working directory\n You stage the files, adding snapshots of them to your staging area\n You do a commit, which takes the files as they are in the staging area and stores that snapshot permanently to your Git directory\n   "
 },
 {
+	"uri": "/06-dom-and-jquery/jquery-overview/jquery-objects/",
+	"title": "jQuery Objects",
+	"tags": [],
+	"description": "",
+	"content": " jQuery Objects  Whenever we use $() or jQuery() to target an element, a jQuery object is created\n For example $('p') creates a jQuery object that targets all \u0026lt;p\u0026gt; elements on a page  jQuery objects can be stored in variables in the same way we are already familiar with\n It is a best practice to prepend a $ to the name of any variable that holds a jQuery Object:   // store jQuery object into a variable named \u0026#34;$mainMenu\u0026#34;  $mainMenu = $(\u0026#39;#main-menu\u0026#39;) // call a jQuery methods `.hide()` on jQuery object to hide the targeted element  $mainMenu.hide()  "
+},
+{
+	"uri": "/06-dom-and-jquery/jquery-manipulation/inserting-removing-content/before/",
+	"title": ".before()",
+	"tags": [],
+	"description": "",
+	"content": " .before() Method  Method is used to insert content before the selected elements  Example $(() =\u0026gt; { $(\u0026#39;#addHeader\u0026#39;).click(() =\u0026gt; { // Add header \u0026#34;before\u0026#34; .numbers div  const header = \u0026#34;\u0026lt;h2\u0026gt;Numbers\u0026lt;/h2\u0026gt;\u0026#34; $(\u0026#39;.numbers\u0026#39;).before(header) }) })  JS Bin on jsbin.com\n"
+},
+{
 	"uri": "/05-arrays-objects/array-iterators/find/",
 	"title": ".find()",
 	"tags": [],
@@ -483,11 +665,39 @@
 	"content": " .find()  Returns the value of the first element in the array that satisfies the provided testing function\n undefined is returned if no element satisfies testing function\n The callback function for .find() accepts the following parameters:\n element: (required) current element being processed in the array.\n index: (optional) index of the current element being processed in the array\n array: (optional) the array map was called upon\n  .find() only returns a single value and does not return an array\n  Syntax Using traditional (ES5) function syntax\nlet result = arr.find(function(item, index, array) { // if true is returned, item is returned and iteration is stopped  // for falsy scenario returns undefined })  Using arrow syntax (ES6)\nlet result = arr.find((item, index, array) =\u0026gt; { // if true is returned, item is returned and iteration is stopped  // for falsy scenario returns undefined })  Example let numbers = [5, 3, 13, 4, 11 ] let greaterThan5 = numbers.find( number =\u0026gt; number \u0026gt; 5 ) console.log(greaterThan5) // 13  JS Bin on jsbin.com\nExercise  Use .find() to return the first word that has more than 6 characters in the words array. Save the returned values to a variable declared with const called longWord  JS Bin on jsbin.com\n"
 },
 {
+	"uri": "/06-dom-and-jquery/jquery-events/mouse-events/hover/",
+	"title": ".hover() Event",
+	"tags": [],
+	"description": "",
+	"content": " .hover() Event  Attaches an event handler function to an element that is triggered when users hover over the element with their mouse\n with .hover() you can specify two handlers functions to the matched elements, where the first handler is executed when the mouse pointer enters initially hovers over the element and the 2nd handler is executed when the most is no longer hovered over the targeted elements\n  Example $(() =\u0026gt; { // listen for .hover() event on .box  $(\u0026#39;.box\u0026#39;).hover( (event) =\u0026gt; { // 1st handler function  // add .red class on hover  $(event.currentTarget).addClass(\u0026#39;red\u0026#39;) }, (event) =\u0026gt; { // 2nd handler function  // remove .red class when hover is exited  $(event.currentTarget).removeClass(\u0026#39;red\u0026#39;) }) })  JS Bin on jsbin.com\n"
+},
+{
+	"uri": "/06-dom-and-jquery/jquery-manipulation/css-style-manipulation/remove-class/",
+	"title": ".removeClass()",
+	"tags": [],
+	"description": "",
+	"content": " .removeClass() Method  Method removes one or more classes from selected elements  Example $(() =\u0026gt; { $(\u0026#34;#removeBorderClass\u0026#34;).click(() =\u0026gt; { // remove .strongBorder to box  $(\u0026#34;.box\u0026#34;).removeClass(\u0026#34;strongBorder\u0026#34;) }) })  JS Bin on jsbin.com\n"
+},
+{
 	"uri": "/05-arrays-objects/array-review/adding-removing-items/shift/",
 	"title": ".shift()",
 	"tags": [],
 	"description": "",
 	"content": " .shift()  Removes the first element from an array and returns that removed element\n This method is a mutating method because it changes the original array\n  Example let fruits = [\u0026#34;Apple\u0026#34;, \u0026#34;Orange\u0026#34;, \u0026#34;Grapes\u0026#34;] fruits.shift() console.log(fruits) // Orange, Grapes  JS Bin on jsbin.com\n"
+},
+{
+	"uri": "/06-dom-and-jquery/jquery-manipulation/getting-setting-content/val/",
+	"title": ".val()",
+	"tags": [],
+	"description": "",
+	"content": " .val() Method  Method is mainly used to get or set the current value of the HTML form elements such as \u0026lt;input\u0026gt;, \u0026lt;select\u0026gt; and \u0026lt;textarea\u0026gt;  Example of Getting (Reading) values from form elements  To Get (Read) text of an element use val() with nothing inside the parentheses  $(() =\u0026gt; { $(\u0026#34;#getName\u0026#34;).click(() =\u0026gt; { // read value of text field  const name = $(\u0026#34;#name\u0026#34;).val() alert(name) }) $(\u0026#34;#getComment\u0026#34;).click(() =\u0026gt; { // read value of the text area  const comment = $(\u0026#34;#comment\u0026#34;).val() alert(comment) }) $(\u0026#34;#getCity\u0026#34;).click(() =\u0026gt; { // read value from select dropdown  const city = $(\u0026#34;#city\u0026#34;).val() alert(city) }) })  JS Bin on jsbin.com\nExample of Setting (writing) values to form elements  To Set (Write) text of an element use val(newVal) with the new value inside the parentheses  $(() =\u0026gt; { $(\u0026#34;#setName\u0026#34;).click(() =\u0026gt; { // set value of text field  $(\u0026#34;#name\u0026#34;).val(\u0026#34;Jill Scott\u0026#34;) }) $(\u0026#34;#setComment\u0026#34;).click(() =\u0026gt; { // set value of the text area  $(\u0026#34;#comment\u0026#34;).val(\u0026#34;She\u0026#39;s awesome!\u0026#34;) }) $(\u0026#34;#setCity\u0026#34;).click(() =\u0026gt; { // set value of select dropdown  $(\u0026#34;#city\u0026#34;).val(\u0026#34;Philadelphia\u0026#34;) }) })  JS Bin on jsbin.com\n"
+},
+{
+	"uri": "/06-dom-and-jquery/jquery-manipulation/css-style-manipulation/",
+	"title": "CSS &amp; Style Manipulation",
+	"tags": [],
+	"description": "",
+	"content": " CSS \u0026amp; Style Manipulation  .css()   .addClass()   .removeClass()   .toggleClass()   "
 },
 {
 	"uri": "/00-course-intro-and-tools/class-logistics-materials/",
@@ -537,6 +747,13 @@
 	"tags": [],
 	"description": "",
 	"content": " Objects  Objects are used to represent real world objects in programming\n Within an object, variables are known as properties and functions are known as methods\n Curly braces are a means of identifying if a variable is an object\n// create an object that represents a dog  let myDog = { name: \u0026#34;Fido\u0026#34;, age: 4, speak: function() { console.log(\u0026#39;Woof woof\u0026#39;) } }  Objects are organized in Key / Value pairs, in the example above: name is a key and \u0026quot;Fido\u0026quot; is the value, the pair together is referred to as the property\n  Details  Creating Objects   Accessing Properties   Assigning Properties   Methods   Nested Objects   "
+},
+{
+	"uri": "/06-dom-and-jquery/jquery-events/other-events/",
+	"title": "Other Events",
+	"tags": [],
+	"description": "",
+	"content": " Other Events There are many other events available, click here to see a complete list of jQuery Events\n"
 },
 {
 	"uri": "/05-arrays-objects/array-review/updating-array-values/",
@@ -637,6 +854,20 @@
 	"content": " Arrow Functions  ES6 introduced/arrow function syntax/, a shorter way to write functions by using the special \u0026ldquo;fat arrow\u0026rdquo; (=\u0026gt;)\n Instead, you first include the parameters inside the () and then add an arrow =\u0026gt; that points to the function body surrounded in { } like this:\nconst getArea = (width, height) =\u0026gt; { let area = width * height return area }   Parameter syntax rules for Arrow functions  Functions that take only a single parameter do not need that parameter to be enclosed in parentheses.\n However, if a function takes zero or multiple parameters, parentheses are required\n Zero parameters  const functionName = () =\u0026gt; {}   One parameter  const functionName = param =\u0026gt; {}   Two parameters  const functionName = (paramOne, paramTwo) =\u0026gt; {}   Function body syntax rules for Arrow functions  A function body composed of a single-line block does not need curly braces or a return keyword\n Without the curly braces, whatever that line evaluates will be automatically returned\n This is referred to as implicit return\n Examples\n Single line block  const functionName = number =\u0026gt; number + number   Multi-line block  const functionName = number =\u0026gt; { const sum = number + number return sum }   Exercise  Convert the following function to an arrow function\n Store the arrow function in a variable named areaOfCircle using const\n  function areaOfCircle(radius){ return Math.PI * (radius**2) }  JS Bin on jsbin.com\n"
 },
 {
+	"uri": "/06-dom-and-jquery/jquery-manipulation/inserting-removing-content/after/",
+	"title": ".after()",
+	"tags": [],
+	"description": "",
+	"content": " .after() Method  Method is used to insert content after the selected elements  Example $(() =\u0026gt; { $(\u0026#39;#addFooter\u0026#39;).click(() =\u0026gt; { // Add footer \u0026#34;after\u0026#34; .numbers div  const footer = \u0026#34;\u0026lt;h2\u0026gt;Footer\u0026lt;/h2\u0026gt;\u0026#34; $(\u0026#39;.numbers\u0026#39;).after(footer) }) })  JS Bin on jsbin.com\n"
+},
+{
+	"uri": "/06-dom-and-jquery/jquery-manipulation/getting-setting-content/attr/",
+	"title": ".attr()",
+	"tags": [],
+	"description": "",
+	"content": " .attr() Method  Method to either get the value of an element\u0026rsquo;s attribute or set one or more attributes for the selected element  Example of Getting (Reading) attributes from elements  To Get (Read) text of an element use attr(attrName) with name of the attribute you want to receive a value for  $(() =\u0026gt; { $(\u0026#34;#getClassName\u0026#34;).click(() =\u0026gt; { // read class name of .box  const className = $(\u0026#34;#box\u0026#34;).attr(\u0026#34;class\u0026#34;) alert(className) }) $(\u0026#34;#getUrl\u0026#34;).click(() =\u0026gt; { // read href of a tag  const url = $(\u0026#34;a\u0026#34;).attr(\u0026#34;href\u0026#34;) alert(url) }) })  JS Bin on jsbin.com\nExample of Setting (writing) attributes to elements  To Set (Write) text of an element use attr(attrName, attrValue) with the new attribute name and value inside the parentheses  $(() =\u0026gt; { $(\u0026#34;#setClassName\u0026#34;).click(() =\u0026gt; { // set class name of #box to .green  const idName = $(\u0026#34;#box\u0026#34;).attr(\u0026#34;class\u0026#34;, \u0026#34;green\u0026#34;) }) })  JS Bin on jsbin.com\n"
+},
+{
 	"uri": "/05-arrays-objects/array-iterators/filter/",
 	"title": ".filter()",
 	"tags": [],
@@ -649,6 +880,13 @@
 	"tags": [],
 	"description": "",
 	"content": " .slice()  Returns a shallow copy of a portion of an array into a new array object selected from begin to end (end not included) where begin and end represent the index of items in that array\n This is method is NOT a mutating method because the original array is not modified\n  Example let fruits = [\u0026#34;Peach\u0026#34;, \u0026#34;Mango\u0026#34;, \u0026#34;Apple\u0026#34;, \u0026#34;Orange\u0026#34;, \u0026#34;Grapes\u0026#34;, \u0026#34;Strawberries\u0026#34;] let myFavoriteFruits = fruits.slice(1, 4) console.log(myFavoriteFruits) // Mango, Apple, Orange  // The original \u0026#39;fruits\u0026#39; array was NOT modified console.log(fruits) // Peach , Mango, Apple, Orange, Grapes, Strawberries  JS Bin on jsbin.com\n"
+},
+{
+	"uri": "/06-dom-and-jquery/jquery-manipulation/css-style-manipulation/toggle-class/",
+	"title": ".toggleClass()",
+	"tags": [],
+	"description": "",
+	"content": " .toggleClass() Method  Method toggles one or more classes to / from selected elements  Example $(() =\u0026gt; { $(\u0026#34;#toggleBorderClass\u0026#34;).click(() =\u0026gt; { // toggle .strongBorder on box  $(\u0026#34;.box\u0026#34;).toggleClass(\u0026#34;strongBorder\u0026#34;) }) })  JS Bin on jsbin.com\n"
 },
 {
 	"uri": "/05-arrays-objects/array-review/adding-removing-items/",
@@ -721,6 +959,13 @@
 	"content": " Single Responsibility Principle (SRP)  SRP is a programming best practice that advocates modular code\n Put another way, your programs should be broken up in such a way where each part is responsible for only one \u0026ldquo;thing\u0026rdquo; or domain\n SRP is often applied to functions\n  Applying SRP to Functions  This concepts calls for your functions to only be \u0026ldquo;responsible\u0026rdquo; for one thing\n Often you\u0026rsquo;ll find that the logic in your functions are doing too much (for example: making calculations AND displaying the result to the screen)\n In these cases you should break out those multiple responsibilities into multiple functions\n This is what we did in the Geometry Calculator code along\n  "
 },
 {
+	"uri": "/06-dom-and-jquery/jquery-events/",
+	"title": "jQuery Events",
+	"tags": [],
+	"description": "",
+	"content": " jQuery Events  The jQuery library provides a collection of methods that serve one of two purposes\n To listen for an event — an event (e.g. clicking a button) is something the user does to trigger an action\n To add a visual effect — a visual effect (e.g. a drop-down menu appearing when a user clicks a button) is something that changes the appearance of the web page\n  Events are often responsible for triggering a visual effect\n  "
+},
+{
 	"uri": "/00-course-intro-and-tools/folder-structure/",
 	"title": "Folder Organization",
 	"tags": [],
@@ -740,6 +985,13 @@
 	"tags": [],
 	"description": "",
 	"content": " Lesson 10 Project: Build a Slackbot "
+},
+{
+	"uri": "/06-dom-and-jquery/jquery-manipulation/",
+	"title": "jQuery Manipulation",
+	"tags": [],
+	"description": "",
+	"content": " jQuery Manipulation During this section we\u0026rsquo;ll cover:\n Getting \u0026amp; Setting Content   Inserting \u0026amp; Removing Content   CSS \u0026amp; Style Manipulation   "
 },
 {
 	"uri": "/11-advanced-apis/",
@@ -806,10 +1058,10 @@
 },
 {
 	"uri": "/00-course-intro-and-tools/what-is-javascript/",
-	"title": "What is Javascript?",
+	"title": "What is JavaScript?",
 	"tags": [],
 	"description": "",
-	"content": " What is JavaScript?  programming language created in 1995 by Netscape (now Mozilla)\n It was created in 10 days\n Not the same as Java\n  What does JavaScript do?  Adds interactivity to your websites\n Makes web based software feel more like desktop software\n Can be used to save data to a database or to create desktop applications\n Improves overall user experience of web-based applications\n  Advantages of JavaScript  Javascript is the only programming language that all web browsers understand\n JavaScript is a programming language that is essential for web development\n JavaScript can be run in the browser (i.e. front-end) and on the server (i.e. backend through the use of Node.js)\n  This makes JavaScript the only programming language that is truly \u0026ldquo;full-stack\u0026rdquo; (i.e. supports both front-end and backend development)\n Documentation  Best resource of JavaScript documentation on the web can be found here: Mozilla Development Network - JavaScript Documentation  "
+	"content": " What is JavaScript?  programming language created in 1995 by Netscape (now Mozilla)\n It was created in 10 days\n Not the same as Java\n  What does JavaScript do?  Adds interactivity to your websites\n Makes web based software feel more like desktop software\n Can be used to save data to a database or to create desktop applications\n Improves overall user experience of web-based applications\n  Advantages of JavaScript  JavaScript is the only programming language that all web browsers understand\n JavaScript is a programming language that is essential for web development\n JavaScript can be run in the browser (i.e. front-end) and on the server (i.e. backend through the use of Node.js)\n  This makes JavaScript the only programming language that is truly \u0026ldquo;full-stack\u0026rdquo; (i.e. supports both front-end and backend development)\n Documentation  Best resource of JavaScript documentation on the web can be found here: Mozilla Development Network - JavaScript Documentation  "
 },
 {
 	"uri": "/15-deploying-your-app/",

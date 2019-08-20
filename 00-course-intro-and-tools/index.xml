@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Course Introduction &amp; Tools on GA Javascript</title>
+    <title>Course Introduction &amp; Tools on GA JavaScript</title>
     <link>/00-course-intro-and-tools/</link>
-    <description>Recent content in Course Introduction &amp; Tools on GA Javascript</description>
+    <description>Recent content in Course Introduction &amp; Tools on GA JavaScript</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
@@ -103,7 +103,7 @@
     </item>
     
     <item>
-      <title>What is Javascript?</title>
+      <title>What is JavaScript?</title>
       <link>/00-course-intro-and-tools/what-is-javascript/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

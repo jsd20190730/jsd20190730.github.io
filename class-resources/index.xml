@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Class Resources on GA Javascript</title>
+    <title>Class Resources on GA JavaScript</title>
     <link>/class-resources/</link>
-    <description>Recent content in Class Resources on GA Javascript</description>
+    <description>Recent content in Class Resources on GA JavaScript</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 22 Jan 2017 18:05:18 -0500</lastBuildDate>
@@ -23,7 +23,7 @@
   We will be referring to the following list of the documentation resources frequently throughout the course:
 HTML MDN&amp;rsquo;s HTML Reference
 CSS MDN&amp;rsquo;s CSS Reference
-Javascript MDN&amp;rsquo;s Javascript Reference
+JavaScript MDN&amp;rsquo;s JavaScript Reference
 jQuery jQuery Documentation</description>
     </item>
     

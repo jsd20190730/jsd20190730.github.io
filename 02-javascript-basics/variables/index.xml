@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Variables on GA Javascript</title>
+    <title>Variables on GA JavaScript</title>
     <link>/02-javascript-basics/variables/</link>
-    <description>Recent content in Variables on GA Javascript</description>
+    <description>Recent content in Variables on GA JavaScript</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
@@ -55,7 +55,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/02-javascript-basics/variables/naming-rules/</guid>
-      <description>Naming Rules for Variables    Do Don&amp;rsquo;t     Use variable names that start with a letter, $, or _ Use variable names that start with a number   Use variable names that include letters, numbers, $ or _ Create variable names that include a &amp;ldquo;-&amp;rdquo;, &amp;ldquo;.&amp;rdquo; or space   Use &amp;ldquo;lower camel case&amp;rdquo; when creating variable names made up of more than one word, for example: firstName Create variable names that use reserved Javascript keywords such as let, var, function or switch    Variables names should describe the kind of information the variable stores</description>
+      <description>Naming Rules for Variables    Do Don&amp;rsquo;t     Use variable names that start with a letter, $, or _ Use variable names that start with a number   Use variable names that include letters, numbers, $ or _ Create variable names that include a &amp;ldquo;-&amp;rdquo;, &amp;ldquo;.&amp;rdquo; or space   Use &amp;ldquo;lower camel case&amp;rdquo; when creating variable names made up of more than one word, for example: firstName Create variable names that use reserved JavaScript keywords such as let, var, function or switch    Variables names should describe the kind of information the variable stores</description>
     </item>
     
     <item>
@@ -66,7 +66,7 @@
       <guid>/02-javascript-basics/variables/let-vs-var/</guid>
       <description>let vs var  In recent past var was the only way to declare variables
  While var worked it a lot of confusing issues that came along with it
- let was introduced in the latest release of Javascript, ES6 to address these issues
+ let was introduced in the latest release of JavaScript, ES6 to address these issues
  While var is still in use for legacy codebases, it is a recommended best practice to use let instead of var going forward</description>
     </item>
     

@@ -19,6 +19,14 @@
   </url>
   
   <url>
+    <loc>/06-dom-and-jquery/jquery-overview/what-is-jquery/</loc>
+  </url>
+  
+  <url>
+    <loc>/06-dom-and-jquery/jquery-overview/add-jquery/via-download/</loc>
+  </url>
+  
+  <url>
     <loc>/01-command-line-js-and-git/</loc>
   </url>
   
@@ -27,7 +35,15 @@
   </url>
   
   <url>
+    <loc>/06-dom-and-jquery/dom-intro/</loc>
+  </url>
+  
+  <url>
     <loc>/class-resources/documentation/</loc>
+  </url>
+  
+  <url>
+    <loc>/06-dom-and-jquery/jquery-events/event-handlers/</loc>
   </url>
   
   <url>
@@ -68,6 +84,22 @@
   </url>
   
   <url>
+    <loc>/06-dom-and-jquery/jquery-manipulation/inserting-removing-content/append/</loc>
+  </url>
+  
+  <url>
+    <loc>/06-dom-and-jquery/jquery-events/form-events/change/</loc>
+  </url>
+  
+  <url>
+    <loc>/06-dom-and-jquery/jquery-events/mouse-events/click/</loc>
+  </url>
+  
+  <url>
+    <loc>/06-dom-and-jquery/jquery-manipulation/css-style-manipulation/css/</loc>
+  </url>
+  
+  <url>
     <loc>/05-arrays-objects/array-iterators/for-each/</loc>
   </url>
   
@@ -76,11 +108,23 @@
   </url>
   
   <url>
+    <loc>/06-dom-and-jquery/jquery-manipulation/getting-setting-content/text/</loc>
+  </url>
+  
+  <url>
     <loc>/05-arrays-objects/objects/accessing-properties/</loc>
   </url>
   
   <url>
+    <loc>/06-dom-and-jquery/jquery-overview/add-jquery/via-cdn/</loc>
+  </url>
+  
+  <url>
     <loc>/05-arrays-objects/array-review/</loc>
+  </url>
+  
+  <url>
+    <loc>/06-dom-and-jquery/jquery-overview/benefits-of-jquery/</loc>
   </url>
   
   <url>
@@ -100,7 +144,15 @@
   </url>
   
   <url>
+    <loc>/06-dom-and-jquery/jquery-overview/document-ready/</loc>
+  </url>
+  
+  <url>
     <loc>/05-arrays-objects/objects/accessing-properties/dot-notation/</loc>
+  </url>
+  
+  <url>
+    <loc>/06-dom-and-jquery/jquery-manipulation/getting-setting-content/</loc>
   </url>
   
   <url>
@@ -120,6 +172,10 @@
   </url>
   
   <url>
+    <loc>/06-dom-and-jquery/jquery-events/mouse-events/</loc>
+  </url>
+  
+  <url>
     <loc>/02-javascript-basics/data-types/numbers/</loc>
   </url>
   
@@ -136,7 +192,15 @@
   </url>
   
   <url>
+    <loc>/06-dom-and-jquery/jquery-overview/</loc>
+  </url>
+  
+  <url>
     <loc>/03-control-flow-and-loops/loops-and-iteration/while-loops/</loc>
+  </url>
+  
+  <url>
+    <loc>/06-dom-and-jquery/jquery-overview/add-jquery/</loc>
   </url>
   
   <url>
@@ -168,11 +232,27 @@
   </url>
   
   <url>
+    <loc>/06-dom-and-jquery/jquery-manipulation/css-style-manipulation/add-class/</loc>
+  </url>
+  
+  <url>
+    <loc>/06-dom-and-jquery/jquery-manipulation/getting-setting-content/html/</loc>
+  </url>
+  
+  <url>
     <loc>/05-arrays-objects/array-iterators/map/</loc>
   </url>
   
   <url>
     <loc>/05-arrays-objects/array-review/adding-removing-items/pop/</loc>
+  </url>
+  
+  <url>
+    <loc>/06-dom-and-jquery/jquery-manipulation/inserting-removing-content/prepend/</loc>
+  </url>
+  
+  <url>
+    <loc>/06-dom-and-jquery/jquery-events/form-events/submit/</loc>
   </url>
   
   <url>
@@ -200,6 +280,10 @@
   </url>
   
   <url>
+    <loc>/06-dom-and-jquery/jquery-events/form-events/</loc>
+  </url>
+  
+  <url>
     <loc>/04-functions-and-scope/</loc>
   </url>
   
@@ -213,6 +297,10 @@
   
   <url>
     <loc>/04-functions-and-scope/hoisting/</loc>
+  </url>
+  
+  <url>
+    <loc>/06-dom-and-jquery/jquery-manipulation/inserting-removing-content/</loc>
   </url>
   
   <url>
@@ -248,6 +336,10 @@
   </url>
   
   <url>
+    <loc>/06-dom-and-jquery/jquery-overview/jquery-syntax/</loc>
+  </url>
+  
+  <url>
     <loc>/01-command-line-js-and-git/github/</loc>
   </url>
   
@@ -268,6 +360,10 @@
   </url>
   
   <url>
+    <loc>/06-dom-and-jquery/jquery-overview/jquery-selectors/</loc>
+  </url>
+  
+  <url>
     <loc>/02-javascript-basics/variables/let-vs-var/</loc>
   </url>
   
@@ -276,11 +372,35 @@
   </url>
   
   <url>
+    <loc>/06-dom-and-jquery/jquery-overview/jquery-objects/</loc>
+  </url>
+  
+  <url>
+    <loc>/06-dom-and-jquery/jquery-manipulation/inserting-removing-content/before/</loc>
+  </url>
+  
+  <url>
     <loc>/05-arrays-objects/array-iterators/find/</loc>
   </url>
   
   <url>
+    <loc>/06-dom-and-jquery/jquery-events/mouse-events/hover/</loc>
+  </url>
+  
+  <url>
+    <loc>/06-dom-and-jquery/jquery-manipulation/css-style-manipulation/remove-class/</loc>
+  </url>
+  
+  <url>
     <loc>/05-arrays-objects/array-review/adding-removing-items/shift/</loc>
+  </url>
+  
+  <url>
+    <loc>/06-dom-and-jquery/jquery-manipulation/getting-setting-content/val/</loc>
+  </url>
+  
+  <url>
+    <loc>/06-dom-and-jquery/jquery-manipulation/css-style-manipulation/</loc>
   </url>
   
   <url>
@@ -309,6 +429,10 @@
   
   <url>
     <loc>/05-arrays-objects/objects/</loc>
+  </url>
+  
+  <url>
+    <loc>/06-dom-and-jquery/jquery-events/other-events/</loc>
   </url>
   
   <url>
@@ -368,11 +492,23 @@
   </url>
   
   <url>
+    <loc>/06-dom-and-jquery/jquery-manipulation/inserting-removing-content/after/</loc>
+  </url>
+  
+  <url>
+    <loc>/06-dom-and-jquery/jquery-manipulation/getting-setting-content/attr/</loc>
+  </url>
+  
+  <url>
     <loc>/05-arrays-objects/array-iterators/filter/</loc>
   </url>
   
   <url>
     <loc>/05-arrays-objects/array-review/adding-removing-items/slice/</loc>
+  </url>
+  
+  <url>
+    <loc>/06-dom-and-jquery/jquery-manipulation/css-style-manipulation/toggle-class/</loc>
   </url>
   
   <url>
@@ -416,6 +552,10 @@
   </url>
   
   <url>
+    <loc>/06-dom-and-jquery/jquery-events/</loc>
+  </url>
+  
+  <url>
     <loc>/00-course-intro-and-tools/folder-structure/</loc>
   </url>
   
@@ -425,6 +565,10 @@
   
   <url>
     <loc>/10-project-build-a-slackbot/</loc>
+  </url>
+  
+  <url>
+    <loc>/06-dom-and-jquery/jquery-manipulation/</loc>
   </url>
   
   <url>

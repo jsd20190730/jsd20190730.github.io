@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Data Types on GA Javascript</title>
+    <title>Data Types on GA JavaScript</title>
     <link>/02-javascript-basics/data-types/</link>
-    <description>Recent content in Data Types on GA Javascript</description>
+    <description>Recent content in Data Types on GA JavaScript</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
@@ -32,7 +32,7 @@
  Whole numbers (integers) or decimals (floats)
  Numbers can be negative or positive
  Numbers do not have quotes around them
-  There are no commas used when expressing numbers, for example the number 1,750 is expressed as 1750 in Javascript
+  There are no commas used when expressing numbers, for example the number 1,750 is expressed as 1750 in JavaScript
  JS Bin on jsbin.com
 Converting Strings to Numbers  Sometimes you will find yourself in a position where you need to convert a string to a number</description>
     </item>

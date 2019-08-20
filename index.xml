@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>JSD on GA Javascript</title>
+    <title>JSD on GA JavaScript</title>
     <link>/</link>
-    <description>Recent content in JSD on GA Javascript</description>
+    <description>Recent content in JSD on GA JavaScript</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 22 Jan 2017 18:05:18 -0500</lastBuildDate>
@@ -56,6 +56,29 @@
     </item>
     
     <item>
+      <title>What is jQuery?</title>
+      <link>/06-dom-and-jquery/jquery-overview/what-is-jquery/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/06-dom-and-jquery/jquery-overview/what-is-jquery/</guid>
+      <description>What is jQuery?  A JavaScript library that makes it easy to dynamically update your pages (i.e. perform DOM manipulation)
+ Offers a simple way to achieve a variety of common JavaScript tasks
+ Consistent across all browsers
+ Does not do anything native / vanilla JavaScript cannot do, just does it with a more intuitive syntax
+  It&amp;rsquo;s important to note that jQuery is NOT another programming language it is a library or tool built on top of JavaScript</description>
+    </item>
+    
+    <item>
+      <title>Add jQuery via Download</title>
+      <link>/06-dom-and-jquery/jquery-overview/add-jquery/via-download/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/06-dom-and-jquery/jquery-overview/add-jquery/via-download/</guid>
+      <description> Add jQuery via Download This approach assumes you downloaded the jQuery file and stored it on your js folder
+&amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;title&amp;gt;Add jQuery by downloading jQuery file(s)&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;script src=&amp;quot;js/jquery-3.4.1.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script src=&amp;quot;js/app.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt;  </description>
+    </item>
+    
+    <item>
       <title>Creating Objects</title>
       <link>/05-arrays-objects/objects/creating-objects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -65,6 +88,19 @@
  A key is like a variable name that points to a location in memory that holds a value
  keys are strings, but when we have a key that does not have any special characters in it, JavaScript allows us to omit the quotation marks:
 let superHero = { &amp;#39;secret identity&amp;#39;: &amp;#39;Peter Parker&amp;#39;, name: &amp;#39;Spiderman&amp;#39;, powers: [&amp;#39;super strength&amp;#39;, &amp;#39;hyper awareness&amp;#39;, &amp;#39;agility&amp;#39;, &amp;#39;genius intellect&amp;#39;], age: 17 }  values can be of any data type</description>
+    </item>
+    
+    <item>
+      <title>Document Object Model</title>
+      <link>/06-dom-and-jquery/dom-intro/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/06-dom-and-jquery/dom-intro/</guid>
+      <description>Document Object Model (DOM)  Browsers view our webpages as documents
+ Programming interface for HTML documents
+ The DOM allows us to use a programming language (JavaScript) to make dynamic changes to our web pages  Using JavaScript to dynamically change our web pages is also referred to as manipulating the DOM
+  Example: Visual representation of the DOM
+In the image above, we have a html document on the left and a visual representation of this page&amp;rsquo;s DOM on the right</description>
     </item>
     
     <item>
@@ -79,8 +115,20 @@ let superHero = { &amp;#39;secret identity&amp;#39;: &amp;#39;Peter Parker&amp;#
   We will be referring to the following list of the documentation resources frequently throughout the course:
 HTML MDN&amp;rsquo;s HTML Reference
 CSS MDN&amp;rsquo;s CSS Reference
-Javascript MDN&amp;rsquo;s Javascript Reference
+JavaScript MDN&amp;rsquo;s JavaScript Reference
 jQuery jQuery Documentation</description>
+    </item>
+    
+    <item>
+      <title>Events Handlers</title>
+      <link>/06-dom-and-jquery/jquery-events/event-handlers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/06-dom-and-jquery/jquery-events/event-handlers/</guid>
+      <description>Event Handlers  Event handlers are blocks of code (usually a user-defined JavaScript function) that will be run when an event fires
+ There are two parts to an event handler: an event listener and a callback function.
+ An event listener is a method that listens for a specified event to occur, like a click event
+ A callback function is a function that executes when something triggers the event listener</description>
     </item>
     
     <item>
@@ -188,6 +236,43 @@ When copying the following code snippets, DO NOT include the $ this is a univers
     </item>
     
     <item>
+      <title>.append()</title>
+      <link>/06-dom-and-jquery/jquery-manipulation/inserting-removing-content/append/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/06-dom-and-jquery/jquery-manipulation/inserting-removing-content/append/</guid>
+      <description>.append() Method  Method used to insert content to the end of selected elements (as the last child)  Example $(() =&amp;gt; { $(&amp;#39;#appendParagraph&amp;#39;).click(() =&amp;gt; { // append a new paragraph to list of paragraphs  const newParagraph = &amp;#34;&amp;lt;p class=&amp;#39;four&amp;#39;&amp;gt;Four&amp;lt;/p&amp;gt;&amp;#34; $(&amp;#39;.numbers&amp;#39;).append(newParagraph) }) })  JS Bin on jsbin.com</description>
+    </item>
+    
+    <item>
+      <title>.change() Event</title>
+      <link>/06-dom-and-jquery/jquery-events/form-events/change/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/06-dom-and-jquery/jquery-events/form-events/change/</guid>
+      <description>.change() Event  Attaches an event handler function to the &amp;lt;input&amp;gt;, &amp;lt;textarea&amp;gt; and &amp;lt;select&amp;gt; elements that is executed when its value changes  Example  The following example will display an alert message when you select any option in dropdown select box  $(&amp;#39;select&amp;#39;).change((event) =&amp;gt; { const selectedOption = $(event.currentTarget).find(&amp;#39;:selected&amp;#39;).val() alert(`You have selected ${selectedOption}`) })  JS Bin on jsbin.com
+We&amp;rsquo;ll discuss currentTarget and the .find() method later in the course</description>
+    </item>
+    
+    <item>
+      <title>.click() Event</title>
+      <link>/06-dom-and-jquery/jquery-events/mouse-events/click/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/06-dom-and-jquery/jquery-events/mouse-events/click/</guid>
+      <description>.click() Event  Attaches an event handler function to an element that is triggered when users click on the element with their mouse  Example $(() =&amp;gt; { // listen for .click() on #toggleBtn  $(&amp;#39;#toggleBtn&amp;#39;).click(() =&amp;gt; { $(&amp;#39;.box&amp;#39;).slideToggle() }) })  JS Bin on jsbin.com</description>
+    </item>
+    
+    <item>
+      <title>.css()</title>
+      <link>/06-dom-and-jquery/jquery-manipulation/css-style-manipulation/css/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/06-dom-and-jquery/jquery-manipulation/css-style-manipulation/css/</guid>
+      <description>.css() Method  Method that provides a quick way to apply the styles directly to the HTML elements (i.e. inline styles) that haven&amp;rsquo;t been or can&amp;rsquo;t easily be defined in a stylesheet  Example of Getting (Reading) a css property from an element  To Get (Read) css properties of an element use css(cssPropertyName) with nothing inside the parentheses  $(() =&amp;gt; { $(&amp;#34;#readBorderProperties&amp;#34;).click(() =&amp;gt; { // read &amp;#34;border&amp;#34; css properties of box  const borderProperties = $(&amp;#34;.</description>
+    </item>
+    
+    <item>
       <title>.forEach()</title>
       <link>/05-arrays-objects/array-iterators/for-each/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -207,6 +292,38 @@ When copying the following code snippets, DO NOT include the $ this is a univers
       
       <guid>/05-arrays-objects/array-review/adding-removing-items/push/</guid>
       <description>.push()  Appends the element to the end of the array  Example let fruits = [&amp;#34;Apple&amp;#34;, &amp;#34;Orange&amp;#34;] fruits.push(&amp;#34;Pear&amp;#34;) console.log( fruits ) // Apple, Orange, Pear   Note that our fruits array has been changed by push(); this means that the push() method is a mutating method  JS Bin on jsbin.com</description>
+    </item>
+    
+    <item>
+      <title>.text()</title>
+      <link>/06-dom-and-jquery/jquery-manipulation/getting-setting-content/text/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/06-dom-and-jquery/jquery-manipulation/getting-setting-content/text/</guid>
+      <description>.text() Method  Method is either used to get (read) the combined text contents of the selected elements, including their descendants, or set (write) the text contents of the selected elements  Example of Getting (Reading) text  To Get (Read) text of an element use text() with nothing inside the parentheses  $(() =&amp;gt; { $(&amp;#39;#readAll&amp;#39;).click(() =&amp;gt; { // read text from all p elements  const allParagraphs = $(&amp;#34;p&amp;#34;).</description>
+    </item>
+    
+    <item>
+      <title>Add jQuery via CDN</title>
+      <link>/06-dom-and-jquery/jquery-overview/add-jquery/via-cdn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/06-dom-and-jquery/jquery-overview/add-jquery/via-cdn/</guid>
+      <description>Add jQuery via CDN  This approach references the jQuery file that lives on a CDN (another server)
+ The example below utilizes a jQuery-specific CDN found here
+ The integrity and crossorigin properties in the example ensure the file is delivered without any third-party manipulation   &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;title&amp;gt;Add jQuery using a CDN&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;script src=&amp;quot;https://code.jquery.com/jquery-3.4.1.min.js&amp;quot; integrity=&amp;quot;sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=&amp;quot; crossorigin=&amp;quot;anonymous&amp;quot;&amp;gt; &amp;lt;/script&amp;gt; &amp;lt;script src=&amp;quot;js/app.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt;   Using a CDN like jQuery or Google also helps with loading time, and potential caching benefits.</description>
+    </item>
+    
+    <item>
+      <title>Benefits of jQuery</title>
+      <link>/06-dom-and-jquery/jquery-overview/benefits-of-jquery/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/06-dom-and-jquery/jquery-overview/benefits-of-jquery/</guid>
+      <description>Benefits of jQuery?  Uses CSS selectors to help us grab or select elements programmatically (i.e. in our code)
+ Accomplishes more with less code vs using native JavaScript
+  CSS selectors means less code Here&amp;rsquo;s how we would programmatically select an element with an id of &amp;ldquo;flavors&amp;rdquo; using native JavaScript
+// selecting an element using native JavaScript document.getElementById(&amp;#39;flavors&amp;#39;).onClick = doSomething()  Here&amp;rsquo;s how we would programmatically select an element with an id of &amp;ldquo;flavors&amp;rdquo; using jQuery</description>
     </item>
     
     <item>
@@ -247,6 +364,16 @@ When copying the following code snippets, DO NOT include the $ this is a univers
  If you declare a variable without assigning it an initial value, the value of that variable will be undefined
   // declaring a variable  let firstName  Variables only need to be declared once
  </description>
+    </item>
+    
+    <item>
+      <title>Document Ready Function</title>
+      <link>/06-dom-and-jquery/jquery-overview/document-ready/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/06-dom-and-jquery/jquery-overview/document-ready/</guid>
+      <description>Document Ready Function  jQuery (and native JavaScript) must wait for a page to be loaded before it can try to dynamically update a page (i.e. Manipulate the page&amp;rsquo;s DOM)  We can also avoid this issue by adding the &amp;lt;script&amp;gt; tag (the tag we used to link our .js files to our .html files) at the bottom of your html pages right before the closing &amp;lt;\body&amp;gt; tag
+  jQuery provides a &amp;ldquo;document ready&amp;rdquo; function that will run once the DOM is fully loaded (i.</description>
     </item>
     
     <item>
@@ -303,7 +430,7 @@ When copying the following code snippets, DO NOT include the $ this is a univers
  Whole numbers (integers) or decimals (floats)
  Numbers can be negative or positive
  Numbers do not have quotes around them
-  There are no commas used when expressing numbers, for example the number 1,750 is expressed as 1750 in Javascript
+  There are no commas used when expressing numbers, for example the number 1,750 is expressed as 1750 in JavaScript
  JS Bin on jsbin.com
 Converting Strings to Numbers  Sometimes you will find yourself in a position where you need to convert a string to a number</description>
     </item>
@@ -408,6 +535,26 @@ Converting Strings to Numbers  Sometimes you will find yourself in a position wh
     </item>
     
     <item>
+      <title>.addClass()</title>
+      <link>/06-dom-and-jquery/jquery-manipulation/css-style-manipulation/add-class/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/06-dom-and-jquery/jquery-manipulation/css-style-manipulation/add-class/</guid>
+      <description>.addClass() Method  Method adds one or more classes to the selected elements  Example $(() =&amp;gt; { $(&amp;#34;#addBorderClass&amp;#34;).click(() =&amp;gt; { // add .strongBorder to box  $(&amp;#34;.box&amp;#34;).addClass(&amp;#34;strongBorder&amp;#34;) }) })  JS Bin on jsbin.com</description>
+    </item>
+    
+    <item>
+      <title>.html()</title>
+      <link>/06-dom-and-jquery/jquery-manipulation/getting-setting-content/html/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/06-dom-and-jquery/jquery-manipulation/getting-setting-content/html/</guid>
+      <description>.html() Method  Method is used to get or set the HTML contents of the elements  Example of Getting (Reading) Html  To Get (Read) text of an element use html() with nothing inside the parentheses
+ When using html() to get html contents, the html contents of the only the first matched element will be returned; see the docs for more info
+  $(() =&amp;gt; { $(&amp;#39;#readHtmlOfParagraph&amp;#39;).</description>
+    </item>
+    
+    <item>
       <title>.map()</title>
       <link>/05-arrays-objects/array-iterators/map/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -430,6 +577,24 @@ Converting Strings to Numbers  Sometimes you will find yourself in a position wh
       <description>.pop()  Extracts the last element of the array and returns it
  Like pop(), push() is also a mutating method because it changes the value of the original array
   Example let fruits = [&amp;#34;Apple&amp;#34;, &amp;#34;Orange&amp;#34;, &amp;#34;Grapes&amp;#34;] fruits.pop() console.log(fruits) // Apple, Orange  JS Bin on jsbin.com</description>
+    </item>
+    
+    <item>
+      <title>.prepend()</title>
+      <link>/06-dom-and-jquery/jquery-manipulation/inserting-removing-content/prepend/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/06-dom-and-jquery/jquery-manipulation/inserting-removing-content/prepend/</guid>
+      <description>.prepend() Method  Method used to insert content to the beginning of the selected elements (as the first child)  Example $(() =&amp;gt; { $(&amp;#39;#prependParagraph&amp;#39;).click(() =&amp;gt; { // prepend a new paragraph to list of paragraphs  const newParagraph = &amp;#34;&amp;lt;p class=&amp;#39;one&amp;#39;&amp;gt;One&amp;lt;/p&amp;gt;&amp;#34; $(&amp;#39;.numbers&amp;#39;).prepend(newParagraph) }) })  JS Bin on jsbin.com</description>
+    </item>
+    
+    <item>
+      <title>.submit() Event</title>
+      <link>/06-dom-and-jquery/jquery-events/form-events/submit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/06-dom-and-jquery/jquery-events/form-events/submit/</guid>
+      <description>.submit() Event  Attaches an event handler function to &amp;lt;form&amp;gt; elements that is executed when the user is attempts to submit a form  Example $(() =&amp;gt; { // listen for a .submit() event on this form  $(&amp;#39;form&amp;#39;).submit((event) =&amp;gt; { // prevent default behavior of forms  event.preventDefault() // read data from text field  const name = $(&amp;#39;input&amp;#39;).val() if (name === &amp;#39;&amp;#39;) { alert(&amp;#39;Please enter a name&amp;#39;) } else { alert(`Hello ${name}!</description>
     </item>
     
     <item>
@@ -525,7 +690,7 @@ Complete Homework #2 - Functions and Iterators  You are tasked with completing t
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/02-javascript-basics/variables/naming-rules/</guid>
-      <description>Naming Rules for Variables    Do Don&amp;rsquo;t     Use variable names that start with a letter, $, or _ Use variable names that start with a number   Use variable names that include letters, numbers, $ or _ Create variable names that include a &amp;ldquo;-&amp;rdquo;, &amp;ldquo;.&amp;rdquo; or space   Use &amp;ldquo;lower camel case&amp;rdquo; when creating variable names made up of more than one word, for example: firstName Create variable names that use reserved Javascript keywords such as let, var, function or switch    Variables names should describe the kind of information the variable stores</description>
+      <description>Naming Rules for Variables    Do Don&amp;rsquo;t     Use variable names that start with a letter, $, or _ Use variable names that start with a number   Use variable names that include letters, numbers, $ or _ Create variable names that include a &amp;ldquo;-&amp;rdquo;, &amp;ldquo;.&amp;rdquo; or space   Use &amp;ldquo;lower camel case&amp;rdquo; when creating variable names made up of more than one word, for example: firstName Create variable names that use reserved JavaScript keywords such as let, var, function or switch    Variables names should describe the kind of information the variable stores</description>
     </item>
     
     <item>
@@ -598,6 +763,17 @@ Atom Editor v1.</description>
     </item>
     
     <item>
+      <title>jQuery Syntax</title>
+      <link>/06-dom-and-jquery/jquery-overview/jquery-syntax/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/06-dom-and-jquery/jquery-overview/jquery-syntax/</guid>
+      <description>$() function  jQuery uses a built-in function called jQuery() to allow developers to programmatically select elements on a html page
+ $() is shorthand for jQuery()
+ This shorthand syntax is used almost exclusively (because results in less typing) and that is what we will be using throughout the course   // programmatically &amp;#34;select&amp;#34; all p tags on the page using jQuery() syntax  jQuery(&amp;#39;p&amp;#39;)  is the same as:</description>
+    </item>
+    
+    <item>
       <title>Github</title>
       <link>/01-command-line-js-and-git/github/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -651,6 +827,19 @@ Atom Editor v1.</description>
     </item>
     
     <item>
+      <title>jQuery Selectors</title>
+      <link>/06-dom-and-jquery/jquery-overview/jquery-selectors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/06-dom-and-jquery/jquery-overview/jquery-selectors/</guid>
+      <description>Selecting Elements  A most common usage pattern for jQuery is to:
+ Programmatically select (or grab) an element, then
+ Add an event listener to it or manipulate (change) it in some way
+  jQuery allows us to use css selectors to select elements:
+   // We can use css selectors to programmatically select elements $(&#39;p&#39;) // Type (Tag) selector $(&#39;.feature&#39;) // Class selector $(&#39;#checkout&#39;) // ID selector $(&#39;li strong&#39;) // Descendant selector $(&#39;em, i&#39;) // Multiple selector $(&#39;a[target=&amp;quot;_blank&amp;quot;]&#39;) // Attribute selector $(&#39;p:nth-child(2)&#39;) // Pseudo-class selector   ID, Class, Type and Descendant selectors are the selectors we&amp;rsquo;ll be using the most during this course  A complete list of CSS Selectors can be found here</description>
+    </item>
+    
+    <item>
       <title>let vs var</title>
       <link>/02-javascript-basics/variables/let-vs-var/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -658,7 +847,7 @@ Atom Editor v1.</description>
       <guid>/02-javascript-basics/variables/let-vs-var/</guid>
       <description>let vs var  In recent past var was the only way to declare variables
  While var worked it a lot of confusing issues that came along with it
- let was introduced in the latest release of Javascript, ES6 to address these issues
+ let was introduced in the latest release of JavaScript, ES6 to address these issues
  While var is still in use for legacy codebases, it is a recommended best practice to use let instead of var going forward</description>
     </item>
     
@@ -672,6 +861,26 @@ Atom Editor v1.</description>
  committed: files that have been saved / recorded to the repository&amp;rsquo;s history
  staged: files that have been modified
  modified: files that has been modified but have not yet been staged and committed to project&amp;rsquo;s history</description>
+    </item>
+    
+    <item>
+      <title>jQuery Objects</title>
+      <link>/06-dom-and-jquery/jquery-overview/jquery-objects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/06-dom-and-jquery/jquery-overview/jquery-objects/</guid>
+      <description>jQuery Objects  Whenever we use $() or jQuery() to target an element, a jQuery object is created
+ For example $(&#39;p&#39;) creates a jQuery object that targets all &amp;lt;p&amp;gt; elements on a page  jQuery objects can be stored in variables in the same way we are already familiar with
+ It is a best practice to prepend a $ to the name of any variable that holds a jQuery Object:   // store jQuery object into a variable named &amp;#34;$mainMenu&amp;#34;  $mainMenu = $(&amp;#39;#main-menu&amp;#39;) // call a jQuery methods `.</description>
+    </item>
+    
+    <item>
+      <title>.before()</title>
+      <link>/06-dom-and-jquery/jquery-manipulation/inserting-removing-content/before/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/06-dom-and-jquery/jquery-manipulation/inserting-removing-content/before/</guid>
+      <description>.before() Method  Method is used to insert content before the selected elements  Example $(() =&amp;gt; { $(&amp;#39;#addHeader&amp;#39;).click(() =&amp;gt; { // Add header &amp;#34;before&amp;#34; .numbers div  const header = &amp;#34;&amp;lt;h2&amp;gt;Numbers&amp;lt;/h2&amp;gt;&amp;#34; $(&amp;#39;.numbers&amp;#39;).before(header) }) })  JS Bin on jsbin.com</description>
     </item>
     
     <item>
@@ -689,6 +898,25 @@ Atom Editor v1.</description>
     </item>
     
     <item>
+      <title>.hover() Event</title>
+      <link>/06-dom-and-jquery/jquery-events/mouse-events/hover/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/06-dom-and-jquery/jquery-events/mouse-events/hover/</guid>
+      <description>.hover() Event  Attaches an event handler function to an element that is triggered when users hover over the element with their mouse
+ with .hover() you can specify two handlers functions to the matched elements, where the first handler is executed when the mouse pointer enters initially hovers over the element and the 2nd handler is executed when the most is no longer hovered over the targeted elements</description>
+    </item>
+    
+    <item>
+      <title>.removeClass()</title>
+      <link>/06-dom-and-jquery/jquery-manipulation/css-style-manipulation/remove-class/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/06-dom-and-jquery/jquery-manipulation/css-style-manipulation/remove-class/</guid>
+      <description>.removeClass() Method  Method removes one or more classes from selected elements  Example $(() =&amp;gt; { $(&amp;#34;#removeBorderClass&amp;#34;).click(() =&amp;gt; { // remove .strongBorder to box  $(&amp;#34;.box&amp;#34;).removeClass(&amp;#34;strongBorder&amp;#34;) }) })  JS Bin on jsbin.com</description>
+    </item>
+    
+    <item>
       <title>.shift()</title>
       <link>/05-arrays-objects/array-review/adding-removing-items/shift/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -697,6 +925,15 @@ Atom Editor v1.</description>
       <description>.shift()  Removes the first element from an array and returns that removed element
  This method is a mutating method because it changes the original array
   Example let fruits = [&amp;#34;Apple&amp;#34;, &amp;#34;Orange&amp;#34;, &amp;#34;Grapes&amp;#34;] fruits.shift() console.log(fruits) // Orange, Grapes  JS Bin on jsbin.com</description>
+    </item>
+    
+    <item>
+      <title>.val()</title>
+      <link>/06-dom-and-jquery/jquery-manipulation/getting-setting-content/val/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/06-dom-and-jquery/jquery-manipulation/getting-setting-content/val/</guid>
+      <description>.val() Method  Method is mainly used to get or set the current value of the HTML form elements such as &amp;lt;input&amp;gt;, &amp;lt;select&amp;gt; and &amp;lt;textarea&amp;gt;  Example of Getting (Reading) values from form elements  To Get (Read) text of an element use val() with nothing inside the parentheses  $(() =&amp;gt; { $(&amp;#34;#getName&amp;#34;).click(() =&amp;gt; { // read value of text field  const name = $(&amp;#34;#name&amp;#34;).val() alert(name) }) $(&amp;#34;#getComment&amp;#34;).</description>
     </item>
     
     <item>
@@ -756,6 +993,15 @@ Atom Editor v1.</description>
  Methods specify the actions of an object (i.e. what the action can do)
  Methods are called in the same way we call all other functions
   Example let superHero = { &amp;#39;secret identity&amp;#39;: &amp;#39;Peter Parker&amp;#39;, name: &amp;#39;Spiderman&amp;#39;, powers: [&amp;#39;super strength&amp;#39;, &amp;#39;hyper awareness&amp;#39;, &amp;#39;agility&amp;#39;, &amp;#39;genius intellect&amp;#39;], age: 17, sayTagline: function() { // &amp;lt;- method  console.log(&amp;#34;Hey everyone it&amp;#39;s your friendly neighborhood Spiderman&amp;#34;) } } // call the the method, just as you would call any function  superHero.</description>
+    </item>
+    
+    <item>
+      <title>Other Events</title>
+      <link>/06-dom-and-jquery/jquery-events/other-events/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/06-dom-and-jquery/jquery-events/other-events/</guid>
+      <description>Other Events There are many other events available, click here to see a complete list of jQuery Events</description>
     </item>
     
     <item>
@@ -912,6 +1158,24 @@ const getArea = (width, height) =&amp;gt; { let area = width * height return are
     </item>
     
     <item>
+      <title>.after()</title>
+      <link>/06-dom-and-jquery/jquery-manipulation/inserting-removing-content/after/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/06-dom-and-jquery/jquery-manipulation/inserting-removing-content/after/</guid>
+      <description>.after() Method  Method is used to insert content after the selected elements  Example $(() =&amp;gt; { $(&amp;#39;#addFooter&amp;#39;).click(() =&amp;gt; { // Add footer &amp;#34;after&amp;#34; .numbers div  const footer = &amp;#34;&amp;lt;h2&amp;gt;Footer&amp;lt;/h2&amp;gt;&amp;#34; $(&amp;#39;.numbers&amp;#39;).after(footer) }) })  JS Bin on jsbin.com</description>
+    </item>
+    
+    <item>
+      <title>.attr()</title>
+      <link>/06-dom-and-jquery/jquery-manipulation/getting-setting-content/attr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/06-dom-and-jquery/jquery-manipulation/getting-setting-content/attr/</guid>
+      <description>.attr() Method  Method to either get the value of an element&amp;rsquo;s attribute or set one or more attributes for the selected element  Example of Getting (Reading) attributes from elements  To Get (Read) text of an element use attr(attrName) with name of the attribute you want to receive a value for  $(() =&amp;gt; { $(&amp;#34;#getClassName&amp;#34;).click(() =&amp;gt; { // read class name of .box  const className = $(&amp;#34;#box&amp;#34;).</description>
+    </item>
+    
+    <item>
       <title>.filter()</title>
       <link>/05-arrays-objects/array-iterators/filter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -934,6 +1198,15 @@ const getArea = (width, height) =&amp;gt; { let area = width * height return are
       <description>.slice()  Returns a shallow copy of a portion of an array into a new array object selected from begin to end (end not included) where begin and end represent the index of items in that array
  This is method is NOT a mutating method because the original array is not modified
   Example let fruits = [&amp;#34;Peach&amp;#34;, &amp;#34;Mango&amp;#34;, &amp;#34;Apple&amp;#34;, &amp;#34;Orange&amp;#34;, &amp;#34;Grapes&amp;#34;, &amp;#34;Strawberries&amp;#34;] let myFavoriteFruits = fruits.slice(1, 4) console.</description>
+    </item>
+    
+    <item>
+      <title>.toggleClass()</title>
+      <link>/06-dom-and-jquery/jquery-manipulation/css-style-manipulation/toggle-class/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/06-dom-and-jquery/jquery-manipulation/css-style-manipulation/toggle-class/</guid>
+      <description>.toggleClass() Method  Method toggles one or more classes to / from selected elements  Example $(() =&amp;gt; { $(&amp;#34;#toggleBorderClass&amp;#34;).click(() =&amp;gt; { // toggle .strongBorder on box  $(&amp;#34;.box&amp;#34;).toggleClass(&amp;#34;strongBorder&amp;#34;) }) })  JS Bin on jsbin.com</description>
     </item>
     
     <item>
@@ -1077,7 +1350,7 @@ let yearOfBirth = 2001 if (yearOfBirth &amp;lt;= 2002) { console.</description>
     </item>
     
     <item>
-      <title>What is Javascript?</title>
+      <title>What is JavaScript?</title>
       <link>/00-course-intro-and-tools/what-is-javascript/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
