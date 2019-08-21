@@ -12,21 +12,21 @@
     <title>.html() :: GA JavaScript</title>
 
     
-    <link href="/css/nucleus.css?1566339850" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1566339850" rel="stylesheet">
-    <link href="/css/hybrid.css?1566339850" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1566339850" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1566339850" rel="stylesheet">
-    <link href="/css/auto-complete.css?1566339850" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1566339850" rel="stylesheet">
-    <link href="/css/theme.css?1566339850" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1566339850" rel="stylesheet">
-    <link href="/css/syntax.css?1566339850" rel="stylesheet">
+    <link href="/css/nucleus.css?1566358359" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1566358359" rel="stylesheet">
+    <link href="/css/hybrid.css?1566358359" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1566358359" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1566358359" rel="stylesheet">
+    <link href="/css/auto-complete.css?1566358359" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1566358359" rel="stylesheet">
+    <link href="/css/theme.css?1566358359" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1566358359" rel="stylesheet">
+    <link href="/css/syntax.css?1566358359" rel="stylesheet">
     
-      <link href="/css/theme-blue.css?1566339850" rel="stylesheet">
+      <link href="/css/theme-blue.css?1566358359" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1566339850"></script>
+    <script src="/js/jquery-3.3.1.min.js?1566358359"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -89,14 +89,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1566339850"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1566339850"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1566358359"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1566358359"></script>
 <script type="text/javascript">
     
         var baseurl = "\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1566339850"></script>
+<script type="text/javascript" src="/js/search.js?1566358359"></script>
 
     
   </div>
@@ -3792,7 +3792,7 @@
 <h3 id="example-of-getting-reading-html">Example of Getting (Reading) Html</h3>
 
 <ul>
-<li><p>To Get (Read) text of an element use <code>html()</code> <strong>with nothing inside the parentheses</strong></p></li>
+<li><p>To Get (Read) text of an element use <code>.html()</code> <strong>with nothing inside the parentheses</strong></p></li>
 
 <li><p>When using <code>html()</code> to <strong>get</strong> html contents, the html contents of the <strong>only the first matched element will be returned</strong>; <a href="https://api.jquery.com/html/">see the docs</a> for more info</p></li>
 </ul>
@@ -3800,44 +3800,44 @@
 <div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
   <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#readHtmlOfParagraph&#39;</span><span class="p">).</span><span class="nx">click</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
     <span class="c1">// get html of the first matched p element
-</span><span class="c1"></span>    <span class="k">const</span> <span class="nx">htmlOfParagraph</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s2">&#34;p&#34;</span><span class="p">).</span><span class="nx">html</span><span class="p">()</span>
-    <span class="nx">alert</span><span class="p">(</span><span class="nx">htmlOfParagraph</span><span class="p">)</span>
+</span><span class="c1"></span>    <span class="k">const</span> <span class="nx">$htmlOfParagraph</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s2">&#34;p&#34;</span><span class="p">).</span><span class="nx">html</span><span class="p">()</span>
+    <span class="nx">alert</span><span class="p">(</span><span class="nx">$htmlOfParagraph</span><span class="p">)</span>
   <span class="p">})</span>
 
   <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#readHtmlOfContainer&#39;</span><span class="p">).</span><span class="nx">click</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
     <span class="c1">// get html of container
-</span><span class="c1"></span>    <span class="k">const</span> <span class="nx">htmlOfContainer</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s2">&#34;.container&#34;</span><span class="p">).</span><span class="nx">html</span><span class="p">()</span>
-    <span class="nx">alert</span><span class="p">(</span><span class="nx">htmlOfContainer</span><span class="p">)</span>
+</span><span class="c1"></span>    <span class="k">const</span> <span class="nx">$htmlOfContainer</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s2">&#34;.container&#34;</span><span class="p">).</span><span class="nx">html</span><span class="p">()</span>
+    <span class="nx">alert</span><span class="p">(</span><span class="nx">$htmlOfContainer</span><span class="p">)</span>
   <span class="p">})</span>
 <span class="p">})</span>
 </code></pre></div>
 
-<p><a class="jsbin-embed" href="https://jsbin.com/deduqoc/embed?html,js,output">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?4.1.7"></script></p>
+<p><a class="jsbin-embed" href="https://jsbin.com/deduqoc/embed?js,output">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?4.1.7"></script></p>
 
 <hr />
 
 <h3 id="example-of-setting-writing-html">Example of Setting (writing) Html</h3>
 
 <ul>
-<li>To Set (Write) text of an element use <code>html(newHtml)</code> <strong>with the new Html inside the parentheses</strong></li>
+<li>To Set (Write) text of an element use <code>.html(newHtml)</code> <strong>with the new Html inside the parentheses</strong></li>
 </ul>
 
 <div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
   <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#addNewNumber&#39;</span><span class="p">).</span><span class="nx">click</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
 
     <span class="c1">// create a new html element
-</span><span class="c1"></span>    <span class="k">const</span> <span class="nx">htmlOfNewNumber</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s2">&#34;&lt;p class=&#39;four&#39;&gt; &lt;span&gt;Four&lt;/span&gt;&lt;/p&gt;&#34;</span><span class="p">)</span>
+</span><span class="c1"></span>    <span class="k">const</span> <span class="nx">$htmlOfNewNumber</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s2">&#34;&lt;p class=&#39;four&#39;&gt; &lt;span&gt;Four&lt;/span&gt;&lt;/p&gt;&#34;</span><span class="p">)</span>
 
     <span class="c1">// add new html element to .numbers div
-</span><span class="c1"></span>    <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.numbers&#39;</span><span class="p">).</span><span class="nx">html</span><span class="p">(</span><span class="nx">htmlOfNewNumber</span><span class="p">)</span>
+</span><span class="c1"></span>    <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.numbers&#39;</span><span class="p">).</span><span class="nx">html</span><span class="p">(</span><span class="nx">$htmlOfNewNumber</span><span class="p">)</span>
   <span class="p">})</span>
 <span class="p">})</span>
 </code></pre></div>
 
-<p><a class="jsbin-embed" href="https://jsbin.com/vunedew/embed?html,js,output">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?4.1.7"></script></p>
+<p><a class="jsbin-embed" href="https://jsbin.com/vunedew/embed?js,output">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?4.1.7"></script></p>
 
 <ul>
-<li><p>Notice how the previous paragraphs (<code>&lt;p&gt;one&lt;/p&gt;</code>, <code>&lt;p&gt;two&lt;/p&gt;</code> and <code>&lt;p&gt;three&lt;/p&gt;</code>) were replaced with <code>&lt;p&gt;four&lt;/p&gt;</code>, using <code>html(newHtml)</code> will replace the children of the targeted element (in our case the targeted element was <code>.container</code>)</p></li>
+<li><p>Notice how the previous paragraphs (<code>&lt;p&gt;one&lt;/p&gt;</code>, <code>&lt;p&gt;two&lt;/p&gt;</code> and <code>&lt;p&gt;three&lt;/p&gt;</code>) were replaced with <code>&lt;p&gt;four&lt;/p&gt;</code>, using <code>.html(newHtml)</code> will replace the children of the targeted element (in our case the targeted element was <code>.container</code>)</p></li>
 
 <li><p>Later in this lesson, we&rsquo;ll see how we can add a new element to a list without replacing the exiting elements</p></li>
 </ul>
@@ -6542,20 +6542,20 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1566339850"></script>
-    <script src="/js/perfect-scrollbar.min.js?1566339850"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1566339850"></script>
-    <script src="/js/jquery.sticky.js?1566339850"></script>
-    <script src="/js/featherlight.min.js?1566339850"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1566339850"></script>
-    <script src="/js/highlight.pack.js?1566339850"></script>
+    <script src="/js/clipboard.min.js?1566358359"></script>
+    <script src="/js/perfect-scrollbar.min.js?1566358359"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1566358359"></script>
+    <script src="/js/jquery.sticky.js?1566358359"></script>
+    <script src="/js/featherlight.min.js?1566358359"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1566358359"></script>
+    <script src="/js/highlight.pack.js?1566358359"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1566339850"></script>
-    <script src="/js/learn.js?1566339850"></script>
-    <script src="/js/hugo-learn.js?1566339850"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1566358359"></script>
+    <script src="/js/learn.js?1566358359"></script>
+    <script src="/js/hugo-learn.js?1566358359"></script>
 
-    <link href="/mermaid/mermaid.css?1566339850" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1566339850"></script>
+    <link href="/mermaid/mermaid.css?1566358359" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1566358359"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

@@ -12,21 +12,21 @@
     <title>.text() :: GA JavaScript</title>
 
     
-    <link href="/css/nucleus.css?1566339850" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1566339850" rel="stylesheet">
-    <link href="/css/hybrid.css?1566339850" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1566339850" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1566339850" rel="stylesheet">
-    <link href="/css/auto-complete.css?1566339850" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1566339850" rel="stylesheet">
-    <link href="/css/theme.css?1566339850" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1566339850" rel="stylesheet">
-    <link href="/css/syntax.css?1566339850" rel="stylesheet">
+    <link href="/css/nucleus.css?1566358358" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1566358358" rel="stylesheet">
+    <link href="/css/hybrid.css?1566358358" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1566358358" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1566358358" rel="stylesheet">
+    <link href="/css/auto-complete.css?1566358358" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1566358358" rel="stylesheet">
+    <link href="/css/theme.css?1566358358" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1566358358" rel="stylesheet">
+    <link href="/css/syntax.css?1566358358" rel="stylesheet">
     
-      <link href="/css/theme-blue.css?1566339850" rel="stylesheet">
+      <link href="/css/theme-blue.css?1566358358" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1566339850"></script>
+    <script src="/js/jquery-3.3.1.min.js?1566358358"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -89,14 +89,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1566339850"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1566339850"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1566358358"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1566358358"></script>
 <script type="text/javascript">
     
         var baseurl = "\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1566339850"></script>
+<script type="text/javascript" src="/js/search.js?1566358358"></script>
 
     
   </div>
@@ -3792,32 +3792,32 @@
 <h3 id="example-of-getting-reading-text">Example of Getting (Reading) text</h3>
 
 <ul>
-<li>To Get (Read) text of an element use <code>text()</code> <strong>with nothing inside the parentheses</strong></li>
+<li>To Get (Read) text of an element use <code>.text()</code> <strong>with nothing inside the parentheses</strong></li>
 </ul>
 
 <div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
   <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#readAll&#39;</span><span class="p">).</span><span class="nx">click</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
     <span class="c1">// read text from all p elements
-</span><span class="c1"></span>    <span class="k">const</span> <span class="nx">allParagraphs</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s2">&#34;p&#34;</span><span class="p">).</span><span class="nx">text</span><span class="p">()</span>
-    <span class="nx">alert</span><span class="p">(</span><span class="sb">`text from all paragraphs: </span><span class="si">${</span><span class="nx">allParagraphs</span><span class="si">}</span><span class="sb">`</span><span class="p">)</span>
+</span><span class="c1"></span>    <span class="k">const</span> <span class="nx">$allParagraphs</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s2">&#34;p&#34;</span><span class="p">).</span><span class="nx">text</span><span class="p">()</span>
+    <span class="nx">alert</span><span class="p">(</span><span class="sb">`text from all paragraphs: </span><span class="si">${</span><span class="nx">$allParagraphs</span><span class="si">}</span><span class="sb">`</span><span class="p">)</span>
   <span class="p">})</span>
 
   <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#readFirst&#39;</span><span class="p">).</span><span class="nx">click</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
     <span class="c1">// read text from only the 1st p element
-</span><span class="c1"></span>    <span class="k">const</span> <span class="nx">firstParagraph</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s2">&#34;p:first&#34;</span><span class="p">).</span><span class="nx">text</span><span class="p">()</span>
-    <span class="nx">alert</span><span class="p">(</span><span class="sb">`text from the 1st paragraphs: </span><span class="si">${</span><span class="nx">firstParagraph</span><span class="si">}</span><span class="sb">`</span><span class="p">)</span>
+</span><span class="c1"></span>    <span class="k">const</span> <span class="nx">$firstParagraph</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s2">&#34;p:first&#34;</span><span class="p">).</span><span class="nx">text</span><span class="p">()</span>
+    <span class="nx">alert</span><span class="p">(</span><span class="sb">`text from the 1st paragraph: </span><span class="si">${</span><span class="nx">$firstParagraph</span><span class="si">}</span><span class="sb">`</span><span class="p">)</span>
   <span class="p">})</span>
 <span class="p">})</span>
 </code></pre></div>
 
-<p><a class="jsbin-embed" href="https://jsbin.com/wewodas/embed?js,output">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?4.1.7"></script></p>
+<p><a class="jsbin-embed" href="https://jsbin.com/limimup/embed?js,output">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?4.1.7"></script></p>
 
 <hr />
 
 <h3 id="example-of-setting-writing-text">Example of Setting (writing) text</h3>
 
 <ul>
-<li>To Set (Write) text of an element use <code>text(newText)</code> <strong>with the new text inside the parentheses</strong></li>
+<li>To Set (Write) text of an element use <code>.text(newText)</code> <strong>with the new text inside the parentheses</strong></li>
 </ul>
 
 <div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#convertAllWords&#39;</span><span class="p">).</span><span class="nx">click</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
@@ -6527,20 +6527,20 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1566339850"></script>
-    <script src="/js/perfect-scrollbar.min.js?1566339850"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1566339850"></script>
-    <script src="/js/jquery.sticky.js?1566339850"></script>
-    <script src="/js/featherlight.min.js?1566339850"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1566339850"></script>
-    <script src="/js/highlight.pack.js?1566339850"></script>
+    <script src="/js/clipboard.min.js?1566358359"></script>
+    <script src="/js/perfect-scrollbar.min.js?1566358359"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1566358359"></script>
+    <script src="/js/jquery.sticky.js?1566358359"></script>
+    <script src="/js/featherlight.min.js?1566358359"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1566358359"></script>
+    <script src="/js/highlight.pack.js?1566358359"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1566339850"></script>
-    <script src="/js/learn.js?1566339850"></script>
-    <script src="/js/hugo-learn.js?1566339850"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1566358359"></script>
+    <script src="/js/learn.js?1566358359"></script>
+    <script src="/js/hugo-learn.js?1566358359"></script>
 
-    <link href="/mermaid/mermaid.css?1566339850" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1566339850"></script>
+    <link href="/mermaid/mermaid.css?1566358359" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1566358359"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
