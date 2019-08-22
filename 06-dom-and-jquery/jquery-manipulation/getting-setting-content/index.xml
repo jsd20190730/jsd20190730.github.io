@@ -26,7 +26,7 @@
       
       <guid>/06-dom-and-jquery/jquery-manipulation/getting-setting-content/html/</guid>
       <description>.html() Method  Method is used to get or set the HTML contents of the elements  Example of Getting (Reading) Html  To Get (Read) text of an element use .html() with nothing inside the parentheses
- When using html() to get html contents, the html contents of the only the first matched element will be returned; see the docs for more info
+ When using .html() to get html contents, the html contents of the only the first matched element will be returned; see the docs for more info
   $(() =&amp;gt; { $(&amp;#39;#readHtmlOfParagraph&amp;#39;).</description>
     </item>
     

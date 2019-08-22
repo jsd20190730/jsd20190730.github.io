@@ -84,6 +84,10 @@
   </url>
   
   <url>
+    <loc>/07-dom-and-jquery-continued/jquery-this/</loc>
+  </url>
+  
+  <url>
     <loc>/06-dom-and-jquery/jquery-manipulation/inserting-removing-content/append/</loc>
   </url>
   
@@ -105,6 +109,10 @@
   
   <url>
     <loc>/05-arrays-objects/array-review/adding-removing-items/push/</loc>
+  </url>
+  
+  <url>
+    <loc>/06-dom-and-jquery/jquery-effects/show-hide/</loc>
   </url>
   
   <url>
@@ -188,6 +196,10 @@
   </url>
   
   <url>
+    <loc>/06-dom-and-jquery/jquery-traversing/ancestors/</loc>
+  </url>
+  
+  <url>
     <loc>/03-control-flow-and-loops/conditionals/if-statement/</loc>
   </url>
   
@@ -197,6 +209,10 @@
   
   <url>
     <loc>/03-control-flow-and-loops/loops-and-iteration/while-loops/</loc>
+  </url>
+  
+  <url>
+    <loc>/06-dom-and-jquery/jquery-effects/toggle/</loc>
   </url>
   
   <url>
@@ -249,6 +265,10 @@
   
   <url>
     <loc>/06-dom-and-jquery/jquery-manipulation/inserting-removing-content/prepend/</loc>
+  </url>
+  
+  <url>
+    <loc>/06-dom-and-jquery/jquery-effects/slide-up-slide-down/</loc>
   </url>
   
   <url>
@@ -328,7 +348,15 @@
   </url>
   
   <url>
+    <loc>/06-dom-and-jquery/jquery-traversing/descendants/</loc>
+  </url>
+  
+  <url>
     <loc>/03-control-flow-and-loops/loops-and-iteration/do-while-loops/</loc>
+  </url>
+  
+  <url>
+    <loc>/07-dom-and-jquery-continued/event-current-target/</loc>
   </url>
   
   <url>
@@ -396,6 +424,10 @@
   </url>
   
   <url>
+    <loc>/06-dom-and-jquery/jquery-effects/slide-toggle/</loc>
+  </url>
+  
+  <url>
     <loc>/06-dom-and-jquery/jquery-manipulation/getting-setting-content/val/</loc>
   </url>
   
@@ -409,6 +441,10 @@
   
   <url>
     <loc>/01-command-line-js-and-git/code-along-basic-git-workflow/</loc>
+  </url>
+  
+  <url>
+    <loc>/07-dom-and-jquery-continued/code-along-color-scheme-switcher-jquery/</loc>
   </url>
   
   <url>
@@ -500,6 +536,10 @@
   </url>
   
   <url>
+    <loc>/06-dom-and-jquery/jquery-effects/fade-in-fade-out/</loc>
+  </url>
+  
+  <url>
     <loc>/05-arrays-objects/array-iterators/filter/</loc>
   </url>
   
@@ -517,6 +557,10 @@
   
   <url>
     <loc>/08-ajax-and-apis/</loc>
+  </url>
+  
+  <url>
+    <loc>/07-dom-and-jquery-continued/code-along-traffic-light/</loc>
   </url>
   
   <url>
@@ -556,11 +600,23 @@
   </url>
   
   <url>
+    <loc>/07-dom-and-jquery-continued/code-along-score-keeper/</loc>
+  </url>
+  
+  <url>
     <loc>/00-course-intro-and-tools/folder-structure/</loc>
   </url>
   
   <url>
     <loc>/class-resources/node-git-installation/</loc>
+  </url>
+  
+  <url>
+    <loc>/06-dom-and-jquery/jquery-effects/other-effects/</loc>
+  </url>
+  
+  <url>
+    <loc>/06-dom-and-jquery/jquery-traversing/other-traversal-methods/</loc>
   </url>
   
   <url>
@@ -577,6 +633,10 @@
   
   <url>
     <loc>/00-course-intro-and-tools/confirm-node-git-installation/</loc>
+  </url>
+  
+  <url>
+    <loc>/07-dom-and-jquery-continued/code-along-hilo/</loc>
   </url>
   
   <url>
@@ -609,7 +669,15 @@
   </url>
   
   <url>
+    <loc>/07-dom-and-jquery-continued/lab-citipix/</loc>
+  </url>
+  
+  <url>
     <loc>/00-course-intro-and-tools/what-is-javascript/</loc>
+  </url>
+  
+  <url>
+    <loc>/06-dom-and-jquery/jquery-effects/</loc>
   </url>
   
   <url>
@@ -626,6 +694,10 @@
   
   <url>
     <loc>/00-course-intro-and-tools/pseudocode/</loc>
+  </url>
+  
+  <url>
+    <loc>/06-dom-and-jquery/jquery-traversing/</loc>
   </url>
   
   <url>
