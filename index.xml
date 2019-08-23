@@ -56,6 +56,18 @@
     </item>
     
     <item>
+      <title>Office Hours</title>
+      <link>/class-resources/office-hours/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/class-resources/office-hours/</guid>
+      <description>Weekly In-Person Office Hours Every week, Woody, our Instructional Assistant will hold office hours on GA&amp;rsquo;s campus.
+ Day / Time: Wednesdays, 6:30 PM to 8:30 PM
+ Location: General Assembly&amp;rsquo;s campus
+ Policy: Students have until 12:00 PM every Wednesday to send Woody a direct message (DM) on Slack to let him know they plan on coming to the in-person office hours. If no one contacts Woody by this time, he will not hold office hours</description>
+    </item>
+    
+    <item>
       <title>What is jQuery?</title>
       <link>/06-dom-and-jquery/jquery-overview/what-is-jquery/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -254,7 +266,7 @@ When copying the following code snippets, DO NOT include the $ this is a univers
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/06-dom-and-jquery/jquery-manipulation/inserting-removing-content/append/</guid>
-      <description>.append() Method  Method used to insert content to the end of selected elements (as the last child)  Example $(() =&amp;gt; { $(&amp;#39;#appendParagraph&amp;#39;).click(() =&amp;gt; { // append a new paragraph to list of paragraphs  const $newParagraph = &amp;#34;&amp;lt;p class=&amp;#39;four&amp;#39;&amp;gt;Four&amp;lt;/p&amp;gt;&amp;#34; $(&amp;#39;.numbers&amp;#39;).append($newParagraph) }) })  JS Bin on jsbin.com</description>
+      <description>.append() Method  Method used to insert content to the end of selected elements (as the last child)  Example $(() =&amp;gt; { $(&amp;#39;#appendParagraph&amp;#39;).click(() =&amp;gt; { // append a new paragraph to list of paragraphs  const newParagraph = &amp;#34;&amp;lt;p class=&amp;#39;four&amp;#39;&amp;gt;Four&amp;lt;/p&amp;gt;&amp;#34; $(&amp;#39;.numbers&amp;#39;).append(newParagraph) }) })  JS Bin on jsbin.com</description>
     </item>
     
     <item>
@@ -627,7 +639,7 @@ Converting Strings to Numbers  Sometimes you will find yourself in a position wh
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/06-dom-and-jquery/jquery-manipulation/inserting-removing-content/prepend/</guid>
-      <description>.prepend() Method  Method used to insert content to the beginning of the selected elements (as the first child)  Example $(() =&amp;gt; { $(&amp;#39;#prependParagraph&amp;#39;).click(() =&amp;gt; { // prepend a new paragraph to list of paragraphs  const $newParagraph = &amp;#34;&amp;lt;p class=&amp;#39;one&amp;#39;&amp;gt;One&amp;lt;/p&amp;gt;&amp;#34; $(&amp;#39;.numbers&amp;#39;).prepend($newParagraph) }) })  JS Bin on jsbin.com</description>
+      <description>.prepend() Method  Method used to insert content to the beginning of the selected elements (as the first child)  Example $(() =&amp;gt; { $(&amp;#39;#prependParagraph&amp;#39;).click(() =&amp;gt; { // prepend a new paragraph to list of paragraphs  const newParagraph = &amp;#34;&amp;lt;p class=&amp;#39;one&amp;#39;&amp;gt;One&amp;lt;/p&amp;gt;&amp;#34; $(&amp;#39;.numbers&amp;#39;).prepend(newParagraph) }) })  JS Bin on jsbin.com</description>
     </item>
     
     <item>
@@ -955,7 +967,7 @@ Atom Editor v1.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/06-dom-and-jquery/jquery-manipulation/inserting-removing-content/before/</guid>
-      <description>.before() Method  Method is used to insert content before the selected elements  Example $(() =&amp;gt; { $(&amp;#39;#addHeader&amp;#39;).click(() =&amp;gt; { // Add header &amp;#34;before&amp;#34; .numbers div  const $header = &amp;#34;&amp;lt;h2&amp;gt;Numbers&amp;lt;/h2&amp;gt;&amp;#34; $(&amp;#39;.numbers&amp;#39;).before($header) }) })  JS Bin on jsbin.com</description>
+      <description>.before() Method  Method is used to insert content before the selected elements  Example $(() =&amp;gt; { $(&amp;#39;#addHeader&amp;#39;).click(() =&amp;gt; { // Add header &amp;#34;before&amp;#34; .numbers div  const header = &amp;#34;&amp;lt;h2&amp;gt;Numbers&amp;lt;/h2&amp;gt;&amp;#34; $(&amp;#39;.numbers&amp;#39;).before(header) }) })  JS Bin on jsbin.com</description>
     </item>
     
     <item>
@@ -1053,6 +1065,18 @@ Atom Editor v1.</description>
       <guid>/07-dom-and-jquery-continued/code-along-color-scheme-switcher-jquery/</guid>
       <description> Code Along: Color Scheme Switcher  The starter code for this code along is hosted on Github, see the url below:
  Code Along: Color Scheme Switcher  Use the Assignment Submission Git Workflow (detailed here) to access and submit the assignment
+  </description>
+    </item>
+    
+    <item>
+      <title>HW Assignment #3</title>
+      <link>/homework-assignments/hw-assignment-03/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/homework-assignments/hw-assignment-03/</guid>
+      <description> Summary of this week&amp;rsquo;s homework assignment: Due Date: Friday, August 30th
+Complete Homework #3 - Rock, Paper, Scissors Application  You are tasked with finishing the partially built Rock, Paper, Scissors application. The code is hosted on Github, see the url below:
+ Github Repo for Homework #3 - Rock, Paper, Scissors Application  Use the Assignment Submission Git Workflow (detailed here) to access and submit the assignment
   </description>
     </item>
     
@@ -1258,7 +1282,7 @@ const getArea = (width, height) =&amp;gt; { let area = width * height return are
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/06-dom-and-jquery/jquery-manipulation/inserting-removing-content/after/</guid>
-      <description>.after() Method  Method is used to insert content after the selected elements  Example $(() =&amp;gt; { $(&amp;#39;#addFooter&amp;#39;).click(() =&amp;gt; { // Add footer &amp;#34;after&amp;#34; .numbers div  const $footer = &amp;#34;&amp;lt;h2&amp;gt;Footer&amp;lt;/h2&amp;gt;&amp;#34; $(&amp;#39;.numbers&amp;#39;).after($footer) }) })  JS Bin on jsbin.com</description>
+      <description>.after() Method  Method is used to insert content after the selected elements  Example $(() =&amp;gt; { $(&amp;#39;#addFooter&amp;#39;).click(() =&amp;gt; { // Add footer &amp;#34;after&amp;#34; .numbers div  const footer = &amp;#34;&amp;lt;h2&amp;gt;Footer&amp;lt;/h2&amp;gt;&amp;#34; $(&amp;#39;.numbers&amp;#39;).after(footer) }) })  JS Bin on jsbin.com</description>
     </item>
     
     <item>

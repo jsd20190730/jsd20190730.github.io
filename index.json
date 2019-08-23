@@ -28,6 +28,13 @@
 	"content": "After this lesson, students will be able to:\n Use if/else conditionals to control program flow based on Boolean (true or false) tests\n Use switch/case conditionals to control program flow based on matching explicit values\n Use while and do/while loops\n Understand how loop iteration using for and forEach works\n  "
 },
 {
+	"uri": "/class-resources/office-hours/",
+	"title": "Office Hours",
+	"tags": [],
+	"description": "",
+	"content": " Weekly In-Person Office Hours Every week, Woody, our Instructional Assistant will hold office hours on GA\u0026rsquo;s campus.\n Day / Time: Wednesdays, 6:30 PM to 8:30 PM\n Location: General Assembly\u0026rsquo;s campus\n Policy: Students have until 12:00 PM every Wednesday to send Woody a direct message (DM) on Slack to let him know they plan on coming to the in-person office hours. If no one contacts Woody by this time, he will not hold office hours\n  Supplementary Office Hours (Remote) Subject to the instructional team\u0026rsquo;s availability, we will be holding supplementary remote office hours in addition to the weekly in-person office office detailed above. These office hours will be provided online via a Zoom video call.\n Day / Time: See schedule below\n Location: Online via Zoom (link will be provided in Slack prior the start of office hours)\n Policy: No prior sign up required, just log drop in if you have questions\n  The schedule below will be updated as the course progresses.\n   Week Date Time     Aug 25 - Aug 31 Sunday, Aug 25th 11 AM to 1 PM   Sep 1 - Sep 7 N/A N/A   Sep 8 - Sep 14 N/A N/A   Sep 15 - Sep 21 TBA TBA   Sep 22 - Sep 28 TBA TBA   Sep 29 - Oct 5 TBA TBA    N/A = Not Available\n"
+},
+{
 	"uri": "/06-dom-and-jquery/jquery-overview/what-is-jquery/",
 	"title": "What is jQuery?",
 	"tags": [],
@@ -151,7 +158,7 @@
 	"title": ".append()",
 	"tags": [],
 	"description": "",
-	"content": " .append() Method  Method used to insert content to the end of selected elements (as the last child)  Example $(() =\u0026gt; { $(\u0026#39;#appendParagraph\u0026#39;).click(() =\u0026gt; { // append a new paragraph to list of paragraphs  const $newParagraph = \u0026#34;\u0026lt;p class=\u0026#39;four\u0026#39;\u0026gt;Four\u0026lt;/p\u0026gt;\u0026#34; $(\u0026#39;.numbers\u0026#39;).append($newParagraph) }) })  JS Bin on jsbin.com\n"
+	"content": " .append() Method  Method used to insert content to the end of selected elements (as the last child)  Example $(() =\u0026gt; { $(\u0026#39;#appendParagraph\u0026#39;).click(() =\u0026gt; { // append a new paragraph to list of paragraphs  const newParagraph = \u0026#34;\u0026lt;p class=\u0026#39;four\u0026#39;\u0026gt;Four\u0026lt;/p\u0026gt;\u0026#34; $(\u0026#39;.numbers\u0026#39;).append(newParagraph) }) })  JS Bin on jsbin.com\n"
 },
 {
 	"uri": "/06-dom-and-jquery/jquery-events/form-events/change/",
@@ -459,7 +466,7 @@
 	"title": ".prepend()",
 	"tags": [],
 	"description": "",
-	"content": " .prepend() Method  Method used to insert content to the beginning of the selected elements (as the first child)  Example $(() =\u0026gt; { $(\u0026#39;#prependParagraph\u0026#39;).click(() =\u0026gt; { // prepend a new paragraph to list of paragraphs  const $newParagraph = \u0026#34;\u0026lt;p class=\u0026#39;one\u0026#39;\u0026gt;One\u0026lt;/p\u0026gt;\u0026#34; $(\u0026#39;.numbers\u0026#39;).prepend($newParagraph) }) })  JS Bin on jsbin.com\n"
+	"content": " .prepend() Method  Method used to insert content to the beginning of the selected elements (as the first child)  Example $(() =\u0026gt; { $(\u0026#39;#prependParagraph\u0026#39;).click(() =\u0026gt; { // prepend a new paragraph to list of paragraphs  const newParagraph = \u0026#34;\u0026lt;p class=\u0026#39;one\u0026#39;\u0026gt;One\u0026lt;/p\u0026gt;\u0026#34; $(\u0026#39;.numbers\u0026#39;).prepend(newParagraph) }) })  JS Bin on jsbin.com\n"
 },
 {
 	"uri": "/06-dom-and-jquery/jquery-effects/slide-up-slide-down/",
@@ -704,7 +711,7 @@
 	"title": ".before()",
 	"tags": [],
 	"description": "",
-	"content": " .before() Method  Method is used to insert content before the selected elements  Example $(() =\u0026gt; { $(\u0026#39;#addHeader\u0026#39;).click(() =\u0026gt; { // Add header \u0026#34;before\u0026#34; .numbers div  const $header = \u0026#34;\u0026lt;h2\u0026gt;Numbers\u0026lt;/h2\u0026gt;\u0026#34; $(\u0026#39;.numbers\u0026#39;).before($header) }) })  JS Bin on jsbin.com\n"
+	"content": " .before() Method  Method is used to insert content before the selected elements  Example $(() =\u0026gt; { $(\u0026#39;#addHeader\u0026#39;).click(() =\u0026gt; { // Add header \u0026#34;before\u0026#34; .numbers div  const header = \u0026#34;\u0026lt;h2\u0026gt;Numbers\u0026lt;/h2\u0026gt;\u0026#34; $(\u0026#39;.numbers\u0026#39;).before(header) }) })  JS Bin on jsbin.com\n"
 },
 {
 	"uri": "/05-arrays-objects/array-iterators/find/",
@@ -782,6 +789,13 @@
 	"tags": [],
 	"description": "",
 	"content": " Lesson 06 Intro to DOM \u0026amp; jQuery "
+},
+{
+	"uri": "/homework-assignments/hw-assignment-03/",
+	"title": "HW Assignment #3",
+	"tags": [],
+	"description": "",
+	"content": " Summary of this week\u0026rsquo;s homework assignment: Due Date: Friday, August 30th\nComplete Homework #3 - Rock, Paper, Scissors Application  You are tasked with finishing the partially built Rock, Paper, Scissors application. The code is hosted on Github, see the url below:\n Github Repo for Homework #3 - Rock, Paper, Scissors Application  Use the Assignment Submission Git Workflow (detailed here) to access and submit the assignment\n  "
 },
 {
 	"uri": "/03-control-flow-and-loops/lab-js-basics-control-flow-loops/",
@@ -921,7 +935,7 @@
 	"title": ".after()",
 	"tags": [],
 	"description": "",
-	"content": " .after() Method  Method is used to insert content after the selected elements  Example $(() =\u0026gt; { $(\u0026#39;#addFooter\u0026#39;).click(() =\u0026gt; { // Add footer \u0026#34;after\u0026#34; .numbers div  const $footer = \u0026#34;\u0026lt;h2\u0026gt;Footer\u0026lt;/h2\u0026gt;\u0026#34; $(\u0026#39;.numbers\u0026#39;).after($footer) }) })  JS Bin on jsbin.com\n"
+	"content": " .after() Method  Method is used to insert content after the selected elements  Example $(() =\u0026gt; { $(\u0026#39;#addFooter\u0026#39;).click(() =\u0026gt; { // Add footer \u0026#34;after\u0026#34; .numbers div  const footer = \u0026#34;\u0026lt;h2\u0026gt;Footer\u0026lt;/h2\u0026gt;\u0026#34; $(\u0026#39;.numbers\u0026#39;).after(footer) }) })  JS Bin on jsbin.com\n"
 },
 {
 	"uri": "/06-dom-and-jquery/jquery-manipulation/getting-setting-content/attr/",
