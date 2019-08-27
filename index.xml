@@ -81,6 +81,17 @@
     </item>
     
     <item>
+      <title>AJAX Requests using Native JS</title>
+      <link>/08-http-and-apis/ajax/ajax-request-native-js/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/08-http-and-apis/ajax/ajax-request-native-js/</guid>
+      <description>Making AJAX Requests using Native JavaScript  JavaScript has a built-in object called XMLHttpRequest that can be used to make AJAX requests (i.e. Client-side HTTP requests made in the background which do not require a page refresh)
+ XMLHttpRequest is not normally used due to large amount to code needed to make requests; libraries jQuery (using $.ajax(), $.get(), etc) and others are often used in place of XMLHttpRequest
+  Example  Here&amp;rsquo;s an example of what an AJAX request using XMLHttpRequest looks like:  function logResponse(data) { console.</description>
+    </item>
+    
+    <item>
       <title>Add jQuery via Download</title>
       <link>/06-dom-and-jquery/jquery-overview/add-jquery/via-download/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -144,6 +155,17 @@ jQuery jQuery Documentation</description>
     </item>
     
     <item>
+      <title>Finding APIs</title>
+      <link>/08-http-and-apis/apis/finding-apis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/08-http-and-apis/apis/finding-apis/</guid>
+      <description>Where Do We Find APIs? APIs are published everywhere. Chances are good that most major content sources you follow online publish their data in some type of serialized format. Heck, even Marvel publishes an API. Look around for a &amp;ldquo;Developers&amp;rdquo; section on major websites.
+List Of Commonly Used APIs Here is a short list of commonly used APIs for testing purposes.
+   API Sample URL     This for That http://itsthisforthat.</description>
+    </item>
+    
+    <item>
       <title>Function Overview</title>
       <link>/04-functions-and-scope/function-overview/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -156,12 +178,59 @@ jQuery jQuery Documentation</description>
     </item>
     
     <item>
+      <title>GET</title>
+      <link>/08-http-and-apis/http/http-request/http-methods/get/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/08-http-and-apis/http/http-request/http-methods/get/</guid>
+      <description> GET  A GET request retrieves data at the provided URL
+ The most common HTTP method, as it&amp;rsquo;s the default when we enter a URL into our browser
+ For example, making the request GET https://restaurant-reviews.com/restaurants/353 returns the HTML content for Maysville restaurant.
+ GET requests are idempotent. We can make the same request again and again and get the same result.
+  </description>
+    </item>
+    
+    <item>
       <title>Global Scope</title>
       <link>/04-functions-and-scope/scope/global-scope/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/04-functions-and-scope/scope/global-scope/</guid>
       <description>Global Scope  Variables defined outside of a function are in in the Global Scope  Example // Global function because it was declared outside of a function let name = &amp;#39;Simone Biles&amp;#39; console.log(name) function bestGymnastEver() { // &amp;#39;name&amp;#39; variable is accessible here and everywhere else because it is global  console.log(name) } logName() // logs &amp;#39;Simone Biles&amp;#39;  JS Bin on jsbin.com</description>
+    </item>
+    
+    <item>
+      <title>JSON.stringify()</title>
+      <link>/08-http-and-apis/json/json-stringify/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/08-http-and-apis/json/json-stringify/</guid>
+      <description>JSON.stringify()  When JSON is used to send data from one service to the next &amp;ldquo;over the wire&amp;rdquo; (i.e. via cloud) it is transmitted as a string which makes it lightweight and fast
+ JSON.stringify() allows developers to easily transform objects / arrays (or any value) into a JSON string which makes it compatible to be transmitted along with an HTTP Request
+ &amp;ldquo;Stringify-ing&amp;rdquo; data is a common step developers take before sending data to another service</description>
+    </item>
+    
+    <item>
+      <title>Objectives</title>
+      <link>/08-http-and-apis/objectives/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/08-http-and-apis/objectives/</guid>
+      <description> Learn about APIs and understand how they are used
+ Understand APIs and why they are used
+ Explore a real use case of API usage
+  </description>
+    </item>
+    
+    <item>
+      <title>Status Codes</title>
+      <link>/08-http-and-apis/http/http-response/status-codes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/08-http-and-apis/http/http-response/status-codes/</guid>
+      <description>Status Codes  In the HTTP response that is sent to a client, the status code, which is a three-digit number, is accompanied by a reason phrase (also known as status text) that summarizes the meaning of the code
+ Along with the HTTP version of the response, these items are placed in the first line of the response, which is therefore known as the status line.
+ The status codes are classified by number range, with each class of codes having the same basic meaning</description>
     </item>
     
     <item>
@@ -339,6 +408,17 @@ We&amp;rsquo;ll discuss currentTarget and the .find() method later in the course
     </item>
     
     <item>
+      <title>AJAX Requests with jQuery</title>
+      <link>/08-http-and-apis/ajax/ajax-request-jquery/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/08-http-and-apis/ajax/ajax-request-jquery/</guid>
+      <description>Using $.ajax  jQuery offers an .ajax() method that can be used to make API calls
+ Example of an AJAX call using jQuery&amp;rsquo;s $.ajax method
+  $.ajax({ url: url, type: &amp;#34;GET&amp;#34;, dataType: &amp;#39;jsonp&amp;#39;, data: {term: term}, success: function(data){ // execute this function if request is successful  console.log(data) }, error: function() { // execute this function if request fails  alert(&amp;#39;error occurred&amp;#39;) } })  $.ajax() properties  url: address where the request is being sent type: HTTP method that is being used for the request (i.</description>
+    </item>
+    
+    <item>
       <title>Add jQuery via CDN</title>
       <link>/06-dom-and-jquery/jquery-overview/add-jquery/via-cdn/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -362,6 +442,22 @@ We&amp;rsquo;ll discuss currentTarget and the .find() method later in the course
     </item>
     
     <item>
+      <title>Clients &amp; Servers</title>
+      <link>/08-http-and-apis/clients-servers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/08-http-and-apis/clients-servers/</guid>
+      <description>Client &amp;amp; Servers  Computers connected to the web are called clients and servers
+ Communication between the client and server are done through requests and responses
+ A simplified diagram of how they interact might look like this:
+  Clients  Typically user-facing devices connected to the internet:
+ Computers
+ Mobile devices
+ Smart Speakers (Amazon Echo, Google Home)
+ Smart Appliances (Ring Doorbell, Nest Thermostat, etc)</description>
+    </item>
+    
+    <item>
       <title>Creating Arrays</title>
       <link>/05-arrays-objects/array-review/creating-arrays/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -371,6 +467,18 @@ We&amp;rsquo;ll discuss currentTarget and the .find() method later in the course
  An array can also be created with initial values
  Square brackets are a means of identifying if a variable is an array
   Example // declare a variable as an empty array let numbers = [] // or you can declare an array with initial values let streets = [&amp;#39;Broadway&amp;#39;, &amp;#39;Houston&amp;#39;, &amp;#39;Grand&amp;#39;]  JS Bin on jsbin.</description>
+    </item>
+    
+    <item>
+      <title>Data Formats</title>
+      <link>/08-http-and-apis/apis/data-formats/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/08-http-and-apis/apis/data-formats/</guid>
+      <description>What is Serialized Data?  All data sent via HTTP are strings
+ Unfortunately, what we really want to pass between web applications is structured data (i.e., arrays and hashes)
+ Thus, native data structures can be serialized into a string representation of the data
+ This string can be transmitted and then parsed back into data by another web agent.  There are two major serialized data formats&amp;hellip;</description>
     </item>
     
     <item>
@@ -433,6 +541,18 @@ We&amp;rsquo;ll discuss currentTarget and the .find() method later in the course
     </item>
     
     <item>
+      <title>JSON.parse()</title>
+      <link>/08-http-and-apis/json/json-parse/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/08-http-and-apis/json/json-parse/</guid>
+      <description>JSON.parse()  When JSON is received from another service, it is in a string format
+ In order to effectively work with JSON data in our code, we need to covert it so an object, array or value
+ JSON.parse() is a method that converts an stringified JSON to native JavaScript datatypes (most commonly objects or arrays)
+  Example const jsonString = &amp;#39;{&amp;#34;members&amp;#34;:[{&amp;#34;name&amp;#34;:&amp;#34;Spider-Man&amp;#34;,&amp;#34;alias&amp;#34;:&amp;#34;Peter Parker&amp;#34;},{&amp;#34;name&amp;#34;:&amp;#34;Black Widow&amp;#34;,&amp;#34;alias&amp;#34;:&amp;#34;Natasha Romanova&amp;#34;}]}&amp;#39; const parsedJson = JSON.</description>
+    </item>
+    
+    <item>
       <title>Local Scope</title>
       <link>/04-functions-and-scope/scope/local-scope/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -485,6 +605,17 @@ Converting Strings to Numbers  Sometimes you will find yourself in a position wh
     </item>
     
     <item>
+      <title>POST</title>
+      <link>/08-http-and-apis/http/http-request/http-methods/post/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/08-http-and-apis/http/http-request/http-methods/post/</guid>
+      <description>POST  A POST request creates a new item on the server
+ A request like POST https://restaurant-reviews.com/reviews could make a new review when we click the &amp;ldquo;Submit review&amp;rdquo; button on the webpage
+ POST requests are often accompanied by data passed along in the HTTP request body. e.g. when we write a review for Little Beet, we would include our username (eric), our review (The shrimp salad is so delightful), and a star rating (4 out of 5)</description>
+    </item>
+    
+    <item>
       <title>Scope in Block Statements</title>
       <link>/04-functions-and-scope/scope/block-statements/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -531,6 +662,17 @@ Converting Strings to Numbers  Sometimes you will find yourself in a position wh
     </item>
     
     <item>
+      <title>API Keys</title>
+      <link>/08-http-and-apis/apis/api-keys/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/08-http-and-apis/apis/api-keys/</guid>
+      <description>What Is An API Key?  While the majority of APIs are free to use, many of them require an API &amp;ldquo;key&amp;rdquo; that identifies the developer requesting data access
+ This is done to regulate usage and prevent abuse. Some APIs also rate-limit developers, meaning they have caps on the free data allowed during a given time period
+  Exercise A: Access the Giphy API Try hitting the Giphy API&amp;hellip;</description>
+    </item>
+    
+    <item>
       <title>Booleans</title>
       <link>/02-javascript-basics/data-types/booleans/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -551,6 +693,19 @@ Converting Strings to Numbers  Sometimes you will find yourself in a position wh
  To call a function you simply write function name followed by parentheses (don’t forget the parentheses!)
  Now you can call this function as many times as you want
   /** define / declare a function named shout() by itself this doesn&amp;#39;t do anything, we must &amp;#34;Call&amp;#34; it in order to use it **/ function shout() { console.</description>
+    </item>
+    
+    <item>
+      <title>PUT</title>
+      <link>/08-http-and-apis/http/http-request/http-methods/put/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/08-http-and-apis/http/http-request/http-methods/put/</guid>
+      <description> PUT  The PUT method updates an item at the specified resource
+ A request like PUT https://restaurant-reviews.com/restaurants/353 could update the information for Little Beet Restaurant after the owner edits the restaurant&amp;rsquo;s hours
+ Like POST requests, PUT requests come with data in the HTTP request body to specify the fields and new values to update
+ For example Hours: M-F 10a-10p, closed on Saturday and Sunday
+  </description>
     </item>
     
     <item>
@@ -707,6 +862,18 @@ superHero[&#39;secret identity&#39;]`
  We must use bracket notation when accessing keys that have numbers, spaces, or special characters in them
  Remember, object keys are always strings
   Example let superHero = { &amp;#39;secret identity&amp;#39;: &amp;#39;Peter Parker&amp;#39;, name: &amp;#39;Spiderman&amp;#39;, powers: [&amp;#39;super strength&amp;#39;, &amp;#39;hyper awareness&amp;#39;, &amp;#39;agility&amp;#39;, &amp;#39;genius intellect&amp;#39;], age: 17 } console.</description>
+    </item>
+    
+    <item>
+      <title>DELETE</title>
+      <link>/08-http-and-apis/http/http-request/http-methods/delete/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/08-http-and-apis/http/http-request/http-methods/delete/</guid>
+      <description>DELETE  The DELETE method removes the resource at the URL.
+ For example, DELETE https://restaurant-reviews.com/restaurants/353 will delete the review with the ID of 353
+ DELETE requests are not idempotent. When we make one of these requests, the state of the server changes. Making the request again would probably result in an error since the item was already deleted
+ The DELETE method is similar to the DELETE FROM statement</description>
     </item>
     
     <item>
@@ -1595,6 +1762,19 @@ HTML &amp;amp; CSS  Codecademy - HTML &amp;amp; CSS course
  There is no standard way to write pseudocode, use langauge that can be understood by technical and non-technical people
  Use pseudocode as an &amp;ldquo;outline&amp;rdquo; for your real code
   </description>
+    </item>
+    
+    <item>
+      <title>CORS</title>
+      <link>/class-resources/cors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/class-resources/cors/</guid>
+      <description> CORS  CORS is the policy that defines this, an acronym that stands for &amp;ldquo;Cross-Origin Resource Sharing&amp;rdquo;
+ You cannot normally make an AJAX request across different domains
+ Some domains don&amp;rsquo;t allow you to ping them from other domains and some do
+  Click here for more information about CORS
+ </description>
     </item>
     
     <item>

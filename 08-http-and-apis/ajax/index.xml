@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AJAX on GA JavaScript</title>
+    <link>/08-http-and-apis/ajax/</link>
+    <description>Recent content in AJAX on GA JavaScript</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/08-http-and-apis/ajax/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>AJAX Requests using Native JS</title>
+      <link>/08-http-and-apis/ajax/ajax-request-native-js/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/08-http-and-apis/ajax/ajax-request-native-js/</guid>
+      <description>Making AJAX Requests using Native JavaScript  JavaScript has a built-in object called XMLHttpRequest that can be used to make AJAX requests (i.e. Client-side HTTP requests made in the background which do not require a page refresh)
+ XMLHttpRequest is not normally used due to large amount to code needed to make requests; libraries jQuery (using $.ajax(), $.get(), etc) and others are often used in place of XMLHttpRequest
+  Example  Here&amp;rsquo;s an example of what an AJAX request using XMLHttpRequest looks like:  function logResponse(data) { console.</description>
+    </item>
+    
+    <item>
+      <title>AJAX Requests with jQuery</title>
+      <link>/08-http-and-apis/ajax/ajax-request-jquery/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/08-http-and-apis/ajax/ajax-request-jquery/</guid>
+      <description>Using $.ajax  jQuery offers an .ajax() method that can be used to make API calls
+ Example of an AJAX call using jQuery&amp;rsquo;s $.ajax method
+  $.ajax({ url: url, type: &amp;#34;GET&amp;#34;, dataType: &amp;#39;jsonp&amp;#39;, data: {term: term}, success: function(data){ // execute this function if request is successful  console.log(data) }, error: function() { // execute this function if request fails  alert(&amp;#39;error occurred&amp;#39;) } })  $.ajax() properties  url: address where the request is being sent type: HTTP method that is being used for the request (i.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -27,6 +27,10 @@
   </url>
   
   <url>
+    <loc>/08-http-and-apis/ajax/ajax-request-native-js/</loc>
+  </url>
+  
+  <url>
     <loc>/06-dom-and-jquery/jquery-overview/add-jquery/via-download/</loc>
   </url>
   
@@ -51,7 +55,15 @@
   </url>
   
   <url>
+    <loc>/08-http-and-apis/apis/finding-apis/</loc>
+  </url>
+  
+  <url>
     <loc>/04-functions-and-scope/function-overview/</loc>
+  </url>
+  
+  <url>
+    <loc>/08-http-and-apis/http/http-request/http-methods/get/</loc>
   </url>
   
   <url>
@@ -59,7 +71,27 @@
   </url>
   
   <url>
+    <loc>/08-http-and-apis/http/http-request/</loc>
+  </url>
+  
+  <url>
+    <loc>/08-http-and-apis/json/json-stringify/</loc>
+  </url>
+  
+  <url>
+    <loc>/08-http-and-apis/objectives/</loc>
+  </url>
+  
+  <url>
+    <loc>/08-http-and-apis/http/http-response/status-codes/</loc>
+  </url>
+  
+  <url>
     <loc>/02-javascript-basics/data-types/strings/</loc>
+  </url>
+  
+  <url>
+    <loc>/08-http-and-apis/http/http-request/urls/</loc>
   </url>
   
   <url>
@@ -124,6 +156,10 @@
   </url>
   
   <url>
+    <loc>/08-http-and-apis/ajax/ajax-request-jquery/</loc>
+  </url>
+  
+  <url>
     <loc>/05-arrays-objects/objects/accessing-properties/</loc>
   </url>
   
@@ -140,11 +176,19 @@
   </url>
   
   <url>
+    <loc>/08-http-and-apis/clients-servers/</loc>
+  </url>
+  
+  <url>
     <loc>/03-control-flow-and-loops/conditionals/</loc>
   </url>
   
   <url>
     <loc>/05-arrays-objects/array-review/creating-arrays/</loc>
+  </url>
+  
+  <url>
+    <loc>/08-http-and-apis/apis/data-formats/</loc>
   </url>
   
   <url>
@@ -168,7 +212,23 @@
   </url>
   
   <url>
+    <loc>/08-http-and-apis/http/</loc>
+  </url>
+  
+  <url>
+    <loc>/08-http-and-apis/http/http-request/http-methods/</loc>
+  </url>
+  
+  <url>
+    <loc>/08-http-and-apis/http/http-response/</loc>
+  </url>
+  
+  <url>
     <loc>/homework-assignments/hw-assignment-01/</loc>
+  </url>
+  
+  <url>
+    <loc>/08-http-and-apis/json/json-parse/</loc>
   </url>
   
   <url>
@@ -196,6 +256,10 @@
   </url>
   
   <url>
+    <loc>/08-http-and-apis/http/http-request/http-methods/post/</loc>
+  </url>
+  
+  <url>
     <loc>/04-functions-and-scope/scope/block-statements/</loc>
   </url>
   
@@ -216,7 +280,15 @@
   </url>
   
   <url>
+    <loc>/08-http-and-apis/apis/</loc>
+  </url>
+  
+  <url>
     <loc>/06-dom-and-jquery/jquery-effects/toggle/</loc>
+  </url>
+  
+  <url>
+    <loc>/08-http-and-apis/apis/api-keys/</loc>
   </url>
   
   <url>
@@ -233,6 +305,14 @@
   
   <url>
     <loc>/03-control-flow-and-loops/</loc>
+  </url>
+  
+  <url>
+    <loc>/08-http-and-apis/json/</loc>
+  </url>
+  
+  <url>
+    <loc>/08-http-and-apis/http/http-request/http-methods/put/</loc>
   </url>
   
   <url>
@@ -280,6 +360,10 @@
   </url>
   
   <url>
+    <loc>/08-http-and-apis/ajax/</loc>
+  </url>
+  
+  <url>
     <loc>/05-arrays-objects/array-review/accessing-array-values/</loc>
   </url>
   
@@ -297,6 +381,10 @@
   
   <url>
     <loc>/05-arrays-objects/objects/accessing-properties/bracket-notation/</loc>
+  </url>
+  
+  <url>
+    <loc>/08-http-and-apis/http/http-request/http-methods/delete/</loc>
   </url>
   
   <url>
@@ -564,11 +652,11 @@
   </url>
   
   <url>
-    <loc>/08-ajax-and-apis/</loc>
+    <loc>/07-dom-and-jquery-continued/code-along-traffic-light/</loc>
   </url>
   
   <url>
-    <loc>/07-dom-and-jquery-continued/code-along-traffic-light/</loc>
+    <loc>/08-http-and-apis/</loc>
   </url>
   
   <url>
@@ -706,6 +794,10 @@
   
   <url>
     <loc>/06-dom-and-jquery/jquery-traversing/</loc>
+  </url>
+  
+  <url>
+    <loc>/class-resources/cors/</loc>
   </url>
   
   <url>

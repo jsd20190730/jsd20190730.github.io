@@ -133,5 +133,18 @@ HTML &amp;amp; CSS  Codecademy - HTML &amp;amp; CSS course
  Flexbox - Flexbox Zombies</description>
     </item>
     
+    <item>
+      <title>CORS</title>
+      <link>/class-resources/cors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/class-resources/cors/</guid>
+      <description> CORS  CORS is the policy that defines this, an acronym that stands for &amp;ldquo;Cross-Origin Resource Sharing&amp;rdquo;
+ You cannot normally make an AJAX request across different domains
+ Some domains don&amp;rsquo;t allow you to ping them from other domains and some do
+  Click here for more information about CORS
+ </description>
+    </item>
+    
   </channel>
 </rss>
