@@ -168,6 +168,13 @@
 	"content": " Learn about APIs and understand how they are used\n Understand APIs and why they are used\n Explore a real use case of API usage\n  "
 },
 {
+	"uri": "/final-projects/overview-requirements/",
+	"title": "Overview &amp; Requirements",
+	"tags": [],
+	"description": "",
+	"content": " Overview  Final Projects are a requirement of \u0026ldquo;course completion\u0026rdquo;\n Project should be something that you are passionate about\n We\u0026rsquo;ve established some milestones (and due dates) that will help you stay on track to complete your projects on time\n Each milestone will include a deliverable  Instruction team will actively work with you to help you manage scope and come up with a project plan\n Click here for examples of what other GA FEWD students have built\n  Requirements For the final project, you\u0026rsquo;ll be designing and building a web application of your choice. This project will test your knowledge of JavaScript and ask you to apply everything you\u0026rsquo;ve learned in this course. The result will be a web app that you can add to your portfolio.\nYou could create anything from: a blog users can comment on; an app that allows users to search for social media posts; or a web-based game (memory, tic-tac-toe, etc). Use of an API is optional but highly recommended (because it\u0026rsquo;s fun!).\nI\u0026rsquo;ll work with you to determine the scope and feasibility of your ideas considering the amount of time remaining in the class and other other factors.\nYour final projects must make use of the following:\n JavaScript\n Adhere to DRY principle (Don\u0026rsquo;t Repeat Yourself)\n Code is properly indented\n Follow best practices for file/folder structure\n  "
+},
+{
 	"uri": "/08-http-and-apis/http/http-response/status-codes/",
 	"title": "Status Codes",
 	"tags": [],
@@ -448,6 +455,13 @@
 	"content": " Mac OS X Installation Instructions 1) Open your terminal application  Open your terminal (Applications \u0026gt; Utilities \u0026gt; Terminal)\n All of the following commands (below) that start with $ should be copied and pasted in your terminal / command prompt (also referred to as the \u0026ldquo;command line\u0026rdquo;)\n DO NOT include the \u0026lsquo;$\u0026rsquo; when copying and pasting the commands below; \u0026lsquo;$\u0026rsquo; is a universal symbol for the terminal / command line\n Press the enter / return key on your keyboard after pasting the command\n  2) Install brew  Brew is a package manager that we use to install various command line applications to your computer.\n Paste the following command in your Terminal, and hit enter:\n  $ ruby -e \u0026quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)\u0026quot;  3) Install Git Git is used to track the state of your code over time. GitHub has built its platform on Git technology. We will be using both Git and GitHub to distribute code, submit assignments, and offer feedback.\nPaste the following command in your Terminal, and hit enter to install Git:\n $ brew install git  4) Configure Git  Copy and paste the following two commands (separately) into your Terminal. Replace the name and email address values with your own   $ git config --global user.name \u0026quot;Steve Jobs\u0026quot; $ git config --global user.email \u0026quot;steve@apple.com\u0026quot;   Follow these instructions to create a new SSH Key (a special, very secure, key which allows your laptop access to your github account without having to remember your github password)\n Add your new SSH Key to GitHub following these instructions\n Verify your key works by running the following:\n  $ ssh git@github.com   You should see output similar to:   Hi \u0026lt;you\u0026gt;! You've successfully authenticated, but GitHub does not provide shell access. Connection to github.com closed.  5) Install Node  Refer to the package installer on Node’s website  "
 },
 {
+	"uri": "/final-projects/milestones-due-dates/",
+	"title": "Milestones &amp; Due Dates",
+	"tags": [],
+	"description": "",
+	"content": " Throughout the course you will be providing deliverables that will help keep your final projects on track to be completed on time.\nMilestones    Milestone Due Date     Submit three (3) of project ideas Tues, Sept 3rd   Get your project idea approved Thurs, Sept 5th   Create github repository for your final project Thurs, Sept 5th   Create and submit wireframes Tues, Sept 10th   Provide a project plan for your final project Tues, Sept 16th   Host your project Thurs, Sept 26th   Submit your final project Tues, Oct 1st    "
+},
+{
 	"uri": "/06-dom-and-jquery/jquery-events/mouse-events/",
 	"title": "Mouse Events",
 	"tags": [],
@@ -481,6 +495,13 @@
 	"tags": [],
 	"description": "",
 	"content": " Scope in Block Statements  Block statements like if and switch conditions or for and while loops, unlike functions, will create a new scope if you use let or const but NOT when you use var  Example  Declaring a variable within a Block statement using let creates local scope  if (true) { // this \u0026#39;if\u0026#39; conditional block creates a new scope because we use \u0026#39;let\u0026#39;  let name = \u0026#39;Prince\u0026#39; // name is local to the if block  console.log(name) // logs \u0026#39;Prince\u0026#39; } console.log(\u0026#39;----\u0026#39;) console.log(name) // \u0026lt;--- error because the \u0026#39;name\u0026#39; variable can only be accessed from within the block (due to the use of \u0026#39;let\u0026#39;)  JS Bin on jsbin.com\n Declaring a variable within a Block statement using var DOES NOT create local scope  if (true) { var name = \u0026#39;Prince\u0026#39; // declare a variable using \u0026#39;var`  console.log(name) // logs \u0026#39;Prince\u0026#39; } console.log(\u0026#39;----\u0026#39;) console.log(name) // \u0026lt;--- logs \u0026#39;Prince\u0026#39; because the \u0026#39;name\u0026#39; variable is in the global scope due to the use of `var`  JS Bin on jsbin.com\n"
+},
+{
+	"uri": "/final-projects/milestones-due-dates/submit-project-ideas/",
+	"title": "Submit Project Ideas",
+	"tags": [],
+	"description": "",
+	"content": " Milestone I: Submit Project Ideas  Submit three (3) ideas for your final project\n Deliverable: Use this form to submit your final project ideas\n Due Date: Tuesday, September 3rd\n After which, I\u0026rsquo;ll schedule some time to meet with you to discuss your ideas\n  "
 },
 {
 	"uri": "/06-dom-and-jquery/jquery-traversing/ancestors/",
@@ -558,6 +579,13 @@
 	"tags": [],
 	"description": "",
 	"content": " Lesson 03 Control Flow and Loops "
+},
+{
+	"uri": "/final-projects/milestones-due-dates/get-idea-approved/",
+	"title": "Get Idea Approved",
+	"tags": [],
+	"description": "",
+	"content": " Milestone II: Get Final Project Idea Approved  Due Date: Thursday, September 5th\n After meeting with the instructor and discussing your idea, you\u0026rsquo;ll formally decide what you want to build   "
 },
 {
 	"uri": "/08-http-and-apis/json/",
@@ -691,6 +719,13 @@
 	"tags": [],
 	"description": "",
 	"content": " Bracket Notation  Bracket notation is another way to to access a key’s value is by using bracket notation, [ ]\n To use bracket notation to access an object’s property, we pass in the property name (key) as a string\nsuperHero['secret identity']`\n We must use bracket notation when accessing keys that have numbers, spaces, or special characters in them\n Remember, object keys are always strings\n  Example let superHero = { \u0026#39;secret identity\u0026#39;: \u0026#39;Peter Parker\u0026#39;, name: \u0026#39;Spiderman\u0026#39;, powers: [\u0026#39;super strength\u0026#39;, \u0026#39;hyper awareness\u0026#39;, \u0026#39;agility\u0026#39;, \u0026#39;genius intellect\u0026#39;], age: 17 } console.log(superHero[\u0026#34;secret identity\u0026#34;]) console.log(superHero[\u0026#34;name\u0026#34;])  JS Bin on jsbin.com\nUsing variables to access properties  Bracket notation also allows us to use a variable inside the brackets to select the keys of an object  Example let superHero = { \u0026#39;secret identity\u0026#39;: \u0026#39;Peter Parker\u0026#39;, name: \u0026#39;Spiderman\u0026#39;, powers: [\u0026#39;super strength\u0026#39;, \u0026#39;hyper awareness\u0026#39;, \u0026#39;agility\u0026#39;, \u0026#39;genius intellect\u0026#39;], age: 17 } let attribute = \u0026#34;name\u0026#34; // use the \u0026#39;attribute\u0026#39; variable to access a property in superHero  let attributeValue = superHero[attribute] console.log(superHero[attribute]) // This is the result of trying the same thing using dot notation  console.log(superHero.attribute) // undefined  JS Bin on jsbin.com\n"
+},
+{
+	"uri": "/final-projects/milestones-due-dates/create-github-repository-for-final-project/",
+	"title": "Create Github Repository for Final Project",
+	"tags": [],
+	"description": "",
+	"content": " Milestone III: Create Github Repository for Final Project  Create a github repository for your final project, clone the project down to your \u0026lsquo;github\u0026rsquo; folder on your laptop\n Submit a link to your final project\u0026rsquo;s github repository\n Here\u0026rsquo;s an example of what link should look like: https://github.com/kareemgrant/kg-awesome-game  Due Date: Thursday, September 5th\n Deliverable: Use this form to submit your repository url\n  Do not include spaces in your github repository names\n - **Deliverable**: Submit a link to your github repo here -- "
 },
 {
 	"uri": "/08-http-and-apis/http/http-request/http-methods/delete/",
@@ -847,6 +882,13 @@
 	"content": " Lesson 05 Arrays \u0026amp; Objects "
 },
 {
+	"uri": "/final-projects/milestones-due-dates/create-submit-wireframes/",
+	"title": "Create &amp; Submit Wireframes",
+	"tags": [],
+	"description": "",
+	"content": " Milestone IV: Create and Submit Wireframes  Due Date: Tuesday, September 10th\n Create wireframes for each page layout (assuming you have multiple pages with different layouts) of your final project\n Instructions\n  The following assumes you have already created a github repository for your final project and cloned the project down to your \u0026lsquo;github\u0026rsquo; folder on your laptop (see Milestone II)\n  Add a new folder to your project files/folders for final project (created in Milestone II) called wireframes\n Add the digital version of your wireframe files to the newly created wireframes folder\n In Github Desktop: Commit your updates that includes the newly added wireframe files\n In Github Desktop: Push your commit to the remote repository for final project on Github.com so your changes can be reflected on Github.com\n Navigate to the repository on Github.com, open the wireframe folder (on Github.com) and copy the url (this url leads directly to your wireframes)\n Deliverable: Submit the url that leads directly to your wireframe files using this form\n  Here\u0026rsquo;s an example of what link should look like: https://github.com/kareemgrant/kg-awesome-game/tree/master/wireframes\n"
+},
+{
 	"uri": "/01-command-line-js-and-git/git-vocabulary/",
 	"title": "Git Vocabulary",
 	"tags": [],
@@ -964,6 +1006,13 @@
 	"tags": [],
 	"description": "",
 	"content": " Code Along: Color Scheme Switcher  The starter code for this code along is hosted on Github, see the url below:\n Code Along: Color Scheme Switcher  Use the Assignment Submission Git Workflow (detailed here) to access and submit the assignment\n  "
+},
+{
+	"uri": "/final-projects/milestones-due-dates/create-project-plan/",
+	"title": "Create Project Plan",
+	"tags": [],
+	"description": "",
+	"content": " Milestone V: Create Project Plan  Due Date: Tuesday, September 16th\n Work with the instructor team to break up your final project into a series of steps that you\u0026rsquo;ll turn into tasks\n  Details: TBD\nTrello is a free project management tool that uses the kanban approach to track tasks\n -- "
 },
 {
 	"uri": "/06-dom-and-jquery/",
@@ -1090,6 +1139,13 @@
 	"tags": [],
 	"description": "",
 	"content": " Functions can call other functions  Function reusability is key results in cleaner code\n Reusing functions leverages key programming principle - Don\u0026rsquo;t Repeat Yourself (DRY)\n  Example  In the example of below, the surfaceAreaOfCube function calls another function (areaOfSquare) instead of duplicating work that was already done  // Function that calculates area of a square  function areaOfSquare(side){ return side * side } areaOfSquare(3) // returns 9  // This is a function that calculates the // surface area of a cube that *reuses* the areaOfSquare function  function surfaceAreaOfCube(side){ return 6 * areaOfSquare(side) } surfaceAreaOfCube(7) // returns 294  JS Bin on jsbin.com\nExercise  Create a function named surfaceAreaOfSphere that calculates the surface area of the Sphere using the following formula: 4 * PI * r**2; the function MUST reuse the provided areaOfCircle function  JS Bin on jsbin.com\n"
+},
+{
+	"uri": "/final-projects/milestones-due-dates/host-final-project/",
+	"title": "Host Final Project",
+	"tags": [],
+	"description": "",
+	"content": " Milestone VI: Host Final Project Details TBD\n Due Date: Thursday, September 26th  "
 },
 {
 	"uri": "/04-functions-and-scope/function-expressions-anonymous-functions/",
@@ -1230,6 +1286,13 @@
 	"tags": [],
 	"description": "",
 	"content": " Single Responsibility Principle (SRP)  SRP is a programming best practice that advocates modular code\n Put another way, your programs should be broken up in such a way where each part is responsible for only one \u0026ldquo;thing\u0026rdquo; or domain\n SRP is often applied to functions\n  Applying SRP to Functions  This concepts calls for your functions to only be \u0026ldquo;responsible\u0026rdquo; for one thing\n Often you\u0026rsquo;ll find that the logic in your functions are doing too much (for example: making calculations AND displaying the result to the screen)\n In these cases you should break out those multiple responsibilities into multiple functions\n This is what we did in the Geometry Calculator code along\n  "
+},
+{
+	"uri": "/final-projects/milestones-due-dates/submit-final-project/",
+	"title": "Submit Final Project",
+	"tags": [],
+	"description": "",
+	"content": " Milestone VII: Submit Final Project Details TBD\n Due Date: Tuesday, Oct 1st  "
 },
 {
 	"uri": "/06-dom-and-jquery/jquery-events/",

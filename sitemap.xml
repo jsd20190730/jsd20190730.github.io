@@ -99,6 +99,10 @@
   </url>
   
   <url>
+    <loc>/final-projects/overview-requirements/</loc>
+  </url>
+  
+  <url>
     <loc>/08-http-and-apis/http/http-response/status-codes/</loc>
   </url>
   
@@ -260,6 +264,10 @@
   </url>
   
   <url>
+    <loc>/final-projects/milestones-due-dates/</loc>
+  </url>
+  
+  <url>
     <loc>/06-dom-and-jquery/jquery-events/mouse-events/</loc>
   </url>
   
@@ -277,6 +285,10 @@
   
   <url>
     <loc>/04-functions-and-scope/scope/block-statements/</loc>
+  </url>
+  
+  <url>
+    <loc>/final-projects/milestones-due-dates/submit-project-ideas/</loc>
   </url>
   
   <url>
@@ -321,6 +333,10 @@
   
   <url>
     <loc>/03-control-flow-and-loops/</loc>
+  </url>
+  
+  <url>
+    <loc>/final-projects/milestones-due-dates/get-idea-approved/</loc>
   </url>
   
   <url>
@@ -397,6 +413,10 @@
   
   <url>
     <loc>/05-arrays-objects/objects/accessing-properties/bracket-notation/</loc>
+  </url>
+  
+  <url>
+    <loc>/final-projects/milestones-due-dates/create-github-repository-for-final-project/</loc>
   </url>
   
   <url>
@@ -488,6 +508,10 @@
   </url>
   
   <url>
+    <loc>/final-projects/milestones-due-dates/create-submit-wireframes/</loc>
+  </url>
+  
+  <url>
     <loc>/01-command-line-js-and-git/git-vocabulary/</loc>
   </url>
   
@@ -553,6 +577,10 @@
   
   <url>
     <loc>/07-dom-and-jquery-continued/code-along-color-scheme-switcher-jquery/</loc>
+  </url>
+  
+  <url>
+    <loc>/final-projects/milestones-due-dates/create-project-plan/</loc>
   </url>
   
   <url>
@@ -625,6 +653,10 @@
   
   <url>
     <loc>/04-functions-and-scope/functions-calling-other-functions/</loc>
+  </url>
+  
+  <url>
+    <loc>/final-projects/milestones-due-dates/host-final-project/</loc>
   </url>
   
   <url>
@@ -705,6 +737,10 @@
   
   <url>
     <loc>/04-functions-and-scope/single-responsibility-principle/</loc>
+  </url>
+  
+  <url>
+    <loc>/final-projects/milestones-due-dates/submit-final-project/</loc>
   </url>
   
   <url>
