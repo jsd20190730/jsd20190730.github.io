@@ -9,24 +9,24 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>What are Variables? :: GA JavaScript</title>
+    <title>Code Along: Twilio SMS API :: GA JavaScript</title>
 
     
-    <link href="/css/nucleus.css?1567117601" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1567117601" rel="stylesheet">
-    <link href="/css/hybrid.css?1567117601" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1567117601" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1567117601" rel="stylesheet">
-    <link href="/css/auto-complete.css?1567117601" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1567117601" rel="stylesheet">
-    <link href="/css/theme.css?1567117601" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1567117601" rel="stylesheet">
-    <link href="/css/syntax.css?1567117601" rel="stylesheet">
+    <link href="/css/nucleus.css?1567117602" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1567117602" rel="stylesheet">
+    <link href="/css/hybrid.css?1567117602" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1567117602" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1567117602" rel="stylesheet">
+    <link href="/css/auto-complete.css?1567117602" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1567117602" rel="stylesheet">
+    <link href="/css/theme.css?1567117602" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1567117602" rel="stylesheet">
+    <link href="/css/syntax.css?1567117602" rel="stylesheet">
     
-      <link href="/css/theme-blue.css?1567117601" rel="stylesheet">
+      <link href="/css/theme-blue.css?1567117602" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1567117601"></script>
+    <script src="/js/jquery-3.3.1.min.js?1567117602"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -36,7 +36,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/02-javascript-basics/variables/what-are-variables/">
+  <body class="" data-url="/08-http-and-apis/code-along-twilio-api-sms/">
     <nav id="sidebar" class="">
 
 
@@ -89,14 +89,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1567117601"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1567117601"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1567117602"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1567117602"></script>
 <script type="text/javascript">
     
         var baseurl = "\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1567117601"></script>
+<script type="text/javascript" src="/js/search.js?1567117602"></script>
 
     
   </div>
@@ -557,7 +557,7 @@
   
     
     <li data-nav-id="/02-javascript-basics/" title="JavaScript Basics" class="dd-item
-        parent
+        
         
         
         ">
@@ -603,7 +603,7 @@
   
     
     <li data-nav-id="/02-javascript-basics/variables/" title="Variables" class="dd-item
-        parent
+        
         
         
         ">
@@ -627,7 +627,7 @@
  
   
     
-      <li data-nav-id="/02-javascript-basics/variables/what-are-variables/" title="What are Variables?" class="dd-item active">
+      <li data-nav-id="/02-javascript-basics/variables/what-are-variables/" title="What are Variables?" class="dd-item ">
         <a href="/02-javascript-basics/variables/what-are-variables/">
         What are Variables?
         
@@ -3478,7 +3478,7 @@
   
     
     <li data-nav-id="/08-http-and-apis/" title="HTTP and APIs" class="dd-item
-        
+        parent
         
         
         ">
@@ -4131,7 +4131,7 @@
  
   
     
-      <li data-nav-id="/08-http-and-apis/code-along-twilio-api-sms/" title="Code Along: Twilio SMS API" class="dd-item ">
+      <li data-nav-id="/08-http-and-apis/code-along-twilio-api-sms/" title="Code Along: Twilio SMS API" class="dd-item active">
         <a href="/08-http-and-apis/code-along-twilio-api-sms/">
         Code Along: Twilio SMS API
         
@@ -5016,13 +5016,7 @@
             
           
           
-            
-            
-          
-          
-            <a href='/'>JSD</a> > <a href='/02-javascript-basics/'>JavaScript Basics</a> > <a href='/02-javascript-basics/variables/'>Variables</a> > What are Variables?
-          
-        
+            <a href='/'>JSD</a> > <a href='/08-http-and-apis/'>HTTP and APIs</a> > Code Along: Twilio SMS API
           
         
           
@@ -5041,7 +5035,7 @@
 <ul>
 <li>
 <ul>
-<li><a href="#what-are-variables">What are variables?</a></li>
+<li><a href="#code-along-twilio-sms-api">Code Along: Twilio SMS API</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -5061,7 +5055,7 @@
           
             <h1>
               
-              What are Variables?
+              Code Along: Twilio SMS API
             </h1>
           
 
@@ -5070,23 +5064,28 @@
 
 
 
-<h3 id="what-are-variables">What are variables?</h3>
+<h3 id="code-along-twilio-sms-api">Code Along: Twilio SMS API</h3>
+
+<p>We&rsquo;ll be using the Twilio API to build a small app that sends text messages.</p>
+
+<p>1) <a href="https://www.twilio.com/docs/usage/tutorials/how-to-use-your-free-trial-account#sign-up-for-your-free-twilio-trial">Sign up for a free Twilio account</a></p>
+
+<p>2) <a href="https://www.twilio.com/docs/usage/tutorials/how-to-use-your-free-trial-account#verify-your-personal-phone-number">Verify your Personal Number</a> - trial accounts are only allowed to send SMS messages to &ldquo;verified numbers&rdquo;, follow this process and add your mobile phone number as a &ldquo;verified number&rdquo;</p>
+
+
+<div class="notices note" ><p>You can optionally set up a <a href="https://voice.google.com/u/0/about">Google Voice</a> number as an alternative to using your own mobile number</p>
+</div>
+
+
+<p>3) Get the starter code*: It&rsquo;s hosted on Github, see the url below:</p>
 
 <ul>
-<li><p>Allows us to store values and so our programs can keep track of Data</p></li>
+<li><p><a href="https://github.com/jsd20190730/twilio-sms">Code Along: Twilio SMS API</a></p></li>
 
-<li><p>Similar to algebra</p></li>
-
-<li><p>Helps you represent data or values</p></li>
-
-<li><p>Used to help your program “remember” values</p></li>
-
-<li><p>Can be thought of as a “box” that we put values in</p></li>
-
-<li><p>In programming, you store values in variables if you plan on referencing that value at a later time</p></li>
+<li><p>Use the Assignment Submission Git Workflow (<a href="/class-resources/git-workflow-submitting-assignments/">detailed here</a>) to access and submit the assignment</p></li>
 </ul>
 
-<p><img src="/images/11/variables_visualization.png" alt="inline" /></p>
+<p>4) Navigate to this guide: <a href="https://www.twilio.com/docs/sms/quickstart/node#send-an-outbound-sms-message-with-nodejs">Sending Outbound SMS with Nodejs</a> - we&rsquo;ll be following along with this guide to build the application</p>
 
 
 <footer class=" footline" >
@@ -5480,7 +5479,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -5495,9 +5493,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -5515,7 +5510,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -5528,7 +5522,6 @@
             
             
                 
-                    
                     
                 
                 
@@ -5545,9 +5538,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -7620,6 +7610,7 @@
             
             
                 
+                    
                     
                 
                 
@@ -7635,6 +7626,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -8071,6 +8065,7 @@
             
             
                 
+                    
                     
                 
                 
@@ -8090,6 +8085,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -8707,10 +8705,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/02-javascript-basics/variables/" title="Variables"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/08-http-and-apis/code-along-giphy-api/" title="Code Along: Giphy API"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/02-javascript-basics/variables/declaring-variables/" title="Declaring Variables" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/09-asynchronous-js-and-callbacks/" title="Asynchronous JS and Callbacks" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -8720,20 +8718,20 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1567117601"></script>
-    <script src="/js/perfect-scrollbar.min.js?1567117601"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1567117601"></script>
-    <script src="/js/jquery.sticky.js?1567117601"></script>
-    <script src="/js/featherlight.min.js?1567117601"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1567117601"></script>
-    <script src="/js/highlight.pack.js?1567117601"></script>
+    <script src="/js/clipboard.min.js?1567117602"></script>
+    <script src="/js/perfect-scrollbar.min.js?1567117602"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1567117602"></script>
+    <script src="/js/jquery.sticky.js?1567117602"></script>
+    <script src="/js/featherlight.min.js?1567117602"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1567117602"></script>
+    <script src="/js/highlight.pack.js?1567117602"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1567117601"></script>
-    <script src="/js/learn.js?1567117601"></script>
-    <script src="/js/hugo-learn.js?1567117601"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1567117602"></script>
+    <script src="/js/learn.js?1567117602"></script>
+    <script src="/js/hugo-learn.js?1567117602"></script>
 
-    <link href="/mermaid/mermaid.css?1567117601" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1567117601"></script>
+    <link href="/mermaid/mermaid.css?1567117602" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1567117602"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

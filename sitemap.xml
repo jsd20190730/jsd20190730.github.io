@@ -640,6 +640,10 @@
   </url>
   
   <url>
+    <loc>/08-http-and-apis/code-along-giphy-api/</loc>
+  </url>
+  
+  <url>
     <loc>/02-javascript-basics/comparison-operators/</loc>
   </url>
   
@@ -701,6 +705,10 @@
   
   <url>
     <loc>/07-dom-and-jquery-continued/code-along-traffic-light/</loc>
+  </url>
+  
+  <url>
+    <loc>/08-http-and-apis/code-along-twilio-api-sms/</loc>
   </url>
   
   <url>
