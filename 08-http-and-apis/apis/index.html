@@ -12,21 +12,21 @@
     <title>APIs :: GA JavaScript</title>
 
     
-    <link href="/css/nucleus.css?1567099725" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1567099725" rel="stylesheet">
-    <link href="/css/hybrid.css?1567099725" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1567099725" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1567099725" rel="stylesheet">
-    <link href="/css/auto-complete.css?1567099725" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1567099725" rel="stylesheet">
-    <link href="/css/theme.css?1567099725" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1567099725" rel="stylesheet">
-    <link href="/css/syntax.css?1567099725" rel="stylesheet">
+    <link href="/css/nucleus.css?1567102428" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1567102428" rel="stylesheet">
+    <link href="/css/hybrid.css?1567102428" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1567102428" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1567102428" rel="stylesheet">
+    <link href="/css/auto-complete.css?1567102428" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1567102428" rel="stylesheet">
+    <link href="/css/theme.css?1567102428" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1567102428" rel="stylesheet">
+    <link href="/css/syntax.css?1567102428" rel="stylesheet">
     
-      <link href="/css/theme-blue.css?1567099725" rel="stylesheet">
+      <link href="/css/theme-blue.css?1567102428" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1567099725"></script>
+    <script src="/js/jquery-3.3.1.min.js?1567102428"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -89,14 +89,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1567099725"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1567099725"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1567102428"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1567102428"></script>
 <script type="text/javascript">
     
         var baseurl = "\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1567099725"></script>
+<script type="text/javascript" src="/js/search.js?1567102428"></script>
 
     
   </div>
@@ -3569,6 +3569,25 @@
  
   
     
+      <li data-nav-id="/08-http-and-apis/http/overview/" title="Overview" class="dd-item ">
+        <a href="/08-http-and-apis/http/overview/">
+        Overview
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
     <li data-nav-id="/08-http-and-apis/http/http-request/" title="HTTP Requests" class="dd-item
         
         
@@ -3826,6 +3845,25 @@
  
   
     
+      <li data-nav-id="/08-http-and-apis/apis/overview/" title="Overview" class="dd-item ">
+        <a href="/08-http-and-apis/apis/overview/">
+        Overview
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
       <li data-nav-id="/08-http-and-apis/apis/finding-apis/" title="Finding APIs" class="dd-item ">
         <a href="/08-http-and-apis/apis/finding-apis/">
         Finding APIs
@@ -3917,6 +3955,25 @@
  
   
     
+      <li data-nav-id="/08-http-and-apis/json/overview/" title="Overview" class="dd-item ">
+        <a href="/08-http-and-apis/json/overview/">
+        Overview
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
       <li data-nav-id="/08-http-and-apis/json/json-stringify/" title="JSON.stringify()" class="dd-item ">
         <a href="/08-http-and-apis/json/json-stringify/">
         JSON.stringify()
@@ -3981,6 +4038,25 @@
           
 
         
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/08-http-and-apis/ajax/overview/" title="Overview" class="dd-item ">
+        <a href="/08-http-and-apis/ajax/overview/">
+        Overview
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
           
             
             
@@ -4723,11 +4799,7 @@
 <ul>
 <li>
 <ul>
-<li><a href="#what-is-an-api">What is an API?</a></li>
-<li><a href="#api-considerations">API Considerations</a></li>
-<li><a href="#what-happens-when-no-api-is-available">What happens when no API is available?</a></li>
-<li><a href="#api-data-formats">API Data Formats</a></li>
-<li><a href="#request-response-lifecycle">Request, Response lifecycle</a></li>
+<li><a href="#apis">APIs</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -4757,57 +4829,86 @@
 
 	
 
-<h3 id="what-is-an-api">What is an API?</h3>
+<h3 id="apis">APIs</h3>
 
-<ul>
-<li><p>Stands for &ldquo;Application Programing Interface&rdquo;</p></li>
 
-<li><p>A way to exchange data between servers / services (i.e. software to software communication)</p></li>
 
-<li><p>Set of programming instructions and standards for accessing a service, tool or application</p></li>
 
-<li><p>For example, Amazon.com released its API so that Web site developers could more easily access Amazon&rsquo;s product information</p></li>
 
-<li><p>In a nutshell, if you want to leverage information from another website or application your first choice should be to use an API (if they offer one)</p></li>
+
+
+
+<ul class="children children-li">
+	
+
+	
+		
+	
+
+	
+
+	
+		
+	
+		
+			
+				
+<li>
+<a href="/08-http-and-apis/apis/overview/" >Overview</a>
+</li>
+				
+
+				
+			
+			
+		
+	
+		
+			
+				
+<li>
+<a href="/08-http-and-apis/apis/finding-apis/" >Finding APIs</a>
+</li>
+				
+
+				
+			
+			
+		
+	
+		
+			
+				
+<li>
+<a href="/08-http-and-apis/apis/data-formats/" >Data Formats</a>
+</li>
+				
+
+				
+			
+			
+		
+	
+		
+			
+				
+<li>
+<a href="/08-http-and-apis/apis/api-keys/" >API Keys</a>
+</li>
+				
+
+				
+			
+			
+		
+	
+
+	
 </ul>
 
-<h3 id="api-considerations">API Considerations</h3>
 
-<ul>
-<li><p>Does the website I need data from even have an API?</p></li>
 
-<li><p>Do I need to authenticate with the remote data source before retrieving the information I need, either as an API consumer or as a user of that service?</p></li>
 
-<li><p>What are the URLs I use to access the data I need?</p>
-
-<ul>
-<li>In API terms, these URLs are known as <strong>endpoints</strong> and can usually be found in an API&rsquo;s documentation</li>
-</ul></li>
-</ul>
-
-<h3 id="what-happens-when-no-api-is-available">What happens when no API is available?</h3>
-
-<ul>
-<li><p>If the website you need data from does not have an API, you could resort to data scraping through the use of &ldquo;spiders&rdquo; which crawl websites and extracts information</p></li>
-
-<li><p>Many online services consider data scraping to be a violation of their Terms of Service</p></li>
-</ul>
-
-<h3 id="api-data-formats">API Data Formats</h3>
-
-<ul>
-<li><p>The &ldquo;modern standard&rdquo; for API responses is JSON, or JavaScript Object Notation</p></li>
-
-<li><p>Some APIs are implemented using XML, this includes the API for WordPress, which is implemented using the XML-RPC standard</p></li>
-</ul>
-
-<h3 id="request-response-lifecycle">Request, Response lifecycle</h3>
-
-<ul>
-<li><p>When making an API call, you are essentially making an <strong>Request</strong> to a server and then receiving a <strong>Response</strong></p></li>
-
-<li><p>Most of the time this response will contain data that you will make use of within your application</p></li>
-</ul>
 
 
 
@@ -7406,6 +7507,22 @@
 
                     
                     
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
                         
                     
                     
@@ -7610,38 +7727,6 @@
             
         
                     
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
                         
             
             
@@ -7673,6 +7758,86 @@
                     
                     
 
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
                         
             
@@ -8190,7 +8355,7 @@
 			<a class="nav nav-prev" href="/08-http-and-apis/http/http-response/status-codes/" title="Status Codes"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/08-http-and-apis/apis/finding-apis/" title="Finding APIs" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/08-http-and-apis/apis/overview/" title="Overview" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -8200,20 +8365,20 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1567099725"></script>
-    <script src="/js/perfect-scrollbar.min.js?1567099725"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1567099725"></script>
-    <script src="/js/jquery.sticky.js?1567099725"></script>
-    <script src="/js/featherlight.min.js?1567099725"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1567099725"></script>
-    <script src="/js/highlight.pack.js?1567099725"></script>
+    <script src="/js/clipboard.min.js?1567102428"></script>
+    <script src="/js/perfect-scrollbar.min.js?1567102428"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1567102428"></script>
+    <script src="/js/jquery.sticky.js?1567102428"></script>
+    <script src="/js/featherlight.min.js?1567102428"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1567102428"></script>
+    <script src="/js/highlight.pack.js?1567102428"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1567099725"></script>
-    <script src="/js/learn.js?1567099725"></script>
-    <script src="/js/hugo-learn.js?1567099725"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1567102428"></script>
+    <script src="/js/learn.js?1567102428"></script>
+    <script src="/js/hugo-learn.js?1567102428"></script>
 
-    <link href="/mermaid/mermaid.css?1567099725" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1567099725"></script>
+    <link href="/mermaid/mermaid.css?1567102428" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1567102428"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

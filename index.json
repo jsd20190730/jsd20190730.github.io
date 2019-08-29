@@ -35,6 +35,34 @@
 	"content": " Weekly In-Person Office Hours Every week, Woody, our Instructional Assistant will hold office hours on GA\u0026rsquo;s campus.\n Day / Time: Wednesdays, 6:30 PM to 8:30 PM\n Location: General Assembly\u0026rsquo;s campus\n Policy: Students have until 12:00 PM every Wednesday to send Woody a direct message (DM) on Slack to let him know they plan on coming to the in-person office hours. If no one contacts Woody by this time, he will not hold office hours\n  Supplementary Office Hours (Remote) Subject to the instructional team\u0026rsquo;s availability, we will be holding supplementary remote office hours in addition to the weekly in-person office office detailed above. These office hours will be provided online via a Zoom video call.\n Day / Time: See schedule below\n Location: Online via Zoom (link will be provided in Slack prior the start of office hours)\n Policy: No prior sign up required, just log drop in if you have questions\n  The schedule below will be updated as the course progresses.\n   Week Date Time     Aug 25 - Aug 31 Sunday, Aug 25th 11 AM to 1 PM    Friday, Aug 30th 6:30 PM to 8:30 PM   Sep 1 - Sep 7 N/A N/A   Sep 8 - Sep 14 N/A N/A   Sep 15 - Sep 21 TBA TBA   Sep 22 - Sep 28 TBA TBA   Sep 29 - Oct 5 TBA TBA    N/A = Not Available\n"
 },
 {
+	"uri": "/08-http-and-apis/ajax/overview/",
+	"title": "Overview",
+	"tags": [],
+	"description": "",
+	"content": " What is AJAX?  AJAX stands for Asynchronous JavaScript And XML\n The meaning: Web clients can send or receive data to/from the server without requesting an entire page - instead, clients can just request or send an arbitrary amount of data\n In front-end development, AJAX is often used to make API requests that will fetch data from another service without having to refresh the web page\n  Click here for more information about AJAX\n Benefits of AJAX  Update a web page without reloading the page\n Request data from a server - after the page has loaded\n Receive data from a server - after the page has loaded\n Send data to a server - in the background\n  "
+},
+{
+	"uri": "/08-http-and-apis/apis/overview/",
+	"title": "Overview",
+	"tags": [],
+	"description": "",
+	"content": " What is an API?  Stands for \u0026ldquo;Application Programing Interface\u0026rdquo;\n A way to exchange data between servers / services (i.e. software to software communication)\n Set of programming instructions and standards for accessing a service, tool or application\n For example, Amazon.com released its API so that Web site developers could more easily access Amazon\u0026rsquo;s product information\n In a nutshell, if you want to leverage information from another website or application your first choice should be to use an API (if they offer one)\n  API Considerations  Does the website I need data from even have an API?\n Do I need to authenticate with the remote data source before retrieving the information I need, either as an API consumer or as a user of that service?\n What are the URLs I use to access the data I need?\n In API terms, these URLs are known as endpoints and can usually be found in an API\u0026rsquo;s documentation   What happens when no API is available?  If the website you need data from does not have an API, you could resort to data scraping through the use of \u0026ldquo;spiders\u0026rdquo; which crawl websites and extracts information\n Many online services consider data scraping to be a violation of their Terms of Service\n  API Data Formats  The \u0026ldquo;modern standard\u0026rdquo; for API responses is JSON, or JavaScript Object Notation\n Some APIs are implemented using XML, this includes the API for WordPress, which is implemented using the XML-RPC standard\n  Request, Response lifecycle  When making an API call, you are essentially making an Request to a server and then receiving a Response\n Most of the time this response will contain data that you will make use of within your application\n  "
+},
+{
+	"uri": "/08-http-and-apis/http/overview/",
+	"title": "Overview",
+	"tags": [],
+	"description": "",
+	"content": " What is HTTP  HTTP stands for \u0026ldquo;HyperText Transfer Protocol\n HTTP is a protocol which allows the fetching of resources, such as HTML documents\n It is the foundation of any data exchange on the Web and it is a client-server\n Communication between client computers and web servers is done by sending HTTP Requests and receiving HTTP Responses\n  Example  A client (a browser) sends an HTTP request to the web\n An web server receives the request\n The server runs an application to process the request\n The server returns an HTTP response (output) to the browser\n The client (the browser) receives the response\n  Exercise: Inspect your Browser\u0026rsquo;s HTTP Request and Response We can use our browser\u0026rsquo;s developer tools to see what an HTTP Request and HTTP Response looks like when our browser visits a webpage:\nTry the following:\n Open up your browser\u0026rsquo;s developer tools\n Select the \u0026ldquo;Network\u0026rdquo; tab\n In your browser\u0026rsquo;s address bar, navigate to https://generalassemb.ly/\n In the \u0026ldquo;Network\u0026rdquo; tab of your developer tools, you will see a list of files that were received from the web server, inspect the file named: generalassemb.ly\n Inspect the \u0026ldquo;Headers\u0026rdquo;, \u0026ldquo;Preview\u0026rdquo; \u0026amp; \u0026ldquo;Response\u0026rdquo; tabs\n  "
+},
+{
+	"uri": "/08-http-and-apis/json/overview/",
+	"title": "Overview",
+	"tags": [],
+	"description": "",
+	"content": " What is JSON?  Stands for JavaScript Object Notation\n A way to store information in an organized, easy-to-access manner\n A popular way to send data from on web server (service) to another\n Most data between services are sent as objects\n JSON objects resemble a normal Javascript Object (it contains properties and values) but does not contain methods\n  { \u0026#34;id\u0026#34;: 1, \u0026#34;name\u0026#34;: \u0026#34;Scoobie Doo\u0026#34;, \u0026#34;favoriteFood\u0026#34;: \u0026#34;Scoobie Snacks\u0026#34; }  JSON Guidelines  Property names must be double-quoted strings in order to be considered compliant JSON\n Use meaningful property names\n Access properties of a JSON object using dot notation or bracket notation\n  Example const avengers = { members: [ { \u0026#34;name\u0026#34;: \u0026#34;Spider-Man\u0026#34;, \u0026#34;alias\u0026#34;: \u0026#34;Peter Parker\u0026#34; }, { \u0026#34;name\u0026#34;: \u0026#34;Black Widow\u0026#34;, \u0026#34;alias\u0026#34;: \u0026#34;Natasha Romanova\u0026#34; } ] } console.log(avengers.members[1].name) console.log(avengers[\u0026#34;members\u0026#34;][0].alias)  JS Bin on jsbin.com\n"
+},
+{
 	"uri": "/06-dom-and-jquery/jquery-overview/what-is-jquery/",
 	"title": "What is jQuery?",
 	"tags": [],
@@ -368,7 +396,7 @@
 	"title": "HTTP",
 	"tags": [],
 	"description": "",
-	"content": " What is HTTP  HTTP stands for \u0026ldquo;HyperText Transfer Protocol\n HTTP is a protocol which allows the fetching of resources, such as HTML documents\n It is the foundation of any data exchange on the Web and it is a client-server\n Communication between client computers and web servers is done by sending HTTP Requests and receiving HTTP Responses\n  Example  A client (a browser) sends an HTTP request to the web\n An web server receives the request\n The server runs an application to process the request\n The server returns an HTTP response (output) to the browser\n The client (the browser) receives the response\n  Exercise: Inspect your Browser\u0026rsquo;s HTTP Request and Response We can use our browser\u0026rsquo;s developer tools to see what an HTTP Request and HTTP Response looks like when our browser visits a webpage:\nTry the following:\n Open up your browser\u0026rsquo;s developer tools\n Select the \u0026ldquo;Network\u0026rdquo; tab\n In your browser\u0026rsquo;s address bar, navigate to https://generalassemb.ly/\n In the \u0026ldquo;Network\u0026rdquo; tab of your developer tools, you will see a list of files that were received from the web server, inspect the file named: generalassemb.ly\n Inspect the \u0026ldquo;Headers\u0026rdquo;, \u0026ldquo;Preview\u0026rdquo; \u0026amp; \u0026ldquo;Response\u0026rdquo; tabs\n  "
+	"content": " HTTP  Overview   HTTP Requests   HTTP Responses   "
 },
 {
 	"uri": "/08-http-and-apis/http/http-request/http-methods/",
@@ -487,7 +515,7 @@
 	"title": "APIs",
 	"tags": [],
 	"description": "",
-	"content": " What is an API?  Stands for \u0026ldquo;Application Programing Interface\u0026rdquo;\n A way to exchange data between servers / services (i.e. software to software communication)\n Set of programming instructions and standards for accessing a service, tool or application\n For example, Amazon.com released its API so that Web site developers could more easily access Amazon\u0026rsquo;s product information\n In a nutshell, if you want to leverage information from another website or application your first choice should be to use an API (if they offer one)\n  API Considerations  Does the website I need data from even have an API?\n Do I need to authenticate with the remote data source before retrieving the information I need, either as an API consumer or as a user of that service?\n What are the URLs I use to access the data I need?\n In API terms, these URLs are known as endpoints and can usually be found in an API\u0026rsquo;s documentation   What happens when no API is available?  If the website you need data from does not have an API, you could resort to data scraping through the use of \u0026ldquo;spiders\u0026rdquo; which crawl websites and extracts information\n Many online services consider data scraping to be a violation of their Terms of Service\n  API Data Formats  The \u0026ldquo;modern standard\u0026rdquo; for API responses is JSON, or JavaScript Object Notation\n Some APIs are implemented using XML, this includes the API for WordPress, which is implemented using the XML-RPC standard\n  Request, Response lifecycle  When making an API call, you are essentially making an Request to a server and then receiving a Response\n Most of the time this response will contain data that you will make use of within your application\n  "
+	"content": " APIs  Overview   Finding APIs   Data Formats   API Keys   "
 },
 {
 	"uri": "/06-dom-and-jquery/jquery-effects/toggle/",
@@ -501,7 +529,7 @@
 	"title": "API Keys",
 	"tags": [],
 	"description": "",
-	"content": " What Is An API Key?  While the majority of APIs are free to use, many of them require an API \u0026ldquo;key\u0026rdquo; that identifies the developer requesting data access\n This is done to regulate usage and prevent abuse. Some APIs also rate-limit developers, meaning they have caps on the free data allowed during a given time period\n  Exercise A: Access the Giphy API Try hitting the Giphy API\u0026hellip;\n No key: http://api.giphy.com/v1/gifs/search?q=funny+cat\n With key: http://api.giphy.com/v1/gifs/search?q=funny+cat\u0026amp;api_key=dc6zaTOxFJmzC\n  It is very important that you not push your API keys to a public Github repo.\n This is especially true when working with Amazon Web Services (AWS). Here\u0026rsquo;s an example of a stolen key horror story.\n Exercise B: Your First API Key(s) - 20min As a developer you will need to figure out how to navigate a site and find what your looking for\n Now go to the following web site(s) and sign up for an API key(s).\n giphy.com\n openweathermap.com\n   "
+	"content": " What Is An API Key?  While the majority of APIs are free to use, many of them require an API \u0026ldquo;key\u0026rdquo; that identifies the developer requesting data access\n This is done to regulate usage and prevent abuse. Some APIs also rate-limit developers, meaning they have caps on the free data allowed during a given time period\n  Exercise A: Access the Giphy API Try hitting the Giphy API\u0026hellip;\n No key: http://api.giphy.com/v1/gifs/search?q=funny+cat\n With key: http://api.giphy.com/v1/gifs/search?q=funny+cat\u0026amp;api_key=dc6zaTOxFJmzC\n  It is very important that you not push your API keys to a public Github repo.\n This is especially true when working with Amazon Web Services (AWS). Here\u0026rsquo;s an example of a stolen key horror story.\n Exercise B: Your First API Key(s) As a developer you will need to figure out how to navigate a site and find what your looking for\n Now go to the following web site(s) and sign up for an API key(s).\n giphy.com\n openweathermap.com\n   "
 },
 {
 	"uri": "/06-dom-and-jquery/jquery-overview/add-jquery/",
@@ -536,7 +564,7 @@
 	"title": "JSON",
 	"tags": [],
 	"description": "",
-	"content": " What is JSON?  Stands for JavaScript Object Notation\n A way to store information in an organized, easy-to-access manner\n A popular way to send data from on web server (service) to another\n Most data between services are sent as objects\n JSON objects resemble a normal Javascript Object (it contains properties and values) but does not contain methods\n  { \u0026#34;id\u0026#34;: 1, \u0026#34;name\u0026#34;: \u0026#34;Scoobie Doo\u0026#34;, \u0026#34;favoriteFood\u0026#34;: \u0026#34;Scoobie Snacks\u0026#34; }  JSON Guidelines  Property names must be double-quoted strings in order to be considered compliant JSON\n Use meaningful property names\n Access properties of a JSON object using dot notation or bracket notation\n  Example const avengers = { members: [ { \u0026#34;name\u0026#34;: \u0026#34;Spider-Man\u0026#34;, \u0026#34;alias\u0026#34;: \u0026#34;Peter Parker\u0026#34; }, { \u0026#34;name\u0026#34;: \u0026#34;Black Widow\u0026#34;, \u0026#34;alias\u0026#34;: \u0026#34;Natasha Romanova\u0026#34; } ] } console.log(avengers.members[1].name) console.log(avengers[\u0026#34;members\u0026#34;][0].alias)  JS Bin on jsbin.com\n"
+	"content": " JSON  Overview   JSON.stringify()   JSON.parse()   "
 },
 {
 	"uri": "/08-http-and-apis/http/http-request/http-methods/put/",
@@ -627,7 +655,7 @@
 	"title": "AJAX",
 	"tags": [],
 	"description": "",
-	"content": " What is AJAX?  AJAX stands for Asynchronous JavaScript And XML\n The meaning: Web clients can send or receive data to/from the server without requesting an entire page - instead, clients can just request or send an arbitrary amount of data\n In front-end development, AJAX is often used to make API requests that will fetch data from another service without having to refresh the web page\n  Click here for more information about AJAX\n Benefits of AJAX  Update a web page without reloading the page\n Request data from a server - after the page has loaded\n Receive data from a server - after the page has loaded\n Send data to a server - in the background\n  "
+	"content": " AJAX  Overview   AJAX Requests using Native JS   AJAX Requests with jQuery   "
 },
 {
 	"uri": "/05-arrays-objects/array-review/accessing-array-values/",

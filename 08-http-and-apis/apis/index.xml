@@ -11,6 +11,19 @@
     
     
     <item>
+      <title>Overview</title>
+      <link>/08-http-and-apis/apis/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/08-http-and-apis/apis/overview/</guid>
+      <description>What is an API?  Stands for &amp;ldquo;Application Programing Interface&amp;rdquo;
+ A way to exchange data between servers / services (i.e. software to software communication)
+ Set of programming instructions and standards for accessing a service, tool or application
+ For example, Amazon.com released its API so that Web site developers could more easily access Amazon&amp;rsquo;s product information
+ In a nutshell, if you want to leverage information from another website or application your first choice should be to use an API (if they offer one)</description>
+    </item>
+    
+    <item>
       <title>Finding APIs</title>
       <link>/08-http-and-apis/apis/finding-apis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

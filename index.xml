@@ -68,6 +68,58 @@
     </item>
     
     <item>
+      <title>Overview</title>
+      <link>/08-http-and-apis/ajax/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/08-http-and-apis/ajax/overview/</guid>
+      <description>What is AJAX?  AJAX stands for Asynchronous JavaScript And XML
+ The meaning: Web clients can send or receive data to/from the server without requesting an entire page - instead, clients can just request or send an arbitrary amount of data
+ In front-end development, AJAX is often used to make API requests that will fetch data from another service without having to refresh the web page
+  Click here for more information about AJAX</description>
+    </item>
+    
+    <item>
+      <title>Overview</title>
+      <link>/08-http-and-apis/apis/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/08-http-and-apis/apis/overview/</guid>
+      <description>What is an API?  Stands for &amp;ldquo;Application Programing Interface&amp;rdquo;
+ A way to exchange data between servers / services (i.e. software to software communication)
+ Set of programming instructions and standards for accessing a service, tool or application
+ For example, Amazon.com released its API so that Web site developers could more easily access Amazon&amp;rsquo;s product information
+ In a nutshell, if you want to leverage information from another website or application your first choice should be to use an API (if they offer one)</description>
+    </item>
+    
+    <item>
+      <title>Overview</title>
+      <link>/08-http-and-apis/http/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/08-http-and-apis/http/overview/</guid>
+      <description>What is HTTP  HTTP stands for &amp;ldquo;HyperText Transfer Protocol
+ HTTP is a protocol which allows the fetching of resources, such as HTML documents
+ It is the foundation of any data exchange on the Web and it is a client-server
+ Communication between client computers and web servers is done by sending HTTP Requests and receiving HTTP Responses
+  Example  A client (a browser) sends an HTTP request to the web</description>
+    </item>
+    
+    <item>
+      <title>Overview</title>
+      <link>/08-http-and-apis/json/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/08-http-and-apis/json/overview/</guid>
+      <description>What is JSON?  Stands for JavaScript Object Notation
+ A way to store information in an organized, easy-to-access manner
+ A popular way to send data from on web server (service) to another
+ Most data between services are sent as objects
+ JSON objects resemble a normal Javascript Object (it contains properties and values) but does not contain methods
+  { &amp;#34;id&amp;#34;: 1, &amp;#34;name&amp;#34;: &amp;#34;Scoobie Doo&amp;#34;, &amp;#34;favoriteFood&amp;#34;: &amp;#34;Scoobie Snacks&amp;#34; }  JSON Guidelines  Property names must be double-quoted strings in order to be considered compliant JSON</description>
+    </item>
+    
+    <item>
       <title>What is jQuery?</title>
       <link>/06-dom-and-jquery/jquery-overview/what-is-jquery/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

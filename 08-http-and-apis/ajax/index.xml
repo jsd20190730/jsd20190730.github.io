@@ -11,6 +11,18 @@
     
     
     <item>
+      <title>Overview</title>
+      <link>/08-http-and-apis/ajax/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/08-http-and-apis/ajax/overview/</guid>
+      <description>What is AJAX?  AJAX stands for Asynchronous JavaScript And XML
+ The meaning: Web clients can send or receive data to/from the server without requesting an entire page - instead, clients can just request or send an arbitrary amount of data
+ In front-end development, AJAX is often used to make API requests that will fetch data from another service without having to refresh the web page
+  Click here for more information about AJAX</description>
+    </item>
+    
+    <item>
       <title>AJAX Requests using Native JS</title>
       <link>/08-http-and-apis/ajax/ajax-request-native-js/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
