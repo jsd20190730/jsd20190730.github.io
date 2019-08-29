@@ -1246,6 +1246,13 @@
 	"content": " Lesson 08 HTTP and APIs "
 },
 {
+	"uri": "/homework-assignments/hw-assignment-04/",
+	"title": "HW Assignment #4",
+	"tags": [],
+	"description": "",
+	"content": " Summary of this week\u0026rsquo;s homework assignment: Due Date: Thursday, September 5th\nComplete Homework #4 - Weather App using OpenWeather API  You are tasked with leveraging the API from OpenWeatherMap to display the current weather for a given city. The starter code is hosted on Github, see the url below:\n Github Repo for Homework #4 - Weather App using OpenWeather API  Use the Assignment Submission Git Workflow (detailed here) to access and submit the assignment\n  "
+},
+{
 	"uri": "/02-javascript-basics/logical-operators/",
 	"title": "Logical Operators",
 	"tags": [],
