@@ -415,7 +415,7 @@ We&amp;rsquo;ll discuss currentTarget and the .find() method later in the course
       <guid>/08-http-and-apis/ajax/ajax-request-jquery/</guid>
       <description>Using $.ajax  jQuery offers an .ajax() method that can be used to make API calls
  Example of an AJAX call using jQuery&amp;rsquo;s $.ajax method
-  $.ajax({ url: url, type: &amp;#34;GET&amp;#34;, dataType: &amp;#39;jsonp&amp;#39;, data: {term: term}, success: function(data){ // execute this function if request is successful  console.log(data) }, error: function() { // execute this function if request fails  alert(&amp;#39;error occurred&amp;#39;) } })  $.ajax() properties  url: address where the request is being sent type: HTTP method that is being used for the request (i.</description>
+  $.ajax({ url: &amp;#39;some/url/specified/by/api&amp;#39;, type: &amp;#34;GET&amp;#34;, data: { name: &amp;#39;bob&amp;#39; } }) .done(() =&amp;gt; { // execute this function if request is successful  console.log(data) }) .fail(() =&amp;gt; { // execute this function if request fails  alert(&amp;#39;error occurred&amp;#39;) })  $.ajax() properties Here are some of the commonly used properties of the $.</description>
     </item>
     
     <item>

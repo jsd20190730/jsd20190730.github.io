@@ -12,21 +12,21 @@
     <title>AJAX Requests with jQuery :: GA JavaScript</title>
 
     
-    <link href="/css/nucleus.css?1566944991" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1566944991" rel="stylesheet">
-    <link href="/css/hybrid.css?1566944991" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1566944991" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1566944991" rel="stylesheet">
-    <link href="/css/auto-complete.css?1566944991" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1566944991" rel="stylesheet">
-    <link href="/css/theme.css?1566944991" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1566944991" rel="stylesheet">
-    <link href="/css/syntax.css?1566944991" rel="stylesheet">
+    <link href="/css/nucleus.css?1567099240" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1567099240" rel="stylesheet">
+    <link href="/css/hybrid.css?1567099240" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1567099240" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1567099240" rel="stylesheet">
+    <link href="/css/auto-complete.css?1567099240" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1567099240" rel="stylesheet">
+    <link href="/css/theme.css?1567099240" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1567099240" rel="stylesheet">
+    <link href="/css/syntax.css?1567099240" rel="stylesheet">
     
-      <link href="/css/theme-blue.css?1566944991" rel="stylesheet">
+      <link href="/css/theme-blue.css?1567099240" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1566944991"></script>
+    <script src="/js/jquery-3.3.1.min.js?1567099240"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -89,14 +89,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1566944991"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1566944991"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1567099240"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1567099240"></script>
 <script type="text/javascript">
     
         var baseurl = "\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1566944991"></script>
+<script type="text/javascript" src="/js/search.js?1567099240"></script>
 
     
   </div>
@@ -4731,6 +4731,7 @@
 <ul>
 <li><a href="#using-ajax">Using $.ajax</a></li>
 <li><a href="#ajax-properties"><code>$.ajax()</code> properties</a></li>
+<li><a href="#example">Example</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -4768,18 +4769,17 @@
 </ul>
 
 <div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js">  <span class="nx">$</span><span class="p">.</span><span class="nx">ajax</span><span class="p">({</span>
-    <span class="nx">url</span><span class="o">:</span> <span class="nx">url</span><span class="p">,</span>
+    <span class="nx">url</span><span class="o">:</span> <span class="s1">&#39;some/url/specified/by/api&#39;</span><span class="p">,</span>
     <span class="nx">type</span><span class="o">:</span> <span class="s2">&#34;GET&#34;</span><span class="p">,</span>
-    <span class="nx">dataType</span><span class="o">:</span> <span class="s1">&#39;jsonp&#39;</span><span class="p">,</span>
-    <span class="nx">data</span><span class="o">:</span> <span class="p">{</span><span class="nx">term</span><span class="o">:</span> <span class="nx">term</span><span class="p">},</span>
-    <span class="nx">success</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">data</span><span class="p">){</span>
-      <span class="c1">// execute this function if request is successful
-</span><span class="c1"></span>      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span>
-    <span class="p">},</span>
-    <span class="nx">error</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-      <span class="c1">// execute this function if request fails
-</span><span class="c1"></span>      <span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;error occurred&#39;</span><span class="p">)</span>
-    <span class="p">}</span>
+    <span class="nx">data</span><span class="o">:</span> <span class="p">{</span> <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;bob&#39;</span> <span class="p">}</span>
+  <span class="p">})</span>
+  <span class="p">.</span><span class="nx">done</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+    <span class="c1">// execute this function if request is successful
+</span><span class="c1"></span>    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span>
+  <span class="p">})</span>
+  <span class="p">.</span><span class="nx">fail</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+    <span class="c1">// execute this function if request fails
+</span><span class="c1"></span>    <span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;error occurred&#39;</span><span class="p">)</span>
   <span class="p">})</span>
 </code></pre></div>
 
@@ -4787,23 +4787,65 @@
 
 <h3 id="ajax-properties"><code>$.ajax()</code> properties</h3>
 
+<p>Here are some of the commonly used properties of the <code>$.ajax()</code> method:</p>
+
 <ul>
-<li>url: address where the request is being sent</li>
-<li>type: HTTP method that is being used for the request (i.e. GET, POST, PUT, DELETE), most of the time you&rsquo;ll be using GET or POST</li>
+<li><p><strong>url</strong>: address where the request is being sent</p></li>
 
-<li><p>dataType: type of data you are expecting from the response</p></li>
+<li><p><strong>type</strong>: HTTP method that is being used for the request (i.e. GET, POST, PUT, DELETE), most of the time you&rsquo;ll be using GET or POST</p></li>
 
-<li><p>data: data to be sent to the server, for GET requests, this info will be added to the url value</p></li>
+<li><p><strong>data</strong>: data to be sent to the server, for GET requests, this info will be added to the url value</p></li>
 
-<li><p>success: function that will be called if request is successfull</p></li>
+<li><p><strong>done</strong>: function that will be called if request is successful</p></li>
 
-<li><p>error: function that will be called if request fails</p></li>
+<li><p><strong>fail</strong>: function that will be called if request fails</p></li>
 </ul>
 
 
-<div class="notices tip" ><p>Click <a href="http://api.jquery.com/jquery.ajax/">here</a> more information about the $.ajax method</p>
+<div class="notices tip" ><p>Click <a href="http://api.jquery.com/jquery.ajax/">here</a> more information about the $.ajax() method</p>
 </div>
 
+
+<hr />
+
+<h3 id="example">Example</h3>
+
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="kd">function</span> <span class="nx">search</span> <span class="p">(</span><span class="nx">term</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">const</span> <span class="nx">url</span> <span class="o">=</span> <span class="s1">&#39;https://api.giphy.com/v1/gifs/search&#39;</span>
+
+  <span class="c1">// this is the public beta key, sign up for production if you want this to be live on the web
+</span><span class="c1"></span>  <span class="c1">// In a real project, NEVER store your API keys in Git
+</span><span class="c1"></span>  <span class="k">const</span> <span class="nx">apiKey</span> <span class="o">=</span> <span class="s1">&#39;2qqBvRkz56JiTUcMbOJbak5VRRLEbV84&#39;</span>
+
+  <span class="c1">// Makes an API request to the giphy server with a request for data using the search term
+</span><span class="c1"></span>  <span class="c1">// This uses jQuery&#39;s .ajax() function
+</span><span class="c1"></span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;step 2: make http request using $.ajax().&#39;</span><span class="p">)</span>
+
+  <span class="nx">$</span><span class="p">.</span><span class="nx">ajax</span><span class="p">({</span>
+    <span class="nx">url</span><span class="o">:</span> <span class="nx">url</span><span class="p">,</span>
+    <span class="nx">type</span><span class="o">:</span> <span class="s1">&#39;GET&#39;</span><span class="p">,</span>
+    <span class="nx">data</span><span class="o">:</span> <span class="p">{</span> <span class="nx">q</span><span class="o">:</span> <span class="nx">term</span><span class="p">,</span> <span class="nx">api_key</span><span class="o">:</span> <span class="nx">apiKey</span> <span class="p">}</span>
+  <span class="p">})</span>
+  <span class="p">.</span><span class="nx">done</span><span class="p">((</span><span class="nx">response</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;step 3a: call this function if request is successful&#39;</span><span class="p">)</span>
+
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">response</span><span class="p">)</span>
+  <span class="p">})</span>
+  <span class="p">.</span><span class="nx">fail</span><span class="p">((</span><span class="nx">error</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;step 3b: call this function if request errors out&#39;</span><span class="p">)</span>
+
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">error</span><span class="p">)</span>
+  <span class="p">})</span>
+<span class="p">}</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Step 1: invoke AJAX function.&#39;</span><span class="p">)</span>
+<span class="nx">search</span><span class="p">(</span><span class="s2">&#34;kittens&#34;</span><span class="p">)</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Step 4: End of JS file.&#39;</span><span class="p">)</span>
+</code></pre></div>
+
+<p><a class="jsbin-embed" href="https://jsbin.com/waniniv/embed?js,console">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?4.1.7"></script></p>
 
 
 <footer class=" footline" >
@@ -8198,20 +8240,20 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1566944991"></script>
-    <script src="/js/perfect-scrollbar.min.js?1566944991"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1566944991"></script>
-    <script src="/js/jquery.sticky.js?1566944991"></script>
-    <script src="/js/featherlight.min.js?1566944991"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1566944991"></script>
-    <script src="/js/highlight.pack.js?1566944991"></script>
+    <script src="/js/clipboard.min.js?1567099241"></script>
+    <script src="/js/perfect-scrollbar.min.js?1567099241"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1567099241"></script>
+    <script src="/js/jquery.sticky.js?1567099241"></script>
+    <script src="/js/featherlight.min.js?1567099241"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1567099241"></script>
+    <script src="/js/highlight.pack.js?1567099241"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1566944991"></script>
-    <script src="/js/learn.js?1566944991"></script>
-    <script src="/js/hugo-learn.js?1566944991"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1567099241"></script>
+    <script src="/js/learn.js?1567099241"></script>
+    <script src="/js/hugo-learn.js?1567099241"></script>
 
-    <link href="/mermaid/mermaid.css?1566944991" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1566944991"></script>
+    <link href="/mermaid/mermaid.css?1567099241" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1567099241"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
