@@ -12,21 +12,21 @@
     <title>Creating Promises :: GA JavaScript</title>
 
     
-    <link href="/css/nucleus.css?1567549960" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1567549960" rel="stylesheet">
-    <link href="/css/hybrid.css?1567549960" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1567549960" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1567549960" rel="stylesheet">
-    <link href="/css/auto-complete.css?1567549960" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1567549960" rel="stylesheet">
-    <link href="/css/theme.css?1567549960" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1567549960" rel="stylesheet">
-    <link href="/css/syntax.css?1567549960" rel="stylesheet">
+    <link href="/css/nucleus.css?1567553142" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1567553142" rel="stylesheet">
+    <link href="/css/hybrid.css?1567553142" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1567553142" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1567553142" rel="stylesheet">
+    <link href="/css/auto-complete.css?1567553142" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1567553142" rel="stylesheet">
+    <link href="/css/theme.css?1567553142" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1567553142" rel="stylesheet">
+    <link href="/css/syntax.css?1567553142" rel="stylesheet">
     
-      <link href="/css/theme-blue.css?1567549960" rel="stylesheet">
+      <link href="/css/theme-blue.css?1567553142" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1567549960"></script>
+    <script src="/js/jquery-3.3.1.min.js?1567553142"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -89,14 +89,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1567549960"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1567549960"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1567553142"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1567553142"></script>
 <script type="text/javascript">
     
         var baseurl = "\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1567549960"></script>
+<script type="text/javascript" src="/js/search.js?1567553142"></script>
 
     
   </div>
@@ -4373,6 +4373,25 @@
 
             
           
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/09-asynchronous-js-and-promises/promises/consuming-promises/" title="Consuming Promises" class="dd-item ">
+        <a href="/09-asynchronous-js-and-promises/promises/consuming-promises/">
+        Consuming Promises
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
         
         </ul>
       
@@ -5281,6 +5300,7 @@
 <li><a href="#executor-function">Executor Function</a></li>
 <li><a href="#example-basic-structure-of-an-executor-function">Example: Basic structure of an executor function</a></li>
 <li><a href="#example-creating-a-promise">Example: Creating a Promise</a></li>
+<li><a href="#alternative-syntax">Alternative Syntax</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -5406,6 +5426,39 @@
 </ul>
 
 <p><a class="jsbin-embed" href="https://jsbin.com/molejan/embed?js,console">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?4.1.7"></script></p>
+
+<hr />
+
+<h3 id="alternative-syntax">Alternative Syntax</h3>
+
+<p>The most common syntax for constructing promise involves combining the executor function with the Promise constructor</p>
+
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js">  <span class="k">const</span> <span class="nx">inventory</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="nx">sunglasses</span><span class="o">:</span> <span class="mi">202</span><span class="p">,</span>
+    <span class="nx">pants</span><span class="o">:</span> <span class="mi">421</span><span class="p">,</span>
+    <span class="nx">shirts</span><span class="o">:</span> <span class="mi">1344</span>
+  <span class="p">}</span>
+
+  <span class="c1">// Write your code below:
+</span><span class="c1"></span>
+  <span class="k">const</span> <span class="nx">orderSunglasses</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="k">new</span> <span class="nb">Promise</span><span class="p">((</span><span class="nx">resolve</span><span class="p">,</span> <span class="nx">reject</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+      <span class="k">if</span> <span class="p">(</span><span class="nx">inventory</span><span class="p">.</span><span class="nx">sunglasses</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">resolve</span><span class="p">(</span><span class="s1">&#39;Sunglasses order processed.&#39;</span><span class="p">)</span>
+      <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="nx">reject</span><span class="p">(</span><span class="s1">&#39;That item is sold out.&#39;</span><span class="p">)</span>
+      <span class="p">}</span>
+    <span class="p">})</span>
+  <span class="p">}</span>
+
+  <span class="k">const</span> <span class="nx">orderPromise</span> <span class="o">=</span> <span class="nx">orderSunglasses</span><span class="p">()</span>
+
+  <span class="c1">// print out the promise object
+</span><span class="c1"></span>  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">orderPromise</span><span class="p">)</span>
+  
+</code></pre></div>
+
+<p><a class="jsbin-embed" href="https://jsbin.com/zahurez/embed?js,console">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?4.1.7"></script></p>
 
 
 <footer class=" footline" >
@@ -8577,6 +8630,25 @@
             
         
                     
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -8587,9 +8659,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -9210,7 +9279,7 @@
 			<a class="nav nav-prev" href="/09-asynchronous-js-and-promises/promises/overview/" title="Overview"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/10-project-build-a-slackbot/" title="Project: Build a Slackbot" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/09-asynchronous-js-and-promises/promises/consuming-promises/" title="Consuming Promises" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -9220,20 +9289,20 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1567549960"></script>
-    <script src="/js/perfect-scrollbar.min.js?1567549960"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1567549960"></script>
-    <script src="/js/jquery.sticky.js?1567549960"></script>
-    <script src="/js/featherlight.min.js?1567549960"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1567549960"></script>
-    <script src="/js/highlight.pack.js?1567549960"></script>
+    <script src="/js/clipboard.min.js?1567553142"></script>
+    <script src="/js/perfect-scrollbar.min.js?1567553142"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1567553142"></script>
+    <script src="/js/jquery.sticky.js?1567553142"></script>
+    <script src="/js/featherlight.min.js?1567553142"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1567553142"></script>
+    <script src="/js/highlight.pack.js?1567553142"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1567549960"></script>
-    <script src="/js/learn.js?1567549960"></script>
-    <script src="/js/hugo-learn.js?1567549960"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1567553142"></script>
+    <script src="/js/learn.js?1567553142"></script>
+    <script src="/js/hugo-learn.js?1567553142"></script>
 
-    <link href="/mermaid/mermaid.css?1567549960" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1567549960"></script>
+    <link href="/mermaid/mermaid.css?1567553142" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1567553142"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

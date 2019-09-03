@@ -34,5 +34,17 @@ const executorFunction = (resolve, reject) =&amp;gt; { } const myPromise = new P
  The executor function generally starts an asynchronous operation and dictates how the promise should be settled</description>
     </item>
     
+    <item>
+      <title>Consuming Promises</title>
+      <link>/09-asynchronous-js-and-promises/promises/consuming-promises/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/09-asynchronous-js-and-promises/promises/consuming-promises/</guid>
+      <description>Consuming Promises  While knowing how to construct a promise is useful, most of your interactions with promises will be spent consuming (or using) Promises
+ Put another way, you’ll be handling Promise objects returned to you as the result of an asynchronous operation
+ These promises will start off pending but must settle eventually
+  Settling Promises  Promise objects offer a .then() function that allows us to dictate what should happen after the promise settles</description>
+    </item>
+    
   </channel>
 </rss>

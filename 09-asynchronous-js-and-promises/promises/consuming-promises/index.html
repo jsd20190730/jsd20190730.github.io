@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Updating Array Values :: GA JavaScript</title>
+    <title>Consuming Promises :: GA JavaScript</title>
 
     
     <link href="/css/nucleus.css?1567553143" rel="stylesheet">
@@ -36,7 +36,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/05-arrays-objects/array-review/updating-array-values/">
+  <body class="" data-url="/09-asynchronous-js-and-promises/promises/consuming-promises/">
     <nav id="sidebar" class="">
 
 
@@ -1608,7 +1608,7 @@
   
     
     <li data-nav-id="/05-arrays-objects/" title="Arrays &amp; Objects" class="dd-item
-        parent
+        
         
         
         ">
@@ -1635,7 +1635,7 @@
   
     
     <li data-nav-id="/05-arrays-objects/array-review/" title="Array Review" class="dd-item
-        parent
+        
         
         
         ">
@@ -1699,7 +1699,7 @@
  
   
     
-      <li data-nav-id="/05-arrays-objects/array-review/updating-array-values/" title="Updating Array Values" class="dd-item active">
+      <li data-nav-id="/05-arrays-objects/array-review/updating-array-values/" title="Updating Array Values" class="dd-item ">
         <a href="/05-arrays-objects/array-review/updating-array-values/">
         Updating Array Values
         
@@ -4177,7 +4177,7 @@
   
     
     <li data-nav-id="/09-asynchronous-js-and-promises/" title="Asynchronous JS and Promises" class="dd-item
-        
+        parent
         
         
         ">
@@ -4318,7 +4318,7 @@
   
     
     <li data-nav-id="/09-asynchronous-js-and-promises/promises/" title="Promises" class="dd-item
-        
+        parent
         
         
         ">
@@ -4380,7 +4380,7 @@
  
   
     
-      <li data-nav-id="/09-asynchronous-js-and-promises/promises/consuming-promises/" title="Consuming Promises" class="dd-item ">
+      <li data-nav-id="/09-asynchronous-js-and-promises/promises/consuming-promises/" title="Consuming Promises" class="dd-item active">
         <a href="/09-asynchronous-js-and-promises/promises/consuming-promises/">
         Consuming Promises
         
@@ -5275,7 +5275,7 @@
             
           
           
-            <a href='/'>JSD</a> > <a href='/05-arrays-objects/'>Arrays & Objects</a> > <a href='/05-arrays-objects/array-review/'>Array Review</a> > Updating Array Values
+            <a href='/'>JSD</a> > <a href='/09-asynchronous-js-and-promises/'>Asynchronous JS and Promises</a> > <a href='/09-asynchronous-js-and-promises/promises/'>Promises</a> > Consuming Promises
           
         
           
@@ -5296,8 +5296,9 @@
 <ul>
 <li>
 <ul>
-<li><a href="#updating-arrays-values">Updating Arrays Values</a></li>
-<li><a href="#example">Example</a></li>
+<li><a href="#consuming-promises">Consuming Promises</a></li>
+<li><a href="#settling-promises">Settling Promises</a></li>
+<li><a href="#example-setting-promises">Example: Setting Promises</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -5317,7 +5318,7 @@
           
             <h1>
               
-              Updating Array Values
+              Consuming Promises
             </h1>
           
 
@@ -5326,28 +5327,48 @@
 
 
 
-<h3 id="updating-arrays-values">Updating Arrays Values</h3>
+<h3 id="consuming-promises">Consuming Promises</h3>
 
 <ul>
-<li>You can change a value in an array by referencing the value and then changing the value using an <code>=</code> (equal sign)</li>
+<li><p>While knowing how to construct a promise is useful, most of your interactions with promises will be spent <strong>consuming</strong> (or using) Promises</p></li>
+
+<li><p>Put another way, you’ll be handling Promise objects returned to you as the result of an asynchronous operation</p></li>
+
+<li><p>These promises will start off pending but must settle eventually</p></li>
 </ul>
 
-<h3 id="example">Example</h3>
+<hr />
 
-<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="c1">// declare a variable called newEditionMembers and use it to store
-</span><span class="c1">// an array of names
-</span><span class="c1"></span>
-<span class="kd">let</span> <span class="nx">newEditionMembers</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;Ricky Bell&#34;</span><span class="p">,</span> <span class="s2">&#34;Michael Bivins&#34;</span><span class="p">,</span> <span class="s2">&#34;Bobby Brown&#34;</span><span class="p">,</span> <span class="s2">&#34;Ronnie DeVoe&#34;</span><span class="p">,</span> <span class="s2">&#34;Ralph Tresvant&#34;</span><span class="p">]</span>
+<h3 id="settling-promises">Settling Promises</h3>
 
-<span class="c1">// We are going replace Bobby Brown with Johnny Gill
-</span><span class="c1">// by referencing the 3rd element of the array by using index 2
-</span><span class="c1">// and then use assignment (just an equal sign) to change
-</span><span class="c1">// the value to Johnny Gill
-</span><span class="c1"></span>
-<span class="nx">newEditionMembers</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&#34;Johnny Gill&#34;</span><span class="p">;</span>
+<ul>
+<li><p>Promise objects offer a <code>.then()</code> function that allows us to dictate what should happen after the promise settles</p></li>
+
+<li><p><code>.then()</code> is a function that takes two callback functions as arguments; when the promise settles, the appropriate handler will be invoked with that settled value</p>
+
+<ul>
+<li><p><code>onFulfilled</code>: The first handler is the success handler, and it should contain the logic for the <strong>promise resolving</strong></p></li>
+
+<li><p><code>onRejected</code>: The second handler is the failure handler, and it should contain the logic for the <strong>promise rejecting</strong></p></li>
+</ul></li>
+</ul>
+
+<hr />
+
+<h3 id="example-setting-promises">Example: Setting Promises</h3>
+
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="kd">let</span> <span class="nx">promise</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Promise</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">resolve</span><span class="p">,</span> <span class="nx">reject</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">setTimeout</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="nx">resolve</span><span class="p">(</span><span class="s2">&#34;done!&#34;</span><span class="p">),</span> <span class="mi">1000</span><span class="p">)</span>
+<span class="p">})</span>
+
+<span class="c1">// resolve runs the first function in .then
+</span><span class="c1"></span><span class="nx">promise</span><span class="p">.</span><span class="nx">then</span><span class="p">(</span>
+  <span class="nx">result</span> <span class="p">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">),</span> <span class="c1">// shows &#34;done!&#34; after 1 second
+</span><span class="c1"></span>  <span class="nx">error</span> <span class="p">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">error</span><span class="p">)</span> <span class="c1">// doesn&#39;t run
+</span><span class="c1"></span><span class="p">)</span>
 </code></pre></div>
 
-<p><a class="jsbin-embed" href="https://jsbin.com/zakupon/embed?js,console">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?4.1.7"></script></p>
+<p><a class="jsbin-embed" href="https://jsbin.com/babuwat/embed?js,console">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?4.1.7"></script></p>
 
 
 <footer class=" footline" >
@@ -6531,7 +6552,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -6546,7 +6566,6 @@
             
             
                 
-                    
                     
                 
                 
@@ -6562,9 +6581,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -6598,7 +6614,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -6614,9 +6629,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -8367,6 +8379,7 @@
             
             
                 
+                    
                     
                 
                 
@@ -8383,6 +8396,9 @@
             
                 
                     
+                        
+                        
+                    
                 
                 
 
@@ -8479,6 +8495,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -8491,6 +8508,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -8523,6 +8543,7 @@
             
             
                 
+                    
                     
                 
                 
@@ -8545,6 +8566,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -9162,10 +9186,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/05-arrays-objects/array-review/accessing-array-values/" title="Accessing Array Values"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/09-asynchronous-js-and-promises/promises/creating-promises/" title="Creating Promises"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/05-arrays-objects/array-review/adding-removing-items/" title="Adding &amp; Removing Items" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/10-project-build-a-slackbot/" title="Project: Build a Slackbot" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
