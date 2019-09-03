@@ -784,6 +784,10 @@
   </url>
   
   <url>
+    <loc>/08-http-and-apis/lab-send-receive-sms-twilio-api/</loc>
+  </url>
+  
+  <url>
     <loc>/04-functions-and-scope/single-responsibility-principle/</loc>
   </url>
   

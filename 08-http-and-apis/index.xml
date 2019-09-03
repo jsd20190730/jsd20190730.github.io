@@ -62,5 +62,14 @@
 You can optionally set up a Google Voice number as an alternative to using your own mobile number</description>
     </item>
     
+    <item>
+      <title>Lab: Send &amp; Receive with Twilio SMS API</title>
+      <link>/08-http-and-apis/lab-send-receive-sms-twilio-api/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/08-http-and-apis/lab-send-receive-sms-twilio-api/</guid>
+      <description>Lab: Sending and Receiving with Twilio SMS API We&amp;rsquo;re going to build on the Twilio Code Along and follow this tutorial: https://www.twilio.com/docs/sms/quickstart/node#receive-and-reply-to-inbound-sms-messages-with-express</description>
+    </item>
+    
   </channel>
 </rss>

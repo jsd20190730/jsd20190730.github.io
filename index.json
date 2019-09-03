@@ -1365,6 +1365,13 @@
 	"content": " Lesson 09 Asynchronous JS and Promises "
 },
 {
+	"uri": "/08-http-and-apis/lab-send-receive-sms-twilio-api/",
+	"title": "Lab: Send &amp; Receive with Twilio SMS API",
+	"tags": [],
+	"description": "",
+	"content": " Lab: Sending and Receiving with Twilio SMS API We\u0026rsquo;re going to build on the Twilio Code Along and follow this tutorial: https://www.twilio.com/docs/sms/quickstart/node#receive-and-reply-to-inbound-sms-messages-with-express\n"
+},
+{
 	"uri": "/04-functions-and-scope/single-responsibility-principle/",
 	"title": "Single Responsibility Principle",
 	"tags": [],
