@@ -168,6 +168,20 @@
 	"content": " Learn about APIs and understand how they are used\n Understand APIs and why they are used\n Explore a real use case of API usage\n  "
 },
 {
+	"uri": "/09-asynchronous-js-and-promises/objectives/",
+	"title": "Objectives",
+	"tags": [],
+	"description": "",
+	"content": " xxx\n xxx\n xxx\n  "
+},
+{
+	"uri": "/09-asynchronous-js-and-promises/promises/overview/",
+	"title": "Overview",
+	"tags": [],
+	"description": "",
+	"content": " What are Promises?  Promises are objects that represent the eventual outcome of an asynchronous operation\n A Promise object can be in one of three states:\n Pending: The initial state the operation has not completed yet\n Fulfilled: The operation has completed successfully and the promise now has a resolved value; for example, a request’s promise might resolve with a JSON object as its value.\n Rejected: The operation has failed and the promise has a reason for the failure; This reason is usually an Error of some kind.\n   Dishwasher Analogy  We refer to a promise as settled if it is no longer pending— it is either fulfilled or rejected\n Let’s think of a dishwasher as having the states of a promise:\n Pending: The dishwasher is running but has not completed the washing cycle.\n Fulfilled: The dishwasher has completed the washing cycle and is full of clean dishes.\n Rejected: The dishwasher encountered a problem (it didn’t receive soap!) and returns unclean dishes.\n  If our dishwashing promise is fulfilled, we’ll be able to perform related tasks, such as unloading the clean dishes from the dishwasher\n If it’s rejected, we can take alternate steps, such as running it again with soap or washing the dishes by hand\n All promises must eventually settle; this enables us to write logic for what to do if the promise fulfills or if it rejects\n  "
+},
+{
 	"uri": "/final-projects/overview-requirements/",
 	"title": "Overview &amp; Requirements",
 	"tags": [],
@@ -357,6 +371,13 @@
 	"content": " Creating Arrays  You can create that doesn\u0026rsquo;t initially contain any values, this is called an empty array\n An array can also be created with initial values\n Square brackets are a means of identifying if a variable is an array\n  Example // declare a variable as an empty array let numbers = [] // or you can declare an array with initial values let streets = [\u0026#39;Broadway\u0026#39;, \u0026#39;Houston\u0026#39;, \u0026#39;Grand\u0026#39;]  JS Bin on jsbin.com\n"
 },
 {
+	"uri": "/09-asynchronous-js-and-promises/promises/creating-promises/",
+	"title": "Creating Promises",
+	"tags": [],
+	"description": "",
+	"content": " Creating Promise Objects  To create a new Promise object, we use the new keyword and the Promise constructor method:\nconst executorFunction = (resolve, reject) =\u0026gt; { } const myPromise = new Promise(executorFunction)  The Promise constructor method takes a function parameter called the executor function which runs automatically when the constructor is called\n The executor function generally starts an asynchronous operation and dictates how the promise should be settled\n  We\u0026rsquo;ll talk more about constructor methods in a later lesson\n Executor Function  The executor function has two function parameters:\n resolve(): If invoked, resolve() will change the promise’s status from \u0026ldquo;pending\u0026rdquo; to \u0026ldquo;fulfilled\u0026rdquo;, and the promise’s resolved value will be set to the argument passed into resolve()\n reject(): If invoked, reject() will change the promise’s status from \u0026ldquo;pending\u0026rdquo; to \u0026ldquo;rejected\u0026rdquo;, and the promise’s rejection reason be set to the argument passed into reject()\n  The resolve() and reject() functions aren’t defined by the programmer; when the Promise constructor runs, JavaScript will pass its own resolve() and reject() functions into the executor function\n  Example: Basic structure of an executor function // example below is meant to show structure only, this is not working code  const executorFunction = (resolve, reject) =\u0026gt; { if (someCondition) { resolve(\u0026#39;I resolved!\u0026#39;) } else { reject(\u0026#39;I rejected!\u0026#39;) } } // pass the executor function as a parameter to the Promise constructor  const myPromise = new Promise(executorFunction);  In the example above, myPromise resolves or rejects based on a simple condition, but, in practice, promises settle based on the results of asynchronous operations.; for example an API request to another service may \u0026ldquo;fulfill\u0026rdquo; by returning the desired data or it may \u0026ldquo;reject\u0026rdquo; if an error occurred during the request\n Example: Creating a Promise const inventory = { sunglasses: 202, pants: 421, shirts: 1344 } // Write your code below:  const myExecutor = (resolve, reject) =\u0026gt; { if (inventory.sunglasses \u0026gt; 0) { resolve(\u0026#39;Sunglasses order processed.\u0026#39;) } else { reject(\u0026#39;That item is sold out.\u0026#39;) } } const orderSunglasses = () =\u0026gt; { return new Promise(myExecutor) } const orderPromise = orderSunglasses() // print out the promise object  console.log(orderPromise)   Run the jsbin below and open up chrome developer tools and inspect the promise object that is being printed to the console. Can you identify the current status of the promise?  JS Bin on jsbin.com\n"
+},
+{
 	"uri": "/08-http-and-apis/apis/data-formats/",
 	"title": "Data Formats",
 	"tags": [],
@@ -504,6 +525,13 @@
 	"content": " Milestone I: Submit Project Ideas  Submit three (3) ideas for your final project\n Deliverable: Use this form to submit your final project ideas\n Due Date: Tuesday, September 3rd\n After which, I\u0026rsquo;ll schedule some time to meet with you to discuss your ideas\n  "
 },
 {
+	"uri": "/09-asynchronous-js-and-promises/synchronous-programming/",
+	"title": "Synchronous Programming",
+	"tags": [],
+	"description": "",
+	"content": " What is Synchronous Programming?  In a synchronous programming model, things happen one at a time\n This means that only one operation can be in progress at time\n When you call a function that performs a long-running action, it returns only when the action has finished and it can return the result\n Subsequent actions can only be run after the previous action has completed; this means that action #1 blocks action #2\n JavaScript is a synchronous, blocking, single-threaded language by default\n  Most of the code we\u0026rsquo;ve written so far has been synchronous\n Example Here\u0026rsquo;s an example of Synchronous code\nfunction printLetter(letter) { console.log(letter) } function printAll(){ printLetter(\u0026#34;A\u0026#34;) printLetter(\u0026#34;B\u0026#34;) printLetter(\u0026#34;C\u0026#34;) } printAll()  The the example above, printAll() calls printLetter() 3 times with \u0026ldquo;A\u0026rdquo;, \u0026ldquo;B\u0026rdquo;, \u0026ldquo;C\u0026rdquo; as parameters and each letter is printed out in the order in which the function was called\nJS Bin on jsbin.com\n"
+},
+{
 	"uri": "/06-dom-and-jquery/jquery-traversing/ancestors/",
 	"title": "ancestors",
 	"tags": [],
@@ -558,6 +586,13 @@
 	"tags": [],
 	"description": "",
 	"content": " There are two ways to add jQuery to your projects  Download the jQuery library file and store it within your project\n Use a CDN (content delivery network) and reference the jQuery library file remotely\n   Add jQuery via Download   Add jQuery via CDN   "
+},
+{
+	"uri": "/09-asynchronous-js-and-promises/asynchronous-programming/",
+	"title": "Asynchronous Programming",
+	"tags": [],
+	"description": "",
+	"content": " What is Asynchronous Programming?  An asynchronous model allows multiple things to happen at the same time\n An asynchronous operation is one that allows the computer to “move on” to other tasks while waiting for the asynchronous operation to complete\n Asynchronous programming means that time-consuming operations don’t have to bring everything else in our programs to a halt\n When you start an action, your program continues to run. When the action finishes, the program is informed and gets access to the result\n  Examples of Asynchronous Operations  Program making an API request to another service\n Program making a database request\n Program making a time-consuming complex calculation\n Program running a large batch operation (i.e. sending out weekly newsletter only to customers that have opted in)\n  "
 },
 {
 	"uri": "/02-javascript-basics/data-types/booleans/",
@@ -812,6 +847,13 @@
 	"content": " Atom allows you to open files from the command line\nIf you have Atom installed you can run the atom command with one or more file paths to open up those files in Atom.\nCheck if Atom is already configured to run on your computer\u0026rsquo;s Command Line Open up your terminal and run the following command\n$ atom --help  You should receive output similar to the following\nAtom Editor v1.39.1 Usage: atom atom [options] [path ...] atom file[:line[:column]] One or more paths to files or folders may be specified. If there is an existing Atom window that contains all of the given folders, the paths will be opened in that window. Otherwise, they will be opened in a new window.  If Atom is not configured to run from your computer\u0026rsquo;s Command Line Open Atom and choose the following from the menu bar Atom -\u0026gt; Install Shell Commands\n"
 },
 {
+	"uri": "/09-asynchronous-js-and-promises/simulating-async-operations/",
+	"title": "Simulating Async Operations",
+	"tags": [],
+	"description": "",
+	"content": " setTimeout()  .setTimeout() function, available both in Node.js and in browsers, waits a given number of milliseconds (1 sec = 1000 ms) and then calls a function\n .setTimeout() takes two parameters:\n A callback function (remember callbacks are just functions passed in as parameters)\n The number of seconds after which the method will be called\n  .setTimeout() is async by default; this is the primary reason it\u0026rsquo;s often used to simulate asynchronous operations\n  Example const delayedGreeting = () =\u0026gt; { console.log(\u0026#39;Hi, sorry for the wait!\u0026#39;) } /* call setTimout(), it accepts 2 parameters 1. callback (function to be executed) 2. delay in milliseconds (1000 ms = 1 sec) */ console.log(\u0026#39;calling .setTimeout()\u0026#39;) setTimeout(delayedGreeting, 3000) console.log(\u0026#39;end of the code\u0026#39;)  In the code above, .setTimeout() is used to delay the execution of the .delayedGreeting() function by 3 seconds.\n Run the example in the jsbin below and notice how the message: end of the code is executed before the Hi, sorry for the wait!.  JS Bin on jsbin.com\n This means that our program did not wait for .delayedGreeting() to finishing running before it executed  Event Loop  Asynchronous JavaScript uses something called the event-loop\n In the example above, After 3 seconds, .delayedGreeting() is added to a line of code (Event Queue) waiting to be run\n Before it can run, any synchronous code from the program will run first (from the Call Stack)\n Next, any code in front of it in the line will run\n This means it might be more than two seconds before delayedHello() is actually executed\n  "
+},
+{
 	"uri": "/class-resources/node-git-installation/windows/",
 	"title": "Windows Installation Instructions",
 	"tags": [],
@@ -880,6 +922,13 @@
 	"tags": [],
 	"description": "",
 	"content": " Lesson 05 Arrays \u0026amp; Objects "
+},
+{
+	"uri": "/09-asynchronous-js-and-promises/challenges-of-async-programming/",
+	"title": "Challenges of Async Programming",
+	"tags": [],
+	"description": "",
+	"content": " Challenges of Asynchronous Programming  Asynchronous programming presents a challenge when we want make multiple asynchronous requests and we want to control the order of the responses  Example Let\u0026rsquo;s see an example of this below:\n/* Modify printLetter() to make it an async function by using .setTimeout After the changes, the letter will be print at a random interval from 0 seconds to 3 seconds */ function printLetter(letter) { setTimeout(() =\u0026gt; { console.log(letter) }, Math.floor(Math.random() * 3000)) } function printAll(){ printLetter(\u0026#34;A\u0026#34;) printLetter(\u0026#34;B\u0026#34;) printLetter(\u0026#34;C\u0026#34;) } console.log(\u0026#39;Calling printAll function\u0026#39;) printAll() console.log(\u0026#39;End of code\u0026#39;)   In the code example above we have turned .printLetter() into an asynchronous function through the use of .setTimeout to randomly delay each function call from anywhere between 0 seconds and 3 seconds\n Run the jsbin below (multiple times) and notice how the order of the printed letters is no longer predictable and that A, B, and C print in a different and random order each time you call printAll\n  JS Bin on jsbin.com\n One way to fix this issue is to use callbacks  "
 },
 {
 	"uri": "/final-projects/milestones-due-dates/create-submit-wireframes/",
@@ -1029,6 +1078,13 @@
 	"content": " Summary of this week\u0026rsquo;s homework assignment: Due Date: Friday, August 30th\nComplete Homework #3 - Rock, Paper, Scissors Application  You are tasked with finishing the partially built Rock, Paper, Scissors application. The code is hosted on Github, see the url below:\n Github Repo for Homework #3 - Rock, Paper, Scissors Application  Use the Assignment Submission Git Workflow (detailed here) to access and submit the assignment\n  "
 },
 {
+	"uri": "/09-asynchronous-js-and-promises/handling-async-issue-with-callbacks/",
+	"title": "Handling Async Issues with Callbacks",
+	"tags": [],
+	"description": "",
+	"content": " What is a Callback?  Callbacks are functions that are passed to another function\n We can use callbacks to control the order in which our multiple asynchronous functions are executed\n The code below modifies our .printLetter() function to accept a callback as a 2nd parameter\n  function printLetter(letter, callback) { //\u0026lt;- callback function param added  setTimeout(() =\u0026gt; { console.log(letter) callback() // \u0026lt;- execute (call) the callback param after printing letter  }, Math.floor(Math.random() * 3000)) } //... the rest of code below not shown for brevity   The changes will result in .printLetter() calling the next function (callback) after it\u0026rsquo;s done with the current function\n Now let\u0026rsquo;s see how we can use this callback approach to control the order in which our asynchronous functions are executed\n  Example: Using callbacks to control the execution order of async functions function printLetter(letter, callback) { //\u0026lt;- callback function param added  setTimeout(() =\u0026gt; { console.log(letter) callback() // \u0026lt;- execute (call) the callback param after printing letter  }, Math.floor(Math.random() * 3000)) } /* Using nested callback structure to control the execution order of the async functions */ function printAll(){ printLetter(\u0026#34;A\u0026#34;, () =\u0026gt; { printLetter(\u0026#34;B\u0026#34;, () =\u0026gt; { printLetter(\u0026#34;C\u0026#34;, () =\u0026gt; {}) }) }) } console.log(\u0026#39;Calling printAll function\u0026#39;) printAll() console.log(\u0026#39;End of code\u0026#39;)   Run the jsbin below and notice that no matter how many times we run the code, our asynchronous functions will be executed in the desired order (\u0026ldquo;A\u0026rdquo; -\u0026gt; \u0026ldquo;B\u0026rdquo; -\u0026gt; \u0026ldquo;C\u0026rdquo;)  JS Bin on jsbin.com\n However, observe how our .printAll() function is now using nested callbacks to meet our goals\n The introduction of nesting introduces additional complexity and makes the code difficult to maintain\n The use of nested callbacks to handle asynchronous code is referred to as \u0026ldquo;Callback Hell\u0026rdquo; and should generally be avoided\n  "
+},
+{
 	"uri": "/03-control-flow-and-loops/lab-js-basics-control-flow-loops/",
 	"title": "Lab: JS Basics, Control Flow &amp; Loops",
 	"tags": [],
@@ -1153,6 +1209,13 @@
 	"tags": [],
 	"description": "",
 	"content": " Milestone VI: Host Final Project Details TBD\n Due Date: Thursday, September 26th  "
+},
+{
+	"uri": "/09-asynchronous-js-and-promises/promises/",
+	"title": "Promises",
+	"tags": [],
+	"description": "",
+	"content": " Promises  Overview   Creating Promises   "
 },
 {
 	"uri": "/04-functions-and-scope/function-expressions-anonymous-functions/",
@@ -1295,11 +1358,11 @@
 	"content": " ternary Operator  Used as a shortcut for the if statement  condition ? expression that is run if condition is true : expression that is run if condition is false  Example let isLactoseIntolerant = true let milkType = isLactoseIntolerant ? \u0026#34;almond\u0026#34; : \u0026#34;dairy\u0026#34; console.log(milkType)  JS Bin on jsbin.com\nExercise Rewrite the following if..else statement using a ternary operator:\nlet yearOfBirth = 2001 if (yearOfBirth \u0026lt;= 2002) { console.log(\u0026#39;you will be old enough to vote in 2020\u0026#39;) } else { console.log(\u0026#39;Sorry, you will not be old enough to vote next year\u0026#39;) }  JS Bin on jsbin.com\n"
 },
 {
-	"uri": "/09-asynchronous-js-and-callbacks/",
-	"title": "Asynchronous JS and Callbacks",
+	"uri": "/09-asynchronous-js-and-promises/",
+	"title": "Asynchronous JS and Promises",
 	"tags": [],
 	"description": "",
-	"content": " Lesson 09 Asynchronous JS and Callbacks "
+	"content": " Lesson 09 Asynchronous JS and Promises "
 },
 {
 	"uri": "/04-functions-and-scope/single-responsibility-principle/",

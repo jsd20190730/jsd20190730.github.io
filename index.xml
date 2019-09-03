@@ -275,6 +275,31 @@ List Of Commonly Used APIs Here is a short list of commonly used APIs for testin
     </item>
     
     <item>
+      <title>Objectives</title>
+      <link>/09-asynchronous-js-and-promises/objectives/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/09-asynchronous-js-and-promises/objectives/</guid>
+      <description> xxx
+ xxx
+ xxx
+  </description>
+    </item>
+    
+    <item>
+      <title>Overview</title>
+      <link>/09-asynchronous-js-and-promises/promises/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/09-asynchronous-js-and-promises/promises/overview/</guid>
+      <description>What are Promises?  Promises are objects that represent the eventual outcome of an asynchronous operation
+ A Promise object can be in one of three states:
+ Pending: The initial state the operation has not completed yet
+ Fulfilled: The operation has completed successfully and the promise now has a resolved value; for example, a request’s promise might resolve with a JSON object as its value.
+ Rejected: The operation has failed and the promise has a reason for the failure; This reason is usually an Error of some kind.</description>
+    </item>
+    
+    <item>
       <title>Overview &amp; Requirements</title>
       <link>/final-projects/overview-requirements/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -535,6 +560,17 @@ We&amp;rsquo;ll discuss currentTarget and the .find() method later in the course
     </item>
     
     <item>
+      <title>Creating Promises</title>
+      <link>/09-asynchronous-js-and-promises/promises/creating-promises/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/09-asynchronous-js-and-promises/promises/creating-promises/</guid>
+      <description>Creating Promise Objects  To create a new Promise object, we use the new keyword and the Promise constructor method:
+const executorFunction = (resolve, reject) =&amp;gt; { } const myPromise = new Promise(executorFunction)  The Promise constructor method takes a function parameter called the executor function which runs automatically when the constructor is called
+ The executor function generally starts an asynchronous operation and dictates how the promise should be settled</description>
+    </item>
+    
+    <item>
       <title>Data Formats</title>
       <link>/08-http-and-apis/apis/data-formats/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -703,6 +739,18 @@ Converting Strings to Numbers  Sometimes you will find yourself in a position wh
     </item>
     
     <item>
+      <title>Synchronous Programming</title>
+      <link>/09-asynchronous-js-and-promises/synchronous-programming/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/09-asynchronous-js-and-promises/synchronous-programming/</guid>
+      <description>What is Synchronous Programming?  In a synchronous programming model, things happen one at a time
+ This means that only one operation can be in progress at time
+ When you call a function that performs a long-running action, it returns only when the action has finished and it can return the result
+ Subsequent actions can only be run after the previous action has completed; this means that action #1 blocks action #2</description>
+    </item>
+    
+    <item>
       <title>ancestors</title>
       <link>/06-dom-and-jquery/jquery-traversing/ancestors/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -748,6 +796,18 @@ Converting Strings to Numbers  Sometimes you will find yourself in a position wh
       <description>What Is An API Key?  While the majority of APIs are free to use, many of them require an API &amp;ldquo;key&amp;rdquo; that identifies the developer requesting data access
  This is done to regulate usage and prevent abuse. Some APIs also rate-limit developers, meaning they have caps on the free data allowed during a given time period
   Exercise A: Access the Giphy API Try hitting the Giphy API&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Asynchronous Programming</title>
+      <link>/09-asynchronous-js-and-promises/asynchronous-programming/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/09-asynchronous-js-and-promises/asynchronous-programming/</guid>
+      <description>What is Asynchronous Programming?  An asynchronous model allows multiple things to happen at the same time
+ An asynchronous operation is one that allows the computer to “move on” to other tasks while waiting for the asynchronous operation to complete
+ Asynchronous programming means that time-consuming operations don’t have to bring everything else in our programs to a halt
+ When you start an action, your program continues to run.</description>
     </item>
     
     <item>
@@ -1051,6 +1111,19 @@ Atom Editor v1.</description>
     </item>
     
     <item>
+      <title>Simulating Async Operations</title>
+      <link>/09-asynchronous-js-and-promises/simulating-async-operations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/09-asynchronous-js-and-promises/simulating-async-operations/</guid>
+      <description>setTimeout()  .setTimeout() function, available both in Node.js and in browsers, waits a given number of milliseconds (1 sec = 1000 ms) and then calls a function
+ .setTimeout() takes two parameters:
+ A callback function (remember callbacks are just functions passed in as parameters)
+ The number of seconds after which the method will be called
+  .setTimeout() is async by default; this is the primary reason it&amp;rsquo;s often used to simulate asynchronous operations</description>
+    </item>
+    
+    <item>
       <title>Windows Installation Instructions</title>
       <link>/class-resources/node-git-installation/windows/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1151,6 +1224,16 @@ Atom Editor v1.</description>
       <description>Arithmetic Operators  Mathematical symbol that can act on two values (or variables) and produce a result
  JavaScript adheres to the PEDMAS approach when determining the order of operations
      Description Operator Example     Addition + 7 + 8   Subtraction - 34 - 12   Multiplication * 3 * 5   Division / 42 / 6   Modulus (Remainder) % 13 % 6 (returns 1, as 6 goes into 13 twice, leaving 1 as the remainder )   Exponential ** 4 ** 2 (returns 16 or 4 * 4)   Increment ++ 9++ (returns 10)   Decrement -- 37-- (returns 36)    Examples JS Bin on jsbin.</description>
+    </item>
+    
+    <item>
+      <title>Challenges of Async Programming</title>
+      <link>/09-asynchronous-js-and-promises/challenges-of-async-programming/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/09-asynchronous-js-and-promises/challenges-of-async-programming/</guid>
+      <description>Challenges of Asynchronous Programming  Asynchronous programming presents a challenge when we want make multiple asynchronous requests and we want to control the order of the responses  Example Let&amp;rsquo;s see an example of this below:
+/* Modify printLetter() to make it an async function by using .setTimeout After the changes, the letter will be print at a random interval from 0 seconds to 3 seconds */ function printLetter(letter) { setTimeout(() =&amp;gt; { console.</description>
     </item>
     
     <item>
@@ -1372,6 +1455,18 @@ Trello is a free project management tool that uses the kanban approach to track 
 Complete Homework #3 - Rock, Paper, Scissors Application  You are tasked with finishing the partially built Rock, Paper, Scissors application. The code is hosted on Github, see the url below:
  Github Repo for Homework #3 - Rock, Paper, Scissors Application  Use the Assignment Submission Git Workflow (detailed here) to access and submit the assignment
   </description>
+    </item>
+    
+    <item>
+      <title>Handling Async Issues with Callbacks</title>
+      <link>/09-asynchronous-js-and-promises/handling-async-issue-with-callbacks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/09-asynchronous-js-and-promises/handling-async-issue-with-callbacks/</guid>
+      <description>What is a Callback?  Callbacks are functions that are passed to another function
+ We can use callbacks to control the order in which our multiple asynchronous functions are executed
+ The code below modifies our .printLetter() function to accept a callback as a 2nd parameter
+  function printLetter(letter, callback) { //&amp;lt;- callback function param added  setTimeout(() =&amp;gt; { console.log(letter) callback() // &amp;lt;- execute (call) the callback param after printing letter  }, Math.</description>
     </item>
     
     <item>

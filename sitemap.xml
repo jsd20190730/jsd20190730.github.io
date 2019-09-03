@@ -99,6 +99,14 @@
   </url>
   
   <url>
+    <loc>/09-asynchronous-js-and-promises/objectives/</loc>
+  </url>
+  
+  <url>
+    <loc>/09-asynchronous-js-and-promises/promises/overview/</loc>
+  </url>
+  
+  <url>
     <loc>/final-projects/overview-requirements/</loc>
   </url>
   
@@ -208,6 +216,10 @@
   </url>
   
   <url>
+    <loc>/09-asynchronous-js-and-promises/promises/creating-promises/</loc>
+  </url>
+  
+  <url>
     <loc>/08-http-and-apis/apis/data-formats/</loc>
   </url>
   
@@ -292,6 +304,10 @@
   </url>
   
   <url>
+    <loc>/09-asynchronous-js-and-promises/synchronous-programming/</loc>
+  </url>
+  
+  <url>
     <loc>/06-dom-and-jquery/jquery-traversing/ancestors/</loc>
   </url>
   
@@ -321,6 +337,10 @@
   
   <url>
     <loc>/06-dom-and-jquery/jquery-overview/add-jquery/</loc>
+  </url>
+  
+  <url>
+    <loc>/09-asynchronous-js-and-promises/asynchronous-programming/</loc>
   </url>
   
   <url>
@@ -468,6 +488,10 @@
   </url>
   
   <url>
+    <loc>/09-asynchronous-js-and-promises/simulating-async-operations/</loc>
+  </url>
+  
+  <url>
     <loc>/class-resources/node-git-installation/windows/</loc>
   </url>
   
@@ -505,6 +529,10 @@
   
   <url>
     <loc>/05-arrays-objects/</loc>
+  </url>
+  
+  <url>
+    <loc>/09-asynchronous-js-and-promises/challenges-of-async-programming/</loc>
   </url>
   
   <url>
@@ -592,6 +620,10 @@
   </url>
   
   <url>
+    <loc>/09-asynchronous-js-and-promises/handling-async-issue-with-callbacks/</loc>
+  </url>
+  
+  <url>
     <loc>/03-control-flow-and-loops/lab-js-basics-control-flow-loops/</loc>
   </url>
   
@@ -661,6 +693,10 @@
   
   <url>
     <loc>/final-projects/milestones-due-dates/host-final-project/</loc>
+  </url>
+  
+  <url>
+    <loc>/09-asynchronous-js-and-promises/promises/</loc>
   </url>
   
   <url>
@@ -744,7 +780,7 @@
   </url>
   
   <url>
-    <loc>/09-asynchronous-js-and-callbacks/</loc>
+    <loc>/09-asynchronous-js-and-promises/</loc>
   </url>
   
   <url>

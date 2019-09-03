@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Promises on GA JavaScript</title>
+    <link>/09-asynchronous-js-and-promises/promises/</link>
+    <description>Recent content in Promises on GA JavaScript</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/09-asynchronous-js-and-promises/promises/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Overview</title>
+      <link>/09-asynchronous-js-and-promises/promises/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/09-asynchronous-js-and-promises/promises/overview/</guid>
+      <description>What are Promises?  Promises are objects that represent the eventual outcome of an asynchronous operation
+ A Promise object can be in one of three states:
+ Pending: The initial state the operation has not completed yet
+ Fulfilled: The operation has completed successfully and the promise now has a resolved value; for example, a request’s promise might resolve with a JSON object as its value.
+ Rejected: The operation has failed and the promise has a reason for the failure; This reason is usually an Error of some kind.</description>
+    </item>
+    
+    <item>
+      <title>Creating Promises</title>
+      <link>/09-asynchronous-js-and-promises/promises/creating-promises/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/09-asynchronous-js-and-promises/promises/creating-promises/</guid>
+      <description>Creating Promise Objects  To create a new Promise object, we use the new keyword and the Promise constructor method:
+const executorFunction = (resolve, reject) =&amp;gt; { } const myPromise = new Promise(executorFunction)  The Promise constructor method takes a function parameter called the executor function which runs automatically when the constructor is called
+ The executor function generally starts an asynchronous operation and dictates how the promise should be settled</description>
+    </item>
+    
+  </channel>
+</rss>
