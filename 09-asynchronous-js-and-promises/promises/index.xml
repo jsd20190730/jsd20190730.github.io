@@ -46,5 +46,16 @@ const executorFunction = (resolve, reject) =&amp;gt; { } const myPromise = new P
   Settling Promises  Promise objects offer a .then() function that allows us to dictate what should happen after the promise settles</description>
     </item>
     
+    <item>
+      <title>Handling Async Issues with Promises</title>
+      <link>/09-asynchronous-js-and-promises/promises/handling-async-issues-with-promises/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/09-asynchronous-js-and-promises/promises/handling-async-issues-with-promises/</guid>
+      <description>Handling Async Issues with Promises  Let&amp;rsquo;s revisit our .printLetter() example and use promises
+ First let&amp;rsquo;s modify our .printLetter() function to return a Promise
+  function printLetter(letter, callback) { return new Promise((resolve, reject) =&amp;gt; { setTimeout(() =&amp;gt; { console.log(letter) resolve() }, Math.floor(Math.random() * 3000)) }) } //... the rest of code below not shown for brevity  Example: Using Promises to control the execution order of async functions function printLetter(letter, callback) { return new Promise((resolve, reject) =&amp;gt; { setTimeout(() =&amp;gt; { console.</description>
+    </item>
+    
   </channel>
 </rss>

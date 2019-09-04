@@ -12,21 +12,21 @@
     <title>Consuming Promises :: GA JavaScript</title>
 
     
-    <link href="/css/nucleus.css?1567553143" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1567553143" rel="stylesheet">
-    <link href="/css/hybrid.css?1567553143" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1567553143" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1567553143" rel="stylesheet">
-    <link href="/css/auto-complete.css?1567553143" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1567553143" rel="stylesheet">
-    <link href="/css/theme.css?1567553143" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1567553143" rel="stylesheet">
-    <link href="/css/syntax.css?1567553143" rel="stylesheet">
+    <link href="/css/nucleus.css?1567556566" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1567556566" rel="stylesheet">
+    <link href="/css/hybrid.css?1567556566" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1567556566" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1567556566" rel="stylesheet">
+    <link href="/css/auto-complete.css?1567556566" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1567556566" rel="stylesheet">
+    <link href="/css/theme.css?1567556566" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1567556566" rel="stylesheet">
+    <link href="/css/syntax.css?1567556566" rel="stylesheet">
     
-      <link href="/css/theme-blue.css?1567553143" rel="stylesheet">
+      <link href="/css/theme-blue.css?1567556566" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1567553143"></script>
+    <script src="/js/jquery-3.3.1.min.js?1567556566"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -89,14 +89,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1567553143"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1567553143"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1567556566"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1567556566"></script>
 <script type="text/javascript">
     
         var baseurl = "\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1567553143"></script>
+<script type="text/javascript" src="/js/search.js?1567556566"></script>
 
     
   </div>
@@ -4392,6 +4392,25 @@
 
             
           
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/09-asynchronous-js-and-promises/promises/handling-async-issues-with-promises/" title="Handling Async Issues with Promises" class="dd-item ">
+        <a href="/09-asynchronous-js-and-promises/promises/handling-async-issues-with-promises/">
+        Handling Async Issues with Promises
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
         
         </ul>
       
@@ -5298,7 +5317,8 @@
 <ul>
 <li><a href="#consuming-promises">Consuming Promises</a></li>
 <li><a href="#settling-promises">Settling Promises</a></li>
-<li><a href="#example-setting-promises">Example: Setting Promises</a></li>
+<li><a href="#example-1-settling-promises-successfully-resolving-a-promise">Example #1: Settling Promises: Successfully resolving a promise</a></li>
+<li><a href="#example-2-settling-promises-rejecting-a-promise">Example #2: Settling Promises: Rejecting a promise</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -5355,13 +5375,13 @@
 
 <hr />
 
-<h3 id="example-setting-promises">Example: Setting Promises</h3>
+<h3 id="example-1-settling-promises-successfully-resolving-a-promise">Example #1: Settling Promises: Successfully resolving a promise</h3>
 
 <div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="kd">let</span> <span class="nx">promise</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Promise</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">resolve</span><span class="p">,</span> <span class="nx">reject</span><span class="p">)</span> <span class="p">{</span>
   <span class="nx">setTimeout</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="nx">resolve</span><span class="p">(</span><span class="s2">&#34;done!&#34;</span><span class="p">),</span> <span class="mi">1000</span><span class="p">)</span>
 <span class="p">})</span>
 
-<span class="c1">// resolve runs the first function in .then
+<span class="c1">// resolve runs the first function in .then()
 </span><span class="c1"></span><span class="nx">promise</span><span class="p">.</span><span class="nx">then</span><span class="p">(</span>
   <span class="nx">result</span> <span class="p">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">),</span> <span class="c1">// shows &#34;done!&#34; after 1 second
 </span><span class="c1"></span>  <span class="nx">error</span> <span class="p">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">error</span><span class="p">)</span> <span class="c1">// doesn&#39;t run
@@ -5369,6 +5389,23 @@
 </code></pre></div>
 
 <p><a class="jsbin-embed" href="https://jsbin.com/babuwat/embed?js,console">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?4.1.7"></script></p>
+
+<hr />
+
+<h3 id="example-2-settling-promises-rejecting-a-promise">Example #2: Settling Promises: Rejecting a promise</h3>
+
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="kd">let</span> <span class="nx">promise</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Promise</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">resolve</span><span class="p">,</span> <span class="nx">reject</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">setTimeout</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="nx">reject</span><span class="p">(</span><span class="k">new</span> <span class="nb">Error</span><span class="p">(</span><span class="s2">&#34;Whoops!&#34;</span><span class="p">)),</span> <span class="mi">1000</span><span class="p">)</span>
+<span class="p">})</span>
+
+<span class="c1">// reject runs the second function in .then
+</span><span class="c1"></span><span class="nx">promise</span><span class="p">.</span><span class="nx">then</span><span class="p">(</span>
+  <span class="nx">result</span> <span class="p">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">),</span> <span class="c1">// doesn&#39;t run
+</span><span class="c1"></span>  <span class="nx">error</span> <span class="p">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">error</span><span class="p">)</span> <span class="c1">// shows &#34;Error: Whoops!&#34; after 1 second
+</span><span class="c1"></span><span class="p">)</span>
+</code></pre></div>
+
+<p><a class="jsbin-embed" href="https://jsbin.com/pigidis/embed?js,console">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?4.1.7"></script></p>
 
 
 <footer class=" footline" >
@@ -8556,6 +8593,25 @@
             
         
                     
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -8566,9 +8622,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -9189,7 +9242,7 @@
 			<a class="nav nav-prev" href="/09-asynchronous-js-and-promises/promises/creating-promises/" title="Creating Promises"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/10-project-build-a-slackbot/" title="Project: Build a Slackbot" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/09-asynchronous-js-and-promises/promises/handling-async-issues-with-promises/" title="Handling Async Issues with Promises" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -9199,20 +9252,20 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1567553143"></script>
-    <script src="/js/perfect-scrollbar.min.js?1567553143"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1567553143"></script>
-    <script src="/js/jquery.sticky.js?1567553143"></script>
-    <script src="/js/featherlight.min.js?1567553143"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1567553143"></script>
-    <script src="/js/highlight.pack.js?1567553143"></script>
+    <script src="/js/clipboard.min.js?1567556566"></script>
+    <script src="/js/perfect-scrollbar.min.js?1567556566"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1567556566"></script>
+    <script src="/js/jquery.sticky.js?1567556566"></script>
+    <script src="/js/featherlight.min.js?1567556566"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1567556566"></script>
+    <script src="/js/highlight.pack.js?1567556566"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1567553143"></script>
-    <script src="/js/learn.js?1567553143"></script>
-    <script src="/js/hugo-learn.js?1567553143"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1567556566"></script>
+    <script src="/js/learn.js?1567556566"></script>
+    <script src="/js/hugo-learn.js?1567556566"></script>
 
-    <link href="/mermaid/mermaid.css?1567553143" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1567553143"></script>
+    <link href="/mermaid/mermaid.css?1567556566" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1567556566"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Control Flow and Loops :: GA JavaScript</title>
+    <title>Handling Async Issues with Promises :: GA JavaScript</title>
 
     
     <link href="/css/nucleus.css?1567556566" rel="stylesheet">
@@ -36,7 +36,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/03-control-flow-and-loops/">
+  <body class="" data-url="/09-asynchronous-js-and-promises/promises/handling-async-issues-with-promises/">
     <nav id="sidebar" class="">
 
 
@@ -963,8 +963,8 @@
   
     
     <li data-nav-id="/03-control-flow-and-loops/" title="Control Flow and Loops" class="dd-item
-        parent
-        active
+        
+        
         
         ">
       <a href="/03-control-flow-and-loops/">
@@ -4177,7 +4177,7 @@
   
     
     <li data-nav-id="/09-asynchronous-js-and-promises/" title="Asynchronous JS and Promises" class="dd-item
-        
+        parent
         
         
         ">
@@ -4318,7 +4318,7 @@
   
     
     <li data-nav-id="/09-asynchronous-js-and-promises/promises/" title="Promises" class="dd-item
-        
+        parent
         
         
         ">
@@ -4399,7 +4399,7 @@
  
   
     
-      <li data-nav-id="/09-asynchronous-js-and-promises/promises/handling-async-issues-with-promises/" title="Handling Async Issues with Promises" class="dd-item ">
+      <li data-nav-id="/09-asynchronous-js-and-promises/promises/handling-async-issues-with-promises/" title="Handling Async Issues with Promises" class="dd-item active">
         <a href="/09-asynchronous-js-and-promises/promises/handling-async-issues-with-promises/">
         Handling Async Issues with Promises
         
@@ -5274,6 +5274,8 @@
                         </a>
                     </span>
                   
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
                   <span class="links">
                  
                  
@@ -5284,7 +5286,19 @@
             
           
           
-            <a href='/'>JSD</a> > Control Flow and Loops
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>JSD</a> > <a href='/09-asynchronous-js-and-promises/'>Asynchronous JS and Promises</a> > <a href='/09-asynchronous-js-and-promises/promises/'>Promises</a> > Handling Async Issues with Promises
+          
+        
+          
+        
           
         
           
@@ -5293,6 +5307,24 @@
                   </span>
                 </div>
                 
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#handling-async-issues-with-promises">Handling Async Issues with Promises</a></li>
+<li><a href="#example-using-promises-to-control-the-execution-order-of-async-functions">Example: Using Promises to control the execution order of async functions</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
               </div>
             </div>
             
@@ -5300,31 +5332,72 @@
         
         </div>
         
-          <div id="chapter">
-        
         <div id="body-inner">
+          
+            <h1>
+              
+              Handling Async Issues with Promises
+            </h1>
           
 
         
 
 
 
-	
 
-<h3 id="lesson-03">Lesson 03</h3>
+<h3 id="handling-async-issues-with-promises">Handling Async Issues with Promises</h3>
 
-<h1 id="control-flow-and-loops">Control Flow and Loops</h1>
+<ul>
+<li><p>Let&rsquo;s revisit our <code>.printLetter()</code> example and use promises</p></li>
+
+<li><p>First let&rsquo;s modify our <code>.printLetter()</code> function to return a Promise</p></li>
+</ul>
+
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="kd">function</span> <span class="nx">printLetter</span><span class="p">(</span><span class="nx">letter</span><span class="p">,</span> <span class="nx">callback</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="k">new</span> <span class="nb">Promise</span><span class="p">((</span><span class="nx">resolve</span><span class="p">,</span> <span class="nx">reject</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+    <span class="nx">setTimeout</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">letter</span><span class="p">)</span>
+      <span class="nx">resolve</span><span class="p">()</span>
+     <span class="p">},</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span> <span class="o">*</span> <span class="mi">3000</span><span class="p">))</span>
+  <span class="p">})</span>
+<span class="p">}</span>
+
+<span class="c1">//... the rest of code below not shown for brevity
+</span></code></pre></div>
+
+<hr />
+
+<h3 id="example-using-promises-to-control-the-execution-order-of-async-functions">Example: Using Promises to control the execution order of async functions</h3>
+
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="kd">function</span> <span class="nx">printLetter</span><span class="p">(</span><span class="nx">letter</span><span class="p">,</span> <span class="nx">callback</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="k">new</span> <span class="nb">Promise</span><span class="p">((</span><span class="nx">resolve</span><span class="p">,</span> <span class="nx">reject</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+    <span class="nx">setTimeout</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">letter</span><span class="p">)</span>
+      <span class="nx">resolve</span><span class="p">()</span>
+     <span class="p">},</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span> <span class="o">*</span> <span class="mi">3000</span><span class="p">))</span>
+  <span class="p">})</span>
+<span class="p">}</span>
 
 
+<span class="kd">function</span> <span class="nx">printAll</span><span class="p">(){</span>
+  <span class="nx">printLetter</span><span class="p">(</span><span class="s2">&#34;A&#34;</span><span class="p">)</span>
+    <span class="p">.</span><span class="nx">then</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="nx">printLetter</span><span class="p">(</span><span class="s2">&#34;B&#34;</span><span class="p">))</span>
+    <span class="p">.</span><span class="nx">then</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="nx">printLetter</span><span class="p">(</span><span class="s2">&#34;C&#34;</span><span class="p">))</span>
+<span class="p">}</span>
 
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Calling printAll function&#39;</span><span class="p">)</span>
+<span class="nx">printAll</span><span class="p">()</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;End of code&#39;</span><span class="p">)</span>
+</code></pre></div>
+
+<p><a class="jsbin-embed" href="https://jsbin.com/curacup/embed?js,console">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?4.1.7"></script></p>
 
 
 <footer class=" footline" >
 	
 </footer>
 
-        
-            </div> 
+
         
         </div> 
         
@@ -6017,7 +6090,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -6032,9 +6104,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -8333,6 +8402,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -8347,6 +8417,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -8444,6 +8517,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -8456,6 +8530,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -8505,6 +8582,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -8526,6 +8604,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -9143,10 +9224,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/02-javascript-basics/truthy-falsey/" title=""> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/09-asynchronous-js-and-promises/promises/consuming-promises/" title="Consuming Promises"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/03-control-flow-and-loops/objectives/" title="Objectives" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/10-project-build-a-slackbot/" title="Project: Build a Slackbot" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -9177,3 +9258,4 @@
 
   </body>
 </html>
+

@@ -613,7 +613,7 @@
 	"title": "Consuming Promises",
 	"tags": [],
 	"description": "",
-	"content": " Consuming Promises  While knowing how to construct a promise is useful, most of your interactions with promises will be spent consuming (or using) Promises\n Put another way, you’ll be handling Promise objects returned to you as the result of an asynchronous operation\n These promises will start off pending but must settle eventually\n  Settling Promises  Promise objects offer a .then() function that allows us to dictate what should happen after the promise settles\n .then() is a function that takes two callback functions as arguments; when the promise settles, the appropriate handler will be invoked with that settled value\n onFulfilled: The first handler is the success handler, and it should contain the logic for the promise resolving\n onRejected: The second handler is the failure handler, and it should contain the logic for the promise rejecting\n   Example: Setting Promises let promise = new Promise(function(resolve, reject) { setTimeout(() =\u0026gt; resolve(\u0026#34;done!\u0026#34;), 1000) }) // resolve runs the first function in .then promise.then( result =\u0026gt; console.log(result), // shows \u0026#34;done!\u0026#34; after 1 second  error =\u0026gt; console.log(error) // doesn\u0026#39;t run )  JS Bin on jsbin.com\n"
+	"content": " Consuming Promises  While knowing how to construct a promise is useful, most of your interactions with promises will be spent consuming (or using) Promises\n Put another way, you’ll be handling Promise objects returned to you as the result of an asynchronous operation\n These promises will start off pending but must settle eventually\n  Settling Promises  Promise objects offer a .then() function that allows us to dictate what should happen after the promise settles\n .then() is a function that takes two callback functions as arguments; when the promise settles, the appropriate handler will be invoked with that settled value\n onFulfilled: The first handler is the success handler, and it should contain the logic for the promise resolving\n onRejected: The second handler is the failure handler, and it should contain the logic for the promise rejecting\n   Example #1: Settling Promises: Successfully resolving a promise let promise = new Promise(function(resolve, reject) { setTimeout(() =\u0026gt; resolve(\u0026#34;done!\u0026#34;), 1000) }) // resolve runs the first function in .then() promise.then( result =\u0026gt; console.log(result), // shows \u0026#34;done!\u0026#34; after 1 second  error =\u0026gt; console.log(error) // doesn\u0026#39;t run )  JS Bin on jsbin.com\nExample #2: Settling Promises: Rejecting a promise let promise = new Promise(function(resolve, reject) { setTimeout(() =\u0026gt; reject(new Error(\u0026#34;Whoops!\u0026#34;)), 1000) }) // reject runs the second function in .then promise.then( result =\u0026gt; console.log(result), // doesn\u0026#39;t run  error =\u0026gt; console.log(error) // shows \u0026#34;Error: Whoops!\u0026#34; after 1 second )  JS Bin on jsbin.com\n"
 },
 {
 	"uri": "/03-control-flow-and-loops/",
@@ -810,6 +810,13 @@
 	"tags": [],
 	"description": "",
 	"content": " Summary of this week\u0026rsquo;s homework assignment: Due Date: Thursday, August 22nd\nComplete Homework #2 - Functions and Iterators  You are tasked with completing the problem set which is hosted on Github, see the url below:\n Github Repo for Homework #2 - Functions \u0026amp; Iterators  Use the Assignment Submission Git Workflow (detailed here) to access and submit the assignment\n  "
+},
+{
+	"uri": "/09-asynchronous-js-and-promises/promises/handling-async-issues-with-promises/",
+	"title": "Handling Async Issues with Promises",
+	"tags": [],
+	"description": "",
+	"content": " Handling Async Issues with Promises  Let\u0026rsquo;s revisit our .printLetter() example and use promises\n First let\u0026rsquo;s modify our .printLetter() function to return a Promise\n  function printLetter(letter, callback) { return new Promise((resolve, reject) =\u0026gt; { setTimeout(() =\u0026gt; { console.log(letter) resolve() }, Math.floor(Math.random() * 3000)) }) } //... the rest of code below not shown for brevity  Example: Using Promises to control the execution order of async functions function printLetter(letter, callback) { return new Promise((resolve, reject) =\u0026gt; { setTimeout(() =\u0026gt; { console.log(letter) resolve() }, Math.floor(Math.random() * 3000)) }) } function printAll(){ printLetter(\u0026#34;A\u0026#34;) .then(() =\u0026gt; printLetter(\u0026#34;B\u0026#34;)) .then(() =\u0026gt; printLetter(\u0026#34;C\u0026#34;)) } console.log(\u0026#39;Calling printAll function\u0026#39;) printAll() console.log(\u0026#39;End of code\u0026#39;)  JS Bin on jsbin.com\n"
 },
 {
 	"uri": "/04-functions-and-scope/hoisting/",
@@ -1222,7 +1229,7 @@
 	"title": "Promises",
 	"tags": [],
 	"description": "",
-	"content": " Promises  Overview   Creating Promises   Consuming Promises   "
+	"content": " Promises  Overview   Creating Promises   Consuming Promises   Handling Async Issues with Promises   "
 },
 {
 	"uri": "/04-functions-and-scope/function-expressions-anonymous-functions/",
