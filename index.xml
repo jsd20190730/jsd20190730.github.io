@@ -280,9 +280,11 @@ List Of Commonly Used APIs Here is a short list of commonly used APIs for testin
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/09-asynchronous-js-and-promises/objectives/</guid>
-      <description> xxx
- xxx
- xxx
+      <description> Understand the differences between synchronous and asynchronous programming
+ Explain the different ways developers address issues presented with asynchronous programming
+ Create and Consume Promises
+ Handle errors generated from promises
+ Use Async / Await to improve readability of asynchronous code
   </description>
     </item>
     

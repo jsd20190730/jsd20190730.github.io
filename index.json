@@ -172,7 +172,7 @@
 	"title": "Objectives",
 	"tags": [],
 	"description": "",
-	"content": " xxx\n xxx\n xxx\n  "
+	"content": " Understand the differences between synchronous and asynchronous programming\n Explain the different ways developers address issues presented with asynchronous programming\n Create and Consume Promises\n Handle errors generated from promises\n Use Async / Await to improve readability of asynchronous code\n  "
 },
 {
 	"uri": "/09-asynchronous-js-and-promises/promises/overview/",
