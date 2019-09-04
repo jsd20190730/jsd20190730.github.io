@@ -9,24 +9,24 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>What is jQuery? :: GA JavaScript</title>
+    <title>When to use let vs const :: GA JavaScript</title>
 
     
-    <link href="/css/nucleus.css?1567617421" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1567617421" rel="stylesheet">
-    <link href="/css/hybrid.css?1567617421" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1567617421" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1567617421" rel="stylesheet">
-    <link href="/css/auto-complete.css?1567617421" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1567617421" rel="stylesheet">
-    <link href="/css/theme.css?1567617421" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1567617421" rel="stylesheet">
-    <link href="/css/syntax.css?1567617421" rel="stylesheet">
+    <link href="/css/nucleus.css?1567617423" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1567617423" rel="stylesheet">
+    <link href="/css/hybrid.css?1567617423" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1567617423" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1567617423" rel="stylesheet">
+    <link href="/css/auto-complete.css?1567617423" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1567617423" rel="stylesheet">
+    <link href="/css/theme.css?1567617423" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1567617423" rel="stylesheet">
+    <link href="/css/syntax.css?1567617423" rel="stylesheet">
     
-      <link href="/css/theme-blue.css?1567617421" rel="stylesheet">
+      <link href="/css/theme-blue.css?1567617423" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1567617421"></script>
+    <script src="/js/jquery-3.3.1.min.js?1567617423"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -36,7 +36,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/06-dom-and-jquery/jquery-overview/what-is-jquery/">
+  <body class="" data-url="/02-javascript-basics/variables/when-to-use-let-vs-const/">
     <nav id="sidebar" class="">
 
 
@@ -89,14 +89,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1567617421"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1567617421"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1567617423"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1567617423"></script>
 <script type="text/javascript">
     
         var baseurl = "\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1567617421"></script>
+<script type="text/javascript" src="/js/search.js?1567617423"></script>
 
     
   </div>
@@ -557,7 +557,7 @@
   
     
     <li data-nav-id="/02-javascript-basics/" title="JavaScript Basics" class="dd-item
-        
+        parent
         
         
         ">
@@ -603,7 +603,7 @@
   
     
     <li data-nav-id="/02-javascript-basics/variables/" title="Variables" class="dd-item
-        
+        parent
         
         
         ">
@@ -741,7 +741,7 @@
  
   
     
-      <li data-nav-id="/02-javascript-basics/variables/when-to-use-let-vs-const/" title="When to use let vs const" class="dd-item ">
+      <li data-nav-id="/02-javascript-basics/variables/when-to-use-let-vs-const/" title="When to use let vs const" class="dd-item active">
         <a href="/02-javascript-basics/variables/when-to-use-let-vs-const/">
         When to use let vs const
         
@@ -2234,7 +2234,7 @@
   
     
     <li data-nav-id="/06-dom-and-jquery/" title="DOM &amp; jQuery" class="dd-item
-        parent
+        
         
         
         ">
@@ -2280,7 +2280,7 @@
   
     
     <li data-nav-id="/06-dom-and-jquery/jquery-overview/" title="jQuery Overview" class="dd-item
-        parent
+        
         
         
         ">
@@ -2306,7 +2306,7 @@
  
   
     
-      <li data-nav-id="/06-dom-and-jquery/jquery-overview/what-is-jquery/" title="What is jQuery?" class="dd-item active">
+      <li data-nav-id="/06-dom-and-jquery/jquery-overview/what-is-jquery/" title="What is jQuery?" class="dd-item ">
         <a href="/06-dom-and-jquery/jquery-overview/what-is-jquery/">
         What is jQuery?
         
@@ -5313,7 +5313,7 @@
             
           
           
-            <a href='/'>JSD</a> > <a href='/06-dom-and-jquery/'>DOM & jQuery</a> > <a href='/06-dom-and-jquery/jquery-overview/'>jQuery Overview</a> > What is jQuery?
+            <a href='/'>JSD</a> > <a href='/02-javascript-basics/'>JavaScript Basics</a> > <a href='/02-javascript-basics/variables/'>Variables</a> > When to use let vs const
           
         
           
@@ -5334,7 +5334,7 @@
 <ul>
 <li>
 <ul>
-<li><a href="#what-is-jquery">What is jQuery?</a></li>
+<li><a href="#when-to-use-let-vs-const">When to use <code>let</code> vs <code>const</code></a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -5354,7 +5354,7 @@
           
             <h1>
               
-              What is jQuery?
+              When to use let vs const
             </h1>
           
 
@@ -5363,22 +5363,23 @@
 
 
 
-<h3 id="what-is-jquery">What is jQuery?</h3>
+<h3 id="when-to-use-let-vs-const">When to use <code>let</code> vs <code>const</code></h3>
 
 <ul>
-<li><p>A JavaScript library that makes it easy to dynamically update your pages (i.e. perform DOM manipulation)</p></li>
+<li><p>Use <code>let</code> when you create a variable where you want to have the option of directly <strong>reassigning its value</strong> (using <code>=</code>) somewhere in your code</p>
 
-<li><p>Offers a simple way to achieve a variety of common JavaScript tasks</p></li>
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js">    <span class="kd">let</span> <span class="nx">message</span>
 
-<li><p>Consistent across all browsers</p></li>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">loginSuccessful</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">message</span> <span class="o">=</span> <span class="s2">&#34;welcome back!&#34;</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+      <span class="nx">message</span> <span class="o">=</span> <span class="s2">&#34;Invalid email or password, please try again&#34;</span>
+    <span class="p">}</span>
+    
+</code></pre></div></li>
 
-<li><p>Does not do anything native / vanilla JavaScript cannot do, just does it with a more intuitive syntax</p></li>
+<li><p>Use <code>const</code> in all other occasions</p></li>
 </ul>
-
-
-<div class="notices info" ><p>It&rsquo;s important to note that jQuery is NOT another programming language it is a <strong>library</strong> or tool built on top of JavaScript</p>
-</div>
-
 
 
 <footer class=" footline" >
@@ -5772,6 +5773,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -5786,6 +5788,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -5802,6 +5807,7 @@
             
             
                 
+                    
                     
                 
                 
@@ -5816,6 +5822,9 @@
             
                 
                     
+                        
+                        
+                    
                 
                 
 
@@ -5912,6 +5921,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -5930,6 +5940,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -7016,7 +7029,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -7031,9 +7043,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -7051,7 +7060,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -7066,7 +7074,6 @@
             
             
                 
-                    
                     
                 
                 
@@ -7083,9 +7090,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -9225,10 +9229,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/06-dom-and-jquery/jquery-overview/" title="jQuery Overview"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/02-javascript-basics/variables/const/" title="const"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/06-dom-and-jquery/jquery-overview/benefits-of-jquery/" title="Benefits of jQuery" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/02-javascript-basics/data-types/" title="Data Types" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -9238,20 +9242,20 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1567617421"></script>
-    <script src="/js/perfect-scrollbar.min.js?1567617421"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1567617421"></script>
-    <script src="/js/jquery.sticky.js?1567617421"></script>
-    <script src="/js/featherlight.min.js?1567617421"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1567617421"></script>
-    <script src="/js/highlight.pack.js?1567617421"></script>
+    <script src="/js/clipboard.min.js?1567617423"></script>
+    <script src="/js/perfect-scrollbar.min.js?1567617423"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1567617423"></script>
+    <script src="/js/jquery.sticky.js?1567617423"></script>
+    <script src="/js/featherlight.min.js?1567617423"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1567617423"></script>
+    <script src="/js/highlight.pack.js?1567617423"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1567617421"></script>
-    <script src="/js/learn.js?1567617421"></script>
-    <script src="/js/hugo-learn.js?1567617421"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1567617423"></script>
+    <script src="/js/learn.js?1567617423"></script>
+    <script src="/js/hugo-learn.js?1567617423"></script>
 
-    <link href="/mermaid/mermaid.css?1567617421" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1567617421"></script>
+    <link href="/mermaid/mermaid.css?1567617423" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1567617423"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

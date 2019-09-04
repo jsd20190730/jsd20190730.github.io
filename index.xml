@@ -820,7 +820,7 @@ Converting Strings to Numbers  Sometimes you will find yourself in a position wh
       <guid>/02-javascript-basics/data-types/booleans/</guid>
       <description>Booleans  Can only have a value of true or false
  true/false are special keywords in JavaScript and do not have quotes around them
-  // declare a variable called isOn and assign a value of true let isOn = true // declare a variable called isWarm let isWarm // assign a value of false to isWarm isWarm = false   Booleans are useful for helping our programs make decisions (when used with conditionals, comparison &amp;amp; logical operators)</description>
+  // declare a variable called isOn and assign a value of true const isOn = true // declare a variable called isWarm let isWarm // assign a value of false to isWarm isWarm = false   Booleans are useful for helping our programs make decisions (when used with conditionals, comparison &amp;amp; logical operators)</description>
     </item>
     
     <item>
@@ -1119,7 +1119,7 @@ Complete Homework #2 - Functions and Iterators  You are tasked with completing t
       <description>Objects  Objects are used to represent real world objects in programming
  Within an object, variables are known as properties and functions are known as methods
  Curly braces are a means of identifying if a variable is an object
-  // create an object that represents a dog  let myDog = { name: &amp;#34;Fido&amp;#34;, age: 4, speak: function() { console.log(&amp;#39;Woof woof&amp;#39;) } }   In the example above, we created an object and stored it in a variable called myDog</description>
+  // create an object that represents a dog  const myDog = { name: &amp;#34;Fido&amp;#34;, age: 4, speak: function() { console.log(&amp;#39;Woof woof&amp;#39;) } }   In the example above, we created an object and stored it in a variable called myDog</description>
     </item>
     
     <item>
@@ -1322,9 +1322,9 @@ Atom Editor v1.</description>
       
       <guid>/02-javascript-basics/variables/let-vs-var/</guid>
       <description>let vs var  In recent past var was the only way to declare variables
- While var worked it a lot of confusing issues that came along with it
+ While var worked it presented some annoying issues (related to scope) for developers
  let was introduced in the latest release of JavaScript, ES6 to address these issues
- While var is still in use for legacy codebases, it is a recommended best practice to use let instead of var going forward</description>
+ While var is still in use for legacy codebases, it is a recommended best practice to use let or const(we&amp;rsquo;ll discuss const shortly) instead of var going forward</description>
     </item>
     
     <item>
@@ -1566,9 +1566,9 @@ Complete Homework #3 - Rock, Paper, Scissors Application  You are tasked with fi
       
       <guid>/02-javascript-basics/variables/const/</guid>
       <description>const  Stands for constant
- These are variables for which its value does not change after it has been assigned an initial value
+ These are variables that can not be reassigned (i.e. have it&amp;rsquo;s value changed using =)
  This help make your code easier to debug and protects certain values from accidentally being overridden in your codebase
-  Declaring a constant const are the same as let but with one key difference, values can only be assigned once to a const variable</description>
+  Declaring a variable using const const are the same as let but with one key difference, values can only be assigned once to a const variable</description>
     </item>
     
     <item>
@@ -1671,6 +1671,17 @@ $ mkdir nursery_rhymes  Navigate into the nursery_rhymes directory using the cd 
       <guid>/final-projects/milestones-due-dates/host-final-project/</guid>
       <description> Milestone VI: Host Final Project Details TBD
  Due Date: Thursday, September 26th  </description>
+    </item>
+    
+    <item>
+      <title>When to use let vs const</title>
+      <link>/02-javascript-basics/variables/when-to-use-let-vs-const/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/02-javascript-basics/variables/when-to-use-let-vs-const/</guid>
+      <description> When to use let vs const  Use let when you create a variable where you want to have the option of directly reassigning its value (using =) somewhere in your code
+let message if (loginSuccessful) { message = &amp;#34;welcome back!&amp;#34; } else { message = &amp;#34;Invalid email or password, please try again&amp;#34; }  Use const in all other occasions
+  </description>
     </item>
     
     <item>
