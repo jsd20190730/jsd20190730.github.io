@@ -606,7 +606,7 @@ const executorFunction = (resolve, reject) =&amp;gt; { } const myPromise = new P
       
       <guid>/02-javascript-basics/variables/declaring-variables/</guid>
       <description> Declaring Variables  Variables are created by declaring them
- Use the let keyword to declare a variable
+ Use the let or const keyword to declare a variable
  If you declare a variable without assigning it an initial value, the value of that variable will be undefined
   // declaring a variable  let firstName  Variables only need to be declared once
  </description>
@@ -1316,14 +1316,14 @@ Atom Editor v1.</description>
     </item>
     
     <item>
-      <title>let vs var</title>
-      <link>/02-javascript-basics/variables/let-vs-var/</link>
+      <title>var keyword</title>
+      <link>/02-javascript-basics/variables/var-keyword/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/02-javascript-basics/variables/let-vs-var/</guid>
-      <description>let vs var  In recent past var was the only way to declare variables
+      <guid>/02-javascript-basics/variables/var-keyword/</guid>
+      <description>var  In recent past var was the only way to declare variables
  While var worked it presented some annoying issues (related to scope) for developers
- let was introduced in the latest release of JavaScript, ES6 to address these issues
+ let and const were introduced in the latest release of JavaScript, ES6 to address these issues
  While var is still in use for legacy codebases, it is a recommended best practice to use let or const(we&amp;rsquo;ll discuss const shortly) instead of var going forward</description>
     </item>
     
@@ -1566,7 +1566,7 @@ Complete Homework #3 - Rock, Paper, Scissors Application  You are tasked with fi
       
       <guid>/02-javascript-basics/variables/const/</guid>
       <description>const  Stands for constant
- These are variables that can not be reassigned (i.e. have it&amp;rsquo;s value changed using =)
+ The values of these variables can not be changed through reassignment (i.e. have it&amp;rsquo;s value changed using =)
  This help make your code easier to debug and protects certain values from accidentally being overridden in your codebase
   Declaring a variable using const const are the same as let but with one key difference, values can only be assigned once to a const variable</description>
     </item>

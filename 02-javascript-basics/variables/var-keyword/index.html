@@ -9,24 +9,24 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Git Overview :: GA JavaScript</title>
+    <title>var keyword :: GA JavaScript</title>
 
     
-    <link href="/css/nucleus.css?1567617845" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1567617845" rel="stylesheet">
-    <link href="/css/hybrid.css?1567617845" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1567617845" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1567617845" rel="stylesheet">
-    <link href="/css/auto-complete.css?1567617845" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1567617845" rel="stylesheet">
-    <link href="/css/theme.css?1567617845" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1567617845" rel="stylesheet">
-    <link href="/css/syntax.css?1567617845" rel="stylesheet">
+    <link href="/css/nucleus.css?1567617846" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1567617846" rel="stylesheet">
+    <link href="/css/hybrid.css?1567617846" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1567617846" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1567617846" rel="stylesheet">
+    <link href="/css/auto-complete.css?1567617846" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1567617846" rel="stylesheet">
+    <link href="/css/theme.css?1567617846" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1567617846" rel="stylesheet">
+    <link href="/css/syntax.css?1567617846" rel="stylesheet">
     
-      <link href="/css/theme-blue.css?1567617845" rel="stylesheet">
+      <link href="/css/theme-blue.css?1567617846" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1567617845"></script>
+    <script src="/js/jquery-3.3.1.min.js?1567617846"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -36,7 +36,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/01-command-line-js-and-git/git-overview/">
+  <body class="" data-url="/02-javascript-basics/variables/var-keyword/">
     <nav id="sidebar" class="">
 
 
@@ -89,14 +89,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1567617845"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1567617845"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1567617846"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1567617846"></script>
 <script type="text/javascript">
     
         var baseurl = "\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1567617845"></script>
+<script type="text/javascript" src="/js/search.js?1567617846"></script>
 
     
   </div>
@@ -354,7 +354,7 @@
   
     
     <li data-nav-id="/01-command-line-js-and-git/" title="Command Line JS &amp; Git" class="dd-item
-        parent
+        
         
         
         ">
@@ -435,7 +435,7 @@
  
   
     
-      <li data-nav-id="/01-command-line-js-and-git/git-overview/" title="Git Overview" class="dd-item active">
+      <li data-nav-id="/01-command-line-js-and-git/git-overview/" title="Git Overview" class="dd-item ">
         <a href="/01-command-line-js-and-git/git-overview/">
         Git Overview
         
@@ -557,7 +557,7 @@
   
     
     <li data-nav-id="/02-javascript-basics/" title="JavaScript Basics" class="dd-item
-        
+        parent
         
         
         ">
@@ -603,7 +603,7 @@
   
     
     <li data-nav-id="/02-javascript-basics/variables/" title="Variables" class="dd-item
-        
+        parent
         
         
         ">
@@ -703,7 +703,7 @@
  
   
     
-      <li data-nav-id="/02-javascript-basics/variables/var-keyword/" title="var keyword" class="dd-item ">
+      <li data-nav-id="/02-javascript-basics/variables/var-keyword/" title="var keyword" class="dd-item active">
         <a href="/02-javascript-basics/variables/var-keyword/">
         var keyword
         
@@ -5309,7 +5309,13 @@
             
           
           
-            <a href='/'>JSD</a> > <a href='/01-command-line-js-and-git/'>Command Line JS & Git</a> > Git Overview
+            
+            
+          
+          
+            <a href='/'>JSD</a> > <a href='/02-javascript-basics/'>JavaScript Basics</a> > <a href='/02-javascript-basics/variables/'>Variables</a> > var keyword
+          
+        
           
         
           
@@ -5328,8 +5334,7 @@
 <ul>
 <li>
 <ul>
-<li><a href="#version-control-system-vcs">Version Control System (VCS)</a></li>
-<li><a href="#what-is-git">What is Git?</a></li>
+<li><a href="#var"><code>var</code></a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -5349,7 +5354,7 @@
           
             <h1>
               
-              Git Overview
+              var keyword
             </h1>
           
 
@@ -5358,37 +5363,29 @@
 
 
 
-<h3 id="version-control-system-vcs">Version Control System (VCS)</h3>
+<h3 id="var"><code>var</code></h3>
 
 <ul>
-<li><p>Tracks the history of changes as people and teams collaborate on projects together (think &ldquo;track changes feature available for MS Word or Google Docs&rdquo;)</p></li>
+<li><p>In recent past <code>var</code> was the only way to declare variables</p></li>
 
-<li><p>Developers can review project history to find out:</p>
+<li><p>While <code>var</code> worked it presented some annoying issues (related to scope) for developers</p></li>
 
-<ul>
-<li><p>Which changes were made?</p></li>
+<li><p><code>let</code> and <code>const</code> were introduced in the latest release of JavaScript, ES6 to address these issues</p></li>
 
-<li><p>Who made the changes?</p></li>
-
-<li><p>When were the changes made?</p></li>
-
-<li><p>Why were changes needed?</p></li>
-</ul></li>
+<li><p>While <code>var</code> is still in use for legacy codebases, it is a recommended best practice to use <code>let</code> or <code>const</code>(we&rsquo;ll discuss <code>const</code> shortly) instead of <code>var</code> going forward</p></li>
 </ul>
 
-<h3 id="what-is-git">What is Git?</h3>
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="c1">// declaring a variable using var
+</span><span class="c1"></span><span class="kd">var</span> <span class="nx">name</span> <span class="o">=</span> <span class="s2">&#34;Jen&#34;</span>
 
-<ul>
-<li><p>Git is VCS that is distributed - meaning developers don&rsquo;t need a constant connection to be able to collaborate with other developers (unlike other VCSs)</p></li>
+<span class="c1">// declaring a variable using const (or let) (best practice)
+</span><span class="c1"></span><span class="k">const</span> <span class="nx">name</span> <span class="o">=</span> <span class="s2">&#34;Jen&#34;</span>
+</code></pre></div>
 
-<li><p>Allows developers to work anywhere and collaborate asynchronously from any time zone</p></li>
 
-<li><p>Git is the most popular VCS, used by over 70% of developers across the world</p></li>
+<div class="notices tip" ><p><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Variables#The_difference_between_var_and_let">Click here</a> for more information on the differences between <code>let</code> and <code>var</code></p>
+</div>
 
-<li><p>Git operates a robust filesystem that keeps track every change to every file in your project by taking snapshots of a projects files every time changes are <strong>committed</strong></p></li>
-
-<li><p>Git and GitHub are <strong>not the same</strong></p></li>
-</ul>
 
 
 <footer class=" footline" >
@@ -5622,205 +5619,6 @@
             
                 
                     
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
                 
                 
 
@@ -5913,6 +5711,209 @@
             
             
                 
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
                     
                 
                 
@@ -9234,10 +9235,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/01-command-line-js-and-git/code-along-command-line-intro/" title="Code Along: Command Line Intro"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/02-javascript-basics/variables/naming-rules/" title="Naming Rules for Variables"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/01-command-line-js-and-git/github/" title="Github" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/02-javascript-basics/variables/const/" title="const" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
