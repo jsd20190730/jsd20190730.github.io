@@ -175,6 +175,13 @@
 	"content": " Understand the differences between synchronous and asynchronous programming\n Explain the different ways developers address issues presented with asynchronous programming\n Create and Consume Promises\n Handle errors generated from promises\n Use Async / Await to improve readability of asynchronous code\n  "
 },
 {
+	"uri": "/10-lab-giphy-weather-app/objectives/",
+	"title": "Objectives",
+	"tags": [],
+	"description": "",
+	"content": " Leverage knowledge of Promises to build an application that makes asynchronous requests to multiple APIs  "
+},
+{
 	"uri": "/09-asynchronous-js-and-promises/async-await/overview/",
 	"title": "Overview",
 	"tags": [],
@@ -462,6 +469,13 @@
 	"content": " Handling Async Issues with Async / Await  Let\u0026rsquo;s see how we can apply Async / Await to your .printLetter() program  Example: Using Async / Await to control the execution order of async functions function printLetter(letter) { return new Promise((resolve, reject) =\u0026gt; { setTimeout(() =\u0026gt; { console.log(letter) resolve() }, Math.floor(Math.random() * 3000)) }) } /* convert .printAll() to an async / await function by prepending \u0026#39;await\u0026#39; before the function keyword */ async function printAll(){ printLetter(\u0026#34;A\u0026#34;) await printLetter(\u0026#34;B\u0026#34;) await printLetter(\u0026#34;C\u0026#34;) await printLetter(\u0026#34;D\u0026#34;) } console.log(\u0026#39;Calling printAll function\u0026#39;) printAll() console.log(\u0026#39;End of code\u0026#39;)  JS Bin on jsbin.com\n In the code above, we modify .printAll() by prepending the declaration with async\n As a result of this change, we can simplify our promise consumption by using await inside the function to call the remaining letters in sequence (\u0026ldquo;B\u0026rdquo; -\u0026gt; \u0026ldquo;C\u0026rdquo; -\u0026gt; \u0026ldquo;D\u0026rdquo;)\n Compare this code to the approach we used with the regular Promise syntax and you\u0026rsquo;ll notice that the async / await syntax is much cleaner and looks like synchronous code\n  "
 },
 {
+	"uri": "/10-lab-giphy-weather-app/instructions/",
+	"title": "Instructions",
+	"tags": [],
+	"description": "",
+	"content": " Overview You are tasked with building an application that leverages different APIs to provide a city’s weather in a fun way\nInstructions 1) Download starter code\n The starter code for this code along is hosted on Github, see the url below:\n Lab: Giphy Weather App   2) Get API keys for OpenWeather and Giphy (if you haven’t done so already)\n"
+},
+{
 	"uri": "/08-http-and-apis/json/json-parse/",
 	"title": "JSON.parse()",
 	"tags": [],
@@ -670,6 +684,13 @@
 	"tags": [],
 	"description": "",
 	"content": " All of the settings below can be accessed using the following steps:\n Mac: cmd + , -\u0026gt; Editor PC: ctrl + , -\u0026gt; Editor  Setting indentation levels / default tab-size During our course we will be using a set indentation level of 2 spaces (1 indentation level = 2 spaces). Atom makes it easy conform to this approach by setting our tab to a set level of indentation.\nAfter updating this setting, pressing the tab key will represent one level of indentation which will translate to 2 spaces.\nDisplaying indentation guides Displaying the indentation guide provides a visual way of helping you ensure your indentation levels are correct\nSetting wordwrap Wordwrap ensures that long lines in your code are automatically wrapped to the next line. This improves readability of your code.\n"
+},
+{
+	"uri": "/10-lab-giphy-weather-app/requirements/",
+	"title": "Requirements",
+	"tags": [],
+	"description": "",
+	"content": " Requirements Requirement #1: App UI: The user interface should contain a single form input and a submit button (the starter code already provides the UI)\nRequirement #2: Make Multiple API Requests When users enter a city name into the input field and press submit the following should happen:\n API Request #1 - Fetch City’s Current Weather\nYour app should make an API request to OpenWeather and fetch the current weather associated with the city name entered into the form\n API Request #2 - Fetch Gif representing the City\nYour app should make an API request to Giphy and retrieve a gifs associated with the city name entered into the form field\n API Request #3 - Fetch Gif representing City’s weather description\nThe current weather data fetched from “API Request #1” returns a weather description (i.e. rain, clear sky, snow, etc) . Make an API request to the Giphy and retrieve gifs associated with this weather description\n  Requirement #3: Display Data Once all the data has been received from the API requests, display the following data on the screen:\n * The city’s current weather * City name * Current temperature (displayed in Fahrenheit or Celsius) * Weather description * Min temp * Max temp * 1 gif that represents the city * 1 gif that represents the city’s current weather description  Requirement #4: Use Promises  Promises must be used to make consume / handle the API responses\n Axios must be used to make the API requests\n  "
 },
 {
 	"uri": "/03-control-flow-and-loops/switch-statement/",
@@ -1484,6 +1505,13 @@
 	"content": " Recommended Folder Organization  Create a folder in your Documents folder (My Documents on Windows) called jsd\n At beginning of every class, you\u0026rsquo;ll use git (this process will be explained in the next class) to download any starter files to your jsd folder are available for that day\u0026rsquo;s lesson\n As the course progresses you\u0026rsquo;ll have a neatly organized listing of all of your work that looks similar to this:\n  "
 },
 {
+	"uri": "/10-lab-giphy-weather-app/",
+	"title": "Lab: Giphy Weather App",
+	"tags": [],
+	"description": "",
+	"content": " Lesson 10 Lab: Giphy Weather App "
+},
+{
 	"uri": "/class-resources/node-git-installation/",
 	"title": "Node &amp; Git Installation",
 	"tags": [],
@@ -1505,13 +1533,6 @@
 	"content": " Other Traversal Methods There are many other traversal methods available click here to see a complete list\n"
 },
 {
-	"uri": "/10-project-build-a-slackbot/",
-	"title": "Project: Build a Slackbot",
-	"tags": [],
-	"description": "",
-	"content": " Lesson 10 Project: Build a Slackbot "
-},
-{
 	"uri": "/06-dom-and-jquery/jquery-manipulation/",
 	"title": "jQuery Manipulation",
 	"tags": [],
@@ -1519,18 +1540,18 @@
 	"content": " jQuery Manipulation During this section we\u0026rsquo;ll cover:\n Getting \u0026amp; Setting Content   Inserting \u0026amp; Removing Content   CSS \u0026amp; Style Manipulation   "
 },
 {
-	"uri": "/11-advanced-apis/",
-	"title": "Advanced APIs",
-	"tags": [],
-	"description": "",
-	"content": " Lesson 11 Advanced APIs "
-},
-{
 	"uri": "/00-course-intro-and-tools/confirm-node-git-installation/",
 	"title": "Confirm Node &amp; Git Installation",
 	"tags": [],
 	"description": "",
 	"content": " Confirm Node \u0026amp; Git Installation 1) Ensure that you followed the installation instructions for your Operation System found here: Node and Git Installation\n2) Open up your console / terminal\n For Mac OS X users:\n Open the \u0026ldquo;Terminal\u0026rdquo; app (Applications \u0026gt; Utilities \u0026gt; Terminal)  For Windows:\n Open the \u0026ldquo;Command Prompt\u0026rdquo; application.   3) In the terminal type the following command to confirm git was successfully installed:\n $ git  4) In the terminal type the following command to confirm node was successfully installed:\n $ node  Note: type control-c to exit out of node\n"
+},
+{
+	"uri": "/11-project-build-a-slackbot/",
+	"title": "Project: Build a Slackbot",
+	"tags": [],
+	"description": "",
+	"content": " Lesson 11 Project: Build a Slackbot "
 },
 {
 	"uri": "/07-dom-and-jquery-continued/code-along-hilo/",
