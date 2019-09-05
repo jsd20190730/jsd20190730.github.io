@@ -57,5 +57,27 @@ const executorFunction = (resolve, reject) =&amp;gt; { } const myPromise = new P
   function printLetter(letter) { return new Promise((resolve, reject) =&amp;gt; { setTimeout(() =&amp;gt; { console.log(letter) resolve() }, Math.floor(Math.random() * 3000)) }) } //... the rest of code below not shown for brevity  Example: Using Promises to control the execution order of async functions function printLetter(letter) { return new Promise((resolve, reject) =&amp;gt; { setTimeout(() =&amp;gt; { console.</description>
     </item>
     
+    <item>
+      <title>Passing values with Promises</title>
+      <link>/09-asynchronous-js-and-promises/promises/passing-values-with-promises/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/09-asynchronous-js-and-promises/promises/passing-values-with-promises/</guid>
+      <description>Passing values with Promises  A common use case when working with asynchronous code is to take the data received from one asynchronous call (output) and use that data as input for another function or action in your program
+ Promises allow developers to easily pass data (or values) between functions
+  Example function getSuperheroes() { return new Promise(resolve =&amp;gt; { setTimeout(() =&amp;gt; { // send an array of heroes when  // promise is resolved  resolve([ { name: &amp;#34;Captain Marvel&amp;#34;, team: &amp;#34;Avengers&amp;#34; }, { name: &amp;#34;Batman&amp;#34;, team: &amp;#34;Justice League&amp;#34;}, { name: &amp;#34;Jean Grey&amp;#34;, team: &amp;#34;X-Men&amp;#34;}, { name: &amp;#34;Domino&amp;#34;, team: &amp;#34;X-Force&amp;#34;} ]) }, 3000) }); } function printHeroes(heroes) { heroes.</description>
+    </item>
+    
+    <item>
+      <title>Error Handling with .catch()</title>
+      <link>/09-asynchronous-js-and-promises/promises/error-handling-with-catch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/09-asynchronous-js-and-promises/promises/error-handling-with-catch/</guid>
+      <description>Error Handling with .catch()  Promises chains are a great place to handle errors
+ The .catch() method provides us with an easy way to catch any errors that occur in a Promise chain
+  Example const myPromise = () =&amp;gt; { return new Promise((resolve, reject) =&amp;gt; { // return 1 after the promise is resolved  setTimeout(() =&amp;gt; resolve(1), 2000) }) } myPromise().then((result) =&amp;gt; { console.log(result) return result + 1 }).</description>
+    </item>
+    
   </channel>
 </rss>

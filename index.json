@@ -175,6 +175,13 @@
 	"content": " Understand the differences between synchronous and asynchronous programming\n Explain the different ways developers address issues presented with asynchronous programming\n Create and Consume Promises\n Handle errors generated from promises\n Use Async / Await to improve readability of asynchronous code\n  "
 },
 {
+	"uri": "/09-asynchronous-js-and-promises/async-await/overview/",
+	"title": "Overview",
+	"tags": [],
+	"description": "",
+	"content": " Async / Await  Async / Await is special that makes working with promises easy to use and understand\n The syntax and structure of Async / Await is makes our asynchronous handling look like synchronous code\n Async / Await is alternative way of consuming promises a\n  async  In order for you to use Async / Await, you must declare a function with the async keyword   async function someFunction() { return \u0026quot;something\u0026quot; }   Prepending async to a function declaration means that function always returns a promise  await  The keyword await makes JavaScript wait until that promise settles and returns its result\n await can only be used in a function that is prepended with async\n await will be ignored (and your code will not wait for the asynchronous action to complete) it you try to use await in a function that is not prepended with async   Example function delayedGreeting() { return new Promise(resolve =\u0026gt; { setTimeout(() =\u0026gt; { resolve(\u0026#39;Hi, sorry for the wait!\u0026#39;) }, 3000) }); } /* Declare function with \u0026#34;async\u0026#34; keyword */ async function msg() { // use \u0026#34;await\u0026#34; keyword to call promise and wait  // for the result before moving on  // to the next line of code  const msg = await delayedGreeting() console.log(msg) } console.log(\u0026#34;Calling msg()\u0026#34;) msg() console.log(\u0026#34;end of the code\u0026#34;)  JS Bin on jsbin.com\n"
+},
+{
 	"uri": "/09-asynchronous-js-and-promises/promises/overview/",
 	"title": "Overview",
 	"tags": [],
@@ -448,6 +455,13 @@
 	"content": " Summary of this week\u0026rsquo;s homework assignment: Due Date: Thursday, August 15th\n1. Complete Homework #1 - JS Basics, Control Flow \u0026amp; Loops  You are tasked with completing the problem set which is hosted on Github, see the url below:\n Github Repo for Homework #1 - JS Basics, Control Flow \u0026amp; Loops  Use the Assignment Submission Git Workflow (detailed here) to access and submit the assignment\n  2. Finish the JS Basics, Control Flow \u0026amp; Loops Lab  Finish the Lab: JS Basics, Control Flow \u0026amp; Loops we started at the end of Lesson 03\n Use the Assignment Submission Git Workflow (detailed here) to access and submit the assignment\n  "
 },
 {
+	"uri": "/09-asynchronous-js-and-promises/async-await/handling-async-issues-with-async-await/",
+	"title": "Handling Async Issues with Async / Await",
+	"tags": [],
+	"description": "",
+	"content": " Handling Async Issues with Async / Await  Let\u0026rsquo;s see how we can apply Async / Await to your .printLetter() program  Example: Using Async / Await to control the execution order of async functions function printLetter(letter) { return new Promise((resolve, reject) =\u0026gt; { setTimeout(() =\u0026gt; { console.log(letter) resolve() }, Math.floor(Math.random() * 3000)) }) } /* convert .printAll() to an async / await function by prepending \u0026#39;await\u0026#39; before the function keyword */ async function printAll(){ printLetter(\u0026#34;A\u0026#34;) await printLetter(\u0026#34;B\u0026#34;) await printLetter(\u0026#34;C\u0026#34;) await printLetter(\u0026#34;D\u0026#34;) } console.log(\u0026#39;Calling printAll function\u0026#39;) printAll() console.log(\u0026#39;End of code\u0026#39;)  JS Bin on jsbin.com\n In the code above, we modify .printAll() by prepending the declaration with async\n As a result of this change, we can simplify our promise consumption by using await inside the function to call the remaining letters in sequence (\u0026ldquo;B\u0026rdquo; -\u0026gt; \u0026ldquo;C\u0026rdquo; -\u0026gt; \u0026ldquo;D\u0026rdquo;)\n Compare this code to the approach we used with the regular Promise syntax and you\u0026rsquo;ll notice that the async / await syntax is much cleaner and looks like synchronous code\n  "
+},
+{
 	"uri": "/08-http-and-apis/json/json-parse/",
 	"title": "JSON.parse()",
 	"tags": [],
@@ -644,6 +658,13 @@
 	"content": " PUT  The PUT method updates an item at the specified resource\n A request like PUT https://restaurant-reviews.com/restaurants/353 could update the information for Little Beet Restaurant after the owner edits the restaurant\u0026rsquo;s hours\n Like POST requests, PUT requests come with data in the HTTP request body to specify the fields and new values to update\n For example Hours: M-F 10a-10p, closed on Saturday and Sunday\n  "
 },
 {
+	"uri": "/09-asynchronous-js-and-promises/async-await/passing-values-with-async-await/",
+	"title": "Passing Values with Async / Await",
+	"tags": [],
+	"description": "",
+	"content": " Passing values with Async / Await  Similar to the original Promise syntax, we can easily pass values from one async function to other functions if needed  Example function getSuperheroes() { return new Promise(resolve =\u0026gt; { setTimeout(() =\u0026gt; { // send an array of heroes when  // promise is resolved  resolve([ { name: \u0026#34;Captain Marvel\u0026#34;, team: \u0026#34;Avengers\u0026#34; }, { name: \u0026#34;Batman\u0026#34;, team: \u0026#34;Justice League\u0026#34;}, { name: \u0026#34;Jean Grey\u0026#34;, team: \u0026#34;X-Men\u0026#34;}, { name: \u0026#34;Domino\u0026#34;, team: \u0026#34;X-Force\u0026#34;} ]) }, 3000) }); } function printHeroes(heroes) { heroes.forEach((hero) =\u0026gt; { console.log(`name: ${hero.name}, team: ${hero.team}`) }) } /* Declare function with \u0026#34;async\u0026#34; keyword */ async function fetchHeroes() { // make asynchronous call to .getSuperheroes()  // wait for the result and then use that  // result as input for the .printHeroes() function  const fetchedHeroes = await getSuperheroes() printHeroes(fetchedHeroes) } console.log(\u0026#34;Calling fetchHeroes()\u0026#34;) fetchHeroes() console.log(\u0026#34;end of the code\u0026#34;)  JS Bin on jsbin.com\n"
+},
+{
 	"uri": "/class-resources/atom-editor-settings/",
 	"title": "Recommended Atom Editor Settings",
 	"tags": [],
@@ -655,7 +676,7 @@
 	"title": "Switch Statement",
 	"tags": [],
 	"description": "",
-	"content": " Switch Statement  Used an alternative to if..else if statements\n Evaluates an expression, and matches that expression against each of the case clauses\n if there\u0026rsquo;s a match, the statements associated with that case clause will be executed\n The break keyword must be used to exit the Switch statement after a match is found\n  switch(expression) { case x: // execute code block when expression === x  break // \u0026lt;- break must be called to exit the switch statement after the match  case y: // execute code block when expression === y  break // \u0026lt;- break must be called to exit the switch statement after the match  default: // execute code block when expression === when none of the above cases match }  Example const food = \u0026#34;apple\u0026#34; switch(food) { case \u0026#39;pear\u0026#39;: console.log(\u0026#34;I like pears\u0026#34;) break case \u0026#39;apple\u0026#39;: case \u0026#39;oranges\u0026#39;: console.log(\u0026#34;I like apples \u0026amp; oranges\u0026#34;) break case \u0026#39;grapes\u0026#39;: console.log(\u0026#34;I like grapes\u0026#34;) break default: console.log(\u0026#34;Your fruit selection is weak :(\u0026#34;) }  JS Bin on jsbin.com\nExercise Rewrite the following if..else if statement using a switch statement:\nconst yourGrade = 84 if (yourGrade \u0026gt;= 90) { console.log(\u0026#34;Congrats your score is 90 or above, that\u0026#39;s an A!\u0026#34;) } else if (yourGrade \u0026gt;= 80) { console.log(\u0026#34;Congrats your score is 80 or above, you earned a B\u0026#34;) } else { console.log(\u0026#34;Your score is less than 80, no bueno\u0026#34;) }  JS Bin on jsbin.com\n"
+	"content": " Switch Statement  Used an alternative to if..else if statements\n Evaluates an expression, and matches that expression against each of the case clauses\n if there\u0026rsquo;s a match, the statements associated with that case clause will be executed\n The break keyword must be used to exit the Switch statement after a match is found\n  switch(expression) { case x: // execute code block when expression === x  break // \u0026lt;- break must be called to exit the switch statement after the match  case y: // execute code block when expression === y  break // \u0026lt;- break must be called to exit the switch statement after the match  default: // execute code block when expression === when none of the above cases match }  Example const food = \u0026#34;apple\u0026#34; switch(food) { case \u0026#39;pear\u0026#39;: console.log(\u0026#34;I like pears\u0026#34;) break case \u0026#39;apple\u0026#39;: case \u0026#39;oranges\u0026#39;: console.log(\u0026#34;I like apples \u0026amp; oranges\u0026#34;) break case \u0026#39;grapes\u0026#39;: console.log(\u0026#34;I like grapes\u0026#34;) break default: console.log(\u0026#34;Your fruit selection is weak :(\u0026#34;) }  JS Bin on jsbin.com\nExercise Rewrite the following if..else if statement using a switch statement:\nconst yourGrade = \u0026#34;C\u0026#34; if (yourGrade === \u0026#34;A\u0026#34;) { console.log(\u0026#34;You earned an A!\u0026#34;) } else if (yourGrade === \u0026#34;B\u0026#34;) { console.log(\u0026#34;You earned a B\u0026#34;) } else if (yourGrade === \u0026#34;C\u0026#34;) { console.log(\u0026#34;You earned a C\u0026#34;) } else { console.log(\u0026#34;You earned less than a C\u0026#34;) }  JS Bin on jsbin.com\n"
 },
 {
 	"uri": "/02-javascript-basics/variables/updating-variables/",
@@ -784,6 +805,13 @@
 	"content": " Strings\n Numbers\n Booleans\n Arrays\n Objects\n  "
 },
 {
+	"uri": "/09-asynchronous-js-and-promises/async-await/error-handling-with-async-await/",
+	"title": "Error Handling with Async / Await",
+	"tags": [],
+	"description": "",
+	"content": " Error Handling with Async / Await  With Async / Await we can use try..catch block to easily catch errors  Example function yayOrNay() { return new Promise((resolve, reject) =\u0026gt; { const val = Math.round(Math.random() * 1) // 0 or 1, at random  val ? resolve(\u0026#39;Lucky!!\u0026#39;) : reject(\u0026#39;Nope 😠\u0026#39;) }) } async function msg() { // use try..catch to handle any potential errors  // when using \u0026#34;async / await\u0026#34;  try { const msg = await yayOrNay(); console.log(msg) } catch(err) { console.log(err) } } msg() msg() msg() msg() msg() msg()  JS Bin on jsbin.com\n Notice how all of your \u0026ldquo;async-related\u0026rdquo; code lives inside the try {} portion of the try..catch block  Example #2: Handling errors with our Superhero fetcher  Let\u0026rsquo;s use try..catch to any errors that occur with our Superhero fetcher program  function getSuperheroes() { return new Promise((resolve, reject) =\u0026gt; { setTimeout(() =\u0026gt; { // comment out to simulate reject()  /* resolve([ { name: \u0026#34;Captain Marvel\u0026#34;, team: \u0026#34;Avengers\u0026#34; }, { name: \u0026#34;Batman\u0026#34;, team: \u0026#34;Justice League\u0026#34;}, { name: \u0026#34;Jean Grey\u0026#34;, team: \u0026#34;X-Men\u0026#34;}, { name: \u0026#34;Domino\u0026#34;, team: \u0026#34;X-Force\u0026#34;} ]) */ // reject promise  reject(\u0026#34;Oh no!!! An error occurred while fetching heroes.\u0026#34;) }, 3000) }); } function printHeroes(heroes) { heroes.forEach((hero) =\u0026gt; { console.log(`name: ${hero.name}, team: ${hero.team}`) }) } async function fetchHeroes() { /* use `try..catch` to catch any errors that occur during our asynchronous operation */ try { const fetchedHeroes = await getSuperheroes() printHeroes(fetchedHeroes) } catch (e) { console.log(e) } } console.log(\u0026#34;Calling fetchHeroes()\u0026#34;) fetchHeroes() console.log(\u0026#34;end of the code\u0026#34;)  JS Bin on jsbin.com\n"
+},
+{
 	"uri": "/06-dom-and-jquery/jquery-events/form-events/",
 	"title": "Form Events",
 	"tags": [],
@@ -816,7 +844,7 @@
 	"title": "Handling Async Issues with Promises",
 	"tags": [],
 	"description": "",
-	"content": " Handling Async Issues with Promises  Let\u0026rsquo;s revisit our .printLetter() example and use promises\n First let\u0026rsquo;s modify our .printLetter() function to return a Promise\n  function printLetter(letter) { return new Promise((resolve, reject) =\u0026gt; { setTimeout(() =\u0026gt; { console.log(letter) resolve() }, Math.floor(Math.random() * 3000)) }) } //... the rest of code below not shown for brevity  Example: Using Promises to control the execution order of async functions function printLetter(letter) { return new Promise((resolve, reject) =\u0026gt; { setTimeout(() =\u0026gt; { console.log(letter) resolve() }, Math.floor(Math.random() * 3000)) }) } function printAll(){ printLetter(\u0026#34;A\u0026#34;) .then(() =\u0026gt; printLetter(\u0026#34;B\u0026#34;)) .then(() =\u0026gt; printLetter(\u0026#34;C\u0026#34;)) } console.log(\u0026#39;Calling printAll function\u0026#39;) printAll() console.log(\u0026#39;End of code\u0026#39;)  JS Bin on jsbin.com\n"
+	"content": " Handling Async Issues with Promises  Let\u0026rsquo;s revisit our .printLetter() example and use promises\n First let\u0026rsquo;s modify our .printLetter() function to return a Promise\n  function printLetter(letter) { return new Promise((resolve, reject) =\u0026gt; { setTimeout(() =\u0026gt; { console.log(letter) resolve() }, Math.floor(Math.random() * 3000)) }) } //... the rest of code below not shown for brevity  Example: Using Promises to control the execution order of async functions function printLetter(letter) { return new Promise((resolve, reject) =\u0026gt; { setTimeout(() =\u0026gt; { console.log(letter) resolve() }, Math.floor(Math.random() * 3000)) }) } function printAll(){ printLetter(\u0026#34;A\u0026#34;) .then(() =\u0026gt; printLetter(\u0026#34;B\u0026#34;)) .then(() =\u0026gt; printLetter(\u0026#34;C\u0026#34;)) .then(() =\u0026gt; printLetter(\u0026#34;D\u0026#34;)) } console.log(\u0026#39;Calling printAll function\u0026#39;) printAll() console.log(\u0026#39;End of code\u0026#39;)  JS Bin on jsbin.com\nPromise Chain The following code snippet from the example above is referred to as a promise chain:\nprintLetter(\u0026quot;A\u0026quot;) .then(() =\u0026gt; printLetter(\u0026quot;B\u0026quot;)) .then(() =\u0026gt; printLetter(\u0026quot;C\u0026quot;)) .then(() =\u0026gt; printLetter(\u0026quot;D\u0026quot;))  "
 },
 {
 	"uri": "/04-functions-and-scope/hoisting/",
@@ -959,6 +987,13 @@
 	"content": " Git Vocabulary Repository  Most basic element of GitHub\n A repository can be referred to as a project\n contains all of a project\u0026rsquo;s files\n Stores each file\u0026rsquo;s revision history\n Repositories can have multiple collaborators and can be either public or private.\n  Commit  A \u0026ldquo;revision\u0026rdquo;, is an individual change to a file (or set of files)\n Git\u0026rsquo;s version of saving\n Commits save a \u0026ldquo;snapshot\u0026rdquo; of all of the project\u0026rsquo;s files at that point in time\n Using commits you can \u0026ldquo;time travel\u0026rdquo; and navigate back to any previous commit that was made throughout the history of the project\n Commits usually contain a commit message which is a brief description of what changes were made\n  Branch  Parallel version of a repository\n Branches allow developers to work on new features without affecting the \u0026ldquo;master\u0026rdquo; branch and disrupting the \u0026ldquo;live\u0026rdquo; version\n The process of creating a separate branch to work on a feature is referred to as \u0026ldquo;creating a feature branch\u0026ldquo;\n After developers have added their new feature (on their feature branch) they will then make a Pull Request (which is a request for comments and a request to Merge their changes back into the main branch (master branch))\n  Master Branch  The default branch found in every Git respository\n For most companies, the master branch reflects that latest version of production code (i.e. working code available to customers)\n  Merge  Merging takes the changes from one branch (in the same repository or from a fork), and applies them into another\n This often happens as a Pull Request (which can be thought of as a request for comments and a request to merge into the another branch * usually the master branch)\n  Push  Refers to sending your committed changes to a remote repository such as GitHub.com\n For instance, if you change something locally, you\u0026rsquo;d want to then push those changes so that others may access them\n  Pull  Pulls code from a remote repository and merges it with code in your local repository (on your computer)  Fork  A fork is a copy of a repository. Forking a repository allows you to freely experiment with changes without affecting the original project\n Most commonly, forks are used to either propose changes to someone else\u0026rsquo;s project or to use someone else\u0026rsquo;s project as a starting point for your own idea\n  Clone  Copies a remote repository (i.e. repository in the cloud on a platform like Github.com) and creates a local copy of the repository on your computer\n Cloning creates a link between the the remote and local copy of a repository, allowing you to your code in sync between the two\n  Pull Request  Pull requests are proposed changes to a repository submitted by a user and accepted or rejected by a repository\u0026rsquo;s collaborators (i.e. team members).\n Pull requests can be thought of as a developer asking for permission to merge their changes into the master branch\n Pull requests each have their own discussion forum, where developer can discuss the changes requested and suggest further revisions.\n This discussion as also referred to as Code Reviews\n  Great resource for all things git can be found here\n "
 },
 {
+	"uri": "/09-asynchronous-js-and-promises/promises/passing-values-with-promises/",
+	"title": "Passing values with Promises",
+	"tags": [],
+	"description": "",
+	"content": " Passing values with Promises  A common use case when working with asynchronous code is to take the data received from one asynchronous call (output) and use that data as input for another function or action in your program\n Promises allow developers to easily pass data (or values) between functions\n  Example function getSuperheroes() { return new Promise(resolve =\u0026gt; { setTimeout(() =\u0026gt; { // send an array of heroes when  // promise is resolved  resolve([ { name: \u0026#34;Captain Marvel\u0026#34;, team: \u0026#34;Avengers\u0026#34; }, { name: \u0026#34;Batman\u0026#34;, team: \u0026#34;Justice League\u0026#34;}, { name: \u0026#34;Jean Grey\u0026#34;, team: \u0026#34;X-Men\u0026#34;}, { name: \u0026#34;Domino\u0026#34;, team: \u0026#34;X-Force\u0026#34;} ]) }, 3000) }); } function printHeroes(heroes) { heroes.forEach((hero) =\u0026gt; { console.log(`name: ${hero.name}, team: ${hero.team}`) }) } /* Declare function with \u0026#34;async\u0026#34; keyword */ function fetchHeroes() { /* make asynchronous call to .getSuperheroes() and use .then() to pass the result from .getSuperheroes (\u0026#34;fetchedHeroes\u0026#34;) so it can be used as a parameter for .printHeroes() */ getSuperheroes() .then((fetchedHeroes) =\u0026gt; { printHeroes(fetchedHeroes) }) } console.log(\u0026#34;Calling fetchHeroes()\u0026#34;) fetchHeroes() console.log(\u0026#34;end of the code\u0026#34;)  JS Bin on jsbin.com\n In the code above, we have two functions .getSuperheroes() which is responsible for asynchronously fetching a list of superheroes and .printHeroes which is responsible for printing the heroes to the console\n .printHeroes depends on the data from the (asynchronous) .getSuperheroes() function\n In addition to helping us control the sequence of asynchronous functions, .then() also allows us to \u0026ldquo;pass\u0026rdquo; values to other function in the \u0026ldquo;promise chain\u0026rdquo;\n .getSuperheroes returns an array of objects, we use .then() to pass that array of objects as a parameter (fetchedHeroes) to the next function in the promise chain: printHeroes()\n  "
+},
+{
 	"uri": "/04-functions-and-scope/returning-values-from-functions/",
 	"title": "Returning Values from Functions",
 	"tags": [],
@@ -1083,6 +1118,13 @@
 	"tags": [],
 	"description": "",
 	"content": " Lesson 06 Intro to DOM \u0026amp; jQuery "
+},
+{
+	"uri": "/09-asynchronous-js-and-promises/promises/error-handling-with-catch/",
+	"title": "Error Handling with .catch()",
+	"tags": [],
+	"description": "",
+	"content": " Error Handling with .catch()  Promises chains are a great place to handle errors\n The .catch() method provides us with an easy way to catch any errors that occur in a Promise chain\n  Example const myPromise = () =\u0026gt; { return new Promise((resolve, reject) =\u0026gt; { // return 1 after the promise is resolved  setTimeout(() =\u0026gt; resolve(1), 2000) }) } myPromise().then((result) =\u0026gt; { console.log(result) return result + 1 }).then((result) =\u0026gt; { console.log(result) return result + 1 }).then((result) =\u0026gt; { throw new Error(\u0026#39;FAILED HERE\u0026#39;) // \u0026lt;- simulate an error in the promise chain  console.log(result) return result + 1 }).catch((e) =\u0026gt; { // catch error that occurs anywhere  // the promise chain  console.log(\u0026#39;an error occurred\u0026#39;) console.log(e) })  JS Bin on jsbin.com\nExample #2: Handling errors with our Superhero fetcher  Let\u0026rsquo;s use .catch() to any errors that occur with our Superhero fetcher program  function getSuperheroes() { return new Promise((resolve, reject) =\u0026gt; { setTimeout(() =\u0026gt; { // comment out to simulate reject()  /* resolve([ { name: \u0026#34;Captain Marvel\u0026#34;, team: \u0026#34;Avengers\u0026#34; }, { name: \u0026#34;Batman\u0026#34;, team: \u0026#34;Justice League\u0026#34;}, { name: \u0026#34;Jean Grey\u0026#34;, team: \u0026#34;X-Men\u0026#34;}, { name: \u0026#34;Domino\u0026#34;, team: \u0026#34;X-Force\u0026#34;} ]) */ // reject promise  reject(\u0026#34;Oh no!!! An error occurred while fetching heroes.\u0026#34;) }, 3000) }); } function printHeroes(heroes) { heroes.forEach((hero) =\u0026gt; { console.log(`name: ${hero.name}, team: ${hero.team}`) }) } function fetchHeroes() { /* use .catch() to catch any errors that occur during our asynchronous operation */ getSuperheroes() .then((fetchedHeroes) =\u0026gt; { printHeroes(fetchedHeroes) }).catch((e) =\u0026gt; { console.log(e) }) } console.log(\u0026#34;Calling fetchHeroes()\u0026#34;) fetchHeroes() console.log(\u0026#34;end of the code\u0026#34;)  JS Bin on jsbin.com\n"
 },
 {
 	"uri": "/homework-assignments/hw-assignment-03/",
@@ -1229,7 +1271,7 @@
 	"title": "Promises",
 	"tags": [],
 	"description": "",
-	"content": " Promises  Overview   Creating Promises   Consuming Promises   Handling Async Issues with Promises   "
+	"content": " Promises  Overview   Creating Promises   Consuming Promises   Handling Async Issues with Promises   Passing values with Promises   Error Handling with .catch()   "
 },
 {
 	"uri": "/02-javascript-basics/variables/when-to-use-let-vs-const/",
@@ -1309,6 +1351,13 @@
 	"content": " Adding \u0026amp; Removing Items  Let\u0026rsquo;s review some of the most common ways to Add and Remove elements from an array:   .push()   .pop()   .shift()   .unshift()   .slice()   "
 },
 {
+	"uri": "/09-asynchronous-js-and-promises/async-await/",
+	"title": "Async / Await",
+	"tags": [],
+	"description": "",
+	"content": " Async / Await  Overview   Handling Async Issues with Async / Await   Passing Values with Async / Await   Error Handling with Async / Await   "
+},
+{
 	"uri": "/07-dom-and-jquery-continued/code-along-traffic-light/",
 	"title": "Code Along: Traffic Light",
 	"tags": [],
@@ -1384,6 +1433,13 @@
 	"tags": [],
 	"description": "",
 	"content": " Lesson 09 Asynchronous JS and Promises "
+},
+{
+	"uri": "/09-asynchronous-js-and-promises/code-along-giphy-api-with-async-await/",
+	"title": "Code Along: Giphy API with Async / Await",
+	"tags": [],
+	"description": "",
+	"content": " Code Along: Giphy Search API with Async / Await We\u0026rsquo;re going to modify our Giphy\u0026rsquo;s API application and use async / await to make our API request\n1) Sign up for a Giphy API Key here: https://developers.giphy.com/ (only for those students who don\u0026rsquo;t already have one)\n2) Get the starter code\n The starter code for this code along is hosted on Github, see the url below:\n Code Along: Giphy Search API with Async / Await\n Use the Assignment Submission Git Workflow (detailed here) to access and submit the assignment\n   3) We\u0026rsquo;ll be using axios to make our API request. Add the following script tag right before your closing \u0026lt;body\u0026gt; tag but before the script tag targeting your app.js file\n\u0026lt;script src=\u0026#34;https://code.jquery.com/jquery-3.4.1.min.js\u0026#34; integrity=\u0026#34;sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=\u0026#34; crossorigin=\u0026#34;anonymous\u0026#34;\u0026gt;\u0026lt;/script\u0026gt; \u0026lt;script src=\u0026#34;https://unpkg.com/axios/dist/axios.min.js\u0026#34;\u0026gt;\u0026lt;/script\u0026gt; \u0026lt;!-- Add the axios script tag here --\u0026gt; \u0026lt;script src=\u0026#34;js/app.js\u0026#34;\u0026gt;\u0026lt;/script\u0026gt;  "
 },
 {
 	"uri": "/08-http-and-apis/lab-send-receive-sms-twilio-api/",

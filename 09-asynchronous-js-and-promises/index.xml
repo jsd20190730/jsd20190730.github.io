@@ -83,5 +83,18 @@
   function printLetter(letter, callback) { //&amp;lt;- callback function param added  setTimeout(() =&amp;gt; { console.log(letter) callback() // &amp;lt;- execute (call) the callback param after printing letter  }, Math.</description>
     </item>
     
+    <item>
+      <title>Code Along: Giphy API with Async / Await</title>
+      <link>/09-asynchronous-js-and-promises/code-along-giphy-api-with-async-await/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/09-asynchronous-js-and-promises/code-along-giphy-api-with-async-await/</guid>
+      <description>Code Along: Giphy Search API with Async / Await We&amp;rsquo;re going to modify our Giphy&amp;rsquo;s API application and use async / await to make our API request
+1) Sign up for a Giphy API Key here: https://developers.giphy.com/ (only for those students who don&amp;rsquo;t already have one)
+2) Get the starter code
+ The starter code for this code along is hosted on Github, see the url below:
+ Code Along: Giphy Search API with Async / Await</description>
+    </item>
+    
   </channel>
 </rss>

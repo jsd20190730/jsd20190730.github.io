@@ -103,6 +103,10 @@
   </url>
   
   <url>
+    <loc>/09-asynchronous-js-and-promises/async-await/overview/</loc>
+  </url>
+  
+  <url>
     <loc>/09-asynchronous-js-and-promises/promises/overview/</loc>
   </url>
   
@@ -260,6 +264,10 @@
   </url>
   
   <url>
+    <loc>/09-asynchronous-js-and-promises/async-await/handling-async-issues-with-async-await/</loc>
+  </url>
+  
+  <url>
     <loc>/08-http-and-apis/json/json-parse/</loc>
   </url>
   
@@ -372,6 +380,10 @@
   </url>
   
   <url>
+    <loc>/09-asynchronous-js-and-promises/async-await/passing-values-with-async-await/</loc>
+  </url>
+  
+  <url>
     <loc>/class-resources/atom-editor-settings/</loc>
   </url>
   
@@ -449,6 +461,10 @@
   
   <url>
     <loc>/02-javascript-basics/data-types/</loc>
+  </url>
+  
+  <url>
+    <loc>/09-asynchronous-js-and-promises/async-await/error-handling-with-async-await/</loc>
   </url>
   
   <url>
@@ -552,6 +568,10 @@
   </url>
   
   <url>
+    <loc>/09-asynchronous-js-and-promises/promises/passing-values-with-promises/</loc>
+  </url>
+  
+  <url>
     <loc>/04-functions-and-scope/returning-values-from-functions/</loc>
   </url>
   
@@ -621,6 +641,10 @@
   
   <url>
     <loc>/06-dom-and-jquery/</loc>
+  </url>
+  
+  <url>
+    <loc>/09-asynchronous-js-and-promises/promises/error-handling-with-catch/</loc>
   </url>
   
   <url>
@@ -752,6 +776,10 @@
   </url>
   
   <url>
+    <loc>/09-asynchronous-js-and-promises/async-await/</loc>
+  </url>
+  
+  <url>
     <loc>/07-dom-and-jquery-continued/code-along-traffic-light/</loc>
   </url>
   
@@ -793,6 +821,10 @@
   
   <url>
     <loc>/09-asynchronous-js-and-promises/</loc>
+  </url>
+  
+  <url>
+    <loc>/09-asynchronous-js-and-promises/code-along-giphy-api-with-async-await/</loc>
   </url>
   
   <url>
