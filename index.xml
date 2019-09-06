@@ -670,7 +670,7 @@ const executorFunction = (resolve, reject) =&amp;gt; { } const myPromise = new P
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/09-asynchronous-js-and-promises/async-await/handling-async-issues-with-async-await/</guid>
-      <description>Handling Async Issues with Async / Await  Let&amp;rsquo;s see how we can apply Async / Await to your .printLetter() program  Example: Using Async / Await to control the execution order of async functions function printLetter(letter) { return new Promise((resolve, reject) =&amp;gt; { setTimeout(() =&amp;gt; { console.log(letter) resolve() }, Math.floor(Math.random() * 3000)) }) } /* convert .printAll() to an async / await function by prepending &amp;#39;await&amp;#39; before the function keyword */ async function printAll(){ printLetter(&amp;#34;A&amp;#34;) await printLetter(&amp;#34;B&amp;#34;) await printLetter(&amp;#34;C&amp;#34;) await printLetter(&amp;#34;D&amp;#34;) } console.</description>
+      <description>Handling Async Issues with Async / Await  Let&amp;rsquo;s see how we can apply Async / Await to your .printLetter() program  Example: Using Async / Await to control the execution order of async functions function printLetter(letter) { return new Promise((resolve, reject) =&amp;gt; { setTimeout(() =&amp;gt; { console.log(letter) resolve() }, Math.floor(Math.random() * 3000)) }) } /* convert .printAll() to an async / await function by prepending &amp;#39;await&amp;#39; before the function keyword */ async function printAll(){ await printLetter(&amp;#34;A&amp;#34;) await printLetter(&amp;#34;B&amp;#34;) await printLetter(&amp;#34;C&amp;#34;) await printLetter(&amp;#34;D&amp;#34;) } console.</description>
     </item>
     
     <item>
