@@ -107,6 +107,10 @@
   </url>
   
   <url>
+    <loc>/11-project-build-a-slackbot/objectives/</loc>
+  </url>
+  
+  <url>
     <loc>/09-asynchronous-js-and-promises/async-await/overview/</loc>
   </url>
   
@@ -120,6 +124,10 @@
   
   <url>
     <loc>/08-http-and-apis/http/http-response/status-codes/</loc>
+  </url>
+  
+  <url>
+    <loc>/11-project-build-a-slackbot/tutorial/step-1-new-slack-workspace/</loc>
   </url>
   
   <url>
@@ -312,7 +320,15 @@
   </url>
   
   <url>
+    <loc>/11-project-build-a-slackbot/project-overview/</loc>
+  </url>
+  
+  <url>
     <loc>/04-functions-and-scope/scope/block-statements/</loc>
+  </url>
+  
+  <url>
+    <loc>/11-project-build-a-slackbot/tutorial/step-2-create-new-slack-app/</loc>
   </url>
   
   <url>
@@ -376,6 +392,10 @@
   </url>
   
   <url>
+    <loc>/11-project-build-a-slackbot/documentaton/</loc>
+  </url>
+  
+  <url>
     <loc>/final-projects/milestones-due-dates/get-idea-approved/</loc>
   </url>
   
@@ -397,6 +417,10 @@
   
   <url>
     <loc>/10-lab-giphy-weather-app/requirements/</loc>
+  </url>
+  
+  <url>
+    <loc>/11-project-build-a-slackbot/tutorial/step-3-set-up-node-application/</loc>
   </url>
   
   <url>
@@ -528,6 +552,14 @@
   </url>
   
   <url>
+    <loc>/11-project-build-a-slackbot/tutorial/step-4-run-ngrok/</loc>
+  </url>
+  
+  <url>
+    <loc>/11-project-build-a-slackbot/tutorial/</loc>
+  </url>
+  
+  <url>
     <loc>/class-resources/node-git-installation/windows/</loc>
   </url>
   
@@ -572,6 +604,10 @@
   </url>
   
   <url>
+    <loc>/11-project-build-a-slackbot/code-along-complete-openweatherbot/</loc>
+  </url>
+  
+  <url>
     <loc>/final-projects/milestones-due-dates/create-submit-wireframes/</loc>
   </url>
   
@@ -585,6 +621,14 @@
   
   <url>
     <loc>/04-functions-and-scope/returning-values-from-functions/</loc>
+  </url>
+  
+  <url>
+    <loc>/class-resources/atom-show-hidden-files/</loc>
+  </url>
+  
+  <url>
+    <loc>/11-project-build-a-slackbot/tutorial/step-5-create-a-test-slash-command/</loc>
   </url>
   
   <url>
@@ -688,6 +732,10 @@
   </url>
   
   <url>
+    <loc>/11-project-build-a-slackbot/tutorial/step-6-install-app-to-workspace/</loc>
+  </url>
+  
+  <url>
     <loc>/05-arrays-objects/array-review/updating-array-values/</loc>
   </url>
   
@@ -741,6 +789,10 @@
   
   <url>
     <loc>/09-asynchronous-js-and-promises/promises/</loc>
+  </url>
+  
+  <url>
+    <loc>/11-project-build-a-slackbot/tutorial/step-7-responding-to-slash-commands/</loc>
   </url>
   
   <url>
@@ -817,6 +869,10 @@
   
   <url>
     <loc>/04-functions-and-scope/scope/</loc>
+  </url>
+  
+  <url>
+    <loc>/11-project-build-a-slackbot/tutorial/step-8-test-your-slash-command/</loc>
   </url>
   
   <url>

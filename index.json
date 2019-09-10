@@ -182,6 +182,13 @@
 	"content": " Leverage knowledge of Promises to build an application that makes asynchronous requests to multiple APIs  "
 },
 {
+	"uri": "/11-project-build-a-slackbot/objectives/",
+	"title": "Objectives",
+	"tags": [],
+	"description": "",
+	"content": " Leverage Slack\u0026rsquo;s API and OpenWeather\u0026rsquo;s API to build a slackbot that provides users with a city\u0026rsquo;s current weather directly in Slack  "
+},
+{
 	"uri": "/09-asynchronous-js-and-promises/async-await/overview/",
 	"title": "Overview",
 	"tags": [],
@@ -208,6 +215,13 @@
 	"tags": [],
 	"description": "",
 	"content": " Status Codes  In the HTTP response that is sent to a client, the status code, which is a three-digit number, is accompanied by a reason phrase (also known as status text) that summarizes the meaning of the code\n Along with the HTTP version of the response, these items are placed in the first line of the response, which is therefore known as the status line.\n The status codes are classified by number range, with each class of codes having the same basic meaning\n The range 100-199 is classed as Informational\n 200-299 is Successful\n 300-399 is Redirection\n 400-499 is Client error\n 500-599 is Server error\n   Check out HTTP Status Dogs for a fun way to learn the different status codes\n Exercise: See example of 404 Status Code  404 means resource not found\n Let\u0026rsquo;s see an example of how some websites handle situations where users try to navigate to a page on their site that doesn\u0026rsquo;t exist\n   Try navigating to the following url: https://github.com/okokwhatupareyouthere\n Open up your developer tools and navigate to the \u0026ldquo;Network\u0026rdquo; tab; see if you can find the 404 response returned from Github\u0026rsquo;s servers\n  "
+},
+{
+	"uri": "/11-project-build-a-slackbot/tutorial/step-1-new-slack-workspace/",
+	"title": "Step 1: Create New Slack Workspace",
+	"tags": [],
+	"description": "",
+	"content": " Step 1: Create New Slack Workspace We\u0026rsquo;re going to need a Slack workspace to test our bot. Click on the link below and follow the instructions to create a new Slack workspace\nCreate a new workspace\n"
 },
 {
 	"uri": "/02-javascript-basics/data-types/strings/",
@@ -539,11 +553,25 @@
 	"content": " POST  A POST request creates a new item on the server\n A request like POST https://restaurant-reviews.com/reviews could make a new review when we click the \u0026ldquo;Submit review\u0026rdquo; button on the webpage\n POST requests are often accompanied by data passed along in the HTTP request body. e.g. when we write a review for Little Beet, we would include our username (eric), our review (The shrimp salad is so delightful), and a star rating (4 out of 5)\n POST requests often return an ID of the new item, like 3\n POST requests are not idempotent\n When we make one of these requests, the state of the server changes\n Making the request again would create another item with another ID\n   "
 },
 {
+	"uri": "/11-project-build-a-slackbot/project-overview/",
+	"title": "Project Overview",
+	"tags": [],
+	"description": "",
+	"content": " Project Overview OpenWeatherBot: We will be building a slackbot that allows users to get information about a city\u0026rsquo;s current weather directly in Slack.\nHere\u0026rsquo;s a diagram that provides a high-level view of how our slackbot will work:\n"
+},
+{
 	"uri": "/04-functions-and-scope/scope/block-statements/",
 	"title": "Scope in Block Statements",
 	"tags": [],
 	"description": "",
 	"content": " Scope in Block Statements  Block statements like if and switch conditions or for and while loops, unlike functions, will create a new scope if you use let or const but NOT when you use var  Example  Declaring a variable within a Block statement using let creates local scope  if (true) { // this \u0026#39;if\u0026#39; conditional block creates a new scope because we use \u0026#39;let\u0026#39;  const name = \u0026#39;Prince\u0026#39; // name is local to the if block  console.log(name) // logs \u0026#39;Prince\u0026#39; } console.log(\u0026#39;----\u0026#39;) console.log(name) // \u0026lt;--- error because the \u0026#39;name\u0026#39; variable can only be accessed from within the block (due to the use of \u0026#39;let\u0026#39;)  JS Bin on jsbin.com\n Declaring a variable within a Block statement using var DOES NOT create local scope  if (true) { var name = \u0026#39;Prince\u0026#39; // declare a variable using \u0026#39;var`  console.log(name) // logs \u0026#39;Prince\u0026#39; } console.log(\u0026#39;----\u0026#39;) console.log(name) // \u0026lt;--- logs \u0026#39;Prince\u0026#39; because the \u0026#39;name\u0026#39; variable is in the global scope due to the use of `var`  JS Bin on jsbin.com\n"
+},
+{
+	"uri": "/11-project-build-a-slackbot/tutorial/step-2-create-new-slack-app/",
+	"title": "Step 2: Create New Slack App",
+	"tags": [],
+	"description": "",
+	"content": " Step 2: Create New Slack App Slack bots are packaged as Slack apps. Slack apps allow you to add more functionality into your Slack workspace\n To create your new Slack app, go to this page: https://api.slack.com/apps?new_app=1 and set your app name to OpenWeatherBot.\n Set the \u0026ldquo;Development Slack Workspace\u0026rdquo; to the new workspace you created in Step 1.\n  "
 },
 {
 	"uri": "/final-projects/milestones-due-dates/submit-project-ideas/",
@@ -651,6 +679,13 @@
 	"content": " Lesson 03 Control Flow and Loops "
 },
 {
+	"uri": "/11-project-build-a-slackbot/documentaton/",
+	"title": "Documentation",
+	"tags": [],
+	"description": "",
+	"content": " Documentation Since we\u0026rsquo;ll be the APIs of both Slack and OpenWeather, you should have the API docs of both platforms open in your browser so you can quickly reference them when needed:\n Slack API Docs\n OpenWeather API Docs\n  "
+},
+{
 	"uri": "/final-projects/milestones-due-dates/get-idea-approved/",
 	"title": "Get Idea Approved",
 	"tags": [],
@@ -691,6 +726,13 @@
 	"tags": [],
 	"description": "",
 	"content": " Requirements Requirement #1: App UI: The user interface should contain a single form input and a submit button (the starter code already provides the UI)\nRequirement #2: Make Multiple API Requests When users enter a city name into the input field and press submit the following should happen:\n API Request #1 - Fetch City’s Current Weather\nYour app should make an API request to OpenWeather and fetch the current weather associated with the city name entered into the form\n API Request #2 - Fetch Gif representing the City\nYour app should make an API request to Giphy and retrieve a gifs associated with the city name entered into the form field\n API Request #3 - Fetch Gif representing City’s weather description\nThe current weather data fetched from “API Request #1” returns a weather description (i.e. rain, clear sky, snow, etc) . Make an API request to the Giphy and retrieve gifs associated with this weather description\n  Requirement #3: Display Data Once all the data has been received from the API requests, display the following data on the screen:\n * The city’s current weather * City name * Current temperature (displayed in Fahrenheit or Celsius) * Weather description * Min temp * Max temp * 1 gif that represents the city * 1 gif that represents the city’s current weather description  Requirement #4: Use Promises  Promises must be used to make consume / handle the API responses\n Axios must be used to make the API requests\n  "
+},
+{
+	"uri": "/11-project-build-a-slackbot/tutorial/step-3-set-up-node-application/",
+	"title": "Step 3: Set Up Node Application",
+	"tags": [],
+	"description": "",
+	"content": " Step 3: Set up Node Application In this step we\u0026rsquo;re going to create a node application that will function as our server\n1. Create project folder  Navigate to the appropriate lesson_0x_file in your class folder\n Create a new folder named openweather-bot\n Change directories into that folder\n  2. Run npm init to bootstrap the Node application  Run npm init from the command line (make sure you inside your newly created project folder)\n Accept all of the default values (just press \u0026ldquo;enter\u0026rdquo; at every prompt)\n  3. Install the node packages (libraries) needed to create our server We\u0026rsquo;re going to be using Express, a minimal Node.js web framework, to quickly create our local server\nIn addition, we\u0026rsquo;ll also be adding other packages such as axios give our sever additional functionality\n From the command line (inside your project folder) run the following command:\n$ npm install express axios body-parser dotenv   4. Confirm package.json contains the recently installed packages  Open the project in your text editor and view the contents of package.json\n Confirm that the content of the file looks similar to the following:\n  { \u0026#34;name\u0026#34;: \u0026#34;openweather-bot\u0026#34;, \u0026#34;version\u0026#34;: \u0026#34;1.0.0\u0026#34;, \u0026#34;description\u0026#34;: \u0026#34;\u0026#34;, \u0026#34;main\u0026#34;: \u0026#34;index.js\u0026#34;, \u0026#34;scripts\u0026#34;: { \u0026#34;test\u0026#34;: \u0026#34;echo \\\u0026#34;Error: no test specified\\\u0026#34; \u0026amp;\u0026amp; exit 1\u0026#34; }, \u0026#34;author\u0026#34;: \u0026#34;\u0026#34;, \u0026#34;license\u0026#34;: \u0026#34;ISC\u0026#34;, \u0026#34;dependencies\u0026#34;: { \u0026#34;axios\u0026#34;: \u0026#34;^0.19.0\u0026#34;, \u0026#34;body-parser\u0026#34;: \u0026#34;^1.19.0\u0026#34;, \u0026#34;dotenv\u0026#34;: \u0026#34;^8.1.0\u0026#34;, \u0026#34;express\u0026#34;: \u0026#34;^4.17.1\u0026#34; } } 5. Add logic necessary to run our server Let\u0026rsquo;s add some code to our server to get it up and running\n Create a file named index.js\n Next, add the following code to index.js:\n  require(\u0026#39;dotenv\u0026#39;).config() const express = require(\u0026#39;express\u0026#39;) const bodyParser = require(\u0026#39;body-parser\u0026#39;) const axios = require(\u0026#39;axios\u0026#39;) // establishing the I/O port const PORT = process.env.PORT || 3000 const app = express() app.use(bodyParser.urlencoded({ extended: true })) app.use(bodyParser.json()) app.listen(PORT, () =\u0026gt; console.log(`App is up and running listening on port ${PORT}`)) app.get(\u0026#39;/\u0026#39;, async (req, res) =\u0026gt; { try { res.json({ message: \u0026#39;Welcome to Express Auth App!\u0026#39; }) } catch (e) { res.status(e.status).json({ message: e.status }) } })   In the code above, we are specifying that our server should run on port 3000 (const PORT = process.env.PORT || 3000)\n This means that our the url of our server (when running) can be found at http://localhost:3000  The following code tells our server to return a welcome message (as json) for any successful requests to the root path (/)\napp.get(\u0026#39;/\u0026#39;, async (req, res) =\u0026gt; { try { res.json({ message: \u0026#39;Welcome to Express Auth App!\u0026#39; }) } catch (e) { res.status(e.status).json({ message: e.status }) } })  With servers, the root path represents host part of the url without anyting after the domain\n For example the root path of CNN is https://cnn.com (and not https://cnn.com/world)\n In our case, the root path of our local server http://localhost:3000\n   5. Run the server  On the command line run the following command to run the server\n$ node index.js   Open your browser and enter http://localhost:3000 into the address bar and press enter\n The welcome message should be successfully displayed\n  "
 },
 {
 	"uri": "/03-control-flow-and-loops/switch-statement/",
@@ -917,6 +959,20 @@
 	"content": " setTimeout()  .setTimeout() function, available both in Node.js and in browsers, waits a given number of milliseconds (1 sec = 1000 ms) and then calls a function\n .setTimeout() takes two parameters:\n A callback function (remember callbacks are just functions passed in as parameters)\n The number of seconds after which the method will be called\n  .setTimeout() is async by default; this is the primary reason it\u0026rsquo;s often used to simulate asynchronous operations\n  Example const delayedGreeting = () =\u0026gt; { console.log(\u0026#39;Hi, sorry for the wait!\u0026#39;) } /* call setTimout(), it accepts 2 parameters 1. callback (function to be executed) 2. delay in milliseconds (1000 ms = 1 sec) */ console.log(\u0026#39;calling .setTimeout()\u0026#39;) setTimeout(delayedGreeting, 3000) console.log(\u0026#39;end of the code\u0026#39;)  In the code above, .setTimeout() is used to delay the execution of the .delayedGreeting() function by 3 seconds.\n Run the example in the jsbin below and notice how the message: end of the code is executed before the Hi, sorry for the wait!.  JS Bin on jsbin.com\n This means that our program did not wait for .delayedGreeting() to finishing running before it executed  Event Loop  Asynchronous JavaScript uses something called the event-loop\n In the example above, After 3 seconds, .delayedGreeting() is added to a line of code (Event Queue) waiting to be run\n Before it can run, any synchronous code from the program will run first (from the Call Stack)\n Next, any code in front of it in the line will run\n This means it might be more than two seconds before delayedHello() is actually executed\n  "
 },
 {
+	"uri": "/11-project-build-a-slackbot/tutorial/step-4-run-ngrok/",
+	"title": "Step 4: Run ngrok",
+	"tags": [],
+	"description": "",
+	"content": " Run ngrok  Next we need to give our local server access to the internet so our slack app can communicate with it\n ngrok is a tool that allows developers to create \u0026ldquo;tunnels\u0026rdquo; that connect the server running locally (i.e. on your computer) to the internet\n  1. Run ngrok command from within project folder  In a new command line tab run the following command (make sure you run this within the project folder)   $ ngrok http 3000   Here, we are are telling ngrok to create a local tunnel that connects our server running on port 3000 (i.e. http://localhost:3000) and to ngrok url that is accessible to the internet\n You ngrok command should display output that looks similar to the following (the urls will be unique to your server and will not match the output below):\n  2. Confirm your local server is accessible via the internet At this point in the project, you will want to have multiple tabs open in your command line application. In order for the Slack to be able to communicate with our server both our local server and ngrok must be running in their own separate tabs.\n  Copy the ngrok \u0026ldquo;forwarding\u0026rdquo; url (from our ngrok tab) that begins with https and paste it into the address bar of a new browser tab\n Confirm that the welcome message is successfully displayed when using the ngrok url to access your server\n  "
+},
+{
+	"uri": "/11-project-build-a-slackbot/tutorial/",
+	"title": "Tutorial",
+	"tags": [],
+	"description": "",
+	"content": "  Step 1: Create New Slack Workspace   Step 2: Create New Slack App   Step 3: Set Up Node Application   Step 4: Run ngrok   Step 5: Create a test Slash command   Step 6: Install App to Workspace   Step 7: Responding to Slash Commands   Step 8: Test your Slash Command   "
+},
+{
 	"uri": "/class-resources/node-git-installation/windows/",
 	"title": "Windows Installation Instructions",
 	"tags": [],
@@ -994,6 +1050,13 @@
 	"content": " Challenges of Asynchronous Programming  Asynchronous programming presents a challenge when we want make multiple asynchronous requests and we want to control the order of the responses  Example Let\u0026rsquo;s see an example of this below:\n/* Modify printLetter() to make it an async function by using .setTimeout After the changes, the letter will be print at a random interval from 0 seconds to 3 seconds */ function printLetter(letter) { setTimeout(() =\u0026gt; { console.log(letter) }, Math.floor(Math.random() * 3000)) } function printAll(){ printLetter(\u0026#34;A\u0026#34;) printLetter(\u0026#34;B\u0026#34;) printLetter(\u0026#34;C\u0026#34;) } console.log(\u0026#39;Calling printAll function\u0026#39;) printAll() console.log(\u0026#39;End of code\u0026#39;)   In the code example above we have turned .printLetter() into an asynchronous function through the use of .setTimeout to randomly delay each function call from anywhere between 0 seconds and 3 seconds\n Run the jsbin below (multiple times) and notice how the order of the printed letters is no longer predictable and that A, B, and C print in a different and random order each time you call printAll\n  JS Bin on jsbin.com\n One way to fix this issue is to use callbacks  "
 },
 {
+	"uri": "/11-project-build-a-slackbot/code-along-complete-openweatherbot/",
+	"title": "Code Along: Complete OpenWeatherBot",
+	"tags": [],
+	"description": "",
+	"content": " Code Along: Complete OpenWeatherBot Now that we have a sense of how Slack and our Server work together, we will build out the rest of our project to implement the OpenWeather API and allow users to get the current weather directly from within Slack\n"
+},
+{
 	"uri": "/final-projects/milestones-due-dates/create-submit-wireframes/",
 	"title": "Create &amp; Submit Wireframes",
 	"tags": [],
@@ -1020,6 +1083,20 @@
 	"tags": [],
 	"description": "",
 	"content": "  Many times you will write a function and expect a value to be returned - this is called a return value\n To have your function return a value you must use the return keyword in the last line of the body of your function\n We use the return keyword when we want our function to \u0026ldquo;give us back\u0026rdquo; a value\n You can store the returned value in a variable and use it later in your program\n  Example // declare a function called bark // that *returns* a string respreseting \u0026#39;woof woof\u0026#39; function bark() { return \u0026#39;woof woof!\u0026#39; } // call the bark function and store result in a variable const sound = bark() // print out result to the console console.log(`a dog makes the following sound ${sound}`)  JS Bin on jsbin.com\n If you don\u0026rsquo;t use the return keyword, then no value will be returned  // declare a function called meow // that generates a string representing \u0026#39;meow\u0026#39; but // does not use the return keyword  function meow() { \u0026#39;meow\u0026#39; } // call the meow function and store result in a variable const sound = meow() // print out result to the console console.log(`a cat makes the following sound ${sound}`)  JS Bin on jsbin.com\nExercise  Create a function called sayMoo that returns the string mooooooo!. Next, call the function and store the result into a variable named cowSound  JS Bin on jsbin.com\n"
+},
+{
+	"uri": "/class-resources/atom-show-hidden-files/",
+	"title": "Show Hidden Files in Atom",
+	"tags": [],
+	"description": "",
+	"content": " Show Hidden Files in Atom  Click anywhere in the Tree View (left hand pane with files and folders) Press i (this will toggle the visibility of hidden files)  "
+},
+{
+	"uri": "/11-project-build-a-slackbot/tutorial/step-5-create-a-test-slash-command/",
+	"title": "Step 5: Create a test Slash command",
+	"tags": [],
+	"description": "",
+	"content": " Step 5: Create a test Slash command 1. Go to your Slack developer page  Go to https://api.slack.com/apps and select your OpenWeatherBot app  2. Create a new slash command for OpenWeatherBot  Click on Slack Commands in the left side panel and then press the button labeled Create New Command\n Next fill out the form with the following information and press the \u0026ldquo;Save\u0026rdquo; button:\n Command: test Request URL: [YOUR NGROK HTTPS URL]/test Short Description: Test command Usage Hint: [name]   We are creating a slash command called test, when initiated in Slack, this command will make a POST request to our server using the ngrok https url for our app (remember the ngrok url is unique to your server)   "
 },
 {
 	"uri": "/06-dom-and-jquery/jquery-overview/jquery-selectors/",
@@ -1197,6 +1274,13 @@
 	"content": " Other Events There are many other events available, click here to see a complete list of jQuery Events\n"
 },
 {
+	"uri": "/11-project-build-a-slackbot/tutorial/step-6-install-app-to-workspace/",
+	"title": "Step 6: Install App to Workspace",
+	"tags": [],
+	"description": "",
+	"content": " Step 6: Install App to your Workspace 1. Go to your Slack developer page  Go to https://api.slack.com/apps and select your OpenWeatherBot app  2. Install App to your workspace  Click on OAuth \u0026amp; Permissions in the left side panel and then press the button labeled Install App to Workspace\n Confirm that your newly created workspace (from Step 1) is listed and press \u0026ldquo;Allow\u0026rdquo;\n  3. Confirm that your slash command is available in your workspace  Navigate to your slack workspace via the web: https://slack.com/signin\n Select your testing workspace from Step 1\n Go to any channel and type /tes (purposely leaving off the last \u0026ldquo;t\u0026rdquo;) and our \u0026ldquo;test\u0026rdquo; slash command in the autocomplete listing\n Congrats you\u0026rsquo;ve installed your first slash command, during the next step, we will set up our server to handle the command\n  "
+},
+{
 	"uri": "/05-arrays-objects/array-review/updating-array-values/",
 	"title": "Updating Array Values",
 	"tags": [],
@@ -1293,6 +1377,13 @@
 	"tags": [],
 	"description": "",
 	"content": " Promises  Overview   Creating Promises   Consuming Promises   Handling Async Issues with Promises   Passing values with Promises   Error Handling with .catch()   "
+},
+{
+	"uri": "/11-project-build-a-slackbot/tutorial/step-7-responding-to-slash-commands/",
+	"title": "Step 7: Responding to Slash Commands",
+	"tags": [],
+	"description": "",
+	"content": " Step 7: Responding to Slash Commands Next we\u0026rsquo;ll set up our server to respond to the Slash command, here\u0026rsquo;s how Slack describes the process in their documentation:\n When a slash command is invoked, Slack sends an HTTP POST to the Request URL you specified above. This request contains a data payload describing the source command and who invoked it, like a really detailed knock at the door.\n We are going to have our server send back an immediate response the process is detailed here\n1. Update index.js Add the following code to the bottom of index.js\napp.post(\u0026#39;/test\u0026#39;, async (req, res) =\u0026gt; { try { console.log(req) const data = { \u0026#39;response_type\u0026#39;: \u0026#39;in_channel\u0026#39;, \u0026#39;text\u0026#39;: \u0026#39;Testing testing 123!\u0026#39; } res.json(data) } catch (e) { console.log(e) } })   Here\u0026rsquo;s a summary of the newly added code\n We are using the API of Express to create a route with the path /test, this is the same route that matches url we entered during the creation of the Slash command on Step 5\n We are also leveraging a feature of Express that allows us to use the async/await syntax (and the try..catch syntax for error handling) to handle asynchronous calls\n When we create a route in Express, we get access to a callback that provides us with two parameters (request and response)\n The request object will contain information about the request that was sent to our server\n The response object allows us to send back a response to the sender\n  We are constructing a json object (according to Slack\u0026rsquo;s API documentation) that will allow send a response back with data to Slack\n We are using the .json() method available on the response object to send back a json response to Slack\n   2. Restart your Node (Express) server  Any time we make changes to our server code, we will need to restart the server before those new changes can be applied\n Navigate to the tab in your command line applicaiton that houses the running node server\n On your keyboard press Ctrl-C to shut down the server\n Then press the up arrow to access your previous command (which should be node index.js) and press enter to restart the server\n  "
 },
 {
 	"uri": "/02-javascript-basics/variables/when-to-use-let-vs-const/",
@@ -1426,6 +1517,13 @@
 	"tags": [],
 	"description": "",
 	"content": " Scope Overview  Scope is the set of variables you have access to\n As we learned in the beginning of this class, JavaScript reads from top to bottom\n Sometimes, however, we declare variables inside functions (just like arguments), which aren\u0026rsquo;t accessible in other parts of our code; this is the concept of scope.\n  Types of Scope  A variables scope is determined primarily based on where is was declared\n Variables declared inside a function are in local scope\n Variables defined outside of a function are in the global scope\n Each function when invoked creates a new scope\n  Details  Global Scope   Local Scope   Scope in Block Statements   "
+},
+{
+	"uri": "/11-project-build-a-slackbot/tutorial/step-8-test-your-slash-command/",
+	"title": "Step 8: Test your Slash Command",
+	"tags": [],
+	"description": "",
+	"content": " Step 8: Test your Slash Command Now we\u0026rsquo;ll test our Slash command to see if our Server is able to successfully return a response\n1. Navigate back to your workspace  Navigate to your slack workspace via the web: https://slack.com/signin\n Select your testing workspace from Step 1\n Go to any channel and type /test and press enter\n   Congrat\u0026rsquo;s your server successfully responded to your Slash Command  "
 },
 {
 	"uri": "/03-control-flow-and-loops/loops-and-iteration/for-each/",

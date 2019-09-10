@@ -106,6 +106,15 @@ Atom Editor v1.</description>
     </item>
     
     <item>
+      <title>Show Hidden Files in Atom</title>
+      <link>/class-resources/atom-show-hidden-files/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/class-resources/atom-show-hidden-files/</guid>
+      <description> Show Hidden Files in Atom  Click anywhere in the Tree View (left hand pane with files and folders) Press i (this will toggle the visibility of hidden files)  </description>
+    </item>
+    
+    <item>
       <title>Keys to Success</title>
       <link>/class-resources/keys-to-success/</link>
       <pubDate>Sat, 16 Mar 2019 17:11:17 -0400</pubDate>
