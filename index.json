@@ -970,7 +970,7 @@
 	"title": "Tutorial",
 	"tags": [],
 	"description": "",
-	"content": "  Step 1: Create New Slack Workspace   Step 2: Create New Slack App   Step 3: Set Up Node Application   Step 4: Run ngrok   Step 5: Create a test Slash command   Step 6: Install App to Workspace   Step 7: Responding to Slash Commands   Step 8: Test your Slash Command   "
+	"content": "  Step 1: Create New Slack Workspace   Step 2: Create New Slack App   Step 3: Set Up Node Application   Step 4: Run ngrok   Step 5: Create a test Slash command   Step 6: Install App to Workspace   Step 7: Responding to Slash Commands   Step 8: Test your Slash Command   Step 9: Access Slash Command Parameters   "
 },
 {
 	"uri": "/class-resources/node-git-installation/windows/",
@@ -1524,6 +1524,13 @@
 	"tags": [],
 	"description": "",
 	"content": " Step 8: Test your Slash Command Now we\u0026rsquo;ll test our Slash command to see if our Server is able to successfully return a response\n1. Navigate back to your workspace  Navigate to your slack workspace via the web: https://slack.com/signin\n Select your testing workspace from Step 1\n Go to any channel and type /test and press enter\n   Congrat\u0026rsquo;s your server successfully responded to your Slash Command  "
+},
+{
+	"uri": "/11-project-build-a-slackbot/tutorial/step-9-access-slash-command-parameters/",
+	"title": "Step 9: Access Slash Command Parameters",
+	"tags": [],
+	"description": "",
+	"content": " Step 9: Access Slash Command Parameters Next we will take a look at the information that Slack sends us when we receive a request from a Slash command\n1. Update the app.post(/test..) function in index.js  Inside the our app.post(/test) function, change the console.log(req) to console.log(req.body)  app.post(\u0026#39;/test\u0026#39;, async (req, res) =\u0026gt; { try { console.log(req.body) // \u0026lt;-- update this line  const data = { \u0026#39;response_type\u0026#39;: \u0026#39;in_channel\u0026#39;, \u0026#39;text\u0026#39;: \u0026#39;Testing testing 123!\u0026#39; } res.json(data) } catch (e) { console.log(e) } })   Restart your node server\n Navigate to your Slack workspace and make another slash command to but this time add a name for example, /test Fred Flintstone\n  2. Navigate to your node server tab in your command line application and observe the output  Let\u0026rsquo;s see the result of console.log(req.body)\n Navigate to the node server tab in your command line application and you should see something similar to the following\n  { token: \u0026#39;CePdTWPzpIXUufKUL3UJhaVx\u0026#39;, team_id: \u0026#39;TN43P8U3X\u0026#39;, team_domain: \u0026#39;reemcoworkspace\u0026#39;, channel_id: \u0026#39;CN17QEB2M\u0026#39;, channel_name: \u0026#39;slackbot-testing\u0026#39;, user_id: \u0026#39;UN43P8UCD\u0026#39;, user_name: \u0026#39;kareem.grant\u0026#39;, command: \u0026#39;/test\u0026#39;, text: \u0026#39;Fred Flintstone\u0026#39;, response_url: \u0026#39;https://hooks.slack.com/commands/TN43P8U3X/755841282464/Xu0N0r65xVmo3dbMgD83xUq7\u0026#39;, trigger_id: \u0026#39;755841282544.752125300133.615d84c666fefe471d23a7e53bf50f07\u0026#39; }   Note that the parameter \u0026ldquo;Fred Flintstone\u0026rdquo; is available to us through req.body.text in the object we get back from Slack  3. Update your response back to Slack in include the parameter We are going to update our response back the Slack to the parameter that was sent along with the slash command (`text: \u0026lsquo;Fred Flintstone\u0026rsquo;)\n Update the app.post(/test..) function  app.post(\u0026#39;/test\u0026#39;, async (req, res) =\u0026gt; { try { console.log(req.body) const data = { \u0026#39;response_type\u0026#39;: \u0026#39;in_channel\u0026#39;, \u0026#39;text\u0026#39;: `Testing testing 123! ${req.body.text}` // \u0026lt;-- update this line  } res.json(data) } catch (e) { console.log(e) } })  4. Make a slash command to /test Fred Flintstone in your workspace  Let\u0026rsquo;s see if we can successfully send back data we received from Slack in our response\n In your workspace, make the following slash command: /test Fred Flintstone\n You should now see: Testing testing 123! Fred Flintstone\n  "
 },
 {
 	"uri": "/03-control-flow-and-loops/loops-and-iteration/for-each/",

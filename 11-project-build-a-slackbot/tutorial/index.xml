@@ -102,5 +102,15 @@ Create a new workspace</description>
    Congrat&amp;rsquo;s your server successfully responded to your Slash Command  </description>
     </item>
     
+    <item>
+      <title>Step 9: Access Slash Command Parameters</title>
+      <link>/11-project-build-a-slackbot/tutorial/step-9-access-slash-command-parameters/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/11-project-build-a-slackbot/tutorial/step-9-access-slash-command-parameters/</guid>
+      <description>Step 9: Access Slash Command Parameters Next we will take a look at the information that Slack sends us when we receive a request from a Slash command
+1. Update the app.post(/test..) function in index.js  Inside the our app.post(/test) function, change the console.log(req) to console.log(req.body)  app.post(&amp;#39;/test&amp;#39;, async (req, res) =&amp;gt; { try { console.log(req.body) // &amp;lt;-- update this line  const data = { &amp;#39;response_type&amp;#39;: &amp;#39;in_channel&amp;#39;, &amp;#39;text&amp;#39;: &amp;#39;Testing testing 123!</description>
+    </item>
+    
   </channel>
 </rss>
