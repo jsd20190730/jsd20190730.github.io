@@ -119,6 +119,14 @@
   </url>
   
   <url>
+    <loc>/12-object-oriented-js/classes/methods/overview/</loc>
+  </url>
+  
+  <url>
+    <loc>/12-object-oriented-js/classes/overview/</loc>
+  </url>
+  
+  <url>
     <loc>/final-projects/overview-requirements/</loc>
   </url>
   
@@ -220,11 +228,19 @@
   </url>
   
   <url>
+    <loc>/12-object-oriented-js/classes/</loc>
+  </url>
+  
+  <url>
     <loc>/08-http-and-apis/clients-servers/</loc>
   </url>
   
   <url>
     <loc>/03-control-flow-and-loops/conditionals/</loc>
+  </url>
+  
+  <url>
+    <loc>/12-object-oriented-js/classes/constructor/</loc>
   </url>
   
   <url>
@@ -253,6 +269,10 @@
   
   <url>
     <loc>/05-arrays-objects/objects/accessing-properties/dot-notation/</loc>
+  </url>
+  
+  <url>
+    <loc>/12-object-oriented-js/classes/methods/getters_and_setters/</loc>
   </url>
   
   <url>
@@ -400,6 +420,10 @@
   </url>
   
   <url>
+    <loc>/12-object-oriented-js/classes/instances/</loc>
+  </url>
+  
+  <url>
     <loc>/08-http-and-apis/json/</loc>
   </url>
   
@@ -533,6 +557,10 @@
   
   <url>
     <loc>/03-control-flow-and-loops/loops-and-iteration/</loc>
+  </url>
+  
+  <url>
+    <loc>/12-object-oriented-js/classes/methods/</loc>
   </url>
   
   <url>
@@ -1073,6 +1101,10 @@
   <url>
     <loc>/</loc>
     <lastmod>2017-01-22T18:05:18-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/12-object-oriented-js/classes/methods/non-getter-setter-methods/</loc>
   </url>
   
   <url>

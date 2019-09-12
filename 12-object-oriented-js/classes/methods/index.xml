@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Methods on GA JavaScript</title>
+    <link>/12-object-oriented-js/classes/methods/</link>
+    <description>Recent content in Methods on GA JavaScript</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/12-object-oriented-js/classes/methods/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Overview</title>
+      <link>/12-object-oriented-js/classes/methods/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/12-object-oriented-js/classes/methods/overview/</guid>
+      <description>Methods  Methods in a Class function very similar to a method of an regular JavasScript object
+ Let&amp;rsquo;s recap, an method in an object is a property that has a function as a value, for example:
+  const superHero = { secretIdentity: &amp;#39;Peter Parker&amp;#39;, name: &amp;#39;Spiderman&amp;#39;, sayTagline: function() { // &amp;lt;- method  console.log(&amp;#34;Hey everyone it&amp;#39;s your friendly neighborhood Spiderman&amp;#34;) } }   If we were to rewrite this object as a Class, it may look something like this:  class superHero { constructor(secretIdentity, name) { this.</description>
+    </item>
+    
+    <item>
+      <title>Getters &amp; Setters</title>
+      <link>/12-object-oriented-js/classes/methods/getters_and_setters/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/12-object-oriented-js/classes/methods/getters_and_setters/</guid>
+      <description>Getters &amp;amp; Setters  Getters and Setters allow developers to write methods that enable reading (get) and the writing (set) of properties of a class or object
+ Getters and setters is a common pattern used in object oriented programming; ES6 classes introduced a new syntax for getters and setters on object properties
+  class Car { constructor(make, model) { this._make = make this._model = model } get make() { return this.</description>
+    </item>
+    
+    <item>
+      <title>Non-Getter / Setter Methods</title>
+      <link>/12-object-oriented-js/classes/methods/non-getter-setter-methods/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/12-object-oriented-js/classes/methods/non-getter-setter-methods/</guid>
+      <description>Non Getter / Setter Methods  You can specify &amp;ldquo;regular&amp;rdquo; methods that allow you do things other than getting and setting the property values  Example class Car { constructor(make, model) { this._make = make this._model = model this._miles = 30 } get make() { return this._make } get model() { return this._model } get miles() { return this._miles } set model(newModel) { this._model = newModel } addMileage(newMiles) { this.</description>
+    </item>
+    
+  </channel>
+</rss>
