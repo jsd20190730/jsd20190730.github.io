@@ -604,10 +604,6 @@
   </url>
   
   <url>
-    <loc>/11-project-build-a-slackbot/code-along-complete-openweatherbot/</loc>
-  </url>
-  
-  <url>
     <loc>/final-projects/milestones-due-dates/create-submit-wireframes/</loc>
   </url>
   
@@ -624,7 +620,7 @@
   </url>
   
   <url>
-    <loc>/class-resources/atom-show-hidden-files/</loc>
+    <loc>/class-resources/atom-show-git-ignored-files/</loc>
   </url>
   
   <url>
@@ -908,6 +904,10 @@
   </url>
   
   <url>
+    <loc>/11-project-build-a-slackbot/tutorial/step-10-make-api-request-to-openweather/</loc>
+  </url>
+  
+  <url>
     <loc>/final-projects/milestones-due-dates/submit-final-project/</loc>
   </url>
   
@@ -940,6 +940,10 @@
   </url>
   
   <url>
+    <loc>/11-project-build-a-slackbot/tutorial/step-11-respond-to-slack-with-current-weather/</loc>
+  </url>
+  
+  <url>
     <loc>/06-dom-and-jquery/jquery-manipulation/</loc>
   </url>
   
@@ -960,7 +964,11 @@
   </url>
   
   <url>
-    <loc>/12-prototypal-inheritance/</loc>
+    <loc>/12-object-oriented-js/</loc>
+  </url>
+  
+  <url>
+    <loc>/11-project-build-a-slackbot/tutorial/step-12-use-environment-variables-to-protect-secure-credentials/</loc>
   </url>
   
   <url>
@@ -969,6 +977,10 @@
   
   <url>
     <loc>/13-closures-and-this/</loc>
+  </url>
+  
+  <url>
+    <loc>/11-project-build-a-slackbot/tutorial/step-13-handle-errors-gracefully/</loc>
   </url>
   
   <url>
@@ -986,6 +998,10 @@
   
   <url>
     <loc>/07-dom-and-jquery-continued/lab-citipix/</loc>
+  </url>
+  
+  <url>
+    <loc>/11-project-build-a-slackbot/tutorial/step-14-enhance-weather-response-with-emojis/</loc>
   </url>
   
   <url>

@@ -303,7 +303,7 @@ List Of Commonly Used APIs Here is a short list of commonly used APIs for testin
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/11-project-build-a-slackbot/objectives/</guid>
-      <description> Leverage Slack&amp;rsquo;s API and OpenWeather&amp;rsquo;s API to build a slackbot that provides users with a city&amp;rsquo;s current weather directly in Slack  </description>
+      <description> Leverage Slack&amp;rsquo;s API and OpenWeather&amp;rsquo;s API to build a slackbot that delivers a city&amp;rsquo;s current weather directly in Slack  </description>
     </item>
     
     <item>
@@ -1411,15 +1411,6 @@ Atom Editor v1.</description>
     </item>
     
     <item>
-      <title>Code Along: Complete OpenWeatherBot</title>
-      <link>/11-project-build-a-slackbot/code-along-complete-openweatherbot/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/11-project-build-a-slackbot/code-along-complete-openweatherbot/</guid>
-      <description>Code Along: Complete OpenWeatherBot Now that we have a sense of how Slack and our Server work together, we will build out the rest of our project to implement the OpenWeather API and allow users to get the current weather directly from within Slack</description>
-    </item>
-    
-    <item>
       <title>Create &amp; Submit Wireframes</title>
       <link>/final-projects/milestones-due-dates/create-submit-wireframes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1472,12 +1463,14 @@ Atom Editor v1.</description>
     </item>
     
     <item>
-      <title>Show Hidden Files in Atom</title>
-      <link>/class-resources/atom-show-hidden-files/</link>
+      <title>Show Git-Ignored Files in Atom</title>
+      <link>/class-resources/atom-show-git-ignored-files/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/class-resources/atom-show-hidden-files/</guid>
-      <description> Show Hidden Files in Atom  Click anywhere in the Tree View (left hand pane with files and folders) Press i (this will toggle the visibility of hidden files)  </description>
+      <guid>/class-resources/atom-show-git-ignored-files/</guid>
+      <description> Show Git-Ignored Files in Atom Atom, by default, will not show files in its file pane (file tree view) if those files have been added to .gitignore.
+An easy approach to fixing this issue is to do the following:
+ Click anywhere in the Tree View (left hand pane with files and folders) Press i (this will toggle the visibility of hidden files)  </description>
     </item>
     
     <item>
@@ -2155,6 +2148,16 @@ let yearOfBirth = 2001 if (yearOfBirth &amp;lt;= 2002) { console.</description>
     </item>
     
     <item>
+      <title>Step 10: Make API Request to OpenWeather</title>
+      <link>/11-project-build-a-slackbot/tutorial/step-10-make-api-request-to-openweather/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/11-project-build-a-slackbot/tutorial/step-10-make-api-request-to-openweather/</guid>
+      <description>Step 10: Make API Request to OpenWeather Now it&amp;rsquo;s time to make an API request from our server to OpenWeather
+1. Add the following code to the bottom of index.js  Add the following code to the bottom of index.js and replace [YOUR_OPENWEATHER_API_KEY] with your api key from OpenWeather  async function openWeatherApi (query) { try { const url = &amp;#39;https://api.openweathermap.org/data/2.5/weather&amp;#39; const apiKey = &amp;#39;[YOUR_OPENWEATHER_API_KEY]&amp;#39; // make api request using axios  const response = await axios.</description>
+    </item>
+    
+    <item>
       <title>Submit Final Project</title>
       <link>/final-projects/milestones-due-dates/submit-final-project/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2205,6 +2208,17 @@ let yearOfBirth = 2001 if (yearOfBirth &amp;lt;= 2002) { console.</description>
     </item>
     
     <item>
+      <title>Step 11: Respond to Slack with Current Weather</title>
+      <link>/11-project-build-a-slackbot/tutorial/step-11-respond-to-slack-with-current-weather/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/11-project-build-a-slackbot/tutorial/step-11-respond-to-slack-with-current-weather/</guid>
+      <description>Step 11: Respond to Slack with Current Weather Now that we&amp;rsquo;ve confirmed that we can make an successful API call to OpenWeather, we need to send weather data back to Slack
+According to Slack&amp;rsquo;s API documentation, if we are going to make an API call on our server as a result of slash command then we should send data back to Slack as a &amp;ldquo;delayed response&amp;rdquo; (see docs)
+In order to send a delayed response to Slack we need to make a POST request back to Slack using the response_url that is sent with the initial request associated with the slash command (in req.</description>
+    </item>
+    
+    <item>
       <title>Confirm Node &amp; Git Installation</title>
       <link>/00-course-intro-and-tools/confirm-node-git-installation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2241,6 +2255,15 @@ let yearOfBirth = 2001 if (yearOfBirth &amp;lt;= 2002) { console.</description>
     </item>
     
     <item>
+      <title>Step 12: Use Environment Variables to Protect Secure Credentials</title>
+      <link>/11-project-build-a-slackbot/tutorial/step-12-use-environment-variables-to-protect-secure-credentials/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/11-project-build-a-slackbot/tutorial/step-12-use-environment-variables-to-protect-secure-credentials/</guid>
+      <description>Step 12: Use Environment Variables to Protect Secure Credentials In our openWeatherApi() function we&amp;rsquo;ve hard coded our API key from OpenWeather. While this works, it is not a best practice because if we were to push our code to Github then anyone who had access to the code would be able to see and potential use our API key. This introduces security risk and can lead to some serious consequences in a real-world application.</description>
+    </item>
+    
+    <item>
       <title>What is Programming?</title>
       <link>/00-course-intro-and-tools/what-is-programming/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2251,6 +2274,17 @@ let yearOfBirth = 2001 if (yearOfBirth &amp;lt;= 2002) { console.</description>
  These set of instructions are commonly referred as source code or a program
  There are many programming languages available, during this course we will be learning JavaScript
   </description>
+    </item>
+    
+    <item>
+      <title>Step 13: Handle Errors Gracefully</title>
+      <link>/11-project-build-a-slackbot/tutorial/step-13-handle-errors-gracefully/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/11-project-build-a-slackbot/tutorial/step-13-handle-errors-gracefully/</guid>
+      <description>Step 13: Handle Errors Gracefully If you try the pass an invalid city name to your /weather slash command, we&amp;rsquo;ll receive the following error in our server log:
+This is happening because we aren&amp;rsquo;t appropriately handling errors. In an ideal scenario, if a user was to pass an invalid city name to the /weather slash command our server should respond back a message informing users of the error
+1. Update openWeatherApi() in index.</description>
     </item>
     
     <item>
@@ -2285,6 +2319,17 @@ let yearOfBirth = 2001 if (yearOfBirth &amp;lt;= 2002) { console.</description>
       <description> Lab: CitiPix  The starter code for this lab is hosted on Github, see the url below:
  Lab: CitiPix  Use the Assignment Submission Git Workflow (detailed here) to access and submit the assignment
   </description>
+    </item>
+    
+    <item>
+      <title>Step 14: Enhance Weather Response with Emojis</title>
+      <link>/11-project-build-a-slackbot/tutorial/step-14-enhance-weather-response-with-emojis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/11-project-build-a-slackbot/tutorial/step-14-enhance-weather-response-with-emojis/</guid>
+      <description>Step 14: Enhance Weather Response with Emojis As a final touch, let&amp;rsquo;s spruce up our forecasts with emojis. Slack has native support for emojies using codes such as 👍
+OpenWeather&amp;rsquo;s API provides &amp;ldquo;weather codes&amp;rdquo; that it uses to categorize the different types of weather conditions (see docs). For example, rain falls under codes in the 500&amp;rsquo;s (5xx) and snow falls under codes in the 600&amp;rsquo;s (6xx).
+Let&amp;rsquo;s map some emojis to the weather codes we receive from OpenWeather to help make our OpenWeatherBot even more informative.</description>
     </item>
     
     <item>
