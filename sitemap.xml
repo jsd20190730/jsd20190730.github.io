@@ -115,6 +115,10 @@
   </url>
   
   <url>
+    <loc>/13-intro-to-crud-and-firebase/objectives/</loc>
+  </url>
+  
+  <url>
     <loc>/09-asynchronous-js-and-promises/async-await/overview/</loc>
   </url>
   
@@ -132,6 +136,10 @@
   
   <url>
     <loc>/12-object-oriented-js/inheritance/overview/</loc>
+  </url>
+  
+  <url>
+    <loc>/13-intro-to-crud-and-firebase/firebase/overview/</loc>
   </url>
   
   <url>
@@ -232,7 +240,15 @@
   </url>
   
   <url>
+    <loc>/13-intro-to-crud-and-firebase/firebase/benefits/</loc>
+  </url>
+  
+  <url>
     <loc>/06-dom-and-jquery/jquery-overview/benefits-of-jquery/</loc>
+  </url>
+  
+  <url>
+    <loc>/13-intro-to-crud-and-firebase/crud/</loc>
   </url>
   
   <url>
@@ -432,6 +448,10 @@
   </url>
   
   <url>
+    <loc>/13-intro-to-crud-and-firebase/firebase/</loc>
+  </url>
+  
+  <url>
     <loc>/12-object-oriented-js/classes/methods/general-methods/</loc>
   </url>
   
@@ -445,6 +465,10 @@
   
   <url>
     <loc>/08-http-and-apis/json/</loc>
+  </url>
+  
+  <url>
+    <loc>/13-intro-to-crud-and-firebase/firebase/nosql-databases/</loc>
   </url>
   
   <url>
@@ -529,6 +553,10 @@
   
   <url>
     <loc>/05-arrays-objects/objects/accessing-properties/bracket-notation/</loc>
+  </url>
+  
+  <url>
+    <loc>/13-intro-to-crud-and-firebase/code-along-firebase-playlist-app/</loc>
   </url>
   
   <url>

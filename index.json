@@ -196,6 +196,13 @@
 	"content": " Understand the benefits of using Classes\n Create Classes with a public and private interface\n Create Classes that inherit properties and methods from another Class\n  "
 },
 {
+	"uri": "/13-intro-to-crud-and-firebase/objectives/",
+	"title": "Objectives",
+	"tags": [],
+	"description": "",
+	"content": " Explain what CRUD means\n Learn about Firebase and its benefits\n Use Firebase\u0026rsquo;s real-time database to provide data persistence to a front-end app\n  "
+},
+{
 	"uri": "/09-asynchronous-js-and-promises/async-await/overview/",
 	"title": "Overview",
 	"tags": [],
@@ -229,6 +236,13 @@
 	"tags": [],
 	"description": "",
 	"content": " What is Inheritance?  Often we find commonality between our classes — repeated code that we’d like to consolidate\n Subclasses let us incorporate another class’s state and behavior into our own\n This process is often called inheritance, and our subclass is said to “inherit” from a parent class, also called a superclass\n Inheritance can avoid duplication and simplify the implementation of a class that needs the same data and functions as another class\n  Example class Animal { constructor(name, weight) { this._name = name this._weight = weight } eat() { return `${this._name}is eating!` } sleep() { return `${this._name}is going to sleep!` } wakeUp() { return `${this._name}is waking up!` } } class Gorilla extends Animal { constructor(name, weight) { super(name, weight) } climbTrees() { return `${this._name}is climbing trees!` } poundChest() { return `${this._name}is pounding its chest!` } showVigour() { return `${super.eat()}${this.poundChest()}` } dailyRoutine() { return `${super.wakeUp()}${this.poundChest()}${super.eat()}${super.sleep()}` } } const gorilla = new Gorilla(\u0026#39;George\u0026#39;, \u0026#39;160Kg\u0026#39;) console.log(gorilla.poundChest()) console.log(gorilla.sleep()) console.log(gorilla.showVigour()) console.log(gorilla.dailyRoutine())  JS Bin on jsbin.com\n"
+},
+{
+	"uri": "/13-intro-to-crud-and-firebase/firebase/overview/",
+	"title": "Overview",
+	"tags": [],
+	"description": "",
+	"content": " What is Firebase?  Firebase is a mobile and web application platform for developers\n Acquired by Google in 2014\n Offers many other services but we\u0026rsquo;ll be covering the basics of Firebase\u0026rsquo;s real-time backend database and seeing how we can use this in our applications\n  "
 },
 {
 	"uri": "/final-projects/overview-requirements/",
@@ -399,11 +413,25 @@
 	"content": " Array Review  Creating Arrays   Accessing Array Values   Updating Array Values   Adding \u0026amp; Removing Items   length() Property   "
 },
 {
+	"uri": "/13-intro-to-crud-and-firebase/firebase/benefits/",
+	"title": "Benefits",
+	"tags": [],
+	"description": "",
+	"content": " Firebase Benefits  Firebase provides a seamless way for front-end developers to add data persistence to their front-end applications\n Relieves developers from having to build out backend to support their apps\n Firebase platform offers a variety of products such as realtime database, authentication, file storage, analytics, hosting, etc\n Generous free tier\n Advanced features that developers can grow their applications into as their applications grow\n  "
+},
+{
 	"uri": "/06-dom-and-jquery/jquery-overview/benefits-of-jquery/",
 	"title": "Benefits of jQuery",
 	"tags": [],
 	"description": "",
 	"content": " Benefits of jQuery?  Uses CSS selectors to help us grab or select elements programmatically (i.e. in our code)\n Accomplishes more with less code vs using native JavaScript\n  CSS selectors means less code Here\u0026rsquo;s how we would programmatically select an element with an id of \u0026ldquo;flavors\u0026rdquo; using native JavaScript\n// selecting an element using native JavaScript document.getElementById(\u0026#39;flavors\u0026#39;).onClick = doSomething()  Here\u0026rsquo;s how we would programmatically select an element with an id of \u0026ldquo;flavors\u0026rdquo; using jQuery\n// using jQuery (same as above but with much more intuitive syntax) $(\u0026#39;#flavors\u0026#39;).click(doSomething)  In this code snippet above you can see jQuery allows us to use CSS selectors to programmatically select elements on our page\nThe ability to use CSS selectors to programmatically select elements is the main reason jQuery is so popular today\n Another Example Here\u0026rsquo;s another example of how jQuery results in much more clear and readable DOM manipulation logic\nIn this code snippet, we are using native JavaScript to programmatically select the \u0026lt;body\u0026gt; element and then change the background color to white\n// selecting an element using native JavaScript  document.getElementsByTagName(\u0026#39;body\u0026#39;)[0].style.backgroundColor = \u0026#39;white\u0026#39;  Compare the snippet above with the following snippet that accomplishes the same result using jQuery\n// using jQuery (same as above but with much more intuitive syntax)  $(\u0026#39;body\u0026#39;).css(\u0026#39;backgroundColor\u0026#39;, \u0026#39;white\u0026#39;)  Note: best practice is to use camel case when referencing css properties that have multiple words i.e. \u0026lsquo;backgroundColor\u0026rsquo; instead of \u0026lsquo;background-color\u0026rsquo;\n "
+},
+{
+	"uri": "/13-intro-to-crud-and-firebase/crud/",
+	"title": "CRUD",
+	"tags": [],
+	"description": "",
+	"content": " What is CRUD  Stands for Create, Read, Update and Delete\n CRUD paradigm is common in constructing data-backed software applications\n Helps developers plan how their application\u0026rsquo;s data should be structured\n In the context of working with APIs, CRUD maps nicely to HTTP Verbs GET (read), Post (create), PUT (update) and DELETE (delete)\n     CRUD Operation HTTP VERB Description     CREATE POST Create new data or resource   READ GET Read / fetch data or resource   UPDATE PUT Update existing data or resource   DELETE DELETE Delete existing data or resource    "
 },
 {
 	"uri": "/12-object-oriented-js/classes/",
@@ -749,6 +777,13 @@
 	"content": " Documentation Since we\u0026rsquo;ll be the APIs of both Slack and OpenWeather, you should have the API docs of both platforms open in your browser so you can quickly reference them when needed:\n Slack API Docs\n OpenWeather API Docs\n  "
 },
 {
+	"uri": "/13-intro-to-crud-and-firebase/firebase/",
+	"title": "Firebase",
+	"tags": [],
+	"description": "",
+	"content": " Firebase  Overview   Benefits   NoSQL Databases   "
+},
+{
 	"uri": "/12-object-oriented-js/classes/methods/general-methods/",
 	"title": "General Methods",
 	"tags": [],
@@ -775,6 +810,13 @@
 	"tags": [],
 	"description": "",
 	"content": " JSON  Overview   JSON.stringify()   JSON.parse()   "
+},
+{
+	"uri": "/13-intro-to-crud-and-firebase/firebase/nosql-databases/",
+	"title": "NoSQL Databases",
+	"tags": [],
+	"description": "",
+	"content": " What is a NoSQL Database  Firebase uses a NoSQL for it\u0026rsquo;s cloud-based databases\n Like many NoSQL databases, Firebase\u0026rsquo;s Real-time database stores data as JSON objects\n NoSQL databases don\u0026rsquo;t enforce strict data structure which results in much more flexibility than traditional SQL databases\n Downsides: when dealing with \u0026ldquo;loosely structured\u0026rdquo; data, common use cases such as building out relationships (for example: a student has many courses, and courses contain many students) in your data can be non-intuitive and complex\n  Firebase\u0026rsquo;s Realtime Database  Firebase Realtime Database is a cloud-hosted NoSQL database that lets you store and sync between your users in realtime\n It\u0026rsquo;s really just one big JSON object that the developers can manage in realtime\n  "
 },
 {
 	"uri": "/08-http-and-apis/http/http-request/http-methods/put/",
@@ -922,6 +964,13 @@
 	"tags": [],
 	"description": "",
 	"content": " Bracket Notation  Bracket notation is another way to to access a key’s value is by using bracket notation, [ ]\n To use bracket notation to access an object’s property, we pass in the property name (key) as a string\nsuperHero['secret identity']`\n We must use bracket notation when accessing keys that have numbers, spaces, or special characters in them\n Remember, object keys are always strings\n  Example let superHero = { \u0026#39;secret identity\u0026#39;: \u0026#39;Peter Parker\u0026#39;, name: \u0026#39;Spiderman\u0026#39;, powers: [\u0026#39;super strength\u0026#39;, \u0026#39;hyper awareness\u0026#39;, \u0026#39;agility\u0026#39;, \u0026#39;genius intellect\u0026#39;], age: 17 } console.log(superHero[\u0026#34;secret identity\u0026#34;]) console.log(superHero[\u0026#34;name\u0026#34;])  JS Bin on jsbin.com\nUsing variables to access properties  Bracket notation also allows us to use a variable inside the brackets to select the keys of an object  Example let superHero = { \u0026#39;secret identity\u0026#39;: \u0026#39;Peter Parker\u0026#39;, name: \u0026#39;Spiderman\u0026#39;, powers: [\u0026#39;super strength\u0026#39;, \u0026#39;hyper awareness\u0026#39;, \u0026#39;agility\u0026#39;, \u0026#39;genius intellect\u0026#39;], age: 17 } let attribute = \u0026#34;name\u0026#34; // use the \u0026#39;attribute\u0026#39; variable to access a property in superHero  let attributeValue = superHero[attribute] console.log(superHero[attribute]) // This is the result of trying the same thing using dot notation  console.log(superHero.attribute) // undefined  JS Bin on jsbin.com\n"
+},
+{
+	"uri": "/13-intro-to-crud-and-firebase/code-along-firebase-playlist-app/",
+	"title": "Code Along: Firebase Playlist App",
+	"tags": [],
+	"description": "",
+	"content": " Code Along: Firebase Playlist App  Together we\u0026rsquo;ll walk through creating a playlist application that has its data persisted in Firebase\u0026rsquo;s Realtime Database (see docs)  1. Get the starter code for this code along  The starter code for this code along is hosted on Github, see the url below:\n Code Along: Firebase Playlist App\n Use the Assignment Submission Git Workflow (detailed here) to access and submit the assignment\n   2. Create a Firebase account  Create a free Firebase Account using the following link: create account  "
 },
 {
 	"uri": "/final-projects/milestones-due-dates/create-github-repository-for-final-project/",

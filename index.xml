@@ -319,6 +319,18 @@ List Of Commonly Used APIs Here is a short list of commonly used APIs for testin
     </item>
     
     <item>
+      <title>Objectives</title>
+      <link>/13-intro-to-crud-and-firebase/objectives/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/13-intro-to-crud-and-firebase/objectives/</guid>
+      <description> Explain what CRUD means
+ Learn about Firebase and its benefits
+ Use Firebase&amp;rsquo;s real-time database to provide data persistence to a front-end app
+  </description>
+    </item>
+    
+    <item>
       <title>Overview</title>
       <link>/09-asynchronous-js-and-promises/async-await/overview/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -375,6 +387,18 @@ List Of Commonly Used APIs Here is a short list of commonly used APIs for testin
  Subclasses let us incorporate another class’s state and behavior into our own
  This process is often called inheritance, and our subclass is said to “inherit” from a parent class, also called a superclass
  Inheritance can avoid duplication and simplify the implementation of a class that needs the same data and functions as another class</description>
+    </item>
+    
+    <item>
+      <title>Overview</title>
+      <link>/13-intro-to-crud-and-firebase/firebase/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/13-intro-to-crud-and-firebase/firebase/overview/</guid>
+      <description> What is Firebase?  Firebase is a mobile and web application platform for developers
+ Acquired by Google in 2014
+ Offers many other services but we&amp;rsquo;ll be covering the basics of Firebase&amp;rsquo;s real-time backend database and seeing how we can use this in our applications
+  </description>
     </item>
     
     <item>
@@ -608,6 +632,20 @@ We&amp;rsquo;ll discuss currentTarget and the .find() method later in the course
     </item>
     
     <item>
+      <title>Benefits</title>
+      <link>/13-intro-to-crud-and-firebase/firebase/benefits/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/13-intro-to-crud-and-firebase/firebase/benefits/</guid>
+      <description> Firebase Benefits  Firebase provides a seamless way for front-end developers to add data persistence to their front-end applications
+ Relieves developers from having to build out backend to support their apps
+ Firebase platform offers a variety of products such as realtime database, authentication, file storage, analytics, hosting, etc
+ Generous free tier
+ Advanced features that developers can grow their applications into as their applications grow
+  </description>
+    </item>
+    
+    <item>
       <title>Benefits of jQuery</title>
       <link>/06-dom-and-jquery/jquery-overview/benefits-of-jquery/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -617,6 +655,19 @@ We&amp;rsquo;ll discuss currentTarget and the .find() method later in the course
  Accomplishes more with less code vs using native JavaScript
   CSS selectors means less code Here&amp;rsquo;s how we would programmatically select an element with an id of &amp;ldquo;flavors&amp;rdquo; using native JavaScript
 // selecting an element using native JavaScript document.getElementById(&amp;#39;flavors&amp;#39;).onClick = doSomething()  Here&amp;rsquo;s how we would programmatically select an element with an id of &amp;ldquo;flavors&amp;rdquo; using jQuery</description>
+    </item>
+    
+    <item>
+      <title>CRUD</title>
+      <link>/13-intro-to-crud-and-firebase/crud/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/13-intro-to-crud-and-firebase/crud/</guid>
+      <description> What is CRUD  Stands for Create, Read, Update and Delete
+ CRUD paradigm is common in constructing data-backed software applications
+ Helps developers plan how their application&amp;rsquo;s data should be structured
+ In the context of working with APIs, CRUD maps nicely to HTTP Verbs GET (read), Post (create), PUT (update) and DELETE (delete)
+     CRUD Operation HTTP VERB Description     CREATE POST Create new data or resource   READ GET Read / fetch data or resource   UPDATE PUT Update existing data or resource   DELETE DELETE Delete existing data or resource    </description>
     </item>
     
     <item>
@@ -1061,6 +1112,18 @@ Here&amp;rsquo;s a diagram that provides a high-level view of how our slackbot w
     </item>
     
     <item>
+      <title>NoSQL Databases</title>
+      <link>/13-intro-to-crud-and-firebase/firebase/nosql-databases/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/13-intro-to-crud-and-firebase/firebase/nosql-databases/</guid>
+      <description>What is a NoSQL Database  Firebase uses a NoSQL for it&amp;rsquo;s cloud-based databases
+ Like many NoSQL databases, Firebase&amp;rsquo;s Real-time database stores data as JSON objects
+ NoSQL databases don&amp;rsquo;t enforce strict data structure which results in much more flexibility than traditional SQL databases
+ Downsides: when dealing with &amp;ldquo;loosely structured&amp;rdquo; data, common use cases such as building out relationships (for example: a student has many courses, and courses contain many students) in your data can be non-intuitive and complex</description>
+    </item>
+    
+    <item>
       <title>PUT</title>
       <link>/08-http-and-apis/http/http-request/http-methods/put/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1261,6 +1324,17 @@ superHero[&#39;secret identity&#39;]`
  We must use bracket notation when accessing keys that have numbers, spaces, or special characters in them
  Remember, object keys are always strings
   Example let superHero = { &amp;#39;secret identity&amp;#39;: &amp;#39;Peter Parker&amp;#39;, name: &amp;#39;Spiderman&amp;#39;, powers: [&amp;#39;super strength&amp;#39;, &amp;#39;hyper awareness&amp;#39;, &amp;#39;agility&amp;#39;, &amp;#39;genius intellect&amp;#39;], age: 17 } console.</description>
+    </item>
+    
+    <item>
+      <title>Code Along: Firebase Playlist App</title>
+      <link>/13-intro-to-crud-and-firebase/code-along-firebase-playlist-app/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/13-intro-to-crud-and-firebase/code-along-firebase-playlist-app/</guid>
+      <description>Code Along: Firebase Playlist App  Together we&amp;rsquo;ll walk through creating a playlist application that has its data persisted in Firebase&amp;rsquo;s Realtime Database (see docs)  1. Get the starter code for this code along  The starter code for this code along is hosted on Github, see the url below:
+ Code Along: Firebase Playlist App
+ Use the Assignment Submission Git Workflow (detailed here) to access and submit the assignment</description>
     </item>
     
     <item>
