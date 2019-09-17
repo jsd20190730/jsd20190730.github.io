@@ -111,6 +111,10 @@
   </url>
   
   <url>
+    <loc>/12-object-oriented-js/objectives/</loc>
+  </url>
+  
+  <url>
     <loc>/09-asynchronous-js-and-promises/async-await/overview/</loc>
   </url>
   
@@ -124,6 +128,10 @@
   
   <url>
     <loc>/12-object-oriented-js/classes/overview/</loc>
+  </url>
+  
+  <url>
+    <loc>/12-object-oriented-js/inheritance/overview/</loc>
   </url>
   
   <url>
@@ -272,7 +280,7 @@
   </url>
   
   <url>
-    <loc>/12-object-oriented-js/classes/methods/getters_and_setters/</loc>
+    <loc>/12-object-oriented-js/classes/methods/getters-and-setters/</loc>
   </url>
   
   <url>
@@ -356,6 +364,10 @@
   </url>
   
   <url>
+    <loc>/12-object-oriented-js/inheritance/super-and-extends/</loc>
+  </url>
+  
+  <url>
     <loc>/09-asynchronous-js-and-promises/synchronous-programming/</loc>
   </url>
   
@@ -377,6 +389,10 @@
   
   <url>
     <loc>/08-http-and-apis/apis/</loc>
+  </url>
+  
+  <url>
+    <loc>/12-object-oriented-js/classes/encapsulation/</loc>
   </url>
   
   <url>
@@ -413,6 +429,10 @@
   
   <url>
     <loc>/11-project-build-a-slackbot/documentaton/</loc>
+  </url>
+  
+  <url>
+    <loc>/12-object-oriented-js/classes/methods/general-methods/</loc>
   </url>
   
   <url>
@@ -580,6 +600,10 @@
   </url>
   
   <url>
+    <loc>/12-object-oriented-js/classes/methods/static-methods/</loc>
+  </url>
+  
+  <url>
     <loc>/11-project-build-a-slackbot/tutorial/step-4-run-ngrok/</loc>
   </url>
   
@@ -637,6 +661,10 @@
   
   <url>
     <loc>/01-command-line-js-and-git/git-vocabulary/</loc>
+  </url>
+  
+  <url>
+    <loc>/12-object-oriented-js/inheritance/</loc>
   </url>
   
   <url>
@@ -1004,10 +1032,6 @@
   </url>
   
   <url>
-    <loc>/13-closures-and-this/</loc>
-  </url>
-  
-  <url>
     <loc>/11-project-build-a-slackbot/tutorial/step-13-handle-errors-gracefully/</loc>
   </url>
   
@@ -1021,7 +1045,7 @@
   </url>
   
   <url>
-    <loc>/14-intro-to-crud-and-firebase/</loc>
+    <loc>/13-intro-to-crud-and-firebase/</loc>
   </url>
   
   <url>
@@ -1038,6 +1062,10 @@
   
   <url>
     <loc>/06-dom-and-jquery/jquery-effects/</loc>
+  </url>
+  
+  <url>
+    <loc>/14-project-firebase-todo-app/</loc>
   </url>
   
   <url>
@@ -1058,6 +1086,10 @@
   
   <url>
     <loc>/06-dom-and-jquery/jquery-traversing/</loc>
+  </url>
+  
+  <url>
+    <loc>/16-closures-and-this/</loc>
   </url>
   
   <url>
@@ -1101,10 +1133,6 @@
   <url>
     <loc>/</loc>
     <lastmod>2017-01-22T18:05:18-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/12-object-oriented-js/classes/methods/non-getter-setter-methods/</loc>
   </url>
   
   <url>

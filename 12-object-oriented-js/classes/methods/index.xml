@@ -23,22 +23,33 @@
     
     <item>
       <title>Getters &amp; Setters</title>
-      <link>/12-object-oriented-js/classes/methods/getters_and_setters/</link>
+      <link>/12-object-oriented-js/classes/methods/getters-and-setters/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/12-object-oriented-js/classes/methods/getters_and_setters/</guid>
-      <description>Getters &amp;amp; Setters  Getters and Setters allow developers to write methods that enable reading (get) and the writing (set) of properties of a class or object
+      <guid>/12-object-oriented-js/classes/methods/getters-and-setters/</guid>
+      <description>Getters &amp;amp; Setters  Getters and Setters allow developers to write methods that enable reading (get) and the writing (set) of properties of the instances (objects)
  Getters and setters is a common pattern used in object oriented programming; ES6 classes introduced a new syntax for getters and setters on object properties
   class Car { constructor(make, model) { this._make = make this._model = model } get make() { return this.</description>
     </item>
     
     <item>
-      <title>Non-Getter / Setter Methods</title>
-      <link>/12-object-oriented-js/classes/methods/non-getter-setter-methods/</link>
+      <title>General Methods</title>
+      <link>/12-object-oriented-js/classes/methods/general-methods/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/12-object-oriented-js/classes/methods/non-getter-setter-methods/</guid>
-      <description>Non Getter / Setter Methods  You can specify &amp;ldquo;regular&amp;rdquo; methods that allow you do things other than getting and setting the property values  Example class Car { constructor(make, model) { this._make = make this._model = model this._miles = 30 } get make() { return this._make } get model() { return this._model } get miles() { return this._miles } set model(newModel) { this._model = newModel } addMileage(newMiles) { this.</description>
+      <guid>/12-object-oriented-js/classes/methods/general-methods/</guid>
+      <description>General Methods  You can specify &amp;ldquo;regular&amp;rdquo; methods that allow you do things other than simply getting and setting the property values  Example class Car { constructor(make, model) { this._make = make this._model = model this._miles = 30 } get make() { return this._make } get model() { return this._model } get miles() { return this._miles } set model(newModel) { this._model = newModel } drive(newMiles) { console.log(`driving ${newMiles}miles`) this.</description>
+    </item>
+    
+    <item>
+      <title>Static Methods</title>
+      <link>/12-object-oriented-js/classes/methods/static-methods/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/12-object-oriented-js/classes/methods/static-methods/</guid>
+      <description>Static Methods  Static method calls are made directly on the class and are not callable on instances of the class
+ Static methods are prepended with the static keyword
+  class Car { constructor(make, model, price) { this._make = make this._model = model this._price = price } // instance method  drive() { console.log(&amp;#39;calling &amp;#34;this&amp;#34; in an instance method&amp;#39;, this) console.log(`driving ${this._make}${this._model}`) } // static method  static mostExpensiveCar(cars) { console.</description>
     </item>
     
   </channel>
