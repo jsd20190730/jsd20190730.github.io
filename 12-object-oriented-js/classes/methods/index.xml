@@ -49,7 +49,7 @@
       <guid>/12-object-oriented-js/classes/methods/static-methods/</guid>
       <description>Static Methods  Static method calls are made directly on the class and are not callable on instances of the class
  Static methods are prepended with the static keyword
-  class Car { constructor(make, model, price) { this._make = make this._model = model this._price = price } // instance method  drive() { console.log(&amp;#39;calling &amp;#34;this&amp;#34; in an instance method&amp;#39;, this) console.log(`driving ${this._make}${this._model}`) } // static method  static mostExpensiveCar(cars) { console.</description>
+  class Car { constructor(make, model, price) { this._make = make this._model = model this._price = price } // instance methods  get price() { return this._price } drive() { console.log(&amp;#39;calling &amp;#34;this&amp;#34; in an instance method&amp;#39;, this) console.log(`driving ${this.</description>
     </item>
     
   </channel>

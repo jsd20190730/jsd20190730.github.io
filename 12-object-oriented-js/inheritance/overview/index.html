@@ -12,21 +12,21 @@
     <title>Overview :: GA JavaScript</title>
 
     
-    <link href="/css/nucleus.css?1568763563" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1568763563" rel="stylesheet">
-    <link href="/css/hybrid.css?1568763563" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1568763563" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1568763563" rel="stylesheet">
-    <link href="/css/auto-complete.css?1568763563" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1568763563" rel="stylesheet">
-    <link href="/css/theme.css?1568763563" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1568763563" rel="stylesheet">
-    <link href="/css/syntax.css?1568763563" rel="stylesheet">
+    <link href="/css/nucleus.css?1568845563" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1568845563" rel="stylesheet">
+    <link href="/css/hybrid.css?1568845563" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1568845563" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1568845563" rel="stylesheet">
+    <link href="/css/auto-complete.css?1568845563" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1568845563" rel="stylesheet">
+    <link href="/css/theme.css?1568845563" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1568845563" rel="stylesheet">
+    <link href="/css/syntax.css?1568845563" rel="stylesheet">
     
-      <link href="/css/theme-blue.css?1568763563" rel="stylesheet">
+      <link href="/css/theme-blue.css?1568845563" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1568763563"></script>
+    <script src="/js/jquery-3.3.1.min.js?1568845563"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -89,14 +89,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1568763563"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1568763563"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1568845563"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1568845563"></script>
 <script type="text/javascript">
     
         var baseurl = "\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1568763563"></script>
+<script type="text/javascript" src="/js/search.js?1568845563"></script>
 
     
   </div>
@@ -6530,8 +6530,15 @@
 
 
   <span class="k">class</span> <span class="nx">Gorilla</span> <span class="k">extends</span> <span class="nx">Animal</span> <span class="p">{</span>
-    <span class="nx">constructor</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">weight</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">constructor</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">weight</span><span class="p">,</span> <span class="nx">height</span><span class="p">)</span> <span class="p">{</span>
       <span class="k">super</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">weight</span><span class="p">)</span>
+
+      <span class="c1">// property not shared with Animal class
+</span><span class="c1"></span>      <span class="k">this</span><span class="p">.</span><span class="nx">_height</span> <span class="o">=</span> <span class="nx">height</span>
+    <span class="p">}</span>
+
+    <span class="nx">get</span> <span class="nx">height</span><span class="p">()</span> <span class="p">{</span>
+      <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">_height</span>
     <span class="p">}</span>
 
     <span class="nx">climbTrees</span><span class="p">()</span> <span class="p">{</span>
@@ -6543,18 +6550,19 @@
     <span class="p">}</span>
 
     <span class="nx">showVigour</span><span class="p">()</span> <span class="p">{</span>
-      <span class="k">return</span> <span class="sb">`</span><span class="si">${</span><span class="k">super</span><span class="p">.</span><span class="nx">eat</span><span class="p">()</span><span class="si">}</span><span class="sb"> </span><span class="si">${</span><span class="k">this</span><span class="p">.</span><span class="nx">poundChest</span><span class="p">()</span><span class="si">}</span><span class="sb">`</span>
+      <span class="k">return</span> <span class="sb">`</span><span class="si">${</span><span class="k">this</span><span class="p">.</span><span class="nx">eat</span><span class="p">()</span><span class="si">}</span><span class="sb"> </span><span class="si">${</span><span class="k">this</span><span class="p">.</span><span class="nx">poundChest</span><span class="p">()</span><span class="si">}</span><span class="sb">`</span>
     <span class="p">}</span>
 
     <span class="nx">dailyRoutine</span><span class="p">()</span> <span class="p">{</span>
-      <span class="k">return</span> <span class="sb">`</span><span class="si">${</span><span class="k">super</span><span class="p">.</span><span class="nx">wakeUp</span><span class="p">()</span><span class="si">}</span><span class="sb"> </span><span class="si">${</span><span class="k">this</span><span class="p">.</span><span class="nx">poundChest</span><span class="p">()</span><span class="si">}</span><span class="sb"> </span><span class="si">${</span><span class="k">super</span><span class="p">.</span><span class="nx">eat</span><span class="p">()</span><span class="si">}</span><span class="sb"> </span><span class="si">${</span><span class="k">super</span><span class="p">.</span><span class="nx">sleep</span><span class="p">()</span><span class="si">}</span><span class="sb">`</span>
+      <span class="k">return</span> <span class="sb">`</span><span class="si">${</span><span class="k">this</span><span class="p">.</span><span class="nx">wakeUp</span><span class="p">()</span><span class="si">}</span><span class="sb"> </span><span class="si">${</span><span class="k">this</span><span class="p">.</span><span class="nx">poundChest</span><span class="p">()</span><span class="si">}</span><span class="sb"> </span><span class="si">${</span><span class="k">this</span><span class="p">.</span><span class="nx">eat</span><span class="p">()</span><span class="si">}</span><span class="sb"> </span><span class="si">${</span><span class="k">this</span><span class="p">.</span><span class="nx">sleep</span><span class="p">()</span><span class="si">}</span><span class="sb">`</span>
     <span class="p">}</span>
   <span class="p">}</span>
 
   <span class="k">const</span> <span class="nx">gorilla</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Gorilla</span><span class="p">(</span><span class="s1">&#39;George&#39;</span><span class="p">,</span> <span class="s1">&#39;160Kg&#39;</span><span class="p">)</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">gorilla</span><span class="p">.</span><span class="nx">eat</span><span class="p">())</span>
   <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">gorilla</span><span class="p">.</span><span class="nx">poundChest</span><span class="p">())</span>
   <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">gorilla</span><span class="p">.</span><span class="nx">sleep</span><span class="p">())</span>
-  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">gorilla</span><span class="p">.</span><span class="nx">showVigour</span><span class="p">())</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">gorilla</span><span class="p">.</span><span class="nx">height</span><span class="p">)</span>
   <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">gorilla</span><span class="p">.</span><span class="nx">dailyRoutine</span><span class="p">())</span>
   
 </code></pre></div>
@@ -11259,20 +11267,20 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1568763563"></script>
-    <script src="/js/perfect-scrollbar.min.js?1568763563"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1568763563"></script>
-    <script src="/js/jquery.sticky.js?1568763563"></script>
-    <script src="/js/featherlight.min.js?1568763563"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1568763563"></script>
-    <script src="/js/highlight.pack.js?1568763563"></script>
+    <script src="/js/clipboard.min.js?1568845563"></script>
+    <script src="/js/perfect-scrollbar.min.js?1568845563"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1568845563"></script>
+    <script src="/js/jquery.sticky.js?1568845563"></script>
+    <script src="/js/featherlight.min.js?1568845563"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1568845563"></script>
+    <script src="/js/highlight.pack.js?1568845563"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1568763563"></script>
-    <script src="/js/learn.js?1568763563"></script>
-    <script src="/js/hugo-learn.js?1568763563"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1568845563"></script>
+    <script src="/js/learn.js?1568845563"></script>
+    <script src="/js/hugo-learn.js?1568845563"></script>
 
-    <link href="/mermaid/mermaid.css?1568763563" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1568763563"></script>
+    <link href="/mermaid/mermaid.css?1568845563" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1568845563"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
