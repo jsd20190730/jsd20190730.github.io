@@ -123,6 +123,10 @@
   </url>
   
   <url>
+    <loc>/15-project-firebase-todo-app/objectives/</loc>
+  </url>
+  
+  <url>
     <loc>/10-asynchronous-js-and-promises/async-await/overview/</loc>
   </url>
   
@@ -336,6 +340,10 @@
   </url>
   
   <url>
+    <loc>/15-project-firebase-todo-app/instructions/</loc>
+  </url>
+  
+  <url>
     <loc>/09-http-and-apis/json/json-parse/</loc>
   </url>
   
@@ -493,6 +501,10 @@
   
   <url>
     <loc>/11-lab-giphy-weather-app/requirements/</loc>
+  </url>
+  
+  <url>
+    <loc>/15-project-firebase-todo-app/requirements/</loc>
   </url>
   
   <url>

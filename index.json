@@ -210,6 +210,13 @@
 	"content": " Explain what CRUD means\n Learn about Firebase and its benefits\n Use Firebase\u0026rsquo;s real-time database to provide data persistence to a front-end app\n  "
 },
 {
+	"uri": "/15-project-firebase-todo-app/objectives/",
+	"title": "Objectives",
+	"tags": [],
+	"description": "",
+	"content": " Leverage knowledge of Firebase to add persistent data storage to a Todo Application  "
+},
+{
 	"uri": "/10-asynchronous-js-and-promises/async-await/overview/",
 	"title": "Overview",
 	"tags": [],
@@ -581,6 +588,13 @@
 	"content": " Overview You are tasked with building an application that leverages different APIs to provide a city’s weather in a fun way\nInstructions 1) Download starter code\n The starter code for this code along is hosted on Github, see the url below:\n Lab: Giphy Weather App   2) Get API keys for OpenWeather and Giphy (if you haven’t done so already)\n"
 },
 {
+	"uri": "/15-project-firebase-todo-app/instructions/",
+	"title": "Instructions",
+	"tags": [],
+	"description": "",
+	"content": " Overview You are tasked with adding persistent data storage to an unfinished todo application using Firebase\u0026rsquo;s Realtime Database product\nInstructions 1) Download starter code\n The starter code for this code along is hosted on Github, see the url below:\n Project: Firebase Todo App   2) Create a new Firebase project called doit-app\n3) Add a \u0026ldquo;Realtime Database\u0026rdquo; to the project and choose the \u0026ldquo;Start in test mode\u0026rdquo; option\n4) Add a top level node called tasks(in the name field) and paste the following in the value field: { \u0026quot;111\u0026quot;: { \u0026quot;name\u0026quot;: \u0026quot;do taxes\u0026quot;, \u0026quot;completed\u0026quot;: false }}\nAfter adding the tasks node, your data should look similar to the image below:\n"
+},
+{
 	"uri": "/09-http-and-apis/json/json-parse/",
 	"title": "JSON.parse()",
 	"tags": [],
@@ -859,6 +873,13 @@
 	"tags": [],
 	"description": "",
 	"content": " Requirements Requirement #1: App UI: The user interface should contain a single form input and a submit button (the starter code already provides the UI)\nRequirement #2: Make Multiple API Requests When users enter a city name into the input field and press submit the following should happen:\n API Request #1 - Fetch City’s Current Weather\nYour app should make an API request to OpenWeather and fetch the current weather associated with the city name entered into the form\n API Request #2 - Fetch Gif representing the City\nYour app should make an API request to Giphy and retrieve a gifs associated with the city name entered into the form field\n API Request #3 - Fetch Gif representing City’s weather description\nThe current weather data fetched from “API Request #1” returns a weather description (i.e. rain, clear sky, snow, etc) . Make an API request to the Giphy and retrieve gifs associated with this weather description\n  Requirement #3: Display Data Once all the data has been received from the API requests, display the following data on the screen:\n * The city’s current weather * City name * Current temperature (displayed in Fahrenheit or Celsius) * Weather description * Min temp * Max temp * 1 gif that represents the city * 1 gif that represents the city’s current weather description  Requirement #4: Use Promises  Promises must be used to make consume / handle the API responses\n Axios must be used to make the API requests\n  "
+},
+{
+	"uri": "/15-project-firebase-todo-app/requirements/",
+	"title": "Requirements",
+	"tags": [],
+	"description": "",
+	"content": " Requirements Requirement #1: Add Create Functionality When users attempt to add a new task using the #addItem form, the task should be successfully saved in the app\u0026rsquo;s Firebase database. Within your Firebase database, the name of the new task should be stored as name and the completed value of every newly created task should be set to false\nRequirement #2: Add Read Functionality The Doit app should list all tasks stored in your Firebase database within the #taskList div. Make sure you comment out the hardcoded tasks after you\u0026rsquo;ve successfully completed this step.\nRequirement #3: Add Update Functionality 2a: Users should be able update a task name and have that change reflected in the app\u0026rsquo;s Firebase database.\n2b: Users should be able toggle the checkbox (i.e. check and uncheck) to change the completed status of a task. The updated completed status (resulting from a checkbox change) should be reflected in the app\u0026rsquo;s Firebase database.\nRequirement #4: Add Delete Functionality Users should be able delete a task and have that task also deleted from the app\u0026rsquo;s Firebase database.\n"
 },
 {
 	"uri": "/12-project-build-a-slackbot/tutorial/step-3-set-up-node-application/",
