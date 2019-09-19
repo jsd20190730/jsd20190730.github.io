@@ -35,28 +35,28 @@
 	"content": " Weekly In-Person Office Hours Every week, Woody, our Instructional Assistant will hold office hours on GA\u0026rsquo;s campus.\n Day / Time: Wednesdays, 6:30 PM to 8:30 PM\n Location: General Assembly\u0026rsquo;s campus\n Policy: Students have until 12:00 PM every Wednesday to send Woody a direct message (DM) on Slack to let him know they plan on coming to the in-person office hours. If no one contacts Woody by this time, he will not hold office hours\n  Supplementary Office Hours (Remote) Subject to the instructional team\u0026rsquo;s availability, we will be holding supplementary remote office hours in addition to the weekly in-person office office detailed above. These office hours will be provided online via a Zoom video call.\n Day / Time: See schedule below\n Location: Online via Zoom (link will be provided in Slack prior the start of office hours)\n Policy: No prior sign up required, just log drop in if you have questions\n  The schedule below will be updated as the course progresses.\n   Week Date Time     Aug 25 - Aug 31 Sunday, Aug 25th 11 AM to 1 PM    Friday, Aug 30th 6:30 PM to 8:30 PM   Sep 1 - Sep 7 N/A N/A   Sep 8 - Sep 14 Saturday, Sept 14th 10 AM to 12 PM   Sep 15 - Sep 21 Saturday, Sept 21st 9 AM to 11 AM   Sep 22 - Sep 28 TBA TBA   Sep 29 - Oct 5 TBA TBA    N/A = Not Available\n"
 },
 {
-	"uri": "/08-http-and-apis/ajax/overview/",
+	"uri": "/09-http-and-apis/ajax/overview/",
 	"title": "Overview",
 	"tags": [],
 	"description": "",
 	"content": " What is AJAX?  AJAX stands for Asynchronous JavaScript And XML\n The meaning: Web clients can send or receive data to/from the server without requesting an entire page - instead, clients can just request or send an arbitrary amount of data\n In front-end development, AJAX is often used to make API requests that will fetch data from another service without having to refresh the web page\n  Click here for more information about AJAX\n Benefits of AJAX  Update a web page without reloading the page\n Request data from a server - after the page has loaded\n Receive data from a server - after the page has loaded\n Send data to a server - in the background\n  "
 },
 {
-	"uri": "/08-http-and-apis/apis/overview/",
+	"uri": "/09-http-and-apis/apis/overview/",
 	"title": "Overview",
 	"tags": [],
 	"description": "",
 	"content": " What is an API?  Stands for \u0026ldquo;Application Programing Interface\u0026rdquo;\n A way to exchange data between servers / services (i.e. software to software communication)\n Set of programming instructions and standards for accessing a service, tool or application\n For example, Amazon.com released its API so that Web site developers could more easily access Amazon\u0026rsquo;s product information\n In a nutshell, if you want to leverage information from another website or application your first choice should be to use an API (if they offer one)\n  API Considerations  Does the website I need data from even have an API?\n Do I need to authenticate with the remote data source before retrieving the information I need, either as an API consumer or as a user of that service?\n What are the URLs I use to access the data I need?\n In API terms, these URLs are known as endpoints and can usually be found in an API\u0026rsquo;s documentation   What happens when no API is available?  If the website you need data from does not have an API, you could resort to data scraping through the use of \u0026ldquo;spiders\u0026rdquo; which crawl websites and extracts information\n Many online services consider data scraping to be a violation of their Terms of Service\n  API Data Formats  The \u0026ldquo;modern standard\u0026rdquo; for API responses is JSON, or JavaScript Object Notation\n Some APIs are implemented using XML, this includes the API for WordPress, which is implemented using the XML-RPC standard\n  Request, Response lifecycle  When making an API call, you are essentially making an Request to a server and then receiving a Response\n Most of the time this response will contain data that you will make use of within your application\n  "
 },
 {
-	"uri": "/08-http-and-apis/http/overview/",
+	"uri": "/09-http-and-apis/http/overview/",
 	"title": "Overview",
 	"tags": [],
 	"description": "",
 	"content": " What is HTTP  HTTP stands for \u0026ldquo;HyperText Transfer Protocol\n HTTP is a protocol which allows the fetching of resources, such as HTML documents\n It is the foundation of any data exchange on the Web and it is a client-server\n Communication between client computers and web servers is done by sending HTTP Requests and receiving HTTP Responses\n  Example  A client (a browser) sends an HTTP request to the web\n An web server receives the request\n The server runs an application to process the request\n The server returns an HTTP response (output) to the browser\n The client (the browser) receives the response\n  Exercise: Inspect your Browser\u0026rsquo;s HTTP Request and Response We can use our browser\u0026rsquo;s developer tools to see what an HTTP Request and HTTP Response looks like when our browser visits a webpage:\nTry the following:\n Open up your browser\u0026rsquo;s developer tools\n Select the \u0026ldquo;Network\u0026rdquo; tab\n In your browser\u0026rsquo;s address bar, navigate to https://generalassemb.ly/\n In the \u0026ldquo;Network\u0026rdquo; tab of your developer tools, you will see a list of files that were received from the web server, inspect the file named: generalassemb.ly\n Inspect the \u0026ldquo;Headers\u0026rdquo;, \u0026ldquo;Preview\u0026rdquo; \u0026amp; \u0026ldquo;Response\u0026rdquo; tabs\n  "
 },
 {
-	"uri": "/08-http-and-apis/json/overview/",
+	"uri": "/09-http-and-apis/json/overview/",
 	"title": "Overview",
 	"tags": [],
 	"description": "",
@@ -70,7 +70,7 @@
 	"content": " What is jQuery?  A JavaScript library that makes it easy to dynamically update your pages (i.e. perform DOM manipulation)\n Offers a simple way to achieve a variety of common JavaScript tasks\n Consistent across all browsers\n Does not do anything native / vanilla JavaScript cannot do, just does it with a more intuitive syntax\n  It\u0026rsquo;s important to note that jQuery is NOT another programming language it is a library or tool built on top of JavaScript\n "
 },
 {
-	"uri": "/08-http-and-apis/ajax/ajax-request-native-js/",
+	"uri": "/09-http-and-apis/ajax/ajax-request-native-js/",
 	"title": "AJAX Requests using Native JS",
 	"tags": [],
 	"description": "",
@@ -119,7 +119,7 @@
 	"content": " Event Handlers  Event handlers are blocks of code (usually a user-defined JavaScript function) that will be run when an event fires\n There are two parts to an event handler: an event listener and a callback function.\n An event listener is a method that listens for a specified event to occur, like a click event\n A callback function is a function that executes when something triggers the event listener\n  Both the event listener and callback function make up an event handler\n  Example $(() =\u0026gt; { $(\u0026#39;button\u0026#39;).click(() =\u0026gt; { $(\u0026#39;.box\u0026#39;).hide() }) })  JS Bin on jsbin.com\n Here\u0026rsquo;s a summary of what is happening in the code above:\n $('.box') selects all HTML elements with a class of .box\n The .click() method is the event listener; it checks if the user has clicked an .box HTML element\n The second argument to .on() is a callback function; when a \u0026lsquo;click\u0026rsquo; occurs on an .box element, this function executes\n   "
 },
 {
-	"uri": "/08-http-and-apis/apis/finding-apis/",
+	"uri": "/09-http-and-apis/apis/finding-apis/",
 	"title": "Finding APIs",
 	"tags": [],
 	"description": "",
@@ -133,7 +133,7 @@
 	"content": " What are Functions?  Functions are the main “building blocks” of the program; they allow the code to be called many times without repetition\n One of the main advantages of functions is code reuse\n You can control when functions are executed, for example - you can write functions that only get executed (or called) when a user clicks a specific button\n  // a simple function that greets you with a \u0026#39;Good Morning\u0026#39; alert  // 1) Declare a function named greeting  function greeting(){ console(\u0026#39;Good Morning\u0026#39;) } // 2) Call (or run) the function  greeting()  "
 },
 {
-	"uri": "/08-http-and-apis/http/http-request/http-methods/get/",
+	"uri": "/09-http-and-apis/http/http-request/http-methods/get/",
 	"title": "GET",
 	"tags": [],
 	"description": "",
@@ -147,98 +147,98 @@
 	"content": " Global Scope  Variables defined outside of a function are in in the Global Scope  Example // Global function because it was declared outside of a function const name = \u0026#39;Simone Biles\u0026#39; console.log(name) function bestGymnastEver() { // \u0026#39;name\u0026#39; variable is accessible here and everywhere else because it is global  console.log(name) } logName() // logs \u0026#39;Simone Biles\u0026#39;  JS Bin on jsbin.com\n"
 },
 {
-	"uri": "/08-http-and-apis/http/http-request/",
+	"uri": "/09-http-and-apis/http/http-request/",
 	"title": "HTTP Requests",
 	"tags": [],
 	"description": "",
 	"content": " HTTP Requests  An HTTP request is made by a client, to a named host, which is located on a server\n The aim of the request is to access a resource on the server.\n To make the request, the Client uses components of a URL (Uniform Resource Locator), which includes the information needed to access the resource\n A correctly composed HTTP request contains the following elements:\n A request line\n A series of HTTP headers, or header fields\n A message body, if needed\n   Request Line  The request line is the first line in the request message. It consists of at least three items:   A HTTP method\n The method is a one-word command that tells the server what it should do with the resource. For example, the server could be asked to send the resource to the client.  The path component of the URL for the request:\n The path identifies the resource on the server.  The HTTP version number:\n The HTTP specification to which the client has tried to make the message comply (current version is 1.1 but you don\u0026rsquo;t have to worry about this)   Example Request Line GET /path/to/resource/index.html HTTP/1.1\n the method is GET\n the path is /path/to/resource/index.html\n the HTTP version is HTTP/1.1\n  The HTTP Client (e.g. web browser) is responsible for constructing this request line; as developers we just need to know how this works\n "
 },
 {
-	"uri": "/08-http-and-apis/json/json-stringify/",
+	"uri": "/09-http-and-apis/json/json-stringify/",
 	"title": "JSON.stringify()",
 	"tags": [],
 	"description": "",
 	"content": " JSON.stringify()  When JSON is used to send data from one service to the next \u0026ldquo;over the wire\u0026rdquo; (i.e. via cloud) it is transmitted as a string which makes it lightweight and fast\n JSON.stringify() allows developers to easily transform objects / arrays (or any value) into a JSON string which makes it compatible to be transmitted along with an HTTP Request\n \u0026ldquo;Stringify-ing\u0026rdquo; data is a common step developers take before sending data to another service\n  Example const avengers = { members: [ { name: \u0026#34;Spider-Man\u0026#34;, alias: \u0026#34;Peter Parker\u0026#34; }, { name: \u0026#34;Black Widow\u0026#34;, alias: \u0026#34;Natasha Romanova\u0026#34; } ] } // convert object into a JSON string  const jsonString = JSON.stringify(avengers)) console.log(jsonString) console.log(typeof jsonString); // result: string  JS Bin on jsbin.com\n"
 },
 {
-	"uri": "/08-http-and-apis/objectives/",
+	"uri": "/09-http-and-apis/objectives/",
 	"title": "Objectives",
 	"tags": [],
 	"description": "",
 	"content": " Learn about APIs and understand how they are used\n Understand APIs and why they are used\n Explore a real use case of API usage\n  "
 },
 {
-	"uri": "/09-asynchronous-js-and-promises/objectives/",
+	"uri": "/10-asynchronous-js-and-promises/objectives/",
 	"title": "Objectives",
 	"tags": [],
 	"description": "",
 	"content": " Understand the differences between synchronous and asynchronous programming\n Explain the different ways developers address issues presented with asynchronous programming\n Create and Consume Promises\n Handle errors generated from promises\n Use Async / Await to improve readability of asynchronous code\n  "
 },
 {
-	"uri": "/10-lab-giphy-weather-app/objectives/",
+	"uri": "/11-lab-giphy-weather-app/objectives/",
 	"title": "Objectives",
 	"tags": [],
 	"description": "",
 	"content": " Leverage knowledge of Promises to build an application that makes asynchronous requests to multiple APIs  "
 },
 {
-	"uri": "/11-project-build-a-slackbot/objectives/",
+	"uri": "/12-project-build-a-slackbot/objectives/",
 	"title": "Objectives",
 	"tags": [],
 	"description": "",
 	"content": " Leverage Slack\u0026rsquo;s API and OpenWeather\u0026rsquo;s API to build a slackbot that delivers a city\u0026rsquo;s current weather directly in Slack  "
 },
 {
-	"uri": "/12-object-oriented-js/objectives/",
+	"uri": "/13-object-oriented-js/objectives/",
 	"title": "Objectives",
 	"tags": [],
 	"description": "",
 	"content": " Understand the benefits of using Classes\n Create Classes with a public and private interface\n Create Classes that inherit properties and methods from another Class\n  "
 },
 {
-	"uri": "/13-intro-to-crud-and-firebase/objectives/",
+	"uri": "/14-intro-to-crud-and-firebase/objectives/",
 	"title": "Objectives",
 	"tags": [],
 	"description": "",
 	"content": " Explain what CRUD means\n Learn about Firebase and its benefits\n Use Firebase\u0026rsquo;s real-time database to provide data persistence to a front-end app\n  "
 },
 {
-	"uri": "/09-asynchronous-js-and-promises/async-await/overview/",
+	"uri": "/10-asynchronous-js-and-promises/async-await/overview/",
 	"title": "Overview",
 	"tags": [],
 	"description": "",
 	"content": " Async / Await  Async / Await is special that makes working with promises easy to use and understand\n The syntax and structure of Async / Await is makes our asynchronous handling look like synchronous code\n Async / Await is alternative way of consuming promises a\n  async  In order for you to use Async / Await, you must declare a function with the async keyword   async function someFunction() { return \u0026quot;something\u0026quot; }   Prepending async to a function declaration means that function always returns a promise  await  The keyword await makes JavaScript wait until that promise settles and returns its result\n await can only be used in a function that is prepended with async\n await will be ignored (and your code will not wait for the asynchronous action to complete) it you try to use await in a function that is not prepended with async   Example function delayedGreeting() { return new Promise(resolve =\u0026gt; { setTimeout(() =\u0026gt; { resolve(\u0026#39;Hi, sorry for the wait!\u0026#39;) }, 3000) }); } /* Declare function with \u0026#34;async\u0026#34; keyword */ async function msg() { // use \u0026#34;await\u0026#34; keyword to call promise and wait  // for the result before moving on  // to the next line of code  const msg = await delayedGreeting() console.log(msg) } console.log(\u0026#34;Calling msg()\u0026#34;) msg() console.log(\u0026#34;end of the code\u0026#34;)  JS Bin on jsbin.com\n"
 },
 {
-	"uri": "/09-asynchronous-js-and-promises/promises/overview/",
+	"uri": "/10-asynchronous-js-and-promises/promises/overview/",
 	"title": "Overview",
 	"tags": [],
 	"description": "",
 	"content": " What are Promises?  Promises are objects that represent the eventual outcome of an asynchronous operation\n A Promise object can be in one of three states:\n Pending: The initial state the operation has not completed yet\n Fulfilled: The operation has completed successfully and the promise now has a resolved value; for example, a request’s promise might resolve with a JSON object as its value.\n Rejected: The operation has failed and the promise has a reason for the failure; This reason is usually an Error of some kind.\n   Dishwasher Analogy  We refer to a promise as settled if it is no longer pending— it is either fulfilled or rejected\n Let’s think of a dishwasher as having the states of a promise:\n Pending: The dishwasher is running but has not completed the washing cycle.\n Fulfilled: The dishwasher has completed the washing cycle and is full of clean dishes.\n Rejected: The dishwasher encountered a problem (it didn’t receive soap!) and returns unclean dishes.\n  If our dishwashing promise is fulfilled, we’ll be able to perform related tasks, such as unloading the clean dishes from the dishwasher\n If it’s rejected, we can take alternate steps, such as running it again with soap or washing the dishes by hand\n All promises must eventually settle; this enables us to write logic for what to do if the promise fulfills or if it rejects\n  "
 },
 {
-	"uri": "/12-object-oriented-js/classes/methods/overview/",
+	"uri": "/13-object-oriented-js/classes/methods/overview/",
 	"title": "Overview",
 	"tags": [],
 	"description": "",
 	"content": " Methods  Methods in a Class function very similar to a method of an regular JavasScript object\n Let\u0026rsquo;s recap, an method in an object is a property that has a function as a value, for example:\n  const superHero = { secretIdentity: \u0026#39;Peter Parker\u0026#39;, name: \u0026#39;Spiderman\u0026#39;, sayTagline: function() { // \u0026lt;- method  console.log(\u0026#34;Hey everyone it\u0026#39;s your friendly neighborhood Spiderman\u0026#34;) } }   If we were to rewrite this object as a Class, it may look something like this:  class superHero { constructor(secretIdentity, name) { this._secretIdentity = secretIdentity this._name = name } sayTagline() { console.log(\u0026#34;Hey everyone it\u0026#39;s your friendly neighborhood Spiderman\u0026#34;) } }   The key difference here is that methods of a class are not separated by commas  "
 },
 {
-	"uri": "/12-object-oriented-js/classes/overview/",
+	"uri": "/13-object-oriented-js/classes/overview/",
 	"title": "Overview",
 	"tags": [],
 	"description": "",
 	"content": " What are Classes?  As we have discussed earlier in the course, in JavaScript, objects are oftentimes used to represent (or model) real world items\n Here\u0026rsquo;s an example of using an object to represent a car:\n  const myCar = { make: \u0026#39;Honda\u0026#39;, model: \u0026#39;Accord\u0026#39;, color: \u0026#39;blue\u0026#39;, year: 2015 } console.log(myHonda.make) console.log(myHonda.model) console.log(myHonda.color) // change color  myHonda.color = `blue` console.log(myHonda.color)   In practice, we often need to create many objects of the same kind, like cars, or users or whatever\n Classes are a tool that developers use to quickly produce similar objects\n  Example - Creating a Car class  If we were creating an application for a used car dealership that needed to keep track of many cars, we could use \u0026ldquo;classes\u0026rdquo; to help us quickly produce cars within our program\n Here\u0026rsquo;s what that class might look like:\n  // define Car class  class Car { constructor(make, model, color, year) { this._make = make this._model = model this._color = color this._year = year } get make() { return this._make } get model() { return this._model } get color() { return this._color } get year () { return this._year } set model (newModel) { this._model = newModel } set color (newColor) { this._color = newColor } } // create new \u0026#34;cars\u0026#34; using the Car class as a blueprint  const myHonda = new Car(\u0026#39;Honda\u0026#39;, \u0026#39;Accord\u0026#39;, \u0026#39;gray\u0026#39;, \u0026#39;2017\u0026#39;) console.log(myHonda.make) console.log(myHonda.model) console.log(myHonda.color) // change color  myHonda.color = `blue` console.log(myHonda.color)  JS Bin on jsbin.com\nCompare our Car class with our earlier car object example. Note the similarities and the differences. We\u0026rsquo;ll discuss those differences in the upcoming sections\n"
 },
 {
-	"uri": "/12-object-oriented-js/inheritance/overview/",
+	"uri": "/13-object-oriented-js/inheritance/overview/",
 	"title": "Overview",
 	"tags": [],
 	"description": "",
 	"content": " What is Inheritance?  Often we find commonality between our classes — repeated code that we’d like to consolidate\n Subclasses let us incorporate another class’s state and behavior into our own\n This process is often called inheritance, and our subclass is said to “inherit” from a parent class, also called a superclass\n Inheritance can avoid duplication and simplify the implementation of a class that needs the same data and functions as another class\n  Example class Animal { constructor(name, weight) { this._name = name this._weight = weight } eat() { return `${this._name}is eating!` } sleep() { return `${this._name}is going to sleep!` } wakeUp() { return `${this._name}is waking up!` } } class Gorilla extends Animal { constructor(name, weight, height) { super(name, weight) // property not shared with Animal class  this._height = height } get height() { return this._height } climbTrees() { return `${this._name}is climbing trees!` } poundChest() { return `${this._name}is pounding its chest!` } showVigour() { return `${this.eat()}${this.poundChest()}` } dailyRoutine() { return `${this.wakeUp()}${this.poundChest()}${this.eat()}${this.sleep()}` } } const gorilla = new Gorilla(\u0026#39;George\u0026#39;, \u0026#39;160Kg\u0026#39;) console.log(gorilla.eat()) console.log(gorilla.poundChest()) console.log(gorilla.sleep()) console.log(gorilla.height) console.log(gorilla.dailyRoutine())  JS Bin on jsbin.com\n"
 },
 {
-	"uri": "/13-intro-to-crud-and-firebase/firebase/overview/",
+	"uri": "/14-intro-to-crud-and-firebase/firebase/overview/",
 	"title": "Overview",
 	"tags": [],
 	"description": "",
@@ -252,14 +252,14 @@
 	"content": " Overview  Final Projects are a requirement of \u0026ldquo;course completion\u0026rdquo;\n Project should be something that you are passionate about\n We\u0026rsquo;ve established some milestones (and due dates) that will help you stay on track to complete your projects on time\n Each milestone will include a deliverable  Instruction team will actively work with you to help you manage scope and come up with a project plan\n  Requirements For the final project, you\u0026rsquo;ll be designing and building a web application of your choice. This project will test your knowledge of JavaScript and ask you to apply everything you\u0026rsquo;ve learned in this course. The result will be a web app that you can add to your portfolio.\nYou could create anything from: a blog users can comment on; an app that allows users to search for social media posts; or a web-based game (memory, tic-tac-toe, etc). Use of an API is optional but highly recommended (because it\u0026rsquo;s fun!).\nI\u0026rsquo;ll work with you to determine the scope and feasibility of your ideas considering the amount of time remaining in the class and other other factors.\nYour final projects must make use of the following:\n JavaScript\n Adhere to DRY principle (Don\u0026rsquo;t Repeat Yourself)\n Code is properly indented\n Follow best practices for file/folder structure\n  "
 },
 {
-	"uri": "/08-http-and-apis/http/http-response/status-codes/",
+	"uri": "/09-http-and-apis/http/http-response/status-codes/",
 	"title": "Status Codes",
 	"tags": [],
 	"description": "",
 	"content": " Status Codes  In the HTTP response that is sent to a client, the status code, which is a three-digit number, is accompanied by a reason phrase (also known as status text) that summarizes the meaning of the code\n Along with the HTTP version of the response, these items are placed in the first line of the response, which is therefore known as the status line.\n The status codes are classified by number range, with each class of codes having the same basic meaning\n The range 100-199 is classed as Informational\n 200-299 is Successful\n 300-399 is Redirection\n 400-499 is Client error\n 500-599 is Server error\n   Check out HTTP Status Dogs for a fun way to learn the different status codes\n Exercise: See example of 404 Status Code  404 means resource not found\n Let\u0026rsquo;s see an example of how some websites handle situations where users try to navigate to a page on their site that doesn\u0026rsquo;t exist\n   Try navigating to the following url: https://github.com/okokwhatupareyouthere\n Open up your developer tools and navigate to the \u0026ldquo;Network\u0026rdquo; tab; see if you can find the 404 response returned from Github\u0026rsquo;s servers\n  "
 },
 {
-	"uri": "/11-project-build-a-slackbot/tutorial/step-1-new-slack-workspace/",
+	"uri": "/12-project-build-a-slackbot/tutorial/step-1-new-slack-workspace/",
 	"title": "Step 1: Create New Slack Workspace",
 	"tags": [],
 	"description": "",
@@ -273,7 +273,7 @@
 	"content": " Strings  Strings can consist of letters and other characters\n They are surrounded by either double quotes or single quotes (this is how you recognize you are working with a string)\n Concatenation allows you to combine strings\n  // declare a variable called color and store a string  let color = \u0026#34;green\u0026#34;  Single or double quotes can be used for strings, but the opening quote must match the closing quote\n String Methods  JavaScript has some built-in methods that allow developers to work with strings\n For example: if you wanted to know how many characters were in a string, you would use the .length method\n Here are some example of other methods you can use on strings\n  JS Bin on jsbin.com\nString Template Literals  Template literals were introduced with ES6 (the newest version of JavaScript)\n Template literals provides are much cleaner syntax for mixing variables with strings\n Template literals are enclosed by the back-tick (` `) character instead of double or single quotes\n Template literals can contain placeholders. These are indicated by the dollar sign and curly braces (${expression})\n  let name = \u0026#34;Tristan\u0026#34; console.log(`Hello ${name}`)  JS Bin on jsbin.com\nClick here for complete list of all the String methods\n "
 },
 {
-	"uri": "/08-http-and-apis/http/http-request/urls/",
+	"uri": "/09-http-and-apis/http/http-request/urls/",
 	"title": "URLs",
 	"tags": [],
 	"description": "",
@@ -322,7 +322,7 @@
 	"content": " General Window Management \u0026amp; Browser Shortcuts    Action Mac Windows     Open Chrome Developer Tools cmd+option + i F2 or ctrl + shift + i   Refresh page cmd + R ctrl + R   Switch between applications cmd + tab alt + tab   Switch between windows in the same application cmd + ~     Atom Shortcuts Files, Windows, Tabs Management    Command macOS Windows Linux Description     Open Settings Menu cmd+, ctrl+, ctrl+, Opens the Atom\u0026rsquo;s settings menu   Open File (Fuzzy) cmd+p or cmd+t ctrl+p or ctrl+t ctrl+p or ctrl+t Opens the Fuzzy Finder   Browse Open Files cmd+b ctrl+b ctrl+b Browse tabs within the window   Previous Tab alt+cmd+left ctrl+pageup ctrl+pageup Cycles left through open tabs (in the active pane)   Next Tab alt+cmd+right ctrl+pagedown ctrl+pagedown Cycles right through open tabs (in the active page)   Toggle Tree View cmd+\\ ctrl+\\ ctrl+\\ Toggles Atom\u0026rsquo;s file Tree View   Show Available Snippets alt+shift+s alt+shift+s alt+shift+s Shows the snippets available to Atom   Save cmd+s ctrl+s ctrl+s Saves the currently active file   Save As shift+cmd+s ctrl+shift+s ctrl+shift+s Saves the currently active file under a different name   Save All alt+cmd+s   Saves all changed files   Close Tab cmd+w ctrl+w ctrl+w Closes the currently active tab   Close Window shift+cmd+w ctrl+shift+w ctrl+shift+w Closes the currently active editor window   Split Window cmd+k up/down/left/right ctrl+k up/down/left/right ctrl+k up/down/left/right Split the currently active tab in one of the four directions   Focus Pane cmd+k cmd+up/down/left/right ctrl+k ctrl+up/down/left/right ctrl+k ctrl+up/down/left/right Move the focus to the pane in one of the four directions   Toggle full screen ctrl+cmd+f F11 F11 Toggle full screen window    Editing    Command macOS Windows Linux Description     Duplicate Lines shift+cmd+d ctrl+shift+d ctrl+shift+d Duplicates the line of the current cursor position and creates a new line under it with the same contents   Delete Line ctrl+shift+k ctrl+shift+k ctrl+shift+k Deletes the current line   Move Line Up ctrl+cmd+up ctrl+up ctrl+up Moves the contents of the current cursor position up one line. If there is a line above with content, the current lines content will swap with the one above it.   Move Line Down ctrl+cmd+down ctrl+down ctrl+down Moves the contents of the current cursor position down one line. If there is a line below with content, the line\u0026rsquo;s content will swap with the one below it.   Find/Replace cmd+f ctrl+f ctrl+f Opens up the Find/Replace panel   Find Next cmd+g F3 F3 Toggles forward through the results of the current buffer in the file while the Find/Replace panel is active   Find Previous shift+cmd+g shift+F3 shift+F3 Toggles backward through the results of the current buffer in the file while the Find/Replace panel is active   Find in Project shift+cmd+f ctrl+shift+f ctrl+shift+f Opens the Find in Project Panel   Go To Line ctrl+g ctrl+g ctrl+g Opens the Go To Line panel   Go To Matching Bracket ctrl+m ctrl+m ctrl+m The cursor goes to the matching top bracket that the cursor is ecapsulated in   Select Line cmd+l ctrl+l ctrl+l Selects the entire line the cursor\u0026rsquo;s current position is in   Toggle Comment cmd+/ ctrl+/ ctrl+/ Toggles the selected text into a comment of the current grammar   Column Selection ctrl+shift+up/down ctrl+alt+up/down shift+alt+up/down Allows to select multiple rows, where the same edit will be applied   Select Same Words cmd+d ctrl+d ctrl+d If you select a word, and then hit the key combo for this command, Atom will select the next same word for you. Then you can either type directly (which will replace the old words) or use left or right arrow to append things.   Undo Selection cmd+u ctrl+u ctrl+u This undoes the previous selection, like from Select Same Words.   Select All The Same Words At Once cmd+ctrl+g alt+f3 alt+f3 This shortcut is similar to cmd+d/ctrl+d but it selects all the matching words at once.    "
 },
 {
-	"uri": "/07-dom-and-jquery-continued/jquery-this/",
+	"uri": "/07-dom-and-jquery-ii/jquery-this/",
 	"title": "$(this)",
 	"tags": [],
 	"description": "",
@@ -385,7 +385,7 @@
 	"content": " .text() Method  Method is either used to get (read) the combined text contents of the selected elements, including their descendants, or set (write) the text contents of the selected elements  Example of Getting (Reading) text  To Get (Read) text of an element use .text() with nothing inside the parentheses  $(() =\u0026gt; { $(\u0026#39;#readAll\u0026#39;).click(() =\u0026gt; { // read text from all p elements  const $allParagraphs = $(\u0026#34;p\u0026#34;).text() alert(`text from all paragraphs: ${$allParagraphs}`) }) $(\u0026#39;#readFirst\u0026#39;).click(() =\u0026gt; { // read text from only the 1st p element  const $firstParagraph = $(\u0026#34;p:first\u0026#34;).text() alert(`text from the 1st paragraph: ${$firstParagraph}`) }) })  JS Bin on jsbin.com\nExample of Setting (writing) text  To Set (Write) text of an element use .text(newText) with the new text inside the parentheses  $(\u0026#39;#convertAllWords\u0026#39;).click(() =\u0026gt; { // set text for all p elements to spanish translation  $(\u0026#34;.one\u0026#34;).text(\u0026#34;uno\u0026#34;) $(\u0026#34;.two\u0026#34;).text(\u0026#34;dos\u0026#34;) $(\u0026#34;.three\u0026#34;).text(\u0026#34;tres\u0026#34;) })  JS Bin on jsbin.com\n"
 },
 {
-	"uri": "/08-http-and-apis/ajax/ajax-request-jquery/",
+	"uri": "/09-http-and-apis/ajax/ajax-request-jquery/",
 	"title": "AJAX Requests with jQuery",
 	"tags": [],
 	"description": "",
@@ -413,7 +413,7 @@
 	"content": " Array Review  Creating Arrays   Accessing Array Values   Updating Array Values   Adding \u0026amp; Removing Items   length() Property   "
 },
 {
-	"uri": "/13-intro-to-crud-and-firebase/firebase/benefits/",
+	"uri": "/14-intro-to-crud-and-firebase/firebase/benefits/",
 	"title": "Benefits",
 	"tags": [],
 	"description": "",
@@ -427,21 +427,21 @@
 	"content": " Benefits of jQuery?  Uses CSS selectors to help us grab or select elements programmatically (i.e. in our code)\n Accomplishes more with less code vs using native JavaScript\n  CSS selectors means less code Here\u0026rsquo;s how we would programmatically select an element with an id of \u0026ldquo;flavors\u0026rdquo; using native JavaScript\n// selecting an element using native JavaScript document.getElementById(\u0026#39;flavors\u0026#39;).onClick = doSomething()  Here\u0026rsquo;s how we would programmatically select an element with an id of \u0026ldquo;flavors\u0026rdquo; using jQuery\n// using jQuery (same as above but with much more intuitive syntax) $(\u0026#39;#flavors\u0026#39;).click(doSomething)  In this code snippet above you can see jQuery allows us to use CSS selectors to programmatically select elements on our page\nThe ability to use CSS selectors to programmatically select elements is the main reason jQuery is so popular today\n Another Example Here\u0026rsquo;s another example of how jQuery results in much more clear and readable DOM manipulation logic\nIn this code snippet, we are using native JavaScript to programmatically select the \u0026lt;body\u0026gt; element and then change the background color to white\n// selecting an element using native JavaScript  document.getElementsByTagName(\u0026#39;body\u0026#39;)[0].style.backgroundColor = \u0026#39;white\u0026#39;  Compare the snippet above with the following snippet that accomplishes the same result using jQuery\n// using jQuery (same as above but with much more intuitive syntax)  $(\u0026#39;body\u0026#39;).css(\u0026#39;backgroundColor\u0026#39;, \u0026#39;white\u0026#39;)  Note: best practice is to use camel case when referencing css properties that have multiple words i.e. \u0026lsquo;backgroundColor\u0026rsquo; instead of \u0026lsquo;background-color\u0026rsquo;\n "
 },
 {
-	"uri": "/13-intro-to-crud-and-firebase/crud/",
+	"uri": "/14-intro-to-crud-and-firebase/crud/",
 	"title": "CRUD",
 	"tags": [],
 	"description": "",
 	"content": " What is CRUD  Stands for Create, Read, Update and Delete\n CRUD paradigm is common in constructing data-backed software applications\n Helps developers plan how their application\u0026rsquo;s data should be structured\n In the context of working with APIs, CRUD maps nicely to HTTP Verbs GET (read), Post (create), PUT (update) and DELETE (delete)\n     CRUD Operation HTTP VERB Description     CREATE POST Create new data or resource   READ GET Read / fetch data or resource   UPDATE PUT Update existing data or resource   DELETE DELETE Delete existing data or resource    "
 },
 {
-	"uri": "/12-object-oriented-js/classes/",
+	"uri": "/13-object-oriented-js/classes/",
 	"title": "Classes",
 	"tags": [],
 	"description": "",
 	"content": " Classes  Overview   Constructor   Encapsulation   Instances   Methods   "
 },
 {
-	"uri": "/08-http-and-apis/clients-servers/",
+	"uri": "/09-http-and-apis/clients-servers/",
 	"title": "Clients &amp; Servers",
 	"tags": [],
 	"description": "",
@@ -455,7 +455,7 @@
 	"content": " What are Conditionals?  Conditional statements enable our programs to decide which blocks of code to execute and which to skip, based on whether an \u0026ldquo;expression\u0026rdquo; evaluates to true or false\n if statements are the most common form of conditionals\n There are a few types of if statements\n if statement\n if..else statement\n if..else if statement\n ternary operator\n   "
 },
 {
-	"uri": "/12-object-oriented-js/classes/constructor/",
+	"uri": "/13-object-oriented-js/classes/constructor/",
 	"title": "Constructor",
 	"tags": [],
 	"description": "",
@@ -469,14 +469,14 @@
 	"content": " Creating Arrays  You can create that doesn\u0026rsquo;t initially contain any values, this is called an empty array\n An array can also be created with initial values\n Square brackets are a means of identifying if a variable is an array\n  Example // declare a variable as an empty array let numbers = [] // or you can declare an array with initial values let streets = [\u0026#39;Broadway\u0026#39;, \u0026#39;Houston\u0026#39;, \u0026#39;Grand\u0026#39;]  JS Bin on jsbin.com\n"
 },
 {
-	"uri": "/09-asynchronous-js-and-promises/promises/creating-promises/",
+	"uri": "/10-asynchronous-js-and-promises/promises/creating-promises/",
 	"title": "Creating Promises",
 	"tags": [],
 	"description": "",
 	"content": " Creating Promise Objects  To create a new Promise object, we use the new keyword and the Promise constructor method:\nconst executorFunction = (resolve, reject) =\u0026gt; { } const myPromise = new Promise(executorFunction)  The Promise constructor method takes a function parameter called the executor function which runs automatically when the constructor is called\n The executor function generally starts an asynchronous operation and dictates how the promise should be settled\n  We\u0026rsquo;ll talk more about constructor methods in a later lesson\n Executor Function  The executor function has two function parameters:\n resolve(): If invoked, resolve() will change the promise’s status from \u0026ldquo;pending\u0026rdquo; to \u0026ldquo;fulfilled\u0026rdquo;, and the promise’s resolved value will be set to the argument passed into resolve()\n reject(): If invoked, reject() will change the promise’s status from \u0026ldquo;pending\u0026rdquo; to \u0026ldquo;rejected\u0026rdquo;, and the promise’s rejection reason be set to the argument passed into reject()\n  The resolve() and reject() functions aren’t defined by the programmer; when the Promise constructor runs, JavaScript will pass its own resolve() and reject() functions into the executor function\n  Example: Basic structure of an executor function // example below is meant to show structure only, this is not working code  const executorFunction = (resolve, reject) =\u0026gt; { if (someCondition) { resolve(\u0026#39;I resolved!\u0026#39;) } else { reject(\u0026#39;I rejected!\u0026#39;) } } // pass the executor function as a parameter to the Promise constructor  const myPromise = new Promise(executorFunction)  In the example above, myPromise resolves or rejects based on a simple condition, but, in practice, promises settle based on the results of asynchronous operations.; for example an API request to another service may \u0026ldquo;fulfill\u0026rdquo; by returning the desired data or it may \u0026ldquo;reject\u0026rdquo; if an error occurred during the request\n Example: Creating a Promise const inventory = { sunglasses: 202, pants: 421, shirts: 1344 } // Write your code below:  const myExecutor = (resolve, reject) =\u0026gt; { if (inventory.sunglasses \u0026gt; 0) { resolve(\u0026#39;Sunglasses order processed.\u0026#39;) } else { reject(\u0026#39;That item is sold out.\u0026#39;) } } const orderSunglasses = () =\u0026gt; { return new Promise(myExecutor) } const orderPromise = orderSunglasses() // print out the promise object  console.log(orderPromise)   Run the jsbin below and open up chrome developer tools and inspect the promise object that is being printed to the console. Can you identify the current status of the promise?  JS Bin on jsbin.com\nAlternative Syntax The most common syntax for constructing promise involves combining the executor function with the Promise constructor\nconst inventory = { sunglasses: 202, pants: 421, shirts: 1344 } const orderSunglasses = () =\u0026gt; { // Most common syntax for creating promises  return new Promise((resolve, reject) =\u0026gt; { if (inventory.sunglasses \u0026gt; 0) { resolve(\u0026#39;Sunglasses order processed.\u0026#39;) } else { reject(\u0026#39;That item is sold out.\u0026#39;) } }) } const orderPromise = orderSunglasses() // print out the promise object  console.log(orderPromise)  JS Bin on jsbin.com\n"
 },
 {
-	"uri": "/08-http-and-apis/apis/data-formats/",
+	"uri": "/09-http-and-apis/apis/data-formats/",
 	"title": "Data Formats",
 	"tags": [],
 	"description": "",
@@ -511,7 +511,7 @@
 	"content": " Dot Notation  Dot notation allows us to access properties with a .  Example let superHero = { \u0026#39;secret identity\u0026#39;: \u0026#39;Peter Parker\u0026#39;, name: \u0026#39;Spiderman\u0026#39;, powers: [\u0026#39;super strength\u0026#39;, \u0026#39;hyper awareness\u0026#39;, \u0026#39;agility\u0026#39;, \u0026#39;genius intellect\u0026#39;], age: 17 } console.log(superHero.name) console.log(superHero.powers)  JS Bin on jsbin.com\n"
 },
 {
-	"uri": "/12-object-oriented-js/classes/methods/getters-and-setters/",
+	"uri": "/13-object-oriented-js/classes/methods/getters-and-setters/",
 	"title": "Getters &amp; Setters",
 	"tags": [],
 	"description": "",
@@ -525,21 +525,21 @@
 	"content": " Getting \u0026amp; Setting Content  .text()   .html()   .val()   .attr()   "
 },
 {
-	"uri": "/08-http-and-apis/http/",
+	"uri": "/09-http-and-apis/http/",
 	"title": "HTTP",
 	"tags": [],
 	"description": "",
 	"content": " HTTP  Overview   HTTP Requests   HTTP Responses   "
 },
 {
-	"uri": "/08-http-and-apis/http/http-request/http-methods/",
+	"uri": "/09-http-and-apis/http/http-request/http-methods/",
 	"title": "HTTP Methods",
 	"tags": [],
 	"description": "",
 	"content": " HTTP Methods  The method, like GET, describes what effect a request is intended to have, and how the server should process it\n The following are the most widely used HTTP Methods:\n GET   POST   PUT   DELETE     "
 },
 {
-	"uri": "/08-http-and-apis/http/http-response/",
+	"uri": "/09-http-and-apis/http/http-response/",
 	"title": "HTTP Responses",
 	"tags": [],
 	"description": "",
@@ -553,21 +553,21 @@
 	"content": " Summary of this week\u0026rsquo;s homework assignment: Due Date: Thursday, August 15th\n1. Complete Homework #1 - JS Basics, Control Flow \u0026amp; Loops  You are tasked with completing the problem set which is hosted on Github, see the url below:\n Github Repo for Homework #1 - JS Basics, Control Flow \u0026amp; Loops  Use the Assignment Submission Git Workflow (detailed here) to access and submit the assignment\n  2. Finish the JS Basics, Control Flow \u0026amp; Loops Lab  Finish the Lab: JS Basics, Control Flow \u0026amp; Loops we started at the end of Lesson 03\n Use the Assignment Submission Git Workflow (detailed here) to access and submit the assignment\n  "
 },
 {
-	"uri": "/09-asynchronous-js-and-promises/async-await/handling-async-issues-with-async-await/",
+	"uri": "/10-asynchronous-js-and-promises/async-await/handling-async-issues-with-async-await/",
 	"title": "Handling Async Issues with Async / Await",
 	"tags": [],
 	"description": "",
 	"content": " Handling Async Issues with Async / Await  Let\u0026rsquo;s see how we can apply Async / Await to your .printLetter() program  Example: Using Async / Await to control the execution order of async functions function printLetter(letter) { return new Promise((resolve, reject) =\u0026gt; { setTimeout(() =\u0026gt; { console.log(letter) resolve() }, Math.floor(Math.random() * 3000)) }) } /* convert .printAll() to an async / await function by prepending \u0026#39;await\u0026#39; before the function keyword */ async function printAll(){ await printLetter(\u0026#34;A\u0026#34;) await printLetter(\u0026#34;B\u0026#34;) await printLetter(\u0026#34;C\u0026#34;) await printLetter(\u0026#34;D\u0026#34;) } console.log(\u0026#39;Calling printAll function\u0026#39;) printAll() console.log(\u0026#39;End of code\u0026#39;)  JS Bin on jsbin.com\n In the code above, we modify .printAll() by prepending the declaration with async\n As a result of this change, we can simplify our promise consumption by using await inside the function to call the letters in sequence: \u0026quot;A\u0026quot; -\u0026gt; \u0026quot;B\u0026quot; -\u0026gt; \u0026quot;C\u0026quot; -\u0026gt; \u0026quot;D\u0026quot;\n Compare this code to the approach we used with the regular Promise syntax and you\u0026rsquo;ll notice that the async / await syntax is much cleaner and looks like synchronous code\n  "
 },
 {
-	"uri": "/10-lab-giphy-weather-app/instructions/",
+	"uri": "/11-lab-giphy-weather-app/instructions/",
 	"title": "Instructions",
 	"tags": [],
 	"description": "",
 	"content": " Overview You are tasked with building an application that leverages different APIs to provide a city’s weather in a fun way\nInstructions 1) Download starter code\n The starter code for this code along is hosted on Github, see the url below:\n Lab: Giphy Weather App   2) Get API keys for OpenWeather and Giphy (if you haven’t done so already)\n"
 },
 {
-	"uri": "/08-http-and-apis/json/json-parse/",
+	"uri": "/09-http-and-apis/json/json-parse/",
 	"title": "JSON.parse()",
 	"tags": [],
 	"description": "",
@@ -623,14 +623,14 @@
 	"content": " Cover class logistics, structure \u0026amp; keys to success\n Introduce tools you will be using throughout the class\n Discuss the benchmarks for assessments in terms of class participation, homework, and unit projects\n Confirm installation and configuration of Node, Git, and other command line tools\n Practice programmatic thinking by writing pseudocode\n  "
 },
 {
-	"uri": "/08-http-and-apis/http/http-request/http-methods/post/",
+	"uri": "/09-http-and-apis/http/http-request/http-methods/post/",
 	"title": "POST",
 	"tags": [],
 	"description": "",
 	"content": " POST  A POST request creates a new item on the server\n A request like POST https://restaurant-reviews.com/reviews could make a new review when we click the \u0026ldquo;Submit review\u0026rdquo; button on the webpage\n POST requests are often accompanied by data passed along in the HTTP request body. e.g. when we write a review for Little Beet, we would include our username (eric), our review (The shrimp salad is so delightful), and a star rating (4 out of 5)\n POST requests often return an ID of the new item, like 3\n POST requests are not idempotent\n When we make one of these requests, the state of the server changes\n Making the request again would create another item with another ID\n   "
 },
 {
-	"uri": "/11-project-build-a-slackbot/project-overview/",
+	"uri": "/12-project-build-a-slackbot/project-overview/",
 	"title": "Project Overview",
 	"tags": [],
 	"description": "",
@@ -644,7 +644,7 @@
 	"content": " Scope in Block Statements  Block statements like if and switch conditions or for and while loops, unlike functions, will create a new scope if you use let or const but NOT when you use var  Example  Declaring a variable within a Block statement using let creates local scope  if (true) { // this \u0026#39;if\u0026#39; conditional block creates a new scope because we use \u0026#39;let\u0026#39;  const name = \u0026#39;Prince\u0026#39; // name is local to the if block  console.log(name) // logs \u0026#39;Prince\u0026#39; } console.log(\u0026#39;----\u0026#39;) console.log(name) // \u0026lt;--- error because the \u0026#39;name\u0026#39; variable can only be accessed from within the block (due to the use of \u0026#39;let\u0026#39;)  JS Bin on jsbin.com\n Declaring a variable within a Block statement using var DOES NOT create local scope  if (true) { var name = \u0026#39;Prince\u0026#39; // declare a variable using \u0026#39;var`  console.log(name) // logs \u0026#39;Prince\u0026#39; } console.log(\u0026#39;----\u0026#39;) console.log(name) // \u0026lt;--- logs \u0026#39;Prince\u0026#39; because the \u0026#39;name\u0026#39; variable is in the global scope due to the use of `var`  JS Bin on jsbin.com\n"
 },
 {
-	"uri": "/11-project-build-a-slackbot/tutorial/step-2-create-new-slack-app/",
+	"uri": "/12-project-build-a-slackbot/tutorial/step-2-create-new-slack-app/",
 	"title": "Step 2: Create New Slack App",
 	"tags": [],
 	"description": "",
@@ -658,14 +658,14 @@
 	"content": " Milestone I: Submit Project Ideas  Submit three (3) ideas for your final project\n Deliverable: Use this form to submit your final project ideas\n Due Date: Tuesday, September 3rd\n After which, I\u0026rsquo;ll schedule some time to meet with you to discuss your ideas\n  "
 },
 {
-	"uri": "/12-object-oriented-js/inheritance/super-and-extends/",
+	"uri": "/13-object-oriented-js/inheritance/super-and-extends/",
 	"title": "Super &amp; Extends",
 	"tags": [],
 	"description": "",
 	"content": " Super \u0026amp; Extends  super keyword is used to access and call functions on an object\u0026rsquo;s parent\n The extends keyword is used in a Class to create a class which is a child of another class\n super and extends are used together to create parent-child relationships between Classes\n  Example class Rectangle { constructor(height, width) { this._name = \u0026#39;Rectangle\u0026#39; this._height = height this._width = width } sayName() { console.log(`Hi, I am a ${this._name}`) } calculateArea() { return this._height * this._width } } // use \u0026#34;extends\u0026#34; keyword to create a \u0026#34;child\u0026#34; class // of the Rectangle class class Square extends Rectangle { constructor(length) { // Here, it calls the parent class\u0026#39;s constructor with lengths  // provided for the Rectangle\u0026#39;s width and height  super(length, length) // Note: In derived classes, super() must be called before you  // can use \u0026#39;this\u0026#39;. Leaving this out will cause a reference error.  this._name = \u0026#39;Square\u0026#39; } calculateSurfaceArea() { return this.calculateArea() * 6 } } const myRectangle = new Rectangle(5, 7) myRectangle.sayName() const rectangleArea = myRectangle.calculateArea() console.log(rectangleArea) console.log(\u0026#39;----\u0026#39;) const mySquare = new Square(7) mySquare.sayName() const squareArea = mySquare.calculateArea() console.log(squareArea) // call calculateSurfaceArea() method owned by // the child class (Square) const surfaceAreaOfSquare = mySquare.calculateSurfaceArea() console.log(surfaceAreaOfSquare)  JS Bin on jsbin.com\nExercise  Below we\u0026rsquo;ve created two classes Employee \u0026amp; Manager\n Unfortunately our implementation contains some duplication\n Use your knowledge of inheritance and \u0026ldquo;super\u0026rdquo; and \u0026ldquo;extends\u0026rdquo; keywords to remove the duplicated logic\n  class Employee { constructor(firstName, lastName) { this._firstName = firstName this._lastName = lastName } getFullName() { return `${this._firstName}${this._lastName}` } } class Manager { constructor(firstName, lastName) { this._firstName = firstName this._lastName = lastName this._managedEmployees = [] } getFullName() { return `${this._firstName}${this._lastName}` } addEmployee(employee) { this._managedEmployees.push(employee) } listEmployees(employees) { return this._managedEmployees.map(member =\u0026gt; member) } } const employee1 = new Employee(\u0026#34;Mickey\u0026#34;, \u0026#34;Mouse\u0026#34;) const employee2 = new Employee(\u0026#34;Donald\u0026#34;, \u0026#34;Duck\u0026#34;) console.log(employee1.getFullName()) console.log(employee2.getFullName()) const manager = new Manager(\u0026#34;Minnie\u0026#34;, \u0026#34;Mouse\u0026#34;) console.log(manager.getFullName()) manager.addEmployee(employee1) manager.addEmployee(employee2) const minniesTeam = manager.listEmployees() console.log(minniesTeam)  JS Bin on jsbin.com\n"
 },
 {
-	"uri": "/09-asynchronous-js-and-promises/synchronous-programming/",
+	"uri": "/10-asynchronous-js-and-promises/synchronous-programming/",
 	"title": "Synchronous Programming",
 	"tags": [],
 	"description": "",
@@ -700,14 +700,14 @@
 	"content": " while Loop  While loops run its statements as long as a specified condition evaluates to true  while (condition) { statement } // run some other code   If the condition becomes false, statement within the loop stops executing and control passes to the statement following the loop  Example let n = 0 while (n \u0026lt; 5) { console.log(n) n++ }  JS Bin on jsbin.com\nExercise Write a program that uses a while loop to print (using console.log()) a countdown from 10 to 1\nJS Bin on jsbin.com\n"
 },
 {
-	"uri": "/08-http-and-apis/apis/",
+	"uri": "/09-http-and-apis/apis/",
 	"title": "APIs",
 	"tags": [],
 	"description": "",
 	"content": " APIs  Overview   Finding APIs   Data Formats   API Keys   "
 },
 {
-	"uri": "/12-object-oriented-js/classes/encapsulation/",
+	"uri": "/13-object-oriented-js/classes/encapsulation/",
 	"title": "Encapsulation",
 	"tags": [],
 	"description": "",
@@ -721,7 +721,7 @@
 	"content": " .toggle() Method  Method that shows or hides element in such a way that if the element is initially displayed, it will be hidden; if hidden, it will be displayed  Example $(() =\u0026gt; { $(\u0026#34;button\u0026#34;).click(() =\u0026gt; { // toggle #box element  $(\u0026#34;#box\u0026#34;).toggle() }) })  JS Bin on jsbin.com\n"
 },
 {
-	"uri": "/08-http-and-apis/apis/api-keys/",
+	"uri": "/09-http-and-apis/apis/api-keys/",
 	"title": "API Keys",
 	"tags": [],
 	"description": "",
@@ -735,7 +735,7 @@
 	"content": " There are two ways to add jQuery to your projects  Download the jQuery library file and store it within your project\n Use a CDN (content delivery network) and reference the jQuery library file remotely\n   Add jQuery via Download   Add jQuery via CDN   "
 },
 {
-	"uri": "/09-asynchronous-js-and-promises/asynchronous-programming/",
+	"uri": "/10-asynchronous-js-and-promises/asynchronous-programming/",
 	"title": "Asynchronous Programming",
 	"tags": [],
 	"description": "",
@@ -756,7 +756,7 @@
 	"content": " Calling a Function  Calling a function means you are using the function (as opposed to defining a function which only tells us what the function can do)\n To call a function you simply write function name followed by parentheses (don’t forget the parentheses!)\n Now you can call this function as many times as you want\n  /** define / declare a function named shout() by itself this doesn\u0026#39;t do anything, we must \u0026#34;Call\u0026#34; it in order to use it **/ function shout() { console.log(\u0026#34;HELLO!\u0026#34;) } /** Calling the function named shout we call a function by writing the name of the function followed by parentheses **/ shout()  JS Bin on jsbin.com\nExercise:  Create a function named yolo that logs 'yolo'. Next, use your knowledge of calling functions to ensure that 'yolo' is printed 3 times in the console  JS Bin on jsbin.com\n"
 },
 {
-	"uri": "/09-asynchronous-js-and-promises/promises/consuming-promises/",
+	"uri": "/10-asynchronous-js-and-promises/promises/consuming-promises/",
 	"title": "Consuming Promises",
 	"tags": [],
 	"description": "",
@@ -770,21 +770,21 @@
 	"content": " Lesson 03 Control Flow and Loops "
 },
 {
-	"uri": "/11-project-build-a-slackbot/documentaton/",
+	"uri": "/12-project-build-a-slackbot/documentaton/",
 	"title": "Documentation",
 	"tags": [],
 	"description": "",
 	"content": " Documentation Since we\u0026rsquo;ll be the APIs of both Slack and OpenWeather, you should have the API docs of both platforms open in your browser so you can quickly reference them when needed:\n Slack API Docs\n OpenWeather API Docs\n  "
 },
 {
-	"uri": "/13-intro-to-crud-and-firebase/firebase/",
+	"uri": "/14-intro-to-crud-and-firebase/firebase/",
 	"title": "Firebase",
 	"tags": [],
 	"description": "",
 	"content": " Firebase  Overview   Benefits   NoSQL Databases   "
 },
 {
-	"uri": "/12-object-oriented-js/classes/methods/general-methods/",
+	"uri": "/13-object-oriented-js/classes/methods/general-methods/",
 	"title": "General Methods",
 	"tags": [],
 	"description": "",
@@ -798,35 +798,35 @@
 	"content": " Milestone II: Get Final Project Idea Approved  Due Date: Thursday, September 5th\n After meeting with the instructor and discussing your idea, you\u0026rsquo;ll formally decide what you want to build   "
 },
 {
-	"uri": "/12-object-oriented-js/classes/instances/",
+	"uri": "/13-object-oriented-js/classes/instances/",
 	"title": "Instances",
 	"tags": [],
 	"description": "",
 	"content": " Instances  An instance is an object that contains the property names and methods of a class, but with unique property values (i.e. instances of a Class have their own unique identities)  Example - Creating Instances // define Car class  class Car { constructor(make, model) { this._make = make this._model = model } } // create a new instance of the Car class  // and store it in a variable named myTesla  const myTesla = new Car(\u0026#34;Tesla\u0026#34;, \u0026#34;Model 3\u0026#34;) console.log(myTesla)   Here\u0026rsquo;s a summary of the code above:\n Below our Class definition we are using the new keyword to create a new instance of our Car class\n We create a new variable named myTesla that will store an instance of our Car class\n We use new keyword to generate a new instance of the Car class\n The new keyword calls the constructor() method of a class, runs the code inside of it and then returns a new instance  We pass the two strings to the Car constructor (\u0026quot;Tesla\u0026quot; and \u0026quot;Model 3\u0026quot;)\n This will set the make property to \u0026quot;Tesla\u0026quot; and the model property to \u0026quot;Model 3\u0026quot;  Then we log the value saved to the make property of the myTesla instance which prints out \u0026quot;Tesla\u0026quot;\n   JS Bin on jsbin.com\nExercise  Create an instance of the Cat class and set name to \u0026quot;Hobbes\u0026quot; and breed to \u0026quot;Tabby\u0026quot;; save the instance to a const variable named hobbesCat\n Create another instance of the Cat class and set name to \u0026quot;Tigger\u0026quot; and breed to \u0026quot;Tiger\u0026quot;, save the instance to a const variable named tiggerCat\n  class Cat { constructor(name, breed) { this._name = name this._breed = breed } } // add your code below  // add your code above  console.log(hobbesCat) console.log(tiggerCat)  JS Bin on jsbin.com\n"
 },
 {
-	"uri": "/08-http-and-apis/json/",
+	"uri": "/09-http-and-apis/json/",
 	"title": "JSON",
 	"tags": [],
 	"description": "",
 	"content": " JSON  Overview   JSON.stringify()   JSON.parse()   "
 },
 {
-	"uri": "/13-intro-to-crud-and-firebase/firebase/nosql-databases/",
+	"uri": "/14-intro-to-crud-and-firebase/firebase/nosql-databases/",
 	"title": "NoSQL Databases",
 	"tags": [],
 	"description": "",
 	"content": " What is a NoSQL Database  Firebase uses a NoSQL for it\u0026rsquo;s cloud-based databases\n Like many NoSQL databases, Firebase\u0026rsquo;s Real-time database stores data as JSON objects\n NoSQL databases don\u0026rsquo;t enforce strict data structure which results in much more flexibility than traditional SQL databases\n Downsides: when dealing with \u0026ldquo;loosely structured\u0026rdquo; data, common use cases such as building out relationships (for example: a student has many courses, and courses contain many students) in your data can be non-intuitive and complex\n  Firebase\u0026rsquo;s Realtime Database  Firebase Realtime Database is a cloud-hosted NoSQL database that lets you store and sync between your users in realtime\n It\u0026rsquo;s really just one big JSON object that the developers can manage in realtime\n  "
 },
 {
-	"uri": "/08-http-and-apis/http/http-request/http-methods/put/",
+	"uri": "/09-http-and-apis/http/http-request/http-methods/put/",
 	"title": "PUT",
 	"tags": [],
 	"description": "",
 	"content": " PUT  The PUT method updates an item at the specified resource\n A request like PUT https://restaurant-reviews.com/restaurants/353 could update the information for Little Beet Restaurant after the owner edits the restaurant\u0026rsquo;s hours\n Like POST requests, PUT requests come with data in the HTTP request body to specify the fields and new values to update\n For example Hours: M-F 10a-10p, closed on Saturday and Sunday\n  "
 },
 {
-	"uri": "/09-asynchronous-js-and-promises/async-await/passing-values-with-async-await/",
+	"uri": "/10-asynchronous-js-and-promises/async-await/passing-values-with-async-await/",
 	"title": "Passing Values with Async / Await",
 	"tags": [],
 	"description": "",
@@ -840,14 +840,14 @@
 	"content": " All of the settings below can be accessed using the following steps:\n Mac: cmd + , -\u0026gt; Editor PC: ctrl + , -\u0026gt; Editor  Setting indentation levels / default tab-size During our course we will be using a set indentation level of 2 spaces (1 indentation level = 2 spaces). Atom makes it easy conform to this approach by setting our tab to a set level of indentation.\nAfter updating this setting, pressing the tab key will represent one level of indentation which will translate to 2 spaces.\nDisplaying indentation guides Displaying the indentation guide provides a visual way of helping you ensure your indentation levels are correct\nSetting wordwrap Wordwrap ensures that long lines in your code are automatically wrapped to the next line. This improves readability of your code.\n"
 },
 {
-	"uri": "/10-lab-giphy-weather-app/requirements/",
+	"uri": "/11-lab-giphy-weather-app/requirements/",
 	"title": "Requirements",
 	"tags": [],
 	"description": "",
 	"content": " Requirements Requirement #1: App UI: The user interface should contain a single form input and a submit button (the starter code already provides the UI)\nRequirement #2: Make Multiple API Requests When users enter a city name into the input field and press submit the following should happen:\n API Request #1 - Fetch City’s Current Weather\nYour app should make an API request to OpenWeather and fetch the current weather associated with the city name entered into the form\n API Request #2 - Fetch Gif representing the City\nYour app should make an API request to Giphy and retrieve a gifs associated with the city name entered into the form field\n API Request #3 - Fetch Gif representing City’s weather description\nThe current weather data fetched from “API Request #1” returns a weather description (i.e. rain, clear sky, snow, etc) . Make an API request to the Giphy and retrieve gifs associated with this weather description\n  Requirement #3: Display Data Once all the data has been received from the API requests, display the following data on the screen:\n * The city’s current weather * City name * Current temperature (displayed in Fahrenheit or Celsius) * Weather description * Min temp * Max temp * 1 gif that represents the city * 1 gif that represents the city’s current weather description  Requirement #4: Use Promises  Promises must be used to make consume / handle the API responses\n Axios must be used to make the API requests\n  "
 },
 {
-	"uri": "/11-project-build-a-slackbot/tutorial/step-3-set-up-node-application/",
+	"uri": "/12-project-build-a-slackbot/tutorial/step-3-set-up-node-application/",
 	"title": "Step 3: Set Up Node Application",
 	"tags": [],
 	"description": "",
@@ -924,7 +924,7 @@
 	"content": " .submit() Event  Attaches an event handler function to \u0026lt;form\u0026gt; elements that is executed when the user is attempts to submit a form  Example $(() =\u0026gt; { // listen for a .submit() event on this form  $(\u0026#39;form\u0026#39;).submit((event) =\u0026gt; { // prevent default behavior of forms  event.preventDefault() // read data from text field  const $name = $(\u0026#39;input\u0026#39;).val() if ($name === \u0026#39;\u0026#39;) { alert(\u0026#39;Please enter a name\u0026#39;) } else { alert(`Hello ${$name}!`) } }) })  JS Bin on jsbin.com\n"
 },
 {
-	"uri": "/08-http-and-apis/ajax/",
+	"uri": "/09-http-and-apis/ajax/",
 	"title": "AJAX",
 	"tags": [],
 	"description": "",
@@ -966,7 +966,7 @@
 	"content": " Bracket Notation  Bracket notation is another way to to access a key’s value is by using bracket notation, [ ]\n To use bracket notation to access an object’s property, we pass in the property name (key) as a string\nsuperHero['secret identity']`\n We must use bracket notation when accessing keys that have numbers, spaces, or special characters in them\n Remember, object keys are always strings\n  Example let superHero = { \u0026#39;secret identity\u0026#39;: \u0026#39;Peter Parker\u0026#39;, name: \u0026#39;Spiderman\u0026#39;, powers: [\u0026#39;super strength\u0026#39;, \u0026#39;hyper awareness\u0026#39;, \u0026#39;agility\u0026#39;, \u0026#39;genius intellect\u0026#39;], age: 17 } console.log(superHero[\u0026#34;secret identity\u0026#34;]) console.log(superHero[\u0026#34;name\u0026#34;])  JS Bin on jsbin.com\nUsing variables to access properties  Bracket notation also allows us to use a variable inside the brackets to select the keys of an object  Example let superHero = { \u0026#39;secret identity\u0026#39;: \u0026#39;Peter Parker\u0026#39;, name: \u0026#39;Spiderman\u0026#39;, powers: [\u0026#39;super strength\u0026#39;, \u0026#39;hyper awareness\u0026#39;, \u0026#39;agility\u0026#39;, \u0026#39;genius intellect\u0026#39;], age: 17 } let attribute = \u0026#34;name\u0026#34; // use the \u0026#39;attribute\u0026#39; variable to access a property in superHero  let attributeValue = superHero[attribute] console.log(superHero[attribute]) // This is the result of trying the same thing using dot notation  console.log(superHero.attribute) // undefined  JS Bin on jsbin.com\n"
 },
 {
-	"uri": "/13-intro-to-crud-and-firebase/code-along-firebase-playlist-app/",
+	"uri": "/14-intro-to-crud-and-firebase/code-along-firebase-playlist-app/",
 	"title": "Code Along: Firebase Playlist App",
 	"tags": [],
 	"description": "",
@@ -980,7 +980,7 @@
 	"content": " Milestone III: Create Github Repository for Final Project  Create a github repository for your final project, clone the project down to your \u0026lsquo;github\u0026rsquo; folder on your laptop\n Submit a link to your final project\u0026rsquo;s github repository\n Here\u0026rsquo;s an example of what link should look like: https://github.com/kareemgrant/kg-awesome-game  Due Date: Thursday, September 5th\n Deliverable: Use this form to submit your repository url\n  Do not include spaces in your github repository names\n - **Deliverable**: Submit a link to your github repo here -- "
 },
 {
-	"uri": "/08-http-and-apis/http/http-request/http-methods/delete/",
+	"uri": "/09-http-and-apis/http/http-request/http-methods/delete/",
 	"title": "DELETE",
 	"tags": [],
 	"description": "",
@@ -994,7 +994,7 @@
 	"content": " Strings\n Numbers\n Booleans\n Arrays\n Objects\n  "
 },
 {
-	"uri": "/09-asynchronous-js-and-promises/async-await/error-handling-with-async-await/",
+	"uri": "/10-asynchronous-js-and-promises/async-await/error-handling-with-async-await/",
 	"title": "Error Handling with Async / Await",
 	"tags": [],
 	"description": "",
@@ -1029,7 +1029,7 @@
 	"content": " Summary of this week\u0026rsquo;s homework assignment: Due Date: Thursday, August 22nd\nComplete Homework #2 - Functions and Iterators  You are tasked with completing the problem set which is hosted on Github, see the url below:\n Github Repo for Homework #2 - Functions \u0026amp; Iterators  Use the Assignment Submission Git Workflow (detailed here) to access and submit the assignment\n  "
 },
 {
-	"uri": "/09-asynchronous-js-and-promises/promises/handling-async-issues-with-promises/",
+	"uri": "/10-asynchronous-js-and-promises/promises/handling-async-issues-with-promises/",
 	"title": "Handling Async Issues with Promises",
 	"tags": [],
 	"description": "",
@@ -1057,7 +1057,7 @@
 	"content": " Loops \u0026amp; Iteration  Loops offer a quick and easy way to do something repeatedly\n Loops must terminate or they will run forever; these are referred to as \u0026ldquo;infinite loops\u0026rdquo;\n Some loops use conditions to determine when it should start and stop\n There are many different kinds of loops, but they all essentially do the same thing: they repeat an action some number of times (and it\u0026rsquo;s actually possible that number could be zero)\n while loops\n do..while loops\n for loops\n forEach loops\n   "
 },
 {
-	"uri": "/12-object-oriented-js/classes/methods/",
+	"uri": "/13-object-oriented-js/classes/methods/",
 	"title": "Methods",
 	"tags": [],
 	"description": "",
@@ -1085,28 +1085,28 @@
 	"content": " Atom allows you to open files from the command line\nIf you have Atom installed you can run the atom command with one or more file paths to open up those files in Atom.\nCheck if Atom is already configured to run on your computer\u0026rsquo;s Command Line Open up your terminal and run the following command\n$ atom --help  You should receive output similar to the following\nAtom Editor v1.39.1 Usage: atom atom [options] [path ...] atom file[:line[:column]] One or more paths to files or folders may be specified. If there is an existing Atom window that contains all of the given folders, the paths will be opened in that window. Otherwise, they will be opened in a new window.  If Atom is not configured to run from your computer\u0026rsquo;s Command Line Open Atom and choose the following from the menu bar Atom -\u0026gt; Install Shell Commands\n"
 },
 {
-	"uri": "/09-asynchronous-js-and-promises/simulating-async-operations/",
+	"uri": "/10-asynchronous-js-and-promises/simulating-async-operations/",
 	"title": "Simulating Async Operations",
 	"tags": [],
 	"description": "",
 	"content": " setTimeout()  .setTimeout() function, available both in Node.js and in browsers, waits a given number of milliseconds (1 sec = 1000 ms) and then calls a function\n .setTimeout() takes two parameters:\n A callback function (remember callbacks are just functions passed in as parameters)\n The number of seconds after which the method will be called\n  .setTimeout() is async by default; this is the primary reason it\u0026rsquo;s often used to simulate asynchronous operations\n  Example const delayedGreeting = () =\u0026gt; { console.log(\u0026#39;Hi, sorry for the wait!\u0026#39;) } /* call setTimout(), it accepts 2 parameters 1. callback (function to be executed) 2. delay in milliseconds (1000 ms = 1 sec) */ console.log(\u0026#39;calling .setTimeout()\u0026#39;) setTimeout(delayedGreeting, 3000) console.log(\u0026#39;end of the code\u0026#39;)  In the code above, .setTimeout() is used to delay the execution of the .delayedGreeting() function by 3 seconds.\n Run the example in the jsbin below and notice how the message: end of the code is executed before the Hi, sorry for the wait!.  JS Bin on jsbin.com\n This means that our program did not wait for .delayedGreeting() to finishing running before it executed  Event Loop  Asynchronous JavaScript uses something called the event-loop\n In the example above, After 3 seconds, .delayedGreeting() is added to a line of code (Event Queue) waiting to be run\n Before it can run, any synchronous code from the program will run first (from the Call Stack)\n Next, any code in front of it in the line will run\n This means it might be more than two seconds before delayedHello() is actually executed\n  "
 },
 {
-	"uri": "/12-object-oriented-js/classes/methods/static-methods/",
+	"uri": "/13-object-oriented-js/classes/methods/static-methods/",
 	"title": "Static Methods",
 	"tags": [],
 	"description": "",
 	"content": " Static Methods  Static method calls are made directly on the class and are not callable on instances of the class\n Static methods are prepended with the static keyword\n  class Car { constructor(make, model, price) { this._make = make this._model = model this._price = price } // instance methods  get price() { return this._price } drive() { console.log(\u0026#39;calling \u0026#34;this\u0026#34; in an instance method\u0026#39;, this) console.log(`driving ${this._make}${this._model}`) } // static method  static mostExpensiveCar(cars) { console.log(\u0026#39;calling \u0026#34;this\u0026#34; in a static method\u0026#39;, this) return cars.sort((a, b) =\u0026gt; b.price - a.price)[0] } } // Create 3 instances of the Car class  const car1 = new Car(\u0026#34;honda\u0026#34;, \u0026#34;accord\u0026#34;, 20000) const car2 = new Car(\u0026#34;aston martin\u0026#34;, \u0026#34;db7\u0026#34;, 110000) const car3 = new Car(\u0026#34;bmw\u0026#34;, \u0026#34;5 series\u0026#34;, 50000) // call static method mostExpensiveCar() on the Class (Car)  // not the instance  const priceyCar = Car.mostExpensiveCar([car1, car2, car3]) console.log(priceyCar)  JS Bin on jsbin.com\n"
 },
 {
-	"uri": "/11-project-build-a-slackbot/tutorial/step-4-run-ngrok/",
+	"uri": "/12-project-build-a-slackbot/tutorial/step-4-run-ngrok/",
 	"title": "Step 4: Run ngrok",
 	"tags": [],
 	"description": "",
 	"content": " Run ngrok  Next we need to give our local server access to the internet so our slack app can communicate with it\n ngrok is a tool that allows developers to create \u0026ldquo;tunnels\u0026rdquo; that connect the server running locally (i.e. on your computer) to the internet\n  1. Run ngrok command from within project folder  In a new command line tab run the following command (make sure you run this within the project folder)   $ ngrok http 3000   Here, we are are telling ngrok to create a local tunnel that connects our server running on port 3000 (i.e. http://localhost:3000) and to ngrok url that is accessible to the internet\n You ngrok command should display output that looks similar to the following (the urls will be unique to your server and will not match the output below):\n  2. Confirm your local server is accessible via the internet At this point in the project, you will want to have multiple tabs open in your command line application. In order for the Slack to be able to communicate with our server both our local server and ngrok must be running in their own separate tabs.\n  Copy the ngrok \u0026ldquo;forwarding\u0026rdquo; url (from our ngrok tab) that begins with https and paste it into the address bar of a new browser tab\n Confirm that the welcome message is successfully displayed when using the ngrok url to access your server\n  "
 },
 {
-	"uri": "/11-project-build-a-slackbot/tutorial/",
+	"uri": "/12-project-build-a-slackbot/tutorial/",
 	"title": "Tutorial",
 	"tags": [],
 	"description": "",
@@ -1141,7 +1141,7 @@
 	"content": " do..while Loop  A do\u0026hellip;while loop repeats until a specified condition evaluates to false  do { statement } while (condition)   statement is always executed once before the condition is checked (and then again until the while condition returns false)\n With do\u0026hellip;while loops, everything in-between the curly braces (i.e. statement(s)) will run at least once\n  Example let n = 0 do { console.log(n) n++ } while (n \u0026lt; 0)   the loop will run at least once and then terminate because 0 is NOT \u0026lt; 0  JS Bin on jsbin.com\n"
 },
 {
-	"uri": "/07-dom-and-jquery-continued/event-current-target/",
+	"uri": "/07-dom-and-jquery-ii/event-current-target/",
 	"title": "event.currentTarget",
 	"tags": [],
 	"description": "",
@@ -1183,7 +1183,7 @@
 	"content": " Lesson 05 Arrays \u0026amp; Objects "
 },
 {
-	"uri": "/09-asynchronous-js-and-promises/challenges-of-async-programming/",
+	"uri": "/10-asynchronous-js-and-promises/challenges-of-async-programming/",
 	"title": "Challenges of Async Programming",
 	"tags": [],
 	"description": "",
@@ -1204,14 +1204,14 @@
 	"content": " Git Vocabulary Repository  Most basic element of GitHub\n A repository can be referred to as a project\n contains all of a project\u0026rsquo;s files\n Stores each file\u0026rsquo;s revision history\n Repositories can have multiple collaborators and can be either public or private.\n  Commit  A \u0026ldquo;revision\u0026rdquo;, is an individual change to a file (or set of files)\n Git\u0026rsquo;s version of saving\n Commits save a \u0026ldquo;snapshot\u0026rdquo; of all of the project\u0026rsquo;s files at that point in time\n Using commits you can \u0026ldquo;time travel\u0026rdquo; and navigate back to any previous commit that was made throughout the history of the project\n Commits usually contain a commit message which is a brief description of what changes were made\n  Branch  Parallel version of a repository\n Branches allow developers to work on new features without affecting the \u0026ldquo;master\u0026rdquo; branch and disrupting the \u0026ldquo;live\u0026rdquo; version\n The process of creating a separate branch to work on a feature is referred to as \u0026ldquo;creating a feature branch\u0026ldquo;\n After developers have added their new feature (on their feature branch) they will then make a Pull Request (which is a request for comments and a request to Merge their changes back into the main branch (master branch))\n  Master Branch  The default branch found in every Git respository\n For most companies, the master branch reflects that latest version of production code (i.e. working code available to customers)\n  Merge  Merging takes the changes from one branch (in the same repository or from a fork), and applies them into another\n This often happens as a Pull Request (which can be thought of as a request for comments and a request to merge into the another branch * usually the master branch)\n  Push  Refers to sending your committed changes to a remote repository such as GitHub.com\n For instance, if you change something locally, you\u0026rsquo;d want to then push those changes so that others may access them\n  Pull  Pulls code from a remote repository and merges it with code in your local repository (on your computer)  Fork  A fork is a copy of a repository. Forking a repository allows you to freely experiment with changes without affecting the original project\n Most commonly, forks are used to either propose changes to someone else\u0026rsquo;s project or to use someone else\u0026rsquo;s project as a starting point for your own idea\n  Clone  Copies a remote repository (i.e. repository in the cloud on a platform like Github.com) and creates a local copy of the repository on your computer\n Cloning creates a link between the the remote and local copy of a repository, allowing you to your code in sync between the two\n  Pull Request  Pull requests are proposed changes to a repository submitted by a user and accepted or rejected by a repository\u0026rsquo;s collaborators (i.e. team members).\n Pull requests can be thought of as a developer asking for permission to merge their changes into the master branch\n Pull requests each have their own discussion forum, where developer can discuss the changes requested and suggest further revisions.\n This discussion as also referred to as Code Reviews\n  Great resource for all things git can be found here\n "
 },
 {
-	"uri": "/12-object-oriented-js/inheritance/",
+	"uri": "/13-object-oriented-js/inheritance/",
 	"title": "Inheritance",
 	"tags": [],
 	"description": "",
 	"content": "  Overview   Super \u0026amp; Extends   "
 },
 {
-	"uri": "/09-asynchronous-js-and-promises/promises/passing-values-with-promises/",
+	"uri": "/10-asynchronous-js-and-promises/promises/passing-values-with-promises/",
 	"title": "Passing values with Promises",
 	"tags": [],
 	"description": "",
@@ -1232,7 +1232,7 @@
 	"content": " Show Git-Ignored Files in Atom Atom, by default, will not show files in its file pane (file tree view) if those files have been added to .gitignore.\nAn easy approach to fixing this issue is to do the following:\n Click anywhere in the Tree View (left hand pane with files and folders) Press i (this will toggle the visibility of hidden files)  "
 },
 {
-	"uri": "/11-project-build-a-slackbot/tutorial/step-5-create-a-test-slash-command/",
+	"uri": "/12-project-build-a-slackbot/tutorial/step-5-create-a-test-slash-command/",
 	"title": "Step 5: Create a test Slash command",
 	"tags": [],
 	"description": "",
@@ -1337,7 +1337,7 @@
 	"content": " Code Along: Basic Git Workflow  There\u0026rsquo;s a learning curve when working with Git\n The best way to learn how Git works is to see it in action\n Along the way, we\u0026rsquo;re going introduce important concepts and Git Commands\n This tutorial is meant to be interactive, so please follow along\n The tutorial will involve heavy use of the command line\n  Step 0: Navigate to your class folder on your command line  From your command line, navigate to your class folder (i.e. the folder named jsd)  This tutorial assumes that you already have Git installed. Git installation instructions can be found here\n Step 1: Set up your project directory  Navigate into the lesson_01_files directory (this assumes you are currently in your jsd directory)\n$ cd lesson_01_files  Create a new directory named git_intro\n$ mkdir git_intro  Navigate into the git_intro directory using the cd command\n$ cd git_intro  git_intro is where all the files for this project will reside\n  Step 2: Create git repository for our project  In order to use git to track all the changes within this project we need to create a repository  Repositories (or often, \u0026lsquo;repos\u0026rsquo;, for short) represent the entire collection of files and folders associated with a project, along with each file’s revision history\n  One way to create a repository is to use the git init command\n Let\u0026rsquo;s create a new git repository to track all the changes inside your git_intro project\n Initialize a new repository by running the following command:\n$ git init  Confirm that you received output in your terminal that looks similar to the following:\n Initialized empty Git repository in /jsd/lesson_01_files/git_intro/.git/  Congrats! Git is now set up to track all changes to this project\n  Step 3: Add a new file to the repository  Create a new file using the touch command\n$ touch homer_simpson_quote.txt  Next, open up your text editor and add the following content to homer_simpson_quote.txt and save the file\nTo start, press any key. Where’s the ANY key?  After creating the new file, you can use the git status command to see which files git knows exist\n$ git status  Your output should look similar to the following:\n On branch master No commits yet Untracked files: (use \u0026quot;git add \u0026lt;file\u0026gt;...\u0026quot; to include in what will be committed) homer_simpson_quote.txt nothing added to commit but untracked files present (use \u0026quot;git add\u0026quot; to track)   Git is telling us that they acknowledge that we\u0026rsquo;ve created a new file called homer_simpson_quote.txt but will not do anything with it until we use the git add command\n Our changes to homer_simpson_quote.txt are in the \u0026ldquo;Working Directory\u0026rdquo; and in order to eventually commit those changes to our repository\u0026rsquo;s history, we first need to stage our changes using git add\n   Step 4: Add a file to the staging environment  Let\u0026rsquo;s use the git add command to add our newly updated file to the staging area, after which run git status\n$ git add homer_simpson_quote.txt $ git status  git status should now result in the following output:\nOn branch master No commits yet Changes to be committed: (use \u0026quot;git rm --cached \u0026lt;file\u0026gt;...\u0026quot; to unstage) new file: homer_simpson_quote.txt  Git has added the file to the staging area (notice the \u0026ldquo;Changes to be committed\u0026rdquo; line)\n  Step 5: Create a commit  Let\u0026rsquo;s create our first commit\n Committing in git will move any updates that are currently in the \u0026ldquo;staging area\u0026rdquo; to our \u0026ldquo;git directory (repository)\u0026rdquo;\n We commit files using the git commit -m \u0026quot;[your short message goes here]\u0026quot; command\n  git commit -m \u0026quot;Add homer simpson quote\u0026quot;   The command should result in an output similar to the following:   [master (root-commit) fdd3af7] add homer simpson quote 1 file changed, 1 insertion(+) create mode 100644 homer_simpson_quote.txt   Standard conventions for commit messages:\n Must be in quotation marks\n Written in the present tense\n Should be brief (50 characters or less) when using -m\n   Step 6: Edit an existing file  We\u0026rsquo;ve seen what its like to create a new file with git, now let\u0026rsquo;s see how everything works when we edit an existing file\n Open homer_simpson_quote.txt in your text editor and change the word \u0026ldquo;start\u0026rdquo; to \u0026ldquo;begin\u0026rdquo;; save the file\n Let\u0026rsquo;s take a look how git handles this scenario, first lets run git status\n Your output should look like the following:\nOn branch master Changes not staged for commit: (use \u0026quot;git add \u0026lt;file\u0026gt;...\u0026quot; to update what will be committed) (use \u0026quot;git checkout -- \u0026lt;file\u0026gt;...\u0026quot; to discard changes in working directory) modified: homer_simpson_quote.txt no changes added to commit (use \u0026quot;git add\u0026quot; and/or \u0026quot;git commit -a\u0026quot;)  Git was smart enough to recognize that our homer_simpson_quote.txt file changed, but what if we wanted to see detailed change at a \u0026lsquo;line-level\u0026rsquo;?\n Let\u0026rsquo;s run the git diff command to accomplish this\n$ git diff  Here\u0026rsquo;s the output:\ndiff --git a/homer_simpson_quote.txt b/homer_simpson_quote.txt index 46b008a..bd6f49a 100644 --- a/homer_simpson_quote.txt +++ b/homer_simpson_quote.txt @@ -1 +1 @@ -To start, press any key. Where’s the ANY key? +To begin, press any key. Where’s the ANY key? (END)  Press the q key to escape from the git diff output in your terminal\n  Notice that git diff gives us a granular view of the recent changes that have occurred on a line by line level\n  Step 7: Stage and Commit your recent changes  Let\u0026rsquo;s stage the file so the changes can be moved from the \u0026ldquo;working directory\u0026rdquo; to the \u0026ldquo;staging area\u0026rdquo;\n$ git add homer_simpson_quote.txt  Next, let\u0026rsquo;s commit the changes\n$ git commit -m \u0026quot;update homer simpson quote\u0026quot;   Step 8: View a log of your commits  Git makes it easy for you to see a summarized history of your commits using the git log command\n$ git log  Here\u0026rsquo;s what the output should look like:\nOn branch master nothing to commit, working tree clean commit 4842dd2b97adfbfd6daaa7cfeb575c7ed1d2f44b (HEAD -\u0026gt; master) Author: Kareem Grant \u0026lt;kareem@getuserwise.com\u0026gt; Date: Thu Aug 1 17:52:49 2019 -0400 update homer simpson quote commit fdd3af7e7064dea063b625306c75adf0d04794c0 Author: Kareem Grant \u0026lt;kareem@getuserwise.com\u0026gt; Date: Thu Aug 1 17:21:10 2019 -0400 add homer simpson quote   Press the q key to escape from the git log output in your terminal\n Student Exercise: Make additional updates  Now it\u0026rsquo;s your turn to try your hand at using git\n Use your knowledge of the command line \u0026amp; git command accomplish the following (all of the following should occur within the git_intro project):\n Create a new file called marge_simpson_quote.txt\n Add the following text to marge_simpson_quote.txt\n   The only thing I'm high on is love.   Add another file called bart_simpson_quote.txt\n Add the following text to bart_simpson_quote.txt\n   Eat my shorts!   Stage and commit both files; use the following commit message: \u0026ldquo;add marge and bart simpson quotes\u0026rdquo;\n Use one of the introduced git commands to visual confirm that you now have three commits\n Edit the bart_simpson_quote.txt file and change \u0026ldquo;shorts\u0026rdquo; to \u0026ldquo;sneakers\u0026rdquo;\n Stage and commit your changes; use the following commit message: \u0026ldquo;update bart simpson quote\u0026rdquo;\n   Step 9: Create a new repository on GitHub  Now let\u0026rsquo;s create a remote repository on GitHub so it can be synced in the cloud\n To create a new repo on GitHub, log in and go to the GitHub home page. You should see a + sign that will allow you to create a new repository:\n After clicking the button, GitHub will ask you to name your repo and provide a brief description\n Name the repository git_intro and provide a short description:\n When you\u0026rsquo;re done filling out the information, press the Create repository button to make your new repo\n GitHub will ask if you want to create a new repo from scratch or if you want to add a repo you have created locally. In this case, since we\u0026rsquo;ve already created a new repo locally, we want to push that onto GitHub so follow the \u0026hellip;.or push an existing repository from the command line\u0026rsquo; section\n Copy the first line (starting with git remote add\u0026hellip;) and paste it into the command line (please ensure you are still in your project folder)\n$ git remote add origin git@github.com:{your-git-username}/git_intro.git  The git remote add command creates link between the remote repository on Github and the local repository on your computer\n Now run git remote -v to confirm that the remote repository was added\n$ git remote -v  The output should look similar to the following:\norigin git@github.com:kareemgrant/git_intro.git (fetch) origin git@github.com:kareemgrant/git_intro.git (push)   origin is a default alias (i.e. nickname) used for remote repositories; developers can specify their own alias by providing additional option to the git remote add command (see docs)\n  Next we\u0026rsquo;ll use the git push command to push our changes to the remote repository on Github so the repositories will be in sync\n$ git push -u origin master  The output of the command should look similar to the following:\nEnumerating objects: 6, done. Counting objects: 100% (6/6), done. Delta compression using up to 8 threads Compressing objects: 100% (4/4), done. Writing objects: 100% (6/6), 568 bytes | 568.00 KiB/s, done. Total 6 (delta 0), reused 0 (delta 0) To github.com:kareemgrant/git_intro.git '* [new branch] master -\u0026gt; master Branch 'master' set up to track remote branch 'master' from 'origin'.  Login to your Github account and navigate to the remote repository https://{your_git_username}/git_intro\n A link between our remote and local repositories has been established\n It\u0026rsquo;s important to point out that keeping the remote and local repositories in sync does not happen automatically; it will be the responsibility of developer (using commands such as git push and others)\n  "
 },
 {
-	"uri": "/07-dom-and-jquery-continued/code-along-color-scheme-switcher-jquery/",
+	"uri": "/07-dom-and-jquery-ii/code-along-color-scheme-switcher-jquery/",
 	"title": "Code Along: Color Scheme Switcher",
 	"tags": [],
 	"description": "",
@@ -1358,7 +1358,7 @@
 	"content": " Lesson 06 Intro to DOM \u0026amp; jQuery "
 },
 {
-	"uri": "/09-asynchronous-js-and-promises/promises/error-handling-with-catch/",
+	"uri": "/10-asynchronous-js-and-promises/promises/error-handling-with-catch/",
 	"title": "Error Handling with .catch()",
 	"tags": [],
 	"description": "",
@@ -1372,7 +1372,7 @@
 	"content": " Summary of this week\u0026rsquo;s homework assignment: Due Date: Friday, August 30th\nComplete Homework #3 - Rock, Paper, Scissors Application  You are tasked with finishing the partially built Rock, Paper, Scissors application. The code is hosted on Github, see the url below:\n Github Repo for Homework #3 - Rock, Paper, Scissors Application  Use the Assignment Submission Git Workflow (detailed here) to access and submit the assignment\n  "
 },
 {
-	"uri": "/09-asynchronous-js-and-promises/handling-async-issue-with-callbacks/",
+	"uri": "/10-asynchronous-js-and-promises/handling-async-issue-with-callbacks/",
 	"title": "Handling Async Issues with Callbacks",
 	"tags": [],
 	"description": "",
@@ -1414,7 +1414,7 @@
 	"content": " Other Events There are many other events available, click here to see a complete list of jQuery Events\n"
 },
 {
-	"uri": "/11-project-build-a-slackbot/tutorial/step-6-install-app-to-workspace/",
+	"uri": "/12-project-build-a-slackbot/tutorial/step-6-install-app-to-workspace/",
 	"title": "Step 6: Install App to Workspace",
 	"tags": [],
 	"description": "",
@@ -1470,7 +1470,7 @@
 	"content": " .unshift()  Adds one or more elements to the beginning of an array and returns the new length of the array\n This method is a mutating method because it changes the original array\n  Example let fruits = [\u0026#34;Apple\u0026#34;, \u0026#34;Orange\u0026#34;, \u0026#34;Grapes\u0026#34;] fruits.unshift(\u0026#34;Peach\u0026#34;, \u0026#34;Mango\u0026#34;) console.log(fruits) // Peach, Mango, Apple, Orange, Grapes  JS Bin on jsbin.com\n"
 },
 {
-	"uri": "/08-http-and-apis/code-along-giphy-api/",
+	"uri": "/09-http-and-apis/code-along-giphy-api/",
 	"title": "Code Along: Giphy API",
 	"tags": [],
 	"description": "",
@@ -1491,11 +1491,11 @@
 	"content": " Overview  The course has 20 classes\n What you\u0026rsquo;ll learn:\n Fundamentals of JavaScript: including programming concepts such as data types, variables, and loops—the core concepts of programming\n Object Oriented JavaScript (OOP) and APIs: Learn how JavaScript can be used to exchange information and functionality within our programs\n Practical applications of JavaScript: Learn how to JavaScript can be used to manipulate websites and applications\n  3 Projects\n Slackbot\n Todo Application\n Final Project\n   "
 },
 {
-	"uri": "/07-dom-and-jquery-continued/",
-	"title": "DOM &amp; jQuery, Continued",
+	"uri": "/07-dom-and-jquery-ii/",
+	"title": "DOM &amp; jQuery II",
 	"tags": [],
 	"description": "",
-	"content": " Lesson 07 Intro to DOM \u0026amp; jQuery, Continued "
+	"content": " Lesson 07 Intro to DOM \u0026amp; jQuery II "
 },
 {
 	"uri": "/04-functions-and-scope/functions-calling-other-functions/",
@@ -1512,14 +1512,14 @@
 	"content": " Milestone VI: Host Final Project Details TBD\n Due Date: Thursday, September 26th  "
 },
 {
-	"uri": "/09-asynchronous-js-and-promises/promises/",
+	"uri": "/10-asynchronous-js-and-promises/promises/",
 	"title": "Promises",
 	"tags": [],
 	"description": "",
 	"content": " Promises  Overview   Creating Promises   Consuming Promises   Handling Async Issues with Promises   Passing values with Promises   Error Handling with .catch()   "
 },
 {
-	"uri": "/11-project-build-a-slackbot/tutorial/step-7-responding-to-slash-commands/",
+	"uri": "/12-project-build-a-slackbot/tutorial/step-7-responding-to-slash-commands/",
 	"title": "Step 7: Responding to Slash Commands",
 	"tags": [],
 	"description": "",
@@ -1531,6 +1531,13 @@
 	"tags": [],
 	"description": "",
 	"content": " When to use let vs const  Use let when you create a variable where you want to have the option of directly reassigning its value (using =) somewhere in your code\nlet message if (loginSuccessful) { message = \u0026#34;welcome back!\u0026#34; } else { message = \u0026#34;Invalid email or password, please try again\u0026#34; }  Use const in all other occasions\n  "
+},
+{
+	"uri": "/08-dom-jquery-iii/",
+	"title": "DOM &amp; jQuery III",
+	"tags": [],
+	"description": "",
+	"content": " Lesson 08 Intro to DOM \u0026amp; jQuery III "
 },
 {
 	"uri": "/04-functions-and-scope/function-expressions-anonymous-functions/",
@@ -1603,32 +1610,32 @@
 	"content": " Adding \u0026amp; Removing Items  Let\u0026rsquo;s review some of the most common ways to Add and Remove elements from an array:   .push()   .pop()   .shift()   .unshift()   .slice()   "
 },
 {
-	"uri": "/09-asynchronous-js-and-promises/async-await/",
+	"uri": "/10-asynchronous-js-and-promises/async-await/",
 	"title": "Async / Await",
 	"tags": [],
 	"description": "",
 	"content": " Async / Await  Overview   Handling Async Issues with Async / Await   Passing Values with Async / Await   Error Handling with Async / Await   "
 },
 {
-	"uri": "/07-dom-and-jquery-continued/code-along-traffic-light/",
+	"uri": "/07-dom-and-jquery-ii/code-along-traffic-light/",
 	"title": "Code Along: Traffic Light",
 	"tags": [],
 	"description": "",
 	"content": " Code Along: Traffic Light  The starter code for this code along is hosted on Github, see the url below:\n Code Along: Traffic Light  Use the Assignment Submission Git Workflow (detailed here) to access and submit the assignment\n  "
 },
 {
-	"uri": "/08-http-and-apis/code-along-twilio-api-sms/",
+	"uri": "/09-http-and-apis/code-along-twilio-api-sms/",
 	"title": "Code Along: Twilio SMS API",
 	"tags": [],
 	"description": "",
 	"content": " Code Along: Twilio SMS API We\u0026rsquo;ll be using the Twilio API to build a small app that sends text messages.\n1) Sign up for a free Twilio account\n2) Verify your Personal Number - trial accounts are only allowed to send SMS messages to \u0026ldquo;verified numbers\u0026rdquo;, follow this process and add your mobile phone number as a \u0026ldquo;verified number\u0026rdquo;\nYou can optionally set up a Google Voice number as an alternative to using your own mobile number\n 3) Get the starter code*: It\u0026rsquo;s hosted on Github, see the url below:\n Code Along: Twilio SMS API\n Use the Assignment Submission Git Workflow (detailed here) to access and submit the assignment\n  4) Navigate to this guide: Sending Outbound SMS with Nodejs - we\u0026rsquo;ll be following along with this guide to build the application\n"
 },
 {
-	"uri": "/08-http-and-apis/",
+	"uri": "/09-http-and-apis/",
 	"title": "HTTP and APIs",
 	"tags": [],
 	"description": "",
-	"content": " Lesson 08 HTTP and APIs "
+	"content": " Lesson 09 HTTP and APIs "
 },
 {
 	"uri": "/homework-assignments/hw-assignment-04/",
@@ -1659,14 +1666,14 @@
 	"content": " Scope Overview  Scope is the set of variables you have access to\n As we learned in the beginning of this class, JavaScript reads from top to bottom\n Sometimes, however, we declare variables inside functions (just like arguments), which aren\u0026rsquo;t accessible in other parts of our code; this is the concept of scope.\n  Types of Scope  A variables scope is determined primarily based on where is was declared\n Variables declared inside a function are in local scope\n Variables defined outside of a function are in the global scope\n Each function when invoked creates a new scope\n  Details  Global Scope   Local Scope   Scope in Block Statements   "
 },
 {
-	"uri": "/11-project-build-a-slackbot/tutorial/step-8-test-your-slash-command/",
+	"uri": "/12-project-build-a-slackbot/tutorial/step-8-test-your-slash-command/",
 	"title": "Step 8: Test your Slash Command",
 	"tags": [],
 	"description": "",
 	"content": " Step 8: Test your Slash Command Now we\u0026rsquo;ll test our Slash command to see if our Server is able to successfully return a response\n1. Navigate back to your workspace  Navigate to your slack workspace via the web: https://slack.com/signin\n Select your testing workspace from Step 1\n Go to any channel and type /test and press enter\n   Congrat\u0026rsquo;s your server successfully responded to your Slash Command  "
 },
 {
-	"uri": "/11-project-build-a-slackbot/tutorial/step-9-access-slash-command-parameters/",
+	"uri": "/12-project-build-a-slackbot/tutorial/step-9-access-slash-command-parameters/",
 	"title": "Step 9: Access Slash Command Parameters",
 	"tags": [],
 	"description": "",
@@ -1694,21 +1701,21 @@
 	"content": " ternary Operator  Used as a shortcut for the if statement  condition ? expression that is run if condition is true : expression that is run if condition is false  Example const isLactoseIntolerant = true const milkType = isLactoseIntolerant ? \u0026#34;almond\u0026#34; : \u0026#34;dairy\u0026#34; console.log(milkType)  JS Bin on jsbin.com\nExercise Rewrite the following if..else statement using a ternary operator:\nlet yearOfBirth = 2001 if (yearOfBirth \u0026lt;= 2002) { console.log(\u0026#39;you will be old enough to vote in 2020\u0026#39;) } else { console.log(\u0026#39;Sorry, you will not be old enough to vote next year\u0026#39;) }  JS Bin on jsbin.com\n"
 },
 {
-	"uri": "/09-asynchronous-js-and-promises/",
+	"uri": "/10-asynchronous-js-and-promises/",
 	"title": "Asynchronous JS and Promises",
 	"tags": [],
 	"description": "",
-	"content": " Lesson 09 Asynchronous JS and Promises "
+	"content": " Lesson 10 Asynchronous JS and Promises "
 },
 {
-	"uri": "/09-asynchronous-js-and-promises/code-along-giphy-api-with-async-await/",
+	"uri": "/10-asynchronous-js-and-promises/code-along-giphy-api-with-async-await/",
 	"title": "Code Along: Giphy API with Async / Await",
 	"tags": [],
 	"description": "",
 	"content": " Code Along: Giphy Search API with Async / Await We\u0026rsquo;re going to modify our Giphy\u0026rsquo;s API application and use async / await to make our API request\n1) Sign up for a Giphy API Key here: https://developers.giphy.com/ (only for those students who don\u0026rsquo;t already have one)\n2) Get the starter code\n The starter code for this code along is hosted on Github, see the url below:\n Code Along: Giphy Search API with Async / Await\n Use the Assignment Submission Git Workflow (detailed here) to access and submit the assignment\n   3) We\u0026rsquo;ll be using axios to make our API request. Add the following script tag right before your closing \u0026lt;body\u0026gt; tag but before the script tag targeting your app.js file\n\u0026lt;script src=\u0026#34;https://code.jquery.com/jquery-3.4.1.min.js\u0026#34; integrity=\u0026#34;sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=\u0026#34; crossorigin=\u0026#34;anonymous\u0026#34;\u0026gt;\u0026lt;/script\u0026gt; \u0026lt;script src=\u0026#34;https://unpkg.com/axios/dist/axios.min.js\u0026#34;\u0026gt;\u0026lt;/script\u0026gt; \u0026lt;!-- Add the axios script tag here --\u0026gt; \u0026lt;script src=\u0026#34;js/app.js\u0026#34;\u0026gt;\u0026lt;/script\u0026gt;  "
 },
 {
-	"uri": "/08-http-and-apis/lab-send-receive-sms-twilio-api/",
+	"uri": "/09-http-and-apis/lab-send-receive-sms-twilio-api/",
 	"title": "Lab: Send &amp; Receive with Twilio SMS API",
 	"tags": [],
 	"description": "",
@@ -1722,7 +1729,7 @@
 	"content": " Single Responsibility Principle (SRP)  SRP is a programming best practice that advocates modular code\n Put another way, your programs should be broken up in such a way where each part is responsible for only one \u0026ldquo;thing\u0026rdquo; or domain\n SRP is often applied to functions\n  Applying SRP to Functions  This concepts calls for your functions to only be \u0026ldquo;responsible\u0026rdquo; for one thing\n Often you\u0026rsquo;ll find that the logic in your functions are doing too much (for example: making calculations AND displaying the result to the screen)\n In these cases you should break out those multiple responsibilities into multiple functions\n This is what we did in the Geometry Calculator code along\n  "
 },
 {
-	"uri": "/11-project-build-a-slackbot/tutorial/step-10-make-api-request-to-openweather/",
+	"uri": "/12-project-build-a-slackbot/tutorial/step-10-make-api-request-to-openweather/",
 	"title": "Step 10: Make API Request to OpenWeather",
 	"tags": [],
 	"description": "",
@@ -1743,7 +1750,7 @@
 	"content": " jQuery Events  The jQuery library provides a collection of methods that serve one of two purposes\n To listen for an event — an event (e.g. clicking a button) is something the user does to trigger an action\n To add a visual effect — a visual effect (e.g. a drop-down menu appearing when a user clicks a button) is something that changes the appearance of the web page\n  Events are often responsible for triggering a visual effect\n  "
 },
 {
-	"uri": "/07-dom-and-jquery-continued/code-along-score-keeper/",
+	"uri": "/07-dom-and-jquery-ii/code-along-score-keeper/",
 	"title": "Code Along: Score Keeper",
 	"tags": [],
 	"description": "",
@@ -1757,11 +1764,11 @@
 	"content": " Recommended Folder Organization  Create a folder in your Documents folder (My Documents on Windows) called jsd\n At beginning of every class, you\u0026rsquo;ll use git (this process will be explained in the next class) to download any starter files to your jsd folder are available for that day\u0026rsquo;s lesson\n As the course progresses you\u0026rsquo;ll have a neatly organized listing of all of your work that looks similar to this:\n  "
 },
 {
-	"uri": "/10-lab-giphy-weather-app/",
+	"uri": "/11-lab-giphy-weather-app/",
 	"title": "Lab: Giphy Weather App",
 	"tags": [],
 	"description": "",
-	"content": " Lesson 10 Lab: Giphy Weather App "
+	"content": " Lesson 11 Lab: Giphy Weather App "
 },
 {
 	"uri": "/class-resources/node-git-installation/",
@@ -1785,7 +1792,7 @@
 	"content": " Other Traversal Methods There are many other traversal methods available click here to see a complete list\n"
 },
 {
-	"uri": "/11-project-build-a-slackbot/tutorial/step-11-respond-to-slack-with-current-weather/",
+	"uri": "/12-project-build-a-slackbot/tutorial/step-11-respond-to-slack-with-current-weather/",
 	"title": "Step 11: Respond to Slack with Current Weather",
 	"tags": [],
 	"description": "",
@@ -1806,14 +1813,14 @@
 	"content": " Confirm Node \u0026amp; Git Installation 1) Ensure that you followed the installation instructions for your Operation System found here: Node and Git Installation\n2) Open up your console / terminal\n For Mac OS X users:\n Open the \u0026ldquo;Terminal\u0026rdquo; app (Applications \u0026gt; Utilities \u0026gt; Terminal)  For Windows:\n Open the \u0026ldquo;Command Prompt\u0026rdquo; application.   3) In the terminal type the following command to confirm git was successfully installed:\n $ git  4) In the terminal type the following command to confirm node was successfully installed:\n $ node  Note: type control-c to exit out of node\n"
 },
 {
-	"uri": "/11-project-build-a-slackbot/",
+	"uri": "/12-project-build-a-slackbot/",
 	"title": "Project: Build a Slackbot",
 	"tags": [],
 	"description": "",
-	"content": " Lesson 11 Project: Build a Slackbot "
+	"content": " Lesson 12 Project: Build a Slackbot "
 },
 {
-	"uri": "/07-dom-and-jquery-continued/code-along-hilo/",
+	"uri": "/08-dom-jquery-iii/code-along-hilo/",
 	"title": "Code Along: HiLo",
 	"tags": [],
 	"description": "",
@@ -1827,14 +1834,14 @@
 	"content": " Code Along: Rolling Dice  We\u0026rsquo;ll walk through the process using functions to create a program that simulates rolling dice\n The starter code for this code along is hosted on Github, see the url below:\n Code Along: Rolling Dice  Use the Assignment Submission Git Workflow (detailed here) to access and submit the assignment\n  "
 },
 {
-	"uri": "/12-object-oriented-js/",
+	"uri": "/13-object-oriented-js/",
 	"title": "Object Oriented JS",
 	"tags": [],
 	"description": "",
-	"content": " Lesson 12 Object Oriented JS "
+	"content": " Lesson 13 Object Oriented JS "
 },
 {
-	"uri": "/11-project-build-a-slackbot/tutorial/step-12-use-environment-variables-to-protect-secure-credentials/",
+	"uri": "/12-project-build-a-slackbot/tutorial/step-12-use-environment-variables-to-protect-secure-credentials/",
 	"title": "Step 12: Use Environment Variables to Protect Secure Credentials",
 	"tags": [],
 	"description": "",
@@ -1848,7 +1855,7 @@
 	"content": " What is Programming?  List of instructions that a computer needs in order to complete a task\n Instructions are provided in a programming language that the computer understands\n These set of instructions are commonly referred as source code or a program\n There are many programming languages available, during this course we will be learning JavaScript\n  "
 },
 {
-	"uri": "/11-project-build-a-slackbot/tutorial/step-13-handle-errors-gracefully/",
+	"uri": "/12-project-build-a-slackbot/tutorial/step-13-handle-errors-gracefully/",
 	"title": "Step 13: Handle Errors Gracefully",
 	"tags": [],
 	"description": "",
@@ -1869,21 +1876,21 @@
 	"content": " .reduce()  .reduce() is used calculate a single value based on the array\n A reducer function (that you provide) is called on each element of the array and results in a single output value\n Often used to perform a calculation that accepts all the elements of an array (usually numbers) as inputs\n For example: Calculating the sum of all the items in an array  .reduce() accepts the following parameters\n The callback function (also referred to the reducer function in this case) for .reduce() accepts the following parameters:\n accumulator: (required) the accumulated value previously returned in from the last iteration;\n currentValue: (required) current element being processed in the array.\n index: (optional) index of the current element being processed in the array\n array: (optional) the array map was called upon\n  initialValue: (optional) the value to use as the first argument to for the first iteration of reduce(); If no initialValue is supplied, the first element in the array will be used\n  Syntax Using traditional (ES5) function syntax\nlet value = arr.reduce(function(previousValue, item, index, array) { // ... }, [initial]);  Using arrow syntax (ES6)\nlet value = arr.reduce((previousValue, item, index, array) =\u0026gt; { // ... }, [initial]);  Example  Example where no initialValue is supplied  let numbers = [1, 2, 3, 4, 5] let result = numbers.reduce((sum, currentNumber) =\u0026gt; sum + currentNumber) console.log(result) // 15  JS Bin on jsbin.com\n Example where we set the initialValue to 10  let numbers = [1, 2, 3, 4, 5] let result = numbers.reduce((sum, currentNumber) =\u0026gt; sum + currentNumber, 10) console.log(result) // 25  JS Bin on jsbin.com\nExercise Use .reduce() to calculate the sum of the numbers found in the amounts array; Save the result in a variable declared with const called total\nJS Bin on jsbin.com\n"
 },
 {
-	"uri": "/13-intro-to-crud-and-firebase/",
+	"uri": "/14-intro-to-crud-and-firebase/",
 	"title": "Intro to CRUD and Firebase",
 	"tags": [],
 	"description": "",
 	"content": " Lesson 13 Intro to CRUD and Firebase "
 },
 {
-	"uri": "/07-dom-and-jquery-continued/lab-citipix/",
+	"uri": "/08-dom-jquery-iii/lab-citipix/",
 	"title": "Lab: CitiPix",
 	"tags": [],
 	"description": "",
 	"content": " Lab: CitiPix  The starter code for this lab is hosted on Github, see the url below:\n Lab: CitiPix  Use the Assignment Submission Git Workflow (detailed here) to access and submit the assignment\n  "
 },
 {
-	"uri": "/11-project-build-a-slackbot/tutorial/step-14-enhance-weather-response-with-emojis/",
+	"uri": "/12-project-build-a-slackbot/tutorial/step-14-enhance-weather-response-with-emojis/",
 	"title": "Step 14: Enhance Weather Response with Emojis",
 	"tags": [],
 	"description": "",
@@ -1904,14 +1911,14 @@
 	"content": " jQuery Effects  jQuery provides several techniques for adding animation to a web page\n Here some commonly used jQuery Effect methods:\n .show() \u0026amp; .hide()   .toggle()   .slideUp() \u0026amp; .slideDown()   .slideToggle()   .fadeIn() \u0026amp; .fadeOut()   Other Effects     "
 },
 {
-	"uri": "/14-project-firebase-todo-app/",
+	"uri": "/15-project-firebase-todo-app/",
 	"title": "Project: Firebase Todo App",
 	"tags": [],
 	"description": "",
-	"content": " Lesson 14 Project: Firebase Todo App "
+	"content": " Lesson 15 Project: Firebase Todo App "
 },
 {
-	"uri": "/15-deploying-your-app/",
+	"uri": "/16-deploying-your-app/",
 	"title": "Deploying Your App",
 	"tags": [],
 	"description": "",
@@ -1946,7 +1953,7 @@
 	"content": " jQuery Traversing  Traversal methods allows us to select elements up and down the DOM tree very easily\n DOM traversing is one of the prominent features of the jQuery\n   Notice how DOM elements are structured in a parent-child relationship\n The \u0026lt;body\u0026gt; element is the parent of the \u0026lt;div\u0026gt; element, and an ancestor of everything inside of it. The enclosed \u0026lt;div\u0026gt; element is the parent of \u0026lt;h1\u0026gt;, \u0026lt;p\u0026gt; and \u0026lt;ul\u0026gt; elements, and a child of the \u0026lt;body\u0026gt; element.\n The elements \u0026lt;h1\u0026gt;, \u0026lt;p\u0026gt; and \u0026lt;ul\u0026gt; are siblings, since they share the same parent.\n The \u0026lt;h1\u0026gt; element is a child of the \u0026lt;div\u0026gt; element and a descendant of the \u0026lt;body\u0026gt; element. This element does not have any children.\n The \u0026lt;p\u0026gt; element is the parent of \u0026lt;em\u0026gt; element, child of the \u0026lt;div\u0026gt; element and a descendant of the \u0026lt;body\u0026gt; element. The containing \u0026lt;em\u0026gt; element is a child of this \u0026lt;p\u0026gt; element and a descendant of the \u0026lt;div\u0026gt; and \u0026lt;body\u0026gt; element.\n Similarly, the \u0026lt;ul\u0026gt; element is the parent of the \u0026lt;li\u0026gt; elements, child of the \u0026lt;div\u0026gt; element and a descendant of the \u0026lt;body\u0026gt; element. The containing \u0026lt;li\u0026gt; elements are the child of this \u0026lt;ul\u0026gt; element and a descendant of the \u0026lt;div\u0026gt; and \u0026lt;body\u0026gt; element. Also, both the \u0026lt;li\u0026gt; elements are siblings.\n  Here some commonly used jQuery traversal methods used to programatically nagivate the DOM\n ancestors   descendants   Other Traversal Methods     "
 },
 {
-	"uri": "/16-closures-and-this/",
+	"uri": "/17-closures-and-this/",
 	"title": "Closures &amp; this",
 	"tags": [],
 	"description": "",
