@@ -51,6 +51,10 @@
   </url>
   
   <url>
+    <loc>/solutions/classwork-lab-solutions/</loc>
+  </url>
+  
+  <url>
     <loc>/01-command-line-js-and-git/</loc>
   </url>
   
@@ -321,6 +325,10 @@
   
   <url>
     <loc>/10-asynchronous-js-and-promises/async-await/handling-async-issues-with-async-await/</loc>
+  </url>
+  
+  <url>
+    <loc>/solutions/homework-solutions/</loc>
   </url>
   
   <url>
@@ -1146,6 +1154,10 @@
   
   <url>
     <loc>/final-projects/</loc>
+  </url>
+  
+  <url>
+    <loc>/solutions/</loc>
   </url>
   
   <url>
