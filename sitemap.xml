@@ -127,6 +127,10 @@
   </url>
   
   <url>
+    <loc>/16-intro-to-express/objectives/</loc>
+  </url>
+  
+  <url>
     <loc>/10-asynchronous-js-and-promises/async-await/overview/</loc>
   </url>
   
@@ -148,6 +152,10 @@
   
   <url>
     <loc>/14-intro-to-crud-and-firebase/firebase/overview/</loc>
+  </url>
+  
+  <url>
+    <loc>/16-intro-to-express/express/overview/</loc>
   </url>
   
   <url>
@@ -268,6 +276,10 @@
   </url>
   
   <url>
+    <loc>/16-intro-to-express/clients-servers/</loc>
+  </url>
+  
+  <url>
     <loc>/03-control-flow-and-loops/conditionals/</loc>
   </url>
   
@@ -301,6 +313,10 @@
   
   <url>
     <loc>/05-arrays-objects/objects/accessing-properties/dot-notation/</loc>
+  </url>
+  
+  <url>
+    <loc>/16-intro-to-express/express/</loc>
   </url>
   
   <url>
@@ -357,6 +373,10 @@
   
   <url>
     <loc>/class-resources/node-git-installation/mac-os-x/</loc>
+  </url>
+  
+  <url>
+    <loc>/16-intro-to-express/express/middleware/</loc>
   </url>
   
   <url>
@@ -508,6 +528,10 @@
   </url>
   
   <url>
+    <loc>/16-intro-to-express/express/routing/</loc>
+  </url>
+  
+  <url>
     <loc>/12-project-build-a-slackbot/tutorial/step-3-set-up-node-application/</loc>
   </url>
   
@@ -576,6 +600,10 @@
   </url>
   
   <url>
+    <loc>/16-intro-to-express/code-along-express-tmdb-app/</loc>
+  </url>
+  
+  <url>
     <loc>/14-intro-to-crud-and-firebase/code-along-firebase-playlist-app/</loc>
   </url>
   
@@ -641,6 +669,10 @@
   
   <url>
     <loc>/class-resources/opening-atom-from-command-line/</loc>
+  </url>
+  
+  <url>
+    <loc>/16-intro-to-express/express/route-parameters/</loc>
   </url>
   
   <url>
@@ -1121,7 +1153,7 @@
   </url>
   
   <url>
-    <loc>/16-deploying-your-app/</loc>
+    <loc>/16-intro-to-express/</loc>
   </url>
   
   <url>
@@ -1141,7 +1173,7 @@
   </url>
   
   <url>
-    <loc>/17-closures-and-this/</loc>
+    <loc>/17-deploying-your-app/</loc>
   </url>
   
   <url>

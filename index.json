@@ -217,6 +217,13 @@
 	"content": " Leverage knowledge of Firebase to add persistent data storage to a Todo Application  "
 },
 {
+	"uri": "/16-intro-to-express/objectives/",
+	"title": "Objectives",
+	"tags": [],
+	"description": "",
+	"content": " Review the HTTP request / response flow\n Explain the role of a web server in a full-stack application\n Write a route handler for a GET request with Express\n Pass information with query and route parameters\n  "
+},
+{
 	"uri": "/10-asynchronous-js-and-promises/async-await/overview/",
 	"title": "Overview",
 	"tags": [],
@@ -257,6 +264,13 @@
 	"tags": [],
 	"description": "",
 	"content": " What is Firebase?  Firebase is a mobile and web application platform for developers\n Acquired by Google in 2014\n Offers many other services but we\u0026rsquo;ll be covering the basics of Firebase\u0026rsquo;s real-time backend database and seeing how we can use this in our applications\n  "
+},
+{
+	"uri": "/16-intro-to-express/express/overview/",
+	"title": "Overview",
+	"tags": [],
+	"description": "",
+	"content": " What is Express?  Express is a popular Node web framework that enables developers to build web servers (backend) that can respond to http requests and return data\n Outside of providing built-in support for routing, Express has minimal functionality of its own\n Functionality is added to an Express application through the use of Middleware\n  "
 },
 {
 	"uri": "/final-projects/overview-requirements/",
@@ -462,6 +476,13 @@
 	"content": " Client \u0026amp; Servers  Computers connected to the web are called clients and servers\n Communication between the client and server are done through requests and responses\n A simplified diagram of how they interact might look like this:\n  Clients  Typically user-facing devices connected to the internet:\n Computers\n Mobile devices\n Smart Speakers (Amazon Echo, Google Home)\n Smart Appliances (Ring Doorbell, Nest Thermostat, etc)\n   Server  A computer dedicated to run services to serve the needs of other computers; examples include the following:\n Web server (stores and delivers files needed to generate web pages)\n Database server (stores and delivers data)\n File server (stores and delivers files)\n Print server (sends and receives print jobs)\n Home media server (stores and delivers video and/or audio)\n   "
 },
 {
+	"uri": "/16-intro-to-express/clients-servers/",
+	"title": "Clients &amp; Servers",
+	"tags": [],
+	"description": "",
+	"content": " Client \u0026amp; Servers  Computers connected to the web are called clients and servers\n Communication between the client and server are done through requests and responses\n A simplified diagram of how they interact might look like this:\n  Clients  Typically user-facing devices connected to the internet:\n Computers\n Mobile devices\n Smart Speakers (Amazon Echo, Google Home)\n Smart Appliances (Ring Doorbell, Nest Thermostat, etc)\n   Server  A computer dedicated to run services to serve the needs of other computers; examples include the following:\n Web server (stores and delivers files needed to generate web pages)\n Database server (stores and delivers data)\n File server (stores and delivers files)\n Print server (sends and receives print jobs)\n Home media server (stores and delivers video and/or audio)\n   "
+},
+{
 	"uri": "/03-control-flow-and-loops/conditionals/",
 	"title": "Conditionals",
 	"tags": [],
@@ -523,6 +544,13 @@
 	"tags": [],
 	"description": "",
 	"content": " Dot Notation  Dot notation allows us to access properties with a .  Example let superHero = { \u0026#39;secret identity\u0026#39;: \u0026#39;Peter Parker\u0026#39;, name: \u0026#39;Spiderman\u0026#39;, powers: [\u0026#39;super strength\u0026#39;, \u0026#39;hyper awareness\u0026#39;, \u0026#39;agility\u0026#39;, \u0026#39;genius intellect\u0026#39;], age: 17 } console.log(superHero.name) console.log(superHero.powers)  JS Bin on jsbin.com\n"
+},
+{
+	"uri": "/16-intro-to-express/express/",
+	"title": "Express",
+	"tags": [],
+	"description": "",
+	"content": "  Overview   Middleware   Routing   Route Parameters   "
 },
 {
 	"uri": "/13-object-oriented-js/classes/methods/getters-and-setters/",
@@ -621,6 +649,13 @@
 	"tags": [],
 	"description": "",
 	"content": " Mac OS X Installation Instructions 1) Open your terminal application  Open your terminal (Applications \u0026gt; Utilities \u0026gt; Terminal)\n All of the following commands (below) that start with $ should be copied and pasted in your terminal / command prompt (also referred to as the \u0026ldquo;command line\u0026rdquo;)\n DO NOT include the \u0026lsquo;$\u0026rsquo; when copying and pasting the commands below; \u0026lsquo;$\u0026rsquo; is a universal symbol for the terminal / command line\n Press the enter / return key on your keyboard after pasting the command\n  2) Install brew  Brew is a package manager that we use to install various command line applications to your computer.\n Paste the following command in your Terminal, and hit enter:\n  $ ruby -e \u0026quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)\u0026quot;  3) Install Git Git is used to track the state of your code over time. GitHub has built its platform on Git technology. We will be using both Git and GitHub to distribute code, submit assignments, and offer feedback.\nPaste the following command in your Terminal, and hit enter to install Git:\n $ brew install git  4) Configure Git  Copy and paste the following two commands (separately) into your Terminal. Replace the name and email address values with your own   $ git config --global user.name \u0026quot;Steve Jobs\u0026quot; $ git config --global user.email \u0026quot;steve@apple.com\u0026quot;   Follow these instructions to create a new SSH Key (a special, very secure, key which allows your laptop access to your github account without having to remember your github password)\n Add your new SSH Key to GitHub following these instructions\n Verify your key works by running the following:\n  $ ssh git@github.com   You should see output similar to:   Hi \u0026lt;you\u0026gt;! You've successfully authenticated, but GitHub does not provide shell access. Connection to github.com closed.  5) Install Node  Refer to the package installer on Node’s website  "
+},
+{
+	"uri": "/16-intro-to-express/express/middleware/",
+	"title": "Middleware",
+	"tags": [],
+	"description": "",
+	"content": " Middleware  Middleware functions are functions that have access to the request object (req), the response object (res), and the next middleware function in the application’s request-response cycle\n Middleware functions can perform the following tasks:\n Execute any code.\n Make changes to the request and the response objects.\n End the request-response cycle.\n Call the next middleware function in the stack\n  An Express application is essentially a series of middleware function calls\n Here\u0026rsquo;s an example of one type of Middleware that can be found in an Express application\n  app.get(\u0026#39;/user/:id\u0026#39;, function (req, res, next) { res.send(\u0026#39;USER\u0026#39;) })   The code above uses the .get() middleware to listen for GET requests to /user/:id  "
 },
 {
 	"uri": "/final-projects/milestones-due-dates/",
@@ -882,6 +917,13 @@
 	"content": " Requirements Requirement #1: Add Create Functionality When users attempt to add a new task using the #addItem form, the task should be successfully saved in the app\u0026rsquo;s Firebase database. Within your Firebase database, the name of the new task should be stored as name and the completed value of every newly created task should be set to false\nRequirement #2: Add Read Functionality The Doit app should list all tasks stored in your Firebase database within the #taskList div. Make sure you comment out the hardcoded tasks after you\u0026rsquo;ve successfully completed this step.\nRequirement #3: Add Update Functionality 2a: Users should be able update a task name and have that change reflected in the app\u0026rsquo;s Firebase database.\n2b: Users should be able toggle the checkbox (i.e. check and uncheck) to change the completed status of a task. The updated completed status (resulting from a checkbox change) should be reflected in the app\u0026rsquo;s Firebase database.\nRequirement #4: Add Delete Functionality Users should be able delete a task and have that task also deleted from the app\u0026rsquo;s Firebase database.\n"
 },
 {
+	"uri": "/16-intro-to-express/express/routing/",
+	"title": "Routing",
+	"tags": [],
+	"description": "",
+	"content": " Routing  Routing refers to determining how an application responds to a client request to a particular endpoint, which is a URI (or path) and a specific HTTP request method (GET, POST, and so on)\n Each route can have one or more handler functions, which are executed when the route is matched\n Route definition takes the following structure:\n  app.METHOD(PATH, HANDLER)   app is an instance of express.\n METHOD is an HTTP request method, in lowercase.\n PATH is a path on the server.\n HANDLER is the function executed when the route is matched.\n  Examples Respond with Hello World! on the homepage:\napp.get(\u0026#39;/\u0026#39;, function (req, res) { res.send(\u0026#39;Hello World!\u0026#39;) })  Respond to POST request on the root route (/), the application’s home page:\napp.post(\u0026#39;/\u0026#39;, function (req, res) { res.send(\u0026#39;Got a POST request\u0026#39;) })  Respond to a PUT request to the /user route:\napp.put(\u0026#39;/user\u0026#39;, function (req, res) { res.send(\u0026#39;Got a PUT request at /user\u0026#39;) })  Respond to a DELETE request to the /user route:\napp.delete(\u0026#39;/user\u0026#39;, function (req, res) { res.send(\u0026#39;Got a DELETE request at /user\u0026#39;) })  "
+},
+{
 	"uri": "/12-project-build-a-slackbot/tutorial/step-3-set-up-node-application/",
 	"title": "Step 3: Set Up Node Application",
 	"tags": [],
@@ -1001,6 +1043,13 @@
 	"content": " Bracket Notation  Bracket notation is another way to to access a key’s value is by using bracket notation, [ ]\n To use bracket notation to access an object’s property, we pass in the property name (key) as a string\nsuperHero['secret identity']`\n We must use bracket notation when accessing keys that have numbers, spaces, or special characters in them\n Remember, object keys are always strings\n  Example let superHero = { \u0026#39;secret identity\u0026#39;: \u0026#39;Peter Parker\u0026#39;, name: \u0026#39;Spiderman\u0026#39;, powers: [\u0026#39;super strength\u0026#39;, \u0026#39;hyper awareness\u0026#39;, \u0026#39;agility\u0026#39;, \u0026#39;genius intellect\u0026#39;], age: 17 } console.log(superHero[\u0026#34;secret identity\u0026#34;]) console.log(superHero[\u0026#34;name\u0026#34;])  JS Bin on jsbin.com\nUsing variables to access properties  Bracket notation also allows us to use a variable inside the brackets to select the keys of an object  Example let superHero = { \u0026#39;secret identity\u0026#39;: \u0026#39;Peter Parker\u0026#39;, name: \u0026#39;Spiderman\u0026#39;, powers: [\u0026#39;super strength\u0026#39;, \u0026#39;hyper awareness\u0026#39;, \u0026#39;agility\u0026#39;, \u0026#39;genius intellect\u0026#39;], age: 17 } let attribute = \u0026#34;name\u0026#34; // use the \u0026#39;attribute\u0026#39; variable to access a property in superHero  let attributeValue = superHero[attribute] console.log(superHero[attribute]) // This is the result of trying the same thing using dot notation  console.log(superHero.attribute) // undefined  JS Bin on jsbin.com\n"
 },
 {
+	"uri": "/16-intro-to-express/code-along-express-tmdb-app/",
+	"title": "Code Along: Express TMDB App",
+	"tags": [],
+	"description": "",
+	"content": " Code Along: Express TMDB App  Together we\u0026rsquo;ll walk through creating a full stack (backend \u0026amp; front-end) application that provides movie and tv show data using the TMDb API  1. Get the starter code for this code along  The starter code for this code along is hosted on Github, see the url below:\n Code Along: Express TMDb App\n Use the Assignment Submission Git Workflow (detailed here) to access and submit the assignment\n   2. Install Node Packages required to run the app  Navigate to project folder in the terminal and run the following   $ npm install   Then run the server   $ npm run start  3. Create a TMDB account  Create a free TMDb Account using the following link: create account\n Register for an API Key - follow the instructions found here: https://developers.themoviedb.org/3/getting-started/introduction\n  4. Access your TMDb API Key  Navigate to https://www.themoviedb.org/settings/api\n Look for the heading with the following label: API Key (v3 Auth)\n Copy the API key\n  5. Store API as Environment Variable  Open project in your editor\n Create a file named .env\n Add the following to the .env file\n  TMDB_API_KEY=ADD_YOUR_API_KEY_HERE  "
+},
+{
 	"uri": "/14-intro-to-crud-and-firebase/code-along-firebase-playlist-app/",
 	"title": "Code Along: Firebase Playlist App",
 	"tags": [],
@@ -1118,6 +1167,13 @@
 	"tags": [],
 	"description": "",
 	"content": " Atom allows you to open files from the command line\nIf you have Atom installed you can run the atom command with one or more file paths to open up those files in Atom.\nCheck if Atom is already configured to run on your computer\u0026rsquo;s Command Line Open up your terminal and run the following command\n$ atom --help  You should receive output similar to the following\nAtom Editor v1.39.1 Usage: atom atom [options] [path ...] atom file[:line[:column]] One or more paths to files or folders may be specified. If there is an existing Atom window that contains all of the given folders, the paths will be opened in that window. Otherwise, they will be opened in a new window.  If Atom is not configured to run from your computer\u0026rsquo;s Command Line Open Atom and choose the following from the menu bar Atom -\u0026gt; Install Shell Commands\n"
+},
+{
+	"uri": "/16-intro-to-express/express/route-parameters/",
+	"title": "Route Parameters",
+	"tags": [],
+	"description": "",
+	"content": " Route Parameters  Route parameters are named URL segments that are used to capture the values specified at their position in the URL\n The captured values are populated in the req.params object, with the name of the route parameter specified in the path as their respective keys\n Route parameters are similar to function parameters\n Given the following route handler:\napp.get('/users/:userId/books/:bookId', function (req, res) { res.send(req.params) })   If the client makes a request to the following url: GET http://localhost:3000/users/34/books/8989\n Then inside our route handle req.params will contain the following object: { \u0026quot;userId\u0026quot;: \u0026quot;34\u0026quot;, \u0026quot;bookId\u0026quot;: \u0026quot;8989\u0026quot; }\n   "
 },
 {
 	"uri": "/10-asynchronous-js-and-promises/simulating-async-operations/",
@@ -1953,11 +2009,11 @@
 	"content": " Lesson 15 Project: Firebase Todo App "
 },
 {
-	"uri": "/16-deploying-your-app/",
-	"title": "Deploying Your App",
+	"uri": "/16-intro-to-express/",
+	"title": "Intro to Express",
 	"tags": [],
 	"description": "",
-	"content": " Lesson 16 Deploying Your App "
+	"content": " Lesson 16 Intro to Express "
 },
 {
 	"uri": "/class-resources/learning-html-css/",
@@ -1988,11 +2044,11 @@
 	"content": " jQuery Traversing  Traversal methods allows us to select elements up and down the DOM tree very easily\n DOM traversing is one of the prominent features of the jQuery\n   Notice how DOM elements are structured in a parent-child relationship\n The \u0026lt;body\u0026gt; element is the parent of the \u0026lt;div\u0026gt; element, and an ancestor of everything inside of it. The enclosed \u0026lt;div\u0026gt; element is the parent of \u0026lt;h1\u0026gt;, \u0026lt;p\u0026gt; and \u0026lt;ul\u0026gt; elements, and a child of the \u0026lt;body\u0026gt; element.\n The elements \u0026lt;h1\u0026gt;, \u0026lt;p\u0026gt; and \u0026lt;ul\u0026gt; are siblings, since they share the same parent.\n The \u0026lt;h1\u0026gt; element is a child of the \u0026lt;div\u0026gt; element and a descendant of the \u0026lt;body\u0026gt; element. This element does not have any children.\n The \u0026lt;p\u0026gt; element is the parent of \u0026lt;em\u0026gt; element, child of the \u0026lt;div\u0026gt; element and a descendant of the \u0026lt;body\u0026gt; element. The containing \u0026lt;em\u0026gt; element is a child of this \u0026lt;p\u0026gt; element and a descendant of the \u0026lt;div\u0026gt; and \u0026lt;body\u0026gt; element.\n Similarly, the \u0026lt;ul\u0026gt; element is the parent of the \u0026lt;li\u0026gt; elements, child of the \u0026lt;div\u0026gt; element and a descendant of the \u0026lt;body\u0026gt; element. The containing \u0026lt;li\u0026gt; elements are the child of this \u0026lt;ul\u0026gt; element and a descendant of the \u0026lt;div\u0026gt; and \u0026lt;body\u0026gt; element. Also, both the \u0026lt;li\u0026gt; elements are siblings.\n  Here some commonly used jQuery traversal methods used to programatically nagivate the DOM\n ancestors   descendants   Other Traversal Methods     "
 },
 {
-	"uri": "/17-closures-and-this/",
-	"title": "Closures &amp; this",
+	"uri": "/17-deploying-your-app/",
+	"title": "Deploying Your App",
 	"tags": [],
 	"description": "",
-	"content": " Lesson 17 Closures \u0026amp; this "
+	"content": " Lesson 17 Deploying Your App "
 },
 {
 	"uri": "/class-resources/cors/",

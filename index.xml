@@ -340,6 +340,19 @@ List Of Commonly Used APIs Here is a short list of commonly used APIs for testin
     </item>
     
     <item>
+      <title>Objectives</title>
+      <link>/16-intro-to-express/objectives/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/16-intro-to-express/objectives/</guid>
+      <description> Review the HTTP request / response flow
+ Explain the role of a web server in a full-stack application
+ Write a route handler for a GET request with Express
+ Pass information with query and route parameters
+  </description>
+    </item>
+    
+    <item>
       <title>Overview</title>
       <link>/10-asynchronous-js-and-promises/async-await/overview/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -407,6 +420,18 @@ List Of Commonly Used APIs Here is a short list of commonly used APIs for testin
       <description> What is Firebase?  Firebase is a mobile and web application platform for developers
  Acquired by Google in 2014
  Offers many other services but we&amp;rsquo;ll be covering the basics of Firebase&amp;rsquo;s real-time backend database and seeing how we can use this in our applications
+  </description>
+    </item>
+    
+    <item>
+      <title>Overview</title>
+      <link>/16-intro-to-express/express/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/16-intro-to-express/express/overview/</guid>
+      <description> What is Express?  Express is a popular Node web framework that enables developers to build web servers (backend) that can respond to http requests and return data
+ Outside of providing built-in support for routing, Express has minimal functionality of its own
+ Functionality is added to an Express application through the use of Middleware
   </description>
     </item>
     
@@ -696,6 +721,22 @@ We&amp;rsquo;ll discuss currentTarget and the .find() method later in the course
     </item>
     
     <item>
+      <title>Clients &amp; Servers</title>
+      <link>/16-intro-to-express/clients-servers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/16-intro-to-express/clients-servers/</guid>
+      <description>Client &amp;amp; Servers  Computers connected to the web are called clients and servers
+ Communication between the client and server are done through requests and responses
+ A simplified diagram of how they interact might look like this:
+  Clients  Typically user-facing devices connected to the internet:
+ Computers
+ Mobile devices
+ Smart Speakers (Amazon Echo, Google Home)
+ Smart Appliances (Ring Doorbell, Nest Thermostat, etc)</description>
+    </item>
+    
+    <item>
       <title>Constructor</title>
       <link>/13-object-oriented-js/classes/constructor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -877,6 +918,21 @@ Instructions 1) Download starter code
       <description>Mac OS X Installation Instructions 1) Open your terminal application  Open your terminal (Applications &amp;gt; Utilities &amp;gt; Terminal)
  All of the following commands (below) that start with $ should be copied and pasted in your terminal / command prompt (also referred to as the &amp;ldquo;command line&amp;rdquo;)
  DO NOT include the &amp;lsquo;$&amp;rsquo; when copying and pasting the commands below; &amp;lsquo;$&amp;rsquo; is a universal symbol for the terminal / command line</description>
+    </item>
+    
+    <item>
+      <title>Middleware</title>
+      <link>/16-intro-to-express/express/middleware/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/16-intro-to-express/express/middleware/</guid>
+      <description>Middleware  Middleware functions are functions that have access to the request object (req), the response object (res), and the next middleware function in the application’s request-response cycle
+ Middleware functions can perform the following tasks:
+ Execute any code.
+ Make changes to the request and the response objects.
+ End the request-response cycle.
+ Call the next middleware function in the stack
+  An Express application is essentially a series of middleware function calls</description>
     </item>
     
     <item>
@@ -1200,6 +1256,18 @@ Requirement #2: Add Read Functionality The Doit app should list all tasks stored
     </item>
     
     <item>
+      <title>Routing</title>
+      <link>/16-intro-to-express/express/routing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/16-intro-to-express/express/routing/</guid>
+      <description>Routing  Routing refers to determining how an application responds to a client request to a particular endpoint, which is a URI (or path) and a specific HTTP request method (GET, POST, and so on)
+ Each route can have one or more handler functions, which are executed when the route is matched
+ Route definition takes the following structure:
+  app.METHOD(PATH, HANDLER)   app is an instance of express.</description>
+    </item>
+    
+    <item>
       <title>Step 3: Set Up Node Application</title>
       <link>/12-project-build-a-slackbot/tutorial/step-3-set-up-node-application/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1359,6 +1427,17 @@ superHero[&#39;secret identity&#39;]`
     </item>
     
     <item>
+      <title>Code Along: Express TMDB App</title>
+      <link>/16-intro-to-express/code-along-express-tmdb-app/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/16-intro-to-express/code-along-express-tmdb-app/</guid>
+      <description>Code Along: Express TMDB App  Together we&amp;rsquo;ll walk through creating a full stack (backend &amp;amp; front-end) application that provides movie and tv show data using the TMDb API  1. Get the starter code for this code along  The starter code for this code along is hosted on Github, see the url below:
+ Code Along: Express TMDb App
+ Use the Assignment Submission Git Workflow (detailed here) to access and submit the assignment</description>
+    </item>
+    
+    <item>
       <title>Code Along: Firebase Playlist App</title>
       <link>/14-intro-to-crud-and-firebase/code-along-firebase-playlist-app/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1485,6 +1564,19 @@ If you have Atom installed you can run the atom command with one or more file pa
 Check if Atom is already configured to run on your computer&amp;rsquo;s Command Line Open up your terminal and run the following command
 $ atom --help  You should receive output similar to the following
 Atom Editor v1.</description>
+    </item>
+    
+    <item>
+      <title>Route Parameters</title>
+      <link>/16-intro-to-express/express/route-parameters/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/16-intro-to-express/express/route-parameters/</guid>
+      <description>Route Parameters  Route parameters are named URL segments that are used to capture the values specified at their position in the URL
+ The captured values are populated in the req.params object, with the name of the route parameter specified in the path as their respective keys
+ Route parameters are similar to function parameters
+ Given the following route handler:
+app.get(&#39;/users/:userId/books/:bookId&#39;, function (req, res) { res.send(req.params) })   If the client makes a request to the following url: GET http://localhost:3000/users/34/books/8989</description>
     </item>
     
     <item>
