@@ -56,6 +56,29 @@
     </item>
     
     <item>
+      <title>Objectives</title>
+      <link>/05-arrays-objects/objectives/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/05-arrays-objects/objectives/</guid>
+      <description> Gain deeper understanding of arrays and objects
+ Understand the difference between loops and iterators
+ Leverage the most commonly used iterators to efficiently access data
+  </description>
+    </item>
+    
+    <item>
+      <title>Objectives</title>
+      <link>/06-dom-and-jquery/objectives/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/06-dom-and-jquery/objectives/</guid>
+      <description> Understand the key differences between using Native JavaScript and jQuery for DOM manipulation
+ Learn the most commonly used jQuery methods to manipulate the DOM
+  </description>
+    </item>
+    
+    <item>
       <title>Office Hours</title>
       <link>/class-resources/office-hours/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -162,7 +185,7 @@
       <description>Creating Objects  Data in an object is organized into key-value pairs
  A key is like a variable name that points to a location in memory that holds a value
  keys are strings, but when we have a key that does not have any special characters in it, JavaScript allows us to omit the quotation marks:
-let superHero = { &amp;#39;secret identity&amp;#39;: &amp;#39;Peter Parker&amp;#39;, name: &amp;#39;Spiderman&amp;#39;, powers: [&amp;#39;super strength&amp;#39;, &amp;#39;hyper awareness&amp;#39;, &amp;#39;agility&amp;#39;, &amp;#39;genius intellect&amp;#39;], age: 17 }  values can be of any data type</description>
+const superHero = { &amp;#39;secret identity&amp;#39;: &amp;#39;Peter Parker&amp;#39;, name: &amp;#39;Spiderman&amp;#39;, powers: [&amp;#39;super strength&amp;#39;, &amp;#39;hyper awareness&amp;#39;, &amp;#39;agility&amp;#39;, &amp;#39;genius intellect&amp;#39;], age: 17 }  values can be of any data type</description>
     </item>
     
     <item>
@@ -580,7 +603,7 @@ When copying the following code snippets, DO NOT include the $ this is a univers
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/06-dom-and-jquery/jquery-events/form-events/change/</guid>
-      <description>.change() Event  Attaches an event handler function to the &amp;lt;input&amp;gt;, &amp;lt;textarea&amp;gt; and &amp;lt;select&amp;gt; elements that is executed when its value changes  Example  The following example will display an alert message when you select any option in dropdown select box  $(&amp;#39;select&amp;#39;).change((event) =&amp;gt; { const $selectedOption = $(event.currentTarget).find(&amp;#39;:selected&amp;#39;).val() alert(`You have selected ${$selectedOption}`) })  JS Bin on jsbin.com
+      <description>.change() Event  Attaches an event handler function to the &amp;lt;input&amp;gt;, &amp;lt;textarea&amp;gt; and &amp;lt;select&amp;gt; elements that is executed when its value changes  Example  The following example will display an alert message when you select any option in dropdown select box  $(&amp;#39;select&amp;#39;).change((event) =&amp;gt; { const selectedOption = $(event.currentTarget).find(&amp;#39;:selected&amp;#39;).val() alert(`You have selected ${$selectedOption}`) })  JS Bin on jsbin.com
 We&amp;rsquo;ll discuss currentTarget and the .find() method later in the course</description>
     </item>
     
@@ -599,7 +622,7 @@ We&amp;rsquo;ll discuss currentTarget and the .find() method later in the course
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/06-dom-and-jquery/jquery-manipulation/css-style-manipulation/css/</guid>
-      <description>.css() Method  Method that provides a quick way to apply the styles directly to the HTML elements (i.e. inline styles) that haven&amp;rsquo;t been or can&amp;rsquo;t easily be defined in a stylesheet  Example of Getting (Reading) a css property from an element  To Get (Read) css properties of an element use css(cssPropertyName) with nothing inside the parentheses  $(() =&amp;gt; { $(&amp;#34;#readBorderProperties&amp;#34;).click(() =&amp;gt; { // read &amp;#34;border&amp;#34; css properties of box  const $borderProperties = $(&amp;#34;.</description>
+      <description>.css() Method  Method that provides a quick way to apply the styles directly to the HTML elements (i.e. inline styles) that haven&amp;rsquo;t been or can&amp;rsquo;t easily be defined in a stylesheet  Example of Getting (Reading) a css property from an element  To Get (Read) css properties of an element use css(cssPropertyName) with nothing inside the parentheses  $(() =&amp;gt; { $(&amp;#34;#readBorderProperties&amp;#34;).click(() =&amp;gt; { // read &amp;#34;border&amp;#34; css properties of box  const borderProperties = $(&amp;#34;.</description>
     </item>
     
     <item>
@@ -612,7 +635,7 @@ We&amp;rsquo;ll discuss currentTarget and the .find() method later in the course
  The callback function for forEach provides the following:
  element - this current element from the array that is being evaluated
  index - this represents the current element&amp;rsquo;s index (or position in the array)
-   Example let chipmunks = [&amp;#34;alvin&amp;#34;, &amp;#34;simon&amp;#34;, &amp;#34;theodore&amp;#34;] chipmunks.forEach(function(element, index) { console.log(`${element}is at index ${index}`) })  JS Bin on jsbin.</description>
+   Example const chipmunks = [&amp;#34;alvin&amp;#34;, &amp;#34;simon&amp;#34;, &amp;#34;theodore&amp;#34;] chipmunks.forEach(function(element, index) { console.log(`${element}is at index ${index}`) })  JS Bin on jsbin.</description>
     </item>
     
     <item>
@@ -621,7 +644,7 @@ We&amp;rsquo;ll discuss currentTarget and the .find() method later in the course
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/05-arrays-objects/array-review/adding-removing-items/push/</guid>
-      <description>.push()  Appends the element to the end of the array  Example let fruits = [&amp;#34;Apple&amp;#34;, &amp;#34;Orange&amp;#34;] fruits.push(&amp;#34;Pear&amp;#34;) console.log( fruits ) // Apple, Orange, Pear   Note that our fruits array has been changed by push(); this means that the push() method is a mutating method  JS Bin on jsbin.com</description>
+      <description>.push()  Appends the element to the end of the array  Example const fruits = [&amp;#34;Apple&amp;#34;, &amp;#34;Orange&amp;#34;] fruits.push(&amp;#34;Pear&amp;#34;) console.log( fruits ) // Apple, Orange, Pear   Note that our fruits array has been changed by push(); this means that the push() method is a mutating method  JS Bin on jsbin.com</description>
     </item>
     
     <item>
@@ -640,7 +663,7 @@ We&amp;rsquo;ll discuss currentTarget and the .find() method later in the course
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/06-dom-and-jquery/jquery-manipulation/getting-setting-content/text/</guid>
-      <description>.text() Method  Method is either used to get (read) the combined text contents of the selected elements, including their descendants, or set (write) the text contents of the selected elements  Example of Getting (Reading) text  To Get (Read) text of an element use .text() with nothing inside the parentheses  $(() =&amp;gt; { $(&amp;#39;#readAll&amp;#39;).click(() =&amp;gt; { // read text from all p elements  const $allParagraphs = $(&amp;#34;p&amp;#34;).</description>
+      <description>.text() Method  Method is either used to get (read) the combined text contents of the selected elements, including their descendants, or set (write) the text contents of the selected elements  Example of Getting (Reading) text  To Get (Read) text of an element use .text() with nothing inside the parentheses  $(() =&amp;gt; { $(&amp;#39;#readAll&amp;#39;).click(() =&amp;gt; { // read text from all p elements  const allParagraphs = $(&amp;#34;p&amp;#34;).</description>
     </item>
     
     <item>
@@ -755,7 +778,7 @@ We&amp;rsquo;ll discuss currentTarget and the .find() method later in the course
       <description>Creating Arrays  You can create that doesn&amp;rsquo;t initially contain any values, this is called an empty array
  An array can also be created with initial values
  Square brackets are a means of identifying if a variable is an array
-  Example // declare a variable as an empty array let numbers = [] // or you can declare an array with initial values let streets = [&amp;#39;Broadway&amp;#39;, &amp;#39;Houston&amp;#39;, &amp;#39;Grand&amp;#39;]  JS Bin on jsbin.</description>
+  Example // declare a variable as an empty array const numbers = [] // or you can declare an array with initial values const streets = [&amp;#39;Broadway&amp;#39;, &amp;#39;Houston&amp;#39;, &amp;#39;Grand&amp;#39;]  JS Bin on jsbin.</description>
     </item>
     
     <item>
@@ -825,7 +848,7 @@ const executorFunction = (resolve, reject) =&amp;gt; { } const myPromise = new P
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/05-arrays-objects/objects/accessing-properties/dot-notation/</guid>
-      <description>Dot Notation  Dot notation allows us to access properties with a .  Example let superHero = { &amp;#39;secret identity&amp;#39;: &amp;#39;Peter Parker&amp;#39;, name: &amp;#39;Spiderman&amp;#39;, powers: [&amp;#39;super strength&amp;#39;, &amp;#39;hyper awareness&amp;#39;, &amp;#39;agility&amp;#39;, &amp;#39;genius intellect&amp;#39;], age: 17 } console.log(superHero.name) console.log(superHero.powers)  JS Bin on jsbin.com</description>
+      <description>Dot Notation  Dot notation allows us to access properties with a .  Example const superHero = { &amp;#39;secret identity&amp;#39;: &amp;#39;Peter Parker&amp;#39;, name: &amp;#39;Spiderman&amp;#39;, powers: [&amp;#39;super strength&amp;#39;, &amp;#39;hyper awareness&amp;#39;, &amp;#39;agility&amp;#39;, &amp;#39;genius intellect&amp;#39;], age: 17 } console.log(superHero.name) console.log(superHero.powers)  JS Bin on jsbin.com</description>
     </item>
     
     <item>
@@ -1347,7 +1370,7 @@ Requirement #2: Add Read Functionality The Doit app should list all tasks stored
       <guid>/05-arrays-objects/array-review/adding-removing-items/pop/</guid>
       <description>.pop()  Extracts the last element of the array and returns it
  Like pop(), push() is also a mutating method because it changes the value of the original array
-  Example let fruits = [&amp;#34;Apple&amp;#34;, &amp;#34;Orange&amp;#34;, &amp;#34;Grapes&amp;#34;] fruits.pop() console.log(fruits) // Apple, Orange  JS Bin on jsbin.com</description>
+  Example const fruits = [&amp;#34;Apple&amp;#34;, &amp;#34;Orange&amp;#34;, &amp;#34;Grapes&amp;#34;] fruits.pop() console.log(fruits) // Apple, Orange  JS Bin on jsbin.com</description>
     </item>
     
     <item>
@@ -1375,7 +1398,7 @@ Requirement #2: Add Read Functionality The Doit app should list all tasks stored
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/06-dom-and-jquery/jquery-events/form-events/submit/</guid>
-      <description>.submit() Event  Attaches an event handler function to &amp;lt;form&amp;gt; elements that is executed when the user is attempts to submit a form  Example $(() =&amp;gt; { // listen for a .submit() event on this form  $(&amp;#39;form&amp;#39;).submit((event) =&amp;gt; { // prevent default behavior of forms  event.preventDefault() // read data from text field  const $name = $(&amp;#39;input&amp;#39;).val() if ($name === &amp;#39;&amp;#39;) { alert(&amp;#39;Please enter a name&amp;#39;) } else { alert(`Hello ${$name}!</description>
+      <description>.submit() Event  Attaches an event handler function to &amp;lt;form&amp;gt; elements that is executed when the user is attempts to submit a form  Example $(() =&amp;gt; { // listen for a .submit() event on this form  $(&amp;#39;form&amp;#39;).submit((event) =&amp;gt; { // prevent default behavior of forms  event.preventDefault() // read data from text field  const name = $(&amp;#39;input&amp;#39;).val() if (name === &amp;#39;&amp;#39;) { alert(&amp;#39;Please enter a name&amp;#39;) } else { alert(`Hello ${name}!</description>
     </item>
     
     <item>
@@ -1409,7 +1432,7 @@ Requirement #2: Add Read Functionality The Doit app should list all tasks stored
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/05-arrays-objects/objects/assigning-properties/</guid>
-      <description>Assigning Properties  We can use either dot notation, or bracket notation and the assignment operator, = to add new key-value pairs to an object or change an existing property  Example let superHero = { &amp;#39;secret identity&amp;#39;: &amp;#39;Peter Parker&amp;#39;, name: &amp;#39;Spiderman&amp;#39;, powers: [&amp;#39;super strength&amp;#39;, &amp;#39;hyper awareness&amp;#39;, &amp;#39;agility&amp;#39;, &amp;#39;genius intellect&amp;#39;], age: 17 } // update existing properties  superHero.powers.push(&amp;#39;endurance&amp;#39;) superHero.age = 18 // add a new property  superHero.homeCity = &amp;#39;New York City&amp;#39; console.</description>
+      <description>Assigning Properties  We can use either dot notation, or bracket notation and the assignment operator, = to add new key-value pairs to an object or change an existing property  Example const superHero = { &amp;#39;secret identity&amp;#39;: &amp;#39;Peter Parker&amp;#39;, name: &amp;#39;Spiderman&amp;#39;, powers: [&amp;#39;super strength&amp;#39;, &amp;#39;hyper awareness&amp;#39;, &amp;#39;agility&amp;#39;, &amp;#39;genius intellect&amp;#39;], age: 17 } // update existing properties superHero.powers.push(&amp;#39;endurance&amp;#39;) superHero.age = 18 // add a new property superHero.homeCity = &amp;#39;New York City&amp;#39; console.</description>
     </item>
     
     <item>
@@ -1423,7 +1446,7 @@ Requirement #2: Add Read Functionality The Doit app should list all tasks stored
 superHero[&#39;secret identity&#39;]`
  We must use bracket notation when accessing keys that have numbers, spaces, or special characters in them
  Remember, object keys are always strings
-  Example let superHero = { &amp;#39;secret identity&amp;#39;: &amp;#39;Peter Parker&amp;#39;, name: &amp;#39;Spiderman&amp;#39;, powers: [&amp;#39;super strength&amp;#39;, &amp;#39;hyper awareness&amp;#39;, &amp;#39;agility&amp;#39;, &amp;#39;genius intellect&amp;#39;], age: 17 } console.</description>
+  Example const superHero = { &amp;#39;secret identity&amp;#39;: &amp;#39;Peter Parker&amp;#39;, name: &amp;#39;Spiderman&amp;#39;, powers: [&amp;#39;super strength&amp;#39;, &amp;#39;hyper awareness&amp;#39;, &amp;#39;agility&amp;#39;, &amp;#39;genius intellect&amp;#39;], age: 17 } console.</description>
     </item>
     
     <item>
@@ -1899,7 +1922,7 @@ An easy approach to fixing this issue is to do the following:
       <guid>/05-arrays-objects/array-review/adding-removing-items/shift/</guid>
       <description>.shift()  Removes the first element from an array and returns that removed element
  This method is a mutating method because it changes the original array
-  Example let fruits = [&amp;#34;Apple&amp;#34;, &amp;#34;Orange&amp;#34;, &amp;#34;Grapes&amp;#34;] fruits.shift() console.log(fruits) // Orange, Grapes  JS Bin on jsbin.com</description>
+  Example const fruits = [&amp;#34;Apple&amp;#34;, &amp;#34;Orange&amp;#34;, &amp;#34;Grapes&amp;#34;] fruits.shift() console.log(fruits) // Orange, Grapes  JS Bin on jsbin.com</description>
     </item>
     
     <item>
@@ -1917,7 +1940,7 @@ An easy approach to fixing this issue is to do the following:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/06-dom-and-jquery/jquery-manipulation/getting-setting-content/val/</guid>
-      <description>.val() Method  Method is mainly used to get or set the current value of the HTML form elements such as &amp;lt;input&amp;gt;, &amp;lt;select&amp;gt; and &amp;lt;textarea&amp;gt;  Example of Getting (Reading) values from form elements  To Get (Read) text of an element use .val() with nothing inside the parentheses  $(() =&amp;gt; { $(&amp;#34;#getName&amp;#34;).click(() =&amp;gt; { // read value of text field  const $name = $(&amp;#34;#name&amp;#34;).val() alert($name) }) $(&amp;#34;#getComment&amp;#34;).</description>
+      <description>.val() Method  Method is mainly used to get or set the current value of the HTML form elements such as &amp;lt;input&amp;gt;, &amp;lt;select&amp;gt; and &amp;lt;textarea&amp;gt;  Example of Getting (Reading) values from form elements  To Get (Read) text of an element use .val() with nothing inside the parentheses  $(() =&amp;gt; { $(&amp;#34;#getName&amp;#34;).click(() =&amp;gt; { // read value of text field  const name = $(&amp;#34;#name&amp;#34;).val() alert(name) }) $(&amp;#34;#getComment&amp;#34;).</description>
     </item>
     
     <item>
@@ -2035,7 +2058,7 @@ Complete Homework #3 - Rock, Paper, Scissors Application  You are tasked with fi
       <description>Object Methods  Methods are functions of an object
  Methods specify the actions of an object (i.e. what the action can do)
  Methods are called in the same way we call all other functions
-  Example let superHero = { &amp;#39;secret identity&amp;#39;: &amp;#39;Peter Parker&amp;#39;, name: &amp;#39;Spiderman&amp;#39;, powers: [&amp;#39;super strength&amp;#39;, &amp;#39;hyper awareness&amp;#39;, &amp;#39;agility&amp;#39;, &amp;#39;genius intellect&amp;#39;], age: 17, sayTagline: function() { // &amp;lt;- method  console.log(&amp;#34;Hey everyone it&amp;#39;s your friendly neighborhood Spiderman&amp;#34;) } } // call the the method, just as you would call any function  superHero.</description>
+  Example const superHero = { &amp;#39;secret identity&amp;#39;: &amp;#39;Peter Parker&amp;#39;, name: &amp;#39;Spiderman&amp;#39;, powers: [&amp;#39;super strength&amp;#39;, &amp;#39;hyper awareness&amp;#39;, &amp;#39;agility&amp;#39;, &amp;#39;genius intellect&amp;#39;], age: 17, sayTagline: function() { // &amp;lt;- method  console.log(&amp;#34;Hey everyone it&amp;#39;s your friendly neighborhood Spiderman&amp;#34;) } } // call the the method, just as you would call any function superHero.</description>
     </item>
     
     <item>
@@ -2064,7 +2087,7 @@ Complete Homework #3 - Rock, Paper, Scissors Application  You are tasked with fi
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/05-arrays-objects/array-review/updating-array-values/</guid>
-      <description>Updating Arrays Values  You can change a value in an array by referencing the value and then changing the value using an = (equal sign)  Example // declare a variable called newEditionMembers and use it to store // an array of names  let newEditionMembers = [&amp;#34;Ricky Bell&amp;#34;, &amp;#34;Michael Bivins&amp;#34;, &amp;#34;Bobby Brown&amp;#34;, &amp;#34;Ronnie DeVoe&amp;#34;, &amp;#34;Ralph Tresvant&amp;#34;] // We are going replace Bobby Brown with Johnny Gill // by referencing the 3rd element of the array by using index 2 // and then use assignment (just an equal sign) to change // the value to Johnny Gill  newEditionMembers[2] = &amp;#34;Johnny Gill&amp;#34;;  JS Bin on jsbin.</description>
+      <description>Updating Arrays Values  You can change a value in an array by referencing the value and then changing the value using an = (equal sign)  Example // declare a variable called newEditionMembers and use it to store // an array of names  const newEditionMembers = [&amp;#34;Ricky Bell&amp;#34;, &amp;#34;Michael Bivins&amp;#34;, &amp;#34;Bobby Brown&amp;#34;, &amp;#34;Ronnie DeVoe&amp;#34;, &amp;#34;Ralph Tresvant&amp;#34;] // We are going replace Bobby Brown with Johnny Gill // by referencing the 3rd element of the array by using index 2 // and then use assignment (just an equal sign) to change // the value to Johnny Gill  newEditionMembers[2] = &amp;#34;Johnny Gill&amp;#34;  JS Bin on jsbin.</description>
     </item>
     
     <item>
@@ -2135,7 +2158,7 @@ $ mkdir nursery_rhymes  Navigate into the nursery_rhymes directory using the cd 
       <guid>/05-arrays-objects/array-review/adding-removing-items/unshift/</guid>
       <description>.unshift()  Adds one or more elements to the beginning of an array and returns the new length of the array
  This method is a mutating method because it changes the original array
-  Example let fruits = [&amp;#34;Apple&amp;#34;, &amp;#34;Orange&amp;#34;, &amp;#34;Grapes&amp;#34;] fruits.unshift(&amp;#34;Peach&amp;#34;, &amp;#34;Mango&amp;#34;) console.log(fruits) // Peach, Mango, Apple, Orange, Grapes  JS Bin on jsbin.com</description>
+  Example const fruits = [&amp;#34;Apple&amp;#34;, &amp;#34;Orange&amp;#34;, &amp;#34;Grapes&amp;#34;] fruits.unshift(&amp;#34;Peach&amp;#34;, &amp;#34;Mango&amp;#34;) console.log(fruits) // Peach, Mango, Apple, Orange, Grapes  JS Bin on jsbin.com</description>
     </item>
     
     <item>
@@ -2270,7 +2293,7 @@ const getArea = (width, height) =&amp;gt; { const area = width * height return a
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/06-dom-and-jquery/jquery-manipulation/getting-setting-content/attr/</guid>
-      <description>.attr() Method  Method to either get the value of an element&amp;rsquo;s attribute or set one or more attributes for the selected element  Example of Getting (Reading) attributes from elements  To Get (Read) text of an element use .attr(attrName) with name of the attribute you want to receive a value for  $(() =&amp;gt; { $(&amp;#34;#getIdName&amp;#34;).click(() =&amp;gt; { // read class name of .box  const $idName = $(&amp;#34;.</description>
+      <description>.attr() Method  Method to either get the value of an element&amp;rsquo;s attribute or set one or more attributes for the selected element  Example of Getting (Reading) attributes from elements  To Get (Read) text of an element use .attr(attrName) with name of the attribute you want to receive a value for  $(() =&amp;gt; { $(&amp;#34;#getIdName&amp;#34;).click(() =&amp;gt; { // read class name of .box  const idName = $(&amp;#34;.</description>
     </item>
     
     <item>
@@ -2305,7 +2328,7 @@ const getArea = (width, height) =&amp;gt; { const area = width * height return a
       <guid>/05-arrays-objects/array-review/adding-removing-items/slice/</guid>
       <description>.slice()  Returns a shallow copy of a portion of an array into a new array object selected from begin to end (end not included) where begin and end represent the index of items in that array
  This is method is NOT a mutating method because the original array is not modified
-  Example let fruits = [&amp;#34;Peach&amp;#34;, &amp;#34;Mango&amp;#34;, &amp;#34;Apple&amp;#34;, &amp;#34;Orange&amp;#34;, &amp;#34;Grapes&amp;#34;, &amp;#34;Strawberries&amp;#34;] let myFavoriteFruits = fruits.slice(1, 4) console.</description>
+  Example const fruits = [&amp;#34;Peach&amp;#34;, &amp;#34;Mango&amp;#34;, &amp;#34;Apple&amp;#34;, &amp;#34;Orange&amp;#34;, &amp;#34;Grapes&amp;#34;, &amp;#34;Strawberries&amp;#34;] let myFavoriteFruits = fruits.slice(1, 4) console.</description>
     </item>
     
     <item>
@@ -2371,7 +2394,7 @@ Complete Homework #4 - Weather App using OpenWeather API  You are tasked with le
       <guid>/05-arrays-objects/objects/nested-objects/</guid>
       <description>Nested Methods  In non-trivial applications, data is often nested
  JavaScript allows use to traverse an nested object using either dot notation or bracket notation
-  Example let avengers = { headquarters: &amp;#34;Stark Tower&amp;#34;, members: [ { name: &amp;#39;Black Widow&amp;#39;, &amp;#39;secret identity&amp;#39;: &amp;#39;Natasha Romanov&amp;#39;, powers: [&amp;#34;elite martial artist&amp;#34;, &amp;#34;genius intellect&amp;#34;, &amp;#34;strategy&amp;#34;, &amp;#34;leadership&amp;#34;] }, { name: &amp;#39;Captain America&amp;#39;, &amp;#39;secret identity&amp;#39;: &amp;#39;Steve Rogers&amp;#39;, powers: [&amp;#34;super strength&amp;#34;, &amp;#34;leadership&amp;#34;] } ] } // access the first member of the Avengers  console.</description>
+  Example const avengers = { headquarters: &amp;#34;Stark Tower&amp;#34;, members: [ { name: &amp;#39;Black Widow&amp;#39;, &amp;#39;secret identity&amp;#39;: &amp;#39;Natasha Romanov&amp;#39;, powers: [&amp;#34;elite martial artist&amp;#34;, &amp;#34;genius intellect&amp;#34;, &amp;#34;strategy&amp;#34;, &amp;#34;leadership&amp;#34;] }, { name: &amp;#39;Captain America&amp;#39;, &amp;#39;secret identity&amp;#39;: &amp;#39;Steve Rogers&amp;#39;, powers: [&amp;#34;super strength&amp;#34;, &amp;#34;leadership&amp;#34;] } ] } // access the first member of the Avengers console.</description>
     </item>
     
     <item>
@@ -2410,12 +2433,12 @@ Complete Homework #4 - Weather App using OpenWeather API  You are tasked with le
     </item>
     
     <item>
-      <title>length() Property</title>
+      <title>length Property</title>
       <link>/05-arrays-objects/array-review/length-property/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/05-arrays-objects/array-review/length-property/</guid>
-      <description>length() property  Property of an Array that returns the number of elements in that array  Example let fruits = [&amp;#34;Peach&amp;#34;, &amp;#34;Mango&amp;#34;, &amp;#34;Apple&amp;#34;, &amp;#34;Orange&amp;#34;, &amp;#34;Grapes&amp;#34;, &amp;#34;Strawberries&amp;#34;, &amp;#34;Plum&amp;#34;] let numberOfFruits = fruits.length console.log(numberOfFruits) // 7  JS Bin on jsbin.com</description>
+      <description>length property  Property of an Array that returns the number of elements in that array  Example const fruits = [&amp;#34;Peach&amp;#34;, &amp;#34;Mango&amp;#34;, &amp;#34;Apple&amp;#34;, &amp;#34;Orange&amp;#34;, &amp;#34;Grapes&amp;#34;, &amp;#34;Strawberries&amp;#34;, &amp;#34;Plum&amp;#34;] const numberOfFruits = fruits.length console.log(numberOfFruits) // 7  JS Bin on jsbin.com</description>
     </item>
     
     <item>
@@ -2427,6 +2450,18 @@ Complete Homework #4 - Weather App using OpenWeather API  You are tasked with le
       <description>ternary Operator  Used as a shortcut for the if statement  condition ? expression that is run if condition is true : expression that is run if condition is false  Example const isLactoseIntolerant = true const milkType = isLactoseIntolerant ? &amp;#34;almond&amp;#34; : &amp;#34;dairy&amp;#34; console.log(milkType)  JS Bin on jsbin.com
 Exercise Rewrite the following if..else statement using a ternary operator:
 let yearOfBirth = 2001 if (yearOfBirth &amp;lt;= 2002) { console.</description>
+    </item>
+    
+    <item>
+      <title>Code Along: Rolling Dice jQuery</title>
+      <link>/06-dom-and-jquery/code-along-rolling-dice-jquery/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/06-dom-and-jquery/code-along-rolling-dice-jquery/</guid>
+      <description> Code Along: Rolling Dice jQuery  During this code along, we&amp;rsquo;ll convert the DOM manipulation logic in the Rolling Dice application from native JavaScript to jQuery
+ The starter code for this code along is hosted on Github, see the url below:
+ Code Along: Rolling Dice jQuery  Use the Assignment Submission Git Workflow (detailed here) to access and submit the assignment
+  </description>
     </item>
     
     <item>
@@ -2690,7 +2725,7 @@ HTML &amp;amp; CSS  Codecademy - HTML &amp;amp; CSS course
       <description>Other Iterators  There are many other built-in iterator methods, a complete list can be found on MDN’s Array iteration methods list
  As developer, you will be working with arrays of data on a constant basis; which means you&amp;rsquo;ll be visiting the documentation often to look up array methods you may not have used before
  Let&amp;rsquo;s get some practice &amp;ldquo;looking things up&amp;rdquo;
-  Exercise Visit the MDN Array Documenation and find the appropriate iterator method that will allow you to sort the list of words found in the words array in descending alphabetical order</description>
+  Exercise Visit the MDN Array Documentation and find the appropriate iterator method that will allow you to sort the list of words found in the words array in descending alphabetical order</description>
     </item>
     
     <item>

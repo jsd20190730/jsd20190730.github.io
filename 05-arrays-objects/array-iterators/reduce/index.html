@@ -12,21 +12,21 @@
     <title>.reduce() :: GA JavaScript</title>
 
     
-    <link href="/css/nucleus.css?1569444552" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1569444552" rel="stylesheet">
-    <link href="/css/hybrid.css?1569444552" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1569444552" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1569444552" rel="stylesheet">
-    <link href="/css/auto-complete.css?1569444552" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1569444552" rel="stylesheet">
-    <link href="/css/theme.css?1569444552" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1569444552" rel="stylesheet">
-    <link href="/css/syntax.css?1569444552" rel="stylesheet">
+    <link href="/css/nucleus.css?1569449463" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1569449463" rel="stylesheet">
+    <link href="/css/hybrid.css?1569449463" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1569449463" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1569449463" rel="stylesheet">
+    <link href="/css/auto-complete.css?1569449463" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1569449463" rel="stylesheet">
+    <link href="/css/theme.css?1569449463" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1569449463" rel="stylesheet">
+    <link href="/css/syntax.css?1569449463" rel="stylesheet">
     
-      <link href="/css/theme-blue.css?1569444552" rel="stylesheet">
+      <link href="/css/theme-blue.css?1569449463" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1569444552"></script>
+    <script src="/js/jquery-3.3.1.min.js?1569449463"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -89,14 +89,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1569444552"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1569444552"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1569449463"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1569449463"></script>
 <script type="text/javascript">
     
         var baseurl = "\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1569444552"></script>
+<script type="text/javascript" src="/js/search.js?1569449463"></script>
 
     
   </div>
@@ -1653,6 +1653,25 @@
  
   
     
+      <li data-nav-id="/05-arrays-objects/objectives/" title="Objectives" class="dd-item ">
+        <a href="/05-arrays-objects/objectives/">
+        Objectives
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
     <li data-nav-id="/05-arrays-objects/array-review/" title="Array Review" class="dd-item
         
         
@@ -1866,9 +1885,9 @@
  
   
     
-      <li data-nav-id="/05-arrays-objects/array-review/length-property/" title="length() Property" class="dd-item ">
+      <li data-nav-id="/05-arrays-objects/array-review/length-property/" title="length Property" class="dd-item ">
         <a href="/05-arrays-objects/array-review/length-property/">
-        length() Property
+        length Property
         
         </a>
     </li>
@@ -2260,6 +2279,25 @@
  
   
     
+      <li data-nav-id="/06-dom-and-jquery/objectives/" title="Objectives" class="dd-item ">
+        <a href="/06-dom-and-jquery/objectives/">
+        Objectives
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
       <li data-nav-id="/06-dom-and-jquery/dom-intro/" title="Document Object Model" class="dd-item ">
         <a href="/06-dom-and-jquery/dom-intro/">
         Document Object Model
@@ -2489,6 +2527,25 @@
         </ul>
       
     </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/06-dom-and-jquery/code-along-rolling-dice-jquery/" title="Code Along: Rolling Dice jQuery" class="dd-item ">
+        <a href="/06-dom-and-jquery/code-along-rolling-dice-jquery/">
+        Code Along: Rolling Dice jQuery
+        
+        </a>
+    </li>
+     
   
  
 
@@ -6885,21 +6942,25 @@
 <li><p><code>initialValue</code>: (optional) the value to use as the first argument to for the first iteration of <code>reduce()</code>; If no <code>initialValue</code> is supplied, the first element in the array will be used</p></li>
 </ul>
 
+<hr />
+
 <h3 id="syntax">Syntax</h3>
 
 <p>Using traditional (ES5) function syntax</p>
 
-<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="kd">let</span> <span class="nx">value</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">reduce</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">previousValue</span><span class="p">,</span> <span class="nx">item</span><span class="p">,</span> <span class="nx">index</span><span class="p">,</span> <span class="nx">array</span><span class="p">)</span> <span class="p">{</span>
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="k">const</span> <span class="nx">value</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">reduce</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">previousValue</span><span class="p">,</span> <span class="nx">item</span><span class="p">,</span> <span class="nx">index</span><span class="p">,</span> <span class="nx">array</span><span class="p">)</span> <span class="p">{</span>
   <span class="c1">// ...
 </span><span class="c1"></span><span class="p">},</span> <span class="p">[</span><span class="nx">initial</span><span class="p">]);</span>
 </code></pre></div>
 
 <p>Using arrow syntax (ES6)</p>
 
-<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="kd">let</span> <span class="nx">value</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">reduce</span><span class="p">((</span><span class="nx">previousValue</span><span class="p">,</span> <span class="nx">item</span><span class="p">,</span> <span class="nx">index</span><span class="p">,</span> <span class="nx">array</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="k">const</span> <span class="nx">value</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">reduce</span><span class="p">((</span><span class="nx">previousValue</span><span class="p">,</span> <span class="nx">item</span><span class="p">,</span> <span class="nx">index</span><span class="p">,</span> <span class="nx">array</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
   <span class="c1">// ...
 </span><span class="c1"></span><span class="p">},</span> <span class="p">[</span><span class="nx">initial</span><span class="p">]);</span>
 </code></pre></div>
+
+<hr />
 
 <h3 id="example">Example</h3>
 
@@ -6907,9 +6968,9 @@
 <li>Example where no <code>initialValue</code> is supplied</li>
 </ul>
 
-<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="kd">let</span> <span class="nx">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="k">const</span> <span class="nx">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
 
-<span class="kd">let</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">numbers</span><span class="p">.</span><span class="nx">reduce</span><span class="p">((</span><span class="nx">sum</span><span class="p">,</span> <span class="nx">currentNumber</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="nx">sum</span> <span class="o">+</span> <span class="nx">currentNumber</span><span class="p">)</span>
+<span class="k">const</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">numbers</span><span class="p">.</span><span class="nx">reduce</span><span class="p">((</span><span class="nx">sum</span><span class="p">,</span> <span class="nx">currentNumber</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="nx">sum</span> <span class="o">+</span> <span class="nx">currentNumber</span><span class="p">)</span>
 
 <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">)</span> <span class="c1">// 15
 </span></code></pre></div>
@@ -6920,14 +6981,16 @@
 <li>Example where we set the <code>initialValue</code> to 10</li>
 </ul>
 
-<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="kd">let</span> <span class="nx">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="k">const</span> <span class="nx">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
 
-<span class="kd">let</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">numbers</span><span class="p">.</span><span class="nx">reduce</span><span class="p">((</span><span class="nx">sum</span><span class="p">,</span> <span class="nx">currentNumber</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="nx">sum</span> <span class="o">+</span> <span class="nx">currentNumber</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+<span class="k">const</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">numbers</span><span class="p">.</span><span class="nx">reduce</span><span class="p">((</span><span class="nx">sum</span><span class="p">,</span> <span class="nx">currentNumber</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="nx">sum</span> <span class="o">+</span> <span class="nx">currentNumber</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
 
 <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">)</span> <span class="c1">// 25
 </span></code></pre></div>
 
 <p><a class="jsbin-embed" href="https://jsbin.com/jaqeqem/embed?js,console">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?4.1.7"></script></p>
+
+<hr />
 
 <h3 id="exercise">Exercise</h3>
 
@@ -8157,6 +8220,22 @@
 
                     
                     
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
                         
                     
                     
@@ -8619,6 +8698,22 @@
 
                     
                     
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
                         
                     
                     
@@ -8767,6 +8862,22 @@
                     
             
         
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
                     
             
         
@@ -11880,20 +11991,20 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1569444552"></script>
-    <script src="/js/perfect-scrollbar.min.js?1569444552"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1569444552"></script>
-    <script src="/js/jquery.sticky.js?1569444552"></script>
-    <script src="/js/featherlight.min.js?1569444552"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1569444552"></script>
-    <script src="/js/highlight.pack.js?1569444552"></script>
+    <script src="/js/clipboard.min.js?1569449463"></script>
+    <script src="/js/perfect-scrollbar.min.js?1569449463"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1569449463"></script>
+    <script src="/js/jquery.sticky.js?1569449463"></script>
+    <script src="/js/featherlight.min.js?1569449463"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1569449463"></script>
+    <script src="/js/highlight.pack.js?1569449463"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1569444552"></script>
-    <script src="/js/learn.js?1569444552"></script>
-    <script src="/js/hugo-learn.js?1569444552"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1569449463"></script>
+    <script src="/js/learn.js?1569449463"></script>
+    <script src="/js/hugo-learn.js?1569449463"></script>
 
-    <link href="/mermaid/mermaid.css?1569444552" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1569444552"></script>
+    <link href="/mermaid/mermaid.css?1569449463" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1569449463"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

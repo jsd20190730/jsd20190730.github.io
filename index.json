@@ -28,6 +28,20 @@
 	"content": "After this lesson, students will be able to:\n Use if/else conditionals to control program flow based on Boolean (true or false) tests\n Use switch/case conditionals to control program flow based on matching explicit values\n Use while and do/while loops\n Understand how loop iteration using for and forEach works\n  "
 },
 {
+	"uri": "/05-arrays-objects/objectives/",
+	"title": "Objectives",
+	"tags": [],
+	"description": "",
+	"content": " Gain deeper understanding of arrays and objects\n Understand the difference between loops and iterators\n Leverage the most commonly used iterators to efficiently access data\n  "
+},
+{
+	"uri": "/06-dom-and-jquery/objectives/",
+	"title": "Objectives",
+	"tags": [],
+	"description": "",
+	"content": " Understand the key differences between using Native JavaScript and jQuery for DOM manipulation\n Learn the most commonly used jQuery methods to manipulate the DOM\n  "
+},
+{
 	"uri": "/class-resources/office-hours/",
 	"title": "Office Hours",
 	"tags": [],
@@ -102,7 +116,7 @@
 	"title": "Creating Objects",
 	"tags": [],
 	"description": "",
-	"content": " Creating Objects  Data in an object is organized into key-value pairs\n A key is like a variable name that points to a location in memory that holds a value\n keys are strings, but when we have a key that does not have any special characters in it, JavaScript allows us to omit the quotation marks:\nlet superHero = { \u0026#39;secret identity\u0026#39;: \u0026#39;Peter Parker\u0026#39;, name: \u0026#39;Spiderman\u0026#39;, powers: [\u0026#39;super strength\u0026#39;, \u0026#39;hyper awareness\u0026#39;, \u0026#39;agility\u0026#39;, \u0026#39;genius intellect\u0026#39;], age: 17 }  values can be of any data type\n  "
+	"content": " Creating Objects  Data in an object is organized into key-value pairs\n A key is like a variable name that points to a location in memory that holds a value\n keys are strings, but when we have a key that does not have any special characters in it, JavaScript allows us to omit the quotation marks:\nconst superHero = { \u0026#39;secret identity\u0026#39;: \u0026#39;Peter Parker\u0026#39;, name: \u0026#39;Spiderman\u0026#39;, powers: [\u0026#39;super strength\u0026#39;, \u0026#39;hyper awareness\u0026#39;, \u0026#39;agility\u0026#39;, \u0026#39;genius intellect\u0026#39;], age: 17 }  values can be of any data type\n  "
 },
 {
 	"uri": "/06-dom-and-jquery/dom-intro/",
@@ -368,7 +382,7 @@
 	"title": ".change() Event",
 	"tags": [],
 	"description": "",
-	"content": " .change() Event  Attaches an event handler function to the \u0026lt;input\u0026gt;, \u0026lt;textarea\u0026gt; and \u0026lt;select\u0026gt; elements that is executed when its value changes  Example  The following example will display an alert message when you select any option in dropdown select box  $(\u0026#39;select\u0026#39;).change((event) =\u0026gt; { const $selectedOption = $(event.currentTarget).find(\u0026#39;:selected\u0026#39;).val() alert(`You have selected ${$selectedOption}`) })  JS Bin on jsbin.com\nWe\u0026rsquo;ll discuss currentTarget and the .find() method later in the course\n "
+	"content": " .change() Event  Attaches an event handler function to the \u0026lt;input\u0026gt;, \u0026lt;textarea\u0026gt; and \u0026lt;select\u0026gt; elements that is executed when its value changes  Example  The following example will display an alert message when you select any option in dropdown select box  $(\u0026#39;select\u0026#39;).change((event) =\u0026gt; { const selectedOption = $(event.currentTarget).find(\u0026#39;:selected\u0026#39;).val() alert(`You have selected ${$selectedOption}`) })  JS Bin on jsbin.com\nWe\u0026rsquo;ll discuss currentTarget and the .find() method later in the course\n "
 },
 {
 	"uri": "/06-dom-and-jquery/jquery-events/mouse-events/click/",
@@ -382,21 +396,21 @@
 	"title": ".css()",
 	"tags": [],
 	"description": "",
-	"content": " .css() Method  Method that provides a quick way to apply the styles directly to the HTML elements (i.e. inline styles) that haven\u0026rsquo;t been or can\u0026rsquo;t easily be defined in a stylesheet  Example of Getting (Reading) a css property from an element  To Get (Read) css properties of an element use css(cssPropertyName) with nothing inside the parentheses  $(() =\u0026gt; { $(\u0026#34;#readBorderProperties\u0026#34;).click(() =\u0026gt; { // read \u0026#34;border\u0026#34; css properties of box  const $borderProperties = $(\u0026#34;.box\u0026#34;).css(\u0026#34;border\u0026#34;) alert($borderProperties) }) })  JS Bin on jsbin.com\nExample of Setting (writing) css properties on an element  To Set (Write) text of an element use css({cssPropertyName: , cssPropertyValue }) with an object representing the new css properties inside the parentheses  $(() =\u0026gt; { $(\u0026#34;#setCssProperties\u0026#34;).click(() =\u0026gt; { // set new css properties on box  $(\u0026#34;.box\u0026#34;).css({ backgroundColor: \u0026#34;green\u0026#34;, border: \u0026#34;3px dashed black\u0026#34;, width: \u0026#34;200px\u0026#34; }) }) })  JS Bin on jsbin.com\n"
+	"content": " .css() Method  Method that provides a quick way to apply the styles directly to the HTML elements (i.e. inline styles) that haven\u0026rsquo;t been or can\u0026rsquo;t easily be defined in a stylesheet  Example of Getting (Reading) a css property from an element  To Get (Read) css properties of an element use css(cssPropertyName) with nothing inside the parentheses  $(() =\u0026gt; { $(\u0026#34;#readBorderProperties\u0026#34;).click(() =\u0026gt; { // read \u0026#34;border\u0026#34; css properties of box  const borderProperties = $(\u0026#34;.box\u0026#34;).css(\u0026#34;border\u0026#34;) alert(borderProperties) }) })  JS Bin on jsbin.com\nExample of Setting (writing) css properties on an element  To Set (Write) text of an element use css({cssPropertyName: , cssPropertyValue }) with an object representing the new css properties inside the parentheses  $(() =\u0026gt; { $(\u0026#34;#setCssProperties\u0026#34;).click(() =\u0026gt; { // set new css properties on box  $(\u0026#34;.box\u0026#34;).css({ backgroundColor: \u0026#34;green\u0026#34;, border: \u0026#34;3px dashed black\u0026#34;, width: \u0026#34;200px\u0026#34; }) }) })  JS Bin on jsbin.com\n"
 },
 {
 	"uri": "/05-arrays-objects/array-iterators/for-each/",
 	"title": ".forEach()",
 	"tags": [],
 	"description": "",
-	"content": " .forEach()  Method allows us to run a callback function for every element of the array\n The callback function for forEach provides the following:\n element - this current element from the array that is being evaluated\n index - this represents the current element\u0026rsquo;s index (or position in the array)\n   Example let chipmunks = [\u0026#34;alvin\u0026#34;, \u0026#34;simon\u0026#34;, \u0026#34;theodore\u0026#34;] chipmunks.forEach(function(element, index) { console.log(`${element}is at index ${index}`) })  JS Bin on jsbin.com\n"
+	"content": " .forEach()  Method allows us to run a callback function for every element of the array\n The callback function for forEach provides the following:\n element - this current element from the array that is being evaluated\n index - this represents the current element\u0026rsquo;s index (or position in the array)\n   Example const chipmunks = [\u0026#34;alvin\u0026#34;, \u0026#34;simon\u0026#34;, \u0026#34;theodore\u0026#34;] chipmunks.forEach(function(element, index) { console.log(`${element}is at index ${index}`) })  JS Bin on jsbin.com\n"
 },
 {
 	"uri": "/05-arrays-objects/array-review/adding-removing-items/push/",
 	"title": ".push()",
 	"tags": [],
 	"description": "",
-	"content": " .push()  Appends the element to the end of the array  Example let fruits = [\u0026#34;Apple\u0026#34;, \u0026#34;Orange\u0026#34;] fruits.push(\u0026#34;Pear\u0026#34;) console.log( fruits ) // Apple, Orange, Pear   Note that our fruits array has been changed by push(); this means that the push() method is a mutating method  JS Bin on jsbin.com\n"
+	"content": " .push()  Appends the element to the end of the array  Example const fruits = [\u0026#34;Apple\u0026#34;, \u0026#34;Orange\u0026#34;] fruits.push(\u0026#34;Pear\u0026#34;) console.log( fruits ) // Apple, Orange, Pear   Note that our fruits array has been changed by push(); this means that the push() method is a mutating method  JS Bin on jsbin.com\n"
 },
 {
 	"uri": "/06-dom-and-jquery/jquery-effects/show-hide/",
@@ -410,7 +424,7 @@
 	"title": ".text()",
 	"tags": [],
 	"description": "",
-	"content": " .text() Method  Method is either used to get (read) the combined text contents of the selected elements, including their descendants, or set (write) the text contents of the selected elements  Example of Getting (Reading) text  To Get (Read) text of an element use .text() with nothing inside the parentheses  $(() =\u0026gt; { $(\u0026#39;#readAll\u0026#39;).click(() =\u0026gt; { // read text from all p elements  const $allParagraphs = $(\u0026#34;p\u0026#34;).text() alert(`text from all paragraphs: ${$allParagraphs}`) }) $(\u0026#39;#readFirst\u0026#39;).click(() =\u0026gt; { // read text from only the 1st p element  const $firstParagraph = $(\u0026#34;p:first\u0026#34;).text() alert(`text from the 1st paragraph: ${$firstParagraph}`) }) })  JS Bin on jsbin.com\nExample of Setting (writing) text  To Set (Write) text of an element use .text(newText) with the new text inside the parentheses  $(\u0026#39;#convertAllWords\u0026#39;).click(() =\u0026gt; { // set text for all p elements to spanish translation  $(\u0026#34;.one\u0026#34;).text(\u0026#34;uno\u0026#34;) $(\u0026#34;.two\u0026#34;).text(\u0026#34;dos\u0026#34;) $(\u0026#34;.three\u0026#34;).text(\u0026#34;tres\u0026#34;) })  JS Bin on jsbin.com\n"
+	"content": " .text() Method  Method is either used to get (read) the combined text contents of the selected elements, including their descendants, or set (write) the text contents of the selected elements  Example of Getting (Reading) text  To Get (Read) text of an element use .text() with nothing inside the parentheses  $(() =\u0026gt; { $(\u0026#39;#readAll\u0026#39;).click(() =\u0026gt; { // read text from all p elements  const allParagraphs = $(\u0026#34;p\u0026#34;).text() alert(`text from all paragraphs: ${allParagraphs}`) }) $(\u0026#39;#readFirst\u0026#39;).click(() =\u0026gt; { // read text from only the 1st p element  const firstParagraph = $(\u0026#34;p:first\u0026#34;).text() alert(`text from the 1st paragraph: ${firstParagraph}`) }) })  JS Bin on jsbin.com\nExample of Setting (writing) text  To Set (Write) text of an element use .text(newText) with the new text inside the parentheses  $(\u0026#39;#convertAllWords\u0026#39;).click(() =\u0026gt; { // set text for all p elements to spanish translation  $(\u0026#34;.one\u0026#34;).text(\u0026#34;uno\u0026#34;) $(\u0026#34;.two\u0026#34;).text(\u0026#34;dos\u0026#34;) $(\u0026#34;.three\u0026#34;).text(\u0026#34;tres\u0026#34;) })  JS Bin on jsbin.com\n"
 },
 {
 	"uri": "/09-http-and-apis/ajax/ajax-request-jquery/",
@@ -438,7 +452,7 @@
 	"title": "Array Review",
 	"tags": [],
 	"description": "",
-	"content": " Array Review  Creating Arrays   Accessing Array Values   Updating Array Values   Adding \u0026amp; Removing Items   length() Property   "
+	"content": " Array Review  Creating Arrays   Accessing Array Values   Updating Array Values   Adding \u0026amp; Removing Items   length Property   "
 },
 {
 	"uri": "/14-intro-to-crud-and-firebase/firebase/benefits/",
@@ -501,7 +515,7 @@
 	"title": "Creating Arrays",
 	"tags": [],
 	"description": "",
-	"content": " Creating Arrays  You can create that doesn\u0026rsquo;t initially contain any values, this is called an empty array\n An array can also be created with initial values\n Square brackets are a means of identifying if a variable is an array\n  Example // declare a variable as an empty array let numbers = [] // or you can declare an array with initial values let streets = [\u0026#39;Broadway\u0026#39;, \u0026#39;Houston\u0026#39;, \u0026#39;Grand\u0026#39;]  JS Bin on jsbin.com\n"
+	"content": " Creating Arrays  You can create that doesn\u0026rsquo;t initially contain any values, this is called an empty array\n An array can also be created with initial values\n Square brackets are a means of identifying if a variable is an array\n  Example // declare a variable as an empty array const numbers = [] // or you can declare an array with initial values const streets = [\u0026#39;Broadway\u0026#39;, \u0026#39;Houston\u0026#39;, \u0026#39;Grand\u0026#39;]  JS Bin on jsbin.com\n"
 },
 {
 	"uri": "/10-asynchronous-js-and-promises/promises/creating-promises/",
@@ -543,7 +557,7 @@
 	"title": "Dot Notation",
 	"tags": [],
 	"description": "",
-	"content": " Dot Notation  Dot notation allows us to access properties with a .  Example let superHero = { \u0026#39;secret identity\u0026#39;: \u0026#39;Peter Parker\u0026#39;, name: \u0026#39;Spiderman\u0026#39;, powers: [\u0026#39;super strength\u0026#39;, \u0026#39;hyper awareness\u0026#39;, \u0026#39;agility\u0026#39;, \u0026#39;genius intellect\u0026#39;], age: 17 } console.log(superHero.name) console.log(superHero.powers)  JS Bin on jsbin.com\n"
+	"content": " Dot Notation  Dot notation allows us to access properties with a .  Example const superHero = { \u0026#39;secret identity\u0026#39;: \u0026#39;Peter Parker\u0026#39;, name: \u0026#39;Spiderman\u0026#39;, powers: [\u0026#39;super strength\u0026#39;, \u0026#39;hyper awareness\u0026#39;, \u0026#39;agility\u0026#39;, \u0026#39;genius intellect\u0026#39;], age: 17 } console.log(superHero.name) console.log(superHero.powers)  JS Bin on jsbin.com\n"
 },
 {
 	"uri": "/16-intro-to-express/express/",
@@ -963,21 +977,21 @@
 	"title": ".html()",
 	"tags": [],
 	"description": "",
-	"content": " .html() Method  Method is used to get or set the HTML contents of the elements  Example of Getting (Reading) Html  To Get (Read) text of an element use .html() with nothing inside the parentheses\n When using .html() to get html contents, the html contents of the only the first matched element will be returned; see the docs for more info\n  $(() =\u0026gt; { $(\u0026#39;#readHtmlOfParagraph\u0026#39;).click(() =\u0026gt; { // get html of the first matched p element  const $htmlOfParagraph = $(\u0026#34;p\u0026#34;).html() alert($htmlOfParagraph) }) $(\u0026#39;#readHtmlOfContainer\u0026#39;).click(() =\u0026gt; { // get html of container  const $htmlOfContainer = $(\u0026#34;.container\u0026#34;).html() alert($htmlOfContainer) }) })  JS Bin on jsbin.com\nExample of Setting (writing) Html  To Set (Write) text of an element use .html(newHtml) with the new Html inside the parentheses  $(() =\u0026gt; { $(\u0026#39;#addNewNumber\u0026#39;).click(() =\u0026gt; { // create a new html element  const $htmlOfNewNumber = $(\u0026#34;\u0026lt;p class=\u0026#39;four\u0026#39;\u0026gt; \u0026lt;span\u0026gt;Four\u0026lt;/span\u0026gt;\u0026lt;/p\u0026gt;\u0026#34;) // add new html element to .numbers div  $(\u0026#39;.numbers\u0026#39;).html($htmlOfNewNumber) }) })  JS Bin on jsbin.com\n Notice how the previous paragraphs (\u0026lt;p\u0026gt;one\u0026lt;/p\u0026gt;, \u0026lt;p\u0026gt;two\u0026lt;/p\u0026gt; and \u0026lt;p\u0026gt;three\u0026lt;/p\u0026gt;) were replaced with \u0026lt;p\u0026gt;four\u0026lt;/p\u0026gt;, using .html(newHtml) will replace the children of the targeted element (in our case the targeted element was .container)\n Later in this lesson, we\u0026rsquo;ll see how we can add a new element to a list without replacing the exiting elements\n  "
+	"content": " .html() Method  Method is used to get or set the HTML contents of the elements  Example of Getting (Reading) Html  To Get (Read) text of an element use .html() with nothing inside the parentheses\n When using .html() to get html contents, the html contents of the only the first matched element will be returned; see the docs for more info\n  $(() =\u0026gt; { $(\u0026#39;#readHtmlOfParagraph\u0026#39;).click(() =\u0026gt; { // get html of the first matched p element  const htmlOfParagraph = $(\u0026#34;p\u0026#34;).html() alert(htmlOfParagraph) }) $(\u0026#39;#readHtmlOfContainer\u0026#39;).click(() =\u0026gt; { // get html of container  const htmlOfContainer = $(\u0026#34;.container\u0026#34;).html() alert(htmlOfContainer) }) })  JS Bin on jsbin.com\nExample of Setting (writing) Html  To Set (Write) text of an element use .html(newHtml) with the new Html inside the parentheses  $(() =\u0026gt; { $(\u0026#39;#addNewNumber\u0026#39;).click(() =\u0026gt; { // create a new html element  const $htmlOfNewNumber = $(\u0026#34;\u0026lt;p class=\u0026#39;four\u0026#39;\u0026gt; \u0026lt;span\u0026gt;Four\u0026lt;/span\u0026gt;\u0026lt;/p\u0026gt;\u0026#34;) // add new html element to .numbers div  $(\u0026#39;.numbers\u0026#39;).html($htmlOfNewNumber) }) })  JS Bin on jsbin.com\n Notice how the previous paragraphs (\u0026lt;p\u0026gt;one\u0026lt;/p\u0026gt;, \u0026lt;p\u0026gt;two\u0026lt;/p\u0026gt; and \u0026lt;p\u0026gt;three\u0026lt;/p\u0026gt;) were replaced with \u0026lt;p\u0026gt;four\u0026lt;/p\u0026gt;, using .html(newHtml) will replace the children of the targeted element (in our case the targeted element was .container)\n Later in this lesson, we\u0026rsquo;ll see how we can add a new element to a list without replacing the exiting elements\n  "
 },
 {
 	"uri": "/05-arrays-objects/array-iterators/map/",
 	"title": ".map()",
 	"tags": [],
 	"description": "",
-	"content": " .map()  Calls a function for each element of the array and returns a new array of results\n .map() is one of the most useful and used iterator methods\n .map() is does NOT mutate the original array\n The callback function for .map() accepts the following parameters:\n currentValue: (required) current element being processed in the array.\n index: (optional) index of the current element being processed in the array\n array: (optional) the array map was called upon.\n   Syntax Using traditional (ES5) function syntax\nlet result = arr.map(function(item, index, array) { // returns the new value instead of item })  Using arrow syntax (ES6)\nlet result = arr.map((item, index, array) =\u0026gt; { // returns the new value instead of item })  Example let numbers = [1, 2, 3, 4, 5 ] let numbersSquared = numbers.map( number =\u0026gt; number**2 ) console.log(numbersSquared) // [2, 4, 9, 16, 25]  console.log(numbers) // [1, 2, 3, 4, 5 ]  JS Bin on jsbin.com\nExercise  Use .map() to downcase all the words in loudWords. Save the returned values to a variable declared with const called lowerCaseWords;  JS Bin on jsbin.com\n"
+	"content": " .map()  Calls a function for each element of the array and returns a new array of results\n .map() is one of the most useful and used iterator methods\n .map() is does NOT mutate the original array\n The callback function for .map() accepts the following parameters:\n currentValue: (required) current element being processed in the array.\n index: (optional) index of the current element being processed in the array\n array: (optional) the array map was called upon.\n   Syntax Using traditional (ES5) function syntax\nconst result = arr.map(function(item, index, array) { // returns the new value instead of item })  Using arrow syntax (ES6)\nconst result = arr.map((item, index, array) =\u0026gt; { // returns the new value instead of item })  Example const numbers = [1, 2, 3, 4, 5 ] const numbersSquared = numbers.map( number =\u0026gt; number**2 ) console.log(numbersSquared) // [2, 4, 9, 16, 25]  console.log(numbers) // [1, 2, 3, 4, 5 ]  JS Bin on jsbin.com\nExercise  Use .map() to downcase all the words in loudWords. Save the returned values to a variable declared with const called lowerCaseWords;  JS Bin on jsbin.com\n"
 },
 {
 	"uri": "/05-arrays-objects/array-review/adding-removing-items/pop/",
 	"title": ".pop()",
 	"tags": [],
 	"description": "",
-	"content": " .pop()  Extracts the last element of the array and returns it\n Like pop(), push() is also a mutating method because it changes the value of the original array\n  Example let fruits = [\u0026#34;Apple\u0026#34;, \u0026#34;Orange\u0026#34;, \u0026#34;Grapes\u0026#34;] fruits.pop() console.log(fruits) // Apple, Orange  JS Bin on jsbin.com\n"
+	"content": " .pop()  Extracts the last element of the array and returns it\n Like pop(), push() is also a mutating method because it changes the value of the original array\n  Example const fruits = [\u0026#34;Apple\u0026#34;, \u0026#34;Orange\u0026#34;, \u0026#34;Grapes\u0026#34;] fruits.pop() console.log(fruits) // Apple, Orange  JS Bin on jsbin.com\n"
 },
 {
 	"uri": "/06-dom-and-jquery/jquery-manipulation/inserting-removing-content/prepend/",
@@ -998,7 +1012,7 @@
 	"title": ".submit() Event",
 	"tags": [],
 	"description": "",
-	"content": " .submit() Event  Attaches an event handler function to \u0026lt;form\u0026gt; elements that is executed when the user is attempts to submit a form  Example $(() =\u0026gt; { // listen for a .submit() event on this form  $(\u0026#39;form\u0026#39;).submit((event) =\u0026gt; { // prevent default behavior of forms  event.preventDefault() // read data from text field  const $name = $(\u0026#39;input\u0026#39;).val() if ($name === \u0026#39;\u0026#39;) { alert(\u0026#39;Please enter a name\u0026#39;) } else { alert(`Hello ${$name}!`) } }) })  JS Bin on jsbin.com\n"
+	"content": " .submit() Event  Attaches an event handler function to \u0026lt;form\u0026gt; elements that is executed when the user is attempts to submit a form  Example $(() =\u0026gt; { // listen for a .submit() event on this form  $(\u0026#39;form\u0026#39;).submit((event) =\u0026gt; { // prevent default behavior of forms  event.preventDefault() // read data from text field  const name = $(\u0026#39;input\u0026#39;).val() if (name === \u0026#39;\u0026#39;) { alert(\u0026#39;Please enter a name\u0026#39;) } else { alert(`Hello ${name}!`) } }) })  JS Bin on jsbin.com\n"
 },
 {
 	"uri": "/09-http-and-apis/ajax/",
@@ -1012,7 +1026,7 @@
 	"title": "Accessing Array Values",
 	"tags": [],
 	"description": "",
-	"content": " Accessing Arrays Values  Values in an array are accessed as if they are in a numbered list\n Arrays are zero based meaning the 1st “value” in an array is at position (index) 0, the 2nd element is at position 1, and so on\n You access the value of an element in the array by passing the index of the item in square brackets\n  Example  You can access a value of an array by referencing its index (i.e. its order within the array)  // declare a variable called chipmunks and use it to store // an array of names let chipmunks = [\u0026#34;Alvin\u0026#34;, \u0026#34;Simon\u0026#34;, \u0026#34;Theodore\u0026#34;]; // reference the first value in the array // here we pass in a zero, since that represents the first // element (value) in an array  let bandMember = chipmunks[0] //\u0026gt; the value stored in bandMember is \u0026#34;Alvin\u0026#34;  JS Bin on jsbin.com\n"
+	"content": " Accessing Arrays Values  Values in an array are accessed as if they are in a numbered list\n Arrays are zero based meaning the 1st “value” in an array is at position (index) 0, the 2nd element is at position 1, and so on\n You access the value of an element in the array by passing the index of the item in square brackets\n  Example  You can access a value of an array by referencing its index (i.e. its order within the array)  // declare a variable called chipmunks and use it to store // an array of names const chipmunks = [\u0026#34;Alvin\u0026#34;, \u0026#34;Simon\u0026#34;, \u0026#34;Theodore\u0026#34;] // reference the first value in the array // here we pass in a zero, since that represents the first // element (value) in an array  const bandMember = chipmunks[0] //\u0026gt; the value stored in bandMember is \u0026#34;Alvin\u0026#34;  JS Bin on jsbin.com\n"
 },
 {
 	"uri": "/05-arrays-objects/array-iterators/",
@@ -1033,14 +1047,14 @@
 	"title": "Assigning Properties",
 	"tags": [],
 	"description": "",
-	"content": " Assigning Properties  We can use either dot notation, or bracket notation and the assignment operator, = to add new key-value pairs to an object or change an existing property  Example let superHero = { \u0026#39;secret identity\u0026#39;: \u0026#39;Peter Parker\u0026#39;, name: \u0026#39;Spiderman\u0026#39;, powers: [\u0026#39;super strength\u0026#39;, \u0026#39;hyper awareness\u0026#39;, \u0026#39;agility\u0026#39;, \u0026#39;genius intellect\u0026#39;], age: 17 } // update existing properties  superHero.powers.push(\u0026#39;endurance\u0026#39;) superHero.age = 18 // add a new property  superHero.homeCity = \u0026#39;New York City\u0026#39; console.log(superHero)  JS Bin on jsbin.com\n"
+	"content": " Assigning Properties  We can use either dot notation, or bracket notation and the assignment operator, = to add new key-value pairs to an object or change an existing property  Example const superHero = { \u0026#39;secret identity\u0026#39;: \u0026#39;Peter Parker\u0026#39;, name: \u0026#39;Spiderman\u0026#39;, powers: [\u0026#39;super strength\u0026#39;, \u0026#39;hyper awareness\u0026#39;, \u0026#39;agility\u0026#39;, \u0026#39;genius intellect\u0026#39;], age: 17 } // update existing properties superHero.powers.push(\u0026#39;endurance\u0026#39;) superHero.age = 18 // add a new property superHero.homeCity = \u0026#39;New York City\u0026#39; console.log(superHero)  JS Bin on jsbin.com\n"
 },
 {
 	"uri": "/05-arrays-objects/objects/accessing-properties/bracket-notation/",
 	"title": "Bracket Notation",
 	"tags": [],
 	"description": "",
-	"content": " Bracket Notation  Bracket notation is another way to to access a key’s value is by using bracket notation, [ ]\n To use bracket notation to access an object’s property, we pass in the property name (key) as a string\nsuperHero['secret identity']`\n We must use bracket notation when accessing keys that have numbers, spaces, or special characters in them\n Remember, object keys are always strings\n  Example let superHero = { \u0026#39;secret identity\u0026#39;: \u0026#39;Peter Parker\u0026#39;, name: \u0026#39;Spiderman\u0026#39;, powers: [\u0026#39;super strength\u0026#39;, \u0026#39;hyper awareness\u0026#39;, \u0026#39;agility\u0026#39;, \u0026#39;genius intellect\u0026#39;], age: 17 } console.log(superHero[\u0026#34;secret identity\u0026#34;]) console.log(superHero[\u0026#34;name\u0026#34;])  JS Bin on jsbin.com\nUsing variables to access properties  Bracket notation also allows us to use a variable inside the brackets to select the keys of an object  Example let superHero = { \u0026#39;secret identity\u0026#39;: \u0026#39;Peter Parker\u0026#39;, name: \u0026#39;Spiderman\u0026#39;, powers: [\u0026#39;super strength\u0026#39;, \u0026#39;hyper awareness\u0026#39;, \u0026#39;agility\u0026#39;, \u0026#39;genius intellect\u0026#39;], age: 17 } let attribute = \u0026#34;name\u0026#34; // use the \u0026#39;attribute\u0026#39; variable to access a property in superHero  let attributeValue = superHero[attribute] console.log(superHero[attribute]) // This is the result of trying the same thing using dot notation  console.log(superHero.attribute) // undefined  JS Bin on jsbin.com\n"
+	"content": " Bracket Notation  Bracket notation is another way to to access a key’s value is by using bracket notation, [ ]\n To use bracket notation to access an object’s property, we pass in the property name (key) as a string\nsuperHero['secret identity']`\n We must use bracket notation when accessing keys that have numbers, spaces, or special characters in them\n Remember, object keys are always strings\n  Example const superHero = { \u0026#39;secret identity\u0026#39;: \u0026#39;Peter Parker\u0026#39;, name: \u0026#39;Spiderman\u0026#39;, powers: [\u0026#39;super strength\u0026#39;, \u0026#39;hyper awareness\u0026#39;, \u0026#39;agility\u0026#39;, \u0026#39;genius intellect\u0026#39;], age: 17 } console.log(superHero[\u0026#34;secret identity\u0026#34;]) console.log(superHero[\u0026#34;name\u0026#34;])  JS Bin on jsbin.com\nUsing variables to access properties  Bracket notation also allows us to use a variable inside the brackets to select the keys of an object  Example const superHero = { \u0026#39;secret identity\u0026#39;: \u0026#39;Peter Parker\u0026#39;, name: \u0026#39;Spiderman\u0026#39;, powers: [\u0026#39;super strength\u0026#39;, \u0026#39;hyper awareness\u0026#39;, \u0026#39;agility\u0026#39;, \u0026#39;genius intellect\u0026#39;], age: 17 } const attribute = \u0026#34;name\u0026#34; // use the \u0026#39;attribute\u0026#39; variable to access a property in superHero const attributeValue = superHero[attribute] console.log(superHero[attribute]) // This is the result of trying the same thing using dot notation console.log(superHero.attribute) // undefined  JS Bin on jsbin.com\n"
 },
 {
 	"uri": "/16-intro-to-express/code-along-express-tmdb-app/",
@@ -1369,7 +1383,7 @@
 	"title": ".find()",
 	"tags": [],
 	"description": "",
-	"content": " .find()  Returns the value of the first element in the array that satisfies the provided testing function\n undefined is returned if no element satisfies testing function\n The callback function for .find() accepts the following parameters:\n element: (required) current element being processed in the array.\n index: (optional) index of the current element being processed in the array\n array: (optional) the array map was called upon\n  .find() only returns a single value and does not return an array\n  Syntax Using traditional (ES5) function syntax\nlet result = arr.find(function(item, index, array) { // if true is returned, item is returned and iteration is stopped  // for falsy scenario returns undefined })  Using arrow syntax (ES6)\nlet result = arr.find((item, index, array) =\u0026gt; { // if true is returned, item is returned and iteration is stopped  // for falsy scenario returns undefined })  Example let numbers = [5, 3, 13, 4, 11 ] let greaterThan5 = numbers.find( number =\u0026gt; number \u0026gt; 5 ) console.log(greaterThan5) // 13  JS Bin on jsbin.com\nExercise  Use .find() to return the first word that has more than 6 characters in the words array. Save the returned values to a variable declared with const called longWord  JS Bin on jsbin.com\n"
+	"content": " .find()  Returns the value of the first element in the array that satisfies the provided testing function\n undefined is returned if no element satisfies testing function\n The callback function for .find() accepts the following parameters:\n element: (required) current element being processed in the array.\n index: (optional) index of the current element being processed in the array\n array: (optional) the array map was called upon\n  .find() only returns a single value and does not return an array\n  Syntax Using traditional (ES5) function syntax\nconst result = arr.find(function(item, index, array) { // if true is returned, item is returned and iteration is stopped  // for falsy scenario returns undefined })  Using arrow syntax (ES6)\nconst result = arr.find((item, index, array) =\u0026gt; { // if true is returned, item is returned and iteration is stopped  // for falsy scenario returns undefined })  Example const numbers = [5, 3, 13, 4, 11 ] const greaterThan5 = numbers.find( number =\u0026gt; number \u0026gt; 5 ) console.log(greaterThan5) // 13  JS Bin on jsbin.com\nExercise  Use .find() to return the first word that has more than 6 characters in the words array. Save the returned values to a variable declared with const called longWord  JS Bin on jsbin.com\n"
 },
 {
 	"uri": "/06-dom-and-jquery/jquery-events/mouse-events/hover/",
@@ -1390,7 +1404,7 @@
 	"title": ".shift()",
 	"tags": [],
 	"description": "",
-	"content": " .shift()  Removes the first element from an array and returns that removed element\n This method is a mutating method because it changes the original array\n  Example let fruits = [\u0026#34;Apple\u0026#34;, \u0026#34;Orange\u0026#34;, \u0026#34;Grapes\u0026#34;] fruits.shift() console.log(fruits) // Orange, Grapes  JS Bin on jsbin.com\n"
+	"content": " .shift()  Removes the first element from an array and returns that removed element\n This method is a mutating method because it changes the original array\n  Example const fruits = [\u0026#34;Apple\u0026#34;, \u0026#34;Orange\u0026#34;, \u0026#34;Grapes\u0026#34;] fruits.shift() console.log(fruits) // Orange, Grapes  JS Bin on jsbin.com\n"
 },
 {
 	"uri": "/06-dom-and-jquery/jquery-effects/slide-toggle/",
@@ -1404,7 +1418,7 @@
 	"title": ".val()",
 	"tags": [],
 	"description": "",
-	"content": " .val() Method  Method is mainly used to get or set the current value of the HTML form elements such as \u0026lt;input\u0026gt;, \u0026lt;select\u0026gt; and \u0026lt;textarea\u0026gt;  Example of Getting (Reading) values from form elements  To Get (Read) text of an element use .val() with nothing inside the parentheses  $(() =\u0026gt; { $(\u0026#34;#getName\u0026#34;).click(() =\u0026gt; { // read value of text field  const $name = $(\u0026#34;#name\u0026#34;).val() alert($name) }) $(\u0026#34;#getComment\u0026#34;).click(() =\u0026gt; { // read value of the text area  const $comment = $(\u0026#34;#comment\u0026#34;).val() alert($comment) }) $(\u0026#34;#getCity\u0026#34;).click(() =\u0026gt; { // read value from select dropdown  const $city = $(\u0026#34;#city\u0026#34;).val() alert($city) }) })  JS Bin on jsbin.com\nExample of Setting (writing) values to form elements  To Set (Write) text of an element use .val(newVal) with the new value inside the parentheses  $(() =\u0026gt; { $(\u0026#34;#setName\u0026#34;).click(() =\u0026gt; { // set value of text field  $(\u0026#34;#name\u0026#34;).val(\u0026#34;Jill Scott\u0026#34;) }) $(\u0026#34;#setComment\u0026#34;).click(() =\u0026gt; { // set value of the text area  $(\u0026#34;#comment\u0026#34;).val(\u0026#34;She\u0026#39;s awesome!\u0026#34;) }) $(\u0026#34;#setCity\u0026#34;).click(() =\u0026gt; { // set value of select dropdown  $(\u0026#34;#city\u0026#34;).val(\u0026#34;Philadelphia\u0026#34;) }) })  JS Bin on jsbin.com\n"
+	"content": " .val() Method  Method is mainly used to get or set the current value of the HTML form elements such as \u0026lt;input\u0026gt;, \u0026lt;select\u0026gt; and \u0026lt;textarea\u0026gt;  Example of Getting (Reading) values from form elements  To Get (Read) text of an element use .val() with nothing inside the parentheses  $(() =\u0026gt; { $(\u0026#34;#getName\u0026#34;).click(() =\u0026gt; { // read value of text field  const name = $(\u0026#34;#name\u0026#34;).val() alert(name) }) $(\u0026#34;#getComment\u0026#34;).click(() =\u0026gt; { // read value of the text area  const comment = $(\u0026#34;#comment\u0026#34;).val() alert(comment) }) $(\u0026#34;#getCity\u0026#34;).click(() =\u0026gt; { // read value from select dropdown  const city = $(\u0026#34;#city\u0026#34;).val() alert(city) }) })  JS Bin on jsbin.com\nExample of Setting (writing) values to form elements  To Set (Write) text of an element use .val(newVal) with the new value inside the parentheses  $(() =\u0026gt; { $(\u0026#34;#setName\u0026#34;).click(() =\u0026gt; { // set value of text field  $(\u0026#34;#name\u0026#34;).val(\u0026#34;Jill Scott\u0026#34;) }) $(\u0026#34;#setComment\u0026#34;).click(() =\u0026gt; { // set value of the text area  $(\u0026#34;#comment\u0026#34;).val(\u0026#34;She\u0026#39;s awesome!\u0026#34;) }) $(\u0026#34;#setCity\u0026#34;).click(() =\u0026gt; { // set value of select dropdown  $(\u0026#34;#city\u0026#34;).val(\u0026#34;Philadelphia\u0026#34;) }) })  JS Bin on jsbin.com\n"
 },
 {
 	"uri": "/06-dom-and-jquery/jquery-manipulation/css-style-manipulation/",
@@ -1488,14 +1502,14 @@
 	"title": "Methods",
 	"tags": [],
 	"description": "",
-	"content": " Object Methods  Methods are functions of an object\n Methods specify the actions of an object (i.e. what the action can do)\n Methods are called in the same way we call all other functions\n  Example let superHero = { \u0026#39;secret identity\u0026#39;: \u0026#39;Peter Parker\u0026#39;, name: \u0026#39;Spiderman\u0026#39;, powers: [\u0026#39;super strength\u0026#39;, \u0026#39;hyper awareness\u0026#39;, \u0026#39;agility\u0026#39;, \u0026#39;genius intellect\u0026#39;], age: 17, sayTagline: function() { // \u0026lt;- method  console.log(\u0026#34;Hey everyone it\u0026#39;s your friendly neighborhood Spiderman\u0026#34;) } } // call the the method, just as you would call any function  superHero.sayTagline()  JS Bin on jsbin.com\nExercise Create add a method to our superVillain object with the key named sayCatchPhrase, the method should print out the following message to the console \u0026ldquo;I am inevitable\u0026rdquo;\nJS Bin on jsbin.com\n"
+	"content": " Object Methods  Methods are functions of an object\n Methods specify the actions of an object (i.e. what the action can do)\n Methods are called in the same way we call all other functions\n  Example const superHero = { \u0026#39;secret identity\u0026#39;: \u0026#39;Peter Parker\u0026#39;, name: \u0026#39;Spiderman\u0026#39;, powers: [\u0026#39;super strength\u0026#39;, \u0026#39;hyper awareness\u0026#39;, \u0026#39;agility\u0026#39;, \u0026#39;genius intellect\u0026#39;], age: 17, sayTagline: function() { // \u0026lt;- method  console.log(\u0026#34;Hey everyone it\u0026#39;s your friendly neighborhood Spiderman\u0026#34;) } } // call the the method, just as you would call any function superHero.sayTagline()  JS Bin on jsbin.com\nExercise Create add a method to our superVillain object with the key named sayCatchPhrase, the method should print out the following message to the console \u0026ldquo;I am inevitable\u0026rdquo;\nJS Bin on jsbin.com\n"
 },
 {
 	"uri": "/05-arrays-objects/objects/",
 	"title": "Objects",
 	"tags": [],
 	"description": "",
-	"content": " Objects  Objects are used to represent real world objects in programming\n Within an object, variables are known as properties and functions are known as methods\n Curly braces are a means of identifying if a variable is an object\n// create an object that represents a dog  let myDog = { name: \u0026#34;Fido\u0026#34;, age: 4, speak: function() { console.log(\u0026#39;Woof woof\u0026#39;) } }  Objects are organized in Key / Value pairs, in the example above: name is a key and \u0026quot;Fido\u0026quot; is the value, the pair together is referred to as the property\n  Details  Creating Objects   Accessing Properties   Assigning Properties   Methods   Nested Objects   "
+	"content": " Objects  Objects are used to represent real world objects in programming\n Within an object, variables are known as properties and functions are known as methods\n Curly braces are a means of identifying if a variable is an object\n// create an object that represents a dog  const myDog = { name: \u0026#34;Fido\u0026#34;, age: 4, speak: function() { console.log(\u0026#39;Woof woof\u0026#39;) } }  Objects are organized in Key / Value pairs, in the example above: name is a key and \u0026quot;Fido\u0026quot; is the value, the pair together is referred to as the property\n  Details  Creating Objects   Accessing Properties   Assigning Properties   Methods   Nested Objects   "
 },
 {
 	"uri": "/06-dom-and-jquery/jquery-events/other-events/",
@@ -1516,7 +1530,7 @@
 	"title": "Updating Array Values",
 	"tags": [],
 	"description": "",
-	"content": " Updating Arrays Values  You can change a value in an array by referencing the value and then changing the value using an = (equal sign)  Example // declare a variable called newEditionMembers and use it to store // an array of names  let newEditionMembers = [\u0026#34;Ricky Bell\u0026#34;, \u0026#34;Michael Bivins\u0026#34;, \u0026#34;Bobby Brown\u0026#34;, \u0026#34;Ronnie DeVoe\u0026#34;, \u0026#34;Ralph Tresvant\u0026#34;] // We are going replace Bobby Brown with Johnny Gill // by referencing the 3rd element of the array by using index 2 // and then use assignment (just an equal sign) to change // the value to Johnny Gill  newEditionMembers[2] = \u0026#34;Johnny Gill\u0026#34;;  JS Bin on jsbin.com\n"
+	"content": " Updating Arrays Values  You can change a value in an array by referencing the value and then changing the value using an = (equal sign)  Example // declare a variable called newEditionMembers and use it to store // an array of names  const newEditionMembers = [\u0026#34;Ricky Bell\u0026#34;, \u0026#34;Michael Bivins\u0026#34;, \u0026#34;Bobby Brown\u0026#34;, \u0026#34;Ronnie DeVoe\u0026#34;, \u0026#34;Ralph Tresvant\u0026#34;] // We are going replace Bobby Brown with Johnny Gill // by referencing the 3rd element of the array by using index 2 // and then use assignment (just an equal sign) to change // the value to Johnny Gill  newEditionMembers[2] = \u0026#34;Johnny Gill\u0026#34;  JS Bin on jsbin.com\n"
 },
 {
 	"uri": "/04-functions-and-scope/working-with-parameters/",
@@ -1558,7 +1572,7 @@
 	"title": ".unshift()",
 	"tags": [],
 	"description": "",
-	"content": " .unshift()  Adds one or more elements to the beginning of an array and returns the new length of the array\n This method is a mutating method because it changes the original array\n  Example let fruits = [\u0026#34;Apple\u0026#34;, \u0026#34;Orange\u0026#34;, \u0026#34;Grapes\u0026#34;] fruits.unshift(\u0026#34;Peach\u0026#34;, \u0026#34;Mango\u0026#34;) console.log(fruits) // Peach, Mango, Apple, Orange, Grapes  JS Bin on jsbin.com\n"
+	"content": " .unshift()  Adds one or more elements to the beginning of an array and returns the new length of the array\n This method is a mutating method because it changes the original array\n  Example const fruits = [\u0026#34;Apple\u0026#34;, \u0026#34;Orange\u0026#34;, \u0026#34;Grapes\u0026#34;] fruits.unshift(\u0026#34;Peach\u0026#34;, \u0026#34;Mango\u0026#34;) console.log(fruits) // Peach, Mango, Apple, Orange, Grapes  JS Bin on jsbin.com\n"
 },
 {
 	"uri": "/09-http-and-apis/code-along-giphy-api/",
@@ -1663,7 +1677,7 @@
 	"title": ".attr()",
 	"tags": [],
 	"description": "",
-	"content": " .attr() Method  Method to either get the value of an element\u0026rsquo;s attribute or set one or more attributes for the selected element  Example of Getting (Reading) attributes from elements  To Get (Read) text of an element use .attr(attrName) with name of the attribute you want to receive a value for  $(() =\u0026gt; { $(\u0026#34;#getIdName\u0026#34;).click(() =\u0026gt; { // read class name of .box  const $idName = $(\u0026#34;.box\u0026#34;).attr(\u0026#34;id\u0026#34;) alert($idName) }) $(\u0026#34;#getUrl\u0026#34;).click(() =\u0026gt; { // read href of a tag  const $url = $(\u0026#34;a\u0026#34;).attr(\u0026#34;href\u0026#34;) alert($url) }) })  JS Bin on jsbin.com\nExample of Setting (writing) attributes to elements  To Set (Write) text of an element use .attr(attrName, attrValue) with the new attribute name and value inside the parentheses  $(() =\u0026gt; { $(\u0026#34;#setClassName\u0026#34;).click(() =\u0026gt; { // set class name of #box to .green  $(\u0026#34;#box\u0026#34;).attr(\u0026#34;class\u0026#34;, \u0026#34;green\u0026#34;) }) })  JS Bin on jsbin.com\n"
+	"content": " .attr() Method  Method to either get the value of an element\u0026rsquo;s attribute or set one or more attributes for the selected element  Example of Getting (Reading) attributes from elements  To Get (Read) text of an element use .attr(attrName) with name of the attribute you want to receive a value for  $(() =\u0026gt; { $(\u0026#34;#getIdName\u0026#34;).click(() =\u0026gt; { // read class name of .box  const idName = $(\u0026#34;.box\u0026#34;).attr(\u0026#34;id\u0026#34;) alert(idName) }) $(\u0026#34;#getUrl\u0026#34;).click(() =\u0026gt; { // read href of a tag  const url = $(\u0026#34;a\u0026#34;).attr(\u0026#34;href\u0026#34;) alert(url) }) })  JS Bin on jsbin.com\nExample of Setting (writing) attributes to elements  To Set (Write) text of an element use .attr(attrName, attrValue) with the new attribute name and value inside the parentheses  $(() =\u0026gt; { $(\u0026#34;#setClassName\u0026#34;).click(() =\u0026gt; { // set class name of #box to .green  $(\u0026#34;#box\u0026#34;).attr(\u0026#34;class\u0026#34;, \u0026#34;green\u0026#34;) }) })  JS Bin on jsbin.com\n"
 },
 {
 	"uri": "/06-dom-and-jquery/jquery-effects/fade-in-fade-out/",
@@ -1677,14 +1691,14 @@
 	"title": ".filter()",
 	"tags": [],
 	"description": "",
-	"content": " .filter()  Returns the value of the first element in the array that satisfies the provided testing function\n undefined is returned if no element satisfies testing function\n The callback function for .find() accepts the following parameters:\n element: (required) current element being processed in the array.\n index: (optional) index of the current element being processed in the array\n array: (optional) the array map was called upon\n  .filter() returns a new array containing all elements that match the testing function\n  Syntax Using traditional (ES5) function syntax\nlet result = arr.filter(function(item, index, array) { // if true is returned, item is returned and iteration is stopped  // for falsy scenario returns undefined })  Using arrow syntax (ES6)\nlet result = arr.filter((item, index, array) =\u0026gt; { // if true is returned, item is returned and iteration is stopped  // for falsy scenario returns undefined })  Example let numbers = [5, 3, 13, 4, 11 ] let greaterThan5 = numbers.filter(number =\u0026gt; { return number \u0026gt; 5 }) console.log(greaterThan5) // [13, 11]  JS Bin on jsbin.com\nExercise Use .filter() to return all words that have more than 6 characters in the words array.\nSave the returned values to a variable declared with const called longWords\nJS Bin on jsbin.com\n"
+	"content": " .filter()  Returns the value of the first element in the array that satisfies the provided testing function\n undefined is returned if no element satisfies testing function\n The callback function for .find() accepts the following parameters:\n element: (required) current element being processed in the array.\n index: (optional) index of the current element being processed in the array\n array: (optional) the array map was called upon\n  .filter() returns a new array containing all elements that match the testing function\n  Syntax Using traditional (ES5) function syntax\nconst result = arr.filter(function(item, index, array) { // if true is returned, item is returned and iteration is stopped  // for falsy scenario returns undefined })  Using arrow syntax (ES6)\nconst result = arr.filter((item, index, array) =\u0026gt; { // if true is returned, item is returned and iteration is stopped  // for falsy scenario returns undefined })  Example const numbers = [5, 3, 13, 4, 11 ] const greaterThan5 = numbers.filter(number =\u0026gt; { return number \u0026gt; 5 }) console.log(greaterThan5) // [13, 11]  JS Bin on jsbin.com\nExercise Use .filter() to return all words that have more than 6 characters in the words array.\nSave the returned values to a variable declared with const called longWords\nJS Bin on jsbin.com\n"
 },
 {
 	"uri": "/05-arrays-objects/array-review/adding-removing-items/slice/",
 	"title": ".slice()",
 	"tags": [],
 	"description": "",
-	"content": " .slice()  Returns a shallow copy of a portion of an array into a new array object selected from begin to end (end not included) where begin and end represent the index of items in that array\n This is method is NOT a mutating method because the original array is not modified\n  Example let fruits = [\u0026#34;Peach\u0026#34;, \u0026#34;Mango\u0026#34;, \u0026#34;Apple\u0026#34;, \u0026#34;Orange\u0026#34;, \u0026#34;Grapes\u0026#34;, \u0026#34;Strawberries\u0026#34;] let myFavoriteFruits = fruits.slice(1, 4) console.log(myFavoriteFruits) // Mango, Apple, Orange  // The original \u0026#39;fruits\u0026#39; array was NOT modified console.log(fruits) // Peach , Mango, Apple, Orange, Grapes, Strawberries  JS Bin on jsbin.com\n"
+	"content": " .slice()  Returns a shallow copy of a portion of an array into a new array object selected from begin to end (end not included) where begin and end represent the index of items in that array\n This is method is NOT a mutating method because the original array is not modified\n  Example const fruits = [\u0026#34;Peach\u0026#34;, \u0026#34;Mango\u0026#34;, \u0026#34;Apple\u0026#34;, \u0026#34;Orange\u0026#34;, \u0026#34;Grapes\u0026#34;, \u0026#34;Strawberries\u0026#34;] let myFavoriteFruits = fruits.slice(1, 4) console.log(myFavoriteFruits) // Mango, Apple, Orange  // The original \u0026#39;fruits\u0026#39; array was NOT modified console.log(fruits) // Peach , Mango, Apple, Orange, Grapes, Strawberries  JS Bin on jsbin.com\n"
 },
 {
 	"uri": "/06-dom-and-jquery/jquery-manipulation/css-style-manipulation/toggle-class/",
@@ -1747,7 +1761,7 @@
 	"title": "Nested Objects",
 	"tags": [],
 	"description": "",
-	"content": " Nested Methods  In non-trivial applications, data is often nested\n JavaScript allows use to traverse an nested object using either dot notation or bracket notation\n  Example let avengers = { headquarters: \u0026#34;Stark Tower\u0026#34;, members: [ { name: \u0026#39;Black Widow\u0026#39;, \u0026#39;secret identity\u0026#39;: \u0026#39;Natasha Romanov\u0026#39;, powers: [\u0026#34;elite martial artist\u0026#34;, \u0026#34;genius intellect\u0026#34;, \u0026#34;strategy\u0026#34;, \u0026#34;leadership\u0026#34;] }, { name: \u0026#39;Captain America\u0026#39;, \u0026#39;secret identity\u0026#39;: \u0026#39;Steve Rogers\u0026#39;, powers: [\u0026#34;super strength\u0026#34;, \u0026#34;leadership\u0026#34;] } ] } // access the first member of the Avengers  console.log(avengers.members[0].name) // access the 2nd member\u0026#39;s first listed power  console.log(avengers.members[1].powers[0])  JS Bin on jsbin.com\n"
+	"content": " Nested Methods  In non-trivial applications, data is often nested\n JavaScript allows use to traverse an nested object using either dot notation or bracket notation\n  Example const avengers = { headquarters: \u0026#34;Stark Tower\u0026#34;, members: [ { name: \u0026#39;Black Widow\u0026#39;, \u0026#39;secret identity\u0026#39;: \u0026#39;Natasha Romanov\u0026#39;, powers: [\u0026#34;elite martial artist\u0026#34;, \u0026#34;genius intellect\u0026#34;, \u0026#34;strategy\u0026#34;, \u0026#34;leadership\u0026#34;] }, { name: \u0026#39;Captain America\u0026#39;, \u0026#39;secret identity\u0026#39;: \u0026#39;Steve Rogers\u0026#39;, powers: [\u0026#34;super strength\u0026#34;, \u0026#34;leadership\u0026#34;] } ] } // access the first member of the Avengers console.log(avengers.members[0].name) // access the 2nd member\u0026#39;s first listed power console.log(avengers.members[1].powers[0])  JS Bin on jsbin.com\n"
 },
 {
 	"uri": "/04-functions-and-scope/scope/",
@@ -1779,10 +1793,10 @@
 },
 {
 	"uri": "/05-arrays-objects/array-review/length-property/",
-	"title": "length() Property",
+	"title": "length Property",
 	"tags": [],
 	"description": "",
-	"content": " length() property  Property of an Array that returns the number of elements in that array  Example let fruits = [\u0026#34;Peach\u0026#34;, \u0026#34;Mango\u0026#34;, \u0026#34;Apple\u0026#34;, \u0026#34;Orange\u0026#34;, \u0026#34;Grapes\u0026#34;, \u0026#34;Strawberries\u0026#34;, \u0026#34;Plum\u0026#34;] let numberOfFruits = fruits.length console.log(numberOfFruits) // 7  JS Bin on jsbin.com\n"
+	"content": " length property  Property of an Array that returns the number of elements in that array  Example const fruits = [\u0026#34;Peach\u0026#34;, \u0026#34;Mango\u0026#34;, \u0026#34;Apple\u0026#34;, \u0026#34;Orange\u0026#34;, \u0026#34;Grapes\u0026#34;, \u0026#34;Strawberries\u0026#34;, \u0026#34;Plum\u0026#34;] const numberOfFruits = fruits.length console.log(numberOfFruits) // 7  JS Bin on jsbin.com\n"
 },
 {
 	"uri": "/03-control-flow-and-loops/conditionals/ternary-operator/",
@@ -1790,6 +1804,13 @@
 	"tags": [],
 	"description": "",
 	"content": " ternary Operator  Used as a shortcut for the if statement  condition ? expression that is run if condition is true : expression that is run if condition is false  Example const isLactoseIntolerant = true const milkType = isLactoseIntolerant ? \u0026#34;almond\u0026#34; : \u0026#34;dairy\u0026#34; console.log(milkType)  JS Bin on jsbin.com\nExercise Rewrite the following if..else statement using a ternary operator:\nlet yearOfBirth = 2001 if (yearOfBirth \u0026lt;= 2002) { console.log(\u0026#39;you will be old enough to vote in 2020\u0026#39;) } else { console.log(\u0026#39;Sorry, you will not be old enough to vote next year\u0026#39;) }  JS Bin on jsbin.com\n"
+},
+{
+	"uri": "/06-dom-and-jquery/code-along-rolling-dice-jquery/",
+	"title": "Code Along: Rolling Dice jQuery",
+	"tags": [],
+	"description": "",
+	"content": " Code Along: Rolling Dice jQuery  During this code along, we\u0026rsquo;ll convert the DOM manipulation logic in the Rolling Dice application from native JavaScript to jQuery\n The starter code for this code along is hosted on Github, see the url below:\n Code Along: Rolling Dice jQuery  Use the Assignment Submission Git Workflow (detailed here) to access and submit the assignment\n  "
 },
 {
 	"uri": "/10-asynchronous-js-and-promises/",
@@ -1964,7 +1985,7 @@
 	"title": ".reduce()",
 	"tags": [],
 	"description": "",
-	"content": " .reduce()  .reduce() is used calculate a single value based on the array\n A reducer function (that you provide) is called on each element of the array and results in a single output value\n Often used to perform a calculation that accepts all the elements of an array (usually numbers) as inputs\n For example: Calculating the sum of all the items in an array  .reduce() accepts the following parameters\n The callback function (also referred to the reducer function in this case) for .reduce() accepts the following parameters:\n accumulator: (required) the accumulated value previously returned in from the last iteration;\n currentValue: (required) current element being processed in the array.\n index: (optional) index of the current element being processed in the array\n array: (optional) the array map was called upon\n  initialValue: (optional) the value to use as the first argument to for the first iteration of reduce(); If no initialValue is supplied, the first element in the array will be used\n  Syntax Using traditional (ES5) function syntax\nlet value = arr.reduce(function(previousValue, item, index, array) { // ... }, [initial]);  Using arrow syntax (ES6)\nlet value = arr.reduce((previousValue, item, index, array) =\u0026gt; { // ... }, [initial]);  Example  Example where no initialValue is supplied  let numbers = [1, 2, 3, 4, 5] let result = numbers.reduce((sum, currentNumber) =\u0026gt; sum + currentNumber) console.log(result) // 15  JS Bin on jsbin.com\n Example where we set the initialValue to 10  let numbers = [1, 2, 3, 4, 5] let result = numbers.reduce((sum, currentNumber) =\u0026gt; sum + currentNumber, 10) console.log(result) // 25  JS Bin on jsbin.com\nExercise Use .reduce() to calculate the sum of the numbers found in the amounts array; Save the result in a variable declared with const called total\nJS Bin on jsbin.com\n"
+	"content": " .reduce()  .reduce() is used calculate a single value based on the array\n A reducer function (that you provide) is called on each element of the array and results in a single output value\n Often used to perform a calculation that accepts all the elements of an array (usually numbers) as inputs\n For example: Calculating the sum of all the items in an array  .reduce() accepts the following parameters\n The callback function (also referred to the reducer function in this case) for .reduce() accepts the following parameters:\n accumulator: (required) the accumulated value previously returned in from the last iteration;\n currentValue: (required) current element being processed in the array.\n index: (optional) index of the current element being processed in the array\n array: (optional) the array map was called upon\n  initialValue: (optional) the value to use as the first argument to for the first iteration of reduce(); If no initialValue is supplied, the first element in the array will be used\n  Syntax Using traditional (ES5) function syntax\nconst value = arr.reduce(function(previousValue, item, index, array) { // ... }, [initial]);  Using arrow syntax (ES6)\nconst value = arr.reduce((previousValue, item, index, array) =\u0026gt; { // ... }, [initial]);  Example  Example where no initialValue is supplied  const numbers = [1, 2, 3, 4, 5] const result = numbers.reduce((sum, currentNumber) =\u0026gt; sum + currentNumber) console.log(result) // 15  JS Bin on jsbin.com\n Example where we set the initialValue to 10  const numbers = [1, 2, 3, 4, 5] const result = numbers.reduce((sum, currentNumber) =\u0026gt; sum + currentNumber, 10) console.log(result) // 25  JS Bin on jsbin.com\nExercise Use .reduce() to calculate the sum of the numbers found in the amounts array; Save the result in a variable declared with const called total\nJS Bin on jsbin.com\n"
 },
 {
 	"uri": "/14-intro-to-crud-and-firebase/",
@@ -2027,7 +2048,7 @@
 	"title": "Other Iterators",
 	"tags": [],
 	"description": "",
-	"content": " Other Iterators  There are many other built-in iterator methods, a complete list can be found on MDN’s Array iteration methods list\n As developer, you will be working with arrays of data on a constant basis; which means you\u0026rsquo;ll be visiting the documentation often to look up array methods you may not have used before\n Let\u0026rsquo;s get some practice \u0026ldquo;looking things up\u0026rdquo;\n  Exercise Visit the MDN Array Documenation and find the appropriate iterator method that will allow you to sort the list of words found in the words array in descending alphabetical order\nJS Bin on jsbin.com\n"
+	"content": " Other Iterators  There are many other built-in iterator methods, a complete list can be found on MDN’s Array iteration methods list\n As developer, you will be working with arrays of data on a constant basis; which means you\u0026rsquo;ll be visiting the documentation often to look up array methods you may not have used before\n Let\u0026rsquo;s get some practice \u0026ldquo;looking things up\u0026rdquo;\n  Exercise Visit the MDN Array Documentation and find the appropriate iterator method that will allow you to sort the list of words found in the words array in descending alphabetical order\nJS Bin on jsbin.com\n"
 },
 {
 	"uri": "/00-course-intro-and-tools/pseudocode/",

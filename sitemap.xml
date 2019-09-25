@@ -19,6 +19,14 @@
   </url>
   
   <url>
+    <loc>/05-arrays-objects/objectives/</loc>
+  </url>
+  
+  <url>
+    <loc>/06-dom-and-jquery/objectives/</loc>
+  </url>
+  
+  <url>
     <loc>/class-resources/office-hours/</loc>
   </url>
   
@@ -1025,6 +1033,10 @@
   
   <url>
     <loc>/03-control-flow-and-loops/conditionals/ternary-operator/</loc>
+  </url>
+  
+  <url>
+    <loc>/06-dom-and-jquery/code-along-rolling-dice-jquery/</loc>
   </url>
   
   <url>
