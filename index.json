@@ -238,6 +238,13 @@
 	"content": " Review the HTTP request / response flow\n Explain the role of a web server in a full-stack application\n Write a route handler for a GET request with Express\n Pass information with query and route parameters\n  "
 },
 {
+	"uri": "/17-deploying-your-app/objectives/",
+	"title": "Objectives",
+	"tags": [],
+	"description": "",
+	"content": " Deploy a JavaScript-based application using Github Pages, Surge or Heroku\n Learn how to secure sensitive credentials in a \u0026ldquo;non node-based\u0026rdquo; front-end application\n Deploy your final projects the approach that best fits your application\u0026rsquo;s needs\n  "
+},
+{
 	"uri": "/10-asynchronous-js-and-promises/async-await/overview/",
 	"title": "Overview",
 	"tags": [],
@@ -581,6 +588,13 @@
 	"content": " Getting \u0026amp; Setting Content  .text()   .html()   .val()   .attr()   "
 },
 {
+	"uri": "/17-deploying-your-app/github-pages/",
+	"title": "Github Pages",
+	"tags": [],
+	"description": "",
+	"content": " Github Pages  GitHub Pages is a static site hosting service designed to host your personal, organization, or project pages directly from a GitHub repository\n GitHub Pages is a static site hosting service and doesn\u0026rsquo;t support server-side code such as, Express (via Node JS), Ruby, Python or PHP\n  "
+},
+{
 	"uri": "/09-http-and-apis/http/",
 	"title": "HTTP",
 	"tags": [],
@@ -831,6 +845,13 @@
 	"tags": [],
 	"description": "",
 	"content": " Calling a Function  Calling a function means you are using the function (as opposed to defining a function which only tells us what the function can do)\n To call a function you simply write function name followed by parentheses (don’t forget the parentheses!)\n Now you can call this function as many times as you want\n  /** define / declare a function named shout() by itself this doesn\u0026#39;t do anything, we must \u0026#34;Call\u0026#34; it in order to use it **/ function shout() { console.log(\u0026#34;HELLO!\u0026#34;) } /** Calling the function named shout we call a function by writing the name of the function followed by parentheses **/ shout()  JS Bin on jsbin.com\nExercise:  Create a function named yolo that logs 'yolo'. Next, use your knowledge of calling functions to ensure that 'yolo' is printed 3 times in the console  JS Bin on jsbin.com\n"
+},
+{
+	"uri": "/17-deploying-your-app/code-along-host-app-using-github-pages/",
+	"title": "Code Along: Host App using Github Pages",
+	"tags": [],
+	"description": "",
+	"content": " Code Along: Host App using Github Pages  Together we\u0026rsquo;ll walk through the process of hosting a static application, an application that does not have a server (i.e. Express), on Github Pages  Instructions 1) Find Traffic Light project Using your operating system\u0026rsquo;s finder / explorer application, copy your Traffic Light application (project name: traffic-light) application from a lesson earlier in the course folder to your lesson_17 folder\n If you do not have a working version of traffic-light you can clone down a working version here\n If you choose this option, make sure you add your Giphy API Key to app.js where you see the following line of code:\n   const apiKey = 'ADD_YOUR_API_KEY_HERE'  \n2) Set up Git for the Traffic Light application  On the command line, navigate to the project folder for the traffic-light application in your lesson_17 folder and delete the .git folder by running the following command:\n$ rm -rf .git  This command will remove the local repository from this copy of the traffic-light application\n Initialize a new git repository and run git add . and git commit -m \u0026quot;initial commit\u0026quot;\n$ git init \u0026amp;\u0026amp; git add . \u0026amp;\u0026amp; git commit -m \u0026quot;initial commit\u0026quot;   \n3) Host the project on Github Pages  We\u0026rsquo;re going to follow the instructions found in the link below:\n Step by Step Instructions for hosting on Github Pages   \n4) Delete the Github Pages repository (Only do this after you\u0026rsquo;ve completed Step #3)  Congrats, you\u0026rsquo;ve successfully launched a static application on Github Pages\n Since Github only allows you to have one \u0026ldquo;Github Pages repository\u0026rdquo; per Github account, you should delete this repository so it can be available for your Final Project or some other application or site you\u0026rsquo;d like to host in the future\n Follow the steps below to delete your Github Pages repository (your_account_name/your_account_name.github.io):\n Deleting a Repository   "
 },
 {
 	"uri": "/10-asynchronous-js-and-promises/promises/consuming-promises/",
@@ -1190,6 +1211,13 @@
 	"content": " Route Parameters  Route parameters are named URL segments that are used to capture the values specified at their position in the URL\n The captured values are populated in the req.params object, with the name of the route parameter specified in the path as their respective keys\n Route parameters are similar to function parameters\n Given the following route handler:\napp.get('/users/:userId/books/:bookId', function (req, res) { res.send(req.params) })   If the client makes a request to the following url: GET http://localhost:3000/users/34/books/8989\n Then inside our route handle req.params will contain the following object: { \u0026quot;userId\u0026quot;: \u0026quot;34\u0026quot;, \u0026quot;bookId\u0026quot;: \u0026quot;8989\u0026quot; }\n   "
 },
 {
+	"uri": "/17-deploying-your-app/securing-sensitive-credentials-with-parcel/",
+	"title": "Securing Sensitive Credentials with Parcel",
+	"tags": [],
+	"description": "",
+	"content": " Securing Sensitive Credentials with Parcel  Often times when using an API in our applications, those API providers require that we send an API Key with our API requests\n Those API keys should be considered sensitive credentials and the best practice is to use Environment Variables to prevent those sensitive credentials from being exposed\n However, the use of Environment Variables have traditionally only been available to applications that have a backend server (i.e. Express (via Node))\n Static applications (application without a built-in backend server) that need to secure sensitive credentials (i.e API Keys, Secret tokens, etc) can use Parcel\n  What is Parcel?  Parcel is an easy-to-use Web Application Bundler that requires very little configuration\n Parcel is a lighter-weight version of another popular Web Application Bundler - Webpack\n  Benefits  Bundles all your assets (html, css, js, images, etc) and automatically minimizes file sizes with for faster loading performance\n Hot Module Replacement - automatic reloading for any code changes (no more having to manually refresh after code changes); commonly referred to as \u0026ldquo;Hot Reloading\u0026rdquo; or \u0026ldquo;Hot Re-booting\u0026rdquo;\n Built-in support for ES6 and all it\u0026rsquo;s features\n Supports use of Environment Variables for static applications\n  "
+},
+{
 	"uri": "/10-asynchronous-js-and-promises/simulating-async-operations/",
 	"title": "Simulating Async Operations",
 	"tags": [],
@@ -1293,6 +1321,13 @@
 	"tags": [],
 	"description": "",
 	"content": " Challenges of Asynchronous Programming  Asynchronous programming presents a challenge when we want make multiple asynchronous requests and we want to control the order of the responses  Example Let\u0026rsquo;s see an example of this below:\n/* Modify printLetter() to make it an async function by using .setTimeout After the changes, the letter will be print at a random interval from 0 seconds to 3 seconds */ function printLetter(letter) { setTimeout(() =\u0026gt; { console.log(letter) }, Math.floor(Math.random() * 3000)) } function printAll(){ printLetter(\u0026#34;A\u0026#34;) printLetter(\u0026#34;B\u0026#34;) printLetter(\u0026#34;C\u0026#34;) } console.log(\u0026#39;Calling printAll function\u0026#39;) printAll() console.log(\u0026#39;End of code\u0026#39;)   In the code example above we have turned .printLetter() into an asynchronous function through the use of .setTimeout to randomly delay each function call from anywhere between 0 seconds and 3 seconds\n Run the jsbin below (multiple times) and notice how the order of the printed letters is no longer predictable and that A, B, and C print in a different and random order each time you call printAll\n  JS Bin on jsbin.com\n One way to fix this issue is to use callbacks  "
+},
+{
+	"uri": "/17-deploying-your-app/code-along-using-env-variables-with-parcel/",
+	"title": "Code Along: Using Environment Variables with Parcel",
+	"tags": [],
+	"description": "",
+	"content": " Code Along: Using Environment Variables with Parcel  Together we\u0026rsquo;ll walk through the process of using Parcel to bundle a static application that needs to secure sensitive credentials  Instructions 1) Access your Giphy API project from a class session earlier in the course Using your operating system\u0026rsquo;s finder / explorer application, copy your Giphy Search API application (project name: giphy-search-api) application an earlier lesson to your lesson_17 folder\n If you do not have a working version of giphy-search-api you can clone down a working version here\n If you choose this option, make sure you add your Giphy API Key to app.js where you see the following line of code:\n   const apiKey = 'ADD_YOUR_API_KEY_HERE'  \n2) Set up Git for Giphy Search API  On the command line, navigate to the project folder for the giphy-search application in your lesson_17 folder and delete the .git folder by running the following command:\n$ rm -rf .git  This command will remove the local repository from this copy of the giphy-search-api application\n Initialize a new git repository and run git add . and git commit -m \u0026quot;initial commit\u0026quot;\n$ git init \u0026amp;\u0026amp; git add . \u0026amp;\u0026amp; git commit -m \u0026quot;initial commit\u0026quot;   \n3) Install Parcel  We\u0026rsquo;ll be following the set up instructions found here: https://parceljs.org/getting_started.html\n In the terminal, run the following command to install parcel globally\n  $ npm install -g parcel-bundler  \n4) Create a package.json file inside your project folder  While inside your project folder, run the following command to create a package.json file  $ npm init -y  \n5) Run Parcel development server  Parcel has a development server built in, which will automatically rebuild your app as you change files and supports hot module replacement for fast development\n Point it at your entry file, within your project folder run the following from the command line:\n  $ parcel index.html   Now open your browser and navigate to http:localhost:1234\n Test the app and confirm it fully functional\n  6) Create .env file  Parcel uses the dotenv to support loading environment variables from .env files (see docs)\n This means we dot not have to explicitly install dotenv since parcel already has it installed as a dependency  However, we still need to the create the .env file\n Run the following command from within the project folder\n  $ touch .env.local   Parcel has a specific way it wants developers to set up .env files; .env.local is communicates to Parcel that these environment variables should be used \u0026ldquo;locally\u0026rdquo; (i.e. on your computer) (see docs)  7) Create a .gitignore file to prevent .env.local from being included in your git repository Git allows developers to specify files that they do not want to be tracked and committed to their git repository. These files will essentially be ignored by git\nWe accomplish this by creating a .gitignore file and adding the path of any files that we\u0026rsquo;d like to be ignored\n Create a .gitignore file  $ touch .gitignore   Open .gitignore in your editor and add the following:  .env.local  Here we are adding .env.local to prevent our secure credentials from tracked.\n"
 },
 {
 	"uri": "/final-projects/milestones-due-dates/create-submit-wireframes/",
@@ -1824,7 +1859,7 @@
 	"title": "Code Along: Giphy API with Async / Await",
 	"tags": [],
 	"description": "",
-	"content": " Code Along: Giphy Search API with Async / Await We\u0026rsquo;re going to modify our Giphy\u0026rsquo;s API application and use async / await to make our API request\n1) Sign up for a Giphy API Key here: https://developers.giphy.com/ (only for those students who don\u0026rsquo;t already have one)\n2) Get the starter code\n The starter code for this code along is hosted on Github, see the url below:\n Code Along: Giphy Search API with Async / Await\n Use the Assignment Submission Git Workflow (detailed here) to access and submit the assignment\n   3) We\u0026rsquo;ll be using axios to make our API request. Add the following script tag right before your closing \u0026lt;body\u0026gt; tag but before the script tag targeting your app.js file\n\u0026lt;script src=\u0026#34;https://code.jquery.com/jquery-3.4.1.min.js\u0026#34; integrity=\u0026#34;sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=\u0026#34; crossorigin=\u0026#34;anonymous\u0026#34;\u0026gt;\u0026lt;/script\u0026gt; \u0026lt;script src=\u0026#34;https://unpkg.com/axios/dist/axios.min.js\u0026#34;\u0026gt;\u0026lt;/script\u0026gt; \u0026lt;!-- Add the axios script tag here --\u0026gt; \u0026lt;script src=\u0026#34;js/app.js\u0026#34;\u0026gt;\u0026lt;/script\u0026gt;  "
+	"content": " Code Along: Giphy Search API with Async / Await We\u0026rsquo;re going to modify our Giphy\u0026rsquo;s API application and use async / await to make our API request\n1) Sign up for a Giphy API Key here: https://developers.giphy.com/ (only for those students who don\u0026rsquo;t already have one)\n2) Get the starter code\n The starter code for this code along is hosted on Github, see the url below:\n Code Along: Giphy Search API with Async / Await\n Use the Assignment Submission Git Workflow (detailed here) to access and submit the assignment\n   3) We\u0026rsquo;ll be using axios to make our API request. Add the following script tag right before your closing \u0026lt;body\u0026gt; tag but before the script tag targeting your app.js file\n\u0026lt;script src=\u0026#34;https://code.jquery.com/jquery-3.4.1.min.js\u0026#34; integrity=\u0026#34;sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=\u0026#34; crossorigin=\u0026#34;anonymous\u0026#34;\u0026gt;\u0026lt;/script\u0026gt; \u0026lt;script src=\u0026#34;https://unpkg.com/axios/dist/axios.min.js\u0026#34;\u0026gt;\u0026lt;/script\u0026gt; \u0026lt;!-- Add the axios script tag here --\u0026gt; \u0026lt;script src=\u0026#34;js/app.js\u0026#34;\u0026gt;\u0026lt;/script\u0026gt;  2) Set up Git for Giphy Search API  On the command line, navigate to the project folder for the giphy-search application in your lesson_17 folder and delete the .git folder by running the following command:\n$ rm -rf .git  This command will remove the local repository from this copy of the giphy-search-api application\n Initialize a new git repository and run git add . and git commit -m \u0026quot;initial commit\u0026quot;\n$ git init \u0026amp;\u0026amp; git add . \u0026amp;\u0026amp; git commit -m \u0026quot;initial commit\u0026quot;   \n3) Access your Giphy API Key  Log into your Giphy Developer account and copy your API key to the clipboard\n Sign up for a Giphy API Key here: https://developers.giphy.com/ (only for those students who don\u0026rsquo;t already have one)   4) Install Parcel  We\u0026rsquo;ll be following the set up instructions found here: https://parceljs.org/getting_started.html\n In the terminal, run the following command to install parcel globally\n  $ npm install -g parcel-bundler  5) Create a package.json file inside your project folder  While inside your project folder, run the following command to create a package.json file  $ npm init -y  6) Run Parcel development server  Parcel has a development server built in, which will automatically rebuild your app as you change files and supports hot module replacement for fast development\n Point it at your entry file, within your project folder run the following from the command line:\n  $ parcel index.html   Now open your browser and navigate to http:localhost:1234\n Confirm that you are able to see the html of your Giphy Search API app\n  "
 },
 {
 	"uri": "/09-http-and-apis/lab-send-receive-sms-twilio-api/",
@@ -2129,6 +2164,20 @@
 },
 {
 	"uri": "/02-javascript-basics/truthy-falsey/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/17-deploying-your-app/heroku/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/17-deploying-your-app/surge/",
 	"title": "",
 	"tags": [],
 	"description": "",

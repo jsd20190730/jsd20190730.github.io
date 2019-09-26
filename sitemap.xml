@@ -139,6 +139,10 @@
   </url>
   
   <url>
+    <loc>/17-deploying-your-app/objectives/</loc>
+  </url>
+  
+  <url>
     <loc>/10-asynchronous-js-and-promises/async-await/overview/</loc>
   </url>
   
@@ -336,6 +340,10 @@
   </url>
   
   <url>
+    <loc>/17-deploying-your-app/github-pages/</loc>
+  </url>
+  
+  <url>
     <loc>/09-http-and-apis/http/</loc>
   </url>
   
@@ -477,6 +485,10 @@
   
   <url>
     <loc>/04-functions-and-scope/calling-functions/</loc>
+  </url>
+  
+  <url>
+    <loc>/17-deploying-your-app/code-along-host-app-using-github-pages/</loc>
   </url>
   
   <url>
@@ -684,6 +696,10 @@
   </url>
   
   <url>
+    <loc>/17-deploying-your-app/securing-sensitive-credentials-with-parcel/</loc>
+  </url>
+  
+  <url>
     <loc>/10-asynchronous-js-and-promises/simulating-async-operations/</loc>
   </url>
   
@@ -741,6 +757,10 @@
   
   <url>
     <loc>/10-asynchronous-js-and-promises/challenges-of-async-programming/</loc>
+  </url>
+  
+  <url>
+    <loc>/17-deploying-your-app/code-along-using-env-variables-with-parcel/</loc>
   </url>
   
   <url>
@@ -1223,6 +1243,14 @@
   
   <url>
     <loc>/02-javascript-basics/truthy-falsey/</loc>
+  </url>
+  
+  <url>
+    <loc>/17-deploying-your-app/heroku/</loc>
+  </url>
+  
+  <url>
+    <loc>/17-deploying-your-app/surge/</loc>
   </url>
   
   <url>

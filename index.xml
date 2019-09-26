@@ -376,6 +376,18 @@ List Of Commonly Used APIs Here is a short list of commonly used APIs for testin
     </item>
     
     <item>
+      <title>Objectives</title>
+      <link>/17-deploying-your-app/objectives/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/17-deploying-your-app/objectives/</guid>
+      <description> Deploy a JavaScript-based application using Github Pages, Surge or Heroku
+ Learn how to secure sensitive credentials in a &amp;ldquo;non node-based&amp;rdquo; front-end application
+ Deploy your final projects the approach that best fits your application&amp;rsquo;s needs
+  </description>
+    </item>
+    
+    <item>
       <title>Overview</title>
       <link>/10-asynchronous-js-and-promises/async-await/overview/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -863,6 +875,17 @@ const executorFunction = (resolve, reject) =&amp;gt; { } const myPromise = new P
     </item>
     
     <item>
+      <title>Github Pages</title>
+      <link>/17-deploying-your-app/github-pages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/17-deploying-your-app/github-pages/</guid>
+      <description> Github Pages  GitHub Pages is a static site hosting service designed to host your personal, organization, or project pages directly from a GitHub repository
+ GitHub Pages is a static site hosting service and doesn&amp;rsquo;t support server-side code such as, Express (via Node JS), Ruby, Python or PHP
+  </description>
+    </item>
+    
+    <item>
       <title>HW Assignment #1</title>
       <link>/homework-assignments/hw-assignment-01/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1158,6 +1181,16 @@ Here&amp;rsquo;s a diagram that provides a high-level view of how our slackbot w
  To call a function you simply write function name followed by parentheses (don’t forget the parentheses!)
  Now you can call this function as many times as you want
   /** define / declare a function named shout() by itself this doesn&amp;#39;t do anything, we must &amp;#34;Call&amp;#34; it in order to use it **/ function shout() { console.</description>
+    </item>
+    
+    <item>
+      <title>Code Along: Host App using Github Pages</title>
+      <link>/17-deploying-your-app/code-along-host-app-using-github-pages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/17-deploying-your-app/code-along-host-app-using-github-pages/</guid>
+      <description>Code Along: Host App using Github Pages  Together we&amp;rsquo;ll walk through the process of hosting a static application, an application that does not have a server (i.e. Express), on Github Pages  Instructions 1) Find Traffic Light project Using your operating system&amp;rsquo;s finder / explorer application, copy your Traffic Light application (project name: traffic-light) application from a lesson earlier in the course folder to your lesson_17 folder
+ If you do not have a working version of traffic-light you can clone down a working version here</description>
     </item>
     
     <item>
@@ -1603,6 +1636,17 @@ app.get(&#39;/users/:userId/books/:bookId&#39;, function (req, res) { res.send(r
     </item>
     
     <item>
+      <title>Securing Sensitive Credentials with Parcel</title>
+      <link>/17-deploying-your-app/securing-sensitive-credentials-with-parcel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/17-deploying-your-app/securing-sensitive-credentials-with-parcel/</guid>
+      <description>Securing Sensitive Credentials with Parcel  Often times when using an API in our applications, those API providers require that we send an API Key with our API requests
+ Those API keys should be considered sensitive credentials and the best practice is to use Environment Variables to prevent those sensitive credentials from being exposed
+ However, the use of Environment Variables have traditionally only been available to applications that have a backend server (i.</description>
+    </item>
+    
+    <item>
       <title>Simulating Async Operations</title>
       <link>/10-asynchronous-js-and-promises/simulating-async-operations/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1748,6 +1792,15 @@ app.get(&#39;/users/:userId/books/:bookId&#39;, function (req, res) { res.send(r
       <guid>/10-asynchronous-js-and-promises/challenges-of-async-programming/</guid>
       <description>Challenges of Asynchronous Programming  Asynchronous programming presents a challenge when we want make multiple asynchronous requests and we want to control the order of the responses  Example Let&amp;rsquo;s see an example of this below:
 /* Modify printLetter() to make it an async function by using .setTimeout After the changes, the letter will be print at a random interval from 0 seconds to 3 seconds */ function printLetter(letter) { setTimeout(() =&amp;gt; { console.</description>
+    </item>
+    
+    <item>
+      <title>Code Along: Using Environment Variables with Parcel</title>
+      <link>/17-deploying-your-app/code-along-using-env-variables-with-parcel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/17-deploying-your-app/code-along-using-env-variables-with-parcel/</guid>
+      <description>Code Along: Using Environment Variables with Parcel  Together we&amp;rsquo;ll walk through the process of using Parcel to bundle a static application that needs to secure sensitive credentials  Instructions 1) Access your Giphy API project from a class session earlier in the course Using your operating system&amp;rsquo;s finder / explorer application, copy your Giphy Search API application (project name: giphy-search-api) application an earlier lesson to your lesson_17 folder</description>
     </item>
     
     <item>
@@ -2781,6 +2834,24 @@ HTML &amp;amp; CSS  Codecademy - HTML &amp;amp; CSS course
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/02-javascript-basics/truthy-falsey/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/17-deploying-your-app/heroku/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/17-deploying-your-app/heroku/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/17-deploying-your-app/surge/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/17-deploying-your-app/surge/</guid>
       <description></description>
     </item>
     
