@@ -892,6 +892,10 @@
   </url>
   
   <url>
+    <loc>/17-deploying-your-app/securing-sensitive-credentials-with-parcel/</loc>
+  </url>
+  
+  <url>
     <loc>/12-project-build-a-slackbot/tutorial/step-6-install-app-to-workspace/</loc>
   </url>
   
@@ -925,6 +929,10 @@
   
   <url>
     <loc>/09-http-and-apis/code-along-giphy-api/</loc>
+  </url>
+  
+  <url>
+    <loc>/17-deploying-your-app/code-along-using-env-variables-with-parcel/</loc>
   </url>
   
   <url>
@@ -1021,6 +1029,10 @@
   
   <url>
     <loc>/homework-assignments/hw-assignment-04/</loc>
+  </url>
+  
+  <url>
+    <loc>/17-deploying-your-app/heroku/</loc>
   </url>
   
   <url>
