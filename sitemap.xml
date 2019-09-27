@@ -696,10 +696,6 @@
   </url>
   
   <url>
-    <loc>/17-deploying-your-app/securing-sensitive-credentials-with-parcel/</loc>
-  </url>
-  
-  <url>
     <loc>/10-asynchronous-js-and-promises/simulating-async-operations/</loc>
   </url>
   
@@ -709,6 +705,10 @@
   
   <url>
     <loc>/12-project-build-a-slackbot/tutorial/step-4-run-ngrok/</loc>
+  </url>
+  
+  <url>
+    <loc>/17-deploying-your-app/surge/</loc>
   </url>
   
   <url>
@@ -760,7 +760,7 @@
   </url>
   
   <url>
-    <loc>/17-deploying-your-app/code-along-using-env-variables-with-parcel/</loc>
+    <loc>/17-deploying-your-app/code-along-host-app-using-surge/</loc>
   </url>
   
   <url>
@@ -1243,10 +1243,6 @@
   
   <url>
     <loc>/02-javascript-basics/truthy-falsey/</loc>
-  </url>
-  
-  <url>
-    <loc>/17-deploying-your-app/surge/</loc>
   </url>
   
   <url>
