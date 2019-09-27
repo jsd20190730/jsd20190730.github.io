@@ -12,21 +12,21 @@
     <title>Code Along: Giphy API with Async / Await :: GA JavaScript</title>
 
     
-    <link href="/css/nucleus.css?1569561074" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1569561074" rel="stylesheet">
-    <link href="/css/hybrid.css?1569561074" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1569561074" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1569561074" rel="stylesheet">
-    <link href="/css/auto-complete.css?1569561074" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1569561074" rel="stylesheet">
-    <link href="/css/theme.css?1569561074" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1569561074" rel="stylesheet">
-    <link href="/css/syntax.css?1569561074" rel="stylesheet">
+    <link href="/css/nucleus.css?1569587563" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1569587563" rel="stylesheet">
+    <link href="/css/hybrid.css?1569587563" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1569587563" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1569587563" rel="stylesheet">
+    <link href="/css/auto-complete.css?1569587563" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1569587563" rel="stylesheet">
+    <link href="/css/theme.css?1569587563" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1569587563" rel="stylesheet">
+    <link href="/css/syntax.css?1569587563" rel="stylesheet">
     
-      <link href="/css/theme-blue.css?1569561074" rel="stylesheet">
+      <link href="/css/theme-blue.css?1569587563" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1569561074"></script>
+    <script src="/js/jquery-3.3.1.min.js?1569587563"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -89,14 +89,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1569561074"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1569561074"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1569587563"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1569587563"></script>
 <script type="text/javascript">
     
         var baseurl = "\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1569561074"></script>
+<script type="text/javascript" src="/js/search.js?1569587563"></script>
 
     
   </div>
@@ -6981,11 +6981,9 @@
 <ul>
 <li><a href="#code-along-giphy-search-api-with-async-await">Code Along: Giphy Search API with Async / Await</a>
 <ul>
-<li><a href="#2-set-up-git-for-giphy-search-api"><strong>2)</strong> Set up Git for Giphy Search API</a></li>
-<li><a href="#3-access-your-giphy-api-key"><strong>3)</strong> Access your Giphy API Key</a></li>
-<li><a href="#4-install-parcel"><strong>4)</strong> Install Parcel</a></li>
-<li><a href="#5-create-a-package-json-file-inside-your-project-folder"><strong>5)</strong> Create a <code>package.json</code> file inside your project folder</a></li>
-<li><a href="#6-run-parcel-development-server"><strong>6)</strong> Run Parcel development server</a></li>
+<li><a href="#1-sign-up-for-a-giphy-api-key">1. Sign up for a Giphy API Key</a></li>
+<li><a href="#2-get-the-starter-code">2. Get the starter code</a></li>
+<li><a href="#3-include-axios-in-your-project-via-cdn">3. Include Axios in your project via CDN</a></li>
 </ul></li>
 </ul></li>
 </ul></li>
@@ -7019,9 +7017,13 @@
 
 <p>We&rsquo;re going to modify our Giphy&rsquo;s API application and use async / await to make our API request</p>
 
-<p><strong>1)</strong> Sign up for a Giphy API Key here: <a href="https://developers.giphy.com/">https://developers.giphy.com/</a> (<strong>only</strong> for those students who don&rsquo;t already have one)</p>
+<h4 id="1-sign-up-for-a-giphy-api-key">1. Sign up for a Giphy API Key</h4>
 
-<p><strong>2)</strong> Get the starter code</p>
+<ul>
+<li>Sign up for a Giphy API Key here: <a href="https://developers.giphy.com/">https://developers.giphy.com/</a> (<strong>only</strong> for those students who don&rsquo;t already have one)</li>
+</ul>
+
+<h4 id="2-get-the-starter-code">2. Get the starter code</h4>
 
 <ul>
 <li><p>The starter code for this code along is hosted on Github, see the url below:</p>
@@ -7033,7 +7035,11 @@
 </ul></li>
 </ul>
 
-<p><strong>3)</strong> We&rsquo;ll be using <a href="https://github.com/axios/axios">axios</a> to make our API request. Add the following script tag right before your closing <code>&lt;body&gt;</code> tag but <strong>before</strong> the script tag targeting  your <code>app.js</code> file</p>
+<h4 id="3-include-axios-in-your-project-via-cdn">3. Include Axios in your project via CDN</h4>
+
+<ul>
+<li>We&rsquo;ll be using <a href="https://github.com/axios/axios">axios</a> to make our API request. Add the following script tag right before your closing <code>&lt;body&gt;</code> tag but <strong>before</strong> the script tag targeting  your <code>app.js</code> file</li>
+</ul>
 
 <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">  <span class="p">&lt;</span><span class="nt">script</span>
       <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://code.jquery.com/jquery-3.4.1.min.js&#34;</span>
@@ -7042,71 +7048,6 @@
   <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://unpkg.com/axios/dist/axios.min.js&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span> <span class="c">&lt;!-- Add the axios script tag here --&gt;</span>
   <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;js/app.js&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
   </code></pre></div>
-
-<h4 id="2-set-up-git-for-giphy-search-api"><strong>2)</strong> Set up Git for Giphy Search API</h4>
-
-<ul>
-<li><p>On the command line, navigate to the project folder for the <code>giphy-search</code> application in your <strong>lesson_17</strong> folder and delete the <code>.git</code> folder by running the following command:</p>
-
-<pre><code>$ rm -rf .git
-</code></pre></li>
-
-<li><p>This command will remove the local repository from this copy of the <code>giphy-search-api</code> application</p></li>
-
-<li><p>Initialize a new git repository and run <code>git add .</code> and <code>git commit -m &quot;initial commit&quot;</code></p>
-
-<pre><code>$ git init &amp;&amp; git add . &amp;&amp; git commit -m &quot;initial commit&quot;
-</code></pre></li>
-</ul>
-
-<p></br></p>
-
-<h4 id="3-access-your-giphy-api-key"><strong>3)</strong> Access your Giphy API Key</h4>
-
-<ul>
-<li><p>Log into your <a href="https://developers.giphy.com">Giphy Developer account</a> and copy your API key to the clipboard</p>
-
-<ul>
-<li>Sign up for a Giphy API Key here: <a href="https://developers.giphy.com/">https://developers.giphy.com/</a> (<strong>only</strong> for those students who don&rsquo;t already have one)</li>
-</ul></li>
-</ul>
-
-<h4 id="4-install-parcel"><strong>4)</strong> Install Parcel</h4>
-
-<ul>
-<li><p>We&rsquo;ll be following the set up instructions found here: <a href="https://parceljs.org/getting_started.html">https://parceljs.org/getting_started.html</a></p></li>
-
-<li><p>In the terminal, run the following command to install <strong>parcel</strong> globally</p></li>
-</ul>
-
-<pre><code>$ npm install -g parcel-bundler
-</code></pre>
-
-<h4 id="5-create-a-package-json-file-inside-your-project-folder"><strong>5)</strong> Create a <code>package.json</code> file inside your project folder</h4>
-
-<ul>
-<li><strong>While inside your project folder</strong>, run the following command to create a <code>package.json</code> file</li>
-</ul>
-
-<pre><code>$ npm init -y
-</code></pre>
-
-<h4 id="6-run-parcel-development-server"><strong>6)</strong> Run Parcel development server</h4>
-
-<ul>
-<li><p>Parcel has a development server built in, which will automatically rebuild your app as you change files and supports hot module replacement for fast development</p></li>
-
-<li><p>Point it at your entry file, within your project folder run the following from the command line:</p></li>
-</ul>
-
-<pre><code>$ parcel index.html
-</code></pre>
-
-<ul>
-<li><p>Now open your browser and navigate to <code>http:localhost:1234</code></p></li>
-
-<li><p>Confirm that you are able to see the html of your Giphy Search API app</p></li>
-</ul>
 
 
 <footer class=" footline" >
@@ -12177,20 +12118,20 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1569561074"></script>
-    <script src="/js/perfect-scrollbar.min.js?1569561074"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1569561074"></script>
-    <script src="/js/jquery.sticky.js?1569561074"></script>
-    <script src="/js/featherlight.min.js?1569561074"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1569561074"></script>
-    <script src="/js/highlight.pack.js?1569561074"></script>
+    <script src="/js/clipboard.min.js?1569587563"></script>
+    <script src="/js/perfect-scrollbar.min.js?1569587563"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1569587563"></script>
+    <script src="/js/jquery.sticky.js?1569587563"></script>
+    <script src="/js/featherlight.min.js?1569587563"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1569587563"></script>
+    <script src="/js/highlight.pack.js?1569587563"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1569561074"></script>
-    <script src="/js/learn.js?1569561074"></script>
-    <script src="/js/hugo-learn.js?1569561074"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1569587563"></script>
+    <script src="/js/learn.js?1569587563"></script>
+    <script src="/js/hugo-learn.js?1569587563"></script>
 
-    <link href="/mermaid/mermaid.css?1569561074" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1569561074"></script>
+    <link href="/mermaid/mermaid.css?1569587563" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1569587563"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

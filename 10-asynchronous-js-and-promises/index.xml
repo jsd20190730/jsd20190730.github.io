@@ -90,10 +90,7 @@
       
       <guid>/10-asynchronous-js-and-promises/code-along-giphy-api-with-async-await/</guid>
       <description>Code Along: Giphy Search API with Async / Await We&amp;rsquo;re going to modify our Giphy&amp;rsquo;s API application and use async / await to make our API request
-1) Sign up for a Giphy API Key here: https://developers.giphy.com/ (only for those students who don&amp;rsquo;t already have one)
-2) Get the starter code
- The starter code for this code along is hosted on Github, see the url below:
- Code Along: Giphy Search API with Async / Await</description>
+1. Sign up for a Giphy API Key  Sign up for a Giphy API Key here: https://developers.giphy.com/ (only for those students who don&amp;rsquo;t already have one)  2. Get the starter code  The starter code for this code along is hosted on Github, see the url below:</description>
     </item>
     
   </channel>
