@@ -183,6 +183,10 @@
   </url>
   
   <url>
+    <loc>/17-deploying-your-app/code-along-hosting-with-heroku/step-1-install-heroku/</loc>
+  </url>
+  
+  <url>
     <loc>/02-javascript-basics/data-types/strings/</loc>
   </url>
   
@@ -428,6 +432,10 @@
   </url>
   
   <url>
+    <loc>/17-deploying-your-app/code-along-hosting-with-heroku/step-2-prepare-the-app/</loc>
+  </url>
+  
+  <url>
     <loc>/final-projects/milestones-due-dates/submit-project-ideas/</loc>
   </url>
   
@@ -488,7 +496,7 @@
   </url>
   
   <url>
-    <loc>/17-deploying-your-app/code-along-host-app-using-github-pages/</loc>
+    <loc>/17-deploying-your-app/code-along-hosting-with-github-pages/</loc>
   </url>
   
   <url>
@@ -549,6 +557,10 @@
   
   <url>
     <loc>/16-intro-to-express/express/routing/</loc>
+  </url>
+  
+  <url>
+    <loc>/17-deploying-your-app/code-along-hosting-with-heroku/step-3-run-heroku-locally/</loc>
   </url>
   
   <url>
@@ -704,6 +716,10 @@
   </url>
   
   <url>
+    <loc>/17-deploying-your-app/code-along-hosting-with-heroku/step-4-deploy-to-heroku/</loc>
+  </url>
+  
+  <url>
     <loc>/12-project-build-a-slackbot/tutorial/step-4-run-ngrok/</loc>
   </url>
   
@@ -760,7 +776,7 @@
   </url>
   
   <url>
-    <loc>/17-deploying-your-app/code-along-host-app-using-surge/</loc>
+    <loc>/17-deploying-your-app/code-along-hosting-with-surge/</loc>
   </url>
   
   <url>
@@ -1077,6 +1093,10 @@
   
   <url>
     <loc>/10-asynchronous-js-and-promises/code-along-giphy-api-with-async-await/</loc>
+  </url>
+  
+  <url>
+    <loc>/17-deploying-your-app/code-along-hosting-with-heroku/</loc>
   </url>
   
   <url>

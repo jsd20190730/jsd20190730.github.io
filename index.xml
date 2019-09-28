@@ -505,6 +505,17 @@ Create a new workspace</description>
     </item>
     
     <item>
+      <title>Step 1: Install Heroku</title>
+      <link>/17-deploying-your-app/code-along-hosting-with-heroku/step-1-install-heroku/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/17-deploying-your-app/code-along-hosting-with-heroku/step-1-install-heroku/</guid>
+      <description> Step 1: Install Heroku a. Sign up for a free Heroku account  Sign up here: https://signup.heroku.com/signup/dc  
+b. Install Heroku Command Line Interface (CLI)  Follow the instructions for your Operation System found here: https://devcenter.heroku.com/articles/getting-started-with-nodejs?singlepage=true#set-up  
+c. Use the Heroku CLI to log into your Heroku Account  Once installed, open your terminal and run the command below to log into the Heroku CLI   $ heroku login  </description>
+    </item>
+    
+    <item>
       <title>Strings</title>
       <link>/02-javascript-basics/data-types/strings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1053,6 +1064,17 @@ Here&amp;rsquo;s a diagram that provides a high-level view of how our slackbot w
     </item>
     
     <item>
+      <title>Step 2: Prepare the App</title>
+      <link>/17-deploying-your-app/code-along-hosting-with-heroku/step-2-prepare-the-app/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/17-deploying-your-app/code-along-hosting-with-heroku/step-2-prepare-the-app/</guid>
+      <description>Prepare the App During this step we are going to get the application ready for a Heroku deployment
+a. Install parcel-bundler locally Since this application used Parcel, we need to instruct Heroku&amp;rsquo;s servers to install Parcel before it tries to &amp;ldquo;build&amp;rdquo; the application in the cloud
+ In your terminal, navigate to the project folder and run the following command:   $ npm install parcel-bundler  Do not include the -g or --global flag here</description>
+    </item>
+    
+    <item>
       <title>Submit Project Ideas</title>
       <link>/final-projects/milestones-due-dates/submit-project-ideas/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1184,12 +1206,12 @@ Here&amp;rsquo;s a diagram that provides a high-level view of how our slackbot w
     </item>
     
     <item>
-      <title>Code Along: Host App using Github Pages</title>
-      <link>/17-deploying-your-app/code-along-host-app-using-github-pages/</link>
+      <title>Code Along: Hosting with Github Pages</title>
+      <link>/17-deploying-your-app/code-along-hosting-with-github-pages/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/17-deploying-your-app/code-along-host-app-using-github-pages/</guid>
-      <description>Code Along: Host App using Github Pages  Together we&amp;rsquo;ll walk through the process of hosting a static application, an application that does not have a server (i.e. Express), on Github Pages  Instructions 1. Find Traffic Light project Using your operating system&amp;rsquo;s finder / explorer application, copy your Traffic Light application (project name: traffic-light) application from a lesson earlier in the course folder to your lesson_17 folder
+      <guid>/17-deploying-your-app/code-along-hosting-with-github-pages/</guid>
+      <description>Code Along: Hosting with Github Pages  Together we&amp;rsquo;ll walk through the process of hosting a static application, an application that does not have a server (i.e. Express), on Github Pages  Instructions 1. Find Traffic Light project Using your operating system&amp;rsquo;s finder / explorer application, copy your Traffic Light application (project name: traffic-light) application from a lesson earlier in the course folder to your lesson_17 folder
  If you do not have a working version of traffic-light you can clone down a working version here</description>
     </item>
     
@@ -1321,6 +1343,18 @@ Requirement #2: Add Read Functionality The Doit app should list all tasks stored
  Each route can have one or more handler functions, which are executed when the route is matched
  Route definition takes the following structure:
   app.METHOD(PATH, HANDLER)   app is an instance of express.</description>
+    </item>
+    
+    <item>
+      <title>Step 3: Run Heroku Locally</title>
+      <link>/17-deploying-your-app/code-along-hosting-with-heroku/step-3-run-heroku-locally/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/17-deploying-your-app/code-along-hosting-with-heroku/step-3-run-heroku-locally/</guid>
+      <description>Step 3: Run Heroku Locally Heroku&amp;rsquo;s CLI has a feature that allows us to run application locally in a &amp;ldquo;heroku production-like&amp;rdquo; environment
+This is a great way to catch issues before deploying the production
+a. Copy .env.local to .env When running heroku locally it, heroku will automatically look for the .env (and not .env.local) for any potential environment variables
+ Run the following commnnd from the project folder to copy .</description>
     </item>
     
     <item>
@@ -1660,6 +1694,19 @@ app.get(&#39;/users/:userId/books/:bookId&#39;, function (req, res) { res.send(r
     </item>
     
     <item>
+      <title>Step 4: Deploy to Heroku</title>
+      <link>/17-deploying-your-app/code-along-hosting-with-heroku/step-4-deploy-to-heroku/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/17-deploying-your-app/code-along-hosting-with-heroku/step-4-deploy-to-heroku/</guid>
+      <description>Step 4: Deploy to Heroku Now it&amp;rsquo;s time to deploy our application to production (i.e. Heroku&amp;rsquo;s cloud servers)
+a. Create a &amp;ldquo;Heroku app&amp;rdquo;  In your terminal (from within your project folder) run the following command to create a Heroku app
+$ heroku create  This will result in output that looks like the following:
+   heroku create did the following:
+ Added a new remote repository for your project that points to Heroku&amp;rsquo;s servers (we&amp;rsquo;ll soon see that Heroku uses to the git toolchain, similar to Github, for deployment)</description>
+    </item>
+    
+    <item>
       <title>Step 4: Run ngrok</title>
       <link>/12-project-build-a-slackbot/tutorial/step-4-run-ngrok/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1796,12 +1843,12 @@ app.get(&#39;/users/:userId/books/:bookId&#39;, function (req, res) { res.send(r
     </item>
     
     <item>
-      <title>Code Along: Host App using Surge</title>
-      <link>/17-deploying-your-app/code-along-host-app-using-surge/</link>
+      <title>Code Along: Hosting with Surge</title>
+      <link>/17-deploying-your-app/code-along-hosting-with-surge/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/17-deploying-your-app/code-along-host-app-using-surge/</guid>
-      <description>Code Along: Host App using Surge  Together we&amp;rsquo;ll walk through the process of hosting a static website / application (that does not have a backend server like Express) using Surge  Instructions 1. Install the surge package on your computer  Run the following from your command line (from any folder location) to install surge globally on your computer
+      <guid>/17-deploying-your-app/code-along-hosting-with-surge/</guid>
+      <description>Code Along: Hosting with Surge  Together we&amp;rsquo;ll walk through the process of hosting a static website / application (that does not have a backend server like Express) using Surge  Instructions 1. Install the surge package on your computer  Run the following from your command line (from any folder location) to install surge globally on your computer
 $ npm install --global surge   
 2. Run surge from the Traffic Light project folder  On the command line, navigate to the project folder of the Traffic Light app (the one we used in the Github Pages code along)</description>
     </item>

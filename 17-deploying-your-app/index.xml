@@ -34,12 +34,12 @@
     </item>
     
     <item>
-      <title>Code Along: Host App using Github Pages</title>
-      <link>/17-deploying-your-app/code-along-host-app-using-github-pages/</link>
+      <title>Code Along: Hosting with Github Pages</title>
+      <link>/17-deploying-your-app/code-along-hosting-with-github-pages/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/17-deploying-your-app/code-along-host-app-using-github-pages/</guid>
-      <description>Code Along: Host App using Github Pages  Together we&amp;rsquo;ll walk through the process of hosting a static application, an application that does not have a server (i.e. Express), on Github Pages  Instructions 1. Find Traffic Light project Using your operating system&amp;rsquo;s finder / explorer application, copy your Traffic Light application (project name: traffic-light) application from a lesson earlier in the course folder to your lesson_17 folder
+      <guid>/17-deploying-your-app/code-along-hosting-with-github-pages/</guid>
+      <description>Code Along: Hosting with Github Pages  Together we&amp;rsquo;ll walk through the process of hosting a static application, an application that does not have a server (i.e. Express), on Github Pages  Instructions 1. Find Traffic Light project Using your operating system&amp;rsquo;s finder / explorer application, copy your Traffic Light application (project name: traffic-light) application from a lesson earlier in the course folder to your lesson_17 folder
  If you do not have a working version of traffic-light you can clone down a working version here</description>
     </item>
     
@@ -56,12 +56,12 @@
     </item>
     
     <item>
-      <title>Code Along: Host App using Surge</title>
-      <link>/17-deploying-your-app/code-along-host-app-using-surge/</link>
+      <title>Code Along: Hosting with Surge</title>
+      <link>/17-deploying-your-app/code-along-hosting-with-surge/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/17-deploying-your-app/code-along-host-app-using-surge/</guid>
-      <description>Code Along: Host App using Surge  Together we&amp;rsquo;ll walk through the process of hosting a static website / application (that does not have a backend server like Express) using Surge  Instructions 1. Install the surge package on your computer  Run the following from your command line (from any folder location) to install surge globally on your computer
+      <guid>/17-deploying-your-app/code-along-hosting-with-surge/</guid>
+      <description>Code Along: Hosting with Surge  Together we&amp;rsquo;ll walk through the process of hosting a static website / application (that does not have a backend server like Express) using Surge  Instructions 1. Install the surge package on your computer  Run the following from your command line (from any folder location) to install surge globally on your computer
 $ npm install --global surge   
 2. Run surge from the Traffic Light project folder  On the command line, navigate to the project folder of the Traffic Light app (the one we used in the Github Pages code along)</description>
     </item>
