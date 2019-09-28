@@ -41,7 +41,7 @@ a. Install parcel-bundler locally Since this application used Parcel, we need to
       <description>Step 3: Run Heroku Locally Heroku&amp;rsquo;s CLI has a feature that allows us to run application locally in a &amp;ldquo;heroku production-like&amp;rdquo; environment
 This is a great way to catch issues before deploying the production
 a. Copy .env.local to .env When running heroku locally it, heroku will automatically look for the .env (and not .env.local) for any potential environment variables
- Run the following commnnd from the project folder to copy .</description>
+ Run the following command from the project folder to copy .</description>
     </item>
     
     <item>
