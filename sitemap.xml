@@ -27,6 +27,10 @@
   </url>
   
   <url>
+    <loc>/continue-learning/free-courses-guides/</loc>
+  </url>
+  
+  <url>
     <loc>/class-resources/office-hours/</loc>
   </url>
   
@@ -107,6 +111,10 @@
   </url>
   
   <url>
+    <loc>/18-final-projects-lab/lab-final-projects/</loc>
+  </url>
+  
+  <url>
     <loc>/09-http-and-apis/objectives/</loc>
   </url>
   
@@ -172,6 +180,10 @@
   
   <url>
     <loc>/final-projects/overview-requirements/</loc>
+  </url>
+  
+  <url>
+    <loc>/19-final-project-presentations/presentation-script/</loc>
   </url>
   
   <url>
@@ -1249,11 +1261,15 @@
   </url>
   
   <url>
-    <loc>/00-course-intro-and-tools/group-exercise-rock-paper-scissors/</loc>
+    <loc>/18-final-projects-lab/</loc>
   </url>
   
   <url>
-    <loc>/course-materials/</loc>
+    <loc>/19-final-project-presentations/</loc>
+  </url>
+  
+  <url>
+    <loc>/00-course-intro-and-tools/group-exercise-rock-paper-scissors/</loc>
   </url>
   
   <url>
@@ -1271,6 +1287,10 @@
   <url>
     <loc>/class-resources/</loc>
     <lastmod>2019-03-16T17:11:17-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/continue-learning/</loc>
   </url>
   
   <url>
